@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "jk_bw": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "killing_blow": {
+          "is_explosion": true
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "jk_bw:play/kill/killed_by_explosion"
+  },
+  "requirements": [
+    [
+      "jk_bw"
+    ]
+  ]
+}

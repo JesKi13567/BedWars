@@ -1,0 +1,1 @@
+effect clear @s invisibility

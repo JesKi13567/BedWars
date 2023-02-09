@@ -1,0 +1,3 @@
+execute store result score @s jk_bw_PlayerHasRes if entity @e[tag=jk_bw_res_diamond,dx=0,dy=-8,dz=0]
+execute as @s[scores={jk_bw_PlayerHasRes=8..}] run summon item ~ ~ ~ {Age:-32768,PickupDelay:18,Invulnerable:1,Item:{id:"diamond",Count:8,tag:{CanPlaceOn:["#jk_bw:canplaceon"],CanDestroy:["#jk_bw:candestroy"],HideFlags:28}},Tags:["jk_bw","jk_bw_extra_diamond","jk_bw_res_extra"]}
+execute as @s[scores={jk_bw_PlayerHasRes=8..}] run kill @e[tag=jk_bw_res_diamond,dx=0,dy=-8,dz=0]

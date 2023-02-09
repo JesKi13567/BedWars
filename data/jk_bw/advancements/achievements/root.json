@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:red_bed"
+    },
+    "title": {
+      "text": "起床战争"
+    },
+    "description": [
+      ""
+    ],
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "minecraft:textures/block/bedrock.png"
+  },
+  "criteria": {
+    "command": {
+      "trigger": "minecraft:location"
+    }
+  }
+}

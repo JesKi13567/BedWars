@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "jk_bw": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "player"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "jk_bw:play/kill/hurt_player"
+  },
+  "requirements": [
+    [
+      "jk_bw"
+    ]
+  ]
+}

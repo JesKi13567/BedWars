@@ -1,0 +1,5 @@
+execute store result score @s jk_bw_PlayerHasRes if entity @e[tag=jk_bw_res_iron,dx=0,dy=-8,dz=0]
+execute as @s[scores={jk_bw_TeamRes=0..3,jk_bw_PlayerHasRes=48..}] run summon item ~ ~ ~ {Age:-32768,PickupDelay:18,Invulnerable:1,Item:{id:"iron_ingot",Count:48,tag:{CanPlaceOn:["#jk_bw:canplaceon"],CanDestroy:["#jk_bw:candestroy"],HideFlags:28}},Tags:["jk_bw","jk_bw_extra_iron","jk_bw_res_extra"]}
+execute as @s[scores={jk_bw_TeamRes=4,jk_bw_PlayerHasRes=24..}] run summon item ~ ~ ~ {Age:-32768,PickupDelay:18,Invulnerable:1,Item:{id:"iron_ingot",Count:48,tag:{CanPlaceOn:["#jk_bw:canplaceon"],CanDestroy:["#jk_bw:candestroy"],HideFlags:28}},Tags:["jk_bw","jk_bw_extra_iron","jk_bw_res_extra"]}
+execute as @s[scores={jk_bw_TeamRes=0..3,jk_bw_PlayerHasRes=48..}] run kill @e[tag=jk_bw_res_iron,dx=0,dy=-8,dz=0]
+execute as @s[scores={jk_bw_TeamRes=4,jk_bw_PlayerHasRes=24..}] run kill @e[tag=jk_bw_res_iron,dx=0,dy=-8,dz=0]

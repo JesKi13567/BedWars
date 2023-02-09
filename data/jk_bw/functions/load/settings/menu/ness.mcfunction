@@ -1,0 +1,3 @@
+give @s minecraft:oak_sign{display:{Name:'{"text":"提示牌","color":"white","italic":false}',Lore:['{"text":"玩家能看到此提示。","italic":false,"color":"gray"}']},BlockEntityTag:{Text1:'[{"text":"物品栏最后一格，","bold":true,"italic":false,"color":"gold"}]',Text3:'[{"text":"确认你是否报名！","bold":true,"italic":false,"color":"red"}]'}}
+give @s ender_chest
+give @s player_head{SkullOwner:"JK137",display:{Lore:['{"text":"作者的头，算是防伪标志吧233","color":"gray","italic":false}']}}

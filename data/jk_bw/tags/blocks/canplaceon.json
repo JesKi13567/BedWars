@@ -1,0 +1,13 @@
+{
+    "values": [
+        "#jk_bw:candestroy",
+        "#jk_bw:light_blocks",
+        "#mineable/axe",
+        "#mineable/pickaxe",
+        "#mineable/shovel",
+        "#mineable/hoe",
+        "#impermeable",
+        "bedrock",
+        "#wool"
+    ]
+}

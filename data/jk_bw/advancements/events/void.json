@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "jk_bw": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "bypasses_invulnerability": true
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "jk_bw:play/kill/void"
+  },
+  "requirements": [
+    [
+      "jk_bw"
+    ]
+  ]
+}
