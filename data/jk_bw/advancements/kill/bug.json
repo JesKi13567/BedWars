@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "jk_bw": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "type": "silverfish"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "jk_bw:play/kill/bug"
+  },
+  "requirements": [
+    [
+      "jk_bw"
+    ]
+  ]
+}

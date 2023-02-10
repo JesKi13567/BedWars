@@ -25,11 +25,13 @@ scoreboard objectives remove jk_bw_PlayerBreakYellow
 scoreboard objectives remove jk_bw_PlayerBrokeBad
 scoreboard objectives remove jk_bw_PlayerBrokeBed
 scoreboard objectives remove jk_bw_PlayerBreakBeds
+#scoreboard objectives remove jk_bw_PlayerExecuseTime
 scoreboard objectives remove jk_bw_PlayerKills
 #scoreboard objectives remove jk_bw_PlayerFinalKills
 scoreboard objectives remove jk_bw_PlayerDeathImp
 scoreboard objectives remove jk_bw_PlayerDeath
 scoreboard objectives remove jk_bw_PlayerRebornTime
+scoreboard objectives remove jk_bw_PlayerWins
 scoreboard objectives remove jk_bw_PlayerOwnIrons
 scoreboard objectives remove jk_bw_PlayerOwnGolds
 scoreboard objectives remove jk_bw_PlayerOwnDiamonds

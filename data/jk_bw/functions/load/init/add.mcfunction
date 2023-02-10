@@ -30,11 +30,13 @@ scoreboard objectives add jk_bw_PlayerBreakYellow mined:yellow_bed "玩家破坏
 scoreboard objectives add jk_bw_PlayerBrokeBad dummy "玩家破坏自己队伍床"
 scoreboard objectives add jk_bw_PlayerBrokeBed dummy "玩家破坏了床"
 scoreboard objectives add jk_bw_PlayerBreakBeds dummy "玩家破坏床数"
-scoreboard objectives add jk_bw_PlayerKills minecraft.custom:minecraft.player_kills "玩家击杀数"
+#scoreboard objectives add jk_bw_PlayerExecuseTime dummy "玩家原谅时长"
+scoreboard objectives add jk_bw_PlayerKills dummy "玩家击杀数"
 #scoreboard objectives add jk_bw_PlayerFinalKills dummy "玩家最终击杀数"
 scoreboard objectives add jk_bw_PlayerDeathImp deathCount "玩家死亡接口"
 scoreboard objectives add jk_bw_PlayerDeath dummy "玩家死亡数"
 scoreboard objectives add jk_bw_PlayerRebornTime dummy "玩家复活倒计时"
+scoreboard objectives add jk_bw_PlayerWins dummy "玩家获胜次数"
 scoreboard objectives add jk_bw_PlayerOwnIrons dummy "玩家持有铁锭数"
 scoreboard objectives add jk_bw_PlayerOwnGolds dummy "玩家持有金锭数"
 scoreboard objectives add jk_bw_PlayerOwnDiamonds dummy "玩家持有钻石数"
@@ -61,27 +63,27 @@ scoreboard objectives add jk_bw_EntityTime dummy "实体存活时间"
 function jk_bw:load/init/bossbar
 
 # 队伍
-team add jk_bw_red {"text":"jk_bw_红队","color":"red"}
+team add jk_bw_red {"text":"红队","color":"red"}
 team modify jk_bw_red color red
 team modify jk_bw_red collisionRule never
 team modify jk_bw_red friendlyFire false
 
-team add jk_bw_blue {"text":"jk_bw_蓝队","color":"blue"}
+team add jk_bw_blue {"text":"蓝队","color":"blue"}
 team modify jk_bw_blue color blue
 team modify jk_bw_blue collisionRule never
 team modify jk_bw_blue friendlyFire false
 
-team add jk_bw_green {"text":"jk_bw_绿队","color":"green"}
+team add jk_bw_green {"text":"绿队","color":"green"}
 team modify jk_bw_green color green
 team modify jk_bw_green collisionRule never
 team modify jk_bw_green friendlyFire false
 
-team add jk_bw_yellow {"text":"jk_bw_黄队","color":"yellow"}
+team add jk_bw_yellow {"text":"黄队","color":"yellow"}
 team modify jk_bw_yellow color yellow
 team modify jk_bw_yellow collisionRule never
 team modify jk_bw_yellow friendlyFire false
 
-team add jk_bw_admin {"text":"jk_bw_管理员","color":"light_purple"}
+team add jk_bw_admin {"text":"管理员","color":"light_purple"}
 team modify jk_bw_admin color light_purple
 
 team add jk_bw_npc

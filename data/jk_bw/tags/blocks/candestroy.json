@@ -1,6 +1,9 @@
 {
     "values": [
         "#jk_bw:bed",
-        "#jk_bw:candestroynotbed"
+        "#jk_bw:canexplode_tnt",
+        "#jk_bw:stained_glass",
+        "obsidian",
+		"water"
     ]
 }

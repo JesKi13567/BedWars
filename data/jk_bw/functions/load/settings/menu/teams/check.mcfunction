@@ -1,6 +1,6 @@
 stopsound @a
 playsound block.note_block.bell player @s
-tellraw @a[tag=jk_bw_admin] "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+tellraw @a[tag=jk_bw_admin] "\n\n\n\n\n\n\n\n\n\n"
 
 # 检测床安放
 execute as @e[limit=1,tag=jk_bw_bed_red] at @s if block ~ ~ ~ red_bed run tellraw @a[tag=jk_bw_admin] {"text":"红队床安放成功！","color":"red"}

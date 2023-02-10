@@ -1,10 +1,10 @@
 # 每 2 ticks 执行一次
-# 该函数正常情况下只在玩家破坏床后被触发（即tag:jk_bw_bed_init被移除一次时）
+# 该函数正常情况下只在破坏床后被触发（即tag:jk_bw_bed_init被移除一次时）
 
 ## 床检测被破坏
 execute as @e[limit=1,tag=jk_bw_bed_marker,tag=!jk_bw_bed_init,tag=!jk_bw_bed_no_block] at @s unless block ~ ~ ~ #jk_bw:bed run tag @s add jk_bw_bed_no_block
 
-## 无床玩家死亡处理
+## 无床死亡处理
 # 标记死亡
 execute if entity @e[tag=jk_bw_bed_red,limit=1,tag=jk_bw_bed_no_block] run tag @a[gamemode=spectator,team=jk_bw_red,scores={jk_bw_PlayerRebornTime=6},tag=!jk_bw_player_outed] add jk_bw_player_out
 execute if entity @e[tag=jk_bw_bed_blue,limit=1,tag=jk_bw_bed_no_block] run tag @a[gamemode=spectator,team=jk_bw_blue,scores={jk_bw_PlayerRebornTime=6},tag=!jk_bw_player_outed] add jk_bw_player_out
@@ -20,7 +20,7 @@ execute as @a[tag=jk_bw_player_out] at @s run function jk_bw:play/res/player/fin
 clear @a[tag=jk_bw_player_out]
 tag @a[tag=jk_bw_player_out] add jk_bw_player_outed
 tag @a[tag=jk_bw_player_outed] remove jk_bw_player_out
-## 玩家存活/团灭检测
+## 存活/团灭检测
 # 记录人数
 execute store result score @e[tag=jk_bw_bed_red,limit=1,tag=jk_bw_bed_no_block,tag=!jk_bw_bed_init] jk_bw_TeamAlive if entity @a[team=jk_bw_red,tag=!jk_bw_player_outed]
 execute store result score @e[tag=jk_bw_bed_blue,limit=1,tag=jk_bw_bed_no_block,tag=!jk_bw_bed_init] jk_bw_TeamAlive if entity @a[team=jk_bw_blue,tag=!jk_bw_player_outed]
@@ -28,10 +28,10 @@ execute store result score @e[tag=jk_bw_bed_green,limit=1,tag=jk_bw_bed_no_block
 execute store result score @e[tag=jk_bw_bed_yellow,limit=1,tag=jk_bw_bed_no_block,tag=!jk_bw_bed_init] jk_bw_TeamAlive if entity @a[team=jk_bw_yellow,tag=!jk_bw_player_outed]
 
 # 团灭后提示（一次）
-execute as @e[tag=jk_bw_bed_red,tag=!jk_bw_bed_init,tag=!jk_bw_bed_no_player,limit=1,scores={jk_bw_TeamAlive=0}] run tellraw @a ["",{"text":"\n 红队 ","color":"red","bold":true},"玩家已被消灭！\n"]
-execute as @e[tag=jk_bw_bed_blue,tag=!jk_bw_bed_init,tag=!jk_bw_bed_no_player,limit=1,scores={jk_bw_TeamAlive=0}] run tellraw @a ["",{"text":"\n 蓝队 ","color":"blue","bold":true},"玩家已被消灭！\n"]
-execute as @e[tag=jk_bw_bed_green,tag=!jk_bw_bed_init,tag=!jk_bw_bed_no_player,limit=1,scores={jk_bw_TeamAlive=0}] run tellraw @a ["",{"text":"\n 绿队 ","color":"green","bold":true},"玩家已被消灭！\n"]
-execute as @e[tag=jk_bw_bed_yellow,tag=!jk_bw_bed_init,tag=!jk_bw_bed_no_player,limit=1,scores={jk_bw_TeamAlive=0}] run tellraw @a ["",{"text":"\n 黄队 ","color":"yellow","bold":true},"玩家已被消灭！\n"]
+execute as @e[tag=jk_bw_bed_red,tag=!jk_bw_bed_init,tag=!jk_bw_bed_no_player,limit=1,scores={jk_bw_TeamAlive=0}] run tellraw @a ["",{"text":"\n 红队 ","color":"red","bold":true},"被团灭了！\n"]
+execute as @e[tag=jk_bw_bed_blue,tag=!jk_bw_bed_init,tag=!jk_bw_bed_no_player,limit=1,scores={jk_bw_TeamAlive=0}] run tellraw @a ["",{"text":"\n 蓝队 ","color":"blue","bold":true},"被团灭了！\n"]
+execute if score #teams jk_bw_mem matches 4.. as @e[tag=jk_bw_bed_green,tag=!jk_bw_bed_init,tag=!jk_bw_bed_no_player,limit=1,scores={jk_bw_TeamAlive=0}] run tellraw @a ["",{"text":"\n 绿队 ","color":"green","bold":true},"被团灭了！\n"]
+execute if score #teams jk_bw_mem matches 4.. as @e[tag=jk_bw_bed_yellow,tag=!jk_bw_bed_init,tag=!jk_bw_bed_no_player,limit=1,scores={jk_bw_TeamAlive=0}] run tellraw @a ["",{"text":"\n 黄队 ","color":"yellow","bold":true},"被团灭了！\n"]
 
 # 团灭后队伍箱子解锁
 execute if entity @e[tag=jk_bw_bed_red,tag=jk_bw_bed_no_block,tag=jk_bw_bed_no_player,limit=1] as @e[tag=jk_bw_chest_red] at @s run data remove block ~ ~ ~ Lock

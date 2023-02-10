@@ -1,3 +1,4 @@
+# 记录物品
 summon item 0 3 0 {Item:{id:"minecraft:white_wool",Count:1b},Tags:["jk_bw_finalkill_item","jk_bw_finalkill0"]}
 data modify entity @e[type=item,tag=jk_bw_finalkill0,limit=1] Item set from entity @s EnderItems[{Slot:0b}]
 summon item 0 3 0 {Item:{id:"minecraft:white_wool",Count:1b},Tags:["jk_bw_finalkill_item","jk_bw_finalkill1"]}
@@ -52,10 +53,9 @@ summon item 0 3 0 {Item:{id:"minecraft:white_wool",Count:1b},Tags:["jk_bw_finalk
 data modify entity @e[type=item,tag=jk_bw_finalkill25,limit=1] Item set from entity @s EnderItems[{Slot:25b}]
 summon item 0 3 0 {Item:{id:"minecraft:white_wool",Count:1b},Tags:["jk_bw_finalkill_item","jk_bw_finalkill26"]}
 data modify entity @e[type=item,tag=jk_bw_finalkill26,limit=1] Item set from entity @s EnderItems[{Slot:26b}]
-# 清理怪东西
-kill @e[type=item,nbt={Item:{id:"minecraft:white_wool"}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:wooden_sword"}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:compass"}}]
+
+# 清理未转变者
+kill @e[tag=jk_bw_finalkill_item,type=item,nbt={Item:{id:"minecraft:white_wool"}}]
 
 # 传送到所在团队金点
 execute as @s[team=jk_bw_red] run tp @e[tag=jk_bw_finalkill_item] @e[limit=1,tag=jk_bw_gold_time,tag=jk_bw_res_red]

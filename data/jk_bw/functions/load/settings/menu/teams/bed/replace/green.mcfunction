@@ -1,3 +1,4 @@
+execute as @e[tag=jk_bw_chest_green] at @s run data merge block ~ ~ ~ {Lock:"绿队指南针"}
 execute as @e[tag=jk_bw_bed_green,y_rotation=135.1..180] at @s run setblock ~ ~ ~ green_bed[facing=north]
 execute as @e[tag=jk_bw_bed_green,y_rotation=-180..-135] at @s run setblock ~ ~ ~ green_bed[facing=north]
 execute as @e[tag=jk_bw_bed_green,y_rotation=135.1..180] at @s run setblock ~ ~ ~-1 green_bed[facing=north,part=head]

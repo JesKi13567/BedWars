@@ -1,6 +1,6 @@
 scoreboard players set #gaming jk_bw_mem 2
 stopsound @a
-execute as @a at @s run playsound ui.toast.challenge_complete player @s
+playsound ui.toast.challenge_complete player @a 0 100 0 1000000
 
 title @a title {"text":"恭喜","color":"yellow","bold":true}
 title @a times 10 120 20
@@ -16,6 +16,13 @@ execute if entity @p[team=jk_bw_red,tag=!jk_bw_player_outed] run tellraw @a ["�
 execute if entity @p[team=jk_bw_blue,tag=!jk_bw_player_outed] run tellraw @a ["获胜玩家：",{"selector":"@a[team=jk_bw_blue]"}]
 execute if entity @p[team=jk_bw_green,tag=!jk_bw_player_outed] run tellraw @a ["获胜玩家：",{"selector":"@a[team=jk_bw_green]"}]
 execute if entity @p[team=jk_bw_yellow,tag=!jk_bw_player_outed] run tellraw @a ["获胜玩家：",{"selector":"@a[team=jk_bw_yellow]"}]
+
+scoreboard players add @a[team=jk_bw_red,tag=!jk_bw_player_outed] jk_bw_PlayerWins 1
+scoreboard players add @a[team=jk_bw_blue,tag=!jk_bw_player_outed] jk_bw_PlayerWins 1
+scoreboard players add @a[team=jk_bw_green,tag=!jk_bw_player_outed] jk_bw_PlayerWins 1
+scoreboard players add @a[team=jk_bw_yellow,tag=!jk_bw_player_outed] jk_bw_PlayerWins 1
+
+effect give @a[gamemode=adventure] slow_falling 9 0 true
 
 function jk_bw:play/end/rank
 

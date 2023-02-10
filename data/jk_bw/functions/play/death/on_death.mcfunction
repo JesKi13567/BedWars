@@ -9,7 +9,8 @@ scoreboard players remove @s[scores={jk_bw_PlayerAxeLevels=2..}] jk_bw_PlayerAxe
 scoreboard players remove @s[scores={jk_bw_PlayerPickaxeLevels=2..}] jk_bw_PlayerPickaxeLevels 1
 
 # 爆装备
-execute as @s[tag=jk_bw_victim] run function jk_bw:play/res/player/kill_give
+execute as @s[tag=!jk_bw_victim] run function jk_bw:play/death/suicide
+execute as @s[tag=jk_bw_victim] run function jk_bw:play/death/victim
 
-# 死亡倒计时
+# 复活倒计时
 scoreboard players set @s jk_bw_PlayerRebornTime 6

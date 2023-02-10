@@ -1,6 +1,7 @@
 scoreboard players set #gaming jk_bw_mem 3
 stopsound @a
-execute as @a at @s run playsound ui.toast.challenge_complete player @s
+bossbar set jk_bw_game_progress2 visible false
+playsound ui.toast.challenge_complete player @a 0 100 0 1000000
 title @a title {"text":"游戏结束","color":"red","bold":true}
 title @a times 10 120 20
 title @a subtitle [{"text":"游戏时长已到！","color":"yellow"}]

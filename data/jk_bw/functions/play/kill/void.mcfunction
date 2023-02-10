@@ -1,2 +1,3 @@
-advancement revoke @s only jk_bw:events/void
-execute as @s[tag=!jk_bw_victim] run tellraw @a [{"selector":"@s"},{"text":" 落入虚空。","color":"gray"}]
+advancement revoke @s only jk_bw:kill/void
+function jk_bw:play/death/tag
+tag @s add jk_bw_dead_void

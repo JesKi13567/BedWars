@@ -10,7 +10,7 @@
     }
   },
   "rewards": {
-    "function": "jk_bw:play/kill/killed_by_player"
+    "function": "jk_bw:play/kill/victim"
   },
   "requirements": [
     [

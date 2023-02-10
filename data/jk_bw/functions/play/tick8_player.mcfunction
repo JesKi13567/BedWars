@@ -16,7 +16,7 @@ execute store result score @s jk_bw_Temp run data get entity @s Pos[1]
 kill @s[scores={jk_bw_Temp=..-60}]
 
 # 测试模式
-execute if score #test_mode jk_bw_mem matches 1 run effect give @s resistance 1 9 true
+#execute if score #test_mode jk_bw_mem matches 1 run effect give @s resistance 1 9 true
 
 # 禁止拾取/清理
 clear @s #jk_bw:clear
