@@ -10,7 +10,7 @@ playsound entity.villager.no player @s[tag=!jk_bw_buy_success]
 
 # 成功购买
 clear @s[tag=jk_bw_buy_success] wooden_sword
-give @s[tag=jk_bw_buy_success] diamond_sword{Unbreakable:1b,CanPlaceOn:["#jk_bw:canplaceon"],CanDestroy:["#jk_bw:candestroy"],jk_bw_sword:3,HideFlags:28,AttributeModifiers:[{Operation:0,Amount:7.6,UUID:[I;1,0,0,1],AttributeName:"generic.attack_speed",Name:"a",Slot:"mainhand"},{Operation:0,Amount:7,UUID:[I;1,0,0,1],AttributeName:"generic.attack_damage",Name:"a",Slot:"mainhand"}]}
+give @s[tag=jk_bw_buy_success] diamond_sword{Unbreakable:1b,CanDestroy:["#jk_bw:candestroy"],jk_bw_sword:3,HideFlags:28,AttributeModifiers:[{Operation:0,Amount:7.6,UUID:[I;1,0,0,1],AttributeName:"generic.attack_speed",Name:"a",Slot:"mainhand"},{Operation:0,Amount:7,UUID:[I;1,0,0,1],AttributeName:"generic.attack_damage",Name:"a",Slot:"mainhand"}]}
 tellraw @s[tag=jk_bw_buy_success] [{"text":"成功购买","color":"green"},{"text":" 钻石剑","color":"gold","bold":true},"！"]
 playsound entity.experience_orb.pickup player @s[tag=jk_bw_buy_success]
 clear @s[tag=jk_bw_buy_success] emerald 3

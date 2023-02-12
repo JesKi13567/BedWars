@@ -1,3 +1,5 @@
+title @a[team=!jk_bw_admin,team=!] times 0 40 10
+
 tag @s remove jk_bw_trap_alarm_1
 tag @s remove jk_bw_trap_defend_1
 tag @s remove jk_bw_trap_istrap_1
@@ -23,5 +25,5 @@ tag @s[tag=jk_bw_trap_mining_2] remove jk_bw_trap_mining_2
 tag @s[tag=jk_bw_trap_mining_3] add jk_bw_trap_mining_2
 tag @s[tag=jk_bw_trap_mining_3] remove jk_bw_trap_mining_3
 
-scoreboard players set @s jk_bw_mem 300
 scoreboard players remove @s jk_bw_TeamTrapNum 1
+scoreboard players set @s jk_bw_mem 300

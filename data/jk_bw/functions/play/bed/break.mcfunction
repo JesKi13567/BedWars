@@ -18,7 +18,7 @@ scoreboard players set @s[team=!jk_bw_blue,scores={jk_bw_PlayerBreakBlue=1}] jk_
 scoreboard players set @s[team=!jk_bw_green,scores={jk_bw_PlayerBreakGreen=1}] jk_bw_PlayerBrokeBed 1
 scoreboard players set @s[team=!jk_bw_yellow,scores={jk_bw_PlayerBreakYellow=1}] jk_bw_PlayerBrokeBed 1
 
-execute as @s[scores={jk_bw_PlayerBrokeBed=1}] run playsound entity.ender_dragon.growl player @a 0 100 0 10000000 1
+execute as @s[scores={jk_bw_PlayerBrokeBed=1}] run playsound entity.ender_dragon.growl player @a 0 100 0 1000000
 scoreboard players add @s[scores={jk_bw_PlayerBrokeBed=1}] jk_bw_PlayerBreakBeds 1
 
 # 通知

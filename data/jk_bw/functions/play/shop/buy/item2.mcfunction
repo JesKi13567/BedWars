@@ -16,7 +16,7 @@ execute as @s[scores={jk_bw_PlayerShopNow=1}] if entity @e[limit=1,tag=jk_bw_sho
 execute store success score @s jk_bw_PlayerShopNow run clear @s #jk_bw:shop{jk_bw_shop_item:34}
 execute as @s[scores={jk_bw_PlayerShopNow=1}] if entity @e[limit=1,tag=jk_bw_shop_item2,sort=nearest,nbt=!{Items:[{tag:{jk_bw_shop_item:34}}]}] run function jk_bw:play/shop/item/special/bridge_egg
 execute store success score @s jk_bw_PlayerShopNow run clear @s #jk_bw:shop{jk_bw_shop_item:35}
-execute as @s[scores={jk_bw_PlayerShopNow=1}] if entity @e[limit=1,tag=jk_bw_shop_item2,sort=nearest,nbt=!{Items:[{tag:{jk_bw_shop_item:35}}]}] run function jk_bw:play/shop/item/special/magic_milk
+execute as @s[scores={jk_bw_PlayerShopNow=1}] if entity @e[limit=1,tag=jk_bw_shop_item2,sort=nearest,nbt=!{Items:[{tag:{jk_bw_shop_item:35}}]}] run function jk_bw:play/shop/item/special/magic_potion
 execute store success score @s jk_bw_PlayerShopNow run clear @s #jk_bw:shop{jk_bw_shop_item:36}
 execute as @s[scores={jk_bw_PlayerShopNow=1}] if entity @e[limit=1,tag=jk_bw_shop_item2,sort=nearest,nbt=!{Items:[{tag:{jk_bw_shop_item:36}}]}] run function jk_bw:play/shop/item/special/sponge
 execute store success score @s jk_bw_PlayerShopNow run clear @s #jk_bw:shop{jk_bw_shop_item:37}

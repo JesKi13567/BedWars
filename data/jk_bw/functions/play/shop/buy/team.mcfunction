@@ -10,8 +10,8 @@ execute as @s[scores={jk_bw_PlayerShopNow=1}] if entity @e[limit=1,tag=jk_bw_sho
 execute store success score @s jk_bw_PlayerShopNow run clear @s #jk_bw:shop{jk_bw_shop_team:11}
 execute as @s[scores={jk_bw_PlayerShopNow=1}] if entity @e[limit=1,tag=jk_bw_shop_team,sort=nearest,nbt=!{Items:[{tag:{jk_bw_shop_team:11}}]}] run function jk_bw:play/shop/team/update/heal
 execute store success score @s jk_bw_PlayerShopNow run clear @s #jk_bw:shop{jk_bw_shop_team:12}
-execute if score #final jk_bw_mem matches 0 as @s[scores={jk_bw_PlayerShopNow=1}] if entity @e[limit=1,tag=jk_bw_shop_team,sort=nearest,nbt=!{Items:[{tag:{jk_bw_shop_team:12}}]}] run function jk_bw:play/shop/team/update/dragon
-execute if score #final jk_bw_mem matches 1 as @s[scores={jk_bw_PlayerShopNow=1}] if entity @e[limit=1,tag=jk_bw_shop_team,sort=nearest,nbt=!{Items:[{tag:{jk_bw_shop_team:12}}]}] run tellraw @s {"text":"死斗模式已开始，无法再购买！","color":"red"}
+execute if score #time jk_bw_mem matches 601.. as @s[scores={jk_bw_PlayerShopNow=1}] if entity @e[limit=1,tag=jk_bw_shop_team,sort=nearest,nbt=!{Items:[{tag:{jk_bw_shop_team:12}}]}] run function jk_bw:play/shop/team/update/dragon
+execute if score #time jk_bw_mem matches 0..600 as @s[scores={jk_bw_PlayerShopNow=1}] if entity @e[limit=1,tag=jk_bw_shop_team,sort=nearest,nbt=!{Items:[{tag:{jk_bw_shop_team:12}}]}] run tellraw @s {"text":"死斗模式已开始，无法再购买！","color":"red"}
 
 # 陷阱5~7,15
 execute store success score @s jk_bw_PlayerShopNow run clear @s #jk_bw:shop{jk_bw_shop_team:5}

@@ -9,7 +9,7 @@ tellraw @s[tag=!jk_bw_buy_success] [{"text":"无法购买","color":"red"},{"text
 playsound entity.villager.no player @s[tag=!jk_bw_buy_success]
 
 # 成功购买
-give @s[tag=jk_bw_buy_success] stick{display:{Name:'{"text":"击退棒","color":"gold","italic":false}'},Enchantments:[{id:"knockback",lvl:1}],CanPlaceOn:["#jk_bw:canplaceon"],CanDestroy:["#jk_bw:candestroy"],HideFlags:28,Unbreakable:1b}
+give @s[tag=jk_bw_buy_success] stick{display:{Name:'{"text":"击退棒","color":"gold","italic":false}'},Enchantments:[{id:"knockback",lvl:1}],CanDestroy:["#jk_bw:candestroy"],HideFlags:28,Unbreakable:1b}
 tellraw @s[tag=jk_bw_buy_success] [{"text":"成功购买","color":"green"},{"text":" 击退棒","color":"gold","bold":true},"！"]
 playsound entity.experience_orb.pickup player @s[tag=jk_bw_buy_success]
 clear @s[tag=jk_bw_buy_success] gold_ingot 5

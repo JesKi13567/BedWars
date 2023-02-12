@@ -6,6 +6,10 @@
         "silverfish",
         "snowball",
         "creeper",
+        "arrow",
+        "ender_pearl",
+        "egg",
+        "chicken",
         "item"
     ]
 }

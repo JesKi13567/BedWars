@@ -10,8 +10,8 @@ execute store result score #x2 jk_bw_mem run data get entity @e[tag=jk_bw_throw_
 execute store result score #y2 jk_bw_mem run data get entity @e[tag=jk_bw_throw_mark,limit=1] Pos[1] 100
 execute store result score #z2 jk_bw_mem run data get entity @e[tag=jk_bw_throw_mark,limit=1] Pos[2] 100
 # 差储存为速度向量
-execute store result entity @e[tag=jk_bw_throwing,limit=1] Motion[0] double 0.05 run scoreboard players operation #x2 jk_bw_mem -= #x1 jk_bw_mem
+execute store result entity @e[tag=jk_bw_throwing,limit=1] Motion[0] double 0.04 run scoreboard players operation #x2 jk_bw_mem -= #x1 jk_bw_mem
 execute store result entity @e[tag=jk_bw_throwing,limit=1] Motion[1] double 0.03 run scoreboard players operation #y2 jk_bw_mem -= #y1 jk_bw_mem
-execute store result entity @e[tag=jk_bw_throwing,limit=1] Motion[2] double 0.05 run scoreboard players operation #z2 jk_bw_mem -= #z1 jk_bw_mem
+execute store result entity @e[tag=jk_bw_throwing,limit=1] Motion[2] double 0.04 run scoreboard players operation #z2 jk_bw_mem -= #z1 jk_bw_mem
 # 清理
 tag @e remove jk_bw_throwing

@@ -1,18 +1,18 @@
 ## 游戏正式开始前置
 # 队伍（注意：必须用菜单把出生点和床放好）
-tag @e[tag=jk_bw_bed_marker] add jk_bw_bed_init
-tag @e[tag=jk_bw_bed_marker] remove jk_bw_bed_no_block
-tag @e[tag=jk_bw_bed_marker] remove jk_bw_bed_no_player
-scoreboard players reset @e[tag=jk_bw_bed_marker] jk_bw_TeamAlive
 scoreboard players set @e[tag=jk_bw_spawn_marker] jk_bw_TeamProtection 0
 scoreboard players set @e[tag=jk_bw_spawn_marker] jk_bw_TeamSharpness 0
 scoreboard players set @e[tag=jk_bw_spawn_marker] jk_bw_TeamHaste 0
 scoreboard players set @e[tag=jk_bw_spawn_marker] jk_bw_TeamRes 0
 scoreboard players set @e[tag=jk_bw_spawn_marker] jk_bw_TeamHealing 0
 scoreboard players set @e[tag=jk_bw_spawn_marker] jk_bw_TeamDragon 0
-scoreboard players set @e[tag=jk_bw_spawn_marker] jk_bw_TeamTrapNum 0
-scoreboard players set @e[tag=jk_bw_spawn_marker] jk_bw_mem 0
-execute as @e[tag=jk_bw_spawn_marker] at @s run function jk_bw:play/shop/team/trap/trigger/remove_tag_all
+tag @e[tag=jk_bw_bed_marker] add jk_bw_bed_init
+tag @e[tag=jk_bw_bed_marker] remove jk_bw_bed_no_block
+tag @e[tag=jk_bw_bed_marker] remove jk_bw_bed_no_player
+scoreboard players set @e[tag=jk_bw_bed_marker] jk_bw_mem 0
+scoreboard players set @e[tag=jk_bw_bed_marker] jk_bw_TeamTrapNum 0
+scoreboard players reset @e[tag=jk_bw_bed_marker] jk_bw_TeamAlive
+execute as @e[tag=jk_bw_bed_marker] at @s run function jk_bw:play/shop/team/trap/trigger/remove_tag_all
 
 # 资源
 scoreboard players set @e[tag=jk_bw_res_spawn] jk_bw_mem -1
@@ -26,7 +26,7 @@ kill @e[tag=jk_bw_res_extra]
 
 # 全局
 forceload add 0 0
-#注释：6w局总不能碰巧可以循环碰到吧...当然这个上限也可以调到21亿
+#注：6w局总不能碰巧可以循环碰到吧...当然这个上限也可以调到21亿
 execute if score #current_game jk_bw_mem matches 60000.. run scoreboard players reset #current_game jk_bw_mem
 scoreboard players add #current_game jk_bw_mem 1
 scoreboard players set #gaming jk_bw_mem 1

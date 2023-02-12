@@ -1,12 +1,11 @@
 # 这里存放一些全局分数
-#  loaded       play_mode        teams      gaming       feedback     final
-# 是否加载   经典模式/经验模式    队伍数量   正在进行游戏    函数反馈     死斗模式
+#  loaded       play_mode        teams      gaming       feedback
+# 是否加载   经典模式/经验模式    队伍数量   正在进行游戏    函数反馈
 #scoreboard players set #loaded jk_bw_mem 1
 scoreboard players set #play_mode jk_bw_mem 0
 scoreboard players set #teams jk_bw_mem 2
 scoreboard players set #gaming jk_bw_mem 0
 scoreboard players set #feedback jk_bw_mem 0
-scoreboard players set #final jk_bw_mem 0
 #  test_mode   current_game
 #   测试模式    当前游戏场次
 scoreboard players reset #test_mode jk_bw_mem

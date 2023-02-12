@@ -1,5 +1,6 @@
 playsound block.note_block.bell player @s
 tag @s add jk_bw_admin
+function jk_bw:load/ticks/load
 
 tellraw @a[tag=jk_bw_admin] [{"text":"\n\n\n\n\n\n\n\n\n\n=============","color":"green"},{"text":" 起床战争工具包 ","color":"yellow"},"============\n"]
 execute if score #test_mode jk_bw_mem matches 1 run tellraw @a[tag=jk_bw_admin] {"text":"注意：已开启测试模式！","color":"red","bold":true}

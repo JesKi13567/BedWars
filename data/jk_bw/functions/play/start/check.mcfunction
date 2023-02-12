@@ -36,6 +36,11 @@ execute if score #teams jk_bw_mem matches 4 unless entity @e[limit=1,tag=jk_bw_s
 
 execute unless entity @e[limit=1,tag=jk_bw_start_ready] run tellraw @a [{"text":"\n猜你想找：","color":"green"},{"text":"[测试模式]","underlined":true,"color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/function jk_bw:load/settings/menu/test_mode"}}]
 
+# 人数过多
+execute if entity @e[limit=1,tag=jk_bw_start_ready] if score #teams jk_bw_mem matches 2 if score #reg_num jk_bw_mem matches 9.. run function jk_bw:play/start/reduce
+execute if entity @e[limit=1,tag=jk_bw_start_ready] if score #teams jk_bw_mem matches 4 if score #reg_num jk_bw_mem matches 17.. run function jk_bw:play/start/reduce
+
+# 正常开始
 execute if entity @e[limit=1,tag=jk_bw_start_ready] run function jk_bw:play/start/ready
 
 kill @e[tag=jk_bw_start_check]
