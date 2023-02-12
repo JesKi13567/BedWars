@@ -1,6 +1,6 @@
 {
     "pack": {
       "pack_format": 9,
-      "description": [{"text":"BedWars ","color":"yellow"},{"text":"ToolPack","color":"light_purple"},"\n",{"text":"起床战争 ","color":"yellow"},{"text":"工具包","color":"light_purple"},"\n",{"text":"beta 0.0.4\n","color":"white"},{"text":"作者：","color":"white"},{"text":"JK137","color":"aqua"}]
+      "description": [{"text":"BedWars ","color":"yellow"},{"text":"ToolPack","color":"light_purple"},"\n",{"text":"起床战争 ","color":"yellow"},{"text":"工具包","color":"light_purple"},"\n",{"text":"beta 1.0\n","color":"white"},{"text":"作者：","color":"white"},{"text":"JK137","color":"aqua"}]
     }
   }
