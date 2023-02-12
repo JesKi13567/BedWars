@@ -13,7 +13,7 @@ execute as @s[scores={jk_bw_PlayerUseSnowball=1..}] anchored eyes run function j
 execute as @s[scores={jk_bw_PlayerUseEgg=1..}] run function jk_bw:play/special/egg/trigger
 
 # 背包有tnt
-execute at @s[nbt={Inventory:[{tag:{jk_bw_tnt:1}}]}] run particle dust 0.851 0.075 0.075 0.7 ~ ~2.5 ~ 0 0 0 0 1 normal
+execute at @s[tag=!jk_bw_invisible,nbt={Inventory:[{tag:{jk_bw_tnt:1}}]}] run particle dust 0.851 0.075 0.075 0.7 ~ ~2.5 ~ 0 0 0 0 1 normal
 
 # 重置潜行
 scoreboard players reset @s jk_bw_PlayerCrouching

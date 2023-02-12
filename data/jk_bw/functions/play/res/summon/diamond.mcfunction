@@ -8,5 +8,5 @@ execute if score #level_diamond jk_bw_mem matches 1 if score #summon_diamond jk_
 execute if score #level_diamond jk_bw_mem matches 2 if score #summon_diamond jk_bw_mem matches ..0 run scoreboard players set #summon_diamond jk_bw_mem 20
 
 # 因为无法对盔甲架CustomName直接操作，只能借用告示牌JSON
-data merge block 0 1 0 {Text1:'[{"text":"将在 ","color":"aqua","bold":true},{"score":{"name":"#summon_diamond","objective":"jk_bw_mem"},"color":"gold"}," 秒后生成"]'}
-execute as @e[tag=jk_bw_diamond_time] at @s run data modify entity @s CustomName set from block 0 1 0 Text1
+data merge block 10110223 1 10110223 {Text1:'[{"text":"将在 ","color":"aqua","bold":true},{"score":{"name":"#summon_diamond","objective":"jk_bw_mem"},"color":"gold"}," 秒后生成"]'}
+execute as @e[tag=jk_bw_diamond_time] at @s run data modify entity @s CustomName set from block 10110223 1 10110223 Text1

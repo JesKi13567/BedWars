@@ -7,6 +7,8 @@ execute as @s[scores={jk_bw_PlayerThrow1=1..}] run function jk_bw:load/settings/
 
 # 掉虚空瞬间死亡/禁止跑出跑酷位置
 execute store result score @s jk_bw_Temp run data get entity @s Pos[1]
-kill @s[scores={jk_bw_Temp=..-60}]
-execute as @s[scores={jk_bw_Temp=..135}] run tellraw @a ["<",{"selector":"@s"},"> 我是baka捏"]
-tp @s[scores={jk_bw_Temp=..135}] @e[limit=1,tag=jk_bw_worldspawn]
+execute store result score #worldspawn jk_bw_Temp run data get entity @e[limit=1,tag=jk_bw_worldspawn] Pos[1]
+scoreboard players operation #worldspawn jk_bw_Temp -= #10 jk_bw_mem
+execute if entity @e[limit=1,tag=jk_bw_worldspawn] if score @s jk_bw_Temp <= #worldspawn jk_bw_Temp run tellraw @a ["<",{"selector":"@s"},"> 我是baka捏"]
+execute if entity @e[limit=1,tag=jk_bw_worldspawn] if score @s jk_bw_Temp <= #worldspawn jk_bw_Temp run tp @s @e[limit=1,tag=jk_bw_worldspawn]
+kill @s[scores={jk_bw_Temp=..-90}]

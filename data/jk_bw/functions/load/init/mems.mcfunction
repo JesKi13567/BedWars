@@ -31,6 +31,5 @@ scoreboard players set #32 jk_bw_mem 32
 scoreboard players set #40 jk_bw_mem 40
 scoreboard players set #100 jk_bw_mem 100
 scoreboard players set #120 jk_bw_mem 120
-scoreboard players set #127 jk_bw_mem 127
 scoreboard players set #300 jk_bw_mem 300
 scoreboard players set #600 jk_bw_mem 600

@@ -5,3 +5,7 @@ tp @s ~ ~-1 ~
 kill @e[type=#jk_bw:clear]
 execute as @s[scores={jk_bw_mem=..0}] run bossbar set jk_bw_clear_map visible false
 kill @s[scores={jk_bw_mem=..0}]
+
+execute store result score @s jk_bw_Temp run data get entity @s Pos[1]
+execute as @s[scores={jk_bw_Temp=..-64}] run bossbar set jk_bw_clear_map visible false
+kill @s[scores={jk_bw_Temp=..-65}]

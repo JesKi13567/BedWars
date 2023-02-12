@@ -9,7 +9,7 @@ tellraw @s[tag=!jk_bw_buy_success] [{"text":"无法购买","color":"red"},{"text
 playsound entity.villager.no player @s[tag=!jk_bw_buy_success]
 
 # 成功购买
-give @s[tag=jk_bw_buy_success] mooshroom_spawn_egg{display:{Name:'{"text":"TNT","color":"white","italic":false}',Lore:['""','{"text":"你没看错，但它真的是tnt","italic":false,"color":"gold"}']},CanPlaceOn:["#jk_bw:canplaceon"],CanDestroy:["#jk_bw:candestroy"],EntityTag:{id:"minecraft:tnt",Tags:["jk_bw","jk_bw_tnt","jk_bw_new_creatrue"],Fuse:10000s},jk_bw_tnt:1,HideFlags:28}
+give @s[tag=jk_bw_buy_success] mooshroom_spawn_egg{display:{Name:'{"text":"TNT","color":"white","italic":false}',Lore:['""','{"text":"放下后将在 3 秒后爆炸！","italic":false,"color":"gray"}','"你没看错，但它真的是tnt"']},CanPlaceOn:["#jk_bw:canplaceon"],CanDestroy:["#jk_bw:candestroy"],EntityTag:{id:"minecraft:tnt",Tags:["jk_bw","jk_bw_tnt","jk_bw_new_creatrue"],Fuse:10000s},jk_bw_tnt:1,HideFlags:28}
 tellraw @s[tag=jk_bw_buy_success] [{"text":"成功购买","color":"green"},{"text":" TNT","color":"gold","bold":true},"！"]
 playsound entity.experience_orb.pickup player @s[tag=jk_bw_buy_success]
 clear @s[tag=jk_bw_buy_success] gold_ingot 8

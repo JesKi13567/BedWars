@@ -1,5 +1,5 @@
 ## 检查游戏成功运行条件
-summon marker 0 2 0 {Tags:["jk_bw","jk_bw_start_check"]}
+summon marker 10110223 10 10110223 {Tags:["jk_bw","jk_bw_start_check"]}
 scoreboard players set @e[limit=1,tag=jk_bw_start_check] jk_bw_mem 0
 
 # 重新载入床和箱子

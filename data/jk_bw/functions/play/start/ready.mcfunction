@@ -25,17 +25,16 @@ kill @e[tag=jk_bw_res_summon]
 kill @e[tag=jk_bw_res_extra]
 
 # 全局
-forceload add 0 0
 #注：6w局总不能碰巧可以循环碰到吧...当然这个上限也可以调到21亿
 execute if score #current_game jk_bw_mem matches 60000.. run scoreboard players reset #current_game jk_bw_mem
 scoreboard players add #current_game jk_bw_mem 1
 scoreboard players set #gaming jk_bw_mem 1
 scoreboard players set #time jk_bw_mem 3001
 execute as @e[tag=jk_bw,tag=!jk_bw_res] at @s run data merge entity @s {CustomNameVisible:false}
-setblock 0 1 0 oak_sign destroy
+setblock 10110223 1 10110223 oak_sign destroy
 kill @e[type=item,nbt={Item:{id:"minecraft:oak_sign"}}]
 kill @e[tag=jk_bw_throw_mark]
-summon marker 0 1 0 {Tags:["jk_bw","jk_bw_throw_mark"]}
+summon marker 10110223 10 10110223 {Tags:["jk_bw","jk_bw_throw_mark"]}
 function jk_bw:load/init/display
 
 # 玩家

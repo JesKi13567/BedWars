@@ -6,6 +6,7 @@ gamerule doWeatherCycle false
 weather clear
 gamerule doDaylightCycle false
 time set day
+gamerule randomTickSpeed 0
 gamerule keepInventory true
 gamerule doLimitedCrafting true
 gamerule announceAdvancements false
