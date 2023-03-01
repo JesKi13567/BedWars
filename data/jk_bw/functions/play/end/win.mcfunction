@@ -22,9 +22,10 @@ scoreboard players add @a[team=jk_bw_blue,tag=!jk_bw_player_outed] jk_bw_PlayerW
 scoreboard players add @a[team=jk_bw_green,tag=!jk_bw_player_outed] jk_bw_PlayerWins 1
 scoreboard players add @a[team=jk_bw_yellow,tag=!jk_bw_player_outed] jk_bw_PlayerWins 1
 
-effect give @a[gamemode=adventure] slow_falling 9 0 true
+effect give @a[gamemode=adventure] levitation 10 0 true
+effect give @a[gamemode=adventure] slow_falling 11 0 true
 
 function jk_bw:play/end/rank
 
-tellraw @a ["",{"text":"\n本局游戏已结束，感谢大家游玩！","color":"red","bold":true},{"text":"\n将在10秒后清理地图...","color":"green"}]
+tellraw @a ["",{"text":"本局游戏已结束，感谢大家游玩！","color":"red","bold":true},{"text":"\n将在10秒后清理地图...","color":"green"}]
 schedule function jk_bw:play/end/restart 10s

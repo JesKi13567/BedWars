@@ -8,9 +8,3 @@ execute if score #gaming jk_bw_mem matches 0 as @e[limit=1,tag=jk_bw_clear_map,s
 
 ## 正式开始游戏
 execute if score #gaming jk_bw_mem matches 1 run function jk_bw:play/time/tick2
-
-## 游戏胜利
-# 胜利后防止落入虚空
-execute if score #gaming jk_bw_mem matches 2 store result score @a[gamemode=adventure] jk_bw_Temp run data get entity @s Pos[1]
-execute if score #gaming jk_bw_mem matches 2 run effect give @a[gamemode=adventure,scores={jk_bw_Temp=..0}] levitation 8 30
-execute if score #gaming jk_bw_mem matches 2 run effect give @a[gamemode=adventure] resistance 1 4

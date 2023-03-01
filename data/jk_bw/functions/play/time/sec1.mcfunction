@@ -36,7 +36,7 @@ team leave @a[team=jk_bw_admin,gamemode=!creative]
 team leave @a[team=!jk_bw_admin,tag=!jk_bw_player_reg]
 clear @a[tag=!jk_bw_player_reg,team=,gamemode=adventure]
 tellraw @a[tag=!jk_bw_player_reg,team=,gamemode=adventure] [{"text":"【⭐起床战争⭐】","color":"yellow"},{"text":"游戏已开始！你没有队伍，所以变成了旁观者！","color":"green"}]
-execute as @a[team=] at @s run gamemode spectator
+gamemode spectator @a[team=]
 tag @a[tag=jk_bw_player_reg,team=] remove jk_bw_player_reg
 
 # 游戏总计时（1局20分钟，死斗模式为最后5分钟）（测试模式除外）

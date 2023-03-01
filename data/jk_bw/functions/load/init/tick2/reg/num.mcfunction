@@ -5,9 +5,11 @@ effect give @a[scores={jk_bw_PlayerHp=..19}] regeneration 1 9 true
 effect give @a[scores={jk_bw_PlayerFood=..19}] saturation 1 9 true
 effect give @a weakness 1 0 true
 tag @a[gamemode=creative] add jk_bw_admin
+
 # 退出游戏处理
 execute as @a[scores={jk_bw_PlayerLeaveGame=1..}] at @s run function jk_bw:load/init/tick2/reg/leavegame
 scoreboard players reset @a jk_bw_PlayerLeaveGame
+
 ## 玩家报名
 execute unless score #test_mode jk_bw_mem matches 1 as @a[gamemode=adventure] at @s run function jk_bw:load/init/tick2/reg/player
 tag @a[tag=jk_bw_player_reg,gamemode=!adventure] remove jk_bw_player_reg
