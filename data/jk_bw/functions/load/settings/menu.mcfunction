@@ -1,8 +1,12 @@
 playsound block.note_block.bell player @s
 tag @s add jk_bw_admin
 function jk_bw:load/ticks/load
+function jk_bw:load/settings/version
 
 tellraw @a[tag=jk_bw_admin] [{"text":"\n\n\n\n\n\n\n\n\n\n=============","color":"green"},{"text":" 起床战争工具包 ","color":"yellow"},"============\n"]
+execute if score #version jk_bw_mem matches 17 run tellraw @a[tag=jk_bw_admin] {"text":"当前游戏版本：1.17.X","color":"yellow"}
+execute if score #version jk_bw_mem matches 18 run tellraw @a[tag=jk_bw_admin] {"text":"当前游戏版本：1.18.X","color":"yellow"}
+execute if score #version jk_bw_mem matches 19 run tellraw @a[tag=jk_bw_admin] {"text":"当前游戏版本：1.19.X","color":"yellow"}
 execute if score #test_mode jk_bw_mem matches 1 run tellraw @a[tag=jk_bw_admin] {"text":"注意：已开启测试模式！","color":"red","bold":true}
 tellraw @a[tag=jk_bw_admin] ["必看设置：",{"text":"[使用方法]","color":"gold","clickEvent":{"action":"run_command","value":"/function jk_bw:load/settings/tips"},"hoverEvent":{"action":"show_text","value":"※必看※"}},"  ",{"text":"[函数反馈]","color":"gray","clickEvent":{"action":"run_command","value":"/function jk_bw:load/settings/menu/feedback"},"hoverEvent":{"action":"show_text","value":"没啥事的话不建议点击此选项"}},"  ",{"text":"[测试模式]","color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/function jk_bw:load/settings/menu/test_mode"},"hoverEvent":{"action":"show_text","value":"没人玩？但是想看看游戏内容？那就点我！"}}]
 
@@ -17,5 +21,5 @@ tellraw @a[tag=jk_bw_admin] ["队伍点设置：",{"text":"[这是一个重要�
 
 tellraw @a[tag=jk_bw_admin] ["设置资源点：",{"text":"[钻石点]","color":"aqua","clickEvent":{"action":"run_command","value":"/function jk_bw:load/settings/menu/res/diamond"}},"  ",{"text":"[绿宝石点]","color":"green","clickEvent":{"action":"run_command","value":"/function jk_bw:load/settings/menu/res/emerald"}},"\n清除资源点：",{"text":"[钻石点]","color":"gray","clickEvent":{"action":"run_command","value":"/function jk_bw:load/settings/menu/res/diamond_clear"}},"  ",{"text":"[绿宝石点]","color":"gray","clickEvent":{"action":"run_command","value":"/function jk_bw:load/settings/menu/res/emerald_clear"}}]
 
-execute unless score #test_mode jk_bw_mem matches 1 run tellraw @a[tag=jk_bw_admin] [{"text":"\n==============","color":"green"},{"text":" [开始游戏] ","color":"light_purple","hoverEvent":{"action":"show_text","value":"请玩家们使用物品栏最后一格报名！"}},"==============\n"]
-execute if score #test_mode jk_bw_mem matches 1 run tellraw @a[tag=jk_bw_admin] [{"text":"\n==============","color":"green"},{"text":" [开始游戏] ","color":"light_purple","underlined":true,"clickEvent":{"action":"run_command","value":"/function jk_bw:play/start/ready"},"hoverEvent":{"action":"show_text","value":"以测试模式启动"}},"==============\n"]
+execute unless score #test_mode jk_bw_mem matches 1 run tellraw @a[tag=jk_bw_admin] [{"text":"\n==============","color":"green"},{"text":" [开始游戏] ","color":"light_purple","hoverEvent":{"action":"show_text","value":"请玩家们使用物品栏最后一格报名！"}},"=============="]
+execute if score #test_mode jk_bw_mem matches 1 run tellraw @a[tag=jk_bw_admin] [{"text":"\n==============","color":"green"},{"text":" [开始游戏] ","color":"light_purple","underlined":true,"clickEvent":{"action":"run_command","value":"/function jk_bw:play/start/ready"},"hoverEvent":{"action":"show_text","value":"以测试模式启动"}},"=============="]

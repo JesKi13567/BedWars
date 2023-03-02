@@ -35,7 +35,7 @@ execute if entity @e[tag=jk_bw_spawn_yellow,limit=1,scores={jk_bw_TeamSharpness=
 
 # 指南针
 execute store success score @s jk_bw_PlayerHasCompass run clear @s compass 0
-give @s[scores={jk_bw_PlayerHasCompass=0},team=jk_bw_red] compass{display:{Name:'"红队指南针"',Lore:['{"text":"开启队伍箱子的钥匙","color":"gray","italic":false}']},CanDestroy:["#jk_bw:candestroy"],HideFlags:28,jk_bw_clean:1}
-give @s[scores={jk_bw_PlayerHasCompass=0},team=jk_bw_blue] compass{display:{Name:'"蓝队指南针"',Lore:['{"text":"开启队伍箱子的钥匙","color":"gray","italic":false}']},CanDestroy:["#jk_bw:candestroy"],HideFlags:28,jk_bw_clean:1}
-give @s[scores={jk_bw_PlayerHasCompass=0},team=jk_bw_green] compass{display:{Name:'"绿队指南针"',Lore:['{"text":"开启队伍箱子的钥匙","color":"gray","italic":false}']},CanDestroy:["#jk_bw:candestroy"],HideFlags:28,jk_bw_clean:1}
-give @s[scores={jk_bw_PlayerHasCompass=0},team=jk_bw_yellow] compass{display:{Name:'"黄队指南针"',Lore:['{"text":"开启队伍箱子的钥匙","color":"gray","italic":false}']},CanDestroy:["#jk_bw:candestroy"],HideFlags:28,jk_bw_clean:1}
+give @s[scores={jk_bw_PlayerHasCompass=0},team=jk_bw_red] compass{display:{Name:'"红队指南针"',Lore:['{"text":"开启自家队伍箱的钥匙，","color":"gray","italic":false}','{"text":"被团灭队伍不需要钥匙解锁。","color":"gray","italic":false}']},CanDestroy:["#jk_bw:candestroy"],HideFlags:28,jk_bw_clean:1}
+give @s[scores={jk_bw_PlayerHasCompass=0},team=jk_bw_blue] compass{display:{Name:'"蓝队指南针"',Lore:['{"text":"开启自家队伍箱的钥匙，","color":"gray","italic":false}','{"text":"被团灭队伍不需要钥匙解锁。","color":"gray","italic":false}']},CanDestroy:["#jk_bw:candestroy"],HideFlags:28,jk_bw_clean:1}
+give @s[scores={jk_bw_PlayerHasCompass=0},team=jk_bw_green] compass{display:{Name:'"绿队指南针"',Lore:['{"text":"开启自家队伍箱的钥匙，","color":"gray","italic":false}','{"text":"被团灭队伍不需要钥匙解锁。","color":"gray","italic":false}']},CanDestroy:["#jk_bw:candestroy"],HideFlags:28,jk_bw_clean:1}
+give @s[scores={jk_bw_PlayerHasCompass=0},team=jk_bw_yellow] compass{display:{Name:'"黄队指南针"',Lore:['{"text":"开启自家队伍箱的钥匙，","color":"gray","italic":false}','{"text":"被团灭队伍不需要钥匙解锁。","color":"gray","italic":false}']},CanDestroy:["#jk_bw:candestroy"],HideFlags:28,jk_bw_clean:1}

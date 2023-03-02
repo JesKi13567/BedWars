@@ -1,4 +1,4 @@
-#scoreboard objectives remove jk_bw_mem
+scoreboard objectives remove jk_bw_mem
 scoreboard objectives remove jk_bw_Temp
 scoreboard objectives remove jk_bw_display
 

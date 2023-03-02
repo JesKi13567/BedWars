@@ -7,5 +7,5 @@ execute as @s[scores={jk_bw_mem=..0}] run bossbar set jk_bw_clear_map visible fa
 kill @s[scores={jk_bw_mem=..0}]
 
 execute store result score @s jk_bw_Temp run data get entity @s Pos[1]
-execute as @s[scores={jk_bw_Temp=..-64}] run bossbar set jk_bw_clear_map visible false
-kill @s[scores={jk_bw_Temp=..-65}]
+execute if score #version jk_bw_mem matches 18.. run function jk_bw:load/init/tick2/map/clear_18
+execute if score #version jk_bw_mem matches 17 run function jk_bw:load/init/tick2/map/clear_17

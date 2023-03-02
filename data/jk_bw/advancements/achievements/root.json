@@ -13,7 +13,7 @@
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": true,
-    "background": "minecraft:textures/block/bedrock.png"
+    "background": "minecraft:textures/block/white_wool.png"
   },
   "criteria": {
     "command": {

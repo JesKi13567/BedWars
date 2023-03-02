@@ -27,61 +27,61 @@ execute as @s[scores={jk_bw_PlayerOwnEmeralds=1..}] run tellraw @p[tag=jk_bw_mur
 
 ## 给资源
 # 检查物品栏
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill_"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill_"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill0,limit=1] Item set from entity @s Inventory[{Slot:-106b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill0"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill0"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill0,limit=1] Item set from entity @s Inventory[{Slot:0b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill1"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill1"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill1,limit=1] Item set from entity @s Inventory[{Slot:1b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill2"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill2"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill2,limit=1] Item set from entity @s Inventory[{Slot:2b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill3"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill3"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill3,limit=1] Item set from entity @s Inventory[{Slot:3b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill4"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill4"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill4,limit=1] Item set from entity @s Inventory[{Slot:4b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill5"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill5"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill5,limit=1] Item set from entity @s Inventory[{Slot:5b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill6"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill6"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill6,limit=1] Item set from entity @s Inventory[{Slot:6b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill7"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill7"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill7,limit=1] Item set from entity @s Inventory[{Slot:7b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill8"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill8"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill8,limit=1] Item set from entity @s Inventory[{Slot:8b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill9"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill9"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill9,limit=1] Item set from entity @s Inventory[{Slot:9b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill10"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill10"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill10,limit=1] Item set from entity @s Inventory[{Slot:10b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill11"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill11"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill11,limit=1] Item set from entity @s Inventory[{Slot:11b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill12"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill12"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill12,limit=1] Item set from entity @s Inventory[{Slot:12b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill13"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill13"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill13,limit=1] Item set from entity @s Inventory[{Slot:13b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill14"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill14"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill14,limit=1] Item set from entity @s Inventory[{Slot:14b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill15"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill15"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill15,limit=1] Item set from entity @s Inventory[{Slot:15b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill16"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill16"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill16,limit=1] Item set from entity @s Inventory[{Slot:16b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill17"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill17"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill17,limit=1] Item set from entity @s Inventory[{Slot:17b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill18"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill18"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill18,limit=1] Item set from entity @s Inventory[{Slot:18b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill19"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill19"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill19,limit=1] Item set from entity @s Inventory[{Slot:19b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill20"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill20"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill20,limit=1] Item set from entity @s Inventory[{Slot:20b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill21"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill21"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill21,limit=1] Item set from entity @s Inventory[{Slot:21b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill22"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill22"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill22,limit=1] Item set from entity @s Inventory[{Slot:22b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill23"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill23"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill23,limit=1] Item set from entity @s Inventory[{Slot:23b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill24"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill24"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill24,limit=1] Item set from entity @s Inventory[{Slot:24b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill25"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill25"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill25,limit=1] Item set from entity @s Inventory[{Slot:25b}]
-summon item 10110223 9 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill26"]}
+summon item 10110223 2 10110223 {Item:{id:"minecraft:black_wool",Count:1b},Tags:["jk_bw_commonkill_item","jk_bw_commonkill26"]}
 data modify entity @e[type=item,tag=jk_bw_commonkill26,limit=1] Item set from entity @s Inventory[{Slot:26b}]
 
 # 清理

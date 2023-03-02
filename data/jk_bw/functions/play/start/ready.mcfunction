@@ -30,9 +30,8 @@ execute if score #current_game jk_bw_mem matches 60000.. run scoreboard players 
 scoreboard players add #current_game jk_bw_mem 1
 scoreboard players set #gaming jk_bw_mem 1
 scoreboard players set #time jk_bw_mem 3001
-execute as @e[tag=jk_bw,tag=!jk_bw_res] at @s run data merge entity @s {CustomNameVisible:false}
-setblock 10110223 1 10110223 oak_sign destroy
-kill @e[type=item,nbt={Item:{id:"minecraft:oak_sign"}}]
+function jk_bw:play/start/multi_mode
+execute as @e[tag=jk_bw,tag=!jk_bw_res,tag=!jk_bw_shop] at @s run data merge entity @s {CustomNameVisible:false}
 kill @e[tag=jk_bw_throw_mark]
 summon marker 10110223 10 10110223 {Tags:["jk_bw","jk_bw_throw_mark"]}
 function jk_bw:load/init/display
@@ -59,9 +58,7 @@ tag @a remove jk_bw_player_outed
 effect clear @a
 effect give @a resistance 5 4 true
 effect give @a instant_health 1 20 true
-advancement grant @a[tag=!jk_bw_recipe] through recipes/root
-recipe take @a[tag=!jk_bw_recipe] *
-tag @a[tag=!jk_bw_recipe] add jk_bw_recipe
+
 item replace entity @a enderchest.0 with air
 item replace entity @a enderchest.1 with air
 item replace entity @a enderchest.2 with air

@@ -1,0 +1,1 @@
+tag @s[nbt={ActiveEffects:[{Id:26}]}] add jk_bw_lucky

@@ -10,7 +10,8 @@ function jk_bw:play/shop/global
 
 # 防止旁观者自杀
 execute as @a[gamemode=spectator] at @s store result score @s jk_bw_Temp run data get entity @s Pos[1]
-tp @a[gamemode=spectator,scores={jk_bw_Temp=..-80}] @e[limit=1,tag=jk_bw_worldspawn]
+execute if score #version jk_bw_mem matches 18.. run tp @a[gamemode=spectator,scores={jk_bw_Temp=..-90}] @e[limit=1,tag=jk_bw_worldspawn]
+execute if score #version jk_bw_mem matches 17 run tp @a[gamemode=spectator,scores={jk_bw_Temp=..-30}] @e[limit=1,tag=jk_bw_worldspawn]
 
 # 掉落物处理
 execute as @e[type=item,tag=!jk_bw] at @s unless entity @s[nbt={Item:{id:"minecraft:arrow"}}] unless entity @s[nbt={Item:{id:"minecraft:fire_charge"}}] run data merge entity @s {Item:{tag:{CanPlaceOn:["#jk_bw:canplaceon"],CanDestroy:["#jk_bw:candestroy"],HideFlags:28}},Tags:["jk_bw"]}

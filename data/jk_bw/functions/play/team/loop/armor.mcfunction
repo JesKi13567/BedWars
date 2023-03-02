@@ -1,12 +1,14 @@
 ## 药水效果处理
 # 隐身处理（抗性减免 40 %）
 tag @s[tag=jk_bw_invisible] remove jk_bw_invisible
-tag @s[nbt={ActiveEffects:[{Id:14b}]}] add jk_bw_invisible
+execute if score #version jk_bw_mem matches ..18 run function jk_bw:play/team/loop/effect_nbt/1_18
+execute if score #version jk_bw_mem matches 19 run function jk_bw:play/team/loop/effect_nbt/1_19
 effect give @s[tag=jk_bw_invisible] resistance 1 1 true
 
 # 幸运药水
 tag @s[tag=jk_bw_lucky] remove jk_bw_lucky
-tag @s[nbt={ActiveEffects:[{Id:26b}]}] add jk_bw_lucky
+execute if score #version jk_bw_mem matches ..18 run function jk_bw:play/team/loop/effect_nbt/2_18
+execute if score #version jk_bw_mem matches 19 run function jk_bw:play/team/loop/effect_nbt/2_19
 
 ## 盔甲处理
 execute unless score @s jk_bw_PlayerArmorLevels matches 1.. run scoreboard players set @s jk_bw_PlayerArmorLevels 0
