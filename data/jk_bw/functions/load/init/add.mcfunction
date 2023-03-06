@@ -91,6 +91,3 @@ team modify jk_bw_npc collisionRule never
 
 # 游戏规则
 function jk_bw:load/init/gamerule
-
-# nbt物品初始化
-function jk_bw:load/init/nbt
