@@ -1,3 +1,4 @@
+datapack disable vanilla
 playsound block.note_block.bell player @s
 tag @s add jk_bw_admin
 function jk_bw:load/ticks/load
