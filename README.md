@@ -12,5 +12,3 @@
 因为是工具包，所以配置好主菜单设置就能游玩了。
 
 不论是否为测试模式，都请把**红队**的出生点和床点放好！
-
-[![Page Views Count](https://badges.toozhao.com/badges/01GV853W6B7M8BG9Q993021J5T/green.svg)](https://badges.toozhao.com/stats/01GV853W6B7M8BG9Q993021J5T "Get your own page views count badge on badges.toozhao.com")
