@@ -16,6 +16,6 @@ playsound entity.villager.no player @s[tag=!jk_bw_buy_success]
 # 成功购买
 tellraw @s[tag=jk_bw_buy_success] [{"text":"成功升级为","color":"green"},{"text":" 钻石镐","color":"gold","bold":true},"！"]
 playsound entity.experience_orb.pickup player @s[tag=jk_bw_buy_success]
-scoreboard players add @s[tag=jk_bw_buy_success] jk_bw_PlayerAxeLevels 1
+scoreboard players add @s[tag=jk_bw_buy_success] jk_bw_PlayerPickaxeLevels 1
 execute unless score #exp_mode jk_bw_mem matches 1 run clear @s[tag=jk_bw_buy_success] gold_ingot 6
 execute if score #exp_mode jk_bw_mem matches 1 run scoreboard players remove @s[tag=jk_bw_buy_success] jk_bw_PlayerOwnExpLevelsReal 30
