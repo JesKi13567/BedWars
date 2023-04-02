@@ -1,6 +1,7 @@
 # 全局计分板
 function jk_bw:load/init/mems
 scoreboard objectives add jk_bw_Temp dummy "暂时值"
+scoreboard objectives add jk_bw_CurrentGame dummy "当前游戏局数"
 
 # 队伍计分板
 scoreboard objectives add jk_bw_TeamAlive dummy "队伍存活人数"
@@ -30,8 +31,9 @@ scoreboard objectives add jk_bw_PlayerBreakYellow mined:yellow_bed "玩家破坏
 scoreboard objectives add jk_bw_PlayerBrokeBad dummy "玩家破坏自己队伍床"
 scoreboard objectives add jk_bw_PlayerBrokeBed dummy "玩家破坏了床"
 scoreboard objectives add jk_bw_PlayerBreakBeds dummy "玩家破坏床数"
-#scoreboard objectives add jk_bw_PlayerExecuseTime dummy "玩家原谅时长"
+scoreboard objectives add jk_bw_PlayerExecuseTime dummy "玩家原谅时长"
 scoreboard objectives add jk_bw_PlayerKills dummy "玩家击杀数"
+scoreboard objectives add jk_bw_PlayerKillsCount dummy "玩家击杀数成就记录"
 #scoreboard objectives add jk_bw_PlayerFinalKills dummy "玩家最终击杀数"
 scoreboard objectives add jk_bw_PlayerDeathImp deathCount "玩家死亡接口"
 scoreboard objectives add jk_bw_PlayerDeath dummy "玩家死亡数"
@@ -55,8 +57,11 @@ scoreboard objectives add jk_bw_PlayerUseEgg minecraft.used:egg "玩家使用搭
 scoreboard objectives add jk_bw_PlayerUseSnowball minecraft.used:snowball "玩家使用蠹虫蛋"
 scoreboard objectives add jk_bw_PlayerUseTower minecraft.used:husk_spawn_egg "玩家使用快速建造塔"
 scoreboard objectives add jk_bw_PlayerUseSpecialCD dummy "玩家使用特殊物品冷却"
+scoreboard objectives add jk_bw_PlayerUUID dummy "玩家UUID"
+scoreboard objectives add jk_bw_PlayerDamageType dummy "玩家受伤类型"
 
 # 实体
+scoreboard objectives add jk_bw_EntityY dummy "实体所在高度"
 scoreboard objectives add jk_bw_EntityTime dummy "实体存活时间"
 
 # bossbar

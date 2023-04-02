@@ -22,18 +22,18 @@ tellraw @s[tag=jk_bw_team_enough_trap] [{"text":"无法购买","color":"red"},{"
 playsound entity.villager.no player @s[tag=jk_bw_team_enough_trap]
 
 execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success] run scoreboard players operation #shop_temp jk_bw_mem = @s jk_bw_PlayerOwnDiamonds
-execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_red] if entity @e[tag=jk_bw_bed_red,limit=1,scores={jk_bw_TeamTrapNum=0}] run scoreboard players operation #shop_temp jk_bw_mem -= #1 jk_bw_mem
-execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_red] if entity @e[tag=jk_bw_bed_red,limit=1,scores={jk_bw_TeamTrapNum=1}] run scoreboard players operation #shop_temp jk_bw_mem -= #2 jk_bw_mem
-execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_red] if entity @e[tag=jk_bw_bed_red,limit=1,scores={jk_bw_TeamTrapNum=2}] run scoreboard players operation #shop_temp jk_bw_mem -= #4 jk_bw_mem
-execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_blue] if entity @e[tag=jk_bw_bed_blue,limit=1,scores={jk_bw_TeamTrapNum=0}] run scoreboard players operation #shop_temp jk_bw_mem -= #1 jk_bw_mem
-execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_blue] if entity @e[tag=jk_bw_bed_blue,limit=1,scores={jk_bw_TeamTrapNum=1}] run scoreboard players operation #shop_temp jk_bw_mem -= #2 jk_bw_mem
-execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_blue] if entity @e[tag=jk_bw_bed_blue,limit=1,scores={jk_bw_TeamTrapNum=2}] run scoreboard players operation #shop_temp jk_bw_mem -= #4 jk_bw_mem
-execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_green] if entity @e[tag=jk_bw_bed_green,limit=1,scores={jk_bw_TeamTrapNum=0}] run scoreboard players operation #shop_temp jk_bw_mem -= #1 jk_bw_mem
-execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_green] if entity @e[tag=jk_bw_bed_green,limit=1,scores={jk_bw_TeamTrapNum=1}] run scoreboard players operation #shop_temp jk_bw_mem -= #2 jk_bw_mem
-execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_green] if entity @e[tag=jk_bw_bed_green,limit=1,scores={jk_bw_TeamTrapNum=2}] run scoreboard players operation #shop_temp jk_bw_mem -= #4 jk_bw_mem
-execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_yellow] if entity @e[tag=jk_bw_bed_yellow,limit=1,scores={jk_bw_TeamTrapNum=0}] run scoreboard players operation #shop_temp jk_bw_mem -= #1 jk_bw_mem
-execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_yellow] if entity @e[tag=jk_bw_bed_yellow,limit=1,scores={jk_bw_TeamTrapNum=1}] run scoreboard players operation #shop_temp jk_bw_mem -= #2 jk_bw_mem
-execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_yellow] if entity @e[tag=jk_bw_bed_yellow,limit=1,scores={jk_bw_TeamTrapNum=2}] run scoreboard players operation #shop_temp jk_bw_mem -= #4 jk_bw_mem
+execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_red] if entity @e[tag=jk_bw_bed_red,limit=1,scores={jk_bw_TeamTrapNum=0}] run scoreboard players remove #shop_temp jk_bw_mem 1
+execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_red] if entity @e[tag=jk_bw_bed_red,limit=1,scores={jk_bw_TeamTrapNum=1}] run scoreboard players remove #shop_temp jk_bw_mem 2
+execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_red] if entity @e[tag=jk_bw_bed_red,limit=1,scores={jk_bw_TeamTrapNum=2}] run scoreboard players remove #shop_temp jk_bw_mem 4
+execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_blue] if entity @e[tag=jk_bw_bed_blue,limit=1,scores={jk_bw_TeamTrapNum=0}] run scoreboard players remove #shop_temp jk_bw_mem 1
+execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_blue] if entity @e[tag=jk_bw_bed_blue,limit=1,scores={jk_bw_TeamTrapNum=1}] run scoreboard players remove #shop_temp jk_bw_mem 2
+execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_blue] if entity @e[tag=jk_bw_bed_blue,limit=1,scores={jk_bw_TeamTrapNum=2}] run scoreboard players remove #shop_temp jk_bw_mem 4
+execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_green] if entity @e[tag=jk_bw_bed_green,limit=1,scores={jk_bw_TeamTrapNum=0}] run scoreboard players remove #shop_temp jk_bw_mem 1
+execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_green] if entity @e[tag=jk_bw_bed_green,limit=1,scores={jk_bw_TeamTrapNum=1}] run scoreboard players remove #shop_temp jk_bw_mem 2
+execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_green] if entity @e[tag=jk_bw_bed_green,limit=1,scores={jk_bw_TeamTrapNum=2}] run scoreboard players remove #shop_temp jk_bw_mem 4
+execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_yellow] if entity @e[tag=jk_bw_bed_yellow,limit=1,scores={jk_bw_TeamTrapNum=0}] run scoreboard players remove #shop_temp jk_bw_mem 1
+execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_yellow] if entity @e[tag=jk_bw_bed_yellow,limit=1,scores={jk_bw_TeamTrapNum=1}] run scoreboard players remove #shop_temp jk_bw_mem 2
+execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success,team=jk_bw_yellow] if entity @e[tag=jk_bw_bed_yellow,limit=1,scores={jk_bw_TeamTrapNum=2}] run scoreboard players remove #shop_temp jk_bw_mem 4
 execute as @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success] run scoreboard players operation #shop_temp jk_bw_mem *= #-1 jk_bw_mem
 tellraw @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success] [{"text":"无法购买","color":"red"},{"text":" 挖掘疲劳陷阱","color":"yellow","bold":true},"，你还需要 ",{"score":{"name": "#shop_temp","objective":"jk_bw_mem"},"color":"yellow"}," 块钻石！"]
 playsound entity.villager.no player @s[tag=!jk_bw_team_enough_trap,tag=!jk_bw_buy_success]

@@ -1,12 +1,11 @@
 ## 死亡提示
 # 普通击杀
-#execute as @s[tag=jk_bw_dead_explode] run tellraw @a [{"selector":"@s"},{"text":" 在与 ","color":"gray"},{"selector":"@p[tag=jk_bw_murder]"},{"text":" 战斗时，爆炸了。","color":"gray"}]
-#execute as @s[tag=jk_bw_dead_wither] run tellraw @a [{"selector":"@s"},{"text":" 在与 ","color":"gray"},{"selector":"@p[tag=jk_bw_murder]"},{"text":" 战斗时，凋零了。","color":"gray"}]
-#execute as @s[tag=jk_bw_dead_bug] run tellraw @a [{"selector":"@s"},{"text":" 被虫子啃掉脚趾后，又被 ","color":"gray"},{"selector":"@p[tag=jk_bw_murder]"},{"text":" 趁机打败了。","color":"gray"}]
-#execute as @s[tag=jk_bw_dead_golem] run tellraw @a [{"selector":"@s"},{"text":" 被梦境守护者锤扁后，又被 ","color":"gray"},{"selector":"@p[tag=jk_bw_murder]"},{"text":" 击垮了。","color":"gray"}]
-#execute as @s[tag=!jk_bw_dead_void,tag=!jk_bw_dead_explode,tag=!jk_bw_dead_wither,tag=!jk_bw_dead_bug,tag=!jk_bw_dead_golem] run tellraw @a ["",{"selector":"@s"},{"text":" 被 ","color":"gray"},{"selector":"@p[tag=jk_bw_murder]"},{"text":" 杀死了。","color":"gray"}]
-execute as @s[tag=jk_bw_dead_void] run tellraw @a [{"selector":"@s"},{"text":" 在与 ","color":"gray"},{"selector":"@p[tag=jk_bw_murder]"},{"text":" 战斗时，落入虚空。","color":"gray"}]
-execute as @s[tag=!jk_bw_dead_void] run tellraw @a [{"selector":"@s"},{"text":" 被 ","color":"gray"},{"selector":"@p[tag=jk_bw_murder]"},{"text":" 杀死了。","color":"gray"}]
+execute as @s[scores={jk_bw_PlayerDamageType=0}] run tellraw @a [{"selector":"@s"},{"text":" 在与 ","color":"gray"},{"selector":"@p[tag=jk_bw_murder]"},{"text":" 战斗时，摔成了肉酱。","color":"gray"}]
+execute as @s[scores={jk_bw_PlayerDamageType=1}] run tellraw @a [{"selector":"@s"},{"text":" 在与 ","color":"gray"},{"selector":"@p[tag=jk_bw_murder]"},{"text":" 战斗时，落入虚空。","color":"gray"}]
+execute as @s[scores={jk_bw_PlayerDamageType=2}] run tellraw @a [{"selector":"@s"},{"text":" 被 ","color":"gray"},{"selector":"@p[tag=jk_bw_murder]"},{"text":" 杀死了。","color":"gray"}]
+execute as @s[scores={jk_bw_PlayerDamageType=3}] run tellraw @a [{"selector":"@s"},{"text":" 被 ","color":"gray"},{"selector":"@p[tag=jk_bw_murder]"},{"text":" 的蠹虫啃掉了脚趾。","color":"gray"}]
+execute as @s[scores={jk_bw_PlayerDamageType=4}] run tellraw @a [{"selector":"@s"},{"text":" 被 ","color":"gray"},{"selector":"@p[tag=jk_bw_murder]"},{"text":" 的铁傀儡砸扁了。","color":"gray"}]
+execute as @s[scores={jk_bw_PlayerDamageType=5}] run tellraw @a [{"selector":"@s"},{"text":" 被 ","color":"gray"},{"selector":"@p[tag=jk_bw_murder]"},{"text":" 炸死了。","color":"gray"}]
 
 # 最终击杀
 execute as @s[team=jk_bw_red] if entity @e[limit=1,tag=jk_bw_bed_red,tag=jk_bw_bed_no_block] run tellraw @a {"text":"最终击杀！","color":"aqua","bold":true}
@@ -20,6 +19,9 @@ execute as @s[team=jk_bw_green] if entity @e[limit=1,tag=jk_bw_bed_green,tag=jk_
 execute as @s[team=jk_bw_yellow] if entity @e[limit=1,tag=jk_bw_bed_yellow,tag=jk_bw_bed_no_block] run tellraw @p[tag=jk_bw_murder] {"text":"对手末影箱内容物已掉落在对方基地资源点中。","color":"green"}
 
 # 物资给予
+execute if score #exp_mode jk_bw_mem matches 1 as @s[scores={jk_bw_PlayerOwnExpLevelsReal=1..}] run tellraw @p[tag=jk_bw_murder] [{"text":"+","color":"green"},{"score":{"name":"@s","objective":"jk_bw_PlayerOwnExpLevelsReal"}},"经验"]
+execute if score #exp_mode jk_bw_mem matches 1 run scoreboard players operation @p[tag=jk_bw_murder] jk_bw_PlayerOwnExpLevelsReal += @s jk_bw_PlayerOwnExpLevelsReal
+
 execute as @s[scores={jk_bw_PlayerOwnIrons=1..}] run tellraw @p[tag=jk_bw_murder] ["+",{"score":{"name":"@s","objective":"jk_bw_PlayerOwnIrons"}},"铁锭"]
 execute as @s[scores={jk_bw_PlayerOwnGolds=1..}] run tellraw @p[tag=jk_bw_murder] [{"text":"+","color":"gold"},{"score":{"name":"@s","objective":"jk_bw_PlayerOwnGolds"}},"金锭"]
 execute as @s[scores={jk_bw_PlayerOwnDiamonds=1..}] run tellraw @p[tag=jk_bw_murder] [{"text":"+","color":"aqua"},{"score":{"name":"@s","objective":"jk_bw_PlayerOwnDiamonds"}},"钻石"]
@@ -96,9 +98,8 @@ tp @e[tag=jk_bw_commonkill_res] @p[tag=jk_bw_murder]
 
 # 击杀数 +1
 scoreboard players add @p[tag=jk_bw_murder] jk_bw_PlayerKills 1
+scoreboard players add @p[tag=jk_bw_murder] jk_bw_PlayerKillsCount 1
 
 # 清理tag
 tag @a remove jk_bw_murder
 tag @a remove jk_bw_victim
-
-execute as @a at @s run function jk_bw:play/death/tag

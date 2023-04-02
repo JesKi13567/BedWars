@@ -1,5 +1,6 @@
 #scoreboard objectives remove jk_bw_mem
 scoreboard objectives remove jk_bw_Temp
+scoreboard objectives remove jk_bw_CurrentGame
 scoreboard objectives remove jk_bw_display
 
 scoreboard objectives remove jk_bw_TeamAlive
@@ -25,8 +26,9 @@ scoreboard objectives remove jk_bw_PlayerBreakYellow
 scoreboard objectives remove jk_bw_PlayerBrokeBad
 scoreboard objectives remove jk_bw_PlayerBrokeBed
 scoreboard objectives remove jk_bw_PlayerBreakBeds
-#scoreboard objectives remove jk_bw_PlayerExecuseTime
+scoreboard objectives remove jk_bw_PlayerExecuseTime
 scoreboard objectives remove jk_bw_PlayerKills
+scoreboard objectives remove jk_bw_PlayerKillsCount
 #scoreboard objectives remove jk_bw_PlayerFinalKills
 scoreboard objectives remove jk_bw_PlayerDeathImp
 scoreboard objectives remove jk_bw_PlayerDeath
@@ -50,6 +52,9 @@ scoreboard objectives remove jk_bw_PlayerUseEgg
 scoreboard objectives remove jk_bw_PlayerUseSnowball
 scoreboard objectives remove jk_bw_PlayerUseTower
 scoreboard objectives remove jk_bw_PlayerUseSpecialCD
+scoreboard objectives remove jk_bw_PlayerUUID
+scoreboard objectives remove jk_bw_PlayerDamageType
+scoreboard objectives remove jk_bw_EntityY
 scoreboard objectives remove jk_bw_EntityTime
 
 team remove jk_bw_red

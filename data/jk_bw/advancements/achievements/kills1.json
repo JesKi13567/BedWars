@@ -30,7 +30,7 @@
         "player": [
           {
             "scores": {
-              "jk_bw_PlayerKills": {
+              "jk_bw_PlayerKillsCount": {
                 "min": 10
               }
             },

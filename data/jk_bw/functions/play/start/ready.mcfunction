@@ -25,7 +25,7 @@ kill @e[tag=jk_bw_res_summon]
 kill @e[tag=jk_bw_res_extra]
 
 # 全局
-#注：6w局总不能碰巧可以循环碰到吧...当然这个上限也可以调到21亿
+# ↓6w局总不能碰巧可以循环碰到吧...当然这个上限也可以调到21亿
 execute if score #current_game jk_bw_mem matches 60000.. run scoreboard players reset #current_game jk_bw_mem
 scoreboard players add #current_game jk_bw_mem 1
 scoreboard players set #gaming jk_bw_mem 1
@@ -41,11 +41,11 @@ scoreboard players reset @a jk_bw_PlayerArmorLevels
 scoreboard players reset @a jk_bw_PlayerAxeLevels
 scoreboard players reset @a jk_bw_PlayerPickaxeLevels
 scoreboard players reset @a jk_bw_PlayerHasShears
+scoreboard players reset @a jk_bw_PlayerOwnExpLevelsReal
 scoreboard players reset @a jk_bw_PlayerDeathImp
 scoreboard players reset @a jk_bw_PlayerRebornTime
 scoreboard players reset @a jk_bw_PlayerKills
-#注释：此处对于玩家的 jk_bw_TeamAlive 本质是当前游戏局数，懒得新开计分板了
-scoreboard players operation @a jk_bw_TeamAlive = #current_game jk_bw_mem
+scoreboard players operation @a jk_bw_CurrentGame = #current_game jk_bw_mem
 xp set @a 0 levels
 xp set @a 0 points
 title @a title ""
@@ -96,3 +96,7 @@ kill @e[tag=jk_bw_clear_map]
 
 # 测试用
 execute if score #test_mode jk_bw_mem matches 1 run function jk_bw:play/start/test_mode
+
+# 记录UUID
+execute as @a at @s store result score @s jk_bw_PlayerUUID run data get entity @s UUID[0]
+execute as @a at @s run scoreboard players operation @s jk_bw_Temp = @s jk_bw_PlayerUUID

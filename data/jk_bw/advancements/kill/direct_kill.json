@@ -1,16 +1,16 @@
 {
   "criteria": {
     "jk_bw": {
-      "trigger": "minecraft:player_hurt_entity",
+      "trigger": "minecraft:entity_killed_player",
       "conditions": {
         "entity": {
-          "type": "#jk_bw:hurt"
+          "type": "player"
         }
       }
     }
   },
   "rewards": {
-    "function": "jk_bw:play/kill/hurt"
+    "function": "jk_bw:play/kill/direct_kill"
   },
   "requirements": [
     [

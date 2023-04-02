@@ -5,8 +5,8 @@
 scoreboard players reset #shop_temp jk_bw_mem
 
 # 商店
-function jk_bw:play/shop/item/shop
-execute as @e[type=chest_minecart,tag=jk_bw_shop_team] at @s run function jk_bw:play/shop/team/shop
+function jk_bw:play/shop/gui/global
 
-# 陷阱
+# 陷阱的展示与触发
+execute as @e[type=chest_minecart,tag=jk_bw_shop_team] at @s run function jk_bw:play/shop/team/trap_show
 function jk_bw:play/shop/team/trap/trigger/global

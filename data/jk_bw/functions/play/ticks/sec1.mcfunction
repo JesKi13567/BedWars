@@ -5,6 +5,9 @@ execute as @a[team=!jk_bw_admin,team=!,tag=!jk_bw_player_outed,scores={jk_bw_Pla
 # 使用物品冷却
 execute as @a[gamemode=adventure,tag=jk_bw_player_reg,tag=!jk_bw_player_outed,scores={jk_bw_PlayerUseSpecialCD=1..}] at @s run scoreboard players remove @s jk_bw_PlayerUseSpecialCD 1
 
+# 受伤原谅时长
+execute as @a[gamemode=adventure,tag=jk_bw_player_reg,tag=!jk_bw_player_outed] at @s run function jk_bw:play/kill/execuse
+
 # 资源生成（测试模式除外）
 execute unless score #test_mode jk_bw_mem matches 1 run function jk_bw:play/res/global
 

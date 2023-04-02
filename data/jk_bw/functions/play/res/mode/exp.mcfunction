@@ -1,7 +1,7 @@
 # 经验模式
-scoreboard players operation @s jk_bw_PlayerOwnGolds *= #10 jk_bw_mem
-scoreboard players operation @s jk_bw_PlayerOwnDiamonds *= #40 jk_bw_mem
-scoreboard players operation @s jk_bw_PlayerOwnEmeralds *= #100 jk_bw_mem
+scoreboard players operation @s jk_bw_PlayerOwnGolds *= #5 jk_bw_mem
+scoreboard players operation @s jk_bw_PlayerOwnDiamonds *= #30 jk_bw_mem
+scoreboard players operation @s jk_bw_PlayerOwnEmeralds *= #50 jk_bw_mem
 
 scoreboard players operation @s jk_bw_PlayerOwnExpLevels += @s jk_bw_PlayerOwnIrons
 scoreboard players operation @s jk_bw_PlayerOwnExpLevels += @s jk_bw_PlayerOwnGolds

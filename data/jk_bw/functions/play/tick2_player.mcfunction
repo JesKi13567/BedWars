@@ -7,6 +7,3 @@ function jk_bw:play/special/player
 
 # 检测玩家破坏床
 function jk_bw:play/bed/break
-
-# 玩家死亡接口
-function jk_bw:play/death/check

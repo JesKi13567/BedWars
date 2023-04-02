@@ -1,7 +1,7 @@
 # 先设定投掷物的方向
 data modify entity @e[tag=jk_bw_throwing,limit=1] Rotation set from entity @s Rotation
 # 再tp一个同方向稍远的标记
-tp @e[limit=1,tag=jk_bw_throw_mark] ^ ^ ^0.8
+tp @e[limit=1,tag=jk_bw_throw_mark] ^ ^ ^.8
 # 记录投掷物和标记的位置
 execute store result score #x1 jk_bw_mem run data get entity @e[tag=jk_bw_throwing,limit=1] Pos[0] 100
 execute store result score #y1 jk_bw_mem run data get entity @e[tag=jk_bw_throwing,limit=1] Pos[1] 100

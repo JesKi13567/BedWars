@@ -8,6 +8,8 @@ title @s title {"text":"已复活！","color":"green"}
 title @s times 0 5 10
 effect give @s resistance 5 4 true
 clear @s
+scoreboard players set @s jk_bw_PlayerExecuseTime 0
+scoreboard players operation @s jk_bw_Temp = @s jk_bw_PlayerUUID
 
 # 复活特效
 execute as @s[team=jk_bw_red] as @e[limit=1,tag=jk_bw_spawn_red] at @s run playsound minecraft:block.beacon.activate player @a[distance=..2]

@@ -1,7 +1,7 @@
 {
   "criteria": {
     "jk_bw": {
-      "trigger": "minecraft:entity_killed_player",
+      "trigger": "minecraft:player_killed_entity",
       "conditions": {
         "entity": {
           "type": "player"
@@ -10,7 +10,7 @@
     }
   },
   "rewards": {
-    "function": "jk_bw:play/kill/victim"
+    "function": "jk_bw:play/kill/direct_death"
   },
   "requirements": [
     [
