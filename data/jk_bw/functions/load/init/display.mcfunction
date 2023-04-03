@@ -8,7 +8,7 @@ scoreboard players set §9蓝队§r： jk_bw_display 5
 execute if score #teams jk_bw_mem matches 4.. run scoreboard players set §a绿队§r： jk_bw_display 4
 execute if score #teams jk_bw_mem matches 4.. run scoreboard players set §e黄队§r： jk_bw_display 3
 scoreboard players set ------------------- jk_bw_display 2
-scoreboard players set 作者：JK137 jk_bw_display 1
+scoreboard players set 数据包作者：JK137 jk_bw_display 1
 scoreboard players set §e游戏虽好，可不要贪玩哟！§r jk_bw_display 0
 
 team add jk_bw_npc_alive
