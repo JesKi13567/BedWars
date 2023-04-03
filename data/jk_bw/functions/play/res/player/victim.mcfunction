@@ -20,7 +20,7 @@ execute as @s[team=jk_bw_yellow] if entity @e[limit=1,tag=jk_bw_bed_yellow,tag=j
 
 # 物资给予
 execute if score #exp_mode jk_bw_mem matches 1 as @s[scores={jk_bw_PlayerOwnExpLevelsReal=1..}] run tellraw @p[tag=jk_bw_murder] [{"text":"+","color":"green"},{"score":{"name":"@s","objective":"jk_bw_PlayerOwnExpLevelsReal"}},"经验"]
-execute if score #exp_mode jk_bw_mem matches 1 run scoreboard players operation @p[tag=jk_bw_murder] jk_bw_PlayerOwnExpLevelsReal += @s jk_bw_PlayerOwnExpLevelsReal
+execute if score #exp_mode jk_bw_mem matches 1 run scoreboard players operation @p[tag=jk_bw_murder] jk_bw_PlayerOwnExpLevels += @s jk_bw_PlayerOwnExpLevelsReal
 
 execute as @s[scores={jk_bw_PlayerOwnIrons=1..}] run tellraw @p[tag=jk_bw_murder] ["+",{"score":{"name":"@s","objective":"jk_bw_PlayerOwnIrons"}},"铁锭"]
 execute as @s[scores={jk_bw_PlayerOwnGolds=1..}] run tellraw @p[tag=jk_bw_murder] [{"text":"+","color":"gold"},{"score":{"name":"@s","objective":"jk_bw_PlayerOwnGolds"}},"金锭"]

@@ -4,6 +4,7 @@ tag @s[tag=jk_bw_invisible] remove jk_bw_invisible
 execute if score #version jk_bw_mem matches ..18 run function jk_bw:play/team/loop/effect_nbt/1_18
 execute if score #version jk_bw_mem matches 19 run function jk_bw:play/team/loop/effect_nbt/1_19
 effect give @s[tag=jk_bw_invisible] resistance 1 1 true
+execute as @s[tag=jk_bw_invisible] run particle block stone ~ ~ ~ 0.1 0 0.1 0.05 4
 
 # 幸运药水
 tag @s[tag=jk_bw_lucky] remove jk_bw_lucky

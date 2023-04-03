@@ -9,6 +9,7 @@ title @s times 0 5 10
 effect give @s resistance 5 4 true
 clear @s
 scoreboard players set @s jk_bw_PlayerExecuseTime 0
+scoreboard players set @s jk_bw_PlayerDamageType 0
 scoreboard players operation @s jk_bw_Temp = @s jk_bw_PlayerUUID
 
 # 复活特效
