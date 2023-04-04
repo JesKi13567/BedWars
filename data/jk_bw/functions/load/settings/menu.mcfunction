@@ -1,4 +1,4 @@
-playsound block.note_block.bell player @s
+playsound block.note_block.bell player @a[distance=..6]
 tag @s add jk_bw_admin
 function jk_bw:load/ticks/load
 function jk_bw:load/settings/version

@@ -6,5 +6,8 @@ execute if score #gaming jk_bw_mem matches 0 run function jk_bw:load/init/tick2/
 # 清理地图
 execute if score #gaming jk_bw_mem matches 0 as @e[limit=1,tag=jk_bw_clear_map,scores={jk_bw_mem=1..}] at @s run function jk_bw:load/init/tick2/map/clear
 
+# 刷怪蛋放置
+execute if score #gaming jk_bw_mem matches 0 as @e[tag=jk_bw_first] at @s run function jk_bw:load/init/tick2/ness/global
+
 ## 正式开始游戏
 execute if score #gaming jk_bw_mem matches 1 run function jk_bw:play/ticks/tick2
