@@ -3,8 +3,8 @@
 function jk_bw:play/team/loop/global
 
 # 玩家中途离开游戏
-execute if score @s[scores={jk_bw_PlayerLeaveGame=1..}] jk_bw_TeamAlive < #current_game jk_bw_mem run function jk_bw:play/death/left
-execute if score @s[scores={jk_bw_PlayerLeaveGame=1..}] jk_bw_TeamAlive = #current_game jk_bw_mem run function jk_bw:play/death/rejoin
+execute unless score @s[scores={jk_bw_PlayerLeaveGame=1..}] jk_bw_CurrentGame = #current_game jk_bw_mem run function jk_bw:play/death/left
+execute if score @s[scores={jk_bw_PlayerLeaveGame=1..}] jk_bw_CurrentGame = #current_game jk_bw_mem run function jk_bw:play/death/rejoin
 scoreboard players reset @s[scores={jk_bw_PlayerLeaveGame=1..}] jk_bw_PlayerLeaveGame
 
 # 禁止拾取/清理
