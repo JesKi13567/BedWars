@@ -6,10 +6,10 @@ execute as @e[limit=1,tag=jk_bw_bed_marker,tag=!jk_bw_bed_init,tag=!jk_bw_bed_no
 
 ## 无床死亡处理
 # 标记死亡
-execute if entity @e[tag=jk_bw_bed_red,limit=1,tag=jk_bw_bed_no_block] run tag @a[gamemode=spectator,team=jk_bw_red,scores={jk_bw_PlayerRebornTime=6},tag=!jk_bw_player_outed] add jk_bw_player_out
-execute if entity @e[tag=jk_bw_bed_blue,limit=1,tag=jk_bw_bed_no_block] run tag @a[gamemode=spectator,team=jk_bw_blue,scores={jk_bw_PlayerRebornTime=6},tag=!jk_bw_player_outed] add jk_bw_player_out
-execute if entity @e[tag=jk_bw_bed_green,limit=1,tag=jk_bw_bed_no_block] run tag @a[gamemode=spectator,team=jk_bw_green,scores={jk_bw_PlayerRebornTime=6},tag=!jk_bw_player_outed] add jk_bw_player_out
-execute if entity @e[tag=jk_bw_bed_yellow,limit=1,tag=jk_bw_bed_no_block] run tag @a[gamemode=spectator,team=jk_bw_yellow,scores={jk_bw_PlayerRebornTime=6},tag=!jk_bw_player_outed] add jk_bw_player_out
+execute if entity @e[tag=jk_bw_bed_red,limit=1,tag=jk_bw_bed_no_block] run tag @a[gamemode=spectator,team=jk_bw_red,scores={jk_bw_PlayerRebornTime=5..6},tag=!jk_bw_player_outed] add jk_bw_player_out
+execute if entity @e[tag=jk_bw_bed_blue,limit=1,tag=jk_bw_bed_no_block] run tag @a[gamemode=spectator,team=jk_bw_blue,scores={jk_bw_PlayerRebornTime=5..6},tag=!jk_bw_player_outed] add jk_bw_player_out
+execute if entity @e[tag=jk_bw_bed_green,limit=1,tag=jk_bw_bed_no_block] run tag @a[gamemode=spectator,team=jk_bw_green,scores={jk_bw_PlayerRebornTime=5..6},tag=!jk_bw_player_outed] add jk_bw_player_out
+execute if entity @e[tag=jk_bw_bed_yellow,limit=1,tag=jk_bw_bed_no_block] run tag @a[gamemode=spectator,team=jk_bw_yellow,scores={jk_bw_PlayerRebornTime=5..6},tag=!jk_bw_player_outed] add jk_bw_player_out
 
 # 死亡提示（一次）
 execute if entity @e[tag=jk_bw_bed_red,limit=1,tag=jk_bw_bed_no_block] run tellraw @a[tag=jk_bw_player_out,team=jk_bw_red] {"text":"你队床炸了，无法再复活了。","color":"red","bold":true}
@@ -20,6 +20,7 @@ execute as @a[tag=jk_bw_player_out] at @s run function jk_bw:play/res/player/fin
 clear @a[tag=jk_bw_player_out]
 tag @a[tag=jk_bw_player_out] add jk_bw_player_outed
 tag @a[tag=jk_bw_player_outed] remove jk_bw_player_out
+
 ## 存活/团灭检测
 # 记录人数
 execute store result score @e[tag=jk_bw_bed_red,limit=1,tag=jk_bw_bed_no_block,tag=!jk_bw_bed_init] jk_bw_TeamAlive if entity @a[team=jk_bw_red,tag=!jk_bw_player_outed]

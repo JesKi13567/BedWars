@@ -32,3 +32,16 @@ team join jk_bw_npc_alive §c红队§r：
 team join jk_bw_npc_alive §9蓝队§r：
 team join jk_bw_npc_alive §a绿队§r：
 team join jk_bw_npc_alive §e黄队§r：
+
+# 公屏显示
+kill @e[tag=jk_bw_display]
+execute if score #multi_mode jk_bw_mem matches 1 run summon marker 10110223 10 10110223 {Tags:["jk_bw","jk_bw_display","jk_bw_display_multi"],CustomName:'{"text":"单/双人","color":"gold"}'}
+execute unless score #multi_mode jk_bw_mem matches 1 run summon marker 10110223 10 10110223 {Tags:["jk_bw","jk_bw_display","jk_bw_display_multi"],CustomName:'{"text":"三/四人","color":"gold"}'}
+
+execute if score #exp_mode jk_bw_mem matches 1 run summon marker 10110223 10 10110223 {Tags:["jk_bw","jk_bw_display","jk_bw_display_exp"],CustomName:'{"text":"经验","color":"gold"}'}
+execute unless score #exp_mode jk_bw_mem matches 1 run summon marker 10110223 10 10110223 {Tags:["jk_bw","jk_bw_display","jk_bw_display_exp"],CustomName:'{"text":"经典","color":"gold"}'}
+
+execute if score #attack_mode jk_bw_mem matches 1 run summon marker 10110223 10 10110223 {Tags:["jk_bw","jk_bw_display","jk_bw_display_attack"],CustomName:'{"text":"1.9+","color":"gold"}'}
+execute unless score #attack_mode jk_bw_mem matches 1 run summon marker 10110223 10 10110223 {Tags:["jk_bw","jk_bw_display","jk_bw_display_attack"],CustomName:'{"text":"1.8-","color":"gold"}'}
+
+execute unless score #test_mode jk_bw_mem matches 1 run tellraw @a [{"text":"【⭐起床战争⭐】","color":"yellow"},{"text":"本局资源：","color":"green"},{"selector":"@e[limit=1,tag=jk_bw_display_exp]"},{"text":"， 攻击速度：","color":"green"},{"selector":"@e[limit=1,tag=jk_bw_display_attack]"},{"text":"， 每队人数：","color":"green"},{"selector":"@e[limit=1,tag=jk_bw_display_multi]"}]

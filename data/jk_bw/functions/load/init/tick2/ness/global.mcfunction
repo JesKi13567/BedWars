@@ -6,5 +6,8 @@ execute as @s[tag=jk_bw_first_item] run function jk_bw:load/settings/menu/shop/i
 execute as @s[tag=jk_bw_first_item2] run function jk_bw:load/settings/menu/shop/item2
 execute as @s[tag=jk_bw_first_spawn_res] run function jk_bw:load/settings/menu/res/spawn
 execute as @s[tag=jk_bw_first_res] run function jk_bw:load/init/tick2/ness/res
-execute as @s[tag=jk_bw_first_kill] run kill @e[tag=jk_bw,tag=!jk_bw_worldspawn,distance=..6]
+execute as @s[tag=jk_bw_first_kill] run kill @e[tag=jk_bw,tag=!jk_bw_mode,tag=!jk_bw_worldspawn,distance=..6]
+execute as @s[tag=jk_bw_first_exp] run function jk_bw:load/init/tick2/ness/exp
+execute as @s[tag=jk_bw_first_attack] run function jk_bw:load/init/tick2/ness/attack
+execute as @s[tag=jk_bw_first_teamnum] run function jk_bw:load/init/tick2/ness/teamnum
 kill @s

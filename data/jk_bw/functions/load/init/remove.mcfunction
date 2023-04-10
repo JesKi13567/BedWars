@@ -13,8 +13,6 @@ scoreboard objectives remove jk_bw_TeamDragon
 scoreboard objectives remove jk_bw_TeamTrapNum
 
 scoreboard objectives remove jk_bw_PlayerHp
-scoreboard objectives remove jk_bw_PlayerThrow
-scoreboard objectives remove jk_bw_PlayerThrow1
 scoreboard objectives remove jk_bw_PlayerLeaveGame
 scoreboard objectives remove jk_bw_PlayerShopNow
 scoreboard objectives remove jk_bw_PlayerFood

@@ -7,6 +7,7 @@ effect clear @a
 stopsound @a
 gamemode adventure @a
 team leave @a
+xp set @a 0 levels
 tag @a remove jk_bw_player_reg
 tag @a remove jk_bw_player_out
 tag @a remove jk_bw_player_outed

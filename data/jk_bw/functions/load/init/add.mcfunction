@@ -18,8 +18,6 @@ scoreboard objectives add jk_bw_PlayerHp health "♥"
 scoreboard objectives setdisplay belowName jk_bw_PlayerHp
 scoreboard objectives setdisplay list jk_bw_PlayerHp
 
-scoreboard objectives add jk_bw_PlayerThrow dropped:gray_dye "玩家准备游戏"
-scoreboard objectives add jk_bw_PlayerThrow1 dropped:lime_dye "玩家取消准备游戏"
 scoreboard objectives add jk_bw_PlayerLeaveGame minecraft.custom:leave_game "玩家离开游戏"
 scoreboard objectives add jk_bw_PlayerShopNow dummy "玩家使用商店"
 scoreboard objectives add jk_bw_PlayerFood food "玩家饱食度"
