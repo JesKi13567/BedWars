@@ -49,6 +49,7 @@ scoreboard objectives remove jk_bw_PlayerHasSwordNotWood
 scoreboard objectives remove jk_bw_PlayerUseEgg
 scoreboard objectives remove jk_bw_PlayerUseSnowball
 scoreboard objectives remove jk_bw_PlayerUseIrongolem
+scoreboard objectives remove jk_bw_PlayerUseTNT
 scoreboard objectives remove jk_bw_PlayerUseTower
 scoreboard objectives remove jk_bw_PlayerUseSpecialCD
 scoreboard objectives remove jk_bw_PlayerUUID

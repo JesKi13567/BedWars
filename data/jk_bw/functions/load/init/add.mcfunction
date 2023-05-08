@@ -54,6 +54,7 @@ scoreboard objectives add jk_bw_PlayerHasSwordNotWood dummy "玩家拥有非木�
 scoreboard objectives add jk_bw_PlayerUseEgg minecraft.used:egg "玩家使用搭桥蛋"
 scoreboard objectives add jk_bw_PlayerUseSnowball minecraft.used:snowball "玩家使用蠹虫蛋"
 scoreboard objectives add jk_bw_PlayerUseIrongolem minecraft.used:polar_bear_spawn_egg "玩家使用铁傀儡蛋"
+scoreboard objectives add jk_bw_PlayerUseTNT minecraft.used:mooshroom_spawn_egg "玩家使用tnt蛋"
 scoreboard objectives add jk_bw_PlayerUseTower minecraft.used:husk_spawn_egg "玩家使用快速建造塔"
 scoreboard objectives add jk_bw_PlayerUseSpecialCD dummy "玩家使用特殊物品冷却"
 scoreboard objectives add jk_bw_PlayerUUID dummy "玩家UUID"
