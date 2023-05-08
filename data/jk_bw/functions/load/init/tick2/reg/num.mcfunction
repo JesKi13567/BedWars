@@ -8,6 +8,7 @@ execute as @a[scores={jk_bw_PlayerLeaveGame=1..}] at @s run function jk_bw:load/
 scoreboard players reset @a jk_bw_PlayerLeaveGame
 
 # 冒险模式才可报名
+gamemode adventure @a[gamemode=survival]
 execute as @a[gamemode=adventure] at @s run function jk_bw:load/init/tick2/reg/player
 tag @a[tag=jk_bw_player_reg,gamemode=!adventure] remove jk_bw_player_reg
 

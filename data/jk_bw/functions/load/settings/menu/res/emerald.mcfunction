@@ -4,4 +4,4 @@ execute align xyz run summon armor_stand ~.5 ~3 ~.5 {Tags:["jk_bw","jk_bw_point"
 function jk_bw:load/settings/menu/res/hole
 setblock ~ ~-1 ~ emerald_block
 fill ~-1 ~-2 ~-1 ~1 ~-2 ~1 emerald_block
-function jk_bw:load/settings/menu
+playsound block.note_block.bell player @a[distance=..6]

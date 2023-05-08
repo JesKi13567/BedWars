@@ -1,8 +1,10 @@
 ## 对每个新产生的实体只执行一次
 # 认主
-scoreboard players operation @s jk_bw_PlayerUUID = @p[gamemode=adventure,tag=jk_bw_player_reg] jk_bw_PlayerUUID
+scoreboard players operation @s[tag=!jk_bw_iron_golem] jk_bw_PlayerUUID = @p[gamemode=adventure,tag=jk_bw_player_reg] jk_bw_PlayerUUID
+scoreboard players operation @s[tag=jk_bw_iron_golem] jk_bw_PlayerUUID = @p[scores={jk_bw_PlayerUseIrongolem=1..},gamemode=adventure,tag=jk_bw_player_reg] jk_bw_PlayerUUID
 
 # 铁傀儡
+scoreboard players reset @p[scores={jk_bw_PlayerUseIrongolem=1..},gamemode=adventure,tag=jk_bw_player_reg] jk_bw_PlayerUseIrongolem
 effect give @s[tag=jk_bw_iron_golem] weakness 1000000 1 true
 scoreboard players set @s[tag=jk_bw_iron_golem] jk_bw_EntityTime 120
 

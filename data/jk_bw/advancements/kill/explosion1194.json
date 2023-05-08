@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "jk_bw": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "minecraft:is_explosion"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "jk_bw:play/kill/explosion"
+  },
+  "requirements": [
+    [
+      "jk_bw"
+    ]
+  ]
+}
