@@ -3,7 +3,7 @@
     "jk_bw": {
       "trigger": "minecraft:entity_killed_player",
       "conditions": {
-        "damage": {
+        "killing_blow": {
           "type": {
             "tags": [
               {
