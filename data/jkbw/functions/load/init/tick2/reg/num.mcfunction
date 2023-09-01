@@ -4,7 +4,7 @@
 tag @a[gamemode=creative] add jkbw_admin
 
 # 退出游戏处理
-execute as @a[scores={jkbw.Player.LeaveGame=1..}] at @s run function jkbw:load/init/tick2/reg/leavegame
+execute as @a[scores={jkbw.Player.LeaveGame=1..}] run function jkbw:load/init/tick2/reg/leavegame
 scoreboard players reset @a jkbw.Player.LeaveGame
 
 # 冒险模式才可报名
@@ -17,6 +17,10 @@ execute unless score #test_mode jkbw.mem matches 1 run function jkbw:load/init/t
 
 # 测试模式
 execute if score #test_mode jkbw.mem matches 1 run bossbar set jkbw:test_mode visible true
+
+# 世界出生点高度
+execute store result score #worldspawn jkbw.Entity.Y run data get entity @e[limit=1,tag=jkbw_worldspawn] Pos[1]
+scoreboard players remove #worldspawn jkbw.Entity.Y 10
 
 # 清理杂物
 kill @e[type=#jkbw:clear]

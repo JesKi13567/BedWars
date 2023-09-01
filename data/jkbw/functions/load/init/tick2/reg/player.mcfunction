@@ -6,8 +6,6 @@ effect give @s weakness 1 0 true
 
 # 掉虚空瞬间死亡/禁止跑出跑酷位置
 execute store result score @s jkbw.Entity.Y run data get entity @s Pos[1]
-execute store result score #worldspawn jkbw.Entity.Y run data get entity @e[limit=1,tag=jkbw_worldspawn] Pos[1]
-scoreboard players remove #worldspawn jkbw.Entity.Y 10
 #execute if entity @e[limit=1,tag=jkbw_worldspawn] if score @s jkbw.Entity.Y <= #worldspawn jkbw.Entity.Y run tellraw @a ["<",{"selector":"@s"},"> 唔呃，逃不掉呢~"]
 execute if entity @e[limit=1,tag=jkbw_worldspawn] if score @s jkbw.Entity.Y <= #worldspawn jkbw.Entity.Y run tp @s @e[limit=1,tag=jkbw_worldspawn]
 kill @s[scores={jkbw.Entity.Y=..-90}]

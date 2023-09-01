@@ -13,7 +13,7 @@ execute if score #exp_mode jkbw.mem matches 1 run tellraw @s[tag=!jkbw_buy_succe
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-give @s[tag=jkbw_buy_success] potion{CustomPotionColor:7500449,display:{Name:'{"text":"隐身 药水（30 秒）","color":"gray","italic":false}'},Potion:"water",CustomPotionEffects:[{Id:14,Amplifier:0,Duration:600,ShowParticles:false}],CanPlaceOn:["#jkbw:canplaceon"],CanDestroy:["#jkbw:candestroy"],HideFlags:28}
+give @s[tag=jkbw_buy_success] potion{CustomPotionColor:7500449,display:{Name:'{"text":"隐身 药水","color":"gray","italic":false}'},Potion:"water",CustomPotionEffects:[{Id:14,Amplifier:0,Duration:600,ShowParticles:false}],CanPlaceOn:["#jkbw:canplaceon"],CanDestroy:["#jkbw:candestroy"],HideFlags:28}
 tellraw @s[tag=jkbw_buy_success] [{"text":"成功购买","color":"green"},{"text":" 隐身 药水","color":"gold","bold":true},"！"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 execute unless score #exp_mode jkbw.mem matches 1 run clear @s[tag=jkbw_buy_success] emerald 2

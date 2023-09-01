@@ -8,6 +8,6 @@ execute if score #level_emerald jkbw.mem matches 0 if score #summon_emerald jkbw
 execute if score #level_emerald jkbw.mem matches 1 if score #summon_emerald jkbw.mem matches ..0 run scoreboard players set #summon_emerald jkbw.mem 50
 execute if score #level_emerald jkbw.mem matches 2 if score #summon_emerald jkbw.mem matches ..0 run scoreboard players set #summon_emerald jkbw.mem 45
 
-# 因为无法对盔甲架CustomName直接操作，只能借用告示牌JSON
+# 因为无法对实体名称分数直接操作，只能借用告示牌JSON
 data modify block 10110223 1 10110223 front_text.messages[1] set value '[{"text":"将在 ","color":"green","bold":true},{"score":{"name":"#summon_emerald","objective":"jkbw.mem"},"color":"gold"}," 秒后生成"]'
-execute as @e[tag=jkbw_emerald_time] at @s run data modify entity @s CustomName set from block 10110223 1 10110223 front_text.messages[1]
+execute as @e[tag=jkbw_emerald_time] run data modify entity @s text set from block 10110223 1 10110223 front_text.messages[1]

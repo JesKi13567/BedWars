@@ -7,6 +7,6 @@ execute if score #level_diamond jkbw.mem matches 0 if score #summon_diamond jkbw
 execute if score #level_diamond jkbw.mem matches 1 if score #summon_diamond jkbw.mem matches ..0 run scoreboard players set #summon_diamond jkbw.mem 25
 execute if score #level_diamond jkbw.mem matches 2 if score #summon_diamond jkbw.mem matches ..0 run scoreboard players set #summon_diamond jkbw.mem 20
 
-# 因为无法对盔甲架CustomName直接操作，只能借用告示牌JSON
+# 因为无法对实体名称分数直接操作，只能借用告示牌JSON
 data modify block 10110223 1 10110223 front_text.messages[0] set value '[{"text":"将在 ","color":"aqua","bold":true},{"score":{"name":"#summon_diamond","objective":"jkbw.mem"},"color":"gold"}," 秒后生成"]'
-execute as @e[tag=jkbw_diamond_time] at @s run data modify entity @s CustomName set from block 10110223 1 10110223 front_text.messages[0]
+execute as @e[tag=jkbw_diamond_time] run data modify entity @s text set from block 10110223 1 10110223 front_text.messages[0]

@@ -10,7 +10,7 @@ scoreboard players remove @s[scores={jkbw.Player.PickaxeLevels=2..}] jkbw.Player
 
 # 检测是否为自杀（间接击杀）
 execute if score @s jkbw.Temp = @s jkbw.Player.UUID run tag @s remove jkbw_vic
-execute as @s[tag=jkbw_vic] as @a at @s if score @s jkbw.Player.UUID = @p[tag=jkbw_vic] jkbw.Temp run tag @s add jkbw_murder
+execute as @s[tag=jkbw_vic] as @a if score @s jkbw.Player.UUID = @p[tag=jkbw_vic] jkbw.Temp run tag @s add jkbw_murder
 execute if entity @p[tag=jkbw_murder] run tag @s[tag=jkbw_vic] add jkbw_victim
 tag @s[tag=jkbw_vic] remove jkbw_vic
 
