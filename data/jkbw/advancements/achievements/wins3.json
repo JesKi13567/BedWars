@@ -1,0 +1,44 @@
+{
+  "parent": "jkbw:achievements/wins2",
+  "display": {
+    "icon": {
+      "item": "minecraft:emerald"
+    },
+    "title": {
+      "text": "胜利 · 其三"
+    },
+    "description": [
+      {
+        "text": "胜利 20 次。\n",
+        "color": "white"
+      },
+      {
+        "text": "无敌！",
+        "color": "gray",
+        "italic": true
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "raw": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "jkbw.Player.Wins": {
+                "min": 20
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  }
+}

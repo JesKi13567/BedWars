@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "jkbw": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "player"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "jkbw:play/kill/direct_death"
+  }
+}

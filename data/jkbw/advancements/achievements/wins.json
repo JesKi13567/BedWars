@@ -1,0 +1,44 @@
+{
+  "parent": "jkbw:achievements/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_ingot"
+    },
+    "title": {
+      "text": "胜利 · 开端"
+    },
+    "description": [
+      {
+        "text": "第一次胜利！\n",
+        "color": "white"
+      },
+      {
+        "text": "好耶！",
+        "color": "gray",
+        "italic": true
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "raw": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "jkbw.Player.Wins": {
+                "min": 1
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  }
+}

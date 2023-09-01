@@ -1,2 +1,0 @@
-# 经典模式
-title @s actionbar ["",{"score":{"name":"@s","objective":"jk_bw_PlayerOwnIrons"},"bold":true},{"text":" ","color":"gold"},{"score":{"name":"@s","objective":"jk_bw_PlayerOwnGolds"},"color":"gold","bold":true},{"text":" ","color":"aqua"},{"score":{"name":"@s","objective":"jk_bw_PlayerOwnDiamonds"},"color":"aqua","bold":true},{"text":" ","color":"green"},{"score":{"name":"@s","objective":"jk_bw_PlayerOwnEmeralds"},"color":"green","bold":true}]

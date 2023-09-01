@@ -1,1 +1,0 @@
-function jk_bw:load/init/tick2/reg/leavegame

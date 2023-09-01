@@ -1,0 +1,44 @@
+{
+  "parent": "jkbw:achievements/kills2",
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_sword"
+    },
+    "title": {
+      "text": "杀戮 · 其三"
+    },
+    "description": [
+      {
+        "text": "击杀敌人 50 次！\n",
+        "color": "white"
+      },
+      {
+        "text": "不错，天赋异禀。",
+        "color": "gray",
+        "italic": true
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "raw": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "jkbw.Player.KillsCount": {
+                "min": 50
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,8 +1,0 @@
-# /reload后的第一界面
-playsound block.note_block.bell player @a[distance=..6]
-scoreboard objectives add jk_bw_mem dummy "计分板"
-# 时间开始流动
-execute unless score #loaded jk_bw_mem matches 1 run tellraw @a ["\n\n",{"text":"起床战争工具包已预备！","color":"yellow","bold":true},"\n作者：",{"text":"JK137","color":"green"}," 版本：beta1.2.3\n",{"text":"======","color":"green"},{"text":" [确认安装] ","color":"light_purple","clickEvent":{"action":"run_command","value":"/function jk_bw:load/settings/1"}},{"text":"======","color":"green"},{"text":" [取消安装] ","color":"red","clickEvent":{"action":"run_command","value":"/function jk_bw:load/settings/0"}},{"text":"======","color":"green"}]
-execute if score #loaded jk_bw_mem matches 1 if score #gaming jk_bw_mem matches 0 run function jk_bw:load/settings/menu
-execute if score #loaded jk_bw_mem matches 1 if score #gaming jk_bw_mem matches 1 run tellraw @a[tag=jk_bw_admin] [{"text":"\n\n\n\n起床战争正在进行！\n","color":"yellow"},{"text":"=======","color":"green"},{"text":" [终止游戏] ","color":"red","clickEvent":{"action":"run_command","value":"/function jk_bw:play/end/stop"}},{"text":"=======","color":"green"},{"text":" [卸载] ","color":"yellow","clickEvent":{"action":"run_command","value":"/function jk_bw:load/settings/0"}},{"text":"=======","color":"green"}]
-execute if score #loaded jk_bw_mem matches 1 if score #gaming jk_bw_mem matches 2..3 run tellraw @a[tag=jk_bw_admin] [{"text":"\n\n\n\n【⭐起床战争⭐】本局已结束！\n","color":"yellow"},{"text":"[再玩一把] ","color":"aqua","clickEvent":{"action":"run_command","value":"/function jk_bw:play/end/restart"}},{"text":"======","color":"green"},{"text":" [卸载]","color":"red","clickEvent":{"action":"run_command","value":"/function jk_bw:load/settings/0"}}]

@@ -1,8 +1,0 @@
-execute as @s[tag=jk_bw_exp] unless score #exp_mode jk_bw_mem matches 1 run data merge block ~ ~ ~ {Text3:'[{"text":"经典：物品","bold":false,"italic":false,"color":"gold"}]',Text4:'[{"text":"经验：等级","bold":false,"italic":false,"color":"white"}]'}
-execute as @s[tag=jk_bw_exp] if score #exp_mode jk_bw_mem matches 1 run data merge block ~ ~ ~ {Text3:'[{"text":"经典：物品","bold":false,"italic":false,"color":"white"}]',Text4:'[{"text":"经验：等级","bold":false,"italic":false,"color":"gold"}]'}
-
-execute as @s[tag=jk_bw_attack] unless score #attack_mode jk_bw_mem matches 1 run data merge block ~ ~ ~ {Text3:'[{"text":"1.8-","bold":false,"italic":false,"color":"gold"}]',Text4:'[{"text":"1.9+","bold":false,"italic":false,"color":"white"}]'}
-execute as @s[tag=jk_bw_attack] if score #attack_mode jk_bw_mem matches 1 run data merge block ~ ~ ~ {Text3:'[{"text":"1.8-","bold":false,"italic":false,"color":"white"}]',Text4:'[{"text":"1.9+","bold":false,"italic":false,"color":"gold"}]'}
-
-execute as @s[tag=jk_bw_teamnum] if score #teams jk_bw_mem matches 2 run data merge block ~ ~ ~ {Text3:'[{"text":"2队","bold":false,"italic":false,"color":"gold"}]',Text4:'[{"text":"4队","bold":false,"italic":false,"color":"white"}]'}
-execute as @s[tag=jk_bw_teamnum] if score #teams jk_bw_mem matches 4 run data merge block ~ ~ ~ {Text3:'[{"text":"2队","bold":false,"italic":false,"color":"white"}]',Text4:'[{"text":"4队","bold":false,"italic":false,"color":"gold"}]'}

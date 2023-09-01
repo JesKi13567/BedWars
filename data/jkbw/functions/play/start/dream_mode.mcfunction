@@ -1,0 +1,1 @@
+execute as @e[tag=jkbw_bed_marker] at @s run function jkbw:play/dream_mode/marker

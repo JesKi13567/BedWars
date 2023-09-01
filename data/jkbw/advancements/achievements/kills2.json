@@ -1,0 +1,44 @@
+{
+  "parent": "jkbw:achievements/kills1",
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_sword"
+    },
+    "title": {
+      "text": "杀戮 · 其二"
+    },
+    "description": [
+      {
+        "text": "击杀敌人 30 次！\n",
+        "color": "white"
+      },
+      {
+        "text": "哇哦，略有小成。",
+        "color": "gray",
+        "italic": true
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "raw": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "jkbw.Player.KillsCount": {
+                "min": 30
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  }
+}

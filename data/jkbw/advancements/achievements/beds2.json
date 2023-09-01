@@ -1,0 +1,44 @@
+{
+  "parent": "jkbw:achievements/beds1",
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_pickaxe"
+    },
+    "title": {
+      "text": "破床 · 其二"
+    },
+    "description": [
+      {
+        "text": "破坏 15 次对手的床！\n",
+        "color": "white"
+      },
+      {
+        "text": "可以。",
+        "color": "gray",
+        "italic": true
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "raw": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "jkbw.Player.BreakBeds": {
+                "min": 15
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  }
+}

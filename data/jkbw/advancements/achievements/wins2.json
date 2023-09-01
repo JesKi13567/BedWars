@@ -1,0 +1,44 @@
+{
+  "parent": "jkbw:achievements/wins1",
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond"
+    },
+    "title": {
+      "text": "胜利 · 其二"
+    },
+    "description": [
+      {
+        "text": "胜利 10 次。\n",
+        "color": "white"
+      },
+      {
+        "text": "很好！",
+        "color": "gray",
+        "italic": true
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "raw": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "jkbw.Player.Wins": {
+                "min": 10
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  }
+}

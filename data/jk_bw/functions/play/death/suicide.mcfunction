@@ -1,6 +1,0 @@
-execute as @s[scores={jk_bw_PlayerDamageType=0}] run tellraw @a [{"selector":"@s"},{"text":" 从高处摔了下来。","color":"gray"}]
-execute as @s[scores={jk_bw_PlayerDamageType=1}] run tellraw @a [{"selector":"@s"},{"text":" 落入虚空。","color":"gray"}]
-execute as @s[scores={jk_bw_PlayerDamageType=3}] run tellraw @a [{"selector":"@s"},{"text":" 被虫蚀了。","color":"gray"}]
-execute as @s[scores={jk_bw_PlayerDamageType=4}] run tellraw @a [{"selector":"@s"},{"text":" 被铁傀儡重拳出击了。","color":"gray"}]
-execute as @s[scores={jk_bw_PlayerDamageType=5}] run tellraw @a [{"selector":"@s"},{"text":" 爆炸了。","color":"gray"}]
-execute as @s[scores={jk_bw_PlayerDamageType=6}] run tellraw @a [{"selector":"@s"},{"text":" 凋零了。","color":"gray"}]

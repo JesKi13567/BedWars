@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "jkbw": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "type": "iron_golem"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "jkbw:play/kill/golem"
+  }
+}

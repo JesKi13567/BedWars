@@ -1,1 +1,0 @@
-function jk_bw:play/res/player/victim

@@ -1,1 +1,0 @@
-tag @s[nbt={ActiveEffects:[{Id:14b}]}] add jk_bw_invisible

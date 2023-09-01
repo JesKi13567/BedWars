@@ -1,0 +1,14 @@
+{
+    "values": [
+        "#jkbw:candestroy",
+        "#wool",
+        "#impermeable",
+        "#mineable/axe",
+        "#mineable/pickaxe",
+        "#mineable/shovel",
+        "#mineable/hoe",
+        "bedrock",
+        "sea_lantern",
+        "glowstone"
+    ]
+}
