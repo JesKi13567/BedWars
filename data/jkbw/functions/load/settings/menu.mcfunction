@@ -3,7 +3,7 @@ tag @s add jkbw_admin
 function jkbw:load/ticks/load
 
 tellraw @a[tag=jkbw_admin] [{"text":"\n\n\n\n\n\n\n\n\n\n=============","color":"green"},{"text":" 起床战争工具包 ","color":"yellow"},"============\n"]
-tellraw @a[tag=jkbw_admin] {"text":"当前游戏版本：1.20","color":"yellow"}
+tellraw @a[tag=jkbw_admin] {"text":"当前游戏版本：1.20.0-1","color":"yellow"}
 execute if score #test_mode jkbw.mem matches 1 run tellraw @a[tag=jkbw_admin] {"text":"注意：已开启测试模式！","color":"red","bold":true}
 
 execute if score #tutorial jkbw.mem matches ..1 run tellraw @a[tag=jkbw_admin] {"text":"请务必按照教程顺序一步一步操作哦！","color":"aqua"}

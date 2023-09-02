@@ -76,6 +76,7 @@ team remove jkbw.npc_green
 team remove jkbw.npc_yellow
 
 tp @e[tag=jkbw] ~ -200 ~
+kill @e[tag=jkbw]
 stopsound @a
 tag @a remove jkbw_player_reg
 tag @a remove jkbw_recipe

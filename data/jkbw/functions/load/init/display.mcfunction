@@ -1,5 +1,5 @@
 scoreboard objectives remove jkbw.display
-scoreboard objectives add jkbw.display dummy {"text":"⭐起床战争⭐","color":"yellow","bold":true}
+scoreboard objectives add jkbw.display dummy {"text":"⭐JKの起床战争⭐","color":"yellow","bold":true}
 scoreboard objectives setdisplay sidebar jkbw.display
 
 scoreboard players set =================== jkbw.display 7

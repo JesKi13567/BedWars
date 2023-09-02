@@ -13,4 +13,4 @@ scoreboard players operation @s jkbw.Entity.X /= #500 jkbw.mem
 # 约掉多余的
 scoreboard players operation @s jkbw.Entity.X /= #1000 jkbw.mem
 # 显示
-title @s[scores={jkbw.Player.Distance=0}] actionbar [{"text": "距离家： ","color": "gold"},{"score":{"name": "@s","objective": "jkbw.Entity.X"},"color": "green","bold": true}," m"]
+title @s[nbt={SelectedItem:{id:"minecraft:compass"}},scores={jkbw.Player.Distance=0}] actionbar [{"text": "距离家： ","color": "gold"},{"score":{"name": "@s","objective": "jkbw.Entity.X"},"color": "green","bold": true}," m"]
