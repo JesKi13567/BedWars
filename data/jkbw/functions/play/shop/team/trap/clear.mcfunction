@@ -1,16 +1,16 @@
 # 购买成功，清理资源
-execute unless score #exp_mode jkbw.mem matches 1 as @s[team=jkbw.red,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_red,limit=1,scores={jkbw.Team.TrapNum=0}] run clear @s diamond 1
-execute unless score #exp_mode jkbw.mem matches 1 as @s[team=jkbw.red,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_red,limit=1,scores={jkbw.Team.TrapNum=1}] run clear @s diamond 2
-execute unless score #exp_mode jkbw.mem matches 1 as @s[team=jkbw.red,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_red,limit=1,scores={jkbw.Team.TrapNum=2}] run clear @s diamond 4
-execute unless score #exp_mode jkbw.mem matches 1 as @s[team=jkbw.blue,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_blue,limit=1,scores={jkbw.Team.TrapNum=0}] run clear @s diamond 1
-execute unless score #exp_mode jkbw.mem matches 1 as @s[team=jkbw.blue,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_blue,limit=1,scores={jkbw.Team.TrapNum=1}] run clear @s diamond 2
-execute unless score #exp_mode jkbw.mem matches 1 as @s[team=jkbw.blue,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_blue,limit=1,scores={jkbw.Team.TrapNum=2}] run clear @s diamond 4
-execute unless score #exp_mode jkbw.mem matches 1 as @s[team=jkbw.green,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_green,limit=1,scores={jkbw.Team.TrapNum=0}] run clear @s diamond 1
-execute unless score #exp_mode jkbw.mem matches 1 as @s[team=jkbw.green,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_green,limit=1,scores={jkbw.Team.TrapNum=1}] run clear @s diamond 2
-execute unless score #exp_mode jkbw.mem matches 1 as @s[team=jkbw.green,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_green,limit=1,scores={jkbw.Team.TrapNum=2}] run clear @s diamond 4
-execute unless score #exp_mode jkbw.mem matches 1 as @s[team=jkbw.yellow,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_yellow,limit=1,scores={jkbw.Team.TrapNum=0}] run clear @s diamond 1
-execute unless score #exp_mode jkbw.mem matches 1 as @s[team=jkbw.yellow,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_yellow,limit=1,scores={jkbw.Team.TrapNum=1}] run clear @s diamond 2
-execute unless score #exp_mode jkbw.mem matches 1 as @s[team=jkbw.yellow,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_yellow,limit=1,scores={jkbw.Team.TrapNum=2}] run clear @s diamond 4
+execute if score #exp_mode jkbw.mem matches 0 as @s[team=jkbw.red,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_red,limit=1,scores={jkbw.Team.TrapNum=0}] run clear @s diamond 1
+execute if score #exp_mode jkbw.mem matches 0 as @s[team=jkbw.red,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_red,limit=1,scores={jkbw.Team.TrapNum=1}] run clear @s diamond 2
+execute if score #exp_mode jkbw.mem matches 0 as @s[team=jkbw.red,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_red,limit=1,scores={jkbw.Team.TrapNum=2}] run clear @s diamond 4
+execute if score #exp_mode jkbw.mem matches 0 as @s[team=jkbw.blue,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_blue,limit=1,scores={jkbw.Team.TrapNum=0}] run clear @s diamond 1
+execute if score #exp_mode jkbw.mem matches 0 as @s[team=jkbw.blue,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_blue,limit=1,scores={jkbw.Team.TrapNum=1}] run clear @s diamond 2
+execute if score #exp_mode jkbw.mem matches 0 as @s[team=jkbw.blue,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_blue,limit=1,scores={jkbw.Team.TrapNum=2}] run clear @s diamond 4
+execute if score #exp_mode jkbw.mem matches 0 as @s[team=jkbw.green,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_green,limit=1,scores={jkbw.Team.TrapNum=0}] run clear @s diamond 1
+execute if score #exp_mode jkbw.mem matches 0 as @s[team=jkbw.green,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_green,limit=1,scores={jkbw.Team.TrapNum=1}] run clear @s diamond 2
+execute if score #exp_mode jkbw.mem matches 0 as @s[team=jkbw.green,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_green,limit=1,scores={jkbw.Team.TrapNum=2}] run clear @s diamond 4
+execute if score #exp_mode jkbw.mem matches 0 as @s[team=jkbw.yellow,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_yellow,limit=1,scores={jkbw.Team.TrapNum=0}] run clear @s diamond 1
+execute if score #exp_mode jkbw.mem matches 0 as @s[team=jkbw.yellow,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_yellow,limit=1,scores={jkbw.Team.TrapNum=1}] run clear @s diamond 2
+execute if score #exp_mode jkbw.mem matches 0 as @s[team=jkbw.yellow,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_yellow,limit=1,scores={jkbw.Team.TrapNum=2}] run clear @s diamond 4
 
 execute if score #exp_mode jkbw.mem matches 1 as @s[team=jkbw.red,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_red,limit=1,scores={jkbw.Team.TrapNum=0}] run scoreboard players remove @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal 30
 execute if score #exp_mode jkbw.mem matches 1 as @s[team=jkbw.red,tag=!jkbw_team_enough_trap,tag=jkbw_buy_success] if entity @e[tag=jkbw_bed_red,limit=1,scores={jkbw.Team.TrapNum=1}] run scoreboard players remove @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal 60

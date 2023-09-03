@@ -4,10 +4,10 @@
 # 对于铁傀儡，mem和temp防止其被铁锭修复
 # 后续想到再写
 
-#  loaded       exp_mode      attack_mode   teams      gaming       feedback
-# 是否加载   经典模式/经验模式    攻击模式    队伍数量   正在进行游戏    函数反馈
+#  loaded     exp_mode  attack_mode   teams      gaming       feedback
+# 是否加载     资源模式    攻击模式    队伍数量   正在进行游戏    函数反馈
 #scoreboard players set #loaded jkbw.mem 1
-scoreboard players reset #exp_mode jkbw.mem
+scoreboard players set #exp_mode jkbw.mem 0
 scoreboard players reset #attack_mode jkbw.mem
 scoreboard players set #teams jkbw.mem 2
 scoreboard players set #gaming jkbw.mem 0

@@ -6,7 +6,7 @@ execute store result score @s jkbw.Player.OwnDiamonds run clear @s minecraft:dia
 execute store result score @s jkbw.Player.OwnEmeralds run clear @s minecraft:emerald 0
 
 # 经典模式
-#execute unless score #exp_mode jkbw.mem matches 1 run function jkbw:play/res/mode/classic
+#execute if score #exp_mode jkbw.mem matches 0 run function jkbw:play/res/mode/classic
 
 # 经验模式
 execute if score #exp_mode jkbw.mem matches 1 run function jkbw:play/res/mode/exp

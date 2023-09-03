@@ -1,5 +1,5 @@
 # 是否经验模式
-execute unless score #exp_mode jkbw.mem matches 1 run function jkbw:play/shop/gui/classic
+execute if score #exp_mode jkbw.mem matches 0 run function jkbw:play/shop/gui/classic
 execute if score #exp_mode jkbw.mem matches 1 run function jkbw:play/shop/gui/exp
 
 # 队伍陷阱展示

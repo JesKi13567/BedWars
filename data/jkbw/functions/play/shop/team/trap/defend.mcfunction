@@ -5,7 +5,7 @@ function jkbw:play/shop/team/trap/check
 tellraw @s[tag=jkbw_team_enough_trap] [{"text":"无法购买","color":"red"},{"text":" 反击陷阱","color":"yellow","bold":true},"，因为你所在的团队陷阱数已满！"]
 playsound entity.villager.no player @s[tag=jkbw_team_enough_trap]
 
-execute unless score #exp_mode jkbw.mem matches 1 run tellraw @s[tag=!jkbw_team_enough_trap,tag=!jkbw_buy_success] [{"text":"无法购买","color":"red"},{"text":" 反击陷阱","color":"yellow","bold":true},"，你还需要 ",{"score":{"name": "#shop_temp","objective":"jkbw.mem"},"color":"yellow"}," 块钻石！"]
+execute if score #exp_mode jkbw.mem matches 0 run tellraw @s[tag=!jkbw_team_enough_trap,tag=!jkbw_buy_success] [{"text":"无法购买","color":"red"},{"text":" 反击陷阱","color":"yellow","bold":true},"，你还需要 ",{"score":{"name": "#shop_temp","objective":"jkbw.mem"},"color":"yellow"}," 块钻石！"]
 execute if score #exp_mode jkbw.mem matches 1 run tellraw @s[tag=!jkbw_team_enough_trap,tag=!jkbw_buy_success] [{"text":"无法购买","color":"red"},{"text":" 反击陷阱","color":"yellow","bold":true},"，你还需要 ",{"score":{"name": "#shop_temp","objective":"jkbw.mem"},"color":"yellow"}," 点经验！"]
 playsound entity.villager.no player @s[tag=!jkbw_team_enough_trap,tag=!jkbw_buy_success]
 
