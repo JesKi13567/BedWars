@@ -13,8 +13,8 @@ playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
 clear @s[tag=jkbw_buy_success] wooden_sword
-execute unless score #attack_mode jkbw.mem matches 1 run give @s[tag=jkbw_buy_success] stone_sword{Unbreakable:1b,CanDestroy:["#jkbw:candestroy"],jkbw_sword:1,HideFlags:28,AttributeModifiers:[{Operation:0,Amount:7.6,UUID:[I;1,0,0,1],AttributeName:"generic.attack_speed",Name:"a",Slot:"mainhand"},{Operation:0,Amount:5,UUID:[I;1,0,0,1],AttributeName:"generic.attack_damage",Name:"a",Slot:"mainhand"}]}
-execute if score #attack_mode jkbw.mem matches 1 run give @s[tag=jkbw_buy_success] stone_sword{Unbreakable:1b,CanDestroy:["#jkbw:candestroy"],jkbw_sword:1,HideFlags:28}
+execute unless score #attack_mode jkbw.mem matches 1 run give @s[tag=jkbw_buy_success] stone_sword{Unbreakable:1b,CanDestroy:["#jkbw:candestroy"],jkbw:["sword","1"],HideFlags:28,AttributeModifiers:[{Operation:0,Amount:7.6,UUID:[I;1,0,0,1],AttributeName:"generic.attack_speed",Name:"a",Slot:"mainhand"},{Operation:0,Amount:5,UUID:[I;1,0,0,1],AttributeName:"generic.attack_damage",Name:"a",Slot:"mainhand"}]}
+execute if score #attack_mode jkbw.mem matches 1 run give @s[tag=jkbw_buy_success] stone_sword{Unbreakable:1b,CanDestroy:["#jkbw:candestroy"],jkbw:["sword","1"],HideFlags:28}
 tellraw @s[tag=jkbw_buy_success] [{"text":"成功购买","color":"green"},{"text":" 石剑","color":"gold","bold":true},"！"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 execute if score #exp_mode jkbw.mem matches 0 run clear @s[tag=jkbw_buy_success] iron_ingot 10

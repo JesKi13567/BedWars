@@ -1,9 +1,9 @@
-clear @s #jkbw:page{jkbw_page:1}
-scoreboard players set @s[nbt=!{EnderItems:[{tag:{jkbw_page_roll:0}}]}] jkbw.Player.Page 0
-scoreboard players set @s[nbt=!{EnderItems:[{tag:{jkbw_page_roll:1}}]}] jkbw.Player.Page 1
-scoreboard players set @s[nbt=!{EnderItems:[{tag:{jkbw_page_roll:2}}]}] jkbw.Player.Page 2
-scoreboard players set @s[nbt=!{EnderItems:[{tag:{jkbw_page_roll:3}}]}] jkbw.Player.Page 3
-scoreboard players set @s[nbt=!{EnderItems:[{tag:{jkbw_page_roll:4}}]}] jkbw.Player.Page 4
+clear @s #jkbw:page{jkbw:["page"]}
+scoreboard players set @s[nbt=!{EnderItems:[{tag:{jkbw:["shop","page","0"]}}]}] jkbw.Player.Page 0
+scoreboard players set @s[nbt=!{EnderItems:[{tag:{jkbw:["shop","page","1"]}}]}] jkbw.Player.Page 1
+scoreboard players set @s[nbt=!{EnderItems:[{tag:{jkbw:["shop","page","2"]}}]}] jkbw.Player.Page 2
+scoreboard players set @s[nbt=!{EnderItems:[{tag:{jkbw:["shop","page","3"]}}]}] jkbw.Player.Page 3
+scoreboard players set @s[nbt=!{EnderItems:[{tag:{jkbw:["shop","page","4"]}}]}] jkbw.Player.Page 4
 
 item replace entity @s enderchest.0 from block 10110223 3 10110223 container.0
 item replace entity @s enderchest.1 from block 10110223 3 10110223 container.1

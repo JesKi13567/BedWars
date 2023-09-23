@@ -59,7 +59,9 @@ scoreboard objectives remove jkbw.Player.UsePlatformCD
 scoreboard objectives remove jkbw.Player.UUID
 scoreboard objectives remove jkbw.Player.DamageType
 scoreboard objectives remove jkbw.Entity.X
+scoreboard objectives remove jkbw.Entity.X_int
 scoreboard objectives remove jkbw.Entity.Z
+scoreboard objectives remove jkbw.Entity.Z_int
 scoreboard objectives remove jkbw.Entity.Y
 scoreboard objectives remove jkbw.Entity.Time
 

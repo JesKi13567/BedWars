@@ -1,1 +1,1 @@
-function jkbw:load/init/tick2/reg/leavegame
+function jkbw:play/ready/reg/leavegame

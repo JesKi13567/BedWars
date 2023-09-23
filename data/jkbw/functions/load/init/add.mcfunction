@@ -66,7 +66,9 @@ scoreboard objectives add jkbw.Player.DamageType dummy "玩家受伤类型"
 
 # 实体
 scoreboard objectives add jkbw.Entity.X dummy "实体所在X"
+scoreboard objectives add jkbw.Entity.X_int dummy "实体所在X_int"
 scoreboard objectives add jkbw.Entity.Z dummy "实体所在Z"
+scoreboard objectives add jkbw.Entity.Z_int dummy "实体所在Z_int"
 scoreboard objectives add jkbw.Entity.Y dummy "实体所在高度"
 scoreboard objectives add jkbw.Entity.Time dummy "实体存活时间"
 

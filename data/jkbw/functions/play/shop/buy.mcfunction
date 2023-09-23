@@ -6,7 +6,7 @@ function jkbw:play/res/player/count
 function jkbw:play/shop/gui/page
 
 # 检测购买
-execute store success score @s jkbw.Player.ShopNow run clear @s #jkbw:shop{jkbw_shop:1}
+execute store success score @s jkbw.Player.ShopNow run clear @s #jkbw:shop{jkbw:["shop"]}
 execute as @s[tag=!jkbw_player_page,scores={jkbw.Player.ShopNow=1}] run function jkbw:play/shop/buy/real
 
 # 刷新商店

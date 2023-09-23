@@ -14,8 +14,11 @@ kill @e[tag=jkbw_res_summon]
 kill @e[tag=jkbw_res_extra]
 
 # 全局
+# 在全局传送点20格以下填充一层屏障
+execute at @e[limit=1,tag=jkbw_worldspawn] positioned ~ ~-20 ~ run fill ~-110 ~ ~-110 ~110 ~ ~110 barrier replace air
 # ↓6w局总不能碰巧可以循环碰到吧...当然这个上限也可以调到21亿
 execute if score #current_game jkbw.mem matches 60000.. run scoreboard players reset #current_game jkbw.mem
+worldborder set 211
 scoreboard players add #current_game jkbw.mem 1
 scoreboard players set #gaming jkbw.mem 1
 scoreboard players set #time jkbw.mem 3001

@@ -12,4 +12,4 @@ tag @a remove jkbw_player_out
 tag @a remove jkbw_player_outed
 scoreboard players reset #tiktok jkbw.mem
 tp @a @e[limit=1,tag=jkbw_worldspawn]
-function jkbw:load/init/tick2/map/init
+function jkbw:play/ready/map/init

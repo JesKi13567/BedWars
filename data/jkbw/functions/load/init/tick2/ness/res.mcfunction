@@ -1,2 +1,0 @@
-execute if entity @p[gamemode=creative,distance=..6,nbt={Inventory:[{Slot:-106b,id:"minecraft:diamond_block"}]}] run function jkbw:load/settings/menu/res/diamond
-execute if entity @p[gamemode=creative,distance=..6,nbt={Inventory:[{Slot:-106b,id:"minecraft:emerald_block"}]}] run function jkbw:load/settings/menu/res/emerald

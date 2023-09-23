@@ -7,8 +7,8 @@ execute unless score @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.CurrentGame = #
 execute if score @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.CurrentGame = #current_game jkbw.mem run function jkbw:play/death/rejoin
 scoreboard players reset @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.Player.LeaveGame
 
-# 记录坐标
-function jkbw:play/distance/global
+# 指南针
+execute as @s[nbt={SelectedItem:{id:"minecraft:compass"}}] run function jkbw:play/distance/global
 
 # 禁止拾取/清理
 clear @s #jkbw:clear

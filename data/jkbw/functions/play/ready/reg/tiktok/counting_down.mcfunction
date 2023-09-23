@@ -12,4 +12,4 @@ execute if score #ready_count1 jkbw.mem matches 5 if score #ready_count2 jkbw.me
 execute if score #ready_count1 jkbw.mem matches 5 if score #ready_count2 jkbw.mem matches 0 if score #teams jkbw.mem matches 4 if score #reg_num jkbw.mem matches 17.. run tellraw @a [{"text":"【⭐起床战争⭐】","color":"yellow"},{"text":"因人数达到上限，稍后将选取部分玩家旁观游戏！","color":"green"}]
 
 execute if score #ready_count1 jkbw.mem matches 0 if score #ready_count2 jkbw.mem matches 0 run function jkbw:play/start/check
-execute if score #ready_count1 jkbw.mem matches ..-60 if score #ready_count2 jkbw.mem matches 0 run function jkbw:load/init/tick2/reg/tiktok/ready
+execute if score #ready_count1 jkbw.mem matches ..-60 if score #ready_count2 jkbw.mem matches 0 run function jkbw:play/ready/reg/tiktok/ready
