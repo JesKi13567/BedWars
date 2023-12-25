@@ -8,8 +8,8 @@ worldborder set 211
 forceload remove all
 forceload add 10110223 10110223
 forceload add ~-90 ~-90 ~90 ~90
-# nbt物品初始化
-function jkbw:load/init/nbt
+# 容器与菜单
+function jkbw:load/init/containers
 function jkbw:load/settings/menu
 # 玩家
 gamemode creative @s
