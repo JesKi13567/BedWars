@@ -7,7 +7,7 @@
 #  loaded     exp_mode  attack_mode   teams      gaming       feedback
 # 是否加载     资源模式    攻击模式    队伍数量   正在进行游戏    函数反馈
 #scoreboard players set #loaded jkbw.mem 1
-scoreboard players set #exp_mode jkbw.mem 0
+scoreboard players set #shop_mode jkbw.mem 0
 scoreboard players reset #attack_mode jkbw.mem
 scoreboard players set #teams jkbw.mem 2
 scoreboard players set #gaming jkbw.mem 0
@@ -30,3 +30,6 @@ scoreboard players set #500 jkbw.mem 500
 scoreboard players set #600 jkbw.mem 600
 scoreboard players set #707 jkbw.mem 707
 scoreboard players set #1000 jkbw.mem 1000
+
+# 商店价格
+function jkbw:load/settings/menu/shop/init

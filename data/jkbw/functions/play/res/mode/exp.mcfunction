@@ -1,7 +1,8 @@
 # 经验模式
-scoreboard players operation @s jkbw.Player.OwnGolds *= #5 jkbw.mem
-scoreboard players operation @s jkbw.Player.OwnDiamonds *= #30 jkbw.mem
-scoreboard players operation @s jkbw.Player.OwnEmeralds *= #50 jkbw.mem
+scoreboard players operation @s jkbw.Player.OwnIrons *= #Eiron jkbw.mem
+scoreboard players operation @s jkbw.Player.OwnGolds *= #Egold jkbw.mem
+scoreboard players operation @s jkbw.Player.OwnDiamonds *= #Ediamond jkbw.mem
+scoreboard players operation @s jkbw.Player.OwnEmeralds *= #Eemerald jkbw.mem
 
 scoreboard players operation @s jkbw.Player.OwnExpLevels += @s jkbw.Player.OwnIrons
 scoreboard players operation @s jkbw.Player.OwnExpLevels += @s jkbw.Player.OwnGolds

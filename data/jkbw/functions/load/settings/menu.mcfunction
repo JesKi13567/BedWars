@@ -8,7 +8,7 @@ execute if score #test_mode jkbw.mem matches 1 run tellraw @a[tag=jkbw_admin] {"
 
 execute if score #tutorial jkbw.mem matches ..1 run tellraw @a[tag=jkbw_admin] {"text":"请务必按照教程顺序一步一步操作哦！","color":"aqua"}
 tellraw @a[tag=jkbw_admin] ["\n第一步：",{"text":"[使用方法]","color":"gold","clickEvent":{"action":"run_command","value":"/function jkbw:load/settings/tips"},"hoverEvent":{"action":"show_text","value":"※必看※"}}]
-execute if score #tutorial jkbw.mem matches 1 run tellraw @a[tag=jkbw_admin] ["第二步：",{"text":"[全局传送点]","color":"yellow","clickEvent":{"action":"run_command","value":"/function jkbw:load/settings/menu/worldspawn"},"hoverEvent":{"action":"show_text","value":"建议放在 y > 100 格及其以上（不然没法清理地图）。\n\n准备中的玩家在此点以下 10 格会被自动传送，\n游戏开始时会在此点以下 20 格平铺一层屏障。\n\n第一次进入游戏时的到达点和死亡传送点，\n又为起床战争地图中心设置边界，半径 100 格。"}}]
+execute if score #tutorial jkbw.mem matches 1 run tellraw @a[tag=jkbw_admin] ["\n第二步：",{"text":"[全局传送点]","color":"yellow","clickEvent":{"action":"run_command","value":"/function jkbw:load/settings/menu/worldspawn"},"hoverEvent":{"action":"show_text","value":"建议放在 y > 100 格及其以上（不然没法清理地图）。\n\n准备中的玩家在此点以下 10 格会被传送回来，\n游戏开始时会在此点以下 20 格平铺一层屏障。\n\n第一次进入游戏时的到达点和死亡传送点，\n又为起床战争地图中心设置边界，半径 100 格。"}}]
 
 execute if score #tutorial jkbw.mem matches 2.. run function jkbw:load/settings/menu/tutorial_2
 

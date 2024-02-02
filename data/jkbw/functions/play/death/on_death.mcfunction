@@ -7,10 +7,11 @@ tp @s @e[limit=1,tag=jkbw_worldspawn]
 # 工具等级 -1
 scoreboard players remove @s[scores={jkbw.Player.AxeLevels=2..}] jkbw.Player.AxeLevels 1
 scoreboard players remove @s[scores={jkbw.Player.PickaxeLevels=2..}] jkbw.Player.PickaxeLevels 1
+scoreboard players set @s jkbw.Player.Compass 0
 
 # 检测是否为自杀（间接击杀）
-execute if score @s jkbw.Temp = @s jkbw.Player.UUID run tag @s remove jkbw_vic
-execute as @s[tag=jkbw_vic] as @a if score @s jkbw.Player.UUID = @p[tag=jkbw_vic] jkbw.Temp run tag @s add jkbw_murder
+execute if score @s jkbw.Temp = @s jkbw.Player.ID run tag @s remove jkbw_vic
+execute as @s[tag=jkbw_vic] as @a if score @s jkbw.Player.ID = @p[tag=jkbw_vic] jkbw.Temp run tag @s add jkbw_murder
 execute if entity @p[tag=jkbw_murder] run tag @s[tag=jkbw_vic] add jkbw_victim
 tag @s[tag=jkbw_vic] remove jkbw_vic
 

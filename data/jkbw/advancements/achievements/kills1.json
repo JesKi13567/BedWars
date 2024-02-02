@@ -9,13 +9,8 @@
     },
     "description": [
       {
-        "text": "击杀敌人 10 次！\n",
+        "text": "击杀敌人 10 次！",
         "color": "white"
-      },
-      {
-        "text": "吼吼，渐入佳境。",
-        "color": "gray",
-        "italic": true
       }
     ],
     "frame": "task",

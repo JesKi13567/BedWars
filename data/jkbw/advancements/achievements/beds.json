@@ -9,13 +9,8 @@
     },
     "description": [
       {
-        "text": "你破坏了对手的床！\n",
+        "text": "你破坏了对手的床！",
         "color": "white"
-      },
-      {
-        "text": "善！",
-        "color": "gray",
-        "italic": true
       }
     ],
     "frame": "task",

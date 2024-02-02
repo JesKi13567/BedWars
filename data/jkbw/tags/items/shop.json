@@ -23,7 +23,7 @@
         "potion",
         "golden_apple",
         "snowball",
-        "polar_bear_spawn_egg",
+        "iron_golem_spawn_egg",
         "fire_charge",
         "tnt",
         "ender_pearl",
@@ -47,6 +47,8 @@
         "gray_stained_glass",
         "light_gray_stained_glass_pane",
         "yellow_stained_glass_pane",
-        "red_stained_glass_pane"
+        "red_stained_glass_pane",
+        "white_stained_glass_pane",
+        "#jkbw:wool"
     ]
 }

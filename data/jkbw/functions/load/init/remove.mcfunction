@@ -13,9 +13,8 @@ scoreboard objectives remove jkbw.Team.Dragon
 scoreboard objectives remove jkbw.Team.TrapNum
 
 scoreboard objectives remove jkbw.Player.Hp
-scoreboard objectives remove jkbw.Player.Chest
 scoreboard objectives remove jkbw.Player.Page
-scoreboard objectives remove jkbw.Player.Distance
+scoreboard objectives remove jkbw.Player.Compass
 scoreboard objectives remove jkbw.Player.ShopNow
 scoreboard objectives remove jkbw.Player.LeaveGame
 scoreboard objectives remove jkbw.Player.Food
@@ -39,6 +38,10 @@ scoreboard objectives remove jkbw.Player.OwnIrons
 scoreboard objectives remove jkbw.Player.OwnGolds
 scoreboard objectives remove jkbw.Player.OwnDiamonds
 scoreboard objectives remove jkbw.Player.OwnEmeralds
+scoreboard objectives remove jkbw.Player.OwnIronsTemp
+scoreboard objectives remove jkbw.Player.OwnGoldsTemp
+scoreboard objectives remove jkbw.Player.OwnDiamondsTemp
+scoreboard objectives remove jkbw.Player.OwnEmeraldsTemp
 scoreboard objectives remove jkbw.Player.OwnExpLevels
 scoreboard objectives remove jkbw.Player.OwnExpLevelsReal
 scoreboard objectives remove jkbw.Player.HasRes
@@ -56,11 +59,14 @@ scoreboard objectives remove jkbw.Player.UseTNT
 scoreboard objectives remove jkbw.Player.UseTower
 scoreboard objectives remove jkbw.Player.UseFireballCD
 scoreboard objectives remove jkbw.Player.UsePlatformCD
-scoreboard objectives remove jkbw.Player.UUID
+scoreboard objectives remove jkbw.Player.ID
+scoreboard objectives remove jkbw.Player.Lookup
 scoreboard objectives remove jkbw.Player.DamageType
 scoreboard objectives remove jkbw.Entity.X
+scoreboard objectives remove jkbw.Entity.X1
 scoreboard objectives remove jkbw.Entity.X_int
 scoreboard objectives remove jkbw.Entity.Z
+scoreboard objectives remove jkbw.Entity.Z1
 scoreboard objectives remove jkbw.Entity.Z_int
 scoreboard objectives remove jkbw.Entity.Y
 scoreboard objectives remove jkbw.Entity.Time

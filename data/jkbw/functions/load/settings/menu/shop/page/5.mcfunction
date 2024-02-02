@@ -1,0 +1,2 @@
+function jkbw:load/settings/menu/shop/refresh
+tellraw @s ["\n\n\n\n\n",{"text": "\n\n【无限火力】（经验）\n","color": "red"},"\n\n",{"text": "【上一页】","color": "green","clickEvent": {"action":"run_command","value": "/function jkbw:load/settings/menu/shop/page/4"}},"  ",{"text": "【刷新价格】","color": "aqua","clickEvent": {"action":"run_command","value": "/function jkbw:load/settings/menu/shop/refresh"}},"  ",{"text": "【重置价格】","color": "red","clickEvent": {"action":"run_command","value": "/function jkbw:load/settings/menu/shop/init"}}]

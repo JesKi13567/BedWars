@@ -9,13 +9,8 @@
     },
     "description": [
       {
-        "text": "第一次胜利！\n",
+        "text": "第一次胜利！",
         "color": "white"
-      },
-      {
-        "text": "好耶！",
-        "color": "gray",
-        "italic": true
       }
     ],
     "frame": "task",

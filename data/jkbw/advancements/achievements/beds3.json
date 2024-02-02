@@ -9,13 +9,8 @@
     },
     "description": [
       {
-        "text": "破坏 30 次对手的床！\n",
+        "text": "破坏 30 次对手的床！",
         "color": "white"
-      },
-      {
-        "text": "恭喜。",
-        "color": "gray",
-        "italic": true
       }
     ],
     "frame": "task",

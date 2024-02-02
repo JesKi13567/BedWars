@@ -19,7 +19,7 @@ execute if score #attack_mode jkbw.mem matches 1 run function jkbw:play/team/loo
 
 # 指南针
 execute store success score @s jkbw.Player.HasCompass run clear @s compass 0
-item replace entity @s[nbt=!{Inventory:[{Slot:8b}]},scores={jkbw.Player.HasCompass=0},team=jkbw.red] hotbar.8 from block 10110222 1 10110223 container.0
-item replace entity @s[nbt=!{Inventory:[{Slot:8b}]},scores={jkbw.Player.HasCompass=0},team=jkbw.blue] hotbar.8 from block 10110222 1 10110223 container.1
-item replace entity @s[nbt=!{Inventory:[{Slot:8b}]},scores={jkbw.Player.HasCompass=0},team=jkbw.green] hotbar.8 from block 10110222 1 10110223 container.2
-item replace entity @s[nbt=!{Inventory:[{Slot:8b}]},scores={jkbw.Player.HasCompass=0},team=jkbw.yellow] hotbar.8 from block 10110222 1 10110223 container.3
+item replace entity @s[nbt=!{Inventory: [{Slot: 8b}]},scores={jkbw.Player.HasCompass=0},team=jkbw.red] hotbar.8 from block 10110222 1 10110223 container.0
+item replace entity @s[nbt=!{Inventory: [{Slot: 8b}]},scores={jkbw.Player.HasCompass=0},team=jkbw.blue] hotbar.8 from block 10110222 1 10110223 container.1
+item replace entity @s[nbt=!{Inventory: [{Slot: 8b}]},scores={jkbw.Player.HasCompass=0},team=jkbw.green] hotbar.8 from block 10110222 1 10110223 container.2
+item replace entity @s[nbt=!{Inventory: [{Slot: 8b}]},scores={jkbw.Player.HasCompass=0},team=jkbw.yellow] hotbar.8 from block 10110222 1 10110223 container.3

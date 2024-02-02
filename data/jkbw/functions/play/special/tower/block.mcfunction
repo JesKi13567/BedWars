@@ -1,3 +1,4 @@
+execute as @e[tag=jkbw_tower_block] run function jkbw:play/special/check_pos
 # 梯子朝向
 execute as @s[tag=jkbw_north] as @e[distance=..10,tag=jkbw_tower_ladder] at @s run fill ~ ~ ~ ~ ~ ~ ladder[facing=south] replace air
 execute as @s[tag=jkbw_south] as @e[distance=..10,tag=jkbw_tower_ladder] at @s run fill ~ ~ ~ ~ ~ ~ ladder[facing=north] replace air

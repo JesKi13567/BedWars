@@ -9,13 +9,8 @@
     },
     "description": [
       {
-        "text": "破坏 5 次对手的床！\n",
+        "text": "破坏 5 次对手的床！",
         "color": "white"
-      },
-      {
-        "text": "嗯哼。",
-        "color": "gray",
-        "italic": true
       }
     ],
     "frame": "task",

@@ -9,13 +9,8 @@
     },
     "description": [
       {
-        "text": "胜利 20 次。\n",
+        "text": "胜利 20 次。",
         "color": "white"
-      },
-      {
-        "text": "无敌！",
-        "color": "gray",
-        "italic": true
       }
     ],
     "frame": "task",

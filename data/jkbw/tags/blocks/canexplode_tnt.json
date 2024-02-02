@@ -1,13 +1,7 @@
 {
     "values": [
-        "#jkbw:wool",
+        "#jkbw:canexplode_fireball",
         "#jkbw:terracotta",
-        "end_stone",
-        "ladder",
-        "oak_planks",
-        "sponge",
-        "wet_sponge",
-        "fire",
-        "air"
+        "end_stone"
     ]
 }

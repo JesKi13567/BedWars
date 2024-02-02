@@ -30,7 +30,7 @@ execute if entity @e[tag=jkbw_spawn_yellow,limit=1,scores={jkbw.Team.Sharpness=0
 
 ## 给予
 # 剪刀
-give @s[nbt=!{Inventory: [{tag: {jkbw: ["shear"]}}]},scores={jkbw.Player.HasShears=1}] shears{CanDestroy: ["#jkbw:candestroy"], jkbw: ["clean", "shear"], Unbreakable: 1b, HideFlags: 28}
+give @s[nbt=!{Inventory: [{tag: {jkbw: ["shears"]}}]},scores={jkbw.Player.HasShears=1}] shears{CanDestroy: ["#jkbw:candestroy"], jkbw: ["clean", "shears"], Unbreakable: 1b, HideFlags: 28}
 
 # 斧头与镐子
 execute unless score #attack_mode jkbw.mem matches 1 run function jkbw:play/team/loop/tool/old

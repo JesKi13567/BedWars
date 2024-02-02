@@ -18,9 +18,5 @@ execute unless score #test_mode jkbw.mem matches 1 run function jkbw:play/ready/
 # 测试模式
 execute if score #test_mode jkbw.mem matches 1 run bossbar set jkbw:test_mode visible true
 
-# 世界出生点高度
-execute as @e[limit=1,tag=jkbw_worldspawn] store result score @s jkbw.Entity.Y run data get entity @s Pos[1]
-scoreboard players remove @e[limit=1,tag=jkbw_worldspawn] jkbw.Entity.Y 10
-
 # 清理杂物
 kill @e[type=#jkbw:clear]

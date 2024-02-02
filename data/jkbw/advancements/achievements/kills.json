@@ -9,13 +9,8 @@
     },
     "description": [
       {
-        "text": "第一次击杀！\n",
+        "text": "第一次击杀！",
         "color": "white"
-      },
-      {
-        "text": "我要看到血流成河！",
-        "color": "gray",
-        "italic": true
       }
     ],
     "frame": "task",

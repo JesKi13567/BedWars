@@ -35,12 +35,12 @@ team join jkbw.npc_alive §e黄队§r：
 
 # 公屏显示
 kill @e[tag=jkbw_display]
-execute if score #multi_mode jkbw.mem matches 1 run summon marker 10110223 10 10110223 {Tags:["jkbw","jkbw_display","jkbw_display_multi"],CustomName:'{"text":"单/双人","color":"gold"}'}
-execute unless score #multi_mode jkbw.mem matches 1 run summon marker 10110223 10 10110223 {Tags:["jkbw","jkbw_display","jkbw_display_multi"],CustomName:'{"text":"三/四人","color":"gold"}'}
+execute if score #solo_mode jkbw.mem matches 1 run summon marker 10110223 10 10110223 {Tags:["jkbw","jkbw_display","jkbw_display_multi"],CustomName:'{"text":"单/双人","color":"gold"}'}
+execute unless score #solo_mode jkbw.mem matches 1 run summon marker 10110223 10 10110223 {Tags:["jkbw","jkbw_display","jkbw_display_multi"],CustomName:'{"text":"三/四人","color":"gold"}'}
 
-execute if score #exp_mode jkbw.mem matches 0 run summon marker 10110223 10 10110223 {Tags:["jkbw","jkbw_display","jkbw_display_exp"],CustomName:'{"text":"经典","color":"gold"}'}
-execute if score #exp_mode jkbw.mem matches 1 run summon marker 10110223 10 10110223 {Tags:["jkbw","jkbw_display","jkbw_display_exp"],CustomName:'{"text":"经验","color":"gold"}'}
-execute if score #exp_mode jkbw.mem matches 2 run summon marker 10110223 10 10110223 {Tags:["jkbw","jkbw_display","jkbw_display_exp"],CustomName:'{"text":"无限火力","color":"gold"}'}
+execute if score #shop_mode jkbw.mem matches 0 run summon marker 10110223 10 10110223 {Tags:["jkbw","jkbw_display","jkbw_display_exp"],CustomName:'{"text":"经典","color":"gold"}'}
+execute if score #shop_mode jkbw.mem matches 1 run summon marker 10110223 10 10110223 {Tags:["jkbw","jkbw_display","jkbw_display_exp"],CustomName:'{"text":"经验","color":"gold"}'}
+execute if score #shop_mode jkbw.mem matches 2 run summon marker 10110223 10 10110223 {Tags:["jkbw","jkbw_display","jkbw_display_exp"],CustomName:'{"text":"无限火力","color":"gold"}'}
 
 execute if score #attack_mode jkbw.mem matches 1 run summon marker 10110223 10 10110223 {Tags:["jkbw","jkbw_display","jkbw_display_attack"],CustomName:'{"text":"1.9+","color":"gold"}'}
 execute unless score #attack_mode jkbw.mem matches 1 run summon marker 10110223 10 10110223 {Tags:["jkbw","jkbw_display","jkbw_display_attack"],CustomName:'{"text":"1.8-","color":"gold"}'}

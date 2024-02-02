@@ -1,3 +1,5 @@
+## 减少经验给予次数，故写本函数
+# 资源循环见 jkbw:play/shop/cost/res_give
 xp add @s[scores={jkbw.Player.OwnExpLevels=1000..}] 1000 levels
 scoreboard players remove @s[scores={jkbw.Player.OwnExpLevels=1000..}] jkbw.Player.OwnExpLevels 1000
 xp add @s[scores={jkbw.Player.OwnExpLevels=100..999}] 100 levels

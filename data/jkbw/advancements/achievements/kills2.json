@@ -9,13 +9,8 @@
     },
     "description": [
       {
-        "text": "击杀敌人 30 次！\n",
+        "text": "击杀敌人 30 次！",
         "color": "white"
-      },
-      {
-        "text": "哇哦，略有小成。",
-        "color": "gray",
-        "italic": true
       }
     ],
     "frame": "task",
