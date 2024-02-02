@@ -4,10 +4,10 @@ execute as @s[team=jkbw.blue] if entity @e[tag=jkbw_spawn_blue,limit=1,scores={j
 execute as @s[team=jkbw.green] if entity @e[tag=jkbw_spawn_green,limit=1,scores={jkbw.Team.Sharpness=1}] run tag @s add jkbw_bought
 execute as @s[team=jkbw.yellow] if entity @e[tag=jkbw_spawn_yellow,limit=1,scores={jkbw.Team.Sharpness=1}] run tag @s add jkbw_bought
 
-execute unless score #solo_mode jkbw.mem matches 1 if score @s jkbw.Player.OwnDiamonds >= #sharpness jkbw.mem run tag @s add jkbw_buy_success
-execute unless score #solo_mode jkbw.mem matches 1 if score @s jkbw.Player.OwnExpLevelsReal >= #Esharpness jkbw.mem run tag @s add jkbw_buy_success
-execute if score #solo_mode jkbw.mem matches 1 if score @s jkbw.Player.OwnDiamonds >= #sharpness1 jkbw.mem run tag @s add jkbw_buy_success
-execute if score #solo_mode jkbw.mem matches 1 if score @s jkbw.Player.OwnExpLevelsReal >= #Esharpness1 jkbw.mem run tag @s add jkbw_buy_success
+execute unless score #solo_mode jkbw.mem matches 1 if score @s jkbw.Player.OwnDiamonds >= #sharpness jkbw.mem run tag @s[tag=!jkbw_bought] add jkbw_buy_success
+execute unless score #solo_mode jkbw.mem matches 1 if score @s jkbw.Player.OwnExpLevelsReal >= #Esharpness jkbw.mem run tag @s[tag=!jkbw_bought] add jkbw_buy_success
+execute if score #solo_mode jkbw.mem matches 1 if score @s jkbw.Player.OwnDiamonds >= #sharpness1 jkbw.mem run tag @s[tag=!jkbw_bought] add jkbw_buy_success
+execute if score #solo_mode jkbw.mem matches 1 if score @s jkbw.Player.OwnExpLevelsReal >= #Esharpness1 jkbw.mem run tag @s[tag=!jkbw_bought] add jkbw_buy_success
 
 # 失败购买
 tellraw @s[tag=jkbw_bought] [{"text":"无法购买","color":"red"},{"text":" 锋利附魔 ","color":"yellow"},"，因为你所在的团队已拥有！"]
@@ -38,5 +38,5 @@ execute as @s[team=jkbw.yellow,tag=!jkbw_bought,tag=jkbw_buy_success] run tellra
 playsound entity.experience_orb.pickup player @s[tag=!jkbw_bought,tag=jkbw_buy_success]
 execute unless score #solo_mode jkbw.mem matches 1 if score #shop_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnDiamonds -= #sharpness jkbw.mem
 execute unless score #solo_mode jkbw.mem matches 1 if score #shop_mode jkbw.mem matches 1 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal -= #Esharpness jkbw.mem
-execute if score #solo_mode jkbw.mem matches 1 if score #shop_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnDiamonds -= #sharpness jkbw.mem
-execute if score #solo_mode jkbw.mem matches 1 if score #shop_mode jkbw.mem matches 1 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal -= #Esharpness jkbw.mem
+execute if score #solo_mode jkbw.mem matches 1 if score #shop_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnDiamonds -= #sharpness1 jkbw.mem
+execute if score #solo_mode jkbw.mem matches 1 if score #shop_mode jkbw.mem matches 1 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal -= #Esharpness1 jkbw.mem
