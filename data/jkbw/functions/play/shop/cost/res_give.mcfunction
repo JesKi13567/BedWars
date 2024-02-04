@@ -18,19 +18,19 @@ scoreboard players operation @s jkbw.Player.OwnDiamonds -= @s jkbw.Player.OwnDia
 scoreboard players operation @s jkbw.Player.OwnEmeralds -= @s jkbw.Player.OwnEmeraldsTemp
 
 # 极端情况是自己购买时的资源被队友拿走
-summon item ~ ~ ~ {PickupDelay: 0, Item: {id: "minecraft:iron_ingot", Count: 1b, tag: {CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}}, Tags: ["jkbw", "jkbw_cost_res", "jkbw_cost_iron"]}
-summon item ~ ~ ~ {PickupDelay: 0, Item: {id: "minecraft:gold_ingot", Count: 1b, tag: {CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}}, Tags: ["jkbw", "jkbw_cost_res", "jkbw_cost_gold"]}
-summon item ~ ~ ~ {PickupDelay: 0, Item: {id: "minecraft:diamond", Count: 1b, tag: {CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}}, Tags: ["jkbw", "jkbw_cost_res", "jkbw_cost_diamond"]}
-summon item ~ ~ ~ {PickupDelay: 0, Item: {id: "minecraft:emerald", Count: 1b, tag: {CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}}, Tags: ["jkbw", "jkbw_cost_res", "jkbw_cost_emerald"]}
+summon item ~ ~ ~ {PickupDelay: 0, Item: {id: "minecraft:iron_ingot", Count: 1b, tag: {CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}}, Tags: ["jkbw", "jkbw_cost_res", "jkbw_cost_iron"]}
+summon item ~ ~ ~ {PickupDelay: 0, Item: {id: "minecraft:gold_ingot", Count: 1b, tag: {CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}}, Tags: ["jkbw", "jkbw_cost_res", "jkbw_cost_gold"]}
+summon item ~ ~ ~ {PickupDelay: 0, Item: {id: "minecraft:diamond", Count: 1b, tag: {CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}}, Tags: ["jkbw", "jkbw_cost_res", "jkbw_cost_diamond"]}
+summon item ~ ~ ~ {PickupDelay: 0, Item: {id: "minecraft:emerald", Count: 1b, tag: {CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}}, Tags: ["jkbw", "jkbw_cost_res", "jkbw_cost_emerald"]}
 
 # 这里的处理是为了跟其他掉落物区分
-scoreboard players add @e[type=item,tag=jkbw_cost_res,distance=..1] jkbw.Temp 1
+scoreboard players add @e[type=item,tag=jkbw_cost_res,distance=...1] jkbw.Temp 1
 
 # 记录个数
-execute as @e[type=item,tag=jkbw_cost_iron,sort=nearest,distance=..1,scores={jkbw.Temp=1}] at @s store result entity @s Item.Count byte 1 run scoreboard players get @p[tag=jkbw_buy_success] jkbw.Player.OwnIronsTemp
-execute as @e[type=item,tag=jkbw_cost_gold,sort=nearest,distance=..1,scores={jkbw.Temp=1}] at @s store result entity @s Item.Count byte 1 run scoreboard players get @p[tag=jkbw_buy_success] jkbw.Player.OwnGoldsTemp
-execute as @e[type=item,tag=jkbw_cost_diamond,sort=nearest,distance=..1,scores={jkbw.Temp=1}] at @s store result entity @s Item.Count byte 1 run scoreboard players get @p[tag=jkbw_buy_success] jkbw.Player.OwnDiamondsTemp
-execute as @e[type=item,tag=jkbw_cost_emerald,sort=nearest,distance=..1,scores={jkbw.Temp=1}] at @s store result entity @s Item.Count byte 1 run scoreboard players get @p[tag=jkbw_buy_success] jkbw.Player.OwnEmeraldsTemp
+execute as @e[type=item,tag=jkbw_cost_iron,sort=nearest,distance=...1,scores={jkbw.Temp=1}] at @s store result entity @s Item.Count byte 1 run scoreboard players get @p[tag=jkbw_buy_success] jkbw.Player.OwnIronsTemp
+execute as @e[type=item,tag=jkbw_cost_gold,sort=nearest,distance=...1,scores={jkbw.Temp=1}] at @s store result entity @s Item.Count byte 1 run scoreboard players get @p[tag=jkbw_buy_success] jkbw.Player.OwnGoldsTemp
+execute as @e[type=item,tag=jkbw_cost_diamond,sort=nearest,distance=...1,scores={jkbw.Temp=1}] at @s store result entity @s Item.Count byte 1 run scoreboard players get @p[tag=jkbw_buy_success] jkbw.Player.OwnDiamondsTemp
+execute as @e[type=item,tag=jkbw_cost_emerald,sort=nearest,distance=...1,scores={jkbw.Temp=1}] at @s store result entity @s Item.Count byte 1 run scoreboard players get @p[tag=jkbw_buy_success] jkbw.Player.OwnEmeraldsTemp
 
 # 循环
 execute as @s[scores={jkbw.Player.OwnIrons=1..}] at @s run function jkbw:play/shop/cost/res_give

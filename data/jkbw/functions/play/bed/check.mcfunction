@@ -14,7 +14,7 @@ execute store result score @e[tag=jkbw_bed_yellow,limit=1,tag=jkbw_bed_no_block,
 # 团灭后提示（一次）
 execute as @e[tag=jkbw_bed_red,tag=!jkbw_bed_init,tag=!jkbw_bed_no_player,limit=1,scores={jkbw.Team.Alive=0}] run tellraw @a ["",{"text":"\n 红队 ","color":"red","bold":true},"被团灭了！\n"]
 execute as @e[tag=jkbw_bed_blue,tag=!jkbw_bed_init,tag=!jkbw_bed_no_player,limit=1,scores={jkbw.Team.Alive=0}] run tellraw @a ["",{"text":"\n 蓝队 ","color":"blue","bold":true},"被团灭了！\n"]
-execute if score #teams jkbw.mem matches 4.. as @e[tag=jkbw_bed_green,tag=!jkbw_bed_init,tag=!jkbw_bed_no_player,limit=1,scores={jkbw.Team.Alive=0}] run tellraw @a ["",{"text":"\n 绿队 ","color":"green","bold":true},"被团灭了！\n"]
+execute if score #teams jkbw.mem matches 3.. as @e[tag=jkbw_bed_green,tag=!jkbw_bed_init,tag=!jkbw_bed_no_player,limit=1,scores={jkbw.Team.Alive=0}] run tellraw @a ["",{"text":"\n 绿队 ","color":"green","bold":true},"被团灭了！\n"]
 execute if score #teams jkbw.mem matches 4.. as @e[tag=jkbw_bed_yellow,tag=!jkbw_bed_init,tag=!jkbw_bed_no_player,limit=1,scores={jkbw.Team.Alive=0}] run tellraw @a ["",{"text":"\n 黄队 ","color":"yellow","bold":true},"被团灭了！\n"]
 
 # 团灭后队伍箱子解锁

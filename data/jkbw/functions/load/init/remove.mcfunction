@@ -92,7 +92,7 @@ tag @a remove jkbw_admin
 tag @a remove jkbw_player_out
 tag @a remove jkbw_player_outed
 
-bossbar remove jkbw:clear_map
+bossbar remove jkbw:map
 bossbar remove jkbw:test_mode
 bossbar remove jkbw:game_progress
 

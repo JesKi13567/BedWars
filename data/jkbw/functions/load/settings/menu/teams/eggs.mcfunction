@@ -16,7 +16,7 @@ give @s dark_oak_sign{display: {Name: '{"text":"队伍数量设置","color":"lig
 
 give @s red_wool{display: {Lore: ['{"text":"羊毛放在副手，道具放在主手。","italic":false,"color":"yellow"}']}}
 give @s blue_wool{display: {Lore: ['{"text":"羊毛放在副手，道具放在主手。","italic":false,"color":"yellow"}']}}
-give @s green_wool{display: {Lore: ['{"text":"羊毛放在副手，道具放在主手。","italic":false,"color":"yellow"}', '{"text":"注：开启 4 队时再使用！","italic":false,"color":"red"}']}}
+give @s green_wool{display: {Lore: ['{"text":"羊毛放在副手，道具放在主手。","italic":false,"color":"yellow"}', '{"text":"注：开启 3 队及以上时再使用！","italic":false,"color":"red"}']}}
 give @s yellow_wool{display: {Lore: ['{"text":"羊毛放在副手，道具放在主手。","italic":false,"color":"yellow"}', '{"text":"注：开启 4 队时再使用！","italic":false,"color":"red"}']}}
 
 give @s slime_spawn_egg{display: {Name: '{"text":"全局资源点","color":"green","bold":true,"italic":false}', Lore: ['{"text":"使用时，保证副手拿着对应资源方块。","italic":false,"color":"yellow"}']}, EntityTag: {id: "marker", Tags: ["jkbw", "jkbw_first", "jkbw_first_res"]}, Enchantments: [{id: "unbreaking", lvl: 10}], jkbw: ["eggs", "5"]}

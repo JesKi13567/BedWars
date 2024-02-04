@@ -9,8 +9,8 @@ scoreboard players remove @a[scores={jkbw.Player.UsePlatformCD=1..}] jkbw.Player
 # 受伤原谅时长
 execute as @a[gamemode=adventure,tag=jkbw_player_reg,tag=!jkbw_player_outed] at @s run function jkbw:play/kill/execuse
 
-# 资源生成（测试模式除外）
-execute unless score #test_mode jkbw.mem matches 1 run function jkbw:play/res/global
+# 资源生成
+function jkbw:play/res/global
 
 # 团队常驻
 function jkbw:play/shop/team/global
@@ -42,12 +42,12 @@ tellraw @a[tag=!jkbw_player_reg,team=,gamemode=adventure] [{"text":"【⭐起床
 gamemode spectator @a[gamemode=!creative,team=]
 tag @a[tag=jkbw_player_reg,team=] remove jkbw_player_reg
 
-# 游戏总计时（1局50分钟，死斗模式为最后5分钟）（测试模式除外）
-execute unless score #test_mode jkbw.mem matches 1 run function jkbw:play/start/timing
+# 游戏总计时（1局50分钟，死斗模式为最后5分钟）
+function jkbw:play/start/timing
 
 # 检测获胜（测试模式未开时）
 execute unless score #test_mode jkbw.mem matches 1 run function jkbw:play/end/check
 
-bossbar set jkbw:clear_map players @a
+bossbar set jkbw:map players @a
 bossbar set jkbw:game_progress players @a
 bossbar set jkbw:test_mode players @a

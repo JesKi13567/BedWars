@@ -6,6 +6,7 @@ execute as @s[scores={jkbw.Player.DamageType=2}] run tellraw @a [{"selector":"@s
 execute as @s[scores={jkbw.Player.DamageType=3}] run tellraw @a [{"selector":"@s"},{"text":" 被 ","color":"gray"},{"selector":"@p[tag=jkbw_murder]"},{"text":" 的蠹虫啃掉了脚趾。","color":"gray"}]
 execute as @s[scores={jkbw.Player.DamageType=4}] run tellraw @a [{"selector":"@s"},{"text":" 被 ","color":"gray"},{"selector":"@p[tag=jkbw_murder]"},{"text":" 的铁傀儡砸扁了。","color":"gray"}]
 execute as @s[scores={jkbw.Player.DamageType=5}] run tellraw @a [{"selector":"@s"},{"text":" 被 ","color":"gray"},{"selector":"@p[tag=jkbw_murder]"},{"text":" 炸死了。","color":"gray"}]
+execute as @s[scores={jkbw.Player.DamageType=6}] run tellraw @a [{"selector":"@s"},{"text":" 被 ","color":"gray"},{"selector":"@p[tag=jkbw_murder]"},{"text":" 射杀了。","color":"gray"}]
 
 # 最终击杀
 execute as @s[team=jkbw.red] if entity @e[limit=1,tag=jkbw_bed_red,tag=jkbw_bed_no_block] run tellraw @a {"text":"最终击杀！","color":"aqua","bold":true}

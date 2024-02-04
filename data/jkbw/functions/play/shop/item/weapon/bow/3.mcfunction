@@ -1,5 +1,5 @@
 # 检测能否买
-execute if score @s jkbw.Player.OwnOwnEmeralds >= #bow3 jkbw.mem run tag @s add jkbw_buy_success
+execute if score @s jkbw.Player.OwnEmeralds >= #bow3 jkbw.mem run tag @s add jkbw_buy_success
 execute if score @s jkbw.Player.OwnExpLevelsReal >= #Ebow3 jkbw.mem run tag @s add jkbw_buy_success
 
 # 失败购买
@@ -16,5 +16,5 @@ playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 give @s[tag=jkbw_buy_success] bow{display: {Name: '{"text":"弓（力量 I 冲击 I）","color":"green","italic":false}'}, CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28, Unbreakable: 1b, Enchantments: [{id: "power", lvl: 1}, {id: "punch", lvl: 1}]}
 tellraw @s[tag=jkbw_buy_success] [{"text":"成功购买","color":"green"},{"text":" 弓（力量 I 冲击 I） ","color":"gold"},"！"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
-execute if score #shop_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnOwnEmeralds -= #bow3 jkbw.mem
+execute if score #shop_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnEmeralds -= #bow3 jkbw.mem
 execute if score #shop_mode jkbw.mem matches 1 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal -= #Ebow3 jkbw.mem

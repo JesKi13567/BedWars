@@ -5,7 +5,7 @@ scoreboard objectives setdisplay sidebar jkbw.display
 scoreboard players set =================== jkbw.display 7
 scoreboard players set §c红队§r： jkbw.display 6
 scoreboard players set §9蓝队§r： jkbw.display 5
-execute if score #teams jkbw.mem matches 4.. run scoreboard players set §a绿队§r： jkbw.display 4
+execute if score #teams jkbw.mem matches 3.. run scoreboard players set §a绿队§r： jkbw.display 4
 execute if score #teams jkbw.mem matches 4.. run scoreboard players set §e黄队§r： jkbw.display 3
 scoreboard players set ------------------- jkbw.display 2
 scoreboard players set 数据包作者：JK137 jkbw.display 1

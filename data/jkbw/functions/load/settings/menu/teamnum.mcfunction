@@ -1,4 +1,4 @@
-scoreboard players add #teams jkbw.mem 2
+scoreboard players add #teams jkbw.mem 1
 execute if score #teams jkbw.mem matches 5.. run scoreboard players set #teams jkbw.mem 2
 playsound block.note_block.bell player @a[distance=..6]
 

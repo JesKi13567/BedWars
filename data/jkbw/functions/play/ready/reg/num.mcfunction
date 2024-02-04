@@ -2,7 +2,6 @@
 ## 玩家
 # 管理员（显示菜单）
 tag @a[gamemode=creative] add jkbw_admin
-#execute at @a[tag=jkbw_admin] run function jkbw:play/ready/map/build_fill
 
 # 退出游戏处理
 execute as @a[scores={jkbw.Player.LeaveGame=1..}] run function jkbw:play/ready/reg/leavegame

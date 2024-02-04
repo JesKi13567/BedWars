@@ -1,10 +1,10 @@
-bossbar add jkbw:clear_map {"text":"清理地图中...","color":"yellow","bold":true}
-bossbar set jkbw:clear_map color green
-bossbar set jkbw:clear_map style progress
-bossbar set jkbw:clear_map max 220
-bossbar set jkbw:clear_map value 220
-bossbar set jkbw:clear_map players @a
-bossbar set jkbw:clear_map visible false
+bossbar add jkbw:map {"text":"清理地图中...","color":"yellow","bold":true}
+bossbar set jkbw:map color green
+bossbar set jkbw:map style progress
+bossbar set jkbw:map max 220
+bossbar set jkbw:map value 220
+bossbar set jkbw:map players @a
+bossbar set jkbw:map visible false
 
 bossbar add jkbw:game_progress "游戏进度条"
 bossbar set jkbw:game_progress color blue

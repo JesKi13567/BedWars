@@ -6,9 +6,9 @@ execute as @a[gamemode=adventure,tag=jkbw_player_reg,tag=!jkbw_player_outed] at 
 function jkbw:play/bed/check
 
 # 掉落物处理
-execute as @e[type=item,tag=!jkbw] at @s unless entity @s[nbt={Item:{id:"minecraft:arrow"}}] unless entity @s[nbt={Item:{id:"minecraft:fire_charge"}}] run data merge entity @s {Item:{tag:{CanPlaceOn:["#jkbw:canplaceon"],CanDestroy:["#jkbw:candestroy"],HideFlags:28}},Tags:["jkbw"]}
+execute as @e[type=item,tag=!jkbw] at @s unless entity @s[nbt={Item: {id: "minecraft:arrow"}}] unless entity @s[nbt={Item: {id: "minecraft:fire_charge"}}] run data merge entity @s {Item: {tag: {CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}}, Tags: ["jkbw"]}
 
 # 资源点与出生点附近禁止建造
 execute as @e[tag=jkbw_point] at @s store success score @s jkbw.Temp run fill ~-2 ~2 ~-2 ~2 ~-3 ~2 air replace #jkbw:no_near_point
-execute as @e[tag=jkbw_point,scores={jkbw.Temp=1}] at @s run tellraw @a[distance=..7] {"text":"你不能在这里建造！","color":"red"}
+execute as @e[tag=jkbw_point,scores={jkbw.Temp=1}] at @s run tellraw @a[distance=..7,gamemode=adventure] {"text":"你不能在这里建造！","color":"red"}
 scoreboard players reset @e[tag=jkbw_point] jkbw.Temp
