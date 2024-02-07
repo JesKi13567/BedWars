@@ -23,7 +23,7 @@ scoreboard players add #current_game jkbw.mem 1
 scoreboard players set #state jkbw.mem 1
 scoreboard players set #time jkbw.mem 3001
 function jkbw:play/start/multi_mode
-execute as @e[tag=jkbw,tag=!jkbw_res] run data modify entity @s view_range set value 0f
+execute as @e[tag=jkbw,tag=!jkbw_res_global] run data modify entity @s view_range set value 0f
 kill @e[tag=jkbw_throw_mark]
 summon marker 10110223 10 10110223 {Tags:["jkbw","jkbw_throw_mark"]}
 function jkbw:load/init/display

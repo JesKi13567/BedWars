@@ -1,5 +1,5 @@
 playsound entity.experience_orb.pickup player @s
-execute as @e[tag=jkbw,tag=!jkbw_res] run data modify entity @s view_range set value 1f
+execute as @e[tag=jkbw,tag=!jkbw_res_global] run data modify entity @s view_range set value 1f
 kill @e[tag=jkbw_clear_map]
 kill @e[tag=jkbw_convert_map]
 execute align xyz run summon marker ~.5 ~.5 ~.5 {Tags:["jkbw","jkbw_clear_map"]}
