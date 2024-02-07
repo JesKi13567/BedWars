@@ -1,4 +1,4 @@
-# 每 1 s 执行一次execute if score #gaming jkbw.mem matches 1
+# 每 1 s 执行一次execute if score #state jkbw.mem matches 1
 # 复活倒计时
 execute as @a[team=!,tag=!jkbw_player_outed,scores={jkbw.Player.RebornTime=1..}] at @s run function jkbw:play/death/title
 
@@ -48,6 +48,7 @@ function jkbw:play/start/timing
 # 检测获胜（测试模式未开时）
 execute unless score #test_mode jkbw.mem matches 1 run function jkbw:play/end/check
 
+# boss条显示给所有玩家
 bossbar set jkbw:map players @a
 bossbar set jkbw:game_progress players @a
 bossbar set jkbw:test_mode players @a

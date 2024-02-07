@@ -20,7 +20,6 @@ tag @a[tag=jkbw_rank3] add jkbw_ranked
 execute if entity @p[tag=jkbw_rank3] run tellraw @a ["",{"text":"\n第三名：","color":"blue","bold":true},{"selector":"@a[tag=jkbw_rank3]"}," - ",{"score":{"name":"#kill_max","objective":"jkbw.mem"},"bold":true}]
 execute unless entity @p[tag=jkbw_rank3] run tellraw @a ["",{"text":"\n第三名：","color":"blue","bold":true},"暂无"]
 
-tellraw @a "\n"
 tag @a[tag=jkbw_ranked] remove jkbw_ranked
 tag @a[tag=jkbw_rank1] remove jkbw_rank1
 tag @a[tag=jkbw_rank2] remove jkbw_rank2

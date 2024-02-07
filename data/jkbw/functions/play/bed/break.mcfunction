@@ -15,8 +15,8 @@ tellraw @s[scores={jkbw.Player.BrokeBad=1}] {"text":"你不能破坏自己队伍
 # 破坏对手家的床
 scoreboard players set @s[team=!jkbw.red,scores={jkbw.Player.BreakRed=1}] jkbw.Player.BrokeBed 1
 scoreboard players set @s[team=!jkbw.blue,scores={jkbw.Player.BreakBlue=1}] jkbw.Player.BrokeBed 1
-scoreboard players set @s[team=!jkbw.green,scores={jkbw.Player.BreakGreen=1}] jkbw.Player.BrokeBed 1
-scoreboard players set @s[team=!jkbw.yellow,scores={jkbw.Player.BreakYellow=1}] jkbw.Player.BrokeBed 1
+execute if score #teams jkbw.mem matches 3.. run scoreboard players set @s[team=!jkbw.green,scores={jkbw.Player.BreakGreen=1}] jkbw.Player.BrokeBed 1
+execute if score #teams jkbw.mem matches 4.. run scoreboard players set @s[team=!jkbw.yellow,scores={jkbw.Player.BreakYellow=1}] jkbw.Player.BrokeBed 1
 
 execute as @s[scores={jkbw.Player.BrokeBed=1}] run playsound entity.ender_dragon.growl player @a 0 100 0 1000000
 scoreboard players add @s[scores={jkbw.Player.BrokeBed=1}] jkbw.Player.BreakBeds 1

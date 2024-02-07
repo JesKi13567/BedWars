@@ -1,5 +1,5 @@
-execute store result score @s jkbw.Player.HasRes if entity @e[tag=jkbw_res_iron,distance=...2]
+execute store result score @s jkbw.Player.HasRes if entity @e[tag=jkbw_res_iron,distance=...1]
 execute as @s[scores={jkbw.Team.Res=0..3,jkbw.Player.HasRes=48..}] run summon item ~ ~ ~ {Age: -32768, PickupDelay: 18, Invulnerable: 1, Item: {id: "iron_ingot", Count: 48, tag: {CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}}, Tags: ["jkbw", "jkbw_extra_iron", "jkbw_res_extra"], NoGravity: 1b}
 execute as @s[scores={jkbw.Team.Res=4,jkbw.Player.HasRes=24..}] run summon item ~ ~ ~ {Age: -32768, PickupDelay: 18, Invulnerable: 1, Item: {id: "iron_ingot", Count: 48, tag: {CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}}, Tags: ["jkbw", "jkbw_extra_iron", "jkbw_res_extra"], NoGravity: 1b}
-execute as @s[scores={jkbw.Team.Res=0..3,jkbw.Player.HasRes=48..}] run kill @e[tag=jkbw_res_iron,distance=...2]
-execute as @s[scores={jkbw.Team.Res=4,jkbw.Player.HasRes=24..}] run kill @e[tag=jkbw_res_iron,distance=...2]
+execute as @s[scores={jkbw.Team.Res=0..3,jkbw.Player.HasRes=48..}] run kill @e[tag=jkbw_res_iron,distance=...1]
+execute as @s[scores={jkbw.Team.Res=4,jkbw.Player.HasRes=24..}] run kill @e[tag=jkbw_res_iron,distance=...1]

@@ -20,7 +20,7 @@ execute at @e[limit=1,tag=jkbw_worldspawn] positioned ~ ~-20 ~ run fill ~-110 ~ 
 execute if score #current_game jkbw.mem matches 100000.. run scoreboard players reset #current_game jkbw.mem
 worldborder set 211
 scoreboard players add #current_game jkbw.mem 1
-scoreboard players set #gaming jkbw.mem 1
+scoreboard players set #state jkbw.mem 1
 scoreboard players set #time jkbw.mem 3001
 function jkbw:play/start/multi_mode
 execute as @e[tag=jkbw,tag=!jkbw_res] run data modify entity @s view_range set value 0f

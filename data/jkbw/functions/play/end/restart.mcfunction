@@ -1,4 +1,4 @@
-scoreboard players set #gaming jkbw.mem 0
+scoreboard players set #state jkbw.mem 0
 scoreboard objectives setdisplay sidebar
 bossbar set jkbw:game_progress visible false
 clear @a

@@ -45,6 +45,7 @@ scoreboard objectives remove jkbw.Player.OwnEmeraldsTemp
 scoreboard objectives remove jkbw.Player.OwnExpLevels
 scoreboard objectives remove jkbw.Player.OwnExpLevelsReal
 scoreboard objectives remove jkbw.Player.HasRes
+scoreboard objectives remove jkbw.Player.HasRes1
 scoreboard objectives remove jkbw.Player.ArmorLevels
 scoreboard objectives remove jkbw.Player.AxeLevels
 scoreboard objectives remove jkbw.Player.PickaxeLevels

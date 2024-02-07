@@ -50,6 +50,7 @@ scoreboard objectives add jkbw.Player.OwnEmeraldsTemp dummy "玩家暂时持有�
 scoreboard objectives add jkbw.Player.OwnExpLevels dummy "玩家持有经验等级数"
 scoreboard objectives add jkbw.Player.OwnExpLevelsReal dummy "玩家真正持有经验等级数"
 scoreboard objectives add jkbw.Player.HasRes dummy "玩家检测持有资源"
+scoreboard objectives add jkbw.Player.HasRes1 dummy "玩家检测持有资源1"
 scoreboard objectives add jkbw.Player.ArmorLevels dummy "玩家装备等级"
 scoreboard objectives add jkbw.Player.AxeLevels dummy "玩家斧头等级"
 scoreboard objectives add jkbw.Player.PickaxeLevels dummy "玩家镐子等级"

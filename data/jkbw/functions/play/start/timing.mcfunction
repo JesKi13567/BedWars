@@ -1,6 +1,6 @@
 # 每 1 s 执行一次
 scoreboard players remove #time jkbw.mem 1
-# 总共50分钟，3000秒
+# 游戏进度——总共50分钟，3000秒
 scoreboard players operation #time_progress jkbw.mem = #time jkbw.mem
 
 execute if score #time jkbw.mem matches 1801..3000 run scoreboard players operation #time_progress jkbw.mem %= #300 jkbw.mem
@@ -32,3 +32,7 @@ execute if score #time jkbw.mem matches 600 run function jkbw:play/start/progres
 execute if score #time jkbw.mem matches 0..600 run bossbar set jkbw:game_progress name ["",{"text":"下一事件：","color":"gold"},{"text":"游戏结束","color":"red"},{"text":"  时间：","color":"yellow"}," ",{"score":{"name":"#time_progress","objective":"jkbw.mem"}}," 秒"]
 
 execute if score #time jkbw.mem matches ..0 run function jkbw:play/end/timeout
+
+# 游玩耗时
+scoreboard players set #time_s jkbw.mem 3000
+scoreboard players operation #time_s jkbw.mem -= #time jkbw.mem
