@@ -10,6 +10,7 @@ execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["item", "egg"]}}]}] run function 
 execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["item", "sponge"]}}]}] run function jkbw:play/shop/item/special/sponge
 execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["item", "tower"]}}]}] run function jkbw:play/shop/item/special/tower
 execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["item", "platform"]}}]}] run function jkbw:play/shop/item/special/aid_platform
+execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["item", "fruit"]}}]}] run function jkbw:play/shop/item/special/fruit
 
 execute if entity @e[tag=jkbw_bed_red,scores={jkbw.Team.Alive=1..}] if entity @p[team=jkbw.red,gamemode=adventure] as @s[team=!jkbw.red,nbt=!{EnderItems: [{tag: {jkbw: ["compass", "red"]}}]}] run function jkbw:play/shop/compass/red
 execute if entity @e[tag=jkbw_bed_blue,scores={jkbw.Team.Alive=1..}] if entity @p[team=jkbw.blue,gamemode=adventure] as @s[team=!jkbw.blue,nbt=!{EnderItems: [{tag: {jkbw: ["compass", "blue"]}}]}] run function jkbw:play/shop/compass/blue

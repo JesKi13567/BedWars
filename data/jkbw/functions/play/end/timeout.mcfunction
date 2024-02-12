@@ -3,7 +3,7 @@ stopsound @a
 bossbar set jkbw:game_progress visible false
 playsound ui.toast.challenge_complete player @a 0 100 0 1000000
 title @a title {"text":"游戏结束","color":"red","bold":true}
-title @a times 10 120 20
+title @a times 0s 6s 1s
 title @a subtitle [{"text":"游戏时长已到！","color":"yellow"}]
 tellraw @a ["==========================================\n",{"text":"                    ⭐起床战争⭐","color":"yellow","bold":true}]
 function jkbw:play/end/rank

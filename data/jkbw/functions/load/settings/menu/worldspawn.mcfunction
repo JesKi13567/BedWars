@@ -12,6 +12,8 @@ forceload add ~-100 ~-100 ~100 ~100
 # 记录点位
 # 高度Y
 execute store result score #worldspawnY jkbw.mem run data get entity @e[limit=1,tag=jkbw_worldspawn] Pos[1]
+scoreboard players operation #worldspawnY_ jkbw.mem = #worldspawnY jkbw.mem
+scoreboard players add #worldspawnY_ jkbw.mem 100
 scoreboard players remove #worldspawnY jkbw.mem 10
 # 边界XZ
 execute store result score #worldspawnX jkbw.mem run data get entity @e[limit=1,tag=jkbw_worldspawn] Pos[0]

@@ -41,6 +41,7 @@ scoreboard players operation #Eegg jkbw.mem = #egg jkbw.mem
 scoreboard players operation #Etower jkbw.mem = #tower jkbw.mem
 scoreboard players operation #Epearl jkbw.mem = #pearl jkbw.mem
 scoreboard players operation #Eplatform jkbw.mem = #platform jkbw.mem
+scoreboard players operation #Efruit jkbw.mem = #fruit jkbw.mem
 
 scoreboard players operation #Ecompass jkbw.mem = #compass jkbw.mem
 
@@ -117,6 +118,7 @@ scoreboard players operation #Eegg jkbw.mem *= #Eemerald jkbw.mem
 scoreboard players operation #Etower jkbw.mem *= #Eiron jkbw.mem
 scoreboard players operation #Epearl jkbw.mem *= #Eemerald jkbw.mem
 scoreboard players operation #Eplatform jkbw.mem *= #Egold jkbw.mem
+scoreboard players operation #Efruit jkbw.mem *= #Egold jkbw.mem
 
 scoreboard players operation #Ecompass jkbw.mem *= #Eemerald jkbw.mem
 

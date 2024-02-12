@@ -18,6 +18,7 @@ scoreboard objectives add jkbw.Player.Hp health "♥"
 scoreboard objectives setdisplay belowName jkbw.Player.Hp
 scoreboard objectives setdisplay list jkbw.Player.Hp
 
+scoreboard objectives add jkbw.Player.TeamSelect dummy "玩家选择队伍"
 scoreboard objectives add jkbw.Player.Page dummy "玩家末影箱页数"
 scoreboard objectives add jkbw.Player.Compass dummy "玩家指南针指向"
 scoreboard objectives add jkbw.Player.ShopNow dummy "玩家使用商店"

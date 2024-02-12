@@ -3,7 +3,7 @@ stopsound @a
 playsound ui.toast.challenge_complete player @a 0 100 0 1000000
 
 title @a title {"text":"恭喜","color":"yellow","bold":true}
-title @a times 10 120 20
+title @a times 1s 6s 1s
 
 execute if entity @p[team=jkbw.red,tag=!jkbw_player_outed] run title @a subtitle [{"text":"红队","color":"red"},{"text":"获得了胜利！","color":"gold"}]
 execute if entity @p[team=jkbw.blue,tag=!jkbw_player_outed] run title @a subtitle [{"text":"蓝队","color":"blue"},{"text":"获得了胜利！","color":"gold"}]

@@ -7,10 +7,11 @@ effect clear @a
 stopsound @a
 gamemode adventure @a
 team leave @a
+scoreboard players set @a jkbw.Player.TeamSelect 0
 xp set @a 0 levels
 tag @a remove jkbw_player_reg
 tag @a remove jkbw_player_out
 tag @a remove jkbw_player_outed
-scoreboard players reset #tiktok jkbw.mem
+scoreboard players reset #start_flag jkbw.mem
 tp @a @e[limit=1,tag=jkbw_worldspawn]
 function jkbw:play/ready/map/clear/init

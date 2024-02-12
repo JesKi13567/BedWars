@@ -1,4 +1,4 @@
-title @a[team=!] times 0 40 10
+title @a[team=!] times 0s 2s 1s
 
 tag @s remove jkbw_trap_alarm_1
 tag @s remove jkbw_trap_defend_1

@@ -13,6 +13,7 @@ scoreboard objectives remove jkbw.Team.Dragon
 scoreboard objectives remove jkbw.Team.TrapNum
 
 scoreboard objectives remove jkbw.Player.Hp
+scoreboard objectives remove jkbw.Player.TeamSelect
 scoreboard objectives remove jkbw.Player.Page
 scoreboard objectives remove jkbw.Player.Compass
 scoreboard objectives remove jkbw.Player.ShopNow

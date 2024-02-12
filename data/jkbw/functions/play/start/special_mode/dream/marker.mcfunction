@@ -60,4 +60,4 @@ summon marker ^-2 ^1 ^1 {Tags:["jkbw","jkbw_dream_block","jkbw_dream_glass"]}
 summon marker ^3 ^ ^1 {Tags:["jkbw","jkbw_dream_block","jkbw_dream_glass"]}
 summon marker ^-3 ^ ^1 {Tags:["jkbw","jkbw_dream_block","jkbw_dream_glass"]}
 # 载入方块
-function jkbw:play/dream_mode/block
+function jkbw:play/start/special_mode/dream/block

@@ -8,8 +8,8 @@ scoreboard players set @e[tag=jkbw_res_spawn] jkbw.mem -1
 scoreboard players set @e[tag=jkbw_res_spawn] jkbw.Team.Res 0
 scoreboard players set #level_diamond jkbw.mem 0
 scoreboard players set #level_emerald jkbw.mem 0
-scoreboard players set #summon_diamond jkbw.mem 1
-scoreboard players set #summon_emerald jkbw.mem 1
+scoreboard players set #time_diamond jkbw.mem 1
+scoreboard players set #time_emerald jkbw.mem 1
 kill @e[tag=jkbw_res_summon]
 kill @e[tag=jkbw_res_extra]
 
@@ -22,17 +22,19 @@ worldborder set 211
 scoreboard players add #current_game jkbw.mem 1
 scoreboard players set #state jkbw.mem 1
 scoreboard players set #time jkbw.mem 3001
-function jkbw:play/start/multi_mode
 execute as @e[tag=jkbw,tag=!jkbw_res_global] run data modify entity @s view_range set value 0f
 kill @e[tag=jkbw_throw_mark]
 summon marker 10110223 10 10110223 {Tags:["jkbw","jkbw_throw_mark"]}
 function jkbw:load/init/display
+function jkbw:play/start/special_mode/multi
+execute if score #special_mode jkbw.mem matches 1 run function jkbw:play/start/special_mode/dream
 
 # 玩家
 scoreboard players reset @a jkbw.Player.ArmorLevels
 scoreboard players reset @a jkbw.Player.AxeLevels
 scoreboard players reset @a jkbw.Player.PickaxeLevels
 scoreboard players reset @a jkbw.Player.HasShears
+scoreboard players reset @a jkbw.Player.OwnExpLevels
 scoreboard players reset @a jkbw.Player.OwnExpLevelsReal
 scoreboard players reset @a jkbw.Player.DeathImp
 scoreboard players reset @a jkbw.Player.RebornTime
@@ -48,7 +50,7 @@ title @a title ""
 title @a subtitle ""
 clear @a
 gamemode adventure @a
-playsound minecraft:block.note_block.banjo player @a
+playsound block.note_block.banjo player @a
 tag @a remove jkbw_player_out
 tag @a remove jkbw_player_outed
 effect clear @a
@@ -58,14 +60,20 @@ effect give @a instant_health 1 20 true
 fill 10110221 10 10110223 10110218 3 10110223 minecraft:barrel{Items:[]}
 
 # 分配队伍
-execute unless score #test_mode jkbw.mem matches 1 run function jkbw:play/team/distribute
+bossbar set jkbw:player_ready visible false
+execute unless score #test_mode jkbw.mem matches 1 unless score #team_mode jkbw.mem matches 1 run function jkbw:play/team/distribute
+tp @a[gamemode=adventure,team=jkbw.red] @e[limit=1,tag=jkbw_spawn_red]
+tp @a[gamemode=adventure,team=jkbw.blue] @e[limit=1,tag=jkbw_spawn_blue]
+tp @a[gamemode=adventure,team=jkbw.green] @e[limit=1,tag=jkbw_spawn_green]
+tp @a[gamemode=adventure,team=jkbw.yellow] @e[limit=1,tag=jkbw_spawn_yellow]
 
-# 清理清理地图（如果有）
+# 清除清理/转换地图
 bossbar set jkbw:map visible false
 kill @e[tag=jkbw_clear_map]
+kill @e[tag=jkbw_convert_map]
 
 # 测试用
-execute if score #test_mode jkbw.mem matches 1 run function jkbw:play/start/test_mode
+execute if score #test_mode jkbw.mem matches 1 run function jkbw:play/start/special_mode/test
 
 # 玩家编号
 scoreboard players reset #temp jkbw.mem

@@ -43,6 +43,7 @@ scoreboard players set #egg jkbw.mem 1
 scoreboard players set #tower jkbw.mem 24
 scoreboard players set #pearl jkbw.mem 4
 scoreboard players set #platform jkbw.mem 8
+scoreboard players set #fruit jkbw.mem 5
 
 scoreboard players set #compass jkbw.mem 2
 

@@ -1,0 +1,4 @@
+execute if data block ~ ~ ~ back_text{messages: ['{"text":"队伍数量设置"}', '{"text":""}', '{"text":""}', '{"text":""}']} run data modify block ~ ~ ~ front_text.messages set value ['{"bold":false,"italic":false,"color":"light_purple","clickEvent":{"action":"run_command","value":"/function jkbw:load/settings/menu/sign/team/num/mode"},"text":"队伍数量"}', '{"text":""}', '[{"bold":false,"italic":false,"color":"gold","bold":true,"text":"["},{"score":{"name":"#teams","objective":"jkbw.mem"}},"队]"]', '{"text":""}']
+
+scoreboard players remove @s jkbw.mem 1
+execute as @s[scores={jkbw.mem=1..}] positioned ^ ^ ^.5 run function jkbw:load/settings/menu/sign/team/num/update

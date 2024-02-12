@@ -47,8 +47,3 @@ function jkbw:play/start/timing
 
 # 检测获胜（测试模式未开时）
 execute unless score #test_mode jkbw.mem matches 1 run function jkbw:play/end/check
-
-# boss条显示给所有玩家
-bossbar set jkbw:map players @a
-bossbar set jkbw:game_progress players @a
-bossbar set jkbw:test_mode players @a

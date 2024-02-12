@@ -134,6 +134,9 @@ data modify block 10110223 5 10110223 Items[10].tag.display.Lore[1] set from blo
 #platform
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#platform","objective": "jkbw.mem"},"color":"gold"},{"text":" 金锭","italic":false,"color":"gold"}]'
 data modify block 10110223 5 10110223 Items[11].tag.display.Lore[3] set from block 10110222 2 10110223 back_text.messages[1]
+#fruit
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#fruit","objective": "jkbw.mem"},"color":"gold"},{"text":" 金锭","italic":false,"color":"gold"}]'
+data modify block 10110223 5 10110223 Items[12].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 
 #compass
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#compass","objective": "jkbw.mem"},"color":"green"},{"text":" 绿宝石","italic":false,"color":"green"}]'
@@ -361,6 +364,9 @@ data modify block 10110222 5 10110223 Items[10].tag.display.Lore[1] set from blo
 #Eplatform
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Eplatform","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
 data modify block 10110222 5 10110223 Items[11].tag.display.Lore[3] set from block 10110222 2 10110223 back_text.messages[1]
+#Efruit
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Efruit","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 5 10110223 Items[12].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 
 #Ecompass
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Ecompass","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'

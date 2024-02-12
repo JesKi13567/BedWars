@@ -8,7 +8,7 @@ effect give @s weakness 1 0 true
 execute store result score @s jkbw.Entity.Y run data get entity @s Pos[1]
 #execute if score @s jkbw.Entity.Y < #worldspawnY jkbw.mem run tellraw @a ["<",{"selector":"@s"},"> 唔呃，逃不掉呢~"]
 execute if score @s jkbw.Entity.Y < #worldspawnY jkbw.mem run tp @s @e[limit=1,tag=jkbw_worldspawn]
-kill @s[scores={jkbw.Entity.Y=..-90}]
+kill @s[scores={jkbw.Entity.Y=..-70}]
 
 # 真正报名
 execute unless score #test_mode jkbw.mem matches 1 run function jkbw:play/ready/reg/player_real

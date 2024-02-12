@@ -1,5 +1,0 @@
-execute unless score #attack_mode jkbw.mem matches 1 if data block ~ ~ ~ back_text{messages: ['{"text":"攻击冷却设置"}', '{"text":""}', '{"text":""}', '{"text":""}']} run data modify block ~ ~ ~ front_text.messages set value ['{"bold":false,"italic":false,"color":"aqua","clickEvent":{"action":"run_command","value":"/function jkbw:load/settings/menu/attack_mode"},"text":"攻击冷却"}', '{"text":""}', '{"bold":false,"italic":false,"color":"gold","bold":true,"text":"[无]"}', '{"text":""}']
-execute if score #attack_mode jkbw.mem matches 1 if data block ~ ~ ~ back_text{messages: ['{"text":"攻击冷却设置"}', '{"text":""}', '{"text":""}', '{"text":""}']} run data modify block ~ ~ ~ front_text.messages set value ['{"bold":false,"italic":false,"color":"aqua","clickEvent":{"action":"run_command","value":"/function jkbw:load/settings/menu/attack_mode"},"text":"攻击冷却"}', '{"text":""}', '{"bold":false,"italic":false,"color":"gold","bold":true,"text":"[有]"}', '{"text":""}']
-
-scoreboard players remove @s jkbw.mem 1
-execute as @s[scores={jkbw.mem=1..}] positioned ^ ^ ^.5 run function jkbw:load/settings/menu/attack_loop
