@@ -10,7 +10,7 @@ execute if entity @p[team=jkbw.blue,tag=!jkbw_player_outed] run title @a subtitl
 execute if entity @p[team=jkbw.green,tag=!jkbw_player_outed] run title @a subtitle [{"text":"黄队","color":"yellow"},{"text":"获得了胜利！","color":"gold"}]
 execute if entity @p[team=jkbw.yellow,tag=!jkbw_player_outed] run title @a subtitle [{"text":"绿队","color":"green"},{"text":"获得了胜利！","color":"gold"}]
 
-tellraw @a ["\n\n\n\n",{"text":"                    ⭐起床战争⭐\n","color":"yellow","bold":true}]
+tellraw @a ["\n\n\n\n",{"text":"                    起床战争\n","color":"yellow","bold":true}]
 
 execute if entity @p[team=jkbw.red,tag=!jkbw_player_outed] run tellraw @a ["获胜玩家：",{"selector":"@a[team=jkbw.red]"}]
 execute if entity @p[team=jkbw.blue,tag=!jkbw_player_outed] run tellraw @a ["获胜玩家：",{"selector":"@a[team=jkbw.blue]"}]

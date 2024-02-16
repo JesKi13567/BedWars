@@ -1,4 +1,3 @@
-# 每 1 s 执行一次
 ## 团队加成
 # 急迫
 execute if entity @e[tag=jkbw_spawn_red,limit=1,scores={jkbw.Team.Haste=0}] run effect clear @a[team=jkbw.red] haste

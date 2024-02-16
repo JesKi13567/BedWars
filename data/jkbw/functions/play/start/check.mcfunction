@@ -46,7 +46,7 @@ execute if score #team_mode jkbw.mem matches 1 if score #teams jkbw.mem matches 
 execute if score #team_mode jkbw.mem matches 1 if score #teams jkbw.mem matches 3 unless entity @e[limit=1,tag=jkbw_start_ready] run tellraw @a ["",{"text":"\n还没有达到游戏开始的条件！","color":"red"},{"text":"\n请检查以下几项是否成功设置：\n","color":"gold"},{"text":"1.各队伍都应存在玩家\n2.红队的床点、出生点、团队箱子点\n3.蓝队的床点、出生点、团队箱子点\n4.绿队的床点、出生点、团队箱子点\n","color":"yellow"},"请管理员输入/function #load重新调整！"]
 execute if score #team_mode jkbw.mem matches 1 if score #teams jkbw.mem matches 4 unless entity @e[limit=1,tag=jkbw_start_ready] run tellraw @a ["",{"text":"\n还没有达到游戏开始的条件！","color":"red"},{"text":"\n请检查以下几项是否成功设置：\n","color":"gold"},{"text":"1.各队伍都应存在玩家\n2.红队的床点、出生点、团队箱子点\n3.蓝队的床点、出生点、团队箱子点\n4.绿队的床点、出生点、团队箱子点\n5.黄队的床点、出生点、团队箱子点\n","color":"yellow"},"请管理员输入/function #load重新调整！"]
 
-execute unless entity @e[limit=1,tag=jkbw_start_ready] run tellraw @a [{"text":"\n猜你想找：","color":"green"},{"text":"[测试模式]","underlined":true,"color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/function jkbw:load/settings/menu/test_mode"}}]
+execute unless entity @e[limit=1,tag=jkbw_start_ready] run tellraw @a [{"text":"\n猜你想找：","color":"green"},{"text":"[测试模式]","underlined":true,"color":"red","bold":true,"clickEvent":{"action":"run_command","value":"/function jkbw:load/settings/menu/test/mode"}}]
 execute unless entity @e[limit=1,tag=jkbw_start_ready] run item replace entity @a[gamemode=adventure] hotbar.8 with gray_dye{jkbw:["reg","0"],display:{Name:'{"text":"你已取消准备","italic":false,"color":"gray"}',Lore:['{"text":"丢弃我准备报名！","italic":false}']}}
 
 # 人数过多

@@ -13,7 +13,7 @@ execute if score #shop_mode jkbw.mem matches 1 run tellraw @s[tag=!jkbw_buy_succ
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-give @s[tag=jkbw_buy_success] blaze_rod{display: {Name: '{"text":"急救平台","color":"white","italic":false}', Lore: ['""', '{"text":"拿着我潜行即可在下方 3 格处生成一个羊毛平台！","italic":false,"color":"gold"}']}, CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}
+give @s[tag=jkbw_buy_success] blaze_rod{display: {Name: '{"text":"急救平台","color":"white","italic":false}', Lore: ['""', '{"text":"拿着我使用即可在下方 3 格处生成一个羊毛平台！","italic":false,"color":"gold"}']}, CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28, jkbw: ["offhand_use"]}
 tellraw @s[tag=jkbw_buy_success] [{"text":"成功购买","color":"green"},{"text":" 急救平台 ","color":"gold"},"！"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 execute if score #shop_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnGolds -= #platform jkbw.mem

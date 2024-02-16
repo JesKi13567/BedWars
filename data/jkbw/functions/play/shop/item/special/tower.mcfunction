@@ -13,7 +13,7 @@ execute if score #shop_mode jkbw.mem matches 1 run tellraw @s[tag=!jkbw_buy_succ
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-give @s[tag=jkbw_buy_success] husk_spawn_egg{display: {Name: '{"text":"快速建造塔","color":"white","italic":false}', Lore: ['""', '{"text":"放下后会自动快速建造一座防御塔！","italic":false,"color":"gold"}', '"你没看错，但它真的是快速建造塔"']}, CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], EntityTag: {id: "minecraft:marker", Tags: ["jkbw", "jkbw_tower", "jkbw_new_creature"]}, HideFlags: 28}
+give @s[tag=jkbw_buy_success] husk_spawn_egg{display: {Name: '{"text":"快速建造塔","color":"white","italic":false}', Lore: ['""', '{"text":"放下后会自动快速建造一座防御塔！","italic":false,"color":"gold"}', '"你没看错，但它真的是快速建造塔"']}, CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], EntityTag: {id: "minecraft:marker", Tags: ["jkbw", "jkbw_tower", "jkbw_new_entity"]}, HideFlags: 28}
 tellraw @s[tag=jkbw_buy_success] [{"text":"成功购买","color":"green"},{"text":" 快速建造塔 ","color":"gold"},"！"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 execute if score #shop_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnIrons -= #tower jkbw.mem

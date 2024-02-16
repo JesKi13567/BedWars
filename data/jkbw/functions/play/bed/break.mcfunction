@@ -1,4 +1,4 @@
-# 每 2 ticks 执行一次（as @a[gamemode=adventure] at @s）
+# as @a[gamemode=adventure] at @s
 # 破坏自己队伍的床
 scoreboard players set @s[team=jkbw.red,scores={jkbw.Player.BreakRed=1}] jkbw.Player.BrokeBad 1
 scoreboard players set @s[team=jkbw.blue,scores={jkbw.Player.BreakBlue=1}] jkbw.Player.BrokeBad 1

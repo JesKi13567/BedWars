@@ -1,4 +1,4 @@
-# 每 2 ticks 执行一次（as @a[gamemode=adventure] at @s）
+# as @a[gamemode=adventure] at @s
 # 获取玩家身上的资源数量
 function jkbw:play/res/player/count
 

@@ -1,6 +1,5 @@
-# 每 1 tick 执行一次
 # 生成的新实体
-execute as @e[tag=jkbw_new_creature] at @s run function jkbw:play/special/new_creature
+execute as @e[tag=jkbw_new_entity] at @s run function jkbw:play/special/new_entity
 
 # 搭桥蛋的桥
 execute as @e[tag=jkbw_egg] at @s run function jkbw:play/special/egg/tick1

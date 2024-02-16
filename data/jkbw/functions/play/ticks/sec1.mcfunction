@@ -1,9 +1,8 @@
-# 每 1 s 执行一次execute if score #state jkbw.mem matches 1
+# execute if score #state jkbw.mem matches 1
 # 复活倒计时
 execute as @a[team=!,tag=!jkbw_player_outed,scores={jkbw.Player.RebornTime=1..}] at @s run function jkbw:play/death/title
 
 # 使用物品冷却
-scoreboard players remove @a[scores={jkbw.Player.UseFireballCD=1..}] jkbw.Player.UseFireballCD 1
 scoreboard players remove @a[scores={jkbw.Player.UsePlatformCD=1..}] jkbw.Player.UsePlatformCD 1
 
 # 受伤原谅时长
@@ -38,7 +37,7 @@ team leave @a[gamemode=creative]
 # 游戏开始后，无队伍变为旁观者
 team leave @a[tag=!jkbw_admin,tag=!jkbw_player_reg]
 clear @a[tag=!jkbw_player_reg,team=,gamemode=adventure]
-tellraw @a[tag=!jkbw_player_reg,team=,gamemode=adventure] [{"text":"【⭐起床战争⭐】","color":"yellow"},{"text":"游戏已开始！你没有队伍，所以变成了旁观者！","color":"green"}]
+tellraw @a[tag=!jkbw_player_reg,team=,gamemode=adventure] [{"text":"【起床战争】","color":"yellow"},{"text":"游戏已开始！你没有队伍，所以变成了旁观者！","color":"green"}]
 gamemode spectator @a[gamemode=!creative,team=]
 tag @a[tag=jkbw_player_reg,team=] remove jkbw_player_reg
 

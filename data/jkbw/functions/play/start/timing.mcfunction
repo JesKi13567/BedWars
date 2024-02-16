@@ -1,4 +1,3 @@
-# 每 1 s 执行一次
 scoreboard players remove #time jkbw.mem 1
 # 游戏进度——总共50分钟，3000秒
 scoreboard players operation #time_progress jkbw.mem = #time jkbw.mem

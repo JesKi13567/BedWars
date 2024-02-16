@@ -46,7 +46,6 @@ scoreboard objectives remove jkbw.Player.OwnEmeraldsTemp
 scoreboard objectives remove jkbw.Player.OwnExpLevels
 scoreboard objectives remove jkbw.Player.OwnExpLevelsReal
 scoreboard objectives remove jkbw.Player.HasRes
-scoreboard objectives remove jkbw.Player.HasRes1
 scoreboard objectives remove jkbw.Player.ArmorLevels
 scoreboard objectives remove jkbw.Player.AxeLevels
 scoreboard objectives remove jkbw.Player.PickaxeLevels
@@ -54,12 +53,12 @@ scoreboard objectives remove jkbw.Player.HasShears
 scoreboard objectives remove jkbw.Player.HasCompass
 scoreboard objectives remove jkbw.Player.HasSword
 scoreboard objectives remove jkbw.Player.HasSwordNotWood
+scoreboard objectives remove jkbw.Player.Use
 scoreboard objectives remove jkbw.Player.UseEgg
 scoreboard objectives remove jkbw.Player.UseSnowball
 scoreboard objectives remove jkbw.Player.UseIrongolem
 scoreboard objectives remove jkbw.Player.UseTNT
 scoreboard objectives remove jkbw.Player.UseTower
-scoreboard objectives remove jkbw.Player.UseFireballCD
 scoreboard objectives remove jkbw.Player.UsePlatformCD
 scoreboard objectives remove jkbw.Player.ID
 scoreboard objectives remove jkbw.Player.Lookup
@@ -95,7 +94,6 @@ tag @a remove jkbw_player_out
 tag @a remove jkbw_player_outed
 
 bossbar remove jkbw:map
-bossbar remove jkbw:test_mode
 bossbar remove jkbw:game_progress
 
 fill 10110220 1 10110223 10110223 10 10110223 air replace

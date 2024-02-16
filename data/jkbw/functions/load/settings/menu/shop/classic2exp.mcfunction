@@ -138,6 +138,7 @@ scoreboard players operation #Eres4 jkbw.mem *= #Ediamond jkbw.mem
 scoreboard players operation #Etrap1 jkbw.mem *= #Ediamond jkbw.mem
 scoreboard players operation #Etrap2 jkbw.mem *= #Ediamond jkbw.mem
 scoreboard players operation #Etrap3 jkbw.mem *= #Ediamond jkbw.mem
+
 scoreboard players operation #Esharpness1 jkbw.mem *= #Ediamond jkbw.mem
 scoreboard players operation #Ehealing1 jkbw.mem *= #Ediamond jkbw.mem
 scoreboard players operation #Eprotect11 jkbw.mem *= #Ediamond jkbw.mem
@@ -150,4 +151,5 @@ scoreboard players operation #Eres11 jkbw.mem *= #Ediamond jkbw.mem
 scoreboard players operation #Eres21 jkbw.mem *= #Ediamond jkbw.mem
 scoreboard players operation #Eres31 jkbw.mem *= #Ediamond jkbw.mem
 scoreboard players operation #Eres41 jkbw.mem *= #Ediamond jkbw.mem
+
 function jkbw:load/settings/menu/shop/refresh

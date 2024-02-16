@@ -1,8 +1,13 @@
 ## 对每个新产生的实体只执行一次
 # 认主
 scoreboard players operation @s[tag=!jkbw_iron_golem,tag=!jkbw_tnt] jkbw.Player.ID = @p[gamemode=adventure,tag=jkbw_player_reg] jkbw.Player.ID
-scoreboard players operation @s[tag=jkbw_iron_golem] jkbw.Player.ID = @p[scores={jkbw.Player.UseIrongolem=1..},gamemode=adventure,tag=jkbw_player_reg] jkbw.Player.ID
+
 scoreboard players operation @s[tag=jkbw_tnt] jkbw.Player.ID = @p[scores={jkbw.Player.UseTNT=1..},gamemode=adventure,tag=jkbw_player_reg] jkbw.Player.ID
+
+scoreboard players operation @s[tag=jkbw_iron_golem,team=jkbw.red] jkbw.Player.ID = @p[scores={jkbw.Player.UseIrongolem=1..},gamemode=adventure,tag=jkbw_player_reg,team=jkbw.red] jkbw.Player.ID
+scoreboard players operation @s[tag=jkbw_iron_golem,team=jkbw.blue] jkbw.Player.ID = @p[scores={jkbw.Player.UseIrongolem=1..},gamemode=adventure,tag=jkbw_player_reg,team=jkbw.blue] jkbw.Player.ID
+scoreboard players operation @s[tag=jkbw_iron_golem,team=jkbw.green] jkbw.Player.ID = @p[scores={jkbw.Player.UseIrongolem=1..},gamemode=adventure,tag=jkbw_player_reg,team=jkbw.green] jkbw.Player.ID
+scoreboard players operation @s[tag=jkbw_iron_golem,team=jkbw.yellow] jkbw.Player.ID = @p[scores={jkbw.Player.UseIrongolem=1..},gamemode=adventure,tag=jkbw_player_reg,team=jkbw.yellow] jkbw.Player.ID
 
 # 重置
 scoreboard players reset @p[scores={jkbw.Player.UseIrongolem=1..},gamemode=adventure,tag=jkbw_player_reg] jkbw.Player.UseIrongolem
@@ -31,4 +36,4 @@ tp @s[tag=jkbw_tower] ~ ~-1 ~
 scoreboard players set @s[tag=jkbw_alarm_marker] jkbw.mem 100
 
 # 现在不是新实体了
-tag @s remove jkbw_new_creature
+tag @s remove jkbw_new_entity

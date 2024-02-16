@@ -1,4 +1,3 @@
-# 每 1 tick 执行一次
 # 按层执行
 scoreboard players remove @s jkbw.mem 1
 tp @s ~ ~1 ~

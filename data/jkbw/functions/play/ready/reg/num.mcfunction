@@ -1,4 +1,3 @@
-# 每 2 ticks 执行一次
 ## 玩家
 # 管理员（显示菜单）
 tag @a[gamemode=creative] add jkbw_admin
@@ -17,9 +16,6 @@ execute unless score #test_mode jkbw.mem matches 1 if score #team_mode jkbw.mem 
 
 ## 报名倒计时
 execute unless score #test_mode jkbw.mem matches 1 run function jkbw:play/ready/reg/num_count
-
-# 测试模式
-execute if score #test_mode jkbw.mem matches 1 run bossbar set jkbw:test_mode visible true
 
 # 清理杂物
 kill @e[type=#jkbw:clear]

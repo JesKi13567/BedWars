@@ -1,5 +1,4 @@
 # 此处，mem指陷阱冷却时间（20秒，因为1s=20ticks，20ticks/2ticks=10mem即1s→10mem，所以30s→300mem，写在了remove_tag里）
-# 每 2 ticks 执行一次
 # 陷阱冷却时间
 scoreboard players remove @e[tag=jkbw_bed_marker,scores={jkbw.mem=1..}] jkbw.mem 1
 

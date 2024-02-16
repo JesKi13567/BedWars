@@ -63,6 +63,7 @@ scoreboard players set #res4 jkbw.mem 16
 scoreboard players set #trap1 jkbw.mem 1
 scoreboard players set #trap2 jkbw.mem 2
 scoreboard players set #trap3 jkbw.mem 4
+
 scoreboard players set #sharpness1 jkbw.mem 4
 scoreboard players set #healing1 jkbw.mem 1
 scoreboard players set #protect11 jkbw.mem 2
@@ -77,8 +78,8 @@ scoreboard players set #res31 jkbw.mem 6
 scoreboard players set #res41 jkbw.mem 8
 
 scoreboard players set #Eiron jkbw.mem 1
-scoreboard players set #Egold jkbw.mem 5
-scoreboard players set #Ediamond jkbw.mem 30
-scoreboard players set #Eemerald jkbw.mem 50
+scoreboard players set #Egold jkbw.mem 10
+scoreboard players set #Ediamond jkbw.mem 50
+scoreboard players set #Eemerald jkbw.mem 80
 
 function jkbw:load/settings/menu/shop/classic2exp

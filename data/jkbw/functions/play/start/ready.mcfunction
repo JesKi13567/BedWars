@@ -10,8 +10,7 @@ scoreboard players set #level_diamond jkbw.mem 0
 scoreboard players set #level_emerald jkbw.mem 0
 scoreboard players set #time_diamond jkbw.mem 1
 scoreboard players set #time_emerald jkbw.mem 1
-kill @e[tag=jkbw_res_summon]
-kill @e[tag=jkbw_res_extra]
+kill @e[tag=jkbw_res]
 
 # 全局
 # 在全局传送点20格以下填充一层屏障
@@ -23,10 +22,7 @@ scoreboard players add #current_game jkbw.mem 1
 scoreboard players set #state jkbw.mem 1
 scoreboard players set #time jkbw.mem 3001
 execute as @e[tag=jkbw,tag=!jkbw_res_global] run data modify entity @s view_range set value 0f
-kill @e[tag=jkbw_throw_mark]
-summon marker 10110223 10 10110223 {Tags:["jkbw","jkbw_throw_mark"]}
-function jkbw:load/init/display
-function jkbw:play/start/special_mode/multi
+function jkbw:play/start/display
 execute if score #special_mode jkbw.mem matches 1 run function jkbw:play/start/special_mode/dream
 
 # 玩家
@@ -39,7 +35,6 @@ scoreboard players reset @a jkbw.Player.OwnExpLevelsReal
 scoreboard players reset @a jkbw.Player.DeathImp
 scoreboard players reset @a jkbw.Player.RebornTime
 scoreboard players reset @a jkbw.Player.Kills
-scoreboard players set @a jkbw.Player.UseFireballCD 0
 scoreboard players set @a jkbw.Player.UsePlatformCD 0
 scoreboard players set @a jkbw.Player.Page 0
 scoreboard players set @a jkbw.Player.Compass 0

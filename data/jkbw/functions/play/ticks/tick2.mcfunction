@@ -1,7 +1,3 @@
-# 每 2 ticks 执行一次
-# 对活着的玩家操作
-execute as @a[gamemode=adventure,tag=jkbw_player_reg,tag=!jkbw_player_outed] at @s run function jkbw:play/tick2_player
-
 # 检测各队伍床是否存在，玩家是否存活
 function jkbw:play/bed/check
 

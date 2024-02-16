@@ -1,4 +1,3 @@
-# 每 2 ticks 执行一次
 # 获取玩家身上的资源数量
 execute store result score @s jkbw.Player.OwnIrons run clear @s minecraft:iron_ingot 0
 execute store result score @s jkbw.Player.OwnGolds run clear @s minecraft:gold_ingot 0

@@ -1,0 +1,2 @@
+tellraw @a[tag=jkbw_admin] ["",{"text":"测试模式已开启！","color":"red","bold":true},{"text":"\n如需暂停游玩，请输入/function #load！","color":"yellow"},{"text":"\n点此处的 ","color":"green"},{"text":"[开始游戏]","underlined":true,"color":"light_purple","clickEvent":{"action":"run_command","value":"/function jkbw:play/start/ready"}},{"text":" 不再检查人数，也不再宣布有谁获胜...","color":"green"}]
+bossbar set jkbw:player_ready visible false
