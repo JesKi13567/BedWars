@@ -10,7 +10,7 @@ execute as @s[team=jkbw.blue,scores={jkbw.Player.BrokeBad=1}] run function jkbw:
 execute as @s[team=jkbw.green,scores={jkbw.Player.BrokeBad=1}] run function jkbw:load/settings/menu/teams/bed/replace/green
 execute as @s[team=jkbw.yellow,scores={jkbw.Player.BrokeBad=1}] run function jkbw:load/settings/menu/teams/bed/replace/yellow
 
-tellraw @s[scores={jkbw.Player.BrokeBad=1}] {"text":"你不能破坏自己队伍的床！","color":"red"}
+title @s[scores={jkbw.Player.BrokeBad=1}] actionbar {"text":"你不能破坏自己队伍的床！","color":"red"}
 
 # 破坏对手家的床
 scoreboard players set @s[team=!jkbw.red,scores={jkbw.Player.BreakRed=1}] jkbw.Player.BrokeBed 1

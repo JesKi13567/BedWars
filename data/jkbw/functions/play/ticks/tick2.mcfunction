@@ -8,3 +8,10 @@ execute as @e[type=item,tag=!jkbw] at @s unless entity @s[nbt={Item: {id: "minec
 execute as @e[tag=jkbw_point] at @s store success score @s jkbw.Temp run fill ~-2 ~2 ~-2 ~2 ~-3 ~2 air replace #jkbw:no_near_point
 execute as @e[tag=jkbw_point,scores={jkbw.Temp=1}] at @s run tellraw @a[distance=..7,gamemode=adventure] {"text":"你不能在这里建造！","color":"red"}
 scoreboard players reset @e[tag=jkbw_point] jkbw.Temp
+
+# 作为商店的末影箱不能被破坏
+execute as @e[tag=jkbw_chest_shop,y_rotation=180] at @s run setblock ~ ~ ~ ender_chest[facing=south]
+execute as @e[tag=jkbw_chest_shop,y_rotation=-90] at @s run setblock ~ ~ ~ ender_chest[facing=west]
+execute as @e[tag=jkbw_chest_shop,y_rotation=0] at @s run setblock ~ ~ ~ ender_chest[facing=north]
+execute as @e[tag=jkbw_chest_shop,y_rotation=90] at @s run setblock ~ ~ ~ ender_chest[facing=east]
+execute as @e[tag=jkbw_chest_shop] at @s run kill @e[distance=..1,type=item,nbt={Item: {tag: {EntityTag: {Tags: ["jkbw_chest_player"]}}}}]

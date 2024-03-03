@@ -11,6 +11,7 @@ scoreboard objectives remove jkbw.Team.Res
 scoreboard objectives remove jkbw.Team.Healing
 scoreboard objectives remove jkbw.Team.Dragon
 scoreboard objectives remove jkbw.Team.TrapNum
+scoreboard objectives remove jkbw.Team.ID
 
 scoreboard objectives remove jkbw.Player.Hp
 scoreboard objectives remove jkbw.Player.TeamSelect
@@ -59,7 +60,14 @@ scoreboard objectives remove jkbw.Player.UseSnowball
 scoreboard objectives remove jkbw.Player.UseIrongolem
 scoreboard objectives remove jkbw.Player.UseTNT
 scoreboard objectives remove jkbw.Player.UseTower
+scoreboard objectives remove jkbw.Player.UseEnderchest
+scoreboard objectives remove jkbw.Player.UseWall
+scoreboard objectives remove jkbw.Player.UseSheep
 scoreboard objectives remove jkbw.Player.UsePlatformCD
+scoreboard objectives remove jkbw.Player.UseBackCD
+scoreboard objectives remove jkbw.Player.UseBackLast
+scoreboard objectives remove jkbw.Player.UseAntiarrowCD
+scoreboard objectives remove jkbw.Player.UseAntiarrowLast
 scoreboard objectives remove jkbw.Player.ID
 scoreboard objectives remove jkbw.Player.Lookup
 scoreboard objectives remove jkbw.Player.DamageType
@@ -87,11 +95,11 @@ team remove jkbw.npc_yellow
 tp @e[tag=jkbw] ~ -200 ~
 kill @e[tag=jkbw]
 stopsound @a
-tag @a remove jkbw_player_reg
+tag @a remove jkbw_registered
 tag @a remove jkbw_recipe
 tag @a remove jkbw_admin
-tag @a remove jkbw_player_out
-tag @a remove jkbw_player_outed
+tag @a remove jkbw_out
+tag @a remove jkbw_outed
 
 bossbar remove jkbw:map
 bossbar remove jkbw:game_progress

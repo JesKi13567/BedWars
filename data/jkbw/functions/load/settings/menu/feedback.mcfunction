@@ -7,4 +7,4 @@ execute if score #feedback jkbw.mem matches 1 run title @a[tag=jkbw_admin] subti
 title @a[tag=jkbw_admin] title ""
 title @a[tag=jkbw_admin] times 0s 2s 1s
 playsound block.note_block.bell player @a[distance=..6]
-function jkbw:load/settings/menu
+function jkbw:load/settings/menu/operation

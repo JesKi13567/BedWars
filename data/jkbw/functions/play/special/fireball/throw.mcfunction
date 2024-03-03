@@ -1,7 +1,7 @@
 # 先设定投掷物的方向
 data modify entity @e[tag=jkbw_throwing,limit=1] Rotation set from entity @s Rotation
 # 再生成一个同方向稍远的标记
-summon marker ^ ^ ^.8 {Tags:["jkbw_throw_mark","jkbw"]}
+summon marker ^ ^ ^.8 {Tags: ["jkbw_throw_mark", "jkbw"]}
 # 记录投掷物和标记的位置
 execute store result score #x1 jkbw.mem run data get entity @e[tag=jkbw_throwing,limit=1] Pos[0] 100
 execute store result score #y1 jkbw.mem run data get entity @e[tag=jkbw_throwing,limit=1] Pos[1] 100

@@ -22,7 +22,7 @@ execute as @e[tag=jkbw_spawn_green,limit=1,scores={jkbw.Team.Healing=1}] at @s r
 execute as @e[tag=jkbw_spawn_yellow,limit=1,scores={jkbw.Team.Healing=1}] at @s run effect give @a[team=jkbw.yellow,distance=..18] regeneration 3 0 true
 
 # 死斗增强
-execute if score #time jkbw.mem matches 0..600 if entity @e[tag=jkbw_spawn_red,limit=1,scores={jkbw.Team.Dragon=1}] run effect give @a[team=jkbw.red] strength infinite 0 true
-execute if score #time jkbw.mem matches 0..600 if entity @e[tag=jkbw_spawn_blue,limit=1,scores={jkbw.Team.Dragon=1}] run effect give @a[team=jkbw.blue] strength infinite 0 true
-execute if score #time jkbw.mem matches 0..600 if entity @e[tag=jkbw_spawn_green,limit=1,scores={jkbw.Team.Dragon=1}] run effect give @a[team=jkbw.green] strength infinite 0 true
-execute if score #time jkbw.mem matches 0..600 if entity @e[tag=jkbw_spawn_yellow,limit=1,scores={jkbw.Team.Dragon=1}] run effect give @a[team=jkbw.yellow] strength infinite 0 true
+execute if score #time_state jkbw.mem matches 6 if entity @e[tag=jkbw_spawn_red,limit=1,scores={jkbw.Team.Dragon=1}] run effect give @a[team=jkbw.red] strength infinite 0 true
+execute if score #time_state jkbw.mem matches 6 if entity @e[tag=jkbw_spawn_blue,limit=1,scores={jkbw.Team.Dragon=1}] run effect give @a[team=jkbw.blue] strength infinite 0 true
+execute if score #time_state jkbw.mem matches 6 if entity @e[tag=jkbw_spawn_green,limit=1,scores={jkbw.Team.Dragon=1}] run effect give @a[team=jkbw.green] strength infinite 0 true
+execute if score #time_state jkbw.mem matches 6 if entity @e[tag=jkbw_spawn_yellow,limit=1,scores={jkbw.Team.Dragon=1}] run effect give @a[team=jkbw.yellow] strength infinite 0 true

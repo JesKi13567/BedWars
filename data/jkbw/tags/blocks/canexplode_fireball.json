@@ -1,11 +1,18 @@
 {
     "values": [
+        "air",
         "#jkbw:wool",
         "ladder",
         "oak_planks",
         "sponge",
         "wet_sponge",
         "fire",
-        "air"
+        "cut_sandstone",
+        "packed_ice",
+        "glowstone",
+        "cobweb",
+        "chest",
+        "fletching_table",
+        "tripwire"
     ]
 }

@@ -5,10 +5,10 @@ execute as @e[tag=jkbw_bed_marker,tag=!jkbw_bed_init,tag=!jkbw_bed_no_block] at 
 
 ## 存活/团灭检测
 # 记录人数
-execute store result score @e[tag=jkbw_bed_red,limit=1,tag=jkbw_bed_no_block,tag=!jkbw_bed_init] jkbw.Team.Alive if entity @a[team=jkbw.red,tag=!jkbw_player_outed]
-execute store result score @e[tag=jkbw_bed_blue,limit=1,tag=jkbw_bed_no_block,tag=!jkbw_bed_init] jkbw.Team.Alive if entity @a[team=jkbw.blue,tag=!jkbw_player_outed]
-execute store result score @e[tag=jkbw_bed_green,limit=1,tag=jkbw_bed_no_block,tag=!jkbw_bed_init] jkbw.Team.Alive if entity @a[team=jkbw.green,tag=!jkbw_player_outed]
-execute store result score @e[tag=jkbw_bed_yellow,limit=1,tag=jkbw_bed_no_block,tag=!jkbw_bed_init] jkbw.Team.Alive if entity @a[team=jkbw.yellow,tag=!jkbw_player_outed]
+execute store result score @e[tag=jkbw_bed_red,limit=1,tag=jkbw_bed_no_block,tag=!jkbw_bed_init] jkbw.Team.Alive if entity @a[team=jkbw.red,tag=!jkbw_outed]
+execute store result score @e[tag=jkbw_bed_blue,limit=1,tag=jkbw_bed_no_block,tag=!jkbw_bed_init] jkbw.Team.Alive if entity @a[team=jkbw.blue,tag=!jkbw_outed]
+execute store result score @e[tag=jkbw_bed_green,limit=1,tag=jkbw_bed_no_block,tag=!jkbw_bed_init] jkbw.Team.Alive if entity @a[team=jkbw.green,tag=!jkbw_outed]
+execute store result score @e[tag=jkbw_bed_yellow,limit=1,tag=jkbw_bed_no_block,tag=!jkbw_bed_init] jkbw.Team.Alive if entity @a[team=jkbw.yellow,tag=!jkbw_outed]
 
 # 团灭后提示（一次）
 execute as @e[tag=jkbw_bed_red,tag=!jkbw_bed_init,tag=!jkbw_bed_no_player,limit=1,scores={jkbw.Team.Alive=0}] run tellraw @a ["",{"text":"\n 红队 ","color":"red","bold":true},"被团灭了！\n"]

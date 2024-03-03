@@ -8,6 +8,7 @@ title @s title {"text":"已复活！","color":"green"}
 title @s times 0t 5t 10t
 effect give @s resistance 5 4 true
 clear @s
+item replace entity @s hotbar.4 with spyglass{jkbw: ["clean"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28, display: {Lore: ['{"text": "开局自带，你可以用它破坏方块。","color": "gray","italic": false}', '{"text": "当然你直接丢掉也行。","color": "gray","italic": false}']}}
 scoreboard players set @s jkbw.Player.ExecuseTime 0
 scoreboard players set @s jkbw.Player.DamageType 0
 scoreboard players operation @s jkbw.Temp = @s jkbw.Player.ID

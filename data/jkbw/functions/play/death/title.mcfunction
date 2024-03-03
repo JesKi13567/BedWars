@@ -1,4 +1,4 @@
-# as @a[tag=!jkbw_player_outed,scores={jkbw.Player.RebornTime=1..}] at @s
+# as @a[tag=!jkbw_outed,scores={jkbw.Player.RebornTime=1..}] at @s
 # 复活倒计时
 playsound block.note_block.bit player @s
 scoreboard players remove @s jkbw.Player.RebornTime 1

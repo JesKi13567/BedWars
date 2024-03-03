@@ -11,9 +11,11 @@ execute if entity @p[scores={jkbw.Player.UseTower=1..},y_rotation=-134.9..-45] r
 execute if entity @p[scores={jkbw.Player.UseTower=1..},y_rotation=-44.9..45] run tag @s add jkbw_south
 execute if entity @p[scores={jkbw.Player.UseTower=1..},y_rotation=45.1..135] run tag @s add jkbw_west
 
-data merge entity @s[tag=jkbw_north] {Rotation:[180f,0f]}
-data merge entity @s[tag=jkbw_east] {Rotation:[-90f,0f]}
-data merge entity @s[tag=jkbw_south] {Rotation:[0f,0f]}
-data merge entity @s[tag=jkbw_west] {Rotation:[90f,0f]}
+data merge entity @s[tag=jkbw_north] {Rotation: [180f, 0f]}
+data merge entity @s[tag=jkbw_east] {Rotation: [-90f, 0f]}
+data merge entity @s[tag=jkbw_south] {Rotation: [0f, 0f]}
+data merge entity @s[tag=jkbw_west] {Rotation: [90f, 0f]}
 
-scoreboard players reset @a[scores={jkbw.Player.UseTower=1..}] jkbw.Player.UseTower
+# 步数与位置
+scoreboard players set @s jkbw.mem 8
+tp @s ~ ~-1 ~

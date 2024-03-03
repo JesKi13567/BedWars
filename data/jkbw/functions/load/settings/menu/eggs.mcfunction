@@ -5,7 +5,7 @@ title @s times 0s 3s 1s
 clear @s
 gamemode creative @s
 
-give @s ender_chest{display: {Lore: ['{"text":"其实是商店。","italic":false,"color":"gray"}']}}
+give @s endermite_spawn_egg{display: {Name: '{"text": "商店","color": "aqua","italic": false}', Lore: ['{"text":"直接放就行了。","italic":false,"color":"yellow"}']}, EntityTag: {id: "marker", Tags: ["jkbw", "jkbw_first", "jkbw_first_shop"]}, Enchantments: [{id: "unbreaking", lvl: 10}], jkbw: ["eggs", "0"]}
 
 give @s red_wool{display: {Lore: ['{"text":"羊毛放在副手，道具放在主手。","italic":false,"color":"yellow"}']}}
 give @s blue_wool{display: {Lore: ['{"text":"羊毛放在副手，道具放在主手。","italic":false,"color":"yellow"}']}}

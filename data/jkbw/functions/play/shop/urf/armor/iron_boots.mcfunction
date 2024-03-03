@@ -1,15 +1,15 @@
 # 检测能否买
-tag @s[scores={jkbw.Player.OwnExpLevelsReal=300..}] add jkbw_buy_success
+execute if score @s jkbw.Player.OwnExpLevelsReal >= #urfEiron_boots jkbw.mem run tag @s add jkbw_buy_success
 
 # 失败购买
 execute as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem = @s jkbw.Player.OwnExpLevelsReal
-execute as @s[tag=!jkbw_buy_success] run scoreboard players remove #shop_temp jkbw.mem 300
+execute as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem -= #urfEiron_boots jkbw.mem
 execute as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem *= #-1 jkbw.mem
-tellraw @s[tag=!jkbw_buy_success] [{"text":"无法购买","color":"red"},{"text":" 反击退铁鞋 ","color":"yellow"},"*1，你还需要 ",{"score":{"name": "#shop_temp","objective":"jkbw.mem"},"color":"yellow"}," 点经验！"]
+tellraw @s[tag=!jkbw_buy_success] [{"text":"无法购买 ","color":"red"},{"translate":"item.minecraft.iron_boots","color":"yellow"}," ，你还需要 ",{"score":{"name": "#shop_temp","objective":"jkbw.mem"},"color":"yellow"}," 点经验！"]
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-give @s[tag=jkbw_buy_success] iron_boots{CanPlaceOn:["#jkbw:canplaceon"],CanDestroy:["#jkbw:candestroy"],Enchantments:[{id:"protection",lvl:1s}],AttributeModifiers:[{Name:"a",AttributeName:"generic.knockback_resistance",UUID:[I;1,1,1,1],Slot:"feet",Operation:0,Amount:10}],HideFlags:28} 1
-tellraw @s[tag=jkbw_buy_success] [{"text":"成功购买","color":"green"},{"text":" 反击退铁鞋 ","color":"gold"},"*1！"]
+give @s[tag=jkbw_buy_success] iron_boots{CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], Enchantments: [{id: "protection", lvl: 1s}], AttributeModifiers: [{Name: "a", AttributeName: "generic.knockback_resistance", UUID: [I; 1, 1, 1, 1], Slot: "feet", Operation: 0, Amount: 10}], HideFlags: 28}
+tellraw @s[tag=jkbw_buy_success] [{"text":"成功购买 ","color":"green"},{"translate":"item.minecraft.iron_boots","color":"gold"}," ！"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
-scoreboard players remove @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal 300
+scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal -= #urfEiron_boots jkbw.mem

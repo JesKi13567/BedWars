@@ -1,7 +1,7 @@
 {
     "values": [
-        "minecraft:wooden_axe",
-        "minecraft:stone_axe",
-        "minecraft:iron_axe"
+        "wooden_axe",
+        "stone_axe",
+        "iron_axe"
     ]
 }

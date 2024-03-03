@@ -1,6 +1,6 @@
 # start_flag是计时与否，teams是团队数，reg_num是玩家报名数
 # 记录人数
-execute store result score #reg_num jkbw.mem if entity @a[tag=jkbw_player_reg]
+execute store result score #reg_num jkbw.mem if entity @a[tag=jkbw_registered]
 execute store result score #player_num jkbw.mem if entity @a
 
 # 更新进度条

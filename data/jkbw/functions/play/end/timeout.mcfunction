@@ -7,6 +7,6 @@ title @a times 0s 6s 1s
 title @a subtitle [{"text":"游戏时长已到！","color":"yellow"}]
 tellraw @a ["==========================================\n",{"text":"                    起床战争","color":"yellow","bold":true}]
 function jkbw:play/end/rank
-tellraw @a ["==========================================\n"]
+tellraw @a ["\n==========================================\n"]
 tellraw @a ["",{"text":"\n本局游戏已结束，感谢大家游玩！","color":"red","bold":true},{"text":"\n将在6秒后清理地图...","color":"green"}]
 schedule function jkbw:play/end/restart 6s

@@ -13,7 +13,7 @@ execute if score #shop_mode jkbw.mem matches 1 run tellraw @s[tag=!jkbw_buy_succ
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-give @s[tag=jkbw_buy_success] fire_charge{CanDestroy: ["#jkbw:candestroy"], display: {Lore: ['""', '{"text":"触碰到方块即爆炸，可破坏羊毛与木板！","italic":false,"color":"gold"}', '{"text":"主手拿着使用，发射一个恶魂火球。","italic":false,"color":"gray"}']}, HideFlags: 28, jkbw: ["offhand_use"]}
+give @s[tag=jkbw_buy_success] fire_charge{CanDestroy: ["#jkbw:candestroy"], display: {Lore: ['""', '{"text":"主手使用，发射一个恶魂火球。","italic":false,"color":"gray"}']}, HideFlags: 28, jkbw: ["offhand_use"]}
 tellraw @s[tag=jkbw_buy_success] [{"text":"成功购买","color":"green"},{"text":" 火球 ","color":"gold"},"！"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 execute if score #shop_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnIrons -= #fire_charge jkbw.mem

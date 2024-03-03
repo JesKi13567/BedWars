@@ -1,11 +1,9 @@
 {
     "values": [
-        "tnt",
-        "fireball",
+        "#jkbw:explode",
         "iron_golem",
         "silverfish",
         "snowball",
-        "creeper",
         "arrow",
         "ender_pearl",
         "egg",

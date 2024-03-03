@@ -1,3 +1,4 @@
+# 转换价格，即经典 → 经验
 scoreboard players operation #Ewool jkbw.mem = #wool jkbw.mem
 scoreboard players operation #Eterracotta jkbw.mem = #terracotta jkbw.mem
 scoreboard players operation #Eglass jkbw.mem = #glass jkbw.mem
@@ -18,6 +19,7 @@ scoreboard players operation #Esword1 jkbw.mem = #sword1 jkbw.mem
 scoreboard players operation #Esword2 jkbw.mem = #sword2 jkbw.mem
 scoreboard players operation #Esword3 jkbw.mem = #sword3 jkbw.mem
 scoreboard players operation #Estick jkbw.mem = #stick jkbw.mem
+scoreboard players operation #Eshield jkbw.mem = #shield jkbw.mem
 scoreboard players operation #Earmor1 jkbw.mem = #armor1 jkbw.mem
 scoreboard players operation #Earmor2 jkbw.mem = #armor2 jkbw.mem
 scoreboard players operation #Earmor3 jkbw.mem = #armor3 jkbw.mem
@@ -42,7 +44,6 @@ scoreboard players operation #Etower jkbw.mem = #tower jkbw.mem
 scoreboard players operation #Epearl jkbw.mem = #pearl jkbw.mem
 scoreboard players operation #Eplatform jkbw.mem = #platform jkbw.mem
 scoreboard players operation #Efruit jkbw.mem = #fruit jkbw.mem
-
 scoreboard players operation #Ecompass jkbw.mem = #compass jkbw.mem
 
 scoreboard players operation #Esharpness jkbw.mem = #sharpness jkbw.mem
@@ -94,6 +95,7 @@ scoreboard players operation #Esword1 jkbw.mem *= #Eiron jkbw.mem
 scoreboard players operation #Esword2 jkbw.mem *= #Egold jkbw.mem
 scoreboard players operation #Esword3 jkbw.mem *= #Eemerald jkbw.mem
 scoreboard players operation #Estick jkbw.mem *= #Egold jkbw.mem
+scoreboard players operation #Eshield jkbw.mem *= #Egold jkbw.mem
 scoreboard players operation #Earmor1 jkbw.mem *= #Eiron jkbw.mem
 scoreboard players operation #Earmor2 jkbw.mem *= #Egold jkbw.mem
 scoreboard players operation #Earmor3 jkbw.mem *= #Eemerald jkbw.mem
@@ -105,7 +107,6 @@ scoreboard players operation #Epotion_speed jkbw.mem *= #Eemerald jkbw.mem
 scoreboard players operation #Epotion_jump jkbw.mem *= #Eemerald jkbw.mem
 scoreboard players operation #Epotion_invisible jkbw.mem *= #Eemerald jkbw.mem
 scoreboard players operation #Epotion_lucky jkbw.mem *= #Egold jkbw.mem
-
 scoreboard players operation #Eapple jkbw.mem *= #Egold jkbw.mem
 scoreboard players operation #Efire_charge jkbw.mem *= #Eiron jkbw.mem
 scoreboard players operation #Esilverfish jkbw.mem *= #Eiron jkbw.mem
@@ -119,7 +120,6 @@ scoreboard players operation #Etower jkbw.mem *= #Eiron jkbw.mem
 scoreboard players operation #Epearl jkbw.mem *= #Eemerald jkbw.mem
 scoreboard players operation #Eplatform jkbw.mem *= #Egold jkbw.mem
 scoreboard players operation #Efruit jkbw.mem *= #Egold jkbw.mem
-
 scoreboard players operation #Ecompass jkbw.mem *= #Eemerald jkbw.mem
 
 scoreboard players operation #Esharpness jkbw.mem *= #Ediamond jkbw.mem
@@ -138,7 +138,6 @@ scoreboard players operation #Eres4 jkbw.mem *= #Ediamond jkbw.mem
 scoreboard players operation #Etrap1 jkbw.mem *= #Ediamond jkbw.mem
 scoreboard players operation #Etrap2 jkbw.mem *= #Ediamond jkbw.mem
 scoreboard players operation #Etrap3 jkbw.mem *= #Ediamond jkbw.mem
-
 scoreboard players operation #Esharpness1 jkbw.mem *= #Ediamond jkbw.mem
 scoreboard players operation #Ehealing1 jkbw.mem *= #Ediamond jkbw.mem
 scoreboard players operation #Eprotect11 jkbw.mem *= #Ediamond jkbw.mem

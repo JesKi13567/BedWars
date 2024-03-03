@@ -9,7 +9,7 @@ execute as @a[scores={jkbw.Player.LeaveGame=1..}] run function jkbw:play/ready/r
 # 冒险模式才可报名
 gamemode adventure @a[gamemode=survival]
 execute as @a[gamemode=adventure] run function jkbw:play/ready/reg/player
-tag @a[tag=jkbw_player_reg,gamemode=!adventure] remove jkbw_player_reg
+tag @a[tag=jkbw_registered,gamemode=!adventure] remove jkbw_registered
 
 # 自选队伍
 execute unless score #test_mode jkbw.mem matches 1 if score #team_mode jkbw.mem matches 1 run function jkbw:load/settings/menu/sign/team/distribute/tick2
@@ -17,5 +17,5 @@ execute unless score #test_mode jkbw.mem matches 1 if score #team_mode jkbw.mem 
 ## 报名倒计时
 execute unless score #test_mode jkbw.mem matches 1 run function jkbw:play/ready/reg/num_count
 
-# 清理杂物
+# 清理实体
 kill @e[type=#jkbw:clear]

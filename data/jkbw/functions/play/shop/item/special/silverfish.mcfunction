@@ -13,7 +13,7 @@ execute if score #shop_mode jkbw.mem matches 1 run tellraw @s[tag=!jkbw_buy_succ
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-give @s[tag=jkbw_buy_success] snowball{display: {Name: '{"text":"床虱","color":"white","italic":false}', Lore: ['""', '{"text":"雪球落地位生成蠹虫，","italic":false,"color":"gold"}', '{"text":"为你的团队战斗 30 秒！","italic":false,"color":"aqua"}']}, CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}
+give @s[tag=jkbw_buy_success] snowball{display: {Name: '{"text":"床虱","color":"white","italic":false}', Lore: ['""', '{"text":"雪球落地位生成蠹虫，","italic":false,"color":"gold"}', '{"text":"为你的团队战斗 15 秒！","italic":false,"color":"aqua"}']}, CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}
 tellraw @s[tag=jkbw_buy_success] [{"text":"成功购买","color":"green"},{"text":" 床虱 ","color":"gold"},"！"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 execute if score #shop_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnIrons -= #silverfish jkbw.mem

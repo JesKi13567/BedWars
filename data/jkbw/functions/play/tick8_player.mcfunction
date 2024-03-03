@@ -14,7 +14,7 @@ scoreboard players operation @s jkbw.Entity.X1 = @s jkbw.Entity.X
 scoreboard players operation @s jkbw.Entity.Z1 = @s jkbw.Entity.Z
 
 # 指南针
-execute as @s[nbt={SelectedItem:{id:"minecraft:compass"}}] run function jkbw:play/compass/global
+execute as @s[nbt={SelectedItem: {id: "minecraft:compass"}}] run function jkbw:play/compass/global
 
 # 禁止拾取/清理
 clear @s #jkbw:clear

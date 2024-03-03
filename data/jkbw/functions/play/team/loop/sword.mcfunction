@@ -4,7 +4,7 @@ execute store success score @s jkbw.Player.HasSwordNotWood run clear @s #jkbw:sw
 
 # 有非木剑时清理木剑，无剑时给予木剑
 clear @s[scores={jkbw.Player.HasSwordNotWood=1}] wooden_sword
-execute unless score #attack_mode jkbw.mem matches 1 run give @s[scores={jkbw.Player.HasSword=0,jkbw.Player.HasSwordNotWood=0}] wooden_sword{Unbreakable: 1, CanDestroy: ["#jkbw:candestroy"], jkbw: ["clean", "sword", "0"], HideFlags: 28, AttributeModifiers: [{Operation: 0, Amount: 7.6d, UUID: [I; 1, 0, 0, 1], AttributeName: "generic.attack_speed", Name: "a", Slot: "mainhand"}, {Operation: 0, Amount: 4, UUID: [I; 1, 0, 0, 1], AttributeName: "generic.attack_damage", Name: "a", Slot: "mainhand"}]}
+execute unless score #attack_mode jkbw.mem matches 1 run give @s[scores={jkbw.Player.HasSword=0,jkbw.Player.HasSwordNotWood=0}] wooden_sword{Unbreakable: 1, CanDestroy: ["#jkbw:candestroy"], jkbw: ["clean", "sword", "0"], HideFlags: 28, AttributeModifiers: [{Operation: 0, Amount: 16d, UUID: [I; 1, 0, 0, 1], AttributeName: "generic.attack_speed", Name: "a", Slot: "mainhand"}, {Operation: 0, Amount: 4, UUID: [I; 1, 0, 0, 1], AttributeName: "generic.attack_damage", Name: "a", Slot: "mainhand"}]}
 execute if score #attack_mode jkbw.mem matches 1 run give @s[scores={jkbw.Player.HasSword=0,jkbw.Player.HasSwordNotWood=0}] wooden_sword{Unbreakable: 1, CanDestroy: ["#jkbw:candestroy"], jkbw: ["clean", "sword", "0"], HideFlags: 28}
 
 # 锋利剑的清理

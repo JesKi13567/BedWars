@@ -17,6 +17,7 @@ scoreboard players set @s[tag=jkbw_iron_summon,scores={jkbw.Team.Res=0}] jkbw.me
 scoreboard players set @s[tag=jkbw_iron_summon,scores={jkbw.Team.Res=1}] jkbw.mem 4
 scoreboard players set @s[tag=jkbw_iron_summon,scores={jkbw.Team.Res=2..3}] jkbw.mem 3
 scoreboard players set @s[tag=jkbw_iron_summon,scores={jkbw.Team.Res=4}] jkbw.mem 2
+execute if score #shop_mode jkbw.mem matches 2 run scoreboard players set @s[tag=jkbw_iron_summon] jkbw.mem 1
 
-scoreboard players operation @s[tag=jkbw_iron_summon] jkbw.mem *= #10 jkbw.mem
-scoreboard players operation @s[tag=jkbw_iron_summon] jkbw.mem /= #res_rate jkbw.mem
+execute if score #shop_mode jkbw.mem matches 0..1 run scoreboard players operation @s[tag=jkbw_iron_summon] jkbw.mem *= #10 jkbw.mem
+execute if score #shop_mode jkbw.mem matches 0..1 run scoreboard players operation @s[tag=jkbw_iron_summon] jkbw.mem /= #res_rate jkbw.mem

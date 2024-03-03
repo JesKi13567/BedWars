@@ -8,3 +8,6 @@ execute if score @s jkbw.Entity.Y > #worldspawnY_ jkbw.mem run tp @s @e[limit=1,
 tp @s[scores={jkbw.Entity.Y=..-90}] @e[limit=1,tag=jkbw_worldspawn]
 execute if score @s jkbw.Entity.Z > #worldspawnZmax jkbw.mem run tp @s @e[limit=1,tag=jkbw_worldspawn]
 execute if score @s jkbw.Entity.Z < #worldspawnZmin jkbw.mem run tp @s @e[limit=1,tag=jkbw_worldspawn]
+
+# 不是本局的玩家
+execute unless score @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.CurrentGame = #current_game jkbw.mem run function jkbw:play/death/left

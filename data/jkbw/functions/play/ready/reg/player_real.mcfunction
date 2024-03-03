@@ -1,4 +1,4 @@
-execute unless score #team_mode jkbw.mem matches 1 as @s[tag=!jkbw_player_reg,nbt=!{Inventory:[{Slot:8b,tag:{jkbw:["reg","0"]}}]}] run function jkbw:load/settings/menu/reg/1
-execute if score #team_mode jkbw.mem matches 1 unless score @s jkbw.Player.TeamSelect matches 1.. as @s[tag=!jkbw_player_reg,nbt=!{Inventory:[{Slot:8b,tag:{jkbw:["reg","0"]}}]}] run function jkbw:load/settings/menu/reg/no
-execute if score #team_mode jkbw.mem matches 1 if score @s jkbw.Player.TeamSelect matches 1.. as @s[tag=!jkbw_player_reg,nbt=!{Inventory:[{Slot:8b,tag:{jkbw:["reg","0"]}}]}] run function jkbw:load/settings/menu/reg/1
-execute as @s[tag=jkbw_player_reg,nbt=!{Inventory:[{Slot:8b,tag:{jkbw:["reg","1"]}}]}] run function jkbw:load/settings/menu/reg/0
+execute unless score #team_mode jkbw.mem matches 1 as @s[tag=!jkbw_registered,nbt=!{Inventory: [{Slot: 8b, tag: {jkbw: ["reg", "0"]}}]}] run function jkbw:load/settings/menu/reg/1
+execute if score #team_mode jkbw.mem matches 1 unless score @s jkbw.Player.TeamSelect matches 1.. as @s[tag=!jkbw_registered,nbt=!{Inventory: [{Slot: 8b, tag: {jkbw: ["reg", "0"]}}]}] run function jkbw:load/settings/menu/reg/no
+execute if score #team_mode jkbw.mem matches 1 if score @s jkbw.Player.TeamSelect matches 1.. as @s[tag=!jkbw_registered,nbt=!{Inventory: [{Slot: 8b, tag: {jkbw: ["reg", "0"]}}]}] run function jkbw:load/settings/menu/reg/1
+execute as @s[tag=jkbw_registered,nbt=!{Inventory: [{Slot: 8b, tag: {jkbw: ["reg", "1"]}}]}] run function jkbw:load/settings/menu/reg/0

@@ -8,6 +8,7 @@
         "#mineable/shovel",
         "#mineable/hoe",
         "bedrock",
-        "sea_lantern"
+        "sea_lantern",
+        "slime_block"
     ]
 }

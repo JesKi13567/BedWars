@@ -1,5 +1,5 @@
 scoreboard players add #shop_mode jkbw.mem 1
-execute if score #shop_mode jkbw.mem matches 2.. run scoreboard players set #shop_mode jkbw.mem 0
+execute if score #shop_mode jkbw.mem matches 3.. run scoreboard players set #shop_mode jkbw.mem 0
 playsound block.note_block.bell player @a[distance=..6]
 
 scoreboard players set @s jkbw.mem 10

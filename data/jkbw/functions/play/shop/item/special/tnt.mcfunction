@@ -17,7 +17,7 @@ execute if score #shop_mode jkbw.mem matches 1 run tellraw @s[tag=!jkbw_buy_succ
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-give @s[tag=jkbw_buy_success] mooshroom_spawn_egg{display: {Name: '{"text":"TNT","color":"white","italic":false}', Lore: ['""', '{"text":"放下后将在 3 秒后爆炸！","italic":false,"color":"gray"}', '"你没看错，但它真的是tnt"']}, CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], EntityTag: {id: "minecraft:tnt", Tags: ["jkbw", "jkbw_tnt", "jkbw_new_entity"], Fuse: 10000s}, jkbw_tnt: 1, HideFlags: 28}
+give @s[tag=jkbw_buy_success] mooshroom_spawn_egg{display: {Name: '{"text":"TNT","color":"white","italic":false}', Lore: ['""', '{"text":"放下后将在 3 秒后爆炸！","italic":false,"color":"gray"}', '"你没看错，但它真的是tnt"']}, CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], EntityTag: {id: "minecraft:tnt", Tags: ["jkbw", "jkbw_tnt", "jkbw_new_entity"], Fuse: 10000s}, jkbw: ["tnt"], HideFlags: 28}
 tellraw @s[tag=jkbw_buy_success] [{"text":"成功购买","color":"green"},{"text":" TNT ","color":"gold"},"！"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 execute unless score #solo_mode jkbw.mem matches 1 if score #shop_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnGolds -= #tnt jkbw.mem

@@ -1,15 +1,15 @@
 # 检测能否买
-tag @s[scores={jkbw.Player.OwnExpLevelsReal=50..}] add jkbw_buy_success
+execute if score @s jkbw.Player.OwnExpLevelsReal >= #urfEcompass jkbw.mem run tag @s add jkbw_buy_success
 
 # 失败购买
 execute as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem = @s jkbw.Player.OwnExpLevelsReal
-execute as @s[tag=!jkbw_buy_success] run scoreboard players remove #shop_temp jkbw.mem 50
+execute as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem -= #urfEcompass jkbw.mem
 execute as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem *= #-1 jkbw.mem
-tellraw @s[tag=!jkbw_buy_success] [{"text":"无法购买","color":"red"},{"text":" 指南针 ","color":"yellow"},"*1，你还需要 ",{"score":{"name": "#shop_temp","objective":"jkbw.mem"},"color":"yellow"}," 点经验！"]
+tellraw @s[tag=!jkbw_buy_success] [{"text":"无法购买 ","color":"red"},{"text":"指南针","color":"yellow"}," ，你还需要 ",{"score":{"name": "#shop_temp","objective":"jkbw.mem"},"color":"yellow"}," 点经验！"]
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-give @s[tag=jkbw_buy_success] compass{CanPlaceOn:["#jkbw:canplaceon"],CanDestroy:["#jkbw:candestroy"],HideFlags:28} 1
-tellraw @s[tag=jkbw_buy_success] [{"text":"成功购买","color":"green"},{"text":" 指南针 ","color":"gold"},"*1！"]
+give @s[tag=jkbw_buy_success] compass{CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28, display: {Lore: ['{"text": "请无视上面的指针...","color": "gray","italic": false}', '{"text": "看经验栏上面的指示才是真理。","color": "gray","italic": false}']}}
+tellraw @s[tag=jkbw_buy_success] [{"text":"成功购买 ","color":"green"},{"text":"指南针","color":"gold"}," ！"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
-scoreboard players remove @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal 50
+scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal -= #urfEcompass jkbw.mem

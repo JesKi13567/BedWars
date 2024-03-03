@@ -14,14 +14,14 @@ execute as @s[team=jkbw.blue] if entity @e[limit=1,tag=jkbw_bed_blue,tag=jkbw_be
 execute as @s[team=jkbw.green] if entity @e[limit=1,tag=jkbw_bed_green,tag=jkbw_bed_no_block] run tellraw @a {"text":"最终击杀！","color":"aqua","bold":true}
 execute as @s[team=jkbw.yellow] if entity @e[limit=1,tag=jkbw_bed_yellow,tag=jkbw_bed_no_block] run tellraw @a {"text":"最终击杀！","color":"aqua","bold":true}
 
-execute as @s[team=jkbw.red] if entity @e[limit=1,tag=jkbw_bed_red,tag=jkbw_bed_no_block] run tellraw @p[tag=jkbw_murder] {"text":"对手末影箱内容物已掉落在对方基地资源点中。","color":"green"}
-execute as @s[team=jkbw.blue] if entity @e[limit=1,tag=jkbw_bed_blue,tag=jkbw_bed_no_block] run tellraw @p[tag=jkbw_murder] {"text":"对手末影箱内容物已掉落在对方基地资源点中。","color":"green"}
-execute as @s[team=jkbw.green] if entity @e[limit=1,tag=jkbw_bed_green,tag=jkbw_bed_no_block] run tellraw @p[tag=jkbw_murder] {"text":"对手末影箱内容物已掉落在对方基地资源点中。","color":"green"}
-execute as @s[team=jkbw.yellow] if entity @e[limit=1,tag=jkbw_bed_yellow,tag=jkbw_bed_no_block] run tellraw @p[tag=jkbw_murder] {"text":"对手末影箱内容物已掉落在对方基地资源点中。","color":"green"}
+execute if score #shop_mode jkbw.mem matches 0..1 as @s[team=jkbw.red] if entity @e[limit=1,tag=jkbw_bed_red,tag=jkbw_bed_no_block] run tellraw @p[tag=jkbw_murder] {"text":"对手末影箱内容物已掉落在对方基地资源点中。","color":"green"}
+execute if score #shop_mode jkbw.mem matches 0..1 as @s[team=jkbw.blue] if entity @e[limit=1,tag=jkbw_bed_blue,tag=jkbw_bed_no_block] run tellraw @p[tag=jkbw_murder] {"text":"对手末影箱内容物已掉落在对方基地资源点中。","color":"green"}
+execute if score #shop_mode jkbw.mem matches 0..1 as @s[team=jkbw.green] if entity @e[limit=1,tag=jkbw_bed_green,tag=jkbw_bed_no_block] run tellraw @p[tag=jkbw_murder] {"text":"对手末影箱内容物已掉落在对方基地资源点中。","color":"green"}
+execute if score #shop_mode jkbw.mem matches 0..1 as @s[team=jkbw.yellow] if entity @e[limit=1,tag=jkbw_bed_yellow,tag=jkbw_bed_no_block] run tellraw @p[tag=jkbw_murder] {"text":"对手末影箱内容物已掉落在对方基地资源点中。","color":"green"}
 
 # 物资给予
-execute if score #shop_mode jkbw.mem matches 1 as @s[scores={jkbw.Player.OwnExpLevelsReal=1..}] run tellraw @p[tag=jkbw_murder] [{"text":"+","color":"green"},{"score":{"name":"@s","objective":"jkbw.Player.OwnExpLevelsReal"}},"经验"]
-execute if score #shop_mode jkbw.mem matches 1 run scoreboard players operation @p[tag=jkbw_murder] jkbw.Player.OwnExpLevels += @s jkbw.Player.OwnExpLevelsReal
+execute if score #shop_mode jkbw.mem matches 1..2 as @s[scores={jkbw.Player.OwnExpLevelsReal=1..}] run tellraw @p[tag=jkbw_murder] [{"text":"+","color":"green"},{"score":{"name":"@s","objective":"jkbw.Player.OwnExpLevelsReal"}},"经验"]
+execute if score #shop_mode jkbw.mem matches 1..2 run scoreboard players operation @p[tag=jkbw_murder] jkbw.Player.OwnExpLevels += @s jkbw.Player.OwnExpLevelsReal
 
 execute as @s[scores={jkbw.Player.OwnIrons=1..}] run tellraw @p[tag=jkbw_murder] ["+",{"score":{"name":"@s","objective":"jkbw.Player.OwnIrons"}},"铁锭"]
 execute as @s[scores={jkbw.Player.OwnGolds=1..}] run tellraw @p[tag=jkbw_murder] [{"text":"+","color":"gold"},{"score":{"name":"@s","objective":"jkbw.Player.OwnGolds"}},"金锭"]

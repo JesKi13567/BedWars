@@ -1,15 +1,16 @@
 # 检测能否买
-tag @s[scores={jkbw.Player.OwnExpLevelsReal=600..}] add jkbw_buy_success
+execute if score @s jkbw.Player.OwnExpLevelsReal >= #urfEgolden_sword jkbw.mem run tag @s add jkbw_buy_success
 
 # 失败购买
 execute as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem = @s jkbw.Player.OwnExpLevelsReal
-execute as @s[tag=!jkbw_buy_success] run scoreboard players remove #shop_temp jkbw.mem 600
+execute as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem -= #urfEgolden_sword jkbw.mem
 execute as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem *= #-1 jkbw.mem
-tellraw @s[tag=!jkbw_buy_success] [{"text":"无法购买","color":"red"},{"text":" 金剑 ","color":"yellow"},"*1，你还需要 ",{"score":{"name": "#shop_temp","objective":"jkbw.mem"},"color":"yellow"}," 点经验！"]
+tellraw @s[tag=!jkbw_buy_success] [{"text":"无法购买 ","color":"red"},{"translate":"item.minecraft.golden_sword","color":"yellow"}," ，你还需要 ",{"score":{"name": "#shop_temp","objective":"jkbw.mem"},"color":"yellow"}," 点经验！"]
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-give @s[tag=jkbw_buy_success] golden_sword{CanPlaceOn:["#jkbw:canplaceon"],CanDestroy:["#jkbw:candestroy"],AttributeModifiers:[{Name:"a",AttributeName:"generic.attack_damage",UUID:[I;1,1,1,1],Slot:"mainhand",Operation:0,Amount:11.11}],HideFlags:28} 1
-tellraw @s[tag=jkbw_buy_success] [{"text":"成功购买","color":"green"},{"text":" 金剑 ","color":"gold"},"*1！"]
+execute unless score #attack_mode jkbw.mem matches 1 run give @s[tag=jkbw_buy_success] golden_sword{CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], AttributeModifiers: [{Name: "a", AttributeName: "generic.attack_damage", UUID: [I; 1, 1, 1, 1], Slot: "mainhand", Operation: 0, Amount: 11.11d}, {Name: "a", AttributeName: "generic.attack_speed", UUID: [I; 1, 1, 1, 1], Slot: "mainhand", Operation: 0, Amount: 16d}], HideFlags: 28}
+execute if score #attack_mode jkbw.mem matches 1 run give @s[tag=jkbw_buy_success] golden_sword{CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], AttributeModifiers: [{Name: "a", AttributeName: "generic.attack_damage", UUID: [I; 1, 1, 1, 1], Slot: "mainhand", Operation: 0, Amount: 11.11d}], HideFlags: 28}
+tellraw @s[tag=jkbw_buy_success] [{"text":"成功购买 ","color":"green"},{"translate":"item.minecraft.golden_sword","color":"gold"}," ！"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
-scoreboard players remove @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal 600
+scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal -= #urfEgolden_sword jkbw.mem

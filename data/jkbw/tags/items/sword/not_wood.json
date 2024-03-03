@@ -1,7 +1,7 @@
 {
     "values": [
-        "minecraft:stone_sword",
-        "minecraft:iron_sword",
-        "minecraft:diamond_sword"
+        "stone_sword",
+        "iron_sword",
+        "diamond_sword"
     ]
 }

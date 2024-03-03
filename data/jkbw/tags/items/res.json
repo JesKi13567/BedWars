@@ -1,8 +1,8 @@
 {
     "values": [
-        "minecraft:iron_ingot",
-        "minecraft:gold_ingot",
-        "minecraft:diamond",
-        "minecraft:emerald"
+        "iron_ingot",
+        "gold_ingot",
+        "diamond",
+        "emerald"
     ]
 }

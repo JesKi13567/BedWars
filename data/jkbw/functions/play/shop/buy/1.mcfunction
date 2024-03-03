@@ -3,12 +3,13 @@ execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["item", "sword_stone"]}}]}] run f
 execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["item", "sword_iron"]}}]}] run function jkbw:play/shop/item/weapon/sword/iron
 execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["item", "sword_diamond"]}}]}] run function jkbw:play/shop/item/weapon/sword/diamond
 execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["item", "stick"]}}]}] run function jkbw:play/shop/item/weapon/sword/stick
+execute if score #attack_mode jkbw.mem matches 1 as @s[nbt=!{EnderItems: [{tag: {jkbw: ["item", "shield"]}}]}] run function jkbw:play/shop/item/weapon/sword/shield
 
 # 弓
 execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["item", "arrow"]}}]}] run function jkbw:play/shop/item/weapon/bow/arrow
-execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["item", "bow_1"]}}]}] run function jkbw:play/shop/item/weapon/bow/1
-execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["item", "bow_2"]}}]}] run function jkbw:play/shop/item/weapon/bow/2
-execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["item", "bow_3"]}}]}] run function jkbw:play/shop/item/weapon/bow/3
+execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["item", "bow1"]}}]}] run function jkbw:play/shop/item/weapon/bow/1
+execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["item", "bow2"]}}]}] run function jkbw:play/shop/item/weapon/bow/2
+execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["item", "bow3"]}}]}] run function jkbw:play/shop/item/weapon/bow/3
 
 # 盔甲
 execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["item", "armor_chain"]}}]}] run function jkbw:play/shop/item/armor/chainmail

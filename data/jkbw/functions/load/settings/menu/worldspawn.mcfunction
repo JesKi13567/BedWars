@@ -1,7 +1,7 @@
 execute if score #tutorial jkbw.mem matches ..1 run scoreboard players set #tutorial jkbw.mem 2
 kill @e[tag=jkbw_worldspawn]
 setworldspawn
-execute align xyz run summon text_display ~.5 ~ ~.5 {Tags:["jkbw","jkbw_worldspawn"],text:'{"text":"全局传送点","color":"gold"}',billboard:"center",line_width:200,transformation:{scale:[1f,1f,1f]}}
+execute align xyz run summon text_display ~.5 ~ ~.5 {Tags:["jkbw","jkbw_worldspawn"],text:'{"text":"全局传送点","color":"gold"}',billboard:"center",line_width:200}
 setblock ~ ~-1 ~ bedrock
 # 边界与加载区块
 execute align xyz run worldborder center ~.5 ~.5
@@ -14,7 +14,6 @@ forceload add ~-100 ~-100 ~100 ~100
 execute store result score #worldspawnY jkbw.mem run data get entity @e[limit=1,tag=jkbw_worldspawn] Pos[1]
 scoreboard players operation #worldspawnY_ jkbw.mem = #worldspawnY jkbw.mem
 scoreboard players add #worldspawnY_ jkbw.mem 100
-scoreboard players remove #worldspawnY jkbw.mem 10
 # 边界XZ
 execute store result score #worldspawnX jkbw.mem run data get entity @e[limit=1,tag=jkbw_worldspawn] Pos[0]
 execute store result score #worldspawnZ jkbw.mem run data get entity @e[limit=1,tag=jkbw_worldspawn] Pos[2]

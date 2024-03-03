@@ -1,3 +1,4 @@
+# 显示刷新的价格
 playsound block.note_block.bell player @s
 title @s actionbar {"text": "价格已刷新，右键盒子查看！","color": "aqua"}
 #### hyp
@@ -64,39 +65,42 @@ data modify block 10110223 4 10110223 Items[7].tag.display.Lore[1] set from bloc
 #stick
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#stick","objective": "jkbw.mem"},"color":"gold"},{"text":" 金锭","italic":false,"color":"gold"}]'
 data modify block 10110223 4 10110223 Items[8].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
+#shield
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#shield","objective": "jkbw.mem"},"color":"gold"},{"text":" 金锭","italic":false,"color":"gold"}]'
+data modify block 10110223 4 10110223 Items[9].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 #bow1
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#bow1","objective": "jkbw.mem"},"color":"gold"},{"text":" 金锭","italic":false,"color":"gold"}]'
-data modify block 10110223 4 10110223 Items[9].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110223 4 10110223 Items[10].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 #bow2
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#bow2","objective": "jkbw.mem"},"color":"gold"},{"text":" 金锭","italic":false,"color":"gold"}]'
-data modify block 10110223 4 10110223 Items[10].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110223 4 10110223 Items[11].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 #bow3
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#bow3","objective": "jkbw.mem"},"color":"green"},{"text":" 绿宝石","italic":false,"color":"green"}]'
-data modify block 10110223 4 10110223 Items[11].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110223 4 10110223 Items[12].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 #arrow
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#arrow","objective": "jkbw.mem"},"color":"gold"},{"text":" 金锭","italic":false,"color":"gold"}]'
-data modify block 10110223 4 10110223 Items[12].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110223 4 10110223 Items[13].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 #armor1
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#armor1","objective": "jkbw.mem"},"color":"white"},{"text":" 铁锭","italic":false,"color":"white"}]'
-data modify block 10110223 4 10110223 Items[13].tag.display.Lore[2] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110223 4 10110223 Items[14].tag.display.Lore[2] set from block 10110222 2 10110223 back_text.messages[1]
 #armor2
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#armor2","objective": "jkbw.mem"},"color":"gold"},{"text":" 金锭","italic":false,"color":"gold"}]'
-data modify block 10110223 4 10110223 Items[14].tag.display.Lore[2] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110223 4 10110223 Items[15].tag.display.Lore[2] set from block 10110222 2 10110223 back_text.messages[1]
 #armor3
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#armor3","objective": "jkbw.mem"},"color":"green"},{"text":" 绿宝石","italic":false,"color":"green"}]'
-data modify block 10110223 4 10110223 Items[15].tag.display.Lore[2] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110223 4 10110223 Items[16].tag.display.Lore[2] set from block 10110222 2 10110223 back_text.messages[1]
 #potion_speed
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#potion_speed","objective": "jkbw.mem"},"color":"green"},{"text":" 绿宝石","italic":false,"color":"green"}]'
-data modify block 10110223 4 10110223 Items[16].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110223 4 10110223 Items[17].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 #potion_jump
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#potion_jump","objective": "jkbw.mem"},"color":"green"},{"text":" 绿宝石","italic":false,"color":"green"}]'
-data modify block 10110223 4 10110223 Items[17].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110223 4 10110223 Items[18].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 #potion_invisible
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#potion_invisible","objective": "jkbw.mem"},"color":"green"},{"text":" 绿宝石","italic":false,"color":"green"}]'
-data modify block 10110223 4 10110223 Items[18].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110223 4 10110223 Items[19].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 #potion_lucky
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#potion_lucky","objective": "jkbw.mem"},"color":"gold"},{"text":" 金锭","italic":false,"color":"gold"}]'
-data modify block 10110223 4 10110223 Items[19].tag.display.Lore[3] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110223 4 10110223 Items[20].tag.display.Lore[3] set from block 10110222 2 10110223 back_text.messages[1]
 
 #tnt1
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#tnt1","objective": "jkbw.mem"},"color":"gold"},{"text":" 金锭","italic":false,"color":"gold"}]'
@@ -106,7 +110,7 @@ data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":
 data modify block 10110223 5 10110223 Items[1].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 #fire_charge
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#fire_charge","objective": "jkbw.mem"},"color":"white"},{"text":" 铁锭","italic":false,"color":"white"}]'
-data modify block 10110223 5 10110223 Items[2].tag.display.Lore[4] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110223 5 10110223 Items[2].tag.display.Lore[3] set from block 10110222 2 10110223 back_text.messages[1]
 #silverfish
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#silverfish","objective": "jkbw.mem"},"color":"white"},{"text":" 铁锭","italic":false,"color":"white"}]'
 data modify block 10110223 5 10110223 Items[3].tag.display.Lore[4] set from block 10110222 2 10110223 back_text.messages[1]
@@ -294,39 +298,42 @@ data modify block 10110222 4 10110223 Items[2].tag.display.Lore[1] set from bloc
 #Estick
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Estick","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
 data modify block 10110222 4 10110223 Items[3].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
+#Eshield
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Eshield","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 4 10110223 Items[4].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 #Ebow1
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Ebow1","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
-data modify block 10110222 4 10110223 Items[4].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110222 4 10110223 Items[5].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 #Ebow2
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Ebow2","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
-data modify block 10110222 4 10110223 Items[5].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110222 4 10110223 Items[6].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 #Ebow3
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Ebow3","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
-data modify block 10110222 4 10110223 Items[6].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110222 4 10110223 Items[7].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 #Earrow
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Earrow","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
-data modify block 10110222 4 10110223 Items[7].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110222 4 10110223 Items[8].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 #Earmor1
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Earmor1","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
-data modify block 10110222 4 10110223 Items[8].tag.display.Lore[2] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110222 4 10110223 Items[9].tag.display.Lore[2] set from block 10110222 2 10110223 back_text.messages[1]
 #Earmor2
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Earmor2","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
-data modify block 10110222 4 10110223 Items[9].tag.display.Lore[2] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110222 4 10110223 Items[10].tag.display.Lore[2] set from block 10110222 2 10110223 back_text.messages[1]
 #Earmor3
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Earmor3","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
-data modify block 10110222 4 10110223 Items[10].tag.display.Lore[2] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110222 4 10110223 Items[11].tag.display.Lore[2] set from block 10110222 2 10110223 back_text.messages[1]
 #Epotion_speed
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Epotion_speed","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
-data modify block 10110222 4 10110223 Items[11].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110222 4 10110223 Items[12].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 #Epotion_jump
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Epotion_jump","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
-data modify block 10110222 4 10110223 Items[12].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110222 4 10110223 Items[13].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 #Epotion_invisible
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Epotion_invisible","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
-data modify block 10110222 4 10110223 Items[13].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110222 4 10110223 Items[14].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 #Epotion_lucky
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Epotion_lucky","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
-data modify block 10110222 4 10110223 Items[14].tag.display.Lore[3] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110222 4 10110223 Items[15].tag.display.Lore[3] set from block 10110222 2 10110223 back_text.messages[1]
 
 #Etnt1
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Etnt1","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
@@ -336,7 +343,7 @@ data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":
 data modify block 10110222 5 10110223 Items[1].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
 #Efire_charge
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Efire_charge","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
-data modify block 10110222 5 10110223 Items[2].tag.display.Lore[4] set from block 10110222 2 10110223 back_text.messages[1]
+data modify block 10110222 5 10110223 Items[2].tag.display.Lore[3] set from block 10110222 2 10110223 back_text.messages[1]
 #Esilverfish
 data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#Esilverfish","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
 data modify block 10110222 5 10110223 Items[3].tag.display.Lore[4] set from block 10110222 2 10110223 back_text.messages[1]
@@ -464,3 +471,195 @@ data modify block 10110222 6 10110223 Items[15].tag.display.Lore[8] set from blo
 #### urf
 ### exp
 ## item
+#urfEleather_helmet
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEleather_helmet","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 7 10110223 Items[4].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEleather_chestplate
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEleather_chestplate","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 7 10110223 Items[5].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEleather_leggings
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEleather_leggings","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 7 10110223 Items[6].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEleather_boots
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEleather_boots","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 7 10110223 Items[7].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEchainmail_chestplate
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEchainmail_chestplate","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 7 10110223 Items[8].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEiron_boots
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEiron_boots","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 7 10110223 Items[9].tag.display.Lore[1] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEgolden_helmet
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEgolden_helmet","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 7 10110223 Items[10].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEgolden_chestplate
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEgolden_chestplate","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 7 10110223 Items[11].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEgolden_leggings
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEgolden_leggings","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 7 10110223 Items[12].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEgolden_boots
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEgolden_boots","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 7 10110223 Items[13].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEdiamond_helmet
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEdiamond_helmet","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 7 10110223 Items[14].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEdiamond_chestplate
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEdiamond_chestplate","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 7 10110223 Items[15].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEdiamond_leggings
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEdiamond_leggings","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 7 10110223 Items[16].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEdiamond_boots
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEdiamond_boots","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 7 10110223 Items[17].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEstick
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEstick","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 8 10110223 Items[4].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEwooden_sword
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEwooden_sword","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 8 10110223 Items[5].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEstone_sword1
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEstone_sword1","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 8 10110223 Items[6].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEstone_sword2
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEstone_sword2","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 8 10110223 Items[7].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEstone_sword3
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEstone_sword3","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 8 10110223 Items[8].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEiron_sword
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEiron_sword","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 8 10110223 Items[9].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEdiamond_sword
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEdiamond_sword","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 8 10110223 Items[10].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEgolden_sword
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEgolden_sword","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 8 10110223 Items[11].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEarrow
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEarrow","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 8 10110223 Items[12].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEbow1
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEbow1","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 8 10110223 Items[13].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEbow2
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEbow2","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 8 10110223 Items[14].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEbow3
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEbow3","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 8 10110223 Items[15].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEbow4
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEbow4","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 8 10110223 Items[16].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEbow5
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEbow5","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 8 10110223 Items[17].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEbow6
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEbow6","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 8 10110223 Items[18].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEshield
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEshield","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 8 10110223 Items[19].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEcut_sandstone
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEcut_sandstone","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 9 10110223 Items[0].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEend_stone
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEend_stone","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 9 10110223 Items[1].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEpacked_ice
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEpacked_ice","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 9 10110223 Items[2].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEglowstone
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEglowstone","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 9 10110223 Items[3].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEladder
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEladder","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 9 10110223 Items[4].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEcobweb
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEcobweb","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 9 10110223 Items[5].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEglass
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEglass","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 9 10110223 Items[6].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEchest
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEchest","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 9 10110223 Items[7].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEender_chest
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEender_chest","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 9 10110223 Items[8].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEstone_pickaxe
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEstone_pickaxe","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 9 10110223 Items[9].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEiron_pickaxe
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEiron_pickaxe","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 9 10110223 Items[10].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEgolden_pickaxe
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEgolden_pickaxe","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 9 10110223 Items[11].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEpotion_healing
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEpotion_healing","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 9 10110223 Items[12].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEpotion_healing2
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEpotion_healing2","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 9 10110223 Items[13].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEpotion_speed
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEpotion_speed","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 9 10110223 Items[14].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEpotion_jump
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEpotion_jump","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 9 10110223 Items[15].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEpotion_strength
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEpotion_strength","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 9 10110223 Items[16].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEpotion_regen
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEpotion_regen","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 9 10110223 Items[17].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEtnt
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEtnt","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 10 10110223 Items[0].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEplatform
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEplatform","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 10 10110223 Items[1].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEtrap
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEtrap","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 10 10110223 Items[2].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEwall
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEwall","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 10 10110223 Items[3].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEsheep
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEsheep","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 10 10110223 Items[4].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEback
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEback","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 10 10110223 Items[5].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEcompass
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEcompass","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 10 10110223 Items[6].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEpearl
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEpearl","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 10 10110223 Items[7].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEanti_arrow
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEanti_arrow","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 10 10110223 Items[8].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEfire_charge
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEfire_charge","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 10 10110223 Items[9].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEegg
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEegg","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 10 10110223 Items[10].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEapple
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEapple","objective": "jkbw.mem"},"color":"aqua"},{"text":" 经验","italic":false,"color":"aqua"}]'
+data modify block 10110222 10 10110223 Items[11].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEiron
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEiron","objective": "jkbw.mem"},"color":"aqua","bold": true},{"text":" 经验","italic":false,"color":"aqua","bold": true}]'
+data modify block 10110222 10 10110223 Items[12].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEgold
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEgold","objective": "jkbw.mem"},"color":"aqua","bold": true},{"text":" 经验","italic":false,"color":"aqua","bold": true}]'
+data modify block 10110222 10 10110223 Items[13].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEdiamond
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEdiamond","objective": "jkbw.mem"},"color":"aqua","bold": true},{"text":" 经验","italic":false,"color":"aqua","bold": true}]'
+data modify block 10110222 10 10110223 Items[14].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
+#urfEemerald
+data modify block 10110222 2 10110223 back_text.messages[1] set value '[{"text":"花费：","italic":false,"color":"gray"},{"score":{"name": "#urfEemerald","objective": "jkbw.mem"},"color":"aqua","bold": true},{"text":" 经验","italic":false,"color":"aqua","bold": true}]'
+data modify block 10110222 10 10110223 Items[15].tag.display.Lore[0] set from block 10110222 2 10110223 back_text.messages[1]
