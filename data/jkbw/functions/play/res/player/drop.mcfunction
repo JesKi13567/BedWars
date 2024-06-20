@@ -1,5 +1,5 @@
 # 切换 - 我的末影箱
-scoreboard players set @s jkbw.Player.Page 4
+scoreboard players set @s jkbw.Player.Page -1
 function jkbw:play/shop/gui/chest/player/global
 
 # 记录物品

@@ -6,6 +6,7 @@ execute as @a[team=!,tag=!jkbw_outed,scores={jkbw.Player.RebornTime=1..}] at @s 
 scoreboard players remove @a[scores={jkbw.Player.UsePlatformCD=1..}] jkbw.Player.UsePlatformCD 1
 scoreboard players remove @a[scores={jkbw.Player.UseBackCD=1..}] jkbw.Player.UseBackCD 1
 scoreboard players remove @a[scores={jkbw.Player.UseAntiarrowCD=1..}] jkbw.Player.UseAntiarrowCD 1
+scoreboard players remove @a[scores={jkbw.Player.UseIceCD=1..}] jkbw.Player.UseIceCD 1
 
 # 受伤原谅时长
 execute as @a[gamemode=adventure,tag=jkbw_registered,tag=!jkbw_outed] at @s run function jkbw:play/kill/execuse

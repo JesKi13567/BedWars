@@ -50,7 +50,7 @@ scoreboard objectives remove jkbw.Player.HasRes
 scoreboard objectives remove jkbw.Player.ArmorLevels
 scoreboard objectives remove jkbw.Player.AxeLevels
 scoreboard objectives remove jkbw.Player.PickaxeLevels
-scoreboard objectives remove jkbw.Player.HasShears
+scoreboard objectives remove jkbw.Player.ShearsLevels
 scoreboard objectives remove jkbw.Player.HasCompass
 scoreboard objectives remove jkbw.Player.HasSword
 scoreboard objectives remove jkbw.Player.HasSwordNotWood
@@ -62,14 +62,14 @@ scoreboard objectives remove jkbw.Player.UseTNT
 scoreboard objectives remove jkbw.Player.UseTower
 scoreboard objectives remove jkbw.Player.UseEnderchest
 scoreboard objectives remove jkbw.Player.UseWall
-scoreboard objectives remove jkbw.Player.UseSheep
 scoreboard objectives remove jkbw.Player.UsePlatformCD
 scoreboard objectives remove jkbw.Player.UseBackCD
 scoreboard objectives remove jkbw.Player.UseBackLast
 scoreboard objectives remove jkbw.Player.UseAntiarrowCD
 scoreboard objectives remove jkbw.Player.UseAntiarrowLast
+scoreboard objectives remove jkbw.Player.UseIceCD
+scoreboard objectives remove jkbw.Player.UseIceLast
 scoreboard objectives remove jkbw.Player.ID
-scoreboard objectives remove jkbw.Player.Lookup
 scoreboard objectives remove jkbw.Player.DamageType
 scoreboard objectives remove jkbw.Entity.X
 scoreboard objectives remove jkbw.Entity.X1

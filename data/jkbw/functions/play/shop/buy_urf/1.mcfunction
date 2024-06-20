@@ -1,9 +1,9 @@
 # 武器
 execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["urf", "stick"]}}]}] run function jkbw:play/shop/urf/weapon/stick
+execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["urf", "fishing_rod"]}}]}] run function jkbw:play/shop/urf/weapon/fishing_rod
 execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["urf", "wooden_sword"]}}]}] run function jkbw:play/shop/urf/weapon/wooden_sword
 execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["urf", "stone_sword1"]}}]}] run function jkbw:play/shop/urf/weapon/stone_sword1
 execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["urf", "stone_sword2"]}}]}] run function jkbw:play/shop/urf/weapon/stone_sword2
-execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["urf", "stone_sword3"]}}]}] run function jkbw:play/shop/urf/weapon/stone_sword3
 execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["urf", "iron_sword"]}}]}] run function jkbw:play/shop/urf/weapon/iron_sword
 execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["urf", "diamond_sword"]}}]}] run function jkbw:play/shop/urf/weapon/diamond_sword
 execute as @s[nbt=!{EnderItems: [{tag: {jkbw: ["urf", "golden_sword"]}}]}] run function jkbw:play/shop/urf/weapon/golden_sword

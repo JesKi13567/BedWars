@@ -73,7 +73,7 @@ kill @e[tag=jkbw_back]
 scoreboard players reset @a jkbw.Player.ArmorLevels
 scoreboard players reset @a jkbw.Player.AxeLevels
 scoreboard players reset @a jkbw.Player.PickaxeLevels
-scoreboard players reset @a jkbw.Player.HasShears
+scoreboard players reset @a jkbw.Player.ShearsLevels
 scoreboard players reset @a jkbw.Player.OwnExpLevels
 scoreboard players reset @a jkbw.Player.OwnExpLevelsReal
 scoreboard players reset @a jkbw.Player.DeathImp
@@ -84,6 +84,8 @@ scoreboard players set @a jkbw.Player.UseBackCD 0
 scoreboard players set @a jkbw.Player.UseBackLast 0
 scoreboard players set @a jkbw.Player.UseAntiarrowCD 0
 scoreboard players set @a jkbw.Player.UseAntiarrowLast 0
+scoreboard players set @a jkbw.Player.UseIceCD 0
+scoreboard players set @a jkbw.Player.UseIceLast 0
 scoreboard players set @a jkbw.Player.Page 0
 execute if score #shop_mode jkbw.mem matches 0..1 run scoreboard players set @a jkbw.Player.Compass 0
 execute if score #shop_mode jkbw.mem matches 2 run scoreboard players set @a jkbw.Player.Compass -1
@@ -93,7 +95,7 @@ xp set @a 0 points
 title @a title ""
 title @a subtitle ""
 execute as @a run function jkbw:play/shop/gui/chest/player/clear
-item replace entity @s hotbar.4 with spyglass{jkbw: ["clean"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28, display: {Lore: ['{"text": "开局自带，你可以用它破坏方块。","color": "gray","italic": false}', '{"text": "当然你直接丢掉也行。","color": "gray","italic": false}']}}
+item replace entity @a hotbar.4 with spyglass{jkbw: ["clean"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28, display: {Lore: ['{"text": "开局自带，你可以用它破坏方块。","color": "gray","italic": false}', '{"text": "当然你直接丢掉也行。","color": "gray","italic": false}']}}
 gamemode adventure @a
 playsound block.note_block.banjo player @a
 tag @a remove jkbw_out

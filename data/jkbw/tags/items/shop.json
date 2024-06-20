@@ -19,16 +19,15 @@
         "beacon",
         "tnt",
         "bricks",
+        "ice",
 
-        "wooden_sword",
-        "stone_sword",
-        "iron_sword",
-        "diamond_sword",
+        "#jkbw:sword/any",
         "golden_sword",
         "arrow",
         "bow",
         "stick",
         "shield",
+        "fishing_rod",
 
         "potion",
 
@@ -74,7 +73,6 @@
         "prismarine_shard",
 
         "wolf_spawn_egg",
-        "sheep_spawn_egg",
 
         "blue_stained_glass_pane",
         "lime_stained_glass_pane",

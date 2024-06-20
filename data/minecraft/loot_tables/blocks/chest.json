@@ -7,7 +7,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:chest"
+          "name": "minecraft:chest",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Lore: ['{\"text\": \"在床附近放置时变成完整方块——制箭台。\",\"color\": \"gray\",\"italic\": false}']}}"
+            }
+          ]
         }
       ],
       "conditions": [

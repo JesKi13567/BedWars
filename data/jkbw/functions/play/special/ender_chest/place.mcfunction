@@ -1,4 +1,4 @@
-execute unless block ~ ~ ~ air run summon item ~ ~.6 ~ {Item: {id: "endermite_spawn_egg", Count: 1b, tag: {CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28, display: {Name: '{"text":"末影箱","italic":false,"color":"white"}', Lore: ['{"text": "不要把它丢到商店附近！","color": "gray","italic": false}']}, EntityTag: {id: "marker", Tags: ["jkbw", "jkbw_chest_player", "jkbw_new_entity"]}}}}
+execute unless block ~ ~ ~ air run summon item ~ ~.6 ~ {Item: {id: "endermite_spawn_egg", Count: 1b, tag: {CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28, display: {Name: '{"text":"末影箱","italic":false,"color":"white"}', Lore: ['{"text": "仅在同队玩家靠近时变为团队箱子，","color": "gray","italic": false}','{"text": "其他情况下变成完整方块——远古残骸。","color": "gray","italic": false}']}, EntityTag: {id: "marker", Tags: ["jkbw", "jkbw_chest_player", "jkbw_new_entity"]}}}}
 execute unless block ~ ~ ~ air run tellraw @p[scores={jkbw.Player.UseEnderchest=1..},gamemode=adventure,tag=jkbw_registered] {"text": "你不能将末影箱放在非空气方块内！","color": "red"}
 execute unless block ~ ~ ~ air run kill @s
 execute if block ~ ~ ~ air run setblock ~ ~ ~ ender_chest

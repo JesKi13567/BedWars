@@ -9,7 +9,7 @@ tellraw @s[tag=!jkbw_buy_success] [{"text":"无法购买 ","color":"red"},{"tran
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-give @s[tag=jkbw_buy_success] chest{CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}
+give @s[tag=jkbw_buy_success] chest{CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28, display: {Lore: ['{"text": "在床附近放置时变成完整方块——制箭台。","color": "gray","italic": false}']}}
 tellraw @s[tag=jkbw_buy_success] [{"text":"成功购买 ","color":"green"},{"translate":"block.minecraft.chest","color":"gold"}," ！"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal -= #urfEchest jkbw.mem

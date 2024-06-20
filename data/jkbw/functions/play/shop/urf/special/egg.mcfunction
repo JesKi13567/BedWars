@@ -9,7 +9,7 @@ tellraw @s[tag=!jkbw_buy_success] [{"text":"无法购买 ","color":"red"},{"text
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-give @s[tag=jkbw_buy_success] egg{CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}
+give @s[tag=jkbw_buy_success] egg{display: {Name: '{"text":"搭桥蛋","color":"green","italic":false}'}, CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}
 tellraw @s[tag=jkbw_buy_success] [{"text":"成功购买 ","color":"green"},{"text":"搭桥蛋","color":"gold"}," ！"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal -= #urfEegg jkbw.mem

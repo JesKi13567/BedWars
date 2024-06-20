@@ -25,3 +25,6 @@ execute as @e[tag=jkbw_alarm_marker] at @s run function jkbw:play/shop/team/trap
 
 # 急救平台
 execute as @e[tag=jkbw_slime] at @s run function jkbw:play/special/platform/count
+
+# 真·冰霜行者
+execute as @e[tag=jkbw_ice] at @s run function jkbw:play/special/platform/count

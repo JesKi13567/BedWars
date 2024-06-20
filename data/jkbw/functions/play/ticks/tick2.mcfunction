@@ -2,7 +2,7 @@
 function jkbw:play/bed/check
 
 # 掉落物处理
-execute as @e[type=item,tag=!jkbw] at @s unless entity @s[nbt={Item: {id: "minecraft:arrow"}}] unless entity @s[nbt={Item: {id: "minecraft:fire_charge"}}] run data merge entity @s {Item: {tag: {CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}}, Tags: ["jkbw"]}
+execute as @e[type=item,tag=!jkbw] at @s unless entity @s[nbt={Item: {id: "minecraft:arrow"}}] unless entity @s[nbt={Item: {id: "minecraft:fire_charge"}}] unless entity @s[nbt={Item: {id: "minecraft:ice"}}] run data merge entity @s {Item: {tag: {CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28}}, Tags: ["jkbw"]}
 
 # 资源点与出生点附近禁止建造
 execute as @e[tag=jkbw_point] at @s store success score @s jkbw.Temp run fill ~-2 ~2 ~-2 ~2 ~-3 ~2 air replace #jkbw:no_near_point
@@ -14,4 +14,3 @@ execute as @e[tag=jkbw_chest_shop,y_rotation=180] at @s run setblock ~ ~ ~ ender
 execute as @e[tag=jkbw_chest_shop,y_rotation=-90] at @s run setblock ~ ~ ~ ender_chest[facing=west]
 execute as @e[tag=jkbw_chest_shop,y_rotation=0] at @s run setblock ~ ~ ~ ender_chest[facing=north]
 execute as @e[tag=jkbw_chest_shop,y_rotation=90] at @s run setblock ~ ~ ~ ender_chest[facing=east]
-execute as @e[tag=jkbw_chest_shop] at @s run kill @e[distance=..1,type=item,nbt={Item: {tag: {EntityTag: {Tags: ["jkbw_chest_player"]}}}}]

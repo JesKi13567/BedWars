@@ -9,7 +9,7 @@ tellraw @s[tag=!jkbw_buy_success] [{"text":"无法购买 ","color":"red"},{"tran
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-give @s[tag=jkbw_buy_success] endermite_spawn_egg{CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28, display: {Name: '{"text":"末影箱","italic":false,"color":"white"}', Lore: ['{"text": "不要把它丢到商店附近！","color": "gray","italic": false}']}, EntityTag: {id: "marker", Tags: ["jkbw", "jkbw_chest_player", "jkbw_new_entity"]}}
+give @s[tag=jkbw_buy_success] endermite_spawn_egg{CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], HideFlags: 28, display: {Name: '{"text":"末影箱","italic":false,"color":"white"}', Lore: ['{"text": "仅在同队玩家靠近时变为团队箱子，","color": "gray","italic": false}','{"text": "其他情况下变成完整方块——远古残骸。","color": "gray","italic": false}']}, EntityTag: {id: "marker", Tags: ["jkbw", "jkbw_chest_player", "jkbw_new_entity"]}}
 tellraw @s[tag=jkbw_buy_success] [{"text":"成功购买 ","color":"green"},{"translate":"block.minecraft.ender_chest","color":"gold"}," ！"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal -= #urfEender_chest jkbw.mem

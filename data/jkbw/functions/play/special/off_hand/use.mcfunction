@@ -14,5 +14,9 @@ execute as @s[scores={jkbw.Player.UseBackCD=0},nbt={SelectedItem: {id: "minecraf
 execute as @s[scores={jkbw.Player.UseAntiarrowCD=1..},nbt={SelectedItem: {id: "minecraft:prismarine_shard"}}] run title @s actionbar [{"text":"还有","color":"yellow"},{"score":{"name":"@s","objective":"jkbw.Player.UseAntiarrowCD"},"color":"red"},"秒才可使用",{"text":"剑气力场","color":"red","bold":true},"！"]
 execute as @s[scores={jkbw.Player.UseAntiarrowCD=0},nbt={SelectedItem: {id: "minecraft:prismarine_shard"}}] run function jkbw:play/special/anti_arrow/trigger
 
+# 真·冰霜行者
+execute as @s[scores={jkbw.Player.UseIceCD=1..},nbt={SelectedItem: {id: "minecraft:ice"}}] run title @s actionbar [{"text":"还有","color":"yellow"},{"score":{"name":"@s","objective":"jkbw.Player.UseIceCD"},"color":"red"},"秒才可使用",{"text":"真·冰霜行者","color":"red","bold":true},"！"]
+execute as @s[scores={jkbw.Player.UseIceCD=0},nbt={SelectedItem: {id: "minecraft:ice"}}] run function jkbw:play/special/ice/trigger
+
 # 重置右键
 scoreboard players reset @s jkbw.Player.Use

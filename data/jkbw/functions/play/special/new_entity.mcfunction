@@ -24,6 +24,9 @@ scoreboard players set @s[tag=jkbw_alarm_marker] jkbw.mem 100
 # 急救平台
 execute as @s[tag=jkbw_slime] run function jkbw:play/special/platform/marker
 
+# 真·冰霜行者
+execute as @s[tag=jkbw_ice] run function jkbw:play/special/ice/marker
+
 # 现在不是新实体了
 tag @s remove jkbw_new_entity
 
@@ -33,4 +36,3 @@ scoreboard players reset @a[scores={jkbw.Player.UseIrongolem=1..}] jkbw.Player.U
 scoreboard players reset @a[scores={jkbw.Player.UseTower=1..}] jkbw.Player.UseTower
 scoreboard players reset @a[scores={jkbw.Player.UseEnderchest=1..}] jkbw.Player.UseEnderchest
 scoreboard players reset @a[scores={jkbw.Player.UseWall=1..}] jkbw.Player.UseWall
-scoreboard players reset @a[scores={jkbw.Player.UseSheep=1..}] jkbw.Player.UseSheep

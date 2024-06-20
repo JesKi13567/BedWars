@@ -9,6 +9,7 @@ gamemode adventure @a
 team leave @a
 scoreboard players set @a jkbw.Player.TeamSelect 0
 xp set @a 0 levels
+execute as @a run attribute @s generic.max_health base set 20
 tag @a remove jkbw_registered
 tag @a remove jkbw_out
 tag @a remove jkbw_outed

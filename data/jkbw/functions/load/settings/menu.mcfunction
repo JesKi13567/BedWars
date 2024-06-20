@@ -2,7 +2,7 @@ playsound block.note_block.bell player @a[distance=..6]
 tag @s add jkbw_admin
 function jkbw:load/ticks/load
 
-tellraw @a[tag=jkbw_admin] [{"text":"\n\n\n\n\n\n\n\n\n\n=============","color":"green"},{"text":" 起床战争工具包 ","color":"yellow"},"============\n当前数据包版本：beta1.4\n",{"text":"请确认当前服务器的游戏版本是否为1.20.0-1！","color":"yellow"}]
+tellraw @a[tag=jkbw_admin] [{"text":"\n\n\n\n\n\n\n\n\n\n=============","color":"green"},{"text":" 起床战争工具包 ","color":"yellow"},"============\n当前数据包版本：beta1.4.1\n",{"text":"请确认当前服务器的游戏版本是否为1.20.0-1！","color":"yellow"}]
 execute if score #test_mode jkbw.mem matches 1 run tellraw @a[tag=jkbw_admin] {"text":"注意：已开启测试模式！","color":"red","bold":true}
 
 execute if score #tutorial jkbw.mem matches ..1 run tellraw @a[tag=jkbw_admin] ["",{"text":"请务必按照教程顺序一步一步操作哦！","color":"aqua"},"\n\n第一步：",{"text":"[使用方法]","color":"gold","clickEvent":{"action":"run_command","value":"/function jkbw:load/settings/tips"},"hoverEvent":{"action":"show_text","value":"※必看※"}}]

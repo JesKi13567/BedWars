@@ -8,7 +8,9 @@ scoreboard players set #ladder jkbw.mem 4
 scoreboard players set #planks jkbw.mem 4
 scoreboard players set #obsidian jkbw.mem 4
 
-scoreboard players set #shears jkbw.mem 20
+scoreboard players set #shears1 jkbw.mem 20
+scoreboard players set #shears2 jkbw.mem 10
+scoreboard players set #shears3 jkbw.mem 4
 scoreboard players set #axe1 jkbw.mem 10
 scoreboard players set #axe2 jkbw.mem 10
 scoreboard players set #axe3 jkbw.mem 3
@@ -108,10 +110,10 @@ scoreboard players set #urfEchainmail_chestplate jkbw.mem 70
 scoreboard players set #urfEiron_boots jkbw.mem 300
 
 scoreboard players set #urfEstick jkbw.mem 1
+scoreboard players set #urfEfishing_rod jkbw.mem 5
 scoreboard players set #urfEwooden_sword jkbw.mem 5
 scoreboard players set #urfEstone_sword1 jkbw.mem 10
-scoreboard players set #urfEstone_sword2 jkbw.mem 30
-scoreboard players set #urfEstone_sword3 jkbw.mem 70
+scoreboard players set #urfEstone_sword2 jkbw.mem 70
 scoreboard players set #urfEiron_sword jkbw.mem 300
 scoreboard players set #urfEdiamond_sword jkbw.mem 400
 scoreboard players set #urfEgolden_sword jkbw.mem 600
@@ -149,7 +151,7 @@ scoreboard players set #urfEtnt jkbw.mem 288
 scoreboard players set #urfEplatform jkbw.mem 150
 scoreboard players set #urfEtrap jkbw.mem 30
 scoreboard players set #urfEwall jkbw.mem 32
-scoreboard players set #urfEsheep jkbw.mem 1000
+scoreboard players set #urfEice jkbw.mem 200
 scoreboard players set #urfEback jkbw.mem 100
 scoreboard players set #urfEcompass jkbw.mem 50
 scoreboard players set #urfEpearl jkbw.mem 500

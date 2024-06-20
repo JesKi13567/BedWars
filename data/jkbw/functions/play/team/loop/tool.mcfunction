@@ -1,11 +1,17 @@
 # 重置玩家工具等级
 execute unless score @s jkbw.Player.AxeLevels matches 1.. run scoreboard players set @s jkbw.Player.AxeLevels 0
 execute unless score @s jkbw.Player.PickaxeLevels matches 1.. run scoreboard players set @s jkbw.Player.PickaxeLevels 0
-execute unless score @s jkbw.Player.HasShears matches 1 run scoreboard players set @s jkbw.Player.HasShears 0
+execute unless score @s jkbw.Player.ShearsLevels matches 1.. run scoreboard players set @s jkbw.Player.ShearsLevels 0
 
 ## 清理
 # 跨等级工具
-clear @s[scores={jkbw.Player.HasShears=0}] shears{jkbw: ["clean"]}
+clear @s[scores={jkbw.Player.ShearsLevels=0}] shears{jkbw: ["clean"]}
+clear @s[scores={jkbw.Player.ShearsLevels=1}] shears{jkbw: ["shears2"]}
+clear @s[scores={jkbw.Player.ShearsLevels=1}] shears{jkbw: ["shears3"]}
+clear @s[scores={jkbw.Player.ShearsLevels=2}] shears{jkbw: ["shears1"]}
+clear @s[scores={jkbw.Player.ShearsLevels=2}] shears{jkbw: ["shears3"]}
+clear @s[scores={jkbw.Player.ShearsLevels=3}] shears{jkbw: ["shears1"]}
+clear @s[scores={jkbw.Player.ShearsLevels=3}] shears{jkbw: ["shears2"]}
 clear @s[scores={jkbw.Player.AxeLevels=0}] #jkbw:axe/0{jkbw: ["clean"]}
 clear @s[scores={jkbw.Player.AxeLevels=1}] #jkbw:axe/1{jkbw: ["clean"]}
 clear @s[scores={jkbw.Player.AxeLevels=2}] #jkbw:axe/2{jkbw: ["clean"]}
@@ -30,7 +36,9 @@ execute if entity @e[tag=jkbw_spawn_yellow,limit=1,scores={jkbw.Team.Sharpness=0
 
 ## 给予
 # 剪刀
-give @s[nbt=!{Inventory: [{tag: {jkbw: ["shears"]}}]},scores={jkbw.Player.HasShears=1}] shears{CanDestroy: ["#jkbw:candestroy"], jkbw: ["clean", "shears"], Unbreakable: 1b, HideFlags: 28}
+give @s[nbt=!{Inventory: [{tag: {jkbw: ["shears1"]}}]},scores={jkbw.Player.ShearsLevels=1}] shears{CanDestroy: ["#jkbw:candestroy"], jkbw: ["clean", "shears1"], Unbreakable: 1b, HideFlags: 28}
+give @s[nbt=!{Inventory: [{tag: {jkbw: ["shears2"]}}]},scores={jkbw.Player.ShearsLevels=2}] shears{Enchantments: [{id: "minecraft:efficiency", lvl: 2}], CanDestroy: ["#jkbw:candestroy"], jkbw: ["clean", "shears2"], Unbreakable: 1b, HideFlags: 28}
+give @s[nbt=!{Inventory: [{tag: {jkbw: ["shears3"]}}]},scores={jkbw.Player.ShearsLevels=3}] shears{Enchantments: [{id: "minecraft:efficiency", lvl: 4}], CanDestroy: ["#jkbw:candestroy"], jkbw: ["clean", "shears3"], Unbreakable: 1b, HideFlags: 28}
 
 # 斧头与镐子
 execute unless score #attack_mode jkbw.mem matches 1 run function jkbw:play/team/loop/tool/old

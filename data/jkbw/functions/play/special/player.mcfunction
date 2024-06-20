@@ -11,6 +11,9 @@ execute as @s[scores={jkbw.Player.UseBackLast=1..}] run function jkbw:play/speci
 # 剑气力场持续
 execute as @s[scores={jkbw.Player.UseAntiarrowLast=1..}] run function jkbw:play/special/anti_arrow/last
 
+# 真·冰霜行者持续
+execute as @s[scores={jkbw.Player.UseIceLast=1..}] run function jkbw:play/special/ice/last
+
 # 蠹虫雪球
 execute as @s[scores={jkbw.Player.UseSnowball=1..}] run function jkbw:play/special/silverfish
 
@@ -18,7 +21,7 @@ execute as @s[scores={jkbw.Player.UseSnowball=1..}] run function jkbw:play/speci
 execute as @s[scores={jkbw.Player.UseEgg=1..}] run function jkbw:play/special/egg/trigger
 
 # 背包有tnt
-execute at @s[tag=!jkbw_invisible,nbt={Inventory: [{tag: {jkbw: ["tnt"]}}]}] run particle dust 0.851 0.075 0.075 0.7 ~ ~2.5 ~ 0 0 0 0 1 normal
+execute if score #shop_mode jkbw.mem matches 0..1 at @s[tag=!jkbw_invisible,nbt={Inventory: [{tag: {jkbw: ["tnt"]}}]}] run particle dust 0.851 0.075 0.075 0.7 ~ ~2.5 ~ 0 0 0 0 1 normal
 
 # 踩到陷阱
 execute if block ~ ~ ~ tripwire run function jkbw:play/special/trap
