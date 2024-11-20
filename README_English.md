@@ -3,7 +3,7 @@
 ### Things have been achieved
 
 1. ONLY support the overworld dimension.
-1. Support Chinese(simplified) & English.
+1. Support Chinese(simplified & traditional) & English.
 1. Support 64 players with 8 teams!
 1. In-game instructions.
 1. There are 3 game types in this datapack (Classic, Exp & URF), with tips next to Global Point.

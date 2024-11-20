@@ -38,6 +38,12 @@ execute if score #lang jkbw.mem matches 2 run scoreboard players set -----------
 execute if score #lang jkbw.mem matches 2 run scoreboard players set §bAuthor:JK137§r jkbw.display -11
 execute if score #lang jkbw.mem matches 2 run scoreboard players set §eHave_fun!§r jkbw.display -12
 
+execute if score #lang jkbw.mem matches 3 if score #test_mode jkbw.mem matches 1 run scoreboard players set §c§l注：已開啟測試模式！§r jkbw.display 11
+execute if score #lang jkbw.mem matches 3 run scoreboard players set ================== jkbw.display 10
+execute if score #lang jkbw.mem matches 3 run scoreboard players set ------------------ jkbw.display -10
+execute if score #lang jkbw.mem matches 3 run scoreboard players set §b資料包作者：JK137§r jkbw.display -11
+execute if score #lang jkbw.mem matches 3 run scoreboard players set §e遊戲虽好，可不要貪玩喲！§r jkbw.display -12
+
 # 公屏显示
 kill @e[type=marker,tag=jkbw_display]
 
