@@ -1,6 +1,3 @@
-# 手动
+# 只有一个地图，无需再考虑切换地图是否同步设置
 execute if data entity @s attack run function jkbw:play/ready/button/attack
 execute if data entity @s interaction run function jkbw:play/ready/button/interaction
-
-# 自动
-execute unless score @s jkbw.mem = #display_set jkbw.mem run function jkbw:play/ready/button/update
