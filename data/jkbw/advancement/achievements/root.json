@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "red_bed"
+    },
+    "title": {
+      "text": "JKの起床战争工具包"
+    },
+    "description": [
+      ""
+    ],
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "textures/block/white_wool.png"
+  },
+  "criteria": {
+    "command": {
+      "trigger": "location"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+function jkbw:play/ready/reg/leavegame

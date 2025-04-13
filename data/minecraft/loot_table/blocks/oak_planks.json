@@ -1,0 +1,28 @@
+{
+  "type": "block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "oak_planks",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "max_stack_size": 99
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "survives_explosion"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+$title @s actionbar [{"storage": "jk:bw", "nbt": "txt.compass.track", "color": "gold"}, {"storage": "jk:bw", "nbt": "txt.display.team.$(team)", "color": "$(color)", "bold": true}, ": ", {"score": {"name": "@s", "objective": "jkbw.Entity.X"}, "color": "green", "bold": true}, "m"]

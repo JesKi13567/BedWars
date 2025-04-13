@@ -1,0 +1,55 @@
+{
+  "pack": {
+    "pack_format": 48,
+    "description": [
+      {
+        "text": "BedWars ",
+        "color": "yellow"
+      },
+      {
+        "text": "ToolPack\n",
+        "color": "light_purple"
+      },
+      {
+        "text": "起床战争 ",
+        "color": "yellow"
+      },
+      {
+        "text": "工具包\n",
+        "color": "light_purple"
+      },
+      {
+        "text": "By ",
+        "color": "white"
+      },
+      {
+        "text": "JK137\n",
+        "color": "aqua"
+      },
+      {
+        "text": "For ",
+        "color": "yellow"
+      },
+      {
+        "text": "MC 1.21.1",
+        "color": "white"
+      }
+    ]
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "minecraft",
+        "path": "recipe/.*"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "advancement/.*"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "loot_table/.*"
+      }
+    ]
+  }
+}

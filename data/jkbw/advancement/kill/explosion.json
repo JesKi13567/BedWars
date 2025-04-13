@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "jkbw": {
+      "trigger": "entity_killed_player",
+      "conditions": {
+        "killing_blow": {
+          "tags": [
+            {
+              "expected": true,
+              "id": "is_explosion"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "jkbw:play/kill/explosion"
+  }
+}

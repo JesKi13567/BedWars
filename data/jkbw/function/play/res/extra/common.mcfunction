@@ -1,0 +1,3 @@
+$execute store result score @s jkbw.ResCount.$(Res) if entity @e[type=item, tag=jkbw_res_$(res), dx=0, dy=-8, dz=0]
+$execute as @s[scores={jkbw.ResCount.$(Res)=$(count)..}] run summon item ~ ~ ~ {Age: -32768, PickupDelay: 18, Invulnerable: True, Item: {id: "$(res)", count: $(count), components: {can_break: {predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, can_place_on: {predicates: [{blocks: "#jkbw:canplaceon"}], show_in_tooltip: false}, max_stack_size: 99}}, Tags: ["jkbw", "jkbw_extra_$(res)", "jkbw_res"]}
+$execute as @s[scores={jkbw.ResCount.$(Res)=$(count)..}] run kill @e[type=item, tag=jkbw_res_$(res), dx=0, dy=-8, dz=0]

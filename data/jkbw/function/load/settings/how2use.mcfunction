@@ -1,0 +1,16 @@
+playsound block.note_block.bell player @a[distance=..6]
+execute unless score #tutorial jkbw.mem matches 1.. run scoreboard players set #tutorial jkbw.mem 1
+tellraw @a[tag=jkbw_admin] ["", {"text": "\n\n\n\n\n\n\n\n\n\n============= ", "color": "green"}, {"storage": "jk:bw", "nbt": "txt.print.jk_datapack", "color": "yellow"}, {"text": " =============\n", "color": "green"}, "\n", \
+{"storage": "jk:bw", "nbt": "txt.print.how2use.tip1", "color": "yellow"}, "\n", \
+{"storage": "jk:bw", "nbt": "txt.print.how2use.tip2_1", "color": "gray"}, {"storage": "jk:bw", "nbt": "txt.print.container_chunk", "color": "gold"}, {"storage": "jk:bw", "nbt": "txt.print.how2use.tip2_2", "color": "gray"}, {"storage": "jk:bw", "nbt": "txt.print.operation_table", "color": "dark_red"}, {"storage": "jk:bw", "nbt": "txt.print.how2use.tip2_3", "color": "gray"}, \
+"\n\n", {"storage": "jk:bw", "nbt": "txt.print.how2use.tip3", "color": "green"}, "\n", \
+{"storage": "jk:bw", "nbt": "txt.print.how2use.tip3_1", "color": "green"}, "\n\n", \
+{"storage": "jk:bw", "nbt": "txt.print.how2use.tip4", "color": "white"}, "\n", \
+{"storage": "jk:bw", "nbt": "txt.print.how2use.tip4_1", "color": "gray"}, "\n\n", \
+{"storage": "jk:bw", "nbt": "txt.print.how2use.tip5", "color": "yellow"}, "\n", \
+{"storage": "jk:bw", "nbt": "txt.print.how2use.tip5_1", "color": "white", "hoverEvent": {"action": "show_text", "contents": [{"storage": "jk:bw", "nbt": "txt.item.shop.wool"}, ", ", {"translate": "block.minecraft.glass"}, ", ", {"translate": "block.minecraft.terracotta"}, ".\n\n", {"storage": "jk:bw", "nbt": "txt.print.how2use.tip5_1_1"}, "\n", {"storage": "jk:bw", "nbt": "txt.print.colors"}]}}, " ", {"storage": "jk:bw", "nbt": "txt.print.how2use.tip5_2", "color": "white", "hoverEvent": {"action": "show_text", "contents": [{"translate": "block.minecraft.end_stone"}, ", ", {"translate": "block.minecraft.ladder"}, ", ", {"translate": "block.minecraft.oak_planks"}, ", ", {"translate": "block.minecraft.obsidian"}, ", ", {"translate": "block.minecraft.sponge"}, ", ", {"translate": "block.minecraft.wet_sponge"}, ", ", {"translate": "block.minecraft.water"}, ", ", {"translate": "block.minecraft.cut_sandstone"}, ", ", {"translate": "block.minecraft.packed_ice"}, ", ", {"translate": "block.minecraft.glowstone"}, ", ", {"translate": "block.minecraft.cobweb"}, ", ", {"translate": "block.minecraft.chest"}, ", ", {"translate": "block.minecraft.ender_chest"}, ", ", {"translate": "block.minecraft.tripwire"}, ", ", {"translate": "block.minecraft.fletching_table"}, ", ", {"translate": "block.minecraft.ancient_debris"}, "."]}}, "\n\n", \
+{"storage": "jk:bw", "nbt": "txt.print.how2use.tip6", "color": "gold"}, \
+{"text": "\n\n====== ", "color": "green"}, {"text": "[", "color": "blue"}, {"storage": "jk:bw", "nbt": "txt.print.author", "color": "blue", "clickEvent": {"action": "run_command", "value": "/function jkbw:load/settings/author"}}, {"text": "]", "color": "blue"}, {"text": " ======= ", "color": "green"}, {"text": "[", "color": "aqua"}, {"storage": "jk:bw", "nbt": "txt.print.back2mainmenu", "color": "aqua", "clickEvent": {"action": "run_command", "value": "/function jkbw:load/settings/menu"}}, {"text": "]", "color": "aqua"}, {"text": " ======", "color": "green"}]
+
+# 10 11 02 23
+# j k b w

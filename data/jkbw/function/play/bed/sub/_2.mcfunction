@@ -1,0 +1,3 @@
+$function jkbw:load/settings/menu/teams/bed/replace {team: $(team)}
+execute unless score #bed_type jkbw.mem matches 1 run title @s actionbar [{"storage": "jk:bw", "nbt": "txt.print.cant_break", "color": "red"}, {"storage": "jk:bw", "nbt": "txt.print.bed"}, "!"]
+execute if score #bed_type jkbw.mem matches 1 run title @s actionbar [{"storage": "jk:bw", "nbt": "txt.print.cant_break", "color": "red"}, {"translate": "block.minecraft.cake"}, "!"]

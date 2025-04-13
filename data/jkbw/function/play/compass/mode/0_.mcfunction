@@ -1,0 +1,2 @@
+$scoreboard players operation @s jkbw.Entity.X -= @e[type=text_display, tag=jkbw_bed_$(team), limit=1] jkbw.Entity.X
+$scoreboard players operation @s jkbw.Entity.Z -= @e[type=text_display, tag=jkbw_bed_$(team), limit=1] jkbw.Entity.Z

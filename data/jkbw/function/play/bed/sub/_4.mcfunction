@@ -1,0 +1,3 @@
+$scoreboard players set @e[type=text_display, tag=jkbw_bed_$(team), limit=1] jkbw.Bed.State 1
+$execute unless score #bed_type jkbw.mem matches 1 run tellraw @a ["\n", {"selector": "@s"}, {"storage": "jk:bw", "nbt": "txt.print.broke"}, {"storage": "jk:bw", "nbt": "txt.display.team.$(team)", "color": "$(color)", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.print._s"}, {"storage": "jk:bw", "nbt": "txt.print.bed"}, "!\n"]
+$execute if score #bed_type jkbw.mem matches 1 run tellraw @a ["\n", {"selector": "@s"}, {"storage": "jk:bw", "nbt": "txt.print.broke"}, {"storage": "jk:bw", "nbt": "txt.display.team.$(team)", "color": "$(color)", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.print._s"}, {"translate": "block.minecraft.cake"}, "!\n"]

@@ -1,0 +1,6 @@
+$execute as @s[scores={jkbw.Player.$(Tool)Levels=4}] run tellraw @s [{"storage": "jk:bw", "nbt": "txt.print.buy_cannot", "color": "red"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.$(tool)", "color": "yellow"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.update", "color": "yellow"}, ", ", {"storage": "jk:bw", "nbt": "txt.print.because_lvl_max_self"}]
+$execute as @s[scores={jkbw.Player.$(Tool)Levels=4}] run playsound entity.villager.no player @s
+$execute as @s[scores={jkbw.Player.$(Tool)Levels=3}] run function jkbw:play/shop/item/tool/real {lvl: 4, Tool: $(Tool), tool: $(tool), Res: Gold, res: gold_ingot}
+$execute as @s[scores={jkbw.Player.$(Tool)Levels=2}] run function jkbw:play/shop/item/tool/real {lvl: 3, Tool: $(Tool), tool: $(tool), Res: Gold, res: gold_ingot}
+$execute as @s[scores={jkbw.Player.$(Tool)Levels=1}] run function jkbw:play/shop/item/tool/real {lvl: 2, Tool: $(Tool), tool: $(tool), Res: Iron, res: iron_ingot}
+$execute as @s[scores={jkbw.Player.$(Tool)Levels=0}] run function jkbw:play/shop/item/tool/real {lvl: 1, Tool: $(Tool), tool: $(tool), Res: Iron, res: iron_ingot}

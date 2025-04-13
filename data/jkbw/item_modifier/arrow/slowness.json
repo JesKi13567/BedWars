@@ -1,0 +1,13 @@
+{
+    "function": "set_components",
+    "components": {
+        "charged_projectiles": [
+            {
+                "id": "tipped_arrow",
+                "components": {
+                    "potion_contents": "slowness"
+                }
+            }
+        ]
+    }
+}

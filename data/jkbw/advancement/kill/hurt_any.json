@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "jkbw": {
+      "trigger": "entity_hurt_player"
+    }
+  },
+  "rewards": {
+    "function": "jkbw:play/kill/hurt_any"
+  }
+}

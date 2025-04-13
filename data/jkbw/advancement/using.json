@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "jkbw": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "fire_charge",
+                        "blaze_rod",
+                        "paper",
+                        "prismarine_shard",
+                        "ice",
+                        "raw_iron"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "jkbw:play/special/using"
+    }
+}

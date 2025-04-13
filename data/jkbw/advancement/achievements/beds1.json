@@ -1,0 +1,39 @@
+{
+  "parent": "jkbw:achievements/beds",
+  "display": {
+    "icon": {
+      "id": "stone_pickaxe"
+    },
+    "title": {
+      "text": "破床 · 其一"
+    },
+    "description": [
+      {
+        "text": "破坏 5 次对手的床！",
+        "color": "white"
+      }
+    ],
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "raw": {
+      "trigger": "location",
+      "conditions": {
+        "player": [
+          {
+            "scores": {
+              "jkbw.Player.CountBeds": {
+                "min": 5
+              }
+            },
+            "condition": "entity_scores",
+            "entity": "this"
+          }
+        ]
+      }
+    }
+  }
+}
