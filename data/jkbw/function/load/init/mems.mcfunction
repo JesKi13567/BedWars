@@ -68,9 +68,11 @@ scoreboard players set #8 jkbw.mem 8
 scoreboard players set #9 jkbw.mem 9
 scoreboard players set #10 jkbw.mem 10
 scoreboard players set #60 jkbw.mem 60
-scoreboard players set #500 jkbw.mem 500
-scoreboard players set #707 jkbw.mem 707
+scoreboard players set #100 jkbw.mem 100
+scoreboard players set #119 jkbw.mem 119
 scoreboard players set #1000 jkbw.mem 1000
+scoreboard players set #4214 jkbw.mem 4214
+scoreboard players set #50436 jkbw.mem 50436
 
 # 商店价格
 function jkbw:load/settings/menu/shop/init

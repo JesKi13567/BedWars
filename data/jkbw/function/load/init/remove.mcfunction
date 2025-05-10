@@ -19,6 +19,7 @@ scoreboard objectives remove jkbw.Team.Trap3
 scoreboard objectives remove jkbw.Player.Hp
 scoreboard objectives remove jkbw.Player.TeamSelect
 scoreboard objectives remove jkbw.Player.Page
+scoreboard objectives remove jkbw.Player.Paged
 scoreboard objectives remove jkbw.Player.OpenChest
 scoreboard objectives remove jkbw.Player.Compass
 scoreboard objectives remove jkbw.Player.ShopNow
@@ -69,6 +70,7 @@ scoreboard objectives remove jkbw.Player.UseWall
 scoreboard objectives remove jkbw.Player.UsePlatformCD
 scoreboard objectives remove jkbw.Player.UseFireballCD
 scoreboard objectives remove jkbw.Player.UseIronGolemCD
+scoreboard objectives remove jkbw.Player.UseTheMirrorCD
 scoreboard objectives remove jkbw.Player.UseBackCD
 scoreboard objectives remove jkbw.Player.UseBackLast
 scoreboard objectives remove jkbw.Player.UseAntiarrowCD

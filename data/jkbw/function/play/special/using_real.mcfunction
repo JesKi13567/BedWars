@@ -21,3 +21,7 @@ execute if items entity @s[scores={jkbw.Player.UseIceCD=0}] weapon.mainhand ice 
 
 # 铁傀儡
 execute if items entity @s[scores={jkbw.Player.UseIronGolemCD=0}] weapon.mainhand raw_iron run function jkbw:play/special/iron_golem/summon
+
+# 魔镜
+execute if items entity @s[scores={jkbw.Player.UseTheMirrorCD=1..}] weapon.mainhand gray_stained_glass_pane run title @s actionbar ["", {"storage": "jk:bw", "nbt": "txt.item.shop.the_mirror.name", "color": "red", "bold": true}, {"storage": "jk:bw", "nbt": "txt.print._s", "color": "yellow"}, {"storage": "jk:bw", "nbt": "txt.print.cd_remain", "color": "yellow"}, {"score": {"name": "@s", "objective": "jkbw.Player.UseTheMirrorCD"}, "color": "red"}, {"text": "s!", "color": "yellow"}]
+execute if items entity @s[scores={jkbw.Player.UseTheMirrorCD=0}] weapon.mainhand gray_stained_glass_pane run function jkbw:play/special/the_mirror

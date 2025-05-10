@@ -1,5 +1,5 @@
 # JK's BedWars ToolPack -- 起床战争工具包
-## Current version: beta1.6 for MC1.21.1
+## Current version: beta1.6.1 for MC1.21.1
 ### Things have been achieved
 
 1. ONLY support the overworld dimension.

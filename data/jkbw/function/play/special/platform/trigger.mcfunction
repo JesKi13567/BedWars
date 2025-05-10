@@ -20,9 +20,9 @@ summon marker ~ ~-3 ~-1 {Tags: ["jkbw", "jkbw_slime", "jkbw_temp_marker", "jkbw_
 summon marker ~ ~-3 ~-2 {Tags: ["jkbw", "jkbw_slime", "jkbw_temp_marker", "jkbw_new_entity"]}
 summon marker ~ ~-3 ~1 {Tags: ["jkbw", "jkbw_slime", "jkbw_temp_marker", "jkbw_new_entity"]}
 summon marker ~ ~-3 ~2 {Tags: ["jkbw", "jkbw_slime", "jkbw_temp_marker", "jkbw_new_entity"]}
+summon marker ~ ~-4 ~ {Tags: ["jkbw", "jkbw_slime", "jkbw_temp_marker", "jkbw_new_entity"]}
 execute as @e[type=marker, tag=jkbw_slime] run function jkbw:play/special/check_pos
 # 防止摔伤
-tp @s ~.5 ~2 ~.5
 effect give @s slow_falling 1 0 true
 # 清理
 clear @s blaze_rod 1

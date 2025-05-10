@@ -31,3 +31,4 @@ execute if score #ENABLE_arrow_s jkbw.mem matches 1 run item replace entity @s e
 execute if score #ENABLE_crossbow_max jkbw.mem matches 1 run item replace entity @s enderchest.3 from block 10110216 5 10110222 container.6
 execute if score #ENABLE_ice_bridge jkbw.mem matches 1 run item replace entity @s enderchest.4 from block 10110216 5 10110222 container.8
 execute if score #ENABLE_mace jkbw.mem matches 1 run item replace entity @s enderchest.5 from block 10110216 5 10110222 container.10
+execute if score #ENABLE_the_mirror jkbw.mem matches 1 run item replace entity @s enderchest.6 from block 10110216 5 10110222 container.12

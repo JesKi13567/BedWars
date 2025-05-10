@@ -47,6 +47,7 @@ scoreboard players set @s jkbw.Player.UseAntiarrowCD 0
 scoreboard players set @s jkbw.Player.UseAntiarrowLast 0
 scoreboard players set @s jkbw.Player.UseIceCD 0
 scoreboard players set @s jkbw.Player.UseIceLast 0
+scoreboard players set @s jkbw.Player.UseTheMirrorCD 0
 scoreboard players set @s jkbw.Player.Page 0
 execute if score #res_mode jkbw.mem matches 0..1 run scoreboard players set @s jkbw.Player.Compass 0
 execute if score #res_mode jkbw.mem matches 2 run scoreboard players set @s jkbw.Player.Compass -1

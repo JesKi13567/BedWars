@@ -9,5 +9,6 @@ execute as @s[tag=jkbw_button_set_time] run function jkbw:play/ready/button/set_
 execute as @s[tag=jkbw_button_chunk] run function jkbw:play/ready/button/chunk
 execute as @s[tag=jkbw_button_chunk1] run function jkbw:play/ready/button/chunk1
 
+playsound block.note_block.bell player @a[distance=..6]
 execute on target run effect give @s glowing 1 0 true
 data remove entity @s interaction

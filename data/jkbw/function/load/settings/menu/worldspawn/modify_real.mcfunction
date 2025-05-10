@@ -12,6 +12,8 @@ $execute store result storage jk:bw Map.maps.$(id).r1 int 1 run scoreboard playe
 $data modify storage jk:bw Map.maps.$(id).team_max set value $(team_max)
 $function jkbw:load/settings/menu/worldspawn/border with storage jk:bw Map.maps.$(id)
 $execute store result storage jk:bw Map.maps.$(id).team_max int 1 run scoreboard players get #teams_max jkbw.mem
+scoreboard players operation #teams jkbw.mem = #teams_max jkbw.mem
+function jkbw:play/ready/button/team_count/update
 
 $data modify storage jk:bw Map.maps.$(id).ymin set value $(ymin)
 $data modify storage jk:bw Map.maps.$(id).r set value $(r)

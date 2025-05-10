@@ -28,6 +28,7 @@ execute if score #res_mode jkbw.mem matches 0..1 store result score #ENABLE_arro
 execute if score #res_mode jkbw.mem matches 0..1 store result score #ENABLE_crossbow_max jkbw.mem run random value 1..10
 execute if score #res_mode jkbw.mem matches 0..1 store result score #ENABLE_ice_bridge jkbw.mem run random value 1..3
 execute if score #res_mode jkbw.mem matches 0..1 store result score #ENABLE_mace jkbw.mem run random value 1..6
+execute if score #res_mode jkbw.mem matches 0..1 store result score #ENABLE_the_mirror jkbw.mem run random value 1..4
 
 # 资源产生时间
 execute unless score #spawn_diamond jkbw.mem matches 10..100 run scoreboard players set #spawn_diamond jkbw.mem 30

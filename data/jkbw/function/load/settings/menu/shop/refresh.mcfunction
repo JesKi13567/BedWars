@@ -457,6 +457,18 @@ data modify block 10110216 5 10110222 Items[10].components.minecraft:lore[0] set
 #Emace
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Emace", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110216 5 10110222 Items[11].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
+#the_mirror
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#the_mirror", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
+data modify block 10110216 5 10110222 Items[12].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
+#Ethe_mirror
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Ethe_mirror", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+data modify block 10110216 5 10110222 Items[13].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.the_mirror.name", "italic": false, "color": "white"}]'
+data modify block 10110216 5 10110222 Items[12].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
+data modify block 10110216 5 10110222 Items[13].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.the_mirror.lore", "italic": false, "color": "gold"}]'
+data modify block 10110216 5 10110222 Items[12].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
+data modify block 10110216 5 10110222 Items[13].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 ## team
 #dragon
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#dragon", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"translate": "item.minecraft.diamond", "italic": false, "color": "aqua"}]'
@@ -1200,7 +1212,7 @@ data modify block 10110218 5 10110222 Items[9].components.minecraft:lore[0] set 
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.silverfish.name", "italic": false, "color": "white"}]'
 data modify block 10110218 5 10110222 Items[1].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110218 5 10110222 Items[10].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.silverfish.lore0", "italic": false, "color": "gold"}, {"translate": "entity.minecraft.snowball"}, {"storage": "jk:bw", "nbt": "txt.item.shop.silverfish.lore0_"}, {"translate": "entity.minecraft.silverfish"}, ", "]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.silverfish.lore0", "italic": false, "color": "gold"}, {"translate": "entity.minecraft.snowball", "color": "white"}, {"storage": "jk:bw", "nbt": "txt.item.shop.silverfish.lore0_"}, {"translate": "entity.minecraft.silverfish", "color": "white"}, ", "]'
 data modify block 10110218 5 10110222 Items[1].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110218 5 10110222 Items[10].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.silverfish.lore1", "italic": false, "color": "aqua"}]'
@@ -1211,7 +1223,7 @@ data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "
 data modify block 10110218 5 10110222 Items[2].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110218 5 10110222 Items[11].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110220 4 10110222 Items[9].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.fireball.lore", "italic": false, "color": "gold"}, " ", {"translate": "entity.minecraft.ghast"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.fireball.name"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.fireball.lore", "italic": false, "color": "gold"}, {"storage": "jk:bw", "nbt": "txt.item.shop.fireball.name"}, "."]'
 data modify block 10110218 5 10110222 Items[2].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110218 5 10110222 Items[11].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110220 4 10110222 Items[9].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
@@ -1219,7 +1231,7 @@ data modify block 10110220 4 10110222 Items[9].components.minecraft:lore[0] set 
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.iron_golem.name", "italic": false, "color": "white"}]'
 data modify block 10110218 5 10110222 Items[3].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110218 5 10110222 Items[12].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.iron_golem.lore0", "italic": false, "color": "gold"}, {"translate": "entity.minecraft.iron_golem"}, ", "]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.iron_golem.lore0", "italic": false, "color": "gold"}, {"translate": "entity.minecraft.iron_golem", "color": "white"}, ", "]'
 data modify block 10110218 5 10110222 Items[3].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110218 5 10110222 Items[12].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.iron_golem.lore1", "italic": false, "color": "aqua"}]'

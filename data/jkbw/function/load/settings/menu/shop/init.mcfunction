@@ -53,12 +53,13 @@ scoreboard players set #pearl jkbw.mem 4
 scoreboard players set #pearl_exp jkbw.mem 2
 scoreboard players set #platform jkbw.mem 8
 scoreboard players set #fruit jkbw.mem 2
-scoreboard players set #trident jkbw.mem 6
+scoreboard players set #trident jkbw.mem 4
 scoreboard players set #arrow_s jkbw.mem 5
 scoreboard players set #crossbow_max jkbw.mem 2
 scoreboard players set #ice_bridge jkbw.mem 5
 scoreboard players set #mace jkbw.mem 10
 scoreboard players set #wind_charge jkbw.mem 2
+scoreboard players set #the_mirror jkbw.mem 6
 scoreboard players set #compass jkbw.mem 2
 
 scoreboard players set #sharpness jkbw.mem 8

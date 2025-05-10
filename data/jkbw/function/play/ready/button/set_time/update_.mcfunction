@@ -1,5 +1,3 @@
-playsound block.note_block.bell player @a[distance=..6]
-
 scoreboard players remove #time_freeze jkbw.mem 1
 execute if score #time_freeze jkbw.mem matches ..-1 run scoreboard players set #time_freeze jkbw.mem 1
 

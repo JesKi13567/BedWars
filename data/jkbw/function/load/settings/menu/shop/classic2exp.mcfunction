@@ -54,6 +54,7 @@ scoreboard players operation #Ecrossbow_max jkbw.mem = #crossbow_max jkbw.mem
 scoreboard players operation #Eice_bridge jkbw.mem = #ice_bridge jkbw.mem
 scoreboard players operation #Emace jkbw.mem = #mace jkbw.mem
 scoreboard players operation #Ewind_charge jkbw.mem = #wind_charge jkbw.mem
+scoreboard players operation #Ethe_mirror jkbw.mem = #the_mirror jkbw.mem
 scoreboard players operation #Ecompass jkbw.mem = #compass jkbw.mem
 
 scoreboard players operation #Esharpness jkbw.mem = #sharpness jkbw.mem
@@ -140,6 +141,7 @@ scoreboard players operation #Ecrossbow_max jkbw.mem *= #Eemerald jkbw.mem
 scoreboard players operation #Eice_bridge jkbw.mem *= #Egold jkbw.mem
 scoreboard players operation #Emace jkbw.mem *= #Egold jkbw.mem
 scoreboard players operation #Ewind_charge jkbw.mem *= #Egold jkbw.mem
+scoreboard players operation #Ethe_mirror jkbw.mem *= #Egold jkbw.mem
 scoreboard players operation #Ecompass jkbw.mem *= #Eemerald jkbw.mem
 
 scoreboard players operation #Esharpness jkbw.mem *= #Ediamond jkbw.mem

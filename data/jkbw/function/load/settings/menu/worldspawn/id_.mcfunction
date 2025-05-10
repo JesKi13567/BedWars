@@ -19,7 +19,7 @@ $scoreboard players operation #WYmin.5 jkbw.mem = #WY$(id)min.5 jkbw.mem
 $scoreboard players operation #WYmin._5 jkbw.mem = #WY$(id)min._5 jkbw.mem
 
 # 提示
-$tellraw @a [{"storage": "jk:bw", "nbt": "txt.print.bedwars", "color": "yellow"}," ",{"storage": "jk:bw", "nbt": "txt.print.map.cur", "color": "green"}, ": ", {"text": "$(id)", "color": "gold"}]
+$tellraw @a [{"storage": "jk:bw", "nbt": "txt.print.bedwars", "color": "yellow"}," ",{"storage": "jk:bw", "nbt": "txt.print.current", "color": "green"}, {"translate": "item.minecraft.filled_map", "color": "green"}, ": ", {"text": "$(id)", "color": "gold"}]
 
 # 更新展示实体版本
 scoreboard players add #display_set jkbw.mem 1

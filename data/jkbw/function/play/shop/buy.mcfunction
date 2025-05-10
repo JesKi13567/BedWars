@@ -14,8 +14,13 @@ execute if score #res_mode jkbw.mem matches 1..2 run function jkbw:play/res/mode
 execute as @s[scores={jkbw.Player.OpenChest=1..}] run function jkbw:play/shop/gui/chest/team/ray
 
 ## 检测按钮
-execute store success score @s jkbw.Player.ShopNow run clear @s #jkbw:shop[custom_data~{jkbw: ["shop"]}]
+execute store success score @s jkbw.Player.ShopNow run clear @s #jkbw:shop[custom_data~{jkbw: ["shop"]}] 0
 execute as @s[scores={jkbw.Player.ShopNow=1}] run function jkbw:play/shop/buy_
+execute unless score @s jkbw.Player.Paged matches 1 if items entity @s[scores={jkbw.Player.ShopNow=1, jkbw.Player.Page=1..}] container.* #jkbw:shop[custom_data~{jkbw: ["shop"]}] run function jkbw:play/shop/buy_
+execute unless score @s jkbw.Player.Paged matches 1 if items entity @s[scores={jkbw.Player.ShopNow=1, jkbw.Player.Page=1..}] container.* #jkbw:shop[custom_data~{jkbw: ["shop"]}] run function jkbw:play/shop/buy_
+execute unless score @s jkbw.Player.Paged matches 1 if items entity @s[scores={jkbw.Player.ShopNow=1, jkbw.Player.Page=1..}] container.* #jkbw:shop[custom_data~{jkbw: ["shop"]}] run function jkbw:play/shop/buy_
+clear @s #jkbw:shop[custom_data~{jkbw: ["shop"]}]
+scoreboard players reset @s jkbw.Player.Paged
 
 ## 刷新商店
 # 商店模式

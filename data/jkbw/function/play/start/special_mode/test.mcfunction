@@ -12,3 +12,4 @@ scoreboard players set #ENABLE_arrow_s jkbw.mem 1
 scoreboard players set #ENABLE_crossbow_max jkbw.mem 1
 scoreboard players set #ENABLE_ice_bridge jkbw.mem 1
 scoreboard players set #ENABLE_mace jkbw.mem 1
+scoreboard players set #ENABLE_the_mirror jkbw.mem 1

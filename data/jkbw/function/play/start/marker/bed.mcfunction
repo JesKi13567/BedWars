@@ -6,8 +6,8 @@ scoreboard players set @s jkbw.Team.Trap3 0
 scoreboard players reset @s jkbw.Team.Alive
 
 # 记录位置并存储
-execute store result score @s jkbw.Entity.X run data get entity @s Pos[0] 1000
-execute store result score @s jkbw.Entity.Z run data get entity @s Pos[2] 1000
+execute store result score @s jkbw.Entity.X run data get entity @s Pos[0] 10
+execute store result score @s jkbw.Entity.Z run data get entity @s Pos[2] 10
 execute store result score @s jkbw.Entity.X_int run data get entity @s Pos[0] 1
 execute store result score @s jkbw.Entity.Z_int run data get entity @s Pos[2] 1
 

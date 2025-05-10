@@ -1,5 +1,5 @@
 # JK's BedWars ToolPack -- 起床战争工具包
-## 当前版本：beta1.6 for MC1.21.1
+## 当前版本：beta1.6.1 for MC1.21.1
 ### 目前所有更新条目
 
 1. 仅支持主世界维度。

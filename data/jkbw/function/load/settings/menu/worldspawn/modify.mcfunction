@@ -1,4 +1,7 @@
-## 输入：id，r，ymin，team_max
-$execute unless data storage jk:bw Map.maps.$(id) run tellraw @s [{"storage": "jk:bw", "nbt": "txt.print.global_point.no", "color": "red"}]
-$execute unless score #1 jkbw.mem matches $(change_pos) if data storage jk:bw Map.maps.$(id) run function jkbw:load/settings/menu/worldspawn/modify_real {id: $(id), r: $(r), ymin: $(ymin), team_max: $(team_max)}
-$execute if score #1 jkbw.mem matches $(change_pos) run function jkbw:load/settings/menu/worldspawn/add_real {id: $(id), r: $(r), ymin: $(ymin), team_max: $(team_max)}
+## 输入：r，ymin，team_max，change_pos
+data modify storage jk:bw Temp.id set from storage jk:bw Map.cur.id
+$data modify storage jk:bw Temp.r set value $(r)
+$data modify storage jk:bw Temp.ymin set value $(ymin)
+$data modify storage jk:bw Temp.team_max set value $(team_max)
+$data modify storage jk:bw Temp.change_pos set value $(change_pos)
+function jkbw:load/settings/menu/worldspawn/modify_ with storage jk:bw Temp

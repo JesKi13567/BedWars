@@ -1,5 +1,3 @@
-playsound block.note_block.bell player @a[distance=..6]
-
 scoreboard players add #team_mode jkbw.mem 1
 execute if score #team_mode jkbw.mem matches 2.. run scoreboard players reset #team_mode jkbw.mem
 

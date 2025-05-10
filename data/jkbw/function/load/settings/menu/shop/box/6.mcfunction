@@ -9,4 +9,6 @@ setblock 10110216 5 10110222 white_shulker_box[facing=north]{Items: [{Slot: 0b, 
 {Slot: 8b, id: "ice", count: 1b, components: {custom_data: {jkbw: ["shop", "item", "ice_bridge"]}, lore: ['""', '""']}}, \
 {Slot: 9b, id: "ice", count: 1b, components: {custom_data: {jkbw: ["shop", "item", "ice_bridge"]}, lore: ['""', '""']}}, \
 {Slot: 10b, id: "mace", count: 1b, components: {custom_data: {jkbw: ["shop", "item", "mace"]}, damage: 499, attribute_modifiers: {show_in_tooltip: false, modifiers: []}, lore: ['""']}}, \
-{Slot: 11b, id: "mace", count: 1b, components: {custom_data: {jkbw: ["shop", "item", "mace"]}, damage: 499, attribute_modifiers: {show_in_tooltip: false, modifiers: []}, lore: ['""']}}]}
+{Slot: 11b, id: "mace", count: 1b, components: {custom_data: {jkbw: ["shop", "item", "mace"]}, damage: 499, attribute_modifiers: {show_in_tooltip: false, modifiers: []}, lore: ['""']}}, \
+{Slot: 12b, id: "gray_stained_glass_pane", count: 1b, components: {custom_data: {jkbw: ["shop", "item", "the_mirror"]}, enchantment_glint_override: true, lore: ['""', '""']}}, \
+{Slot: 13b, id: "gray_stained_glass_pane", count: 1b, components: {custom_data: {jkbw: ["shop", "item", "the_mirror"]}, enchantment_glint_override: true, lore: ['""', '""']}}]}
