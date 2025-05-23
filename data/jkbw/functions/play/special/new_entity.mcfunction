@@ -1,8 +1,6 @@
 ## 对每个新产生的实体只执行一次 as @e[tag=jkbw_new_entity] at @s
 # 认主
-scoreboard players operation @s jkbw.Player.ID = @p[gamemode=adventure,scores={jkbw.Player.State=2}] jkbw.Player.ID
-# 铁傀儡
-execute as @s[tag=jkbw_iron_golem] run function jkbw:play/special/iron_golem/new
+scoreboard players operation @s jkbw.Player.ID = @p[gamemode=adventure, scores={jkbw.Player.State=2}] jkbw.Player.ID
 # 快速建造塔
 execute as @s[tag=jkbw_tower] run function jkbw:play/special/tower/pos
 # 末影箱
@@ -16,7 +14,7 @@ execute as @s[tag=jkbw_water] run function jkbw:play/special/water
 # 蠹虫
 scoreboard players set @s[tag=jkbw_silverfish] jkbw.Entity.Time 15
 # 火球
-scoreboard players set @s[tag=jkbw_fireball] jkbw.mem 60
+scoreboard players set @s[tag=jkbw_fireball] jkbw.mem 200
 # 报警响铃
 scoreboard players set @s[tag=jkbw_alarm_marker] jkbw.mem 100
 # 急救平台
@@ -31,7 +29,6 @@ scoreboard players set @s[tag=jkbw_skull] jkbw.Entity.Time 5
 # 重置
 tag @s remove jkbw_new_entity
 scoreboard players reset @a[scores={jkbw.Player.UseTNT=1..}] jkbw.Player.UseTNT
-scoreboard players reset @a[scores={jkbw.Player.UseIrongolem=1..}] jkbw.Player.UseIrongolem
 scoreboard players reset @a[scores={jkbw.Player.UseTower=1..}] jkbw.Player.UseTower
 scoreboard players reset @a[scores={jkbw.Player.UseEnderchest=1..}] jkbw.Player.UseEnderchest
 scoreboard players reset @a[scores={jkbw.Player.UseWall=1..}] jkbw.Player.UseWall

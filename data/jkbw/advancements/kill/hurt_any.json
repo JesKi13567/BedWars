@@ -1,7 +1,7 @@
 {
   "criteria": {
     "jkbw": {
-      "trigger": "minecraft:entity_hurt_player"
+      "trigger": "entity_hurt_player"
     }
   },
   "rewards": {

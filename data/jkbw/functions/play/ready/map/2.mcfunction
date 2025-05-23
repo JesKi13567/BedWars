@@ -49,4 +49,4 @@ $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) furnace{Lock: "JK"} replace furnace
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) smoker{Lock: "JK"} replace smoker
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) blast_furnace{Lock: "JK"} replace blast_furnace
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) brewing_stand{Lock: "JK"} replace brewing_stand
-#$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) chiseled_bookshelf{Lock:"JK"} replace chiseled_bookshelf
+#$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) chiseled_bookshelf{Lock: "JK"} replace chiseled_bookshelf

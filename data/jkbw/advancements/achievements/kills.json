@@ -2,7 +2,7 @@
   "parent": "jkbw:achievements/root",
   "display": {
     "icon": {
-      "item": "minecraft:wooden_sword"
+      "item": "wooden_sword"
     },
     "title": {
       "text": "杀戮 · 开端"
@@ -20,7 +20,7 @@
   },
   "criteria": {
     "raw": {
-      "trigger": "minecraft:location",
+      "trigger": "location",
       "conditions": {
         "player": [
           {

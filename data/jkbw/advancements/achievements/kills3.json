@@ -2,7 +2,7 @@
   "parent": "jkbw:achievements/kills2",
   "display": {
     "icon": {
-      "item": "minecraft:iron_sword"
+      "item": "iron_sword"
     },
     "title": {
       "text": "杀戮 · 其三"
@@ -20,7 +20,7 @@
   },
   "criteria": {
     "raw": {
-      "trigger": "minecraft:location",
+      "trigger": "location",
       "conditions": {
         "player": [
           {

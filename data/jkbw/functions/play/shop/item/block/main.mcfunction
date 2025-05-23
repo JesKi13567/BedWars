@@ -11,15 +11,15 @@ execute as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 分类
-$execute if score #-1 jkbw.mem matches $(color) run function jkbw:play/shop/item/block/common {item:$(item), count:$(count), res:$(res)}
-$execute unless score #-1 jkbw.mem matches $(color) as @s[team=jkbw.red] run function jkbw:play/shop/item/block/colored {item:$(item), count:$(count), res:$(res), team:red}
-$execute unless score #-1 jkbw.mem matches $(color) as @s[team=jkbw.blue] run function jkbw:play/shop/item/block/colored {item:$(item), count:$(count), res:$(res), team:blue}
-$execute unless score #-1 jkbw.mem matches $(color) if score #teams jkbw.mem matches 3.. as @s[team=jkbw.green] run function jkbw:play/shop/item/block/colored {item:$(item), count:$(count), res:$(res), team:green}
-$execute unless score #-1 jkbw.mem matches $(color) if score #teams jkbw.mem matches 4.. as @s[team=jkbw.yellow] run function jkbw:play/shop/item/block/colored {item:$(item), count:$(count), res:$(res), team:yellow}
-$execute unless score #-1 jkbw.mem matches $(color) if score #teams jkbw.mem matches 5.. as @s[team=jkbw.cyan] run function jkbw:play/shop/item/block/colored {item:$(item), count:$(count), res:$(res), team:cyan}
-$execute unless score #-1 jkbw.mem matches $(color) if score #teams jkbw.mem matches 6.. as @s[team=jkbw.white] run function jkbw:play/shop/item/block/colored {item:$(item), count:$(count), res:$(res), team:white}
-$execute unless score #-1 jkbw.mem matches $(color) if score #teams jkbw.mem matches 7.. as @s[team=jkbw.pink] run function jkbw:play/shop/item/block/colored {item:$(item), count:$(count), res:$(res), team:pink}
-$execute unless score #-1 jkbw.mem matches $(color) if score #teams jkbw.mem matches 8.. as @s[team=jkbw.gray] run function jkbw:play/shop/item/block/colored {item:$(item), count:$(count), res:$(res), team:gray}
+$execute if score #-1 jkbw.mem matches $(color) run function jkbw:play/shop/item/block/common {item: $(item), count: $(count), res: $(res)}
+$execute unless score #-1 jkbw.mem matches $(color) as @s[team=jkbw.red] run function jkbw:play/shop/item/block/colored {item: $(item), count: $(count), res: $(res), team: red}
+$execute unless score #-1 jkbw.mem matches $(color) as @s[team=jkbw.blue] run function jkbw:play/shop/item/block/colored {item: $(item), count: $(count), res: $(res), team: blue}
+$execute unless score #-1 jkbw.mem matches $(color) if score #teams jkbw.mem matches 3.. as @s[team=jkbw.green] run function jkbw:play/shop/item/block/colored {item: $(item), count: $(count), res: $(res), team: green}
+$execute unless score #-1 jkbw.mem matches $(color) if score #teams jkbw.mem matches 4.. as @s[team=jkbw.yellow] run function jkbw:play/shop/item/block/colored {item: $(item), count: $(count), res: $(res), team: yellow}
+$execute unless score #-1 jkbw.mem matches $(color) if score #teams jkbw.mem matches 5.. as @s[team=jkbw.cyan] run function jkbw:play/shop/item/block/colored {item: $(item), count: $(count), res: $(res), team: cyan}
+$execute unless score #-1 jkbw.mem matches $(color) if score #teams jkbw.mem matches 6.. as @s[team=jkbw.white] run function jkbw:play/shop/item/block/colored {item: $(item), count: $(count), res: $(res), team: white}
+$execute unless score #-1 jkbw.mem matches $(color) if score #teams jkbw.mem matches 7.. as @s[team=jkbw.pink] run function jkbw:play/shop/item/block/colored {item: $(item), count: $(count), res: $(res), team: pink}
+$execute unless score #-1 jkbw.mem matches $(color) if score #teams jkbw.mem matches 8.. as @s[team=jkbw.gray] run function jkbw:play/shop/item/block/colored {item: $(item), count: $(count), res: $(res), team: gray}
 
 # 成功购买
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]

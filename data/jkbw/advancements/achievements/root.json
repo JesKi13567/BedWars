@@ -1,10 +1,10 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:red_bed"
+      "item": "red_bed"
     },
     "title": {
-      "text": "起床战争"
+      "text": "JKの起床战争工具包"
     },
     "description": [
       ""
@@ -13,11 +13,11 @@
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": true,
-    "background": "minecraft:textures/block/white_wool.png"
+    "background": "textures/block/white_wool.png"
   },
   "criteria": {
     "command": {
-      "trigger": "minecraft:location"
+      "trigger": "location"
     }
   }
 }

@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag": "{ChargedProjectiles: [{id:\"arrow\", Count: 1b}], Charged: 1b}"
+}

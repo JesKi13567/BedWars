@@ -10,12 +10,16 @@ scoreboard objectives remove jkbw.Team.Haste
 scoreboard objectives remove jkbw.Team.Res
 scoreboard objectives remove jkbw.Team.Healing
 scoreboard objectives remove jkbw.Team.Dragon
-scoreboard objectives remove jkbw.Team.TrapNum
 scoreboard objectives remove jkbw.Team.ID
+scoreboard objectives remove jkbw.Team.TrapCD
+scoreboard objectives remove jkbw.Team.Trap1
+scoreboard objectives remove jkbw.Team.Trap2
+scoreboard objectives remove jkbw.Team.Trap3
 
 scoreboard objectives remove jkbw.Player.Hp
 scoreboard objectives remove jkbw.Player.TeamSelect
 scoreboard objectives remove jkbw.Player.Page
+scoreboard objectives remove jkbw.Player.Paged
 scoreboard objectives remove jkbw.Player.OpenChest
 scoreboard objectives remove jkbw.Player.Compass
 scoreboard objectives remove jkbw.Player.ShopNow
@@ -37,7 +41,6 @@ scoreboard objectives remove jkbw.Player.Break_Cyan
 scoreboard objectives remove jkbw.Player.Break_White 
 scoreboard objectives remove jkbw.Player.Break_Pink
 scoreboard objectives remove jkbw.Player.Break_Gray
-scoreboard objectives remove jkbw.Player.CountArrows
 scoreboard objectives remove jkbw.Player.CountBeds
 scoreboard objectives remove jkbw.Player.ExecuseTime
 scoreboard objectives remove jkbw.Player.Kills
@@ -58,18 +61,19 @@ scoreboard objectives remove jkbw.Player.ArmorLevels
 scoreboard objectives remove jkbw.Player.AxeLevels
 scoreboard objectives remove jkbw.Player.PickaxeLevels
 scoreboard objectives remove jkbw.Player.ShearsLevels
-scoreboard objectives remove jkbw.Player.HasCompass
 scoreboard objectives remove jkbw.Player.HasSword
 scoreboard objectives remove jkbw.Player.HasSwordNotWood
 scoreboard objectives remove jkbw.Player.Use
 scoreboard objectives remove jkbw.Player.UseEgg
 scoreboard objectives remove jkbw.Player.UseSnowball
-scoreboard objectives remove jkbw.Player.UseIrongolem
 scoreboard objectives remove jkbw.Player.UseTNT
 scoreboard objectives remove jkbw.Player.UseTower
 scoreboard objectives remove jkbw.Player.UseEnderchest
 scoreboard objectives remove jkbw.Player.UseWall
 scoreboard objectives remove jkbw.Player.UsePlatformCD
+scoreboard objectives remove jkbw.Player.UseFireballCD
+scoreboard objectives remove jkbw.Player.UseIronGolemCD
+scoreboard objectives remove jkbw.Player.UseTheMirrorCD
 scoreboard objectives remove jkbw.Player.UseBackCD
 scoreboard objectives remove jkbw.Player.UseBackLast
 scoreboard objectives remove jkbw.Player.UseAntiarrowCD
@@ -122,6 +126,7 @@ stopsound @a
 tag @a remove jkbw_admin
 
 bossbar remove jkbw:map
+bossbar remove jkbw:player_ready
 bossbar remove jkbw:game_progress
 
 fill 10110220 1 10110223 10110223 10 10110223 air replace

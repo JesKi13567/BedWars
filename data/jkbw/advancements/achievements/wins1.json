@@ -2,7 +2,7 @@
   "parent": "jkbw:achievements/wins",
   "display": {
     "icon": {
-      "item": "minecraft:gold_ingot"
+      "item": "gold_ingot"
     },
     "title": {
       "text": "胜利 · 其一"
@@ -20,7 +20,7 @@
   },
   "criteria": {
     "raw": {
-      "trigger": "minecraft:location",
+      "trigger": "location",
       "conditions": {
         "player": [
           {

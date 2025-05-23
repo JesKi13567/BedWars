@@ -1,5 +1,3 @@
-playsound block.note_block.bell player @a[distance=..6]
-
 execute if score #res_rate1 jkbw.mem matches 1 run scoreboard players set #res_rate jkbw.mem 10
 execute if score #res_rate1 jkbw.mem matches 2 run scoreboard players set #res_rate jkbw.mem 12
 execute if score #res_rate1 jkbw.mem matches 3 run scoreboard players set #res_rate jkbw.mem 15

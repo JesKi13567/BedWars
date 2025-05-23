@@ -2,7 +2,7 @@
   "parent": "jkbw:achievements/kills",
   "display": {
     "icon": {
-      "item": "minecraft:stone_sword"
+      "item": "stone_sword"
     },
     "title": {
       "text": "杀戮 · 其一"
@@ -20,7 +20,7 @@
   },
   "criteria": {
     "raw": {
-      "trigger": "minecraft:location",
+      "trigger": "location",
       "conditions": {
         "player": [
           {

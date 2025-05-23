@@ -1,5 +1,5 @@
 # 死亡提示
-tellraw @s {"storage":"jk:bw","nbt":"txt.print.cannot_respawn","color":"red","bold":true}
+tellraw @s {"storage": "jk:bw", "nbt": "txt.print.cannot_respawn", "color": "red", "bold": true}
 scoreboard players set @s jkbw.Player.State 5
 
 # hyp掉落末影箱内容

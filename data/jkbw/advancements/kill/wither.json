@@ -1,11 +1,11 @@
 {
   "criteria": {
     "jkbw": {
-      "trigger": "minecraft:entity_hurt_player",
+      "trigger": "entity_hurt_player",
       "conditions": {
         "player": {
           "effects": {
-            "minecraft:wither": {}
+            "wither": {}
           }
         },
         "damage": {

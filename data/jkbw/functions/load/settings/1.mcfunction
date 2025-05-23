@@ -3,4 +3,4 @@ scoreboard players set #loaded jkbw.mem 1
 setblock ~ ~-1 ~ tinted_glass
 function jkbw:load/init/add
 function jkbw:load/settings/menu
-function jkbw:load/settings/menu/shop/containers
+function jkbw:load/settings/menu/shop/load_chunk

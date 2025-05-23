@@ -2,7 +2,7 @@
   "parent": "jkbw:achievements/beds1",
   "display": {
     "icon": {
-      "item": "minecraft:iron_pickaxe"
+      "item": "iron_pickaxe"
     },
     "title": {
       "text": "破床 · 其二"
@@ -20,7 +20,7 @@
   },
   "criteria": {
     "raw": {
-      "trigger": "minecraft:location",
+      "trigger": "location",
       "conditions": {
         "player": [
           {

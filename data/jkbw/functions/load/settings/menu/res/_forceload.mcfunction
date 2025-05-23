@@ -1,5 +1,5 @@
 # 读取storage强加载
-$function jkbw:load/settings/menu/worldspawn/forceload with storage jk:bw Map.mapsP.$(id).res_g.$(res).$(count)
+$function jkbw:load/settings/menu/worldspawn/forceload with storage jk:bw Map.points.$(id).res_g.$(res).$(count)
 
 # 循环
 scoreboard players remove #res_g jkbw.mem 1

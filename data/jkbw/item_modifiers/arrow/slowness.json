@@ -1,0 +1,4 @@
+{
+    "function": "set_nbt",
+    "tag": "{ChargedProjectiles: [{id:\"tipped_arrow\", Count: 1b, tag: {Potion: \"minecraft:slowness\"}}], Charged: 1b}"
+}

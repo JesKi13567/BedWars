@@ -1,5 +1,4 @@
-playsound block.note_block.bell player @a[distance=..6]
-title @a[scores={jkbw.Player.TeamSelect=1..}] actionbar {"storage":"jk:bw","nbt":"txt.print.team_reset_by_count","color":"red"}
+title @a[scores={jkbw.Player.TeamSelect=1..}] actionbar {"storage": "jk:bw", "nbt": "txt.print.team_reset_by_count", "color": "red"}
 team leave @a
 scoreboard players set @a jkbw.Player.TeamSelect 0
 clear @a[gamemode=adventure]

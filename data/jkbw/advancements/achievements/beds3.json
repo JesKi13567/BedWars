@@ -2,7 +2,7 @@
   "parent": "jkbw:achievements/beds2",
   "display": {
     "icon": {
-      "item": "minecraft:diamond_pickaxe"
+      "item": "diamond_pickaxe"
     },
     "title": {
       "text": "破床 · 其三"
@@ -20,7 +20,7 @@
   },
   "criteria": {
     "raw": {
-      "trigger": "minecraft:location",
+      "trigger": "location",
       "conditions": {
         "player": [
           {

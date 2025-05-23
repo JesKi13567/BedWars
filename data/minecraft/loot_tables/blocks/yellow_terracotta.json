@@ -1,18 +1,18 @@
 {
-  "type": "minecraft:block",
+  "type": "block",
   "pools": [
     {
       "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:yellow_terracotta"
+          "type": "item",
+          "name": "yellow_terracotta"
         }
       ],
       "conditions": [
         {
-          "condition": "minecraft:survives_explosion"
+          "condition": "survives_explosion"
         }
       ]
     }

@@ -8,14 +8,14 @@ execute if score #teams jkbw.mem matches 7 run function jkbw:play/ready/button/t
 execute if score #teams jkbw.mem matches 8 run function jkbw:play/ready/button/team_distribute/sub/8
 
 # 确认队伍
-scoreboard players set @s[nbt={Inventory: [{Slot: 102b, tag: {jkbw: ["red"]}}]}] jkbw.Player.TeamSelect 1
-scoreboard players set @s[nbt={Inventory: [{Slot: 102b, tag: {jkbw: ["blue"]}}]}] jkbw.Player.TeamSelect 2
-scoreboard players set @s[nbt={Inventory: [{Slot: 102b, tag: {jkbw: ["green"]}}]}] jkbw.Player.TeamSelect 3
-scoreboard players set @s[nbt={Inventory: [{Slot: 102b, tag: {jkbw: ["yellow"]}}]}] jkbw.Player.TeamSelect 4
-scoreboard players set @s[nbt={Inventory: [{Slot: 102b, tag: {jkbw: ["cyan"]}}]}] jkbw.Player.TeamSelect 5
-scoreboard players set @s[nbt={Inventory: [{Slot: 102b, tag: {jkbw: ["white"]}}]}] jkbw.Player.TeamSelect 6
-scoreboard players set @s[nbt={Inventory: [{Slot: 102b, tag: {jkbw: ["pink"]}}]}] jkbw.Player.TeamSelect 7
-scoreboard players set @s[nbt={Inventory: [{Slot: 102b, tag: {jkbw: ["gray"]}}]}] jkbw.Player.TeamSelect 8
+execute if data entity @s Inventory[{Slot: 102b, tag: {jkbw: ["team_color", "red"]}}] run scoreboard players set @s jkbw.Player.TeamSelect 1
+execute if data entity @s Inventory[{Slot: 102b, tag: {jkbw: ["team_color", "blue"]}}] run scoreboard players set @s jkbw.Player.TeamSelect 2
+execute if data entity @s Inventory[{Slot: 102b, tag: {jkbw: ["team_color", "green"]}}] run scoreboard players set @s jkbw.Player.TeamSelect 3
+execute if data entity @s Inventory[{Slot: 102b, tag: {jkbw: ["team_color", "yellow"]}}] run scoreboard players set @s jkbw.Player.TeamSelect 4
+execute if data entity @s Inventory[{Slot: 102b, tag: {jkbw: ["team_color", "cyan"]}}] run scoreboard players set @s jkbw.Player.TeamSelect 5
+execute if data entity @s Inventory[{Slot: 102b, tag: {jkbw: ["team_color", "white"]}}] run scoreboard players set @s jkbw.Player.TeamSelect 6
+execute if data entity @s Inventory[{Slot: 102b, tag: {jkbw: ["team_color", "pink"]}}] run scoreboard players set @s jkbw.Player.TeamSelect 7
+execute if data entity @s Inventory[{Slot: 102b, tag: {jkbw: ["team_color", "gray"]}}] run scoreboard players set @s jkbw.Player.TeamSelect 8
 
 team leave @s[scores={jkbw.Player.TeamSelect=0}]
 team join jkbw.red @s[scores={jkbw.Player.TeamSelect=1}]
@@ -53,20 +53,20 @@ execute if score #teams jkbw.mem matches 6.. run item replace entity @s[scores={
 execute if score #teams jkbw.mem matches 7.. run item replace entity @s[scores={jkbw.Player.TeamSelect=7}] hotbar.6 from block 10110209 5 10110222 container.24
 execute if score #teams jkbw.mem matches 8.. run item replace entity @s[scores={jkbw.Player.TeamSelect=8}] hotbar.7 from block 10110209 5 10110222 container.25
 
-item replace entity @s[scores={jkbw.Player.TeamSelect=1}] armor.chest with leather_chestplate{HideFlags: 1023, display: {color: 11546150, Name:'""'}, AttributeModifiers:[], Enchantments: [{id: "infinity", lvl: 1s}]}
-item replace entity @s[scores={jkbw.Player.TeamSelect=2}] armor.chest with leather_chestplate{HideFlags: 1023, display: {color: 3949738, Name:'""'}, AttributeModifiers:[], Enchantments: [{id: "infinity", lvl: 1s}]}
-execute if score #teams jkbw.mem matches 3.. run item replace entity @s[scores={jkbw.Player.TeamSelect=3}] armor.chest with leather_chestplate{HideFlags: 1023, display: {color: 6192150, Name:'""'}, AttributeModifiers:[], Enchantments: [{id: "infinity", lvl: 1s}]}
-execute if score #teams jkbw.mem matches 4.. run item replace entity @s[scores={jkbw.Player.TeamSelect=4}] armor.chest with leather_chestplate{HideFlags: 1023, display: {color: 16701501, Name:'""'}, AttributeModifiers:[], Enchantments: [{id: "infinity", lvl: 1s}]}
-execute if score #teams jkbw.mem matches 5.. run item replace entity @s[scores={jkbw.Player.TeamSelect=5}] armor.chest with leather_chestplate{HideFlags: 1023, display: {color: 1481884, Name:'""'}, AttributeModifiers:[], Enchantments: [{id: "infinity", lvl: 1s}]}
-execute if score #teams jkbw.mem matches 6.. run item replace entity @s[scores={jkbw.Player.TeamSelect=6}] armor.chest with leather_chestplate{HideFlags: 1023, display: {color: 16383998, Name:'""'}, AttributeModifiers:[], Enchantments: [{id: "infinity", lvl: 1s}]}
-execute if score #teams jkbw.mem matches 7.. run item replace entity @s[scores={jkbw.Player.TeamSelect=7}] armor.chest with leather_chestplate{HideFlags: 1023, display: {color: 15961002, Name:'""'}, AttributeModifiers:[], Enchantments: [{id: "infinity", lvl: 1s}]}
-execute if score #teams jkbw.mem matches 8.. run item replace entity @s[scores={jkbw.Player.TeamSelect=8}] armor.chest with leather_chestplate{HideFlags: 1023, display: {color: 4673362, Name:'""'}, AttributeModifiers:[], Enchantments: [{id: "infinity", lvl: 1s}]}
+item replace entity @s[scores={jkbw.Player.TeamSelect=1}] armor.chest from block 10110209 5 10110222 container.18
+item replace entity @s[scores={jkbw.Player.TeamSelect=2}] armor.chest from block 10110209 5 10110222 container.19
+execute if score #teams jkbw.mem matches 3.. run item replace entity @s[scores={jkbw.Player.TeamSelect=3}] armor.chest from block 10110209 5 10110222 container.20
+execute if score #teams jkbw.mem matches 4.. run item replace entity @s[scores={jkbw.Player.TeamSelect=4}] armor.chest from block 10110209 5 10110222 container.21
+execute if score #teams jkbw.mem matches 5.. run item replace entity @s[scores={jkbw.Player.TeamSelect=5}] armor.chest from block 10110209 5 10110222 container.22
+execute if score #teams jkbw.mem matches 6.. run item replace entity @s[scores={jkbw.Player.TeamSelect=6}] armor.chest from block 10110209 5 10110222 container.23
+execute if score #teams jkbw.mem matches 7.. run item replace entity @s[scores={jkbw.Player.TeamSelect=7}] armor.chest from block 10110209 5 10110222 container.24
+execute if score #teams jkbw.mem matches 8.. run item replace entity @s[scores={jkbw.Player.TeamSelect=8}] armor.chest from block 10110209 5 10110222 container.25
 
-item replace entity @s[scores={jkbw.Player.TeamSelect=1,jkbw.Player.State=1}] armor.head with leather_helmet{HideFlags: 1023, display: {color: 11546150, Name:'""'}, AttributeModifiers:[], Enchantments: [{id: "infinity", lvl: 1s}, {id: "binding_curse", lvl: 1s}]}
-item replace entity @s[scores={jkbw.Player.TeamSelect=2,jkbw.Player.State=1}] armor.head with leather_helmet{HideFlags: 1023, display: {color: 3949738, Name:'""'}, AttributeModifiers:[], Enchantments: [{id: "infinity", lvl: 1s}, {id: "binding_curse", lvl: 1s}]}
-execute if score #teams jkbw.mem matches 3.. run item replace entity @s[scores={jkbw.Player.TeamSelect=3,jkbw.Player.State=1}] armor.head with leather_helmet{HideFlags: 1023, display: {color: 6192150, Name:'""'}, AttributeModifiers:[], Enchantments: [{id: "infinity", lvl: 1s}, {id: "binding_curse", lvl: 1s}]}
-execute if score #teams jkbw.mem matches 4.. run item replace entity @s[scores={jkbw.Player.TeamSelect=4,jkbw.Player.State=1}] armor.head with leather_helmet{HideFlags: 1023, display: {color: 16701501, Name:'""'}, AttributeModifiers:[], Enchantments: [{id: "infinity", lvl: 1s}, {id: "binding_curse", lvl: 1s}]}
-execute if score #teams jkbw.mem matches 5.. run item replace entity @s[scores={jkbw.Player.TeamSelect=5,jkbw.Player.State=1}] armor.head with leather_helmet{HideFlags: 1023, display: {color: 1481884, Name:'""'}, AttributeModifiers:[], Enchantments: [{id: "infinity", lvl: 1s}, {id: "binding_curse", lvl: 1s}]}
-execute if score #teams jkbw.mem matches 6.. run item replace entity @s[scores={jkbw.Player.TeamSelect=6,jkbw.Player.State=1}] armor.head with leather_helmet{HideFlags: 1023, display: {color: 16383998, Name:'""'}, AttributeModifiers:[], Enchantments: [{id: "infinity", lvl: 1s}, {id: "binding_curse", lvl: 1s}]}
-execute if score #teams jkbw.mem matches 7.. run item replace entity @s[scores={jkbw.Player.TeamSelect=7,jkbw.Player.State=1}] armor.head with leather_helmet{HideFlags: 1023, display: {color: 15961002, Name:'""'}, AttributeModifiers:[], Enchantments: [{id: "infinity", lvl: 1s}, {id: "binding_curse", lvl: 1s}]}
-execute if score #teams jkbw.mem matches 8.. run item replace entity @s[scores={jkbw.Player.TeamSelect=8,jkbw.Player.State=1}] armor.head with leather_helmet{HideFlags: 1023, display: {color: 4673362, Name:'""'}, AttributeModifiers:[], Enchantments: [{id: "infinity", lvl: 1s}, {id: "binding_curse", lvl: 1s}]}
+item replace entity @s[scores={jkbw.Player.TeamSelect=1, jkbw.Player.State=1}] armor.head from block 10110209 4 10110222 container.18
+item replace entity @s[scores={jkbw.Player.TeamSelect=2, jkbw.Player.State=1}] armor.head from block 10110209 4 10110222 container.19
+execute if score #teams jkbw.mem matches 3.. run item replace entity @s[scores={jkbw.Player.TeamSelect=3, jkbw.Player.State=1}] armor.head from block 10110209 4 10110222 container.20
+execute if score #teams jkbw.mem matches 4.. run item replace entity @s[scores={jkbw.Player.TeamSelect=4, jkbw.Player.State=1}] armor.head from block 10110209 4 10110222 container.21
+execute if score #teams jkbw.mem matches 5.. run item replace entity @s[scores={jkbw.Player.TeamSelect=5, jkbw.Player.State=1}] armor.head from block 10110209 4 10110222 container.22
+execute if score #teams jkbw.mem matches 6.. run item replace entity @s[scores={jkbw.Player.TeamSelect=6, jkbw.Player.State=1}] armor.head from block 10110209 4 10110222 container.23
+execute if score #teams jkbw.mem matches 7.. run item replace entity @s[scores={jkbw.Player.TeamSelect=7, jkbw.Player.State=1}] armor.head from block 10110209 4 10110222 container.24
+execute if score #teams jkbw.mem matches 8.. run item replace entity @s[scores={jkbw.Player.TeamSelect=8, jkbw.Player.State=1}] armor.head from block 10110209 4 10110222 container.25

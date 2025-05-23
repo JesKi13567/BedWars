@@ -21,9 +21,9 @@ kill @s[scores={jkbw.Temp=..0}]
 execute as @s[scores={jkbw.Temp=1..}] if block ~ ~ ~ #jkbw:canexplode run function jkbw:play/special/explode/remain
 
 # 继承分数
-execute as @e[type=marker,tag=jkbw_explode,tag=!jkbw_explode_center] at @s run scoreboard players operation @s jkbw.Temp > @e[type=marker,tag=jkbw_explode_center,distance=..1.1] jkbw.Temp
+execute as @e[type=marker, tag=jkbw_explode, tag=!jkbw_explode_center] at @s run scoreboard players operation @s jkbw.Temp > @e[type=marker, tag=jkbw_explode_center, distance=..1.1] jkbw.Temp
 
 # 已处理
 tag @s remove jkbw_explode_center
-tag @e[type=marker,tag=jkbw_explode_new] add jkbw_explode_center
-tag @e[type=marker,tag=jkbw_explode_new] remove jkbw_explode_new
+tag @e[type=marker, tag=jkbw_explode_new] add jkbw_explode_center
+tag @e[type=marker, tag=jkbw_explode_new] remove jkbw_explode_new

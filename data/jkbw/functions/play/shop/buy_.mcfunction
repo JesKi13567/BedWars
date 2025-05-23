@@ -7,4 +7,4 @@ execute if score #res_mode jkbw.mem matches 2 run function jkbw:play/shop/buy/_r
 
 # 更新资源/经验
 execute unless score #test_mode jkbw.mem matches 1 if score #res_mode jkbw.mem matches 0 as @s[tag=jkbw_buy_success] run function jkbw:play/shop/cost/res
-execute unless score #test_mode jkbw.mem matches 1 if score #res_mode jkbw.mem matches 1..2 as @s[tag=jkbw_buy_success] run function jkbw:play/shop/cost/exp
+execute unless score #test_mode jkbw.mem matches 1 if score #res_mode jkbw.mem matches 1..2 as @s[tag=jkbw_buy_success] run function jkbw:play/res/mode/exp_get

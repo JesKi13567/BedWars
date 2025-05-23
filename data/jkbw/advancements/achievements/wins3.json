@@ -2,7 +2,7 @@
   "parent": "jkbw:achievements/wins2",
   "display": {
     "icon": {
-      "item": "minecraft:emerald"
+      "item": "emerald"
     },
     "title": {
       "text": "胜利 · 其三"
@@ -20,7 +20,7 @@
   },
   "criteria": {
     "raw": {
-      "trigger": "minecraft:location",
+      "trigger": "location",
       "conditions": {
         "player": [
           {

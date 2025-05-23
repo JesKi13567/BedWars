@@ -1,11 +1,11 @@
 ## 获取玩家身上的资源数量及显示
-execute store result score @s jkbw.Player.OwnIrons run clear @s minecraft:iron_ingot{CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"]} 0
-execute store result score @s jkbw.Player.OwnGolds run clear @s minecraft:gold_ingot{CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"]} 0
-execute store result score @s jkbw.Player.OwnDiamonds run clear @s minecraft:diamond{CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"]} 0
-execute store result score @s jkbw.Player.OwnEmeralds run clear @s minecraft:emerald{CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"]} 0
+execute store result score @s jkbw.Player.OwnIrons run clear @s iron_ingot{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"]} 0
+execute store result score @s jkbw.Player.OwnGolds run clear @s gold_ingot{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"]} 0
+execute store result score @s jkbw.Player.OwnDiamonds run clear @s diamond{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"]} 0
+execute store result score @s jkbw.Player.OwnEmeralds run clear @s emerald{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"]} 0
 
 # 经典模式
-#execute if score #res_mode jkbw.mem matches 0 run title @s actionbar ["",{"score":{"name":"@s","objective":"jkbw.Player.OwnIrons"},"bold":true},{"text":" ","color":"gold"},{"score":{"name":"@s","objective":"jkbw.Player.OwnGolds"},"color":"gold","bold":true},{"text":" ","color":"aqua"},{"score":{"name":"@s","objective":"jkbw.Player.OwnDiamonds"},"color":"aqua","bold":true},{"text":" ","color":"green"},{"score":{"name":"@s","objective":"jkbw.Player.OwnEmeralds"},"color":"green","bold":true}]
+#execute if score #res_mode jkbw.mem matches 0 run title @s actionbar ["", {"score": {"name": "@s", "objective": "jkbw.Player.OwnIrons"}, "bold": true}, {"text": " ", "color": "gold"}, {"score": {"name": "@s", "objective": "jkbw.Player.OwnGolds"}, "color": "gold", "bold": true}, {"text": " ", "color": "aqua"}, {"score": {"name": "@s", "objective": "jkbw.Player.OwnDiamonds"}, "color": "aqua", "bold": true}, {"text": " ", "color": "green"}, {"score": {"name": "@s", "objective": "jkbw.Player.OwnEmeralds"}, "color": "green", "bold": true}]
 
 # 经验模式
 execute if score #res_mode jkbw.mem matches 1..2 run function jkbw:play/res/mode/exp
@@ -14,8 +14,13 @@ execute if score #res_mode jkbw.mem matches 1..2 run function jkbw:play/res/mode
 execute as @s[scores={jkbw.Player.OpenChest=1..}] run function jkbw:play/shop/gui/chest/team/ray
 
 ## 检测按钮
-execute store success score @s jkbw.Player.ShopNow run clear @s #jkbw:shop{jkbw: ["shop"]}
+execute store success score @s jkbw.Player.ShopNow run clear @s #jkbw:shop{jkbw: ["shop"]} 0
 execute as @s[scores={jkbw.Player.ShopNow=1}] run function jkbw:play/shop/buy_
+execute unless score @s jkbw.Player.Paged matches 1 if data entity @s[scores={jkbw.Player.ShopNow=1, jkbw.Player.Page=1..}] Inventory[{tag: {jkbw: ["shop"]}}] run function jkbw:play/shop/buy_
+execute unless score @s jkbw.Player.Paged matches 1 if data entity @s[scores={jkbw.Player.ShopNow=1, jkbw.Player.Page=1..}] Inventory[{tag: {jkbw: ["shop"]}}] run function jkbw:play/shop/buy_
+execute unless score @s jkbw.Player.Paged matches 1 if data entity @s[scores={jkbw.Player.ShopNow=1, jkbw.Player.Page=1..}] Inventory[{tag: {jkbw: ["shop"]}}] run function jkbw:play/shop/buy_
+clear @s #jkbw:shop{jkbw: ["shop"]}
+scoreboard players reset @s jkbw.Player.Paged
 
 ## 刷新商店
 # 商店模式

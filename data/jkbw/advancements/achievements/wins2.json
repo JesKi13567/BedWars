@@ -2,7 +2,7 @@
   "parent": "jkbw:achievements/wins1",
   "display": {
     "icon": {
-      "item": "minecraft:diamond"
+      "item": "diamond"
     },
     "title": {
       "text": "胜利 · 其二"
@@ -20,7 +20,7 @@
   },
   "criteria": {
     "raw": {
-      "trigger": "minecraft:location",
+      "trigger": "location",
       "conditions": {
         "player": [
           {

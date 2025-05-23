@@ -1,13 +1,13 @@
 {
   "criteria": {
     "jkbw": {
-      "trigger": "minecraft:entity_killed_player",
+      "trigger": "entity_killed_player",
       "conditions": {
         "killing_blow": {
           "tags": [
             {
               "expected": true,
-              "id": "minecraft:is_explosion"
+              "id": "is_explosion"
             }
           ]
         }

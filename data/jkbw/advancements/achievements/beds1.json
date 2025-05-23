@@ -2,7 +2,7 @@
   "parent": "jkbw:achievements/beds",
   "display": {
     "icon": {
-      "item": "minecraft:stone_pickaxe"
+      "item": "stone_pickaxe"
     },
     "title": {
       "text": "破床 · 其一"
@@ -20,7 +20,7 @@
   },
   "criteria": {
     "raw": {
-      "trigger": "minecraft:location",
+      "trigger": "location",
       "conditions": {
         "player": [
           {

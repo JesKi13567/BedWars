@@ -50,12 +50,14 @@ scoreboard players set #water jkbw.mem 6
 scoreboard players set #egg jkbw.mem 1
 scoreboard players set #tower jkbw.mem 24
 scoreboard players set #pearl jkbw.mem 4
+scoreboard players set #pearl_exp jkbw.mem 2
 scoreboard players set #platform jkbw.mem 8
 scoreboard players set #fruit jkbw.mem 2
-scoreboard players set #trident jkbw.mem 6
-scoreboard players set #arrow_s jkbw.mem 5
+scoreboard players set #trident jkbw.mem 4
+scoreboard players set #tipped_arrow jkbw.mem 5
 scoreboard players set #crossbow_max jkbw.mem 2
 scoreboard players set #ice_bridge jkbw.mem 5
+scoreboard players set #the_mirror jkbw.mem 6
 scoreboard players set #compass jkbw.mem 2
 
 scoreboard players set #sharpness jkbw.mem 8
@@ -132,13 +134,13 @@ scoreboard players set #urfEbow6 jkbw.mem 1600
 scoreboard players set #urfEshield jkbw.mem 50
 
 scoreboard players set #urfEcut_sandstone jkbw.mem 8
-scoreboard players set #urfEend_stone jkbw.mem 14
-scoreboard players set #urfEpacked_ice jkbw.mem 16
-scoreboard players set #urfEglowstone jkbw.mem 30
+scoreboard players set #urfEend_stone jkbw.mem 28
+scoreboard players set #urfEpacked_ice jkbw.mem 32
+scoreboard players set #urfEglowstone jkbw.mem 60
 scoreboard players set #urfEladder jkbw.mem 4
 scoreboard players set #urfEcobweb jkbw.mem 99
 scoreboard players set #urfEglass jkbw.mem 200
-scoreboard players set #urfEchest jkbw.mem 10
+scoreboard players set #urfEchest jkbw.mem 20
 scoreboard players set #urfEender_chest jkbw.mem 200
 
 scoreboard players set #urfEstone_pickaxe jkbw.mem 4

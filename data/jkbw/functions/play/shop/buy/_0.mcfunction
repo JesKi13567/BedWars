@@ -1,6 +1,7 @@
 # 选择页面
-scoreboard players set @s[nbt=!{EnderItems: [{tag: {jkbw: ["gui", "1"]}}]}] jkbw.Player.Page 1
-scoreboard players set @s[nbt=!{EnderItems: [{tag: {jkbw: ["gui", "3"]}}]}] jkbw.Player.Page 3
-scoreboard players set @s[nbt=!{EnderItems: [{tag: {jkbw: ["gui", "7"]}}]}] jkbw.Player.Page 7
-scoreboard players set @s[nbt=!{EnderItems: [{tag: {jkbw: ["gui", "8"]}}]}] jkbw.Player.Page 8
-scoreboard players set @s[nbt=!{EnderItems: [{tag: {jkbw: ["gui", "9"]}}]}] jkbw.Player.Page 9
+scoreboard players set @s jkbw.Player.Paged 1
+execute unless data entity @s EnderItems[{tag: {jkbw: ["gui", "1"]}}] run scoreboard players set @s jkbw.Player.Page 1
+execute unless data entity @s EnderItems[{tag: {jkbw: ["gui", "3"]}}] run scoreboard players set @s jkbw.Player.Page 3
+execute unless data entity @s EnderItems[{tag: {jkbw: ["gui", "7"]}}] run scoreboard players set @s jkbw.Player.Page 7
+execute unless data entity @s EnderItems[{tag: {jkbw: ["gui", "8"]}}] run scoreboard players set @s jkbw.Player.Page 8
+execute unless data entity @s EnderItems[{tag: {jkbw: ["gui", "9"]}}] run scoreboard players set @s jkbw.Player.Page 9

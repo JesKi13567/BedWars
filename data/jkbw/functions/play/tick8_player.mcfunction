@@ -8,13 +8,17 @@ execute if score @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.CurrentGame = #curr
 scoreboard players set @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.Player.LeaveGame 0
 
 # 记录自己的坐标（带1的为不变坐标，他人计算用）
-execute store result score @s jkbw.Entity.X run data get entity @s Pos[0] 1000
-execute store result score @s jkbw.Entity.Z run data get entity @s Pos[2] 1000
+execute store result score @s jkbw.Entity.X run data get entity @s Pos[0] 10
+execute store result score @s jkbw.Entity.Z run data get entity @s Pos[2] 10
 scoreboard players operation @s jkbw.Entity.X1 = @s jkbw.Entity.X
 scoreboard players operation @s jkbw.Entity.Z1 = @s jkbw.Entity.Z
 
 # 指南针
-execute as @s[nbt={SelectedItem: {id: "minecraft:compass"}}] run function jkbw:play/compass/global
+execute if data entity @s SelectedItem{id: "minecraft:compass"} run function jkbw:play/compass/global
 
-# 禁止拾取/清理
+# 清理
 clear @s #jkbw:clear
+
+# 冷却
+scoreboard players remove @a[scores={jkbw.Player.UseFireballCD=1..}] jkbw.Player.UseFireballCD 1
+scoreboard players remove @a[scores={jkbw.Player.UseIronGolemCD=1..}] jkbw.Player.UseIronGolemCD 1

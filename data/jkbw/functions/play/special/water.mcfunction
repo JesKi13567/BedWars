@@ -1,3 +1,3 @@
-execute unless block ~ ~ ~ #jkbw:water run summon item ~ ~.6 ~ {Item: {id: "allay_spawn_egg", Count: 1b, tag: {display: {Name: '{"translate":"item.minecraft.water_bucket","color":"white","italic":false}'}, CanPlaceOn: ["#jkbw:canplaceon"], CanDestroy: ["#jkbw:candestroy"], EntityTag: {id: "minecraft:marker", Tags: ["jkbw", "jkbw_water", "jkbw_new_entity"]}, HideFlags: 28}}}
+execute unless block ~ ~ ~ #jkbw:water run summon item ~ ~.6 ~ {Item: {id: "allay_spawn_egg", Count: 1b, tag: {CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], EntityTag: {id: "marker", Tags: ["jkbw", "jkbw_water", "jkbw_new_entity"]}, display: {Name: '{"translate": "item.minecraft.water_bucket", "color": "white", "italic": false}'}, HideFlags: 24}}}
 execute if block ~ ~ ~ #jkbw:water run setblock ~ ~ ~ water
 kill @s

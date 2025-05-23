@@ -6,7 +6,8 @@ item replace entity @s enderchest.3 from block 10110221 5 10110222 container.11
 item replace entity @s enderchest.4 from block 10110221 5 10110222 container.12
 item replace entity @s enderchest.5 from block 10110221 5 10110222 container.13
 item replace entity @s enderchest.6 from block 10110221 5 10110222 container.14
-item replace entity @s enderchest.7 from block 10110221 5 10110222 container.15
+execute unless score #exp_mode jkbw.mem matches 1 run item replace entity @s enderchest.7 from block 10110221 5 10110222 container.15
+execute if score #exp_mode jkbw.mem matches 1 run item replace entity @s enderchest.7 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.8 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.9 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.10 from block 10110222 5 10110222 container.0
@@ -17,7 +18,7 @@ item replace entity @s enderchest.14 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.15 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.16 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.17 from block 10110222 5 10110222 container.0
-item replace entity @s enderchest.18 from block 10110222 5 10110222 container.0
+item replace entity @s enderchest.18 from block 10110221 5 10110222 container.26
 item replace entity @s enderchest.19 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.20 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.21 from block 10110221 5 10110222 container.21

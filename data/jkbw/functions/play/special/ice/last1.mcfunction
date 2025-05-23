@@ -8,7 +8,7 @@ execute positioned ~-1 ~-1 ~-1 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags:
 execute positioned ~-1 ~-1 ~1 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags: ["jkbw", "jkbw_ice", "jkbw_temp_marker", "jkbw_new_entity"]}
 execute positioned ~1 ~-1 ~-1 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags: ["jkbw", "jkbw_ice", "jkbw_temp_marker", "jkbw_new_entity"]}
 execute positioned ~1 ~-1 ~1 if block ~ ~ ~ air run summon marker ~ ~ ~ {Tags: ["jkbw", "jkbw_ice", "jkbw_temp_marker", "jkbw_new_entity"]}
-execute as @e[type=marker,tag=jkbw_ice] run function jkbw:play/special/check_pos
+execute as @e[type=marker, tag=jkbw_ice] run function jkbw:play/special/check_pos
 
 # 时间减少
 tp @s[scores={jkbw.mem=70}] ~ ~ ~ ~ 0

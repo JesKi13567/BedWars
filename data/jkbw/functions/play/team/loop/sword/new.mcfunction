@@ -1,9 +1,0 @@
-# 1.9+版
-execute if entity @e[type=text_display,tag=jkbw_spawn_red,limit=1,scores={jkbw.Team.Sharpness=1}] run enchant @s[team=jkbw.red,nbt={SelectedItemSlot: 0, SelectedItem: {tag: {jkbw: ["sword"]}}}] sharpness 1
-execute if entity @e[type=text_display,tag=jkbw_spawn_blue,limit=1,scores={jkbw.Team.Sharpness=1}] run enchant @s[team=jkbw.blue,nbt={SelectedItemSlot: 0, SelectedItem: {tag: {jkbw: ["sword"]}}}] sharpness 1
-execute if score #teams jkbw.mem matches 3.. if entity @e[type=text_display,tag=jkbw_spawn_green,limit=1,scores={jkbw.Team.Sharpness=1}] run enchant @s[team=jkbw.green,nbt={SelectedItemSlot: 0, SelectedItem: {tag: {jkbw: ["sword"]}}}] sharpness 1
-execute if score #teams jkbw.mem matches 4.. if entity @e[type=text_display,tag=jkbw_spawn_yellow,limit=1,scores={jkbw.Team.Sharpness=1}] run enchant @s[team=jkbw.yellow,nbt={SelectedItemSlot: 0, SelectedItem: {tag: {jkbw: ["sword"]}}}] sharpness 1
-execute if score #teams jkbw.mem matches 5.. if entity @e[type=text_display,tag=jkbw_spawn_cyan,limit=1,scores={jkbw.Team.Sharpness=1}] run enchant @s[team=jkbw.cyan,nbt={SelectedItemSlot: 0, SelectedItem: {tag: {jkbw: ["sword"]}}}] sharpness 1
-execute if score #teams jkbw.mem matches 6.. if entity @e[type=text_display,tag=jkbw_spawn_white,limit=1,scores={jkbw.Team.Sharpness=1}] run enchant @s[team=jkbw.white,nbt={SelectedItemSlot: 0, SelectedItem: {tag: {jkbw: ["sword"]}}}] sharpness 1
-execute if score #teams jkbw.mem matches 7.. if entity @e[type=text_display,tag=jkbw_spawn_pink,limit=1,scores={jkbw.Team.Sharpness=1}] run enchant @s[team=jkbw.pink,nbt={SelectedItemSlot: 0, SelectedItem: {tag: {jkbw: ["sword"]}}}] sharpness 1
-execute if score #teams jkbw.mem matches 8.. if entity @e[type=text_display,tag=jkbw_spawn_gray,limit=1,scores={jkbw.Team.Sharpness=1}] run enchant @s[team=jkbw.gray,nbt={SelectedItemSlot: 0, SelectedItem: {tag: {jkbw: ["sword"]}}}] sharpness 1

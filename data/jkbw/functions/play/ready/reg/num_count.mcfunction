@@ -7,7 +7,7 @@ execute store result score #player_num jkbw.mem if entity @a
 bossbar set jkbw:player_ready visible true
 execute store result bossbar jkbw:player_ready max run scoreboard players get #player_num jkbw.mem
 execute store result bossbar jkbw:player_ready value run scoreboard players get #reg_num jkbw.mem
-bossbar set jkbw:player_ready name ["",{"storage":"jk:bw","nbt":"txt.print.player_vs_all","color":"yellow"},": ",{"score":{"name":"#reg_num","objective":"jkbw.mem"},"color":"green"}," / ",{"score":{"name":"#player_num","objective":"jkbw.mem"},"color":"gold"}]
+bossbar set jkbw:player_ready name ["", {"storage": "jk:bw", "nbt": "txt.print.player_vs_all", "color": "yellow"}, ": ", {"score": {"name": "#reg_num", "objective": "jkbw.mem"}, "color": "green"}, " / ", {"score": {"name": "#player_num", "objective": "jkbw.mem"}, "color": "gold"}]
 
 # 准备中
 execute if score #start_flag jkbw.mem matches 1 if score #reg_num jkbw.mem < #teams jkbw.mem run function jkbw:play/ready/reg/start_flag/fail

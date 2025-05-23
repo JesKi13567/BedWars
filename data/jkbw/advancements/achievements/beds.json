@@ -2,7 +2,7 @@
   "parent": "jkbw:achievements/root",
   "display": {
     "icon": {
-      "item": "minecraft:wooden_pickaxe"
+      "item": "wooden_pickaxe"
     },
     "title": {
       "text": "破床 · 开端"
@@ -20,7 +20,7 @@
   },
   "criteria": {
     "raw": {
-      "trigger": "minecraft:location",
+      "trigger": "location",
       "conditions": {
         "player": [
           {

@@ -7,6 +7,6 @@ execute as @s[scores={jkbw.Player.Page=5}] run function jkbw:play/shop/buy/5
 execute as @s[scores={jkbw.Player.Page=6}] run function jkbw:play/shop/buy/6
 
 # 额外处理，否则返回时直接购买
-scoreboard players set @s[scores={jkbw.Player.Page=1..},nbt=!{EnderItems: [{tag: {jkbw: ["gui", "0"]}}]}] jkbw.Player.Page -2
+execute unless data entity @s[scores={jkbw.Player.Page=1..}] EnderItems[{tag: {jkbw: ["shop", "gui", "0"]}}] run scoreboard players set @s jkbw.Player.Page -2
 execute as @s[scores={jkbw.Player.Page=0}] run function jkbw:play/shop/buy/0
 scoreboard players set @s[scores={jkbw.Player.Page=-2}] jkbw.Player.Page 0

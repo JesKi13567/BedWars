@@ -2,7 +2,7 @@
   "parent": "jkbw:achievements/root",
   "display": {
     "icon": {
-      "item": "minecraft:iron_ingot"
+      "item": "iron_ingot"
     },
     "title": {
       "text": "胜利 · 开端"
@@ -20,7 +20,7 @@
   },
   "criteria": {
     "raw": {
-      "trigger": "minecraft:location",
+      "trigger": "location",
       "conditions": {
         "player": [
           {

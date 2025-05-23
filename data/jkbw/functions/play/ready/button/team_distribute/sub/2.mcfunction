@@ -1,3 +1,3 @@
 # 2队 32人
-execute if score #team_red jkbw.mem matches 32.. as @s[nbt={Inventory: [{Slot: 102b, tag: {jkbw: ["red"]}}]}] unless score @s jkbw.Player.TeamSelect matches 1 run function jkbw:play/ready/button/team_distribute/cannot
-execute if score #team_blue jkbw.mem matches 32.. as @s[nbt={Inventory: [{Slot: 102b, tag: {jkbw: ["blue"]}}]}] unless score @s jkbw.Player.TeamSelect matches 2 run function jkbw:play/ready/button/team_distribute/cannot
+execute if score #team_red jkbw.mem matches 32.. if data entity @s Inventory[{Slot: 102b, tag: {jkbw: ["team_color", "red"]}}] unless score @s jkbw.Player.TeamSelect matches 1 run function jkbw:play/ready/button/team_distribute/cannot
+execute if score #team_blue jkbw.mem matches 32.. if data entity @s Inventory[{Slot: 102b, tag: {jkbw: ["team_color", "blue"]}}] unless score @s jkbw.Player.TeamSelect matches 2 run function jkbw:play/ready/button/team_distribute/cannot
