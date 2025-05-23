@@ -54,7 +54,7 @@ scoreboard players set #pearl_exp jkbw.mem 2
 scoreboard players set #platform jkbw.mem 8
 scoreboard players set #fruit jkbw.mem 2
 scoreboard players set #trident jkbw.mem 4
-scoreboard players set #arrow_s jkbw.mem 5
+scoreboard players set #tipped_arrow jkbw.mem 5
 scoreboard players set #crossbow_max jkbw.mem 2
 scoreboard players set #ice_bridge jkbw.mem 5
 scoreboard players set #mace jkbw.mem 10

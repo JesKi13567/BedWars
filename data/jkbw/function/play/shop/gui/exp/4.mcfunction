@@ -27,7 +27,7 @@ item replace entity @s enderchest.25 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.26 from block 10110222 5 10110222 container.8
 
 execute if score #ENABLE_trident jkbw.mem matches 1 run item replace entity @s enderchest.1 from block 10110216 5 10110222 container.3
-execute if score #ENABLE_arrow_s jkbw.mem matches 1 run item replace entity @s enderchest.2 from block 10110216 5 10110222 container.5
+execute if score #ENABLE_tipped_arrow jkbw.mem matches 1 run item replace entity @s enderchest.2 from block 10110216 5 10110222 container.5
 execute if score #ENABLE_crossbow_max jkbw.mem matches 1 run item replace entity @s enderchest.3 from block 10110216 5 10110222 container.7
 execute if score #ENABLE_ice_bridge jkbw.mem matches 1 run item replace entity @s enderchest.4 from block 10110216 5 10110222 container.9
 execute if score #ENABLE_mace jkbw.mem matches 1 run item replace entity @s enderchest.5 from block 10110216 5 10110222 container.11

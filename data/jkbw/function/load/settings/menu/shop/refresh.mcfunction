@@ -421,11 +421,11 @@ data modify block 10110216 5 10110222 Items[2].components.minecraft:lore[0] set 
 #Etrident
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Etrident", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110216 5 10110222 Items[3].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#arrow_s
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#arrow_s", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
+#tipped_arrow
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#tipped_arrow", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
 data modify block 10110216 5 10110222 Items[4].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Earrow_s
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Earrow_s", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#Etipped_arrow
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Etipped_arrow", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110216 5 10110222 Items[5].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 #crossbow_max
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#crossbow_max", "objective": "jkbw.mem"}, "color": "green"}, " ", {"translate": "item.minecraft.emerald", "italic": false, "color": "green"}]'

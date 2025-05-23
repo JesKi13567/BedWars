@@ -24,7 +24,7 @@ scoreboard players set #time_state jkbw.mem 0
 
 # 轮换道具（1才启用）
 execute if score #res_mode jkbw.mem matches 0..1 store result score #ENABLE_trident jkbw.mem run random value 1..3
-execute if score #res_mode jkbw.mem matches 0..1 store result score #ENABLE_arrow_s jkbw.mem run random value 1..2
+execute if score #res_mode jkbw.mem matches 0..1 store result score #ENABLE_tipped_arrow jkbw.mem run random value 1..2
 execute if score #res_mode jkbw.mem matches 0..1 store result score #ENABLE_crossbow_max jkbw.mem run random value 1..10
 execute if score #res_mode jkbw.mem matches 0..1 store result score #ENABLE_ice_bridge jkbw.mem run random value 1..3
 execute if score #res_mode jkbw.mem matches 0..1 store result score #ENABLE_mace jkbw.mem run random value 1..6

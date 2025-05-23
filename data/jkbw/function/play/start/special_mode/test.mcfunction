@@ -8,7 +8,7 @@ tag @a add jkbw_buy_success
 # 解锁全轮换道具
 scoreboard players set #ENABLE_fruit jkbw.mem 1
 scoreboard players set #ENABLE_trident jkbw.mem 1
-scoreboard players set #ENABLE_arrow_s jkbw.mem 1
+scoreboard players set #ENABLE_tipped_arrow jkbw.mem 1
 scoreboard players set #ENABLE_crossbow_max jkbw.mem 1
 scoreboard players set #ENABLE_ice_bridge jkbw.mem 1
 scoreboard players set #ENABLE_mace jkbw.mem 1
