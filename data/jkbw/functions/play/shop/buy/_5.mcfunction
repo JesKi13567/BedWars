@@ -9,7 +9,6 @@ execute unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "ice"]}}] 
 execute unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "back"]}}] run function jkbw:play/shop/urf/special/1 {name: back_scroll, id: 5}
 execute unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "anti_arrow"]}}] run function jkbw:play/shop/urf/special/1 {name: anti_arrow, id: 6}
 execute unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "egg"]}}] run function jkbw:play/shop/urf/special/1 {name: egg, id: 7}
-execute unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "convertor"]}}] run function jkbw:play/shop/urf/special/1 {name: convertor, id: 8}
 
 # 原生道具
 execute unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "compass"]}}] run function jkbw:play/shop/urf/special/2 {name: compass, item: compass, id: 1}

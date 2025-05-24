@@ -166,6 +166,5 @@ scoreboard players set #urfEanti_arrow jkbw.mem 150
 scoreboard players set #urfEfire_charge jkbw.mem 200
 scoreboard players set #urfEegg jkbw.mem 500
 scoreboard players set #urfEapple jkbw.mem 20
-scoreboard players set #urfEconvertor jkbw.mem 500
 
 function jkbw:load/settings/menu/shop/classic2exp

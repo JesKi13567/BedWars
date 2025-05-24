@@ -8,6 +8,7 @@ item replace entity @s enderchest.5 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.6 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.7 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.8 from block 10110222 5 10110222 container.0
+item replace entity @s enderchest.9 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.10 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.11 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.12 from block 10110222 5 10110222 container.0

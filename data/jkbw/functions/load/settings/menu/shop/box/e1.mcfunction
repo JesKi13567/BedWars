@@ -14,11 +14,11 @@ setblock 10110209 5 10110222 black_shulker_box[facing=north]{Items: [{Slot: 0b, 
 {Slot: 14b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "white"], AttributeModifiers: [], display: {color: 16383998}}}, \
 {Slot: 15b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "pink"], AttributeModifiers: [], display: {color: 15961002}}}, \
 {Slot: 16b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "gray"], AttributeModifiers: [], display: {color: 4673362}}}, \
-{Slot: 18b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "red"], Enchantments: [{id: "lure", lvl: 1}], AttributeModifiers: [], display: {color: 11546150}}}, \
-{Slot: 19b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "blue"], Enchantments: [{id: "lure", lvl: 1}], AttributeModifiers: [], display: {color: 3949738}}}, \
-{Slot: 20b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "green"], Enchantments: [{id: "lure", lvl: 1}], AttributeModifiers: [], display: {color: 6192150}}}, \
-{Slot: 21b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "yellow"], Enchantments: [{id: "lure", lvl: 1}], AttributeModifiers: [], display: {color: 16701501}}}, \
-{Slot: 22b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "cyan"], Enchantments: [{id: "lure", lvl: 1}], AttributeModifiers: [], display: {color: 1481884}}}, \
-{Slot: 23b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "white"], Enchantments: [{id: "lure", lvl: 1}], AttributeModifiers: [], display: {color: 16383998}}}, \
-{Slot: 24b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "pink"], Enchantments: [{id: "lure", lvl: 1}], AttributeModifiers: [], display: {color: 15961002}}}, \
-{Slot: 25b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "gray"], Enchantments: [{id: "lure", lvl: 1}], AttributeModifiers: [], display: {color: 4673362}}}]}
+{Slot: 18b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "red"], Enchantments: [{id: "lure", lvl: 1}], AttributeModifiers: [], display: {color: 11546150}, HideFlags: 1}}, \
+{Slot: 19b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "blue"], Enchantments: [{id: "lure", lvl: 1}], AttributeModifiers: [], display: {color: 3949738}, HideFlags: 1}}, \
+{Slot: 20b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "green"], Enchantments: [{id: "lure", lvl: 1}], AttributeModifiers: [], display: {color: 6192150}, HideFlags: 1}}, \
+{Slot: 21b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "yellow"], Enchantments: [{id: "lure", lvl: 1}], AttributeModifiers: [], display: {color: 16701501}, HideFlags: 1}}, \
+{Slot: 22b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "cyan"], Enchantments: [{id: "lure", lvl: 1}], AttributeModifiers: [], display: {color: 1481884}, HideFlags: 1}}, \
+{Slot: 23b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "white"], Enchantments: [{id: "lure", lvl: 1}], AttributeModifiers: [], display: {color: 16383998}, HideFlags: 1}}, \
+{Slot: 24b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "pink"], Enchantments: [{id: "lure", lvl: 1}], AttributeModifiers: [], display: {color: 15961002}, HideFlags: 1}}, \
+{Slot: 25b, id: "leather_chestplate", Count: 1b, tag: {jkbw: ["team_color", "gray"], Enchantments: [{id: "lure", lvl: 1}], AttributeModifiers: [], display: {color: 4673362}, HideFlags: 1}}]}

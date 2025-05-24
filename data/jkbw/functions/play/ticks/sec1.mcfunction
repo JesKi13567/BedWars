@@ -18,9 +18,6 @@ function jkbw:play/res/global
 # 团队常驻
 execute if score #res_mode jkbw.mem matches 0..1 run function jkbw:play/shop/team/global
 
-# 资源转换
-execute if score #res_mode jkbw.mem matches 2 as @a[gamemode=adventure] if data entity @s SelectedItem{id: "minecraft:amethyst_shard"} if score @s jkbw.Player.OwnExpLevelsReal >= #urfEemerald jkbw.mem run function jkbw:play/special/convertor
-
 # 防饥饿
 effect give @a saturation 1 9 true
 

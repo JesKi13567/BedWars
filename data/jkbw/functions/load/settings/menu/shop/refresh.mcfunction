@@ -849,23 +849,16 @@ data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "
 data modify block 10110220 4 10110222 Items[11].tag.display.Lore[0] set from block ~ ~ ~ back_text.messages[1]
 #urfEiron
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEiron", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
-data modify block 10110220 4 10110222 Items[-5].tag.display.Lore[0] set from block ~ ~ ~ back_text.messages[1]
+data modify block 10110220 4 10110222 Items[-4].tag.display.Lore[0] set from block ~ ~ ~ back_text.messages[1]
 #urfEgold
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEgold", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
-data modify block 10110220 4 10110222 Items[-4].tag.display.Lore[0] set from block ~ ~ ~ back_text.messages[1]
+data modify block 10110220 4 10110222 Items[-3].tag.display.Lore[0] set from block ~ ~ ~ back_text.messages[1]
 #urfEdiamond
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEdiamond", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
-data modify block 10110220 4 10110222 Items[-3].tag.display.Lore[0] set from block ~ ~ ~ back_text.messages[1]
+data modify block 10110220 4 10110222 Items[-2].tag.display.Lore[0] set from block ~ ~ ~ back_text.messages[1]
 #urfEemerald
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEemerald", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
-data modify block 10110220 4 10110222 Items[-2].tag.display.Lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEconvertor
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEconvertor", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
-data modify block 10110220 4 10110222 Items[-1].tag.display.Lore[1] set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.convertor.lore1", "italic": false, "color": "gold"}, {"storage": "jk:bw", "nbt": "txt.item.shop.lvl"}, {"storage": "jk:bw", "nbt": "txt.item.shop.convertor.lore2"}, {"translate": "item.minecraft.emerald"}, {"storage": "jk:bw", "nbt": "txt.item.shop.convertor.lore3"}]'
 data modify block 10110220 4 10110222 Items[-1].tag.display.Lore[0] set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.convertor.name", "italic": false, "color": "white"}]'
-data modify block 10110220 4 10110222 Items[-1].tag.display.Name set from block ~ ~ ~ back_text.messages[1]
 
 # 商店道具
 # 指南针占位（白色玻璃板）

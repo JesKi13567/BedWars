@@ -14,7 +14,6 @@ tellraw @s ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", {"translate": "block.min
 "}}, {"text": "]", "color": "aqua"}, "\n", {"text": "[", "color": "aqua"}, {"translate": "item.minecraft.gold_ingot", "color": "aqua", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set #urfEgold jkbw.mem 10\
 "}}, {"text": "]", "color": "aqua"}, "\n", {"text": "[", "color": "aqua"}, {"translate": "item.minecraft.diamond", "color": "aqua", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set #urfEdiamond jkbw.mem 60\
 "}}, {"text": "]", "color": "aqua"}, "\n", {"text": "[", "color": "aqua"}, {"translate": "item.minecraft.emerald", "color": "aqua", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set #urfEemerald jkbw.mem 100\
-"}}, {"text": "]", "color": "aqua"}, "\n", {"text": "[", "color": "aqua"}, {"storage": "jk:bw", "nbt": "txt.item.shop.convertor.name", "color": "aqua", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set #urfEconvertor jkbw.mem 500\
 "}}, {"text": "]", "color": "aqua"}]
 function jkbw:load/settings/menu/shop/box/_3
 execute positioned 10110222 1 10110222 run function jkbw:load/settings/menu/shop/refresh

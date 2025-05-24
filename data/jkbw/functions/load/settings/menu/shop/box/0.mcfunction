@@ -16,7 +16,7 @@ setblock 10110222 5 10110222 white_shulker_box[facing=north]{Items: [{Slot: 0b, 
 {Slot: 17b, id: "ender_eye", Count: 1b, tag: {jkbw: ["shop", "gui", "-1"]}}, \
 {Slot: 18b, id: "golden_sword", Count: 1b, tag: {jkbw: ["shop", "gui", "7"], AttributeModifiers: []}}, \
 {Slot: 19b, id: "golden_chestplate", Count: 1b, tag: {jkbw: ["shop", "gui", "8"], AttributeModifiers: []}}, \
-{Slot: 20b, id: "potion", Count: 1b, tag: {jkbw: ["shop", "gui", "9"], Potion: "water", hide_additional_tooltip: {}}}, \
+{Slot: 20b, id: "potion", Count: 1b, tag: {jkbw: ["shop", "gui", "9"], Potion: "water", HideFlags: 32}}, \
 {Slot: 23b, id: "tripwire_hook", Count: 1b, tag: {jkbw: ["shop"]}}, \
 {Slot: 24b, id: "feather", Count: 1b, tag: {jkbw: ["shop"]}}, \
 {Slot: 25b, id: "redstone_torch", Count: 1b, tag: {jkbw: ["shop"]}}, \
