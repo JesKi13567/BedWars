@@ -16,8 +16,6 @@ effect give @s resistance 5 4 true
 effect give @s instant_health 1 9 true
 clear @s
 item replace entity @s hotbar.4 from block 10110209 3 10110222 container.3
-scoreboard players set @s jkbw.Player.ExecuseTime 0
-scoreboard players set @s jkbw.Player.DamageType 0
 scoreboard players set @s jkbw.Player.State 2
 scoreboard players operation @s jkbw.Temp = @s jkbw.Player.ID
 

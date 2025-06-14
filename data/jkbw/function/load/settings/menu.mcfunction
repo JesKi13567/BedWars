@@ -2,7 +2,7 @@ playsound block.note_block.bell player @a[distance=..6]
 tag @s add jkbw_admin
 function jkbw:load/ticks/load
 
-tellraw @a[tag=jkbw_admin] [{"text": "\n\n\n\n\n\n\n\n\n\n============= ", "color": "green"}, {"storage": "jk:bw", "nbt": "txt.print.jk_datapack", "color": "yellow"}, " ============\n", {"storage": "jk:bw", "nbt": "txt.print.current"}, {"storage": "jk:bw", "nbt": "txt.print.version"}, ": ", {"text": "beta1.6.1-MC1.21.1", "color": "gold"}]
+tellraw @a[tag=jkbw_admin] [{"text": "\n\n\n\n\n\n\n\n\n\n============= ", "color": "green"}, {"storage": "jk:bw", "nbt": "txt.print.jk_datapack", "color": "yellow"}, " ============\n", {"storage": "jk:bw", "nbt": "txt.print.current"}, {"storage": "jk:bw", "nbt": "txt.print.version"}, ": ", {"text": "beta1.6.2-MC1.21.1", "color": "gold"}]
 execute if score #test_mode jkbw.mem matches 1 run tellraw @a[tag=jkbw_admin] [{"storage": "jk:bw", "nbt": "txt.print.test_mode", "color": "red", "bold": true}, {"storage": "jk:bw", "nbt": "txt.print.turned_on", "bold": true, "color": "red"}]
 
 execute if score #tutorial jkbw.mem matches ..1 run tellraw @a[tag=jkbw_admin] ["", {"storage": "jk:bw", "nbt": "txt.print.follow_step", "color": "aqua"}, "\n\n", {"storage": "jk:bw", "nbt": "txt.print.step"}, "1: ", {"text": "[", "color": "gold"}, {"storage": "jk:bw", "nbt": "txt.print.how2use.name", "color": "gold", "clickEvent": {"action": "run_command", "value": "/function jkbw:load/settings/how2use"}, "hoverEvent": {"action": "show_text", "contents": [{"storage": "jk:bw", "nbt": "txt.print.how2use.tip"}]}}, {"text": "]", "color": "gold"}]

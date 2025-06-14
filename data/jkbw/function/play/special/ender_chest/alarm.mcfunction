@@ -1,4 +1,4 @@
 tag @s add jkbw_this
 execute as @a if score @s jkbw.Team.ID = @e[limit=1, tag=jkbw_this] jkbw.Team.ID run tellraw @s {"storage": "jk:bw", "nbt": "txt.print.enderchest.break", "color": "red"}
 kill @s
-summon item ~ ~.6 ~ {Item: {id: "endermite_spawn_egg", count: 1b, components: {can_break: {predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, can_place_on: {predicates: [{blocks: "#jkbw:canplaceon"}], show_in_tooltip: false}, entity_data: {id: "marker", Tags:["jkbw", "jkbw_chest_player", "jkbw_new_entity"]}, custom_name: '{"translate": "block.minecraft.ender_chest", "color": "white", "italic": false}', max_stack_size: 99}}}
+summon item ~ ~.6 ~ {Item: {id: "endermite_spawn_egg", count: 1b, components: {can_break: {predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, can_place_on: {predicates: [{blocks: "#jkbw:canplaceon"}], show_in_tooltip: false}, entity_data: {id: "marker", Tags:["jkbw", "jkbw_chest_player", "jkbw_new_entity"]}, custom_name: '{"translate": "block.minecraft.ender_chest", "color": "white", "italic": false}', max_stack_size: 64}}}

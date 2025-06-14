@@ -9,11 +9,11 @@ execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "back"]}] run function jkbw:play/shop/urf/special/1 {name: back_scroll, id: 5}
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "anti_arrow"]}] run function jkbw:play/shop/urf/special/1 {name: anti_arrow, id: 6}
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "egg"]}] run function jkbw:play/shop/urf/special/1 {name: egg, id: 7}
-execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "convertor"]}] run function jkbw:play/shop/urf/special/1 {name: convertor, id: 8}
 
 # 原生道具
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "compass"]}] run function jkbw:play/shop/urf/special/2 {name: compass, item: compass, id: 1}
-execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "pearl"]}] run function jkbw:play/shop/urf/special/2 {name: pearl, item: ender_pearl, id: 1}
+execute unless score #exp_mode jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "pearl"]}] run function jkbw:play/shop/urf/special/2 {name: pearl, item: ender_pearl, id: 1}
+execute if score #exp_mode jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "pearl"]}] run function jkbw:play/shop/urf/special/2 {name: pearl_blitz, item: ender_pearl, id: 1}
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "apple"]}] run function jkbw:play/shop/urf/special/2 {name: apple, item: golden_apple, id: 1}
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "wind_charge"]}] run function jkbw:play/shop/urf/special/2 {name: wind_charge, item: wind_charge, id: 1}
 

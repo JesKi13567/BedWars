@@ -11,8 +11,8 @@ setblock 10110220 4 10110222 black_shulker_box[facing=north]{Items: [{Slot: 0b, 
 {Slot: 10b, id: "egg", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "egg"]}, lore: ['""', '""']}}, \
 {Slot: 11b, id: "golden_apple", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "apple"]}, lore: ['""']}}, \
 {Slot: 12b, id: "wind_charge", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "wind_charge"]}, lore: ['""']}}, \
+{Slot: 16b, id: "ender_pearl", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "pearl"]}, lore: ['""']}}, \
 {Slot: 18b, id: "iron_ingot", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "iron"]}, lore: ['""']}}, \
 {Slot: 19b, id: "gold_ingot", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "gold"]}, lore: ['""']}}, \
 {Slot: 20b, id: "diamond", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "diamond"]}, lore: ['""']}}, \
-{Slot: 21b, id: "emerald", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "emerald"]}, lore: ['""']}}, \
-{Slot: 22b, id: "amethyst_shard", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "convertor"]}, lore: ['""', '""']}}]}
+{Slot: 21b, id: "emerald", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "emerald"]}, lore: ['""']}}]}

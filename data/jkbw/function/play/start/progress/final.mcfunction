@@ -5,3 +5,4 @@ playsound entity.ender_dragon.growl player @a 0 100 0 1000000
 title @a title {"storage": "jk:bw", "nbt": "txt.print.death_fight1", "color": "red", "bold": true}
 title @a times 1s 3s 1s
 tellraw @a [{"storage": "jk:bw", "nbt": "txt.print.death_fight1", "color": "red", "bold": true}, {"storage": "jk:bw", "nbt": "txt.print.turned_on"}]
+execute if score #res_mode jkbw.mem matches 2 run tellraw @a ["", {"translate": "entity.minecraft.wither", "color": "aqua"}, {"translate": "item.minecraft.bow", "color": "aqua"}, {"storage": "jk:bw", "nbt": "txt.print.unlocked"}, "\n(", {"translate": "entity.minecraft.arrow", "color": "yellow"}, {"storage": "jk:bw", "nbt": "txt.print.death_fight_tip3"}, {"translate": "entity.minecraft.wither_skull", "color": "yellow"}, ")."]

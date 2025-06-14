@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "jkbw": {
+      "trigger": "entity_hurt_player",
+      "conditions": {
+        "player": {
+          "effects": {
+            "wither": {}
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "jkbw:play/hurt/sub/7_wither"
+  }
+}

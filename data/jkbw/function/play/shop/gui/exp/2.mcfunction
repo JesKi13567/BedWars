@@ -3,8 +3,7 @@ item replace entity @s enderchest.0 from block 10110220 5 10110222 container.9
 item replace entity @s enderchest.1 from block 10110220 5 10110222 container.10
 item replace entity @s enderchest.2 from block 10110220 5 10110222 container.11
 item replace entity @s enderchest.3 from block 10110220 5 10110222 container.12
-execute unless score #attack_mode jkbw.mem matches 1 run item replace entity @s enderchest.4 from block 10110222 5 10110222 container.0
-execute if score #attack_mode jkbw.mem matches 1 run item replace entity @s enderchest.4 from block 10110220 5 10110222 container.13
+item replace entity @s enderchest.4 from block 10110220 5 10110222 container.13
 item replace entity @s enderchest.5 from block 10110220 5 10110222 container.14
 item replace entity @s enderchest.6 from block 10110220 5 10110222 container.15
 item replace entity @s enderchest.7 from block 10110220 5 10110222 container.16

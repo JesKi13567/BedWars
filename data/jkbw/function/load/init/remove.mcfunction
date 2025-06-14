@@ -78,7 +78,12 @@ scoreboard objectives remove jkbw.Player.UseAntiarrowLast
 scoreboard objectives remove jkbw.Player.UseIceCD
 scoreboard objectives remove jkbw.Player.UseIceLast
 scoreboard objectives remove jkbw.Player.ID
-scoreboard objectives remove jkbw.Player.DamageType
+scoreboard objectives remove jkbw.Player.DamageType.now
+scoreboard objectives remove jkbw.Player.DamageType.last
+scoreboard objectives remove jkbw.Player.DamageType.real
+scoreboard objectives remove jkbw.Player.DamageSource.now
+scoreboard objectives remove jkbw.Player.DamageSource.last
+scoreboard objectives remove jkbw.Player.DamageSource.real
 scoreboard objectives remove jkbw.Player.State
 scoreboard objectives remove jkbw.Bed.State
 scoreboard objectives remove jkbw.ResCD.Iron

@@ -3,7 +3,7 @@ execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "sword_iron"]}] run function jkbw:play/shop/item/weapon/sword {material: iron, Res: Gold, res: gold_ingot}
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "sword_diamond"]}] run function jkbw:play/shop/item/weapon/sword {material: diamond, Res: Emerald, res: emerald}
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "stick"]}] run function jkbw:play/shop/item/weapon/common {id: 1, item: stick}
-execute if score #attack_mode jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "shield"]}] run function jkbw:play/shop/item/weapon/common {id: 2, item: shield}
+execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "shield"]}] run function jkbw:play/shop/item/weapon/common {id: 2, item: shield}
 
 # 弓
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "arrow"]}] run function jkbw:play/shop/item/weapon/common {id: 3, item: arrow}

@@ -9,7 +9,7 @@ $execute run tellraw @s[tag=!jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-$give @s[tag=jkbw_buy_success] $(name)[max_stack_size=99]
+$give @s[tag=jkbw_buy_success] $(name)[max_stack_size=64]
 $tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"translate": "item.minecraft.$(name)", "color": "gold"}, "!"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 $scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal -= #E$(item) jkbw.mem

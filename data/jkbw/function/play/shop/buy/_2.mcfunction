@@ -1,7 +1,7 @@
 # 武器
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "stick"]}] run function jkbw:play/shop/urf/weapon/common {item: stick, id: 1}
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "fishing_rod"]}] run function jkbw:play/shop/urf/weapon/common {item: fishing_rod, id: 2}
-execute if score #attack_mode jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "shield"]}] run function jkbw:play/shop/urf/weapon/common {item: shield, id: 3}
+execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "shield"]}] run function jkbw:play/shop/urf/weapon/common {item: shield, id: 3}
 
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "stone_sword1"]}] run function jkbw:play/shop/urf/weapon/stone_sword {id: 1}
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "stone_sword2"]}] run function jkbw:play/shop/urf/weapon/stone_sword {id: 2}

@@ -29,15 +29,15 @@ item replace entity @s enderchest.25 with air
 item replace entity @s enderchest.26 with air
 
 # 分数
-scoreboard players reset @s jkbw.Player.ArmorLevels
-scoreboard players reset @s jkbw.Player.AxeLevels
-scoreboard players reset @s jkbw.Player.PickaxeLevels
-scoreboard players reset @s jkbw.Player.ShearsLevels
 scoreboard players reset @s jkbw.Player.OwnExpLevels
 scoreboard players reset @s jkbw.Player.OwnExpLevelsReal
 scoreboard players reset @s jkbw.Player.DeathImp
 scoreboard players reset @s jkbw.Player.RebornTime
 scoreboard players reset @s jkbw.Player.Kills
+scoreboard players set @s jkbw.Player.ArmorLevels 0
+scoreboard players set @s jkbw.Player.AxeLevels 0
+scoreboard players set @s jkbw.Player.PickaxeLevels 0
+scoreboard players set @s jkbw.Player.ShearsLevels 0
 scoreboard players set @s jkbw.Player.UsePlatformCD 0
 scoreboard players set @s jkbw.Player.UseFireballCD 0
 scoreboard players set @s jkbw.Player.UseIronGolemCD 0
@@ -63,6 +63,7 @@ tag @s remove jkbw_own_chest
 effect clear @s
 effect give @s resistance 5 4 true
 effect give @s instant_health 1 20 true
+function jkbw:play/hurt/forgive
 
 # 尺寸
 attribute @s generic.scale base set 1

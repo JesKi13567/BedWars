@@ -21,14 +21,7 @@ execute if score #current_game jkbw.mem matches 100000.. run scoreboard players 
 scoreboard players add #current_game jkbw.mem 1
 scoreboard players set #state jkbw.mem 1
 scoreboard players set #time_state jkbw.mem 0
-
-# 轮换道具（1才启用）
-execute if score #res_mode jkbw.mem matches 0..1 store result score #ENABLE_trident jkbw.mem run random value 1..3
-execute if score #res_mode jkbw.mem matches 0..1 store result score #ENABLE_tipped_arrow jkbw.mem run random value 1..2
-execute if score #res_mode jkbw.mem matches 0..1 store result score #ENABLE_crossbow_max jkbw.mem run random value 1..10
-execute if score #res_mode jkbw.mem matches 0..1 store result score #ENABLE_ice_bridge jkbw.mem run random value 1..3
-execute if score #res_mode jkbw.mem matches 0..1 store result score #ENABLE_mace jkbw.mem run random value 1..6
-execute if score #res_mode jkbw.mem matches 0..1 store result score #ENABLE_the_mirror jkbw.mem run random value 1..4
+scoreboard players reset #solo_mode jkbw.mem
 
 # 资源产生时间
 execute unless score #spawn_diamond jkbw.mem matches 10..100 run scoreboard players set #spawn_diamond jkbw.mem 30
@@ -73,7 +66,6 @@ scoreboard players add #time jkbw.mem 1
 execute as @e[tag=jkbw, tag=!jkbw_res_global] run data modify entity @s view_range set value 0f
 function jkbw:play/start/display
 data modify storage jk:bw Alive set value {red: 0, blue: 0, green: 0, yellow: 0, cyan: 0, white: 0, pink: 0, gray: 0}
-execute if score #bed_type jkbw.mem matches 2 as @e[type=text_display, tag=jkbw_bed_display] at @s run function jkbw:play/start/special_mode/dream/marker
 
 # 地图
 bossbar set jkbw:map visible false

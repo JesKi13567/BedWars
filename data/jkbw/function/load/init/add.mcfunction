@@ -86,7 +86,12 @@ scoreboard objectives add jkbw.Player.UseAntiarrowLast dummy "玩家使用剑气
 scoreboard objectives add jkbw.Player.UseIceCD dummy "玩家使用真·冰霜行者冷却"
 scoreboard objectives add jkbw.Player.UseIceLast dummy "玩家使用真·冰霜行者持续"
 scoreboard objectives add jkbw.Player.ID dummy "玩家ID"
-scoreboard objectives add jkbw.Player.DamageType dummy "玩家受伤类型"
+scoreboard objectives add jkbw.Player.DamageType.now dummy "玩家受伤类型-当前"
+scoreboard objectives add jkbw.Player.DamageType.last dummy "玩家受伤类型-最终"
+scoreboard objectives add jkbw.Player.DamageType.real dummy "玩家受伤类型-追踪"
+scoreboard objectives add jkbw.Player.DamageSource.now dummy "玩家受伤来源-当前"
+scoreboard objectives add jkbw.Player.DamageSource.last dummy "玩家受伤来源-最终"
+scoreboard objectives add jkbw.Player.DamageSource.real dummy "玩家受伤来源-追踪"
 scoreboard objectives add jkbw.Player.State dummy "玩家状态"
 
 # 实体

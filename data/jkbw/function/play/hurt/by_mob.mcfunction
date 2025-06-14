@@ -1,0 +1,1 @@
+$execute as @e[type=$(type), team=!jkbw.$(team), sort=nearest, limit=1] at @s run function jkbw:play/hurt/sub/murder

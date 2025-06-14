@@ -10,16 +10,13 @@ scoreboard players remove @a[scores={jkbw.Player.UseIceCD=1..}] jkbw.Player.UseI
 scoreboard players remove @a[scores={jkbw.Player.UseTheMirrorCD=1..}] jkbw.Player.UseTheMirrorCD 1
 
 # 受伤原谅时长
-execute as @a[gamemode=adventure, scores={jkbw.Player.State=2}] at @s run function jkbw:play/kill/execuse
+execute as @a[gamemode=adventure, scores={jkbw.Player.State=2}] at @s run function jkbw:play/hurt/execuse
 
 # 资源生成
 function jkbw:play/res/global
 
 # 团队常驻
 execute if score #res_mode jkbw.mem matches 0..1 run function jkbw:play/shop/team/global
-
-# 资源转换
-execute if score #res_mode jkbw.mem matches 2 as @a[gamemode=adventure] if items entity @s weapon.mainhand amethyst_shard if score @s jkbw.Player.OwnExpLevelsReal >= #urfEemerald jkbw.mem run function jkbw:play/special/convertor
 
 # 防饥饿
 effect give @a saturation 1 9 true
