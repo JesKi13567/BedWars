@@ -17,7 +17,7 @@ scoreboard players operation @s jkbw.Entity.Z1 = @s jkbw.Entity.Z
 execute if items entity @s weapon.mainhand compass run function jkbw:play/compass/global
 
 # 清理
-clear @s #jkbw:clear
+clear @s glass_bottle
 
 # 冷却
 scoreboard players remove @a[scores={jkbw.Player.UseFireballCD=1..}] jkbw.Player.UseFireballCD 1
