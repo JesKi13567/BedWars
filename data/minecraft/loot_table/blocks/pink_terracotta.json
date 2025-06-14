@@ -7,15 +7,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "pink_terracotta",
-          "functions": [
-            {
-              "function": "set_components",
-              "components": {
-                "max_stack_size": 99
-              }
-            }
-          ]
+          "name": "pink_terracotta"
         }
       ],
       "conditions": [

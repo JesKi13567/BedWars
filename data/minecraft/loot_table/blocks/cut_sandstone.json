@@ -7,15 +7,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "cut_sandstone",
-          "functions": [
-            {
-              "function": "set_components",
-              "components": {
-                "max_stack_size": 99
-              }
-            }
-          ]
+          "name": "cut_sandstone"
         }
       ],
       "conditions": [

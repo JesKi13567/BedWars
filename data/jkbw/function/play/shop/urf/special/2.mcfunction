@@ -10,7 +10,7 @@ playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
 $execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] $(item)[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, can_place_on={predicates: [{blocks: "#jkbw:canplaceon"}], show_in_tooltip: false}, max_stack_size=64]
-$execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] $(item)[max_stack_size=64]
+$execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] $(item)
 
 $tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"translate": "item.minecraft.$(item)", "color": "gold"}, "!"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
