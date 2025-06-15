@@ -25,6 +25,9 @@ effect give @a saturation 1 9 true
 scoreboard players remove @e[scores={jkbw.Entity.Time=1..}] jkbw.Entity.Time 1
 kill @e[scores={jkbw.Entity.Time=..0}]
 
+# 陷阱冷却时间
+scoreboard players remove @e[type=text_display, tag=jkbw_bed_display, scores={jkbw.Team.TrapCD=1..}] jkbw.Team.TrapCD 1
+
 # 生命恢复
 scoreboard players remove #heal jkbw.mem 1
 execute if score #heal jkbw.mem matches ..0 run scoreboard players set #heal jkbw.mem 5

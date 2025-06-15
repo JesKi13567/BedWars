@@ -12,6 +12,7 @@ scoreboard objectives remove jkbw.Team.Healing
 scoreboard objectives remove jkbw.Team.Dragon
 scoreboard objectives remove jkbw.Team.ID
 scoreboard objectives remove jkbw.Team.TrapCD
+scoreboard objectives remove jkbw.Team.Traps
 scoreboard objectives remove jkbw.Team.Trap1
 scoreboard objectives remove jkbw.Team.Trap2
 scoreboard objectives remove jkbw.Team.Trap3

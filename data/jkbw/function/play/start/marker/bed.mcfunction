@@ -1,5 +1,6 @@
 scoreboard players set @s jkbw.Bed.State 0
 scoreboard players set @s jkbw.Team.TrapCD 0
+scoreboard players set @s jkbw.Team.Traps 0
 scoreboard players set @s jkbw.Team.Trap1 0
 scoreboard players set @s jkbw.Team.Trap2 0
 scoreboard players set @s jkbw.Team.Trap3 0

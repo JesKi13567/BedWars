@@ -14,7 +14,7 @@ execute as @s[tag=jkbw_water] run function jkbw:play/special/water
 # 蠹虫
 scoreboard players set @s[tag=jkbw_silverfish] jkbw.Entity.Time 15
 # 火球
-scoreboard players set @s[tag=jkbw_fireball] jkbw.mem 200
+scoreboard players set @s[tag=jkbw_fireball] jkbw.Entity.Time 20
 # 报警响铃
 scoreboard players set @s[tag=jkbw_alarm_marker] jkbw.mem 100
 # 急救平台
@@ -24,7 +24,7 @@ execute as @s[tag=jkbw_ice] run function jkbw:play/special/ice/marker
 # 冰桥
 execute as @s[tag=jkbw_ice_summoner] run function jkbw:play/special/ice/summoner
 # 凋零头
-scoreboard players set @s[tag=jkbw_skull] jkbw.Entity.Time 5
+scoreboard players set @s[type=wither_skull] jkbw.Entity.Time 20
 
 # 重置
 tag @s remove jkbw_new_entity

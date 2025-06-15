@@ -12,8 +12,7 @@ execute as @e[type=tnt, tag=jkbw_tnt] at @s run function jkbw:play/special/tnt/t
 # 末影箱
 execute as @e[type=marker, tag=jkbw_chest_player] at @s run function jkbw:play/special/ender_chest/check
 # 火球
-execute as @e[tag=jkbw_fireball] run function jkbw:play/special/fireball/tick1
-execute as @e[tag=jkbw_fireball1] at @s unless entity @e[type=fireball, tag=jkbw_fireball, distance=..2, limit=1] run function jkbw:play/special/fireball/explode
+execute as @e[type=marker, tag=jkbw_fireball1] at @s unless entity @e[type=fireball, tag=jkbw_fireball, distance=..2, limit=1] run function jkbw:play/special/fireball/explode
 # 报警陷阱
 execute as @e[type=marker, tag=jkbw_alarm_marker] at @s run function jkbw:play/shop/team/trap/trigger/sub/ring
 # 急救平台
