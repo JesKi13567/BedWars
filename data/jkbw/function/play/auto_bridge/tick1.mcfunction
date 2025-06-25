@@ -1,0 +1,9 @@
+execute as @s[scores={jkbw.Player.PlaceRed=1..}] run function jkbw:play/auto_bridge/placed
+execute as @s[scores={jkbw.Player.PlaceBlue=1..}] run function jkbw:play/auto_bridge/placed
+execute as @s[scores={jkbw.Player.PlaceGreen=1..}] run function jkbw:play/auto_bridge/placed
+execute as @s[scores={jkbw.Player.PlaceYellow=1..}] run function jkbw:play/auto_bridge/placed
+execute as @s[scores={jkbw.Player.PlaceCyan=1..}] run function jkbw:play/auto_bridge/placed
+execute as @s[scores={jkbw.Player.PlaceWhite=1..}] run function jkbw:play/auto_bridge/placed
+execute as @s[scores={jkbw.Player.PlacePink=1..}] run function jkbw:play/auto_bridge/placed
+execute as @s[scores={jkbw.Player.PlaceGray=1..}] run function jkbw:play/auto_bridge/placed
+execute as @s[scores={jkbw.Player.PlaceOrange=1..}] run function jkbw:play/auto_bridge/placed

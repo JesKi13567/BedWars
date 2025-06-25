@@ -14,7 +14,7 @@ scoreboard players operation @s jkbw.Player.OwnExpLevels += @s jkbw.Player.OwnGo
 scoreboard players operation @s jkbw.Player.OwnExpLevels += @s jkbw.Player.OwnDiamonds
 scoreboard players operation @s jkbw.Player.OwnExpLevels += @s jkbw.Player.OwnEmeralds
 
-execute store success score @s jkbw.Player.HasRes run clear @s #jkbw:res[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, can_place_on={predicates: [{blocks: "#jkbw:canplaceon"}], show_in_tooltip: false}]
+execute store success score @s jkbw.Player.HasRes run clear @s #jkbw:res[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}]
 playsound entity.experience_orb.pickup player @s[scores={jkbw.Player.HasRes=1}]
 
 # 修改等级

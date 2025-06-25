@@ -1,0 +1,30 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "chest"
+        }
+    ],
+    "result": {
+        "id": "fletching_table",
+        "count": 1,
+        "components": {
+            "can_break": {
+                "predicates": [
+                    {
+                        "blocks": "#jkbw:candestroy"
+                    }
+                ],
+                "show_in_tooltip": false
+            },
+            "can_place_on": {
+                "predicates": [
+                    {
+                        "blocks": "#jkbw:canplaceon"
+                    }
+                ],
+                "show_in_tooltip": false
+            }
+        }
+    }
+}

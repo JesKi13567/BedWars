@@ -28,7 +28,40 @@ item replace entity @s enderchest.24 with air
 item replace entity @s enderchest.25 with air
 item replace entity @s enderchest.26 with air
 
+# 配方
+recipe take @a *
+execute if score #res_mode jkbw.mem matches 2 run recipe give @s jkbw:chest
+execute if score #res_mode jkbw.mem matches 2 run recipe give @s jkbw:fletching_table
+execute if score #res_mode jkbw.mem matches 2 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/orange
+execute if score #res_mode jkbw.mem matches 2 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/orange
+
+execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/red
+execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/blue
+execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/green
+execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/yellow
+execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/cyan
+execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/white
+execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/pink
+execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/gray
+execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/red
+execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/blue
+execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/green
+execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/yellow
+execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/cyan
+execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/white
+execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/pink
+execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/gray
+
 # 分数
+scoreboard players reset @s jkbw.Player.PlaceRed
+scoreboard players reset @s jkbw.Player.PlaceBlue
+scoreboard players reset @s jkbw.Player.PlaceGreen
+scoreboard players reset @s jkbw.Player.PlaceYellow
+scoreboard players reset @s jkbw.Player.PlaceCyan
+scoreboard players reset @s jkbw.Player.PlaceWhite
+scoreboard players reset @s jkbw.Player.PlacePink
+scoreboard players reset @s jkbw.Player.PlaceGray
+scoreboard players reset @s jkbw.Player.PlaceOrange
 scoreboard players reset @s jkbw.Player.OwnExpLevels
 scoreboard players reset @s jkbw.Player.OwnExpLevelsReal
 scoreboard players reset @s jkbw.Player.DeathImp
@@ -51,7 +84,7 @@ scoreboard players set @s jkbw.Player.UseTheMirrorCD 0
 scoreboard players set @s jkbw.Player.Page 0
 execute if score #res_mode jkbw.mem matches 0..1 run scoreboard players set @s jkbw.Player.Compass 0
 execute if score #res_mode jkbw.mem matches 2 run scoreboard players set @s jkbw.Player.Compass -1
-scoreboard players operation @s jkbw.CurrentGame = #current_game jkbw.mem
+scoreboard players set @s jkbw.CurrentGame 1
 xp set @s 0 levels
 xp set @s 0 points
 title @s title ""
@@ -77,4 +110,4 @@ execute if score #res_mode jkbw.mem matches 2 run attribute @s generic.attack_sp
 execute unless score #exp_mode jkbw.mem matches 2 run attribute @s generic.jump_strength base set 0.4
 execute unless score #exp_mode jkbw.mem matches 2 run attribute @s generic.step_height base set 0.6
 execute if score #exp_mode jkbw.mem matches 2 run attribute @s generic.jump_strength base set 0
-execute if score #exp_mode jkbw.mem matches 2 run attribute @s generic.step_height base set 2
+execute if score #exp_mode jkbw.mem matches 2 run attribute @s generic.step_height base set 3

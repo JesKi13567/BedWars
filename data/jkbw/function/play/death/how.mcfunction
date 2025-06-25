@@ -12,7 +12,7 @@ execute as @a[tag=jkbw_murder, tag=!jkbw_victim] if score @s jkbw.Team.ID = @p[t
 
 # 显示击杀信息
 execute if score #death_type jkbw.mem matches 0 run function jkbw:play/death/suicide
-execute if score #death_type jkbw.mem matches 1 run function jkbw:play/death/victim
+execute if score #death_type jkbw.mem matches 1 run function jkbw:play/res/player/victim
 
 # 清理
 tag @a remove jkbw_murder

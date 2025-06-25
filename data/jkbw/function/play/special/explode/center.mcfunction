@@ -1,6 +1,7 @@
 # 减少威力，tnt开始155，火球开始33
 execute unless block ~ ~ ~ #jkbw:canexplode run kill @s
 execute if block ~ ~ ~ #jkbw:wool run scoreboard players remove @s jkbw.Temp 8
+execute if block ~ ~ ~ #jkbw:shulker_box run scoreboard players remove @s jkbw.Temp 8
 execute if block ~ ~ ~ #jkbw:terracotta run scoreboard players remove @s jkbw.Temp 42
 execute if block ~ ~ ~ ladder run scoreboard players remove @s jkbw.Temp 4
 execute if block ~ ~ ~ oak_planks run scoreboard players remove @s jkbw.Temp 30

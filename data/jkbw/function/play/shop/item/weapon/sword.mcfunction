@@ -14,7 +14,7 @@ playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
 clear @s[tag=jkbw_buy_success] wooden_sword
-$give @s[tag=jkbw_buy_success] $(material)_sword[custom_data={jkbw: ["sword", "$(material)"]}, can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, can_place_on={predicates: [{blocks: "#jkbw:canplaceon"}], show_in_tooltip: false}, unbreakable={}]
+$give @s[tag=jkbw_buy_success] $(material)_sword[custom_data={jkbw: ["sword", "$(material)"]}, can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, unbreakable={}]
 $tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"translate": "item.minecraft.$(material)_sword", "color": "gold"}, "!"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 $execute if score #res_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.Own$(Res)s -= #sword_$(material) jkbw.mem

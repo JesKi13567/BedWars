@@ -33,8 +33,6 @@ scoreboard players set #res_rate2 jkbw.mem 1
 scoreboard players set #res_rate3 jkbw.mem 0
 # test_mode 测试模式 无 关闭 1 开启
 scoreboard players reset #test_mode jkbw.mem
-# current_game 当前游戏场次
-scoreboard players reset #current_game jkbw.mem
 # tutorial 教程
 scoreboard players set #tutorial jkbw.mem 0
 # map_rotation 地图轮换 无 关闭 1 开启

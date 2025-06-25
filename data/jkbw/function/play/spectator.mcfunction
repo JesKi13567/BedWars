@@ -10,4 +10,4 @@ execute if score @s jkbw.Entity.Z > #WZmax jkbw.mem run tp @s @e[type=text_displ
 execute if score @s jkbw.Entity.Z < #WZmin jkbw.mem run tp @s @e[type=text_display, tag=jkbw_worldspawn, limit=1]
 
 # 不是本局的玩家
-execute unless score @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.CurrentGame = #current_game jkbw.mem run function jkbw:play/death/left
+execute unless score @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.CurrentGame matches 1 run function jkbw:play/ready/reg/leavegame

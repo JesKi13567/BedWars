@@ -17,14 +17,13 @@ kill @e[type=item, tag=jkbw_res]
 kill @e[type=marker, tag=jkbw_chest_player]
 
 # 全局
-execute if score #current_game jkbw.mem matches 100000.. run scoreboard players reset #current_game jkbw.mem
-scoreboard players add #current_game jkbw.mem 1
 scoreboard players set #state jkbw.mem 1
 scoreboard players set #time_state jkbw.mem 0
-scoreboard players reset #solo_mode jkbw.mem
 scoreboard players operation #dragon1 jkbw.mem = #dragon jkbw.mem
 scoreboard players operation #Edragon1 jkbw.mem = #Edragon jkbw.mem
+scoreboard players reset #solo_mode jkbw.mem
 scoreboard players reset * jkbw.Player.ID
+scoreboard players reset * jkbw.CurrentGame
 
 # 资源产生时间
 execute unless score #spawn_diamond jkbw.mem matches 10..100 run scoreboard players set #spawn_diamond jkbw.mem 30

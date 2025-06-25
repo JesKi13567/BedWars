@@ -1,0 +1,30 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "cyan_shulker_box"
+        }
+    ],
+    "result": {
+        "id": "cyan_wool",
+        "count": 1,
+        "components": {
+            "can_break": {
+                "predicates": [
+                    {
+                        "blocks": "#jkbw:candestroy"
+                    }
+                ],
+                "show_in_tooltip": false
+            },
+            "can_place_on": {
+                "predicates": [
+                    {
+                        "blocks": "#jkbw:canplaceon"
+                    }
+                ],
+                "show_in_tooltip": false
+            }
+        }
+    }
+}

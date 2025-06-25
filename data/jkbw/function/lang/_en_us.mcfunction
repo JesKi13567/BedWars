@@ -6,7 +6,7 @@ data modify storage jk:bw txt.print.jk_datapack set value "BedWars ToolPack"
 data modify storage jk:bw txt.print.author set value "Author"
 data modify storage jk:bw txt.print.is_ready set value " is ready!"
 data modify storage jk:bw txt.print.re_ready set value "to re-ready, if u want to"
-data modify storage jk:bw txt.print.version set value "Version"
+data modify storage jk:bw txt.print.version set value "Version: "
 data modify storage jk:bw txt.print.confirm_install set value "Confirm"
 data modify storage jk:bw txt.print.cancel_install set value "Cancel"
 data modify storage jk:bw txt.print.is_running set value "Game is running!"
@@ -214,7 +214,7 @@ data modify storage jk:bw txt.print.back_scroll_return set value "You moved, so 
 data modify storage jk:bw txt.print.back_scroll_tp_succeed set value "Tp Succeed!"
 data modify storage jk:bw txt.print.back_scroll_tp1 set value "You will be tped to spawn point in "
 data modify storage jk:bw txt.print.back_scroll_tp2 set value " tick(s)!"
-data modify storage jk:bw txt.print.chest.tip set value "If around bed points, it will turn into "
+data modify storage jk:bw txt.print.chest.tip set value "Can be crafted to "
 data modify storage jk:bw txt.print.enderchest.tip1 set value "Will turn into Team Chest when teammates are nearby,"
 data modify storage jk:bw txt.print.enderchest.tip2 set value "in other situation will become "
 data modify storage jk:bw txt.print.enderchest.break set value "Someone broke your team's chest!"
@@ -316,9 +316,9 @@ data modify storage jk:bw txt.display.exp_mode1 set value "No"
 data modify storage jk:bw txt.display.exp_mode2 set value "Blitz"
 data modify storage jk:bw txt.display.exp_mode2_1 set value "In Blitz mode, all Res Points are in max level, "
 data modify storage jk:bw txt.display.exp_mode2_2 set value " cannot be bought, "
-data modify storage jk:bw txt.display.exp_mode2_3 set value " has lower price."
+data modify storage jk:bw txt.display.exp_mode2_3 set value " has lower price, can build bridges automatically."
 data modify storage jk:bw txt.display.exp_mode3 set value "No Jumps"
-data modify storage jk:bw txt.display.exp_mode3_ set value "In No Jumps mode, players cannot jump but can step to 2-block height."
+data modify storage jk:bw txt.display.exp_mode3_ set value "In No Jumps mode, players cannot jump but can step to 3-block height."
 data modify storage jk:bw txt.display.exp_mode4 set value "Lilliput"
 data modify storage jk:bw txt.display.exp_mode4_ set value "In Lilliput mode, all entities will turn into 1/2 size from before."
 data modify storage jk:bw txt.display.set_time set value "Set Time"
@@ -466,6 +466,4 @@ data modify storage jk:bw txt.team.shop.name.protect set value "Protection Encha
 data modify storage jk:bw txt.team.shop.lore.protect set value "Provide protection enchantment permanently."
 
 scoreboard players set #lang jkbw.mem 2
-execute if score #loaded jkbw.mem matches 1 run function jkbw:load/settings/menu
-execute if score #loaded jkbw.mem matches 1 positioned 10110222 1 10110222 run function jkbw:load/settings/menu/shop/refresh
-execute unless score #loaded jkbw.mem matches 1 run function jkbw:load/settings/menu/confirm
+function jkbw:lang/__

@@ -9,7 +9,7 @@ tellraw @s[tag=!jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ca
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-give @s[tag=jkbw_buy_success] endermite_spawn_egg[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, can_place_on={predicates: [{blocks: "#jkbw:canplaceon"}], show_in_tooltip: false}, entity_data={id: "marker", Tags:["jkbw", "jkbw_chest_player", "jkbw_new_entity"]}, custom_name='{"translate": "block.minecraft.ender_chest", "color": "white", "italic": false}']
+give @s[tag=jkbw_buy_success] endermite_spawn_egg[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, can_place_on={predicates: [{blocks: "#jkbw:canplaceon"}], show_in_tooltip: false}, entity_data={id: "marker", Tags: ["jkbw", "jkbw_chest_player", "jkbw_new_entity"]}, custom_name='{"translate": "block.minecraft.ender_chest", "color": "white", "italic": false}']
 tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"translate": "block.minecraft.ender_chest", "color": "gold"}, {"text": "*1", "color": "gold"}, "!"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal -= #urfEender_chest jkbw.mem

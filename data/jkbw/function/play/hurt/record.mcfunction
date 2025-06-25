@@ -8,7 +8,6 @@ scoreboard players operation @s jkbw.Player.DamageType.last = @s jkbw.Player.Dam
 scoreboard players operation @s jkbw.Player.DamageSource.last = @s jkbw.Player.DamageSource.now
 
 # 记录实际伤害
-execute if entity @a[tag=jkbw_murder] run scoreboard players operation @s jkbw.Player.DamageType.real = @s jkbw.Player.DamageType.now
 execute if entity @a[tag=jkbw_murder] run function jkbw:play/hurt/record_real
 
 # 清理

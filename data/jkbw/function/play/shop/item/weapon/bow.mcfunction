@@ -13,9 +13,9 @@ $execute if score #res_mode jkbw.mem matches 1 run tellraw @s[tag=!jkbw_buy_succ
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] bow[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, can_place_on={predicates: [{blocks: "#jkbw:canplaceon"}], show_in_tooltip: false}, unbreakable={}]
-$execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] bow[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, can_place_on={predicates: [{blocks: "#jkbw:canplaceon"}], show_in_tooltip: false}, unbreakable={}, enchantments={power: 1}]
-$execute if score #3 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] bow[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, can_place_on={predicates: [{blocks: "#jkbw:canplaceon"}], show_in_tooltip: false}, unbreakable={}, enchantments={power: 1, punch: 1}]
+$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] bow[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, unbreakable={}]
+$execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] bow[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, unbreakable={}, enchantments={power: 1}]
+$execute if score #3 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] bow[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, unbreakable={}, enchantments={power: 1, punch: 1}]
 $tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"translate": "item.minecraft.bow", "color": "gold"}, {"text": "$(id)", "color": "gold"}, "!"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 $execute if score #res_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.Own$(Res)s -= #bow$(id) jkbw.mem

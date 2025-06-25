@@ -3,16 +3,33 @@
   "pools": [
     {
       "rolls": 1.0,
-      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "item",
           "name": "chest"
         }
       ],
-      "conditions": [
+      "functions": [
         {
-          "condition": "survives_explosion"
+          "function": "set_components",
+          "components": {
+            "can_break": {
+              "predicates": [
+                {
+                  "blocks": "#jkbw:candestroy"
+                }
+              ],
+              "show_in_tooltip": false
+            },
+            "can_place_on": {
+              "predicates": [
+                {
+                  "blocks": "#jkbw:canplaceon"
+                }
+              ],
+              "show_in_tooltip": false
+            }
+          }
         }
       ]
     }

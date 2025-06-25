@@ -42,6 +42,15 @@ scoreboard objectives remove jkbw.Player.Break_Cyan
 scoreboard objectives remove jkbw.Player.Break_White 
 scoreboard objectives remove jkbw.Player.Break_Pink
 scoreboard objectives remove jkbw.Player.Break_Gray
+scoreboard objectives remove jkbw.Player.PlaceRed
+scoreboard objectives remove jkbw.Player.PlaceBlue
+scoreboard objectives remove jkbw.Player.PlaceGreen
+scoreboard objectives remove jkbw.Player.PlaceYellow
+scoreboard objectives remove jkbw.Player.PlaceCyan
+scoreboard objectives remove jkbw.Player.PlaceWhite
+scoreboard objectives remove jkbw.Player.PlacePink
+scoreboard objectives remove jkbw.Player.PlaceGray
+scoreboard objectives remove jkbw.Player.PlaceOrange
 scoreboard objectives remove jkbw.Player.CountBeds
 scoreboard objectives remove jkbw.Player.ExecuseTime
 scoreboard objectives remove jkbw.Player.Kills
