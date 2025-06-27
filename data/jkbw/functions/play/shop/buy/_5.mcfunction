@@ -12,7 +12,8 @@ execute unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "egg"]}}] 
 
 # 原生道具
 execute unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "compass"]}}] run function jkbw:play/shop/urf/special/2 {name: compass, item: compass, id: 1}
-execute unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "pearl"]}}] run function jkbw:play/shop/urf/special/2 {name: pearl, item: ender_pearl, id: 1}
+execute unless score #exp_mode jkbw.mem matches 1 unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "pearl"]}}] run function jkbw:play/shop/urf/special/2 {name: pearl, item: ender_pearl, id: 1}
+execute if score #exp_mode jkbw.mem matches 1 unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "pearl"]}}] run function jkbw:play/shop/urf/special/2 {name: pearl_blitz, item: ender_pearl, id: 1}
 execute unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "apple"]}}] run function jkbw:play/shop/urf/special/2 {name: apple, item: golden_apple, id: 1}
 
 # 资源

@@ -10,7 +10,7 @@ scoreboard players remove @a[scores={jkbw.Player.UseIceCD=1..}] jkbw.Player.UseI
 scoreboard players remove @a[scores={jkbw.Player.UseTheMirrorCD=1..}] jkbw.Player.UseTheMirrorCD 1
 
 # 受伤原谅时长
-execute as @a[gamemode=adventure, scores={jkbw.Player.State=2}] at @s run function jkbw:play/kill/execuse
+execute as @a[gamemode=adventure, scores={jkbw.Player.State=2}] at @s run function jkbw:play/hurt/execuse
 
 # 资源生成
 function jkbw:play/res/global
@@ -24,6 +24,9 @@ effect give @a saturation 1 9 true
 # 实体存活时间
 scoreboard players remove @e[scores={jkbw.Entity.Time=1..}] jkbw.Entity.Time 1
 kill @e[scores={jkbw.Entity.Time=..0}]
+
+# 陷阱冷却时间
+scoreboard players remove @e[type=text_display, tag=jkbw_bed_display, scores={jkbw.Team.TrapCD=1..}] jkbw.Team.TrapCD 1
 
 # 生命恢复
 scoreboard players remove #heal jkbw.mem 1

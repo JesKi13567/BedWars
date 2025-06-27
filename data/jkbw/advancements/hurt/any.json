@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "jkbw": {
+      "trigger": "entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "taken": {
+            "min": 0.001
+          },
+          "blocked": false
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "jkbw:play/hurt/sub/any"
+  }
+}

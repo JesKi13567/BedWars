@@ -1,6 +1,3 @@
-# 陷阱冷却时间
-scoreboard players remove @e[type=text_display, tag=jkbw_bed_display, scores={jkbw.Team.TrapCD=1..}] jkbw.Team.TrapCD 1
-
 # 陷阱检测敌方入侵
 function jkbw:play/shop/team/trap/trigger/sub {team: red}
 function jkbw:play/shop/team/trap/trigger/sub {team: blue}

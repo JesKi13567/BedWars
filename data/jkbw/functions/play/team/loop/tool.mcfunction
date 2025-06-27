@@ -1,8 +1,3 @@
-# 重置玩家工具等级
-execute unless score @s jkbw.Player.AxeLevels matches 1.. run scoreboard players set @s jkbw.Player.AxeLevels 0
-execute unless score @s jkbw.Player.PickaxeLevels matches 1.. run scoreboard players set @s jkbw.Player.PickaxeLevels 0
-execute unless score @s jkbw.Player.ShearsLevels matches 1.. run scoreboard players set @s jkbw.Player.ShearsLevels 0
-
 ## 清理
 # 跨等级工具
 clear @s[scores={jkbw.Player.ShearsLevels=0}] shears{jkbw: ["clean"]}

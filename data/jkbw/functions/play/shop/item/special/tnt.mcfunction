@@ -17,7 +17,7 @@ execute if score #res_mode jkbw.mem matches 1 run tellraw @s[tag=!jkbw_buy_succe
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-give @s[tag=jkbw_buy_success] mooshroom_spawn_egg{jkbw: ["tnt"], CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], EntityTag: {id: "tnt", Tags:["jkbw", "jkbw_tnt", "jkbw_new_entity"], fuse:10000s}, display: {Name: '{"translate": "block.minecraft.tnt", "color": "white", "italic": false}'}, HideFlags: 24}
+give @s[tag=jkbw_buy_success] mooshroom_spawn_egg{jkbw: ["tnt"], CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], EntityTag: {id: "tnt", Tags:["jkbw", "jkbw_tnt", "jkbw_new_entity"], fuse:10000s, CustomNameVisible: true}, display: {Name: '{"translate": "block.minecraft.tnt", "color": "white", "italic": false}'}, HideFlags: 24}
 tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"translate": "block.minecraft.tnt", "color": "gold"}, "!"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 execute unless score #solo_mode jkbw.mem matches 1 if score #res_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnGolds -= #tnt jkbw.mem

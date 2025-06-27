@@ -11,7 +11,7 @@ $execute if score #2 jkbw.mem matches $(id) run tellraw @s[tag=!jkbw_buy_success
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] mooshroom_spawn_egg{jkbw: ["tnt"], CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], EntityTag: {id: "tnt", Tags:["jkbw", "jkbw_tnt", "jkbw_new_entity"], fuse:10000s}, display: {Name:'{"translate": "block.minecraft.tnt", "color": "white", "italic": false}'}, HideFlags: 24}
+$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] mooshroom_spawn_egg{jkbw: ["tnt"], CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], EntityTag: {id: "tnt", Tags:["jkbw", "jkbw_tnt", "jkbw_new_entity"], fuse:10000s, CustomNameVisible: true}, display: {Name: '{"translate": "block.minecraft.tnt", "color": "white", "italic": false}'}, HideFlags: 24}
 $execute if score #1 jkbw.mem matches $(id) run tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"translate": "block.minecraft.tnt", "color": "gold"}, "!"]
 $execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] fire_charge{CanDestroy: ["#jkbw:candestroy"], jkbw: ["offhand_use"], HideFlags: 24}
 $execute if score #2 jkbw.mem matches $(id) run tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.fireball.name", "color": "gold"}, "!"]

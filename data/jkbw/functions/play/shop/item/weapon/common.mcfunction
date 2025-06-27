@@ -13,11 +13,11 @@ $execute if score #res_mode jkbw.mem matches 1 run tellraw @s[tag=!jkbw_buy_succ
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] stick{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], Enchantments: [{id: "knockback", lvl: 1}], HideFlags: 24}
-$execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] shield{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], Damage: 326, HideFlags: 24}
+$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] stick{CanDestroy: ["#jkbw:candestroy"], Enchantments: [{id: "knockback", lvl: 1}], HideFlags: 24}
+$execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] shield{CanDestroy: ["#jkbw:candestroy"], Damage: 326, HideFlags: 24}
 $execute if score #3 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] arrow 8
 $tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"translate": "item.minecraft.$(item)", "color": "gold"}, "!"]
-$execute if score #4 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] trident{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], Damage: 248, HideFlags: 24}
+$execute if score #4 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] trident{CanDestroy: ["#jkbw:candestroy"], Damage: 248, HideFlags: 24}
 $execute if score #5 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] tipped_arrow{Potion: "minecraft:slowness"} 3
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 $execute if score #res_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnGolds -= #$(item) jkbw.mem

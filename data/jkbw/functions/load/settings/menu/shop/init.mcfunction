@@ -50,7 +50,7 @@ scoreboard players set #water jkbw.mem 6
 scoreboard players set #egg jkbw.mem 1
 scoreboard players set #tower jkbw.mem 24
 scoreboard players set #pearl jkbw.mem 4
-scoreboard players set #pearl_exp jkbw.mem 2
+scoreboard players set #pearl_blitz jkbw.mem 2
 scoreboard players set #platform jkbw.mem 8
 scoreboard players set #fruit jkbw.mem 2
 scoreboard players set #trident jkbw.mem 4
@@ -162,6 +162,7 @@ scoreboard players set #urfEice_walker jkbw.mem 200
 scoreboard players set #urfEback_scroll jkbw.mem 100
 scoreboard players set #urfEcompass jkbw.mem 50
 scoreboard players set #urfEpearl jkbw.mem 500
+scoreboard players set #urfEpearl_blitz jkbw.mem 300
 scoreboard players set #urfEanti_arrow jkbw.mem 150
 scoreboard players set #urfEfire_charge jkbw.mem 200
 scoreboard players set #urfEegg jkbw.mem 500

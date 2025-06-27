@@ -9,8 +9,8 @@ $tellraw @s[tag=!jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_c
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] stone_sword{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], AttributeModifiers: [{"UUID": [I; 1, 1, 1, 1], "AttributeName": "generic.attack_damage", "Operation": 0, "Amount": 6, "Slot": "mainhand"}], HideFlags: 24}
-$execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] stone_sword{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], AttributeModifiers: [{"UUID": [I; 1, 1, 1, 1], "AttributeName": "generic.attack_damage", "Operation": 0, "Amount": 7, "Slot": "mainhand"}], HideFlags: 24}
+$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] stone_sword{CanDestroy: ["#jkbw:candestroy"], AttributeModifiers: [{"UUID": [I; 1, 1, 1, 1], "AttributeName": "generic.attack_damage", "Operation": 0, "Amount": 6, "Slot": "mainhand"}], HideFlags: 24}
+$execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] stone_sword{CanDestroy: ["#jkbw:candestroy"], AttributeModifiers: [{"UUID": [I; 1, 1, 1, 1], "AttributeName": "generic.attack_damage", "Operation": 0, "Amount": 7, "Slot": "mainhand"}], HideFlags: 24}
 
 $tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"translate": "item.minecraft.stone_sword", "color": "gold"}, {"text": "$(id)", "color": "gold"}, "!"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]

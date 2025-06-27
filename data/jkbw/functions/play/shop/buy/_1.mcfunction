@@ -7,7 +7,7 @@ execute unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "ladder"]}
 execute unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "cobweb"]}}] run function jkbw:play/shop/urf/block/common {item: cobweb, count: 1}
 execute unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "glass"]}}] run function jkbw:play/shop/urf/block/glass
 execute unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "chest"]}}] run function jkbw:play/shop/urf/block/common {item: chest, count: 2}
-execute unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "ender_chest"]}}] run function jkbw:play/shop/urf/block/ender_chest
+execute unless score #exp_mode jkbw.mem matches 1 unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "ender_chest"]}}] run function jkbw:play/shop/urf/block/ender_chest
 
 # 工具
 execute unless data entity @s EnderItems[{tag: {jkbw: ["shop", "urf", "stone_pickaxe"]}}] run function jkbw:play/shop/urf/pickaxe {item: stone}

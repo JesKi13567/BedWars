@@ -1,24 +1,19 @@
 ## 药水效果处理
-# 隐身处理（+抗性减免）
+# 隐身处理
 tag @s[tag=jkbw_invisible] remove jkbw_invisible
 execute if data entity @s active_effects[{id: "minecraft:invisibility"}] run tag @s add jkbw_invisible
-effect give @s[tag=jkbw_invisible, scores={jkbw.Player.ArmorLevels=0..1}] resistance 1 1 true
-effect give @s[tag=jkbw_invisible, scores={jkbw.Player.ArmorLevels=2..3}] resistance 1 2 true
+attribute @s[tag=jkbw_invisible, scores={jkbw.Player.ArmorLevels=0}] generic.armor base set 7
+attribute @s[tag=jkbw_invisible, scores={jkbw.Player.ArmorLevels=1}] generic.armor base set 9
+attribute @s[tag=jkbw_invisible, scores={jkbw.Player.ArmorLevels=2}] generic.armor base set 11
+attribute @s[tag=jkbw_invisible, scores={jkbw.Player.ArmorLevels=3}] generic.armor base set 13
+attribute @s[tag=!jkbw_invisible] generic.armor base set 0
 execute as @s[tag=jkbw_invisible, nbt={OnGround: true}] run particle block stone ~ ~ ~ 0.1 0 0.1 0.05 4
 
 # 幸运药水
 tag @s[tag=jkbw_lucky] remove jkbw_lucky
 execute if data entity @s active_effects[{id: "minecraft:luck"}] run tag @s add jkbw_lucky
 
-# 凋零效果（不起作用）
-#execute if data entity @s active_effects[{id: "minecaft: wither", amplifier: 1b}] run tag @s add jkbw_withered
-#effect clear @s[tag=jkbw_withered] wither
-#effect give @s[tag=jkbw_withered] wither 5 0
-#tag @s[tag=jkbw_withered] remove jkbw_withered
-
 ## 盔甲处理
-execute unless score @s jkbw.Player.ArmorLevels matches 1.. run scoreboard players set @s jkbw.Player.ArmorLevels 0
-
 item replace entity @s[tag=jkbw_invisible] armor.head with air
 item replace entity @s[tag=jkbw_invisible] armor.chest with air
 item replace entity @s[tag=jkbw_invisible] armor.legs with air

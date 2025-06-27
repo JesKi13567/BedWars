@@ -1,11 +1,8 @@
 ## 获取玩家身上的资源数量及显示
-execute store result score @s jkbw.Player.OwnIrons run clear @s iron_ingot{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"]} 0
-execute store result score @s jkbw.Player.OwnGolds run clear @s gold_ingot{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"]} 0
-execute store result score @s jkbw.Player.OwnDiamonds run clear @s diamond{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"]} 0
-execute store result score @s jkbw.Player.OwnEmeralds run clear @s emerald{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"]} 0
-
-# 经典模式
-#execute if score #res_mode jkbw.mem matches 0 run title @s actionbar ["", {"score": {"name": "@s", "objective": "jkbw.Player.OwnIrons"}, "bold": true}, {"text": " ", "color": "gold"}, {"score": {"name": "@s", "objective": "jkbw.Player.OwnGolds"}, "color": "gold", "bold": true}, {"text": " ", "color": "aqua"}, {"score": {"name": "@s", "objective": "jkbw.Player.OwnDiamonds"}, "color": "aqua", "bold": true}, {"text": " ", "color": "green"}, {"score": {"name": "@s", "objective": "jkbw.Player.OwnEmeralds"}, "color": "green", "bold": true}]
+execute store result score @s jkbw.Player.OwnIrons run clear @s iron_ingot{CanDestroy: ["#jkbw:candestroy"]} 0
+execute store result score @s jkbw.Player.OwnGolds run clear @s gold_ingot{CanDestroy: ["#jkbw:candestroy"]} 0
+execute store result score @s jkbw.Player.OwnDiamonds run clear @s diamond{CanDestroy: ["#jkbw:candestroy"]} 0
+execute store result score @s jkbw.Player.OwnEmeralds run clear @s emerald{CanDestroy: ["#jkbw:candestroy"]} 0
 
 # 经验模式
 execute if score #res_mode jkbw.mem matches 1..2 run function jkbw:play/res/mode/exp

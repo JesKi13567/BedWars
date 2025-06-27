@@ -227,7 +227,6 @@ data modify block 10110219 5 10110222 Items[6].tag.display.Lore[0] set from bloc
 #Epotion_luck
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Epotion_luck", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110219 5 10110222 Items[7].tag.display.Lore[1] set from block ~ ~ ~ back_text.messages[1]
-
 ## 经典 & 经验模式 资源
 #Eiron
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Eiron", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
@@ -386,8 +385,8 @@ data modify block 10110218 5 10110222 Items[19].tag.display.Lore[1] set from blo
 #pearl
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#pearl", "objective": "jkbw.mem"}, "color": "green"}, " ", {"translate": "item.minecraft.emerald", "italic": false, "color": "green"}]'
 data modify block 10110218 5 10110222 Items[20].tag.display.Lore[0] set from block ~ ~ ~ back_text.messages[1]
-#pearl_exp
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#pearl_exp", "objective": "jkbw.mem"}, "color": "green"}, " ", {"translate": "item.minecraft.emerald", "italic": false, "color": "green"}]'
+#pearl_blitz
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#pearl_blitz", "objective": "jkbw.mem"}, "color": "green"}, " ", {"translate": "item.minecraft.emerald", "italic": false, "color": "green"}]'
 data modify block 10110218 5 10110222 Items[24].tag.display.Lore[0] set from block ~ ~ ~ back_text.messages[1]
 
 #Eplatform
@@ -399,8 +398,8 @@ data modify block 10110218 5 10110222 Items[22].tag.display.Lore[1] set from blo
 #Epearl
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Epearl", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110218 5 10110222 Items[23].tag.display.Lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Epearl_exp
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Epearl_exp", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#Epearl_blitz
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Epearl_blitz", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110218 5 10110222 Items[25].tag.display.Lore[0] set from block ~ ~ ~ back_text.messages[1]
 
 ### 轮换物品
@@ -847,6 +846,9 @@ data modify block 10110220 4 10110222 Items[10].tag.display.Lore[1] set from blo
 #urfEapple
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEapple", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 4 10110222 Items[11].tag.display.Lore[0] set from block ~ ~ ~ back_text.messages[1]
+#urfEpearl_blitz
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEpearl_blitz", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+data modify block 10110220 4 10110222 Items[12].tag.display.Lore[0] set from block ~ ~ ~ back_text.messages[1]
 #urfEiron
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEiron", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
 data modify block 10110220 4 10110222 Items[-4].tag.display.Lore[0] set from block ~ ~ ~ back_text.messages[1]
@@ -897,7 +899,7 @@ data modify block 10110222 5 10110222 Items[8].tag.display.Name set from block ~
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.blocks_tools", "italic": false, "color": "white"}]'
 data modify block 10110222 5 10110222 Items[9].tag.display.Name set from block ~ ~ ~ back_text.messages[1]
 # 武器、盔甲 & 药水
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.weapons_armors_potions", "italic": false, "color": "white"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.weapons_armor_potions", "italic": false, "color": "white"}]'
 data modify block 10110222 5 10110222 Items[10].tag.display.Name set from block ~ ~ ~ back_text.messages[1]
 # 特殊道具
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.specials", "italic": false, "color": "white"}]'
@@ -918,7 +920,7 @@ data modify block 10110222 5 10110222 Items[15].tag.display.Name set from block 
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.weapons", "italic": false, "color": "white"}]'
 data modify block 10110222 5 10110222 Items[16].tag.display.Name set from block ~ ~ ~ back_text.messages[1]
 # 盔甲
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.armors", "italic": false, "color": "white"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.armor", "italic": false, "color": "white"}]'
 data modify block 10110222 5 10110222 Items[17].tag.display.Name set from block ~ ~ ~ back_text.messages[1]
 # 药水
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.potions", "italic": false, "color": "white"}]'
@@ -1313,7 +1315,7 @@ data modify block 10110217 5 10110222 Items[21].tag.display.Lore[0] set from blo
 # 刷新提示
 kill @e[type=text_display, tag=jkbw_chunk_tip, limit=1]
 summon text_display 10110219 4 10110220 {Tags: ["jkbw", "jkbw_show", "jkbw_chunk_tip", "jkbw_new_display"], text: '""', billboard: "center", alignment: "center", line_width: 200}
-data modify block ~ ~ ~ back_text.messages[0] set value '[{"storage": "jk:bw", "nbt": "txt.print.container_chunk_tip1", "color": "gold"}]'
+data modify block ~ ~ ~ back_text.messages[0] set value '["", {"storage": "jk:bw", "nbt": "txt.print.container_chunk_tip1", "color": "gold"}, {"translate": "block.minecraft.shulker_box"}, {"storage": "jk:bw", "nbt": "txt.print.container_chunk_tip2", "color": "gold"}]'
 function jkbw:load/settings/menu/text_display
 
 # 刷新方块按钮

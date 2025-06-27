@@ -1,5 +1,6 @@
 scoreboard players set @s jkbw.Bed.State 0
 scoreboard players set @s jkbw.Team.TrapCD 0
+scoreboard players set @s jkbw.Team.Traps 0
 scoreboard players set @s jkbw.Team.Trap1 0
 scoreboard players set @s jkbw.Team.Trap2 0
 scoreboard players set @s jkbw.Team.Trap3 0
@@ -19,3 +20,6 @@ execute if score #teams jkbw.mem matches 5.. as @s[tag=jkbw_bed_cyan] run functi
 execute if score #teams jkbw.mem matches 6.. as @s[tag=jkbw_bed_white] run function jkbw:play/start/marker/bed_lode {id: 5}
 execute if score #teams jkbw.mem matches 7.. as @s[tag=jkbw_bed_pink] run function jkbw:play/start/marker/bed_lode {id: 6}
 execute if score #teams jkbw.mem matches 8.. as @s[tag=jkbw_bed_gray] run function jkbw:play/start/marker/bed_lode {id: 7}
+
+# 床种类：夹心
+execute if score #bed_type jkbw.mem matches 2 run function jkbw:play/start/marker/cover

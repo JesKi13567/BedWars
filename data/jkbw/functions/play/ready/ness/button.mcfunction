@@ -60,5 +60,5 @@ summon interaction ~-1.5 ~2.25 ~1.5 {response: true, Tags: ["jkbw", "jkbw_show",
 function jkbw:play/ready/button/set_time/show
 # 游戏描述
 summon text_display ~.5 ~1.25 ~-7.5 {billboard: "fixed", Tags: ["jkbw", "jkbw_show", "jkbw_show_how2play", "jkbw_new_display"], alignment: "center", line_width: 200, text: '""'}
-data modify block 10110222 1 10110222 back_text.messages[0] set value '[{"storage": "jk:bw", "nbt": "txt.display.how2play", "color": "aqua"}]'
+data modify block 10110222 1 10110222 back_text.messages[0] set value '[{"storage": "jk:bw", "nbt": "txt.display.how2play.global", "color": "aqua"}]'
 function jkbw:load/settings/menu/text_display

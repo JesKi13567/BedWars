@@ -9,7 +9,7 @@ $tellraw @s[tag=!jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_c
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-$give @s[tag=jkbw_buy_success] $(item)_pickaxe{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], Enchantments: [{id: "efficiency", lvl: 1}], HideFlags: 24}
+$give @s[tag=jkbw_buy_success] $(item)_pickaxe{CanDestroy: ["#jkbw:candestroy"], Enchantments: [{id: "efficiency", lvl: 1}], HideFlags: 24}
 $tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"translate": "item.minecraft.$(item)_pickaxe", "color": "gold"}, "!"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 $scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal -= #urfE$(item)_pickaxe jkbw.mem

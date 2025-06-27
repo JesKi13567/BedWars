@@ -9,7 +9,7 @@ $tellraw @s[tag=!jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_c
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] $(item){CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], HideFlags: 24}
+$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] $(item){CanDestroy: ["#jkbw:candestroy"], HideFlags: 24}
 $execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] $(item)
 
 $tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"translate": "item.minecraft.$(item)", "color": "gold"}, "!"]

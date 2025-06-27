@@ -12,6 +12,7 @@ scoreboard objectives remove jkbw.Team.Healing
 scoreboard objectives remove jkbw.Team.Dragon
 scoreboard objectives remove jkbw.Team.ID
 scoreboard objectives remove jkbw.Team.TrapCD
+scoreboard objectives remove jkbw.Team.Traps
 scoreboard objectives remove jkbw.Team.Trap1
 scoreboard objectives remove jkbw.Team.Trap2
 scoreboard objectives remove jkbw.Team.Trap3
@@ -41,6 +42,15 @@ scoreboard objectives remove jkbw.Player.Break_Cyan
 scoreboard objectives remove jkbw.Player.Break_White 
 scoreboard objectives remove jkbw.Player.Break_Pink
 scoreboard objectives remove jkbw.Player.Break_Gray
+scoreboard objectives remove jkbw.Player.PlaceRed
+scoreboard objectives remove jkbw.Player.PlaceBlue
+scoreboard objectives remove jkbw.Player.PlaceGreen
+scoreboard objectives remove jkbw.Player.PlaceYellow
+scoreboard objectives remove jkbw.Player.PlaceCyan
+scoreboard objectives remove jkbw.Player.PlaceWhite
+scoreboard objectives remove jkbw.Player.PlacePink
+scoreboard objectives remove jkbw.Player.PlaceGray
+scoreboard objectives remove jkbw.Player.PlaceOrange
 scoreboard objectives remove jkbw.Player.CountBeds
 scoreboard objectives remove jkbw.Player.ExecuseTime
 scoreboard objectives remove jkbw.Player.Kills
@@ -81,7 +91,12 @@ scoreboard objectives remove jkbw.Player.UseAntiarrowLast
 scoreboard objectives remove jkbw.Player.UseIceCD
 scoreboard objectives remove jkbw.Player.UseIceLast
 scoreboard objectives remove jkbw.Player.ID
-scoreboard objectives remove jkbw.Player.DamageType
+scoreboard objectives remove jkbw.Player.DamageType.now
+scoreboard objectives remove jkbw.Player.DamageType.last
+scoreboard objectives remove jkbw.Player.DamageType.real
+scoreboard objectives remove jkbw.Player.DamageSource.now
+scoreboard objectives remove jkbw.Player.DamageSource.last
+scoreboard objectives remove jkbw.Player.DamageSource.real
 scoreboard objectives remove jkbw.Player.State
 scoreboard objectives remove jkbw.Bed.State
 scoreboard objectives remove jkbw.ResCD.Iron

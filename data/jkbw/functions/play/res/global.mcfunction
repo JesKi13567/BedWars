@@ -4,8 +4,8 @@
 # 对每个资源点
 execute as @e[type=text_display, tag=jkbw_iron_time] at @s run function jkbw:play/res/extra/iron
 execute as @e[type=text_display, tag=jkbw_gold_time] at @s run function jkbw:play/res/extra/gold
-execute as @e[type=text_display, tag=jkbw_diamond_time] at @s run function jkbw:play/res/extra/common {Res: Diamond, res: diamond, Count: 8}
-execute as @e[type=text_display, tag=jkbw_emerald_time] at @s run function jkbw:play/res/extra/common {Res: Emerald, res: emerald, Count: 4}
+execute as @e[type=text_display, tag=jkbw_diamond_time] at @s run function jkbw:play/res/extra/common {Res: Diamond, res: diamond, count: 8}
+execute as @e[type=text_display, tag=jkbw_emerald_time] at @s run function jkbw:play/res/extra/common {Res: Emerald, res: emerald, count: 4}
 
 # 全局
 function jkbw:play/res/common {res: diamond}

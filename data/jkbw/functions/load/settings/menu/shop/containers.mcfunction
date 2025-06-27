@@ -5,12 +5,6 @@ fill 10110222 1 10110216 10110214 1 10110209 barrel[facing=up] destroy
 # 牌子
 setblock 10110222 1 10110222 cherry_sign{is_waxed: 1b, front_text: {messages: ['""', '""', '""', '""']}, back_text: {messages: ['""', '""', '""', '""']}} destroy
 
-# 提示
-kill @e[type=text_display, tag=jkbw_chunk_tip, limit=1]
-summon text_display 10110219 4 10110220 {Tags: ["jkbw", "jkbw_show", "jkbw_chunk_tip", "jkbw_new_display"], text: '""', billboard: "center", alignment: "center", line_width: 200}
-data modify block 10110222 1 10110222 back_text.messages[0] set value '[{"storage": "jk:bw", "nbt": "txt.print.container_chunk_tip1", "color": "gold"}]'
-function jkbw:load/settings/menu/text_display
-
 # 刷新按钮
 execute positioned 10110222 2 10110222 unless entity @e[type=interaction, tag=jkbw_button_chunk, limit=1] run summon interaction ~ ~ ~ {response: true, Tags: ["jkbw", "jkbw_button", "jkbw_button_chunk"], height: .99f, width: .99f, CustomNameVisible: true, CustomName: '""'}
 execute positioned 10110209 2 10110222 unless entity @e[type=interaction, tag=jkbw_button_chunk1, limit=1] run summon interaction ~ ~ ~ {response: true, Tags: ["jkbw", "jkbw_button", "jkbw_button_chunk1"], height: .99f, width: .99f, CustomNameVisible: true, CustomName: '""'}

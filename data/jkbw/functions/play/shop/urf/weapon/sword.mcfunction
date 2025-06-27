@@ -9,10 +9,10 @@ $tellraw @s[tag=!jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_c
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] wooden_sword{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], Enchantments: [{id: "knockback", lvl: 1}], AttributeModifiers: [{"UUID": [I; 1, 1, 1, 1], "AttributeName": "generic.max_health", "Operation": 0, "Amount": 2, "Slot": "mainhand"}], HideFlags: 24}
-$execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] iron_sword{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], AttributeModifiers: [{"UUID": [I; 1, 1, 1, 1], "AttributeName": "generic.attack_damage", "Operation": 0, "Amount": 9.5, "Slot": "mainhand"}], HideFlags: 24}
-$execute if score #3 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] diamond_sword{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], AttributeModifiers: [{"UUID": [I; 1, 1, 1, 1], "AttributeName": "generic.attack_damage", "Operation": 0, "Amount": 10.5, "Slot": "mainhand"}], HideFlags: 24}
-$execute if score #4 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] golden_sword{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], AttributeModifiers: [{"UUID": [I; 1, 1, 1, 1], "AttributeName": "generic.attack_damage", "Operation": 0, "Amount": 11.11, "Slot": "mainhand"}], HideFlags: 24}
+$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] wooden_sword{CanDestroy: ["#jkbw:candestroy"], Enchantments: [{id: "knockback", lvl: 1}], AttributeModifiers: [{"UUID": [I; 1, 1, 1, 1], "AttributeName": "generic.max_health", "Operation": 0, "Amount": 2, "Slot": "mainhand"}], HideFlags: 24}
+$execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] iron_sword{CanDestroy: ["#jkbw:candestroy"], AttributeModifiers: [{"UUID": [I; 1, 1, 1, 1], "AttributeName": "generic.attack_damage", "Operation": 0, "Amount": 9.5, "Slot": "mainhand"}], HideFlags: 24}
+$execute if score #3 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] diamond_sword{CanDestroy: ["#jkbw:candestroy"], AttributeModifiers: [{"UUID": [I; 1, 1, 1, 1], "AttributeName": "generic.attack_damage", "Operation": 0, "Amount": 10.5, "Slot": "mainhand"}], HideFlags: 24}
+$execute if score #4 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] golden_sword{CanDestroy: ["#jkbw:candestroy"], AttributeModifiers: [{"UUID": [I; 1, 1, 1, 1], "AttributeName": "generic.attack_damage", "Operation": 0, "Amount": 11.11, "Slot": "mainhand"}], HideFlags: 24}
 
 $tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"translate": "item.minecraft.$(item)_sword", "color": "gold"}, "!"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]

@@ -3,16 +3,16 @@
   "pools": [
     {
       "rolls": 1.0,
-      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "item",
           "name": "blue_wool"
         }
       ],
-      "conditions": [
+      "functions": [
         {
-          "condition": "survives_explosion"
+          "function": "set_nbt",
+          "tag": "{CanDestroy: [\"#jkbw:candestroy\"], CanPlaceOn: [\"#jkbw:canplaceon\"], HideFlags: 24}"
         }
       ]
     }

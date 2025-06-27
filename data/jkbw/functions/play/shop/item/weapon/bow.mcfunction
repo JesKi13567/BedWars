@@ -13,9 +13,9 @@ $execute if score #res_mode jkbw.mem matches 1 run tellraw @s[tag=!jkbw_buy_succ
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] bow{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], Unbreakable: True, HideFlags: 24}
-$execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] bow{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], Unbreakable: True, Enchantments: [{id: "power", lvl: 1}], HideFlags: 24}
-$execute if score #3 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] bow{CanDestroy: ["#jkbw:candestroy"], CanPlaceOn: ["#jkbw:canplaceon"], Unbreakable: True, Enchantments: [{id: "power", lvl: 1}, {id: "punch", lvl: 1}], HideFlags: 24}
+$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] bow{CanDestroy: ["#jkbw:candestroy"], Unbreakable: True, HideFlags: 24}
+$execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] bow{CanDestroy: ["#jkbw:candestroy"], Unbreakable: True, Enchantments: [{id: "power", lvl: 1}], HideFlags: 24}
+$execute if score #3 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] bow{CanDestroy: ["#jkbw:candestroy"], Unbreakable: True, Enchantments: [{id: "power", lvl: 1}, {id: "punch", lvl: 1}], HideFlags: 24}
 $tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"translate": "item.minecraft.bow", "color": "gold"}, {"text": "$(id)", "color": "gold"}, "!"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 $execute if score #res_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.Own$(Res)s -= #bow$(id) jkbw.mem

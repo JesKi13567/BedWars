@@ -18,12 +18,6 @@ scoreboard players reset @s jkbw.Player.UseBackLast
 scoreboard players reset @s jkbw.Player.UseAntiarrowLast
 scoreboard players reset @s jkbw.Player.UseIceLast
 
-# 检测是否为自杀（间接击杀）
-execute if score @s jkbw.Temp = @s jkbw.Player.ID run tag @s remove jkbw_vic
-execute as @s[tag=jkbw_vic] as @a if score @s jkbw.Player.ID = @p[tag=jkbw_vic] jkbw.Temp run tag @s add jkbw_murder
-execute if entity @p[tag=jkbw_murder] run tag @s[tag=jkbw_vic] add jkbw_victim
-tag @s[tag=jkbw_vic] remove jkbw_vic
-
 # 标记无床死亡
 execute as @s[team=jkbw.red] run function jkbw:play/death/sub/1 {team: red}
 execute as @s[team=jkbw.blue] run function jkbw:play/death/sub/1 {team: blue}
@@ -37,8 +31,9 @@ execute if score #teams jkbw.mem matches 8.. as @s[team=jkbw.gray] run function 
 # 自然爆装备
 execute if score #res_mode jkbw.mem matches 2 run scoreboard players operation @s[scores={jkbw.Player.State=3}] jkbw.Player.OwnExpLevelsReal /= #2 jkbw.mem
 execute if score #res_mode jkbw.mem matches 2 run scoreboard players operation @s[scores={jkbw.Player.State=3}] jkbw.Player.OwnExpLevels = @s jkbw.Player.OwnExpLevelsReal
-execute as @s[tag=!jkbw_victim] run function jkbw:play/death/suicide
-execute as @s[tag=jkbw_victim] run function jkbw:play/death/victim
+
+function jkbw:play/death/how
+
 execute if score #res_mode jkbw.mem matches 0 as @s[scores={jkbw.Player.OwnIrons=1..}] run tellraw @s [{"text": "-", "color": "red"}, {"score": {"name": "@s", "objective": "jkbw.Player.OwnIrons"}}, " ", {"translate": "item.minecraft.iron_ingot"}]
 execute if score #res_mode jkbw.mem matches 0 as @s[scores={jkbw.Player.OwnGolds=1..}] run tellraw @s [{"text": "-", "color": "red"}, {"score": {"name": "@s", "objective": "jkbw.Player.OwnGolds"}}, " ", {"translate": "item.minecraft.gold_ingot"}]
 execute if score #res_mode jkbw.mem matches 0 as @s[scores={jkbw.Player.OwnDiamonds=1..}] run tellraw @s [{"text": "-", "color": "red"}, {"score": {"name": "@s", "objective": "jkbw.Player.OwnDiamonds"}}, " ", {"translate": "item.minecraft.diamond"}]

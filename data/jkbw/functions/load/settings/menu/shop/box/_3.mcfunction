@@ -10,6 +10,7 @@ setblock 10110220 4 10110222 black_shulker_box[facing=north]{Items: [{Slot: 0b, 
 {Slot: 9b, id: "fire_charge", Count: 1b, tag: {jkbw: ["shop", "urf", "fire_charge"], display: {Lore: ['""', '""']}}}, \
 {Slot: 10b, id: "egg", Count: 1b, tag: {jkbw: ["shop", "urf", "egg"], display: {Lore: ['""', '""']}}}, \
 {Slot: 11b, id: "golden_apple", Count: 1b, tag: {jkbw: ["shop", "urf", "apple"], display: {Lore: ['""']}}}, \
+{Slot: 16b, id: "ender_pearl", Count: 1b, tag: {jkbw: ["shop", "urf", "pearl"], display: {Lore: ['""']}}}, \
 {Slot: 18b, id: "iron_ingot", Count: 1b, tag: {jkbw: ["shop", "urf", "iron"], display: {Lore: ['""']}}}, \
 {Slot: 19b, id: "gold_ingot", Count: 1b, tag: {jkbw: ["shop", "urf", "gold"], display: {Lore: ['""']}}}, \
 {Slot: 20b, id: "diamond", Count: 1b, tag: {jkbw: ["shop", "urf", "diamond"], display: {Lore: ['""']}}}, \
