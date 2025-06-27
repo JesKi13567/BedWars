@@ -17,6 +17,15 @@ $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) white_concrete replace white_terracotta
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) pink_concrete replace pink_terracotta
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) gray_concrete replace gray_terracotta
 
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) red_concrete replace red_shulker_box
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) blue_concrete replace blue_shulker_box
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) green_concrete replace green_shulker_box
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) yellow_concrete replace yellow_shulker_box
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) cyan_concrete replace cyan_shulker_box
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) white_concrete replace white_shulker_box
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) pink_concrete replace pink_shulker_box
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) gray_concrete replace gray_shulker_box
+
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) glass replace red_stained_glass
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) glass replace blue_stained_glass
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) glass replace green_stained_glass

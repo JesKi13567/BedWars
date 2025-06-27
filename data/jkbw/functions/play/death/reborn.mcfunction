@@ -9,16 +9,7 @@ execute if score #teams jkbw.mem matches 7.. as @s[team=jkbw.pink] run function 
 execute if score #teams jkbw.mem matches 8.. as @s[team=jkbw.gray] run function jkbw:play/death/sub/2 {team: gray}
 
 # 其他处理
-gamemode adventure @s
+function jkbw:play/death/spawned
 title @s title [{"storage": "jk:bw", "nbt": "txt.print.respawned", "color": "green"}, "!"]
 title @s times 0t 10t 10t
-effect give @s resistance 5 4 true
-effect give @s instant_health 1 9 true
-clear @s
-item replace entity @s hotbar.4 from block 10110209 3 10110222 container.3
 scoreboard players set @s jkbw.Player.State 2
-
-# 修改攻速（死亡时属性消失）
-execute if score #attack_mode jkbw.mem matches 1 run attribute @s generic.attack_speed base set 4
-execute unless score #attack_mode jkbw.mem matches 1 run attribute @s generic.attack_speed base set 100
-execute if score #res_mode jkbw.mem matches 2 run attribute @s generic.attack_speed base set 100

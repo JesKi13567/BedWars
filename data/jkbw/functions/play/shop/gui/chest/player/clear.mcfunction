@@ -1,5 +1,4 @@
-# 物品栏及末影箱
-clear @s
+# 末影箱
 item replace entity @s enderchest.0 with air
 item replace entity @s enderchest.1 with air
 item replace entity @s enderchest.2 with air
@@ -65,16 +64,6 @@ xp set @s 0 levels
 xp set @s 0 points
 title @s title ""
 title @s subtitle ""
-item replace entity @s hotbar.4 from block 10110209 3 10110222 container.3
-gamemode adventure @s
-playsound block.note_block.banjo player @s
+function jkbw:play/death/spawned
 tag @s remove jkbw_own_chest
-effect clear @s
-effect give @s resistance 5 4 true
-effect give @s instant_health 1 20 true
 function jkbw:play/hurt/forgive
-
-# 修改攻速
-execute if score #attack_mode jkbw.mem matches 1 run attribute @s generic.attack_speed base set 4
-execute unless score #attack_mode jkbw.mem matches 1 run attribute @s generic.attack_speed base set 100
-execute if score #res_mode jkbw.mem matches 2 run attribute @s generic.attack_speed base set 100
