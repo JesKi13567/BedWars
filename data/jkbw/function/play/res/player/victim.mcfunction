@@ -32,7 +32,7 @@ execute as @s[scores={jkbw.Player.OwnEmeralds=1..}] run tellraw @p[tag=jkbw_murd
 function jkbw:play/res/player/check_inv
 
 # 传送
-execute as @e[type=item, tag=jkbw_commonkill_item] if items entity @s container.0 #jkbw:res run tp @s @p[tag=jkbw_murder]
+execute as @e[type=item, tag=jkbw_commonkill_item] if items entity @s container.0 #jkbw:res run tp @s @p[tag=jkbw_murder, gamemode=adventure]
 
 # 击杀数 +1
 scoreboard players add @p[tag=jkbw_murder] jkbw.Player.Kills 1

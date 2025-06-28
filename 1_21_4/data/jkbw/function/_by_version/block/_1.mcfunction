@@ -1,0 +1,1 @@
+item replace block 10110222 4 10110222 container.17 with iron_boots[custom_data={jkbw: ["shop", "urf", "iron_boots"]}, enchantments={protection: 1}, attribute_modifiers=[{id: "1-1-1-1", type: "knockback_resistance", operation: "add_value", amount: 10, slot: "feet"}], lore=['""']]

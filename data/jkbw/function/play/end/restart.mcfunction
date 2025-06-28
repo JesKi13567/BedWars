@@ -9,10 +9,7 @@ gamemode adventure @a
 team leave @a
 scoreboard players set @a jkbw.Player.TeamSelect 0
 xp set @a 0 levels
-execute as @a run attribute @s generic.max_health base set 20
-execute as @a run attribute @s generic.jump_strength base set 0.4
-execute as @a run attribute @s generic.step_height base set 0.6
-execute as @a run attribute @s generic.scale base set 1
+execute as @a run function jkbw:_by_version/attribute/end
 scoreboard players set @a jkbw.Player.State 0
 scoreboard players reset #start_flag jkbw.mem
 tp @a @e[type=text_display, tag=jkbw_worldspawn, limit=1]

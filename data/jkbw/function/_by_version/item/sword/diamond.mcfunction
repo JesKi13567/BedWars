@@ -1,0 +1,1 @@
+give @s[tag=jkbw_buy_success] diamond_sword[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, attribute_modifiers=[{id: "1-1-1-1", type: "generic.attack_damage", operation: "add_value", amount: 10.5, slot: "mainhand"}]]

@@ -1,0 +1,1 @@
+give @s[tag=jkbw_buy_success] allay_spawn_egg[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, can_place_on={predicates: [{blocks: "#jkbw:canplaceon"}], show_in_tooltip: false}, entity_data={id: "marker", Tags: ["jkbw", "jkbw_water", "jkbw_new_entity"]}, custom_name='{"translate": "item.minecraft.water_bucket", "color": "white", "italic": false}']

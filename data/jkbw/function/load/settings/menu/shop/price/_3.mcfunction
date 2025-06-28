@@ -12,10 +12,10 @@ tellraw @s ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", {"translate": "block.min
 "}}, {"text": "]", "color": "aqua"}, "\n", {"text": "[", "color": "aqua"}, {"storage": "jk:bw", "nbt": "txt.item.shop.egg.name", "color": "aqua", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set #urfEegg jkbw.mem 500\
 "}}, {"text": "]", "color": "aqua"}, "\n", {"text": "[", "color": "aqua"}, {"translate": "item.minecraft.golden_apple", "color": "aqua", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set #urfEapple jkbw.mem 20\
 "}}, {"text": "]", "color": "aqua"}, "\n", {"text": "[", "color": "aqua"}, {"translate": "item.minecraft.wind_charge", "color": "aqua", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set #urfEwind_charge jkbw.mem 200\
-"}}, {"text": "]", "color": "aqua"}, "\n", {"text": "[", "color": "aqua"}, {"translate": "item.minecraft.iron_ingot", "color": "aqua", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set #urfEiron jkbw.mem 1\
-"}}, {"text": "]", "color": "aqua"}, "\n", {"text": "[", "color": "aqua"}, {"translate": "item.minecraft.gold_ingot", "color": "aqua", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set #urfEgold jkbw.mem 10\
-"}}, {"text": "]", "color": "aqua"}, "\n", {"text": "[", "color": "aqua"}, {"translate": "item.minecraft.diamond", "color": "aqua", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set #urfEdiamond jkbw.mem 60\
-"}}, {"text": "]", "color": "aqua"}, "\n", {"text": "[", "color": "aqua"}, {"translate": "item.minecraft.emerald", "color": "aqua", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set #urfEemerald jkbw.mem 100\
-"}}, {"text": "]", "color": "aqua"}]
+"}}, {"text": "]", "color": "aqua"}, "\n", {"storage": "jk:bw", "nbt": "txt.print.res"}, ": ", {"text": "[", "color": "white"}, {"translate": "item.minecraft.iron_ingot", "color": "white", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set #urfEiron jkbw.mem 1\
+"}}, {"text": "]", "color": "white"}, " ", {"text": "[", "color": "gold"}, {"translate": "item.minecraft.gold_ingot", "color": "gold", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set #urfEgold jkbw.mem 10\
+"}}, {"text": "]", "color": "gold"}, " ", {"text": "[", "color": "aqua"}, {"translate": "item.minecraft.diamond", "color": "aqua", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set #urfEdiamond jkbw.mem 60\
+"}}, {"text": "]", "color": "aqua"}, " ", {"text": "[", "color": "green"}, {"translate": "item.minecraft.emerald", "color": "green", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set #urfEemerald jkbw.mem 100\
+"}}, {"text": "]", "color": "green"}]
 function jkbw:load/settings/menu/shop/box/_3
 execute positioned 10110222 1 10110222 run function jkbw:load/settings/menu/shop/refresh

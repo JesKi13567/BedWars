@@ -1059,13 +1059,8 @@ data modify block 10110209 3 10110222 Items[3].components.minecraft:lore[0] set 
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.spyglass.tip2", "color": "gray", "italic": false}]'
 data modify block 10110209 3 10110222 Items[3].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
 ## 禁区
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.ban_zone.tip1", "color": "red", "italic": false}]'
-data modify block 10110209 3 10110222 Items[4].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
-data modify block 10110209 3 10110222 Items[5].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.ban_zone.tip2", "color": "gray", "italic": false}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.ban_zone", "color": "gray", "italic": false}]'
 data modify block 10110222 5 10110222 Items[0].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
-data modify block 10110209 3 10110222 Items[4].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-data modify block 10110209 3 10110222 Items[5].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 
 # 管理用
 ## 商店
@@ -1335,6 +1330,6 @@ function jkbw:load/settings/menu/text_display
 
 # 刷新方块按钮
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.button.new_blocks", "color": "red", "bold": true}]'
-data modify entity @e[type=interaction, tag=jkbw_button_chunk, limit=1] CustomName set from block ~ ~ ~ back_text.messages[1]
+data modify entity @e[type=text_display, tag=jkbw_button_chunk, limit=1] text set from block ~ ~ ~ back_text.messages[1]
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.button.reset_price", "color": "aqua", "bold": true}]'
-data modify entity @e[type=interaction, tag=jkbw_button_chunk1, limit=1] CustomName set from block ~ ~ ~ back_text.messages[1]
+data modify entity @e[type=text_display, tag=jkbw_button_price, limit=1] text set from block ~ ~ ~ back_text.messages[1]

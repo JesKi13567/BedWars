@@ -2,8 +2,6 @@ setblock 10110209 3 10110222 black_shulker_box[facing=north]{Items: [{Slot: 0b, 
 {Slot: 1b, id: "lime_dye", count: 1b, components: {custom_data: {jkbw: ["reg", "1"]}, lore: ['""']}}, \
 {Slot: 2b, id: "red_dye", count: 1b, components: {custom_data: {jkbw: ["reg", "0"]}, lore: ['""']}}, \
 {Slot: 3b, id: "spyglass", count: 1b, components: {custom_data: {jkbw: ["clean"]}, can_break: {predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, lore: ['""', '""']}}, \
-{Slot: 4b, id: "barrier", count: 1b, components: {custom_data: {jkbw: ["clean", "barrier"]}, lore: ['""']}}, \
-{Slot: 5b, id: "warped_fungus_on_a_stick", count: 1b, components: {custom_data: {jkbw: ["clean", "on_stick"]}, lore: ['""']}}, \
 {Slot: 9b, id: "wandering_trader_spawn_egg", count: 1b, components: {custom_data: {jkbw: ["eggs", "shop"]}, entity_data: {id: "marker", Tags: ["jkbw", "jkbw_first", "jkbw_first_shop"]}, enchantment_glint_override: true, lore: ['""']}}, \
 {Slot: 10b, id: "slime_spawn_egg", count: 1b, components: {custom_data: {jkbw: ["eggs", "res_global"]}, entity_data: {id: "marker", Tags: ["jkbw", "jkbw_first", "jkbw_first_res"]}, enchantment_glint_override: true, lore: ['""']}}, \
 {Slot: 11b, id: "diamond_block", count: 1b, components: {lore: ['""']}}, \

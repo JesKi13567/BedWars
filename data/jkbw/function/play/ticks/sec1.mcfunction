@@ -31,7 +31,7 @@ scoreboard players remove @e[type=text_display, tag=jkbw_bed_display, scores={jk
 # 生命恢复
 scoreboard players remove #heal jkbw.mem 1
 execute if score #heal jkbw.mem matches ..0 run scoreboard players set #heal jkbw.mem 5
-execute if score #heal jkbw.mem matches 5 run effect give @a[gamemode=adventure, scores={jkbw.Player.State=2}] minecraft:regeneration 1 2 true
+execute if score #heal jkbw.mem matches 5 run effect give @a[gamemode=adventure, scores={jkbw.Player.State=2}] regeneration 1 2 true
 
 # 管理员
 effect give @a[gamemode=creative] invisibility infinite 0 true

@@ -11,6 +11,6 @@ execute as @s[scores={jkbw.Team.ID=7}] run team join jkbw.pink
 execute as @s[scores={jkbw.Team.ID=8}] run team join jkbw.gray
 
 # 伤害与生存时间
-attribute @s generic.attack_damage base set 4
+function jkbw:_by_version/attribute/golem
 scoreboard players set @s jkbw.Entity.Time 240
 tag @s remove jkbw_iron_golem

@@ -1,5 +1,5 @@
 # JK's BedWars ToolPack -- 起床战争工具包
-## beta1.6.3 for MC1.21.1
+## beta1.6.3 for MC1.21.1 & MC1.21.4
 
 - [简体中文](#zh_cn)
 - [English](#en_us)
@@ -17,6 +17,7 @@
 1. 使用刷怪蛋放置道具。
 1. 在「操作台」中，可在此页面自定义阶段时间，可去「容器区块」自定义商店价格。
 1. 存在测试模式：复活时间 & 物品冷却减少，轮换道具全解锁，商店零元购！
+1. 在 MC1.21.4 中，道具模型与商店一致。（如TNT）
 1. 玩家可在全局传送点附近设置：
 
 （管理员可放置方块阻挡玩家设置）
@@ -53,6 +54,7 @@
 1. Use Spawn Eggs to place BedWars things.
 1. In \[Operation Table\], you can set stage gaps, custom item prices in \[Container Chunk\].
 1. There is a Test Mode: Rebirth time & Item cooldown are reduced, unlock all alternations, shop items are free!
+1. In MC1.21.4, item model is same as shop. (e.g. TNT)
 1. Players around Global Point can modify:
 
 (admins can block these settings by placing blocks)

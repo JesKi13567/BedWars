@@ -1,0 +1,1 @@
+give @s[tag=jkbw_buy_success] wooden_sword[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, enchantments={knockback: 1}, attribute_modifiers=[{id: "1-1-1-1", type: "max_health", operation: "add_value", amount: 2, slot: "mainhand"}]]

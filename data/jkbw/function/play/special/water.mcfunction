@@ -1,3 +1,3 @@
-execute unless block ~ ~ ~ #jkbw:water run summon item ~ ~.6 ~ {Item: {id: "allay_spawn_egg", count: 1b, components: {can_break: {predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, can_place_on: {predicates: [{blocks: "#jkbw:canplaceon"}], show_in_tooltip: false}, entity_data: {id: "marker", Tags: ["jkbw", "jkbw_water", "jkbw_new_entity"]}, custom_name: '{"translate": "item.minecraft.water_bucket", "color": "white", "italic": false}'}}}
+execute unless block ~ ~ ~ #jkbw:water run function jkbw:_by_version/item/water_
 execute if block ~ ~ ~ #jkbw:water run setblock ~ ~ ~ water
 kill @s

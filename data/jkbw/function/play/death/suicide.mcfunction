@@ -13,4 +13,4 @@ data modify storage jk:bw Temp.pos.z set from entity @s LastDeathLocation.pos[2]
 function jkbw:play/res/player/check_inv
 
 # 传送
-execute as @e[type=item, tag=jkbw_commonkill_item] if items entity @s container.0 #jkbw:res run function jkbw:play/res/player/drop_ground with storage jk:bw Temp.pos
+execute as @e[type=item, tag=jkbw_commonkill_item] run function jkbw:play/res/player/drop_ground with storage jk:bw Temp.pos

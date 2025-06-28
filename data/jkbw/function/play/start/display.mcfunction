@@ -106,7 +106,7 @@ execute if score #res_mode jkbw.mem matches 2 run tellraw @a ["", {"storage": "j
 
 tellraw @a ["", {"storage": "jk:bw", "nbt": "txt.print.bring2break", "color": "aqua"}, "\n", {"storage": "jk:bw", "nbt": "txt.print.team_chat", "color": "aqua"}]
 
-execute if score #exp_mode jkbw.mem matches 1 run tellraw @a ["", {"storage": "jk:bw", "nbt": "txt.display.exp_mode", "color": "gold"}, ": ", {"storage": "jk:bw", "nbt": "txt.display.exp_mode2", "color": "green"}, {"storage": "jk:bw", "nbt": "txt.print.turned_on", "color": "gold"}]
+execute if score #exp_mode jkbw.mem matches 1 run tellraw @a ["", {"storage": "jk:bw", "nbt": "txt.display.exp_mode", "color": "gold"}, ": ", {"storage": "jk:bw", "nbt": "txt.display.exp_mode2", "color": "green"}, {"storage": "jk:bw", "nbt": "txt.print.turned_on", "color": "gold"}, "\n", {"storage": "jk:bw", "nbt": "txt.display.exp_mode2_4", "color": "green"}]
 execute if score #exp_mode jkbw.mem matches 2 run tellraw @a ["", {"storage": "jk:bw", "nbt": "txt.display.exp_mode", "color": "gold"}, ": ", {"storage": "jk:bw", "nbt": "txt.display.exp_mode3", "color": "red"}, {"storage": "jk:bw", "nbt": "txt.print.turned_on", "color": "gold"}]
 execute if score #exp_mode jkbw.mem matches 3 run tellraw @a ["", {"storage": "jk:bw", "nbt": "txt.display.exp_mode", "color": "gold"}, ": ", {"storage": "jk:bw", "nbt": "txt.display.exp_mode4", "color": "white"}, {"storage": "jk:bw", "nbt": "txt.print.turned_on", "color": "gold"}]
 

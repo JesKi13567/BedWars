@@ -9,7 +9,7 @@ $tellraw @s[tag=!jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_c
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] iron_boots[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, enchantments={protection: 1}, attribute_modifiers=[{id: "1-1-1-1", type: "generic.knockback_resistance", operation: "add_value", amount: 10, slot: "feet"}]]
+$execute if score #1 jkbw.mem matches $(id) run function jkbw:_by_version/item/iron_boots
 $execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] chainmail_chestplate[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, enchantments={protection: 3}]
 $execute if score #3 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] golden_helmet[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, enchantments={protection: 2}]
 $execute if score #4 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] golden_chestplate[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, enchantments={protection: 5}]

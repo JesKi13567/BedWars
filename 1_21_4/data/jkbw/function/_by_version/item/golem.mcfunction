@@ -1,0 +1,1 @@
+give @s[tag=jkbw_buy_success] raw_iron[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, consumable={consume_seconds: 100000}, custom_name='{"translate": "item.minecraft.iron_golem_spawn_egg", "color": "white", "italic": false}', item_model=iron_golem_spawn_egg]

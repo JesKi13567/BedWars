@@ -12,6 +12,6 @@ tellraw @s ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", {"translate": "block.min
 "}}, {"text": "]", "color": "white"}, " ", {"text": "[", "color": "gold"}, {"translate": "item.minecraft.gold_ingot", "color": "gold", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set #Egold jkbw.mem 10\
 "}}, {"text": "]", "color": "gold"}, " ", {"text": "[", "color": "aqua"}, {"translate": "item.minecraft.diamond", "color": "aqua", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set #Ediamond jkbw.mem 50\
 "}}, {"text": "]", "color": "aqua"}, " ", {"text": "[", "color": "green"}, {"translate": "item.minecraft.emerald", "color": "green", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set #Eemerald jkbw.mem 80\
-"}}, {"text": "]", "color": "green"}]
+"}}, {"text": "]", "color": "green"}, "    ", {"text": "[", "color": "light_purple"}, {"storage": "jk:bw", "nbt": "txt.print.set", "color": "light_purple", "clickEvent": {"action": "run_command", "value": "/function jkbw:load/settings/menu/shop/classic2exp"}, "hoverEvent": {"action": "show_text", "contents": [{"storage": "jk:bw", "nbt": "txt.print.shop_res_set"}]}}, {"text": "]", "color": "light_purple"}]
 function jkbw:load/settings/menu/shop/box/3
 execute positioned 10110222 1 10110222 run function jkbw:load/settings/menu/shop/refresh
