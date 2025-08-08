@@ -1,3 +1,6 @@
+# 加载区块
+function jkbw:load/settings/menu/worldspawn/current with storage jk:bw Map.cur
+
 # 重新载入床和箱子
 function jkbw:load/settings/menu/teams/lock
 scoreboard players set @a jkbw.Player.State 2

@@ -8,7 +8,7 @@ fill 10110222 1 10110216 10110214 1 10110209 barrel[facing=up]{Items: []}
 tag @e[type=text_display, tag=jkbw_gold_time] remove jkbw_emerald_time
 scoreboard players set @e[type=text_display, tag=jkbw_gold_time] jkbw.ResCD.Gold -1
 scoreboard players set @e[type=text_display, tag=jkbw_iron_time] jkbw.ResCD.Iron -1
-scoreboard players set @e[type=text_display, tag=jkbw_res_spawn] jkbw.Team.Res 0
+scoreboard players set @e[type=text_display, tag=jkbw_res_spawn] jkbw.Team.res 0
 scoreboard players set #level_diamond jkbw.mem 1
 scoreboard players set #level_emerald jkbw.mem 1
 scoreboard players set #time_diamond jkbw.mem 1

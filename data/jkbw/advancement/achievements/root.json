@@ -4,10 +4,10 @@
       "id": "red_bed"
     },
     "title": {
-      "text": "JKの起床战争工具包"
+      "text": "JKBW"
     },
     "description": [
-      ""
+      "起床战争工具包"
     ],
     "frame": "task",
     "show_toast": false,

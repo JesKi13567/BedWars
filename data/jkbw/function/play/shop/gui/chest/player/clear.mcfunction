@@ -65,11 +65,12 @@ scoreboard players reset @s jkbw.Player.OwnExpLevels
 scoreboard players reset @s jkbw.Player.OwnExpLevelsReal
 scoreboard players reset @s jkbw.Player.DeathImp
 scoreboard players reset @s jkbw.Player.RebornTime
-scoreboard players reset @s jkbw.Player.Kills
+scoreboard players set @s jkbw.Player.Beds 0
+scoreboard players set @s jkbw.Player.Kills 0
 scoreboard players set @s jkbw.Player.ArmorLevels 0
-scoreboard players set @s jkbw.Player.AxeLevels 0
-scoreboard players set @s jkbw.Player.PickaxeLevels 0
-scoreboard players set @s jkbw.Player.ShearsLevels 0
+scoreboard players set @s jkbw.Player.Levels.axe 0
+scoreboard players set @s jkbw.Player.Levels.pickaxe 0
+scoreboard players set @s jkbw.Player.Levels.shears 0
 scoreboard players set @s jkbw.Player.UsePlatformCD 0
 scoreboard players set @s jkbw.Player.UseFireballCD 0
 scoreboard players set @s jkbw.Player.UseIronGolemCD 0

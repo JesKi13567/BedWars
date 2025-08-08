@@ -10,10 +10,10 @@ tag @s[scores={jkbw.ResCD.Gold=..0}] add jkbw_gold_summon
 
 execute as @s[tag=jkbw_gold_summon] unless entity @e[type=item, tag=jkbw_extra_gold, distance=...1] run summon item ~ ~ ~ {Age: -32768, PickupDelay: 18, Invulnerable: True, Item: {id: "gold_ingot", count: 1, components: {can_break: {predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}}}, Tags: ["jkbw", "jkbw_res", "jkbw_res_gold"], NoGravity: 1b}
 
-scoreboard players set @s[tag=jkbw_gold_summon, scores={jkbw.Team.Res=0}] jkbw.ResCD.Gold 12
-scoreboard players set @s[tag=jkbw_gold_summon, scores={jkbw.Team.Res=1}] jkbw.ResCD.Gold 8
-scoreboard players set @s[tag=jkbw_gold_summon, scores={jkbw.Team.Res=2..3}] jkbw.ResCD.Gold 6
-scoreboard players set @s[tag=jkbw_gold_summon, scores={jkbw.Team.Res=4}] jkbw.ResCD.Gold 4
+scoreboard players set @s[tag=jkbw_gold_summon, scores={jkbw.Team.res=0}] jkbw.ResCD.Gold 12
+scoreboard players set @s[tag=jkbw_gold_summon, scores={jkbw.Team.res=1}] jkbw.ResCD.Gold 8
+scoreboard players set @s[tag=jkbw_gold_summon, scores={jkbw.Team.res=2..3}] jkbw.ResCD.Gold 6
+scoreboard players set @s[tag=jkbw_gold_summon, scores={jkbw.Team.res=4}] jkbw.ResCD.Gold 4
 execute if score #res_mode jkbw.mem matches 2 run scoreboard players set @s[tag=jkbw_gold_summon] jkbw.ResCD.Gold 5
 
 execute if score #res_mode jkbw.mem matches 0..1 run scoreboard players operation @s[tag=jkbw_gold_summon] jkbw.ResCD.Gold *= #10 jkbw.mem

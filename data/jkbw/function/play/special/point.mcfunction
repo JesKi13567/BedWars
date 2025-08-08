@@ -1,2 +1,59 @@
-execute store success score @s jkbw.Temp run fill ~-1 ~2 ~-1 ~1 ~-3 ~1 air replace #jkbw:no_near_point
+#~-1 ~2 ~-1 ~1 ~-3 ~1
+scoreboard players reset @s jkbw.Temp
+
+execute positioned ~-1 ~-3 ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~-3 ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~-3 ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~-2 ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~-2 ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~-2 ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~-1 ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~-1 ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~-1 ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~ ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~ ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~ ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~1 ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~1 ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~1 ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~2 ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~2 ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~-1 ~2 ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~ ~-3 ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~ ~-3 ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~ ~-3 ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~ ~-2 ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~ ~-2 ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~ ~-2 ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~ ~-1 ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~ ~-1 ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~ ~-1 ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~ ~ ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~ ~ ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~ ~ ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~ ~1 ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~ ~1 ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~ ~1 ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~ ~2 ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~ ~2 ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~ ~2 ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~-3 ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~-3 ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~-3 ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~-2 ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~-2 ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~-2 ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~-1 ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~-1 ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~-1 ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~ ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~ ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~ ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~1 ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~1 ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~1 ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~2 ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~2 ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+execute positioned ~1 ~2 ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
+
 execute as @s[scores={jkbw.Temp=1}] run title @a[distance=..6, gamemode=adventure] actionbar {"storage": "jk:bw", "nbt": "txt.print.cannot_build", "color": "red"}

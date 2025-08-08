@@ -1,24 +1,24 @@
 ## 特殊物品
 # 方块
-execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "sponge"]}] run function jkbw:play/shop/item/block/main {item: sponge, count: 4, Res: Gold, res: gold_ingot, color: -1}
+execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "sponge"]}] run function jkbw:play/shop/item/block/main {item: sponge, count: 4, res: gold_ingot, color: -1}
 
 # 带优惠
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "tnt"]}] run function jkbw:play/shop/item/special/tnt
 
 # 无附加物品
-execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "golden_apple"]}] run function jkbw:play/shop/item/special/normal {name: apple, show: golden_apple, Res: Gold, res: gold_ingot}
-execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "wind_charge"]}] run function jkbw:play/shop/item/special/normal {name: wind_charge, show: wind_charge, Res: Gold, res: gold_ingot}
-execute unless score #exp_mode jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "pearl"]}] run function jkbw:play/shop/item/special/normal {name: pearl, show: ender_pearl, Res: Emerald, res: emerald}
-execute if score #exp_mode jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "pearl"]}] run function jkbw:play/shop/item/special/normal {name: pearl_blitz, show: ender_pearl, Res: Emerald, res: emerald}
+execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "golden_apple"]}] run function jkbw:play/shop/item/special/normal {name: apple, show: golden_apple, res: gold_ingot}
+execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "wind_charge"]}] run function jkbw:play/shop/item/special/normal {name: wind_charge, show: wind_charge, res: gold_ingot}
+execute unless score #exp_mode jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "pearl"]}] run function jkbw:play/shop/item/special/normal {name: pearl, show: ender_pearl, res: emerald}
+execute if score #exp_mode jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "pearl"]}] run function jkbw:play/shop/item/special/normal {name: pearl_blitz, show: ender_pearl, res: emerald}
 
 # 自定义
-execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "tower"]}] run function jkbw:play/shop/item/special/custom {id: 1, name: tower, Res: Iron, res: iron_ingot}
-execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "silverfish"]}] run function jkbw:play/shop/item/special/custom {id: 2, name: silverfish, Res: Iron, res: iron_ingot}
-execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "fireball"]}] run function jkbw:play/shop/item/special/custom {id: 3, name: fireball, Res: Iron, res: iron_ingot}
-execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "iron_golem"]}] run function jkbw:play/shop/item/special/custom {id: 4, name: iron_golem, Res: Iron, res: iron_ingot}
-execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "water"]}] run function jkbw:play/shop/item/special/custom {id: 5, name: water, Res: Gold, res: gold_ingot}
-execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "egg"]}] run function jkbw:play/shop/item/special/custom {id: 6, name: egg, Res: Emerald, res: emerald}
-execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "platform"]}] run function jkbw:play/shop/item/special/custom {id: 7, name: platform, Res: Gold, res: gold_ingot}
+execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "tower"]}] run function jkbw:play/shop/item/special/custom {id: 1, name: tower, res: iron_ingot}
+execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "silverfish"]}] run function jkbw:play/shop/item/special/custom {id: 2, name: silverfish, res: iron_ingot}
+execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "fireball"]}] run function jkbw:play/shop/item/special/custom {id: 3, name: fireball, res: iron_ingot}
+execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "iron_golem"]}] run function jkbw:play/shop/item/special/custom {id: 4, name: iron_golem, res: iron_ingot}
+execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "water"]}] run function jkbw:play/shop/item/special/custom {id: 5, name: water, res: gold_ingot}
+execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "egg"]}] run function jkbw:play/shop/item/special/custom {id: 6, name: egg, res: emerald}
+execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "platform"]}] run function jkbw:play/shop/item/special/custom {id: 7, name: platform, res: gold_ingot}
 
 # 资源
 execute if score #res_mode jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "iron"]}] run function jkbw:play/shop/item/special/res {item: iron, name: iron_ingot}

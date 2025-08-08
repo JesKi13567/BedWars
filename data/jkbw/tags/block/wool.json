@@ -7,6 +7,15 @@
         "cyan_wool",
         "white_wool",
         "pink_wool",
-        "gray_wool"
+        "gray_wool",
+        "red_shulker_box",
+        "blue_shulker_box",
+        "green_shulker_box",
+        "yellow_shulker_box",
+        "cyan_shulker_box",
+        "white_shulker_box",
+        "pink_shulker_box",
+        "gray_shulker_box",
+        "orange_shulker_box"
     ]
 }

@@ -5,5 +5,5 @@ $execute if entity @e[type=text_display, tag=jkbw_bed_$(team), limit=1, scores={
 
 # 团灭后提示，队伍箱子解锁与淘汰（一次）
 $execute as @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Alive=0, jkbw.Bed.State=3}, limit=1] run tellraw @a ["\n", {"storage": "jk:bw", "nbt": "txt.display.team.$(team)", "color": "$(color)", "bold": true}, {"storage": "jk:bw", "nbt": "txt.print.eliminated"}, "!\n"]
-$execute if entity @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Alive=0, jkbw.Bed.State=3}, limit=1] at @e[type=text_display, tag=jkbw_chest_$(team)] run data remove block ~ ~ ~ Lock
+$execute if entity @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Alive=0, jkbw.Bed.State=3}, limit=1] at @e[type=text_display, tag=jkbw_chest_$(team)] run function jkbw:_by_version/lock/remove
 $execute if entity @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Alive=0, jkbw.Bed.State=3}, limit=1] run team join jkbw.npc_out .$(team)

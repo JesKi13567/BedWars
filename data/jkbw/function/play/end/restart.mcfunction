@@ -9,10 +9,12 @@ gamemode adventure @a
 team leave @a
 scoreboard players set @a jkbw.Player.TeamSelect 0
 xp set @a 0 levels
+xp set @s 0 points
 execute as @a run function jkbw:_by_version/attribute/end
 scoreboard players set @a jkbw.Player.State 0
 scoreboard players reset #start_flag jkbw.mem
-tp @a @e[type=text_display, tag=jkbw_worldspawn, limit=1]
+#tp @a @e[type=text_display, tag=jkbw_worldspawn, limit=1]
+execute as @a run function jkbw:load/settings/menu/back with storage jk:bw Map.cur
 scoreboard players set @e[type=marker, tag=jkbw_temp_marker] jkbw.mem 0
 execute as @e[type=marker, tag=jkbw_temp_marker] at @s run function jkbw:play/special/platform/count
 worldborder set 50000000

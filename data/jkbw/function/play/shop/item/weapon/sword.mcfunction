@@ -1,9 +1,9 @@
 # 检测能否买
-$execute if score @s jkbw.Player.Own$(Res)s >= #sword_$(material) jkbw.mem run tag @s add jkbw_buy_success
+$execute if score @s jkbw.Player.Own.$(res) >= #sword_$(material) jkbw.mem run tag @s add jkbw_buy_success
 $execute if score @s jkbw.Player.OwnExpLevelsReal >= #Esword_$(material) jkbw.mem run tag @s add jkbw_buy_success
 
 # 失败购买
-$execute if score #res_mode jkbw.mem matches 0 as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem = @s jkbw.Player.Own$(Res)s
+$execute if score #res_mode jkbw.mem matches 0 as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem = @s jkbw.Player.Own.$(res)
 execute if score #res_mode jkbw.mem matches 1 as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem = @s jkbw.Player.OwnExpLevelsReal
 $execute if score #res_mode jkbw.mem matches 0 as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem -= #sword_$(material) jkbw.mem
 $execute if score #res_mode jkbw.mem matches 1 as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem -= #Esword_$(material) jkbw.mem
@@ -17,5 +17,5 @@ clear @s[tag=jkbw_buy_success] wooden_sword
 $give @s[tag=jkbw_buy_success] $(material)_sword[custom_data={jkbw: ["sword", "$(material)"]}, can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, unbreakable={}]
 $tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"translate": "item.minecraft.$(material)_sword", "color": "gold"}, "!"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
-$execute if score #res_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.Own$(Res)s -= #sword_$(material) jkbw.mem
+$execute if score #res_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.Own.$(res) -= #sword_$(material) jkbw.mem
 $execute if score #res_mode jkbw.mem matches 1 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal -= #Esword_$(material) jkbw.mem

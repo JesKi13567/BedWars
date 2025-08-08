@@ -1,5 +1,5 @@
 # JK's BedWars ToolPack -- 起床战争工具包
-## beta1.6.3 for MC1.21.1 & MC1.21.4
+## beta1.6.4 for MC1.21.1 & MC1.21.4
 
 - [简体中文](#zh_cn)
 - [English](#en_us)

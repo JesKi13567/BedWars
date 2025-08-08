@@ -5,12 +5,13 @@ scoreboard players set @s jkbw.Player.RebornTime 6
 scoreboard players set @s jkbw.Player.State 3
 execute if score #test_mode jkbw.mem matches 1 run scoreboard players set @s jkbw.Player.RebornTime 1
 gamemode spectator @s
-tp @s @e[type=text_display, tag=jkbw_worldspawn, limit=1]
+#tp @s @e[type=text_display, tag=jkbw_worldspawn, limit=1]
+function jkbw:load/settings/menu/back with storage jk:bw Map.cur
 
 # 工具等级 -1
-scoreboard players remove @s[scores={jkbw.Player.AxeLevels=2..}] jkbw.Player.AxeLevels 1
-scoreboard players remove @s[scores={jkbw.Player.PickaxeLevels=2..}] jkbw.Player.PickaxeLevels 1
-scoreboard players remove @s[scores={jkbw.Player.ShearsLevels=2..}] jkbw.Player.ShearsLevels 1
+scoreboard players remove @s[scores={jkbw.Player.Levels.axe=2..}] jkbw.Player.Levels.axe 1
+scoreboard players remove @s[scores={jkbw.Player.Levels.pickaxe=2..}] jkbw.Player.Levels.pickaxe 1
+scoreboard players remove @s[scores={jkbw.Player.Levels.shears=2..}] jkbw.Player.Levels.shears 1
 execute if score #res_mode jkbw.mem matches 0..1 run scoreboard players set @s jkbw.Player.Compass 0
 
 # 道具
@@ -34,12 +35,14 @@ execute if score #res_mode jkbw.mem matches 2 run scoreboard players operation @
 
 function jkbw:play/death/how
 
-execute if score #res_mode jkbw.mem matches 0 as @s[scores={jkbw.Player.OwnIrons=1..}] run tellraw @s [{"text": "-", "color": "red"}, {"score": {"name": "@s", "objective": "jkbw.Player.OwnIrons"}}, " ", {"translate": "item.minecraft.iron_ingot"}]
-execute if score #res_mode jkbw.mem matches 0 as @s[scores={jkbw.Player.OwnGolds=1..}] run tellraw @s [{"text": "-", "color": "red"}, {"score": {"name": "@s", "objective": "jkbw.Player.OwnGolds"}}, " ", {"translate": "item.minecraft.gold_ingot"}]
-execute if score #res_mode jkbw.mem matches 0 as @s[scores={jkbw.Player.OwnDiamonds=1..}] run tellraw @s [{"text": "-", "color": "red"}, {"score": {"name": "@s", "objective": "jkbw.Player.OwnDiamonds"}}, " ", {"translate": "item.minecraft.diamond"}]
-execute if score #res_mode jkbw.mem matches 0 as @s[scores={jkbw.Player.OwnEmeralds=1..}] run tellraw @s [{"text": "-", "color": "red"}, {"score": {"name": "@s", "objective": "jkbw.Player.OwnEmeralds"}}, " ", {"translate": "item.minecraft.emerald"}]
+execute if score #res_mode jkbw.mem matches 0 as @s[scores={jkbw.Player.Own.iron_ingot=1..}] run tellraw @s [{"text": "-", "color": "red"}, {"score": {"name": "@s", "objective": "jkbw.Player.Own.iron_ingot"}}, " ", {"translate": "item.minecraft.iron_ingot"}]
+execute if score #res_mode jkbw.mem matches 0 as @s[scores={jkbw.Player.Own.gold_ingot=1..}] run tellraw @s [{"text": "-", "color": "red"}, {"score": {"name": "@s", "objective": "jkbw.Player.Own.gold_ingot"}}, " ", {"translate": "item.minecraft.gold_ingot"}]
+execute if score #res_mode jkbw.mem matches 0 as @s[scores={jkbw.Player.Own.diamond=1..}] run tellraw @s [{"text": "-", "color": "red"}, {"score": {"name": "@s", "objective": "jkbw.Player.Own.diamond"}}, " ", {"translate": "item.minecraft.diamond"}]
+execute if score #res_mode jkbw.mem matches 0 as @s[scores={jkbw.Player.Own.emerald=1..}] run tellraw @s [{"text": "-", "color": "red"}, {"score": {"name": "@s", "objective": "jkbw.Player.Own.emerald"}}, " ", {"translate": "item.minecraft.emerald"}]
 execute if score #res_mode jkbw.mem matches 1..2 as @s[scores={jkbw.Player.OwnExpLevelsReal=1..}] run tellraw @s [{"text": "-", "color": "red"}, {"score": {"name": "@s", "objective": "jkbw.Player.OwnExpLevelsReal"}}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl"}]
 scoreboard players set @s jkbw.Player.OwnExpLevelsReal 0
+xp set @s 0 levels
+xp set @s 0 points
 
 # 无床爆装备
 execute as @s[scores={jkbw.Player.State=4}] run function jkbw:play/res/player/final_kill

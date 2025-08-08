@@ -9,4 +9,4 @@ execute if score #teams jkbw.mem matches 7.. run function jkbw:play/shop/team/gl
 execute if score #teams jkbw.mem matches 8.. run function jkbw:play/shop/team/global_ {team: gray}
 
 # 治愈池粒子
-execute at @e[type=text_display, tag=jkbw_point, scores={jkbw.Team.Healing=1}] run particle happy_villager ~ ~ ~ 8 6 8 1 100 normal @a
+execute at @e[type=text_display, tag=jkbw_point, scores={jkbw.Team.healing=1}] run particle happy_villager ~ ~ ~ 8 6 8 1 100 normal @a

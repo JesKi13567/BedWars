@@ -1,9 +1,9 @@
 # 检测能否买
-$execute if score @s jkbw.Player.OwnGolds >= #$(item) jkbw.mem run tag @s add jkbw_buy_success
+$execute if score @s jkbw.Player.Own.gold_ingot >= #$(item) jkbw.mem run tag @s add jkbw_buy_success
 $execute if score @s jkbw.Player.OwnExpLevelsReal >= #E$(item) jkbw.mem run tag @s add jkbw_buy_success
 
 # 失败购买
-execute if score #res_mode jkbw.mem matches 0 as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem = @s jkbw.Player.OwnGolds
+execute if score #res_mode jkbw.mem matches 0 as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem = @s jkbw.Player.Own.gold_ingot
 execute if score #res_mode jkbw.mem matches 1 as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem = @s jkbw.Player.OwnExpLevelsReal
 $execute if score #res_mode jkbw.mem matches 0 as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem -= #$(item) jkbw.mem
 $execute if score #res_mode jkbw.mem matches 1 as @s[tag=!jkbw_buy_success] run scoreboard players operation #shop_temp jkbw.mem -= #E$(item) jkbw.mem
@@ -21,5 +21,5 @@ $execute if score #4 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] tr
 $execute if score #5 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] tipped_arrow[potion_contents="slowness"] 3
 $execute if score #6 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] mace[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, damage=499]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
-$execute if score #res_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnGolds -= #$(item) jkbw.mem
+$execute if score #res_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.Own.gold_ingot -= #$(item) jkbw.mem
 $execute if score #res_mode jkbw.mem matches 1 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.OwnExpLevelsReal -= #E$(item) jkbw.mem

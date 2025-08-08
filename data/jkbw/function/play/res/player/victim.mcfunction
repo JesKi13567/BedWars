@@ -22,10 +22,10 @@ execute if score #res_mode jkbw.mem matches 0..1 as @s[team=jkbw.gray] if entity
 execute if score #res_mode jkbw.mem matches 1..2 as @s[scores={jkbw.Player.OwnExpLevelsReal=1..}] run tellraw @p[tag=jkbw_murder] [{"text": "+", "color": "green"}, {"score": {"name": "@s", "objective": "jkbw.Player.OwnExpLevelsReal"}}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl"}]
 execute if score #res_mode jkbw.mem matches 1..2 run scoreboard players operation @p[tag=jkbw_murder] jkbw.Player.OwnExpLevels += @s jkbw.Player.OwnExpLevelsReal
 
-execute as @s[scores={jkbw.Player.OwnIrons=1..}] run tellraw @p[tag=jkbw_murder] ["+", {"score": {"name": "@s", "objective": "jkbw.Player.OwnIrons"}}, " ", {"translate": "item.minecraft.iron_ingot"}]
-execute as @s[scores={jkbw.Player.OwnGolds=1..}] run tellraw @p[tag=jkbw_murder] [{"text": "+", "color": "gold"}, {"score": {"name": "@s", "objective": "jkbw.Player.OwnGolds"}}, " ", {"translate": "item.minecraft.gold_ingot"}]
-execute as @s[scores={jkbw.Player.OwnDiamonds=1..}] run tellraw @p[tag=jkbw_murder] [{"text": "+", "color": "aqua"}, {"score": {"name": "@s", "objective": "jkbw.Player.OwnDiamonds"}}, " ", {"translate": "item.minecraft.diamond"}]
-execute as @s[scores={jkbw.Player.OwnEmeralds=1..}] run tellraw @p[tag=jkbw_murder] [{"text": "+", "color": "green"}, {"score": {"name": "@s", "objective": "jkbw.Player.OwnEmeralds"}}, " ", {"translate": "item.minecraft.emerald"}]
+execute as @s[scores={jkbw.Player.Own.iron_ingot=1..}] run tellraw @p[tag=jkbw_murder] ["+", {"score": {"name": "@s", "objective": "jkbw.Player.Own.iron_ingot"}}, " ", {"translate": "item.minecraft.iron_ingot"}]
+execute as @s[scores={jkbw.Player.Own.gold_ingot=1..}] run tellraw @p[tag=jkbw_murder] [{"text": "+", "color": "gold"}, {"score": {"name": "@s", "objective": "jkbw.Player.Own.gold_ingot"}}, " ", {"translate": "item.minecraft.gold_ingot"}]
+execute as @s[scores={jkbw.Player.Own.diamond=1..}] run tellraw @p[tag=jkbw_murder] [{"text": "+", "color": "aqua"}, {"score": {"name": "@s", "objective": "jkbw.Player.Own.diamond"}}, " ", {"translate": "item.minecraft.diamond"}]
+execute as @s[scores={jkbw.Player.Own.emerald=1..}] run tellraw @p[tag=jkbw_murder] [{"text": "+", "color": "green"}, {"score": {"name": "@s", "objective": "jkbw.Player.Own.emerald"}}, " ", {"translate": "item.minecraft.emerald"}]
 
 ## 给资源
 # 检查物品栏

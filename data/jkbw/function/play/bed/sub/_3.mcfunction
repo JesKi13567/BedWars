@@ -1,5 +1,6 @@
 playsound entity.ender_dragon.growl player @a ~ ~ ~ 1000000
-scoreboard players add @s jkbw.Player.CountBeds 1
+scoreboard players add @s jkbw.Player.Beds 1
+scoreboard players add @s jkbw.Player.BedsCount 1
 
 execute unless score #bed_type jkbw.mem matches 1 as @s[scores={jkbw.Player.BreakRed=1}] run function jkbw:play/bed/sub/_4 {team: red, color: red}
 execute unless score #bed_type jkbw.mem matches 1 as @s[scores={jkbw.Player.BreakBlue=1}] run function jkbw:play/bed/sub/_4 {team: blue, color: blue}

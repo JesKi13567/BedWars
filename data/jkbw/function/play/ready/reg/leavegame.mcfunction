@@ -8,4 +8,5 @@ function jkbw:_by_version/attribute/end
 scoreboard players set @s jkbw.Player.State 0
 scoreboard players set @s jkbw.Player.LeaveGame 0
 execute if score #tutorial jkbw.mem matches 1.. run gamemode adventure @s
-tp @s @e[type=text_display, tag=jkbw_worldspawn, limit=1]
+#tp @s @e[type=text_display, tag=jkbw_worldspawn, limit=1]
+function jkbw:load/settings/menu/back with storage jk:bw Map.cur

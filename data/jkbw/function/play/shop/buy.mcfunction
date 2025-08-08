@@ -1,8 +1,8 @@
 ## 获取玩家身上的资源数量及显示
-execute store result score @s jkbw.Player.OwnIrons run clear @s iron_ingot[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}] 0
-execute store result score @s jkbw.Player.OwnGolds run clear @s gold_ingot[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}] 0
-execute store result score @s jkbw.Player.OwnDiamonds run clear @s diamond[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}] 0
-execute store result score @s jkbw.Player.OwnEmeralds run clear @s emerald[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}] 0
+execute store result score @s jkbw.Player.Own.iron_ingot run clear @s iron_ingot[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}] 0
+execute store result score @s jkbw.Player.Own.gold_ingot run clear @s gold_ingot[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}] 0
+execute store result score @s jkbw.Player.Own.diamond run clear @s diamond[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}] 0
+execute store result score @s jkbw.Player.Own.emerald run clear @s emerald[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}] 0
 
 # 经验模式
 execute if score #res_mode jkbw.mem matches 1..2 run function jkbw:play/res/mode/exp
