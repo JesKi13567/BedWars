@@ -52,6 +52,14 @@ scoreboard players set #spawn_emerald jkbw.mem 55
 scoreboard players set #minus_emerald jkbw.mem 5
 scoreboard players set #spawn_emerald_urf jkbw.mem 5
 scoreboard players set #minus_emerald_urf jkbw.mem 1
+# 商品个数
+scoreboard players set #shop_items_0 jkbw.mem 27
+scoreboard players set #shop_items_2 jkbw.mem 34
+scoreboard players set #shop_items_5 jkbw.mem 27
+scoreboard players set #shop_items_6 jkbw.mem 27
+scoreboard players set #shop_items_7 jkbw.mem 28
+scoreboard players set #shop_items_8 jkbw.mem 27
+scoreboard players set #shop_items_9 jkbw.mem 27
 
 # 计算用数字
 scoreboard players set #-1 jkbw.mem -1

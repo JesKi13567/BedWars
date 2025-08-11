@@ -20,10 +20,18 @@ kill @e[type=marker, tag=jkbw_chest_player]
 scoreboard players set #state jkbw.mem 1
 scoreboard players set #time_state jkbw.mem 0
 scoreboard players operation #dragon1 jkbw.mem = #dragon jkbw.mem
-scoreboard players operation #Edragon1 jkbw.mem = #Edragon jkbw.mem
+scoreboard players operation #XPdragon1 jkbw.mem = #XPdragon jkbw.mem
 scoreboard players reset #solo_mode jkbw.mem
 scoreboard players reset * jkbw.Player.ID
 scoreboard players reset * jkbw.CurrentGame
+
+# 商品个数
+scoreboard players set #shop_items_1 jkbw.mem 96
+execute if score #res_mode jkbw.mem matches 2 run scoreboard players set #shop_items_1 jkbw.mem 58
+scoreboard players set #shop_items_3 jkbw.mem 30
+execute if score #res_mode jkbw.mem matches 2 run scoreboard players set #shop_items_3 jkbw.mem 27
+scoreboard players set #shop_items_4 jkbw.mem 27
+execute if score #ACCESS_tipped_arrow jkbw.mem matches 1 run scoreboard players set #shop_items_4 jkbw.mem 29
 
 # 资源产生时间
 execute unless score #spawn_diamond jkbw.mem matches 10..100 run scoreboard players set #spawn_diamond jkbw.mem 30

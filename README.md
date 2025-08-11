@@ -49,7 +49,7 @@
 1. Support max 64 players with 8 teams, distribute them dynamically.
 1. In-game instructions.
 1. All the non-weapon/armor items' max stack size is 64.
-1. There are 3 game types in this datapack (Classic, Exp & URF), with tips next to Global Point.
+1. There are 3 game types in this datapack (Classic, Xp & URF), with tips next to Global Point.
 1. You can custom multi-maps, and maps can be \[clean\], \[convert\] & \[rotate\].
 1. Use Spawn Eggs to place BedWars things.
 1. In \[Operation Table\], you can set stage gaps, custom item prices in \[Container Chunk\].
@@ -60,7 +60,7 @@
 (admins can block these settings by placing blocks)
 
 - Bed Type: Default/Covered/Cake.
-- Res Mode: Classic/Exp/URF.
+- Res Mode: Classic/Xp/URF.
 - Res Speed: 0.5~2.0. Useless in URF.
 - Attack Speed: 1.8-/1.9+.
 - Team Count: 2~8, order was written in wool.

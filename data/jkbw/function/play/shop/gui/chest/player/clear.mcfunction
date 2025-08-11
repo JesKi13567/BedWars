@@ -61,8 +61,8 @@ scoreboard players reset @s jkbw.Player.PlaceWhite
 scoreboard players reset @s jkbw.Player.PlacePink
 scoreboard players reset @s jkbw.Player.PlaceGray
 scoreboard players reset @s jkbw.Player.PlaceOrange
-scoreboard players reset @s jkbw.Player.OwnExpLevels
-scoreboard players reset @s jkbw.Player.OwnExpLevelsReal
+scoreboard players reset @s jkbw.Player.Own.xpLevels
+scoreboard players reset @s jkbw.Player.Own.xpLevelsReal
 scoreboard players reset @s jkbw.Player.DeathImp
 scoreboard players reset @s jkbw.Player.RebornTime
 scoreboard players set @s jkbw.Player.Beds 0

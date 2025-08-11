@@ -20,7 +20,8 @@ scoreboard objectives remove jkbw.Team.Trap3
 scoreboard objectives remove jkbw.Player.Hp
 scoreboard objectives remove jkbw.Player.TeamSelect
 scoreboard objectives remove jkbw.Player.Page
-scoreboard objectives remove jkbw.Player.Paged
+scoreboard objectives remove jkbw.Player.Page.Items
+scoreboard objectives remove jkbw.Player.Page.Switched
 scoreboard objectives remove jkbw.Player.OpenChest
 scoreboard objectives remove jkbw.Player.Compass
 scoreboard objectives remove jkbw.Player.ShopNow
@@ -65,8 +66,12 @@ scoreboard objectives remove jkbw.Player.Own.iron_ingot
 scoreboard objectives remove jkbw.Player.Own.gold_ingot
 scoreboard objectives remove jkbw.Player.Own.diamond
 scoreboard objectives remove jkbw.Player.Own.emerald
-scoreboard objectives remove jkbw.Player.OwnExpLevels
-scoreboard objectives remove jkbw.Player.OwnExpLevelsReal
+scoreboard objectives remove jkbw.Player.Own.xpLevels
+scoreboard objectives remove jkbw.Player.Own.iron_ingotReal
+scoreboard objectives remove jkbw.Player.Own.gold_ingotReal
+scoreboard objectives remove jkbw.Player.Own.diamondReal
+scoreboard objectives remove jkbw.Player.Own.emeraldReal
+scoreboard objectives remove jkbw.Player.Own.xpLevelsReal
 scoreboard objectives remove jkbw.Player.HasRes
 scoreboard objectives remove jkbw.Player.ArmorLevels
 scoreboard objectives remove jkbw.Player.Levels.axe

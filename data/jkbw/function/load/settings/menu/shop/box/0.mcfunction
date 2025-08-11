@@ -1,4 +1,4 @@
-setblock 10110222 5 10110222 white_shulker_box[facing=north]{Items: [{Slot: 0b, id: "red_stained_glass_pane", count: 1b, components: {custom_data: {jkbw: ["shop"]}}}, \
+setblock 10110222 5 10110222 white_shulker_box[facing=north]{Items: [{Slot: 0b, id: "red_stained_glass_pane", count: 1b, components: {custom_data: {jkbw: ["shop"]}, lore: ['""']}}, \
 {Slot: 1b, id: "white_stained_glass_pane", count: 1b, components: {custom_data: {jkbw: ["shop", "compass"]}, lore: ['""', '""']}}, \
 {Slot: 2b, id: "light_blue_stained_glass_pane", count: 1b, components: {custom_data: {jkbw: ["shop"]}, lore: ['""', '""', '""', '""', '""', '""', '""']}}, \
 {Slot: 3b, id: "light_blue_stained_glass_pane", count: 1b, components: {custom_data: {jkbw: ["shop"]}, lore: ['""', '""', '""', '""', '""', '""', '""']}}, \

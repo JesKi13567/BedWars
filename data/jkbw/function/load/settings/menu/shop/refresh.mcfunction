@@ -28,102 +28,102 @@ data modify block 10110221 5 10110222 Items[5].components.minecraft:lore[0] set 
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#obsidian", "objective": "jkbw.mem"}, "color": "green"}, " ", {"translate": "item.minecraft.emerald", "italic": false, "color": "green"}]'
 data modify block 10110221 5 10110222 Items[6].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 
-#Ewool
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Ewool", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPwool
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPwool", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[7].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Eterracotta
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Eterracotta", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPterracotta
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPterracotta", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[8].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Estained_glass
+#XPstained_glass
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.anti_explode", "italic": false, "color": "white"}, {"translate": "block.minecraft.glass"}]'
 data modify block 10110221 5 10110222 Items[9].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Estained_glass", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPstained_glass", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[9].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Eend_stone
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Eend_stone", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPend_stone
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPend_stone", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[10].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Eladder
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Eladder", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPladder
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPladder", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[11].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Eoak_planks
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Eoak_planks", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPoak_planks
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPoak_planks", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[12].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Eobsidian
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Eobsidian", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPobsidian
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPobsidian", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[13].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 
 #axe1
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " I: ", {"translate": "item.minecraft.wooden_axe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " I) ", "italic": false, "color": "yellow"}, {"score": {"name": "#axe1", "objective": "jkbw.mem"}, "color": "white"}, " ", {"translate": "item.minecraft.iron_ingot", "italic": false, "color": "white"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " I: ", {"translate": "item.minecraft.wooden_axe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " I) ", "italic": false, "color": "yellow"}, {"score": {"name": "#axe1", "objective": "jkbw.mem"}, "color": "white"}, " ", {"translate": "item.minecraft.iron_ingot", "italic": false, "color": "white"}]'
 data modify block 10110221 5 10110222 Items[14].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
 #axe2
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " II: ", {"translate": "item.minecraft.stone_axe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " II) ", "italic": false, "color": "yellow"}, {"score": {"name": "#axe2", "objective": "jkbw.mem"}, "color": "white"}, " ", {"translate": "item.minecraft.iron_ingot", "italic": false, "color": "white"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " II: ", {"translate": "item.minecraft.stone_axe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " II) ", "italic": false, "color": "yellow"}, {"score": {"name": "#axe2", "objective": "jkbw.mem"}, "color": "white"}, " ", {"translate": "item.minecraft.iron_ingot", "italic": false, "color": "white"}]'
 data modify block 10110221 5 10110222 Items[14].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
 #axe3
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " III: ", {"translate": "item.minecraft.iron_axe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " III) ", "italic": false, "color": "yellow"}, {"score": {"name": "#axe3", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " III: ", {"translate": "item.minecraft.iron_axe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " III) ", "italic": false, "color": "yellow"}, {"score": {"name": "#axe3", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
 data modify block 10110221 5 10110222 Items[14].components.minecraft:lore[3] set from block ~ ~ ~ back_text.messages[1]
 #axe4
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " IV: ", {"translate": "item.minecraft.diamond_axe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " III) ", "italic": false, "color": "yellow"}, {"score": {"name": "#axe4", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " IV: ", {"translate": "item.minecraft.diamond_axe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " III) ", "italic": false, "color": "yellow"}, {"score": {"name": "#axe4", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
 data modify block 10110221 5 10110222 Items[14].components.minecraft:lore[4] set from block ~ ~ ~ back_text.messages[1]
 #pickaxe1
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " I: ", {"translate": "item.minecraft.wooden_pickaxe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " I) ", "italic": false, "color": "yellow"}, {"score": {"name": "#pickaxe1", "objective": "jkbw.mem"}, "color": "white"}, " ", {"translate": "item.minecraft.iron_ingot", "italic": false, "color": "white"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " I: ", {"translate": "item.minecraft.wooden_pickaxe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " I) ", "italic": false, "color": "yellow"}, {"score": {"name": "#pickaxe1", "objective": "jkbw.mem"}, "color": "white"}, " ", {"translate": "item.minecraft.iron_ingot", "italic": false, "color": "white"}]'
 data modify block 10110221 5 10110222 Items[15].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
 #pickaxe2
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " II: ", {"translate": "item.minecraft.iron_pickaxe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " I) ", "italic": false, "color": "yellow"}, {"score": {"name": "#pickaxe2", "objective": "jkbw.mem"}, "color": "white"}, " ", {"translate": "item.minecraft.iron_ingot", "italic": false, "color": "white"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " II: ", {"translate": "item.minecraft.iron_pickaxe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " I) ", "italic": false, "color": "yellow"}, {"score": {"name": "#pickaxe2", "objective": "jkbw.mem"}, "color": "white"}, " ", {"translate": "item.minecraft.iron_ingot", "italic": false, "color": "white"}]'
 data modify block 10110221 5 10110222 Items[15].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
 #pickaxe3
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " III: ", {"translate": "item.minecraft.golden_pickaxe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " II) ", "italic": false, "color": "yellow"}, {"score": {"name": "#pickaxe3", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " III: ", {"translate": "item.minecraft.golden_pickaxe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " II) ", "italic": false, "color": "yellow"}, {"score": {"name": "#pickaxe3", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
 data modify block 10110221 5 10110222 Items[15].components.minecraft:lore[3] set from block ~ ~ ~ back_text.messages[1]
 #pickaxe4
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " IV: ", {"translate": "item.minecraft.diamond_pickaxe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " III) ", "italic": false, "color": "yellow"}, {"score": {"name": "#pickaxe4", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " IV: ", {"translate": "item.minecraft.diamond_pickaxe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " III) ", "italic": false, "color": "yellow"}, {"score": {"name": "#pickaxe4", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
 data modify block 10110221 5 10110222 Items[15].components.minecraft:lore[4] set from block ~ ~ ~ back_text.messages[1]
 #shears1
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " I: ", {"score": {"name": "#shears1", "objective": "jkbw.mem"}, "color": "white"}, " ", {"translate": "item.minecraft.iron_ingot", "italic": false, "color": "white"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " I: ", {"score": {"name": "#shears1", "objective": "jkbw.mem"}, "color": "white"}, " ", {"translate": "item.minecraft.iron_ingot", "italic": false, "color": "white"}]'
 data modify block 10110221 5 10110222 Items[16].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
 #shears2
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " II: ", {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " I ", "italic": false, "color": "yellow"}, {"score": {"name": "#shears2", "objective": "jkbw.mem"}, "color": "white"}, " ", {"translate": "item.minecraft.iron_ingot", "italic": false, "color": "white"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " II: ", {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " I ", "italic": false, "color": "yellow"}, {"score": {"name": "#shears2", "objective": "jkbw.mem"}, "color": "white"}, " ", {"translate": "item.minecraft.iron_ingot", "italic": false, "color": "white"}]'
 data modify block 10110221 5 10110222 Items[16].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
 #shears3
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " III: ", {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " II ", "italic": false, "color": "yellow"}, {"score": {"name": "#shears3", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " III: ", {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " II ", "italic": false, "color": "yellow"}, {"score": {"name": "#shears3", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
 data modify block 10110221 5 10110222 Items[16].components.minecraft:lore[3] set from block ~ ~ ~ back_text.messages[1]
 #shears4
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " IV: ", {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " IV ", "italic": false, "color": "yellow"}, {"score": {"name": "#shears4", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " IV: ", {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " IV ", "italic": false, "color": "yellow"}, {"score": {"name": "#shears4", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
 data modify block 10110221 5 10110222 Items[16].components.minecraft:lore[4] set from block ~ ~ ~ back_text.messages[1]
 
-#Eaxe1
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " I: ", {"translate": "item.minecraft.wooden_axe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " I) ", "italic": false, "color": "yellow"}, {"score": {"name": "#Eaxe1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPaxe1
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " I: ", {"translate": "item.minecraft.wooden_axe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " I) ", "italic": false, "color": "yellow"}, {"score": {"name": "#XPaxe1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[17].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#Eaxe2
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " II: ", {"translate": "item.minecraft.stone_axe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " II) ", "italic": false, "color": "yellow"}, {"score": {"name": "#Eaxe2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPaxe2
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " II: ", {"translate": "item.minecraft.stone_axe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " II) ", "italic": false, "color": "yellow"}, {"score": {"name": "#XPaxe2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[17].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
-#Eaxe3
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " III: ", {"translate": "item.minecraft.iron_axe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " III) ", "italic": false, "color": "yellow"}, {"score": {"name": "#Eaxe3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPaxe3
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " III: ", {"translate": "item.minecraft.iron_axe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " III) ", "italic": false, "color": "yellow"}, {"score": {"name": "#XPaxe3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[17].components.minecraft:lore[3] set from block ~ ~ ~ back_text.messages[1]
-#Eaxe4
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " IV: ", {"translate": "item.minecraft.diamond_axe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " III) ", "italic": false, "color": "yellow"}, {"score": {"name": "#Eaxe4", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPaxe4
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " IV: ", {"translate": "item.minecraft.diamond_axe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " III) ", "italic": false, "color": "yellow"}, {"score": {"name": "#XPaxe4", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[17].components.minecraft:lore[4] set from block ~ ~ ~ back_text.messages[1]
-#Epickaxe1
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " I: ", {"translate": "item.minecraft.wooden_pickaxe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " I) ", "italic": false, "color": "yellow"}, {"score": {"name": "#Epickaxe1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPpickaxe1
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " I: ", {"translate": "item.minecraft.wooden_pickaxe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " I) ", "italic": false, "color": "yellow"}, {"score": {"name": "#XPpickaxe1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[18].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#Epickaxe2
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " II: ", {"translate": "item.minecraft.iron_pickaxe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " I) ", "italic": false, "color": "yellow"}, {"score": {"name": "#Epickaxe2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPpickaxe2
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " II: ", {"translate": "item.minecraft.iron_pickaxe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " I) ", "italic": false, "color": "yellow"}, {"score": {"name": "#XPpickaxe2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[18].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
-#Epickaxe3
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " III: ", {"translate": "item.minecraft.golden_pickaxe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " II) ", "italic": false, "color": "yellow"}, {"score": {"name": "#Epickaxe3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPpickaxe3
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " III: ", {"translate": "item.minecraft.golden_pickaxe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " II) ", "italic": false, "color": "yellow"}, {"score": {"name": "#XPpickaxe3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[18].components.minecraft:lore[3] set from block ~ ~ ~ back_text.messages[1]
-#Epickaxe4
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " IV: ", {"translate": "item.minecraft.diamond_pickaxe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " III) ", "italic": false, "color": "yellow"}, {"score": {"name": "#Epickaxe4", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPpickaxe4
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " IV: ", {"translate": "item.minecraft.diamond_pickaxe", "italic": false, "color": "yellow"}, {"text": "(", "italic": false, "color": "yellow"}, {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " III) ", "italic": false, "color": "yellow"}, {"score": {"name": "#XPpickaxe4", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[18].components.minecraft:lore[4] set from block ~ ~ ~ back_text.messages[1]
-#Eshears1
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " I: ", {"score": {"name": "#Eshears1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPshears1
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " I: ", {"score": {"name": "#XPshears1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[19].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#Eshears2
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " II: ", {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " I ", "italic": false, "color": "yellow"}, {"score": {"name": "#Eshears2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPshears2
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " II: ", {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " I ", "italic": false, "color": "yellow"}, {"score": {"name": "#XPshears2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[19].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
-#Eshears3
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " III: ", {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " II ", "italic": false, "color": "yellow"}, {"score": {"name": "#Eshears3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPshears3
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " III: ", {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " II ", "italic": false, "color": "yellow"}, {"score": {"name": "#XPshears3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[19].components.minecraft:lore[3] set from block ~ ~ ~ back_text.messages[1]
-#Eshears4
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "white"}, " IV: ", {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " IV ", "italic": false, "color": "yellow"}, {"score": {"name": "#Eshears4", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPshears4
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.tier", "italic": false, "color": "white"}, " IV: ", {"translate": "enchantment.minecraft.efficiency", "italic": false, "color": "yellow"}, {"text": " IV ", "italic": false, "color": "yellow"}, {"score": {"name": "#XPshears4", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 5 10110222 Items[19].components.minecraft:lore[4] set from block ~ ~ ~ back_text.messages[1]
 
 #sword_stone
@@ -154,32 +154,32 @@ data modify block 10110220 5 10110222 Items[7].components.minecraft:lore[0] set 
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#arrow", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
 data modify block 10110220 5 10110222 Items[8].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 
-#Esword_stone
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Esword_stone", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPsword_stone
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPsword_stone", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 5 10110222 Items[9].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Esword_iron
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Esword_iron", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPsword_iron
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPsword_iron", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 5 10110222 Items[10].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Esword_diamond
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Esword_diamond", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPsword_diamond
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPsword_diamond", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 5 10110222 Items[11].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Estick
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Estick", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPstick
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPstick", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 5 10110222 Items[12].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Eshield
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Eshield", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPshield
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPshield", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 5 10110222 Items[13].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Ebow1
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Ebow1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPbow1
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPbow1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 5 10110222 Items[14].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Ebow2
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Ebow2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPbow2
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPbow2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 5 10110222 Items[15].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Ebow3
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Ebow3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPbow3
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPbow3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 5 10110222 Items[16].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Earrow
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Earrow", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XParrow
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XParrow", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 5 10110222 Items[17].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 
 #armor1
@@ -192,14 +192,14 @@ data modify block 10110220 5 10110222 Items[19].components.minecraft:lore[2] set
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#armor3", "objective": "jkbw.mem"}, "color": "green"}, " ", {"translate": "item.minecraft.emerald", "italic": false, "color": "green"}]'
 data modify block 10110220 5 10110222 Items[20].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
 
-#Earmor1
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Earmor1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XParmor1
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XParmor1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 5 10110222 Items[21].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
-#Earmor2
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Earmor2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XParmor2
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XParmor2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 5 10110222 Items[22].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
-#Earmor3
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Earmor3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XParmor3
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XParmor3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 5 10110222 Items[23].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
 
 #potion_speed
@@ -215,36 +215,36 @@ data modify block 10110219 5 10110222 Items[2].components.minecraft:lore[0] set 
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#potion_luck", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
 data modify block 10110219 5 10110222 Items[3].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
 
-#Epotion_speed
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Epotion_speed", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPpotion_speed
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPpotion_speed", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110219 5 10110222 Items[4].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Epotion_jump
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Epotion_jump_boost", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPpotion_jump
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPpotion_jump_boost", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110219 5 10110222 Items[5].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Epotion_invisibility
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Epotion_invisibility", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPpotion_invisibility
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPpotion_invisibility", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110219 5 10110222 Items[6].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Epotion_luck
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Epotion_luck", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPpotion_luck
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPpotion_luck", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110219 5 10110222 Items[7].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
 #wind_charge
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#wind_charge", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
 data modify block 10110219 5 10110222 Items[8].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Ewind_charge
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Ewind_charge", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPwind_charge
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPwind_charge", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110219 5 10110222 Items[9].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 ## 经典 & 经验模式 资源
-#Eiron
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Eiron", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
+#XPiron_ingot
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPiron_ingot", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
 data modify block 10110219 5 10110222 Items[-4].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Egold
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Egold", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
+#XPgold_ingot
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPgold_ingot", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
 data modify block 10110219 5 10110222 Items[-3].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Ediamond
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Ediamond", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
+#XPdiamond
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPdiamond", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
 data modify block 10110219 5 10110222 Items[-2].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Eemerald
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Eemerald", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
+#XPemerald
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPemerald", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
 data modify block 10110219 5 10110222 Items[-1].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
  
 # 经典 & 经验模式指南针队伍
@@ -316,8 +316,8 @@ data modify block 10110209 4 10110222 Items[4].components.minecraft:lore[2] set 
 data modify block 10110209 4 10110222 Items[5].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110209 4 10110222 Items[6].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110209 4 10110222 Items[7].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
-#Ecompass
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Ecompass", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPcompass
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPcompass", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110209 4 10110222 Items[8].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110209 4 10110222 Items[9].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110209 4 10110222 Items[10].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
@@ -354,32 +354,32 @@ data modify block 10110218 5 10110222 Items[7].components.minecraft:lore[1] set 
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#tnt1", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
 data modify block 10110218 5 10110222 Items[8].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
 
-#Etower
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Etower", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPtower
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPtower", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110218 5 10110222 Items[9].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#Esilverfish
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Esilverfish", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPsilverfish
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPsilverfish", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110218 5 10110222 Items[10].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
-#Efireball
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Efireball", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPfireball
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPfireball", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110218 5 10110222 Items[11].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#Eiron_golem
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Eiron_golem", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPiron_golem
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPiron_golem", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110218 5 10110222 Items[12].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
-#Eapple
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Eapple", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPapple
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPapple", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110218 5 10110222 Items[13].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Esponge
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Esponge", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPsponge
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPsponge", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110218 5 10110222 Items[14].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Ewater
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Ewater", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPwater
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPwater", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110218 5 10110222 Items[15].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Etnt
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Etnt", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPtnt
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPtnt", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110218 5 10110222 Items[16].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#Etnt1
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Etnt1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPtnt1
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPtnt1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110218 5 10110222 Items[17].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
 
 #platform
@@ -395,43 +395,43 @@ data modify block 10110218 5 10110222 Items[20].components.minecraft:lore[0] set
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#pearl_blitz", "objective": "jkbw.mem"}, "color": "green"}, " ", {"translate": "item.minecraft.emerald", "italic": false, "color": "green"}]'
 data modify block 10110218 5 10110222 Items[24].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 
-#Eplatform
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Eplatform", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPplatform
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPplatform", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110218 5 10110222 Items[21].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#Eegg
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Eegg", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPegg
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPegg", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110218 5 10110222 Items[22].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#Epearl
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Epearl", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPpearl
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPpearl", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110218 5 10110222 Items[23].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Epearl_blitz
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Epearl_blitz", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPpearl_blitz
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPpearl_blitz", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110218 5 10110222 Items[25].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 
 ### 轮换物品
 #fruit
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#fruit", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
 data modify block 10110216 5 10110222 Items[0].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Efruit
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Efruit", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPfruit
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPfruit", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110216 5 10110222 Items[1].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 #trident
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#trident", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
 data modify block 10110216 5 10110222 Items[2].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Etrident
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Etrident", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPtrident
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPtrident", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110216 5 10110222 Items[3].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 #tipped_arrow
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#tipped_arrow", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
 data modify block 10110216 5 10110222 Items[4].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Etipped_arrow
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Etipped_arrow", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPtipped_arrow
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPtipped_arrow", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110216 5 10110222 Items[5].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 #crossbow_max
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#crossbow_max", "objective": "jkbw.mem"}, "color": "green"}, " ", {"translate": "item.minecraft.emerald", "italic": false, "color": "green"}]'
 data modify block 10110216 5 10110222 Items[6].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#Ecrossbow_max
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Ecrossbow_max", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPcrossbow_max
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPcrossbow_max", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110216 5 10110222 Items[7].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.crossbow_max.name", "italic": false, "color": "white"}]'
 data modify block 10110216 5 10110222 Items[6].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
@@ -442,8 +442,8 @@ data modify block 10110216 5 10110222 Items[7].components.minecraft:lore[0] set 
 #ice_bridge
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#ice_bridge", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
 data modify block 10110216 5 10110222 Items[8].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#Eice_bridge
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Eice_bridge", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPice_bridge
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPice_bridge", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110216 5 10110222 Items[9].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.ice_bridge.name", "italic": false, "color": "white"}]'
 data modify block 10110216 5 10110222 Items[8].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
@@ -454,14 +454,14 @@ data modify block 10110216 5 10110222 Items[9].components.minecraft:lore[0] set 
 #mace
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#mace", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
 data modify block 10110216 5 10110222 Items[10].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#Emace
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Emace", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPmace
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPmace", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110216 5 10110222 Items[11].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 #the_mirror
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#the_mirror", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]'
 data modify block 10110216 5 10110222 Items[12].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#Ethe_mirror
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Ethe_mirror", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPthe_mirror
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPthe_mirror", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110216 5 10110222 Items[13].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.the_mirror.name", "italic": false, "color": "white"}]'
 data modify block 10110216 5 10110222 Items[12].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
@@ -522,56 +522,56 @@ data modify block 10110217 5 10110222 Items[8].components.minecraft:lore[4] set 
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.team.shop.lore1.res", "italic": false, "color": "white"}, " 200% : ", {"score": {"name": "#res41", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"translate": "item.minecraft.diamond", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[8].components.minecraft:lore[5] set from block ~ ~ ~ back_text.messages[1]
 
-#Edragon
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Edragon", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPdragon
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPdragon", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[9].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#Ehealing
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Ehealing", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPhealing
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPhealing", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[10].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#Ehealing1
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Ehealing1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPhealing1
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPhealing1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[11].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#Esharpness
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Esharpness", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPsharpness
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPsharpness", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[12].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
-#Esharpness1
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#Esharpness1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPsharpness1
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPsharpness1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[13].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
-#Ehaste1
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "effect.minecraft.haste", "italic": false, "color": "white"}, " I: ", {"score": {"name": "#Ehaste1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPhaste1
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "effect.minecraft.haste", "italic": false, "color": "white"}, " I: ", {"score": {"name": "#XPhaste1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[14].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
-#Ehaste2
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "effect.minecraft.haste", "italic": false, "color": "white"}, " II: ", {"score": {"name": "#Ehaste2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPhaste2
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "effect.minecraft.haste", "italic": false, "color": "white"}, " II: ", {"score": {"name": "#XPhaste2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[14].components.minecraft:lore[3] set from block ~ ~ ~ back_text.messages[1]
-#Ehaste11
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "effect.minecraft.haste", "italic": false, "color": "white"}, " I: ", {"score": {"name": "#Ehaste11", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPhaste11
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "effect.minecraft.haste", "italic": false, "color": "white"}, " I: ", {"score": {"name": "#XPhaste11", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[15].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
-#Ehaste21
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "effect.minecraft.haste", "italic": false, "color": "white"}, " II: ", {"score": {"name": "#Ehaste21", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPhaste21
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "effect.minecraft.haste", "italic": false, "color": "white"}, " II: ", {"score": {"name": "#XPhaste21", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[15].components.minecraft:lore[3] set from block ~ ~ ~ back_text.messages[1]
-#Eres1
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.team.shop.lore1.res", "italic": false, "color": "white"}, " 50% : ", {"score": {"name": "#Eres1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPres1
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.team.shop.lore1.res", "italic": false, "color": "white"}, " 50% : ", {"score": {"name": "#XPres1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[16].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
-#Eres2
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.team.shop.lore1.res", "italic": false, "color": "white"}, " 100% : ", {"score": {"name": "#Eres2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPres2
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.team.shop.lore1.res", "italic": false, "color": "white"}, " 100% : ", {"score": {"name": "#XPres2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[16].components.minecraft:lore[3] set from block ~ ~ ~ back_text.messages[1]
-#Eres3
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.team.shop.lore2.res", "italic": false, "color": "white"}, " ", {"translate": "item.minecraft.emerald", "italic": false, "color": "green"}, " : ", {"score": {"name": "#Eres3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPres3
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.team.shop.lore2.res", "italic": false, "color": "white"}, " ", {"translate": "item.minecraft.emerald", "italic": false, "color": "green"}, " : ", {"score": {"name": "#XPres3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[16].components.minecraft:lore[4] set from block ~ ~ ~ back_text.messages[1]
-#Eres4
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.team.shop.lore1.res", "italic": false, "color": "white"}, " 200% : ", {"score": {"name": "#Eres4", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPres4
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.team.shop.lore1.res", "italic": false, "color": "white"}, " 200% : ", {"score": {"name": "#XPres4", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[16].components.minecraft:lore[5] set from block ~ ~ ~ back_text.messages[1]
-#Eres11
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.team.shop.lore1.res", "italic": false, "color": "white"}, " 50% : ", {"score": {"name": "#Eres11", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPres11
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.team.shop.lore1.res", "italic": false, "color": "white"}, " 50% : ", {"score": {"name": "#XPres11", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[17].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
-#Eres21
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.team.shop.lore1.res", "italic": false, "color": "white"}, " 100% : ", {"score": {"name": "#Eres21", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPres21
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.team.shop.lore1.res", "italic": false, "color": "white"}, " 100% : ", {"score": {"name": "#XPres21", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[17].components.minecraft:lore[3] set from block ~ ~ ~ back_text.messages[1]
-#Eres31
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.team.shop.lore2.res", "italic": false, "color": "white"}, " ", {"translate": "item.minecraft.emerald", "italic": false, "color": "green"}, " : ", {"score": {"name": "#Eres31", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPres31
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.team.shop.lore2.res", "italic": false, "color": "white"}, " ", {"translate": "item.minecraft.emerald", "italic": false, "color": "green"}, " : ", {"score": {"name": "#XPres31", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[17].components.minecraft:lore[4] set from block ~ ~ ~ back_text.messages[1]
-#Eres41
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.team.shop.lore1.res", "italic": false, "color": "white"}, " 200% : ", {"score": {"name": "#Eres41", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPres41
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.team.shop.lore1.res", "italic": false, "color": "white"}, " 200% : ", {"score": {"name": "#XPres41", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[17].components.minecraft:lore[5] set from block ~ ~ ~ back_text.messages[1]
 
 #protect1
@@ -599,29 +599,29 @@ data modify block 10110217 5 10110222 Items[19].components.minecraft:lore[4] set
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "enchantment.minecraft.protection", "italic": false, "color": "white"}, " IV: ", {"score": {"name": "#protect41", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"translate": "item.minecraft.diamond", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[19].components.minecraft:lore[5] set from block ~ ~ ~ back_text.messages[1]
 
-#Eprotect1
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "enchantment.minecraft.protection", "italic": false, "color": "white"}, " I: ", {"score": {"name": "#Eprotect1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPprotect1
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "enchantment.minecraft.protection", "italic": false, "color": "white"}, " I: ", {"score": {"name": "#XPprotect1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[20].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
-#Eprotect2
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "enchantment.minecraft.protection", "italic": false, "color": "white"}, " II: ", {"score": {"name": "#Eprotect2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPprotect2
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "enchantment.minecraft.protection", "italic": false, "color": "white"}, " II: ", {"score": {"name": "#XPprotect2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[20].components.minecraft:lore[3] set from block ~ ~ ~ back_text.messages[1]
-#Eprotect3
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "enchantment.minecraft.protection", "italic": false, "color": "white"}, " III: ", {"score": {"name": "#Eprotect3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPprotect3
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "enchantment.minecraft.protection", "italic": false, "color": "white"}, " III: ", {"score": {"name": "#XPprotect3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[20].components.minecraft:lore[4] set from block ~ ~ ~ back_text.messages[1]
-#Eprotect4
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "enchantment.minecraft.protection", "italic": false, "color": "white"}, " IV: ", {"score": {"name": "#Eprotect4", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPprotect4
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "enchantment.minecraft.protection", "italic": false, "color": "white"}, " IV: ", {"score": {"name": "#XPprotect4", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[20].components.minecraft:lore[5] set from block ~ ~ ~ back_text.messages[1]
-#Eprotect11
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "enchantment.minecraft.protection", "italic": false, "color": "white"}, " I: ", {"score": {"name": "#Eprotect11", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPprotect11
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "enchantment.minecraft.protection", "italic": false, "color": "white"}, " I: ", {"score": {"name": "#XPprotect11", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[21].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
-#Eprotect21
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "enchantment.minecraft.protection", "italic": false, "color": "white"}, " II: ", {"score": {"name": "#Eprotect21", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPprotect21
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "enchantment.minecraft.protection", "italic": false, "color": "white"}, " II: ", {"score": {"name": "#XPprotect21", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[21].components.minecraft:lore[3] set from block ~ ~ ~ back_text.messages[1]
-#Eprotect31
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "enchantment.minecraft.protection", "italic": false, "color": "white"}, " III: ", {"score": {"name": "#Eprotect31", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPprotect31
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "enchantment.minecraft.protection", "italic": false, "color": "white"}, " III: ", {"score": {"name": "#XPprotect31", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[21].components.minecraft:lore[4] set from block ~ ~ ~ back_text.messages[1]
-#Eprotect41
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "enchantment.minecraft.protection", "italic": false, "color": "white"}, " IV: ", {"score": {"name": "#Eprotect41", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPprotect41
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"translate": "enchantment.minecraft.protection", "italic": false, "color": "white"}, " IV: ", {"score": {"name": "#XPprotect41", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110217 5 10110222 Items[21].components.minecraft:lore[5] set from block ~ ~ ~ back_text.messages[1]
 
 #trap1
@@ -634,252 +634,252 @@ data modify block 10110222 5 10110222 Items[2].components.minecraft:lore[5] set 
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.trap.name", "italic": false, "color": "white"}, " 3: ", {"score": {"name": "#trap3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"translate": "item.minecraft.diamond", "italic": false, "color": "aqua"}]'
 data modify block 10110222 5 10110222 Items[2].components.minecraft:lore[6] set from block ~ ~ ~ back_text.messages[1]
 
-#Etrap1
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.trap.name", "italic": false, "color": "white"}, " 1: ", {"score": {"name": "#Etrap1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPtrap1
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.trap.name", "italic": false, "color": "white"}, " 1: ", {"score": {"name": "#XPtrap1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 5 10110222 Items[3].components.minecraft:lore[4] set from block ~ ~ ~ back_text.messages[1]
-#Etrap2
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.trap.name", "italic": false, "color": "white"}, " 2: ", {"score": {"name": "#Etrap2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPtrap2
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.trap.name", "italic": false, "color": "white"}, " 2: ", {"score": {"name": "#XPtrap2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 5 10110222 Items[3].components.minecraft:lore[5] set from block ~ ~ ~ back_text.messages[1]
-#Etrap3
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.trap.name", "italic": false, "color": "white"}, " 3: ", {"score": {"name": "#Etrap3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#XPtrap3
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.trap.name", "italic": false, "color": "white"}, " 3: ", {"score": {"name": "#XPtrap3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 5 10110222 Items[3].components.minecraft:lore[6] set from block ~ ~ ~ back_text.messages[1]
 
 # urf
 ## item
-#urfEcut_sandstone
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEcut_sandstone", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPcut_sandstone
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPcut_sandstone", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[0].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEend_stone
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEend_stone", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPend_stone
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPend_stone", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[1].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEpacked_ice
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEpacked_ice", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPpacked_ice
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPpacked_ice", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[2].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEglowstone
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEglowstone", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPglowstone
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPglowstone", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[3].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEladder
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEladder", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPladder
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPladder", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[4].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEcobweb
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEcobweb", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPcobweb
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPcobweb", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[5].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEglass
+#urfXPglass
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.anti_explode", "italic": false, "color": "white"}, {"translate": "block.minecraft.glass"}]'
 data modify block 10110222 4 10110222 Items[6].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEglass", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPglass", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[6].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEchest
+#urfXPchest
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.print.chest.tip", "italic": false, "color": "gray"}, {"translate": "block.minecraft.fletching_table", "color": "white"}, "."]'
 data modify block 10110222 4 10110222 Items[7].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEchest", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPchest", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[7].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#urfEender_chest
+#urfXPender_chest
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.print.enderchest.tip1", "italic": false, "color": "gray"}]'
 data modify block 10110222 4 10110222 Items[8].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.print.enderchest.tip2", "italic": false, "color": "gray"}, {"translate": "block.minecraft.ancient_debris", "color": "white"}, "."]'
 data modify block 10110222 4 10110222 Items[8].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEender_chest", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPender_chest", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[8].components.minecraft:lore[2] set from block ~ ~ ~ back_text.messages[1]
-#urfEleather_helmet
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEleather_helmet", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPleather_helmet
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPleather_helmet", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[9].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEleather_chestplate
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEleather_chestplate", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPleather_chestplate
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPleather_chestplate", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[10].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEleather_leggings
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEleather_leggings", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPleather_leggings
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPleather_leggings", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[11].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEleather_boots
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEleather_boots", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPleather_boots
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPleather_boots", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[12].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEstone_pickaxe
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEstone_pickaxe", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPstone_pickaxe
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPstone_pickaxe", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[13].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEiron_pickaxe
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEiron_pickaxe", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPiron_pickaxe
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPiron_pickaxe", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[14].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEgolden_pickaxe
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEgolden_pickaxe", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPgolden_pickaxe
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPgolden_pickaxe", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[15].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEchainmail_chestplate
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEchainmail_chestplate", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPchainmail_chestplate
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPchainmail_chestplate", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[16].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEiron_boots
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEiron_boots", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPiron_boots
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPiron_boots", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[17].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEgolden_helmet
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEgolden_helmet", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPgolden_helmet
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPgolden_helmet", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[18].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEgolden_chestplate
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEgolden_chestplate", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPgolden_chestplate
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPgolden_chestplate", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[19].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEgolden_leggings
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEgolden_leggings", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPgolden_leggings
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPgolden_leggings", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[20].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEgolden_boots
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEgolden_boots", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPgolden_boots
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPgolden_boots", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[21].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEdiamond_helmet
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEdiamond_helmet", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPdiamond_helmet
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPdiamond_helmet", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[22].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEdiamond_chestplate
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEdiamond_chestplate", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPdiamond_chestplate
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPdiamond_chestplate", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[23].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEdiamond_leggings
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEdiamond_leggings", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPdiamond_leggings
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPdiamond_leggings", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[24].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEdiamond_boots
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEdiamond_boots", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPdiamond_boots
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPdiamond_boots", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110222 4 10110222 Items[25].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 
-#urfEfishing_rod
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEfishing_rod", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPfishing_rod
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPfishing_rod", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[0].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEstick
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEstick", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPstick
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPstick", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[1].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEwooden_sword
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEwooden_sword", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPwooden_sword
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPwooden_sword", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[2].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEstone_sword1
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEstone_sword1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPstone_sword1
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPstone_sword1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[3].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEstone_sword2
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEstone_sword2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPstone_sword2
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPstone_sword2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[4].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEiron_sword
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEiron_sword", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPiron_sword
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPiron_sword", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[5].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEdiamond_sword
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEdiamond_sword", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPdiamond_sword
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPdiamond_sword", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[6].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEgolden_sword
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEgolden_sword", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPgolden_sword
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPgolden_sword", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[7].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEshield
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEshield", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPshield
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPshield", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[8].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEarrow
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEarrow", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXParrow
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXParrow", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[9].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEbow1
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEbow1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPbow1
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPbow1", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[10].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEbow2
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEbow2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPbow2
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPbow2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[11].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEbow3
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEbow3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPbow3
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPbow3", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[12].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEbow4
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEbow4", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPbow4
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPbow4", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[13].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEbow5
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEbow5", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPbow5
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPbow5", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[14].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEbow6
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEbow6", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPbow6
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPbow6", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[15].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEpotion_speed
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEpotion_speed", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPpotion_speed
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPpotion_speed", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[16].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEpotion_jump
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEpotion_jump", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPpotion_jump
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPpotion_jump", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[17].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEpotion_strength
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEpotion_strength", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPpotion_strength
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPpotion_strength", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[18].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEpotion_healing
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEpotion_healing", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPpotion_healing
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPpotion_healing", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[19].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEpotion_healing2
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEpotion_healing2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPpotion_healing2
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPpotion_healing2", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[20].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEpotion_regen
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEpotion_regen", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPpotion_regen
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPpotion_regen", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110221 4 10110222 Items[21].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 
-#urfEtnt
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEtnt", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPtnt
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPtnt", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 4 10110222 Items[0].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#urfEplatform
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEplatform", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPplatform
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPplatform", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 4 10110222 Items[1].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#urfEtrap
+#urfXPtrap
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.trap.name", "italic": false, "color": "white"}]'
 data modify block 10110220 4 10110222 Items[2].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.trap.lore", "italic": false, "color": "gold"}]'
 data modify block 10110220 4 10110222 Items[2].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEtrap", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPtrap", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 4 10110222 Items[2].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#urfEwall
+#urfXPwall
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.wall.name", "italic": false, "color": "white"}]'
 data modify block 10110220 4 10110222 Items[3].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.wall.lore", "italic": false, "color": "gold"}]'
 data modify block 10110220 4 10110222 Items[3].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEwall", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPwall", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 4 10110222 Items[3].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#urfEice_walker
+#urfXPice_walker
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.the_truly", "italic": false, "color": "white"}, {"translate": "enchantment.minecraft.frost_walker"}]'
 data modify block 10110220 4 10110222 Items[4].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.ice_walker.lore1", "italic": false, "color": "gold"}, {"translate": "block.minecraft.air"}, {"storage": "jk:bw", "nbt": "txt.item.shop.ice_walker.lore2"}, {"translate": "block.minecraft.packed_ice"}, "."]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.ice_walker.lore1", "italic": false, "color": "gold"}, {"translate": "block.minecraft.air", "color": "white"}, {"storage": "jk:bw", "nbt": "txt.item.shop.ice_walker.lore2"}, {"translate": "block.minecraft.packed_ice", "color": "white"}, "."]'
 data modify block 10110220 4 10110222 Items[4].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEice_walker", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPice_walker", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 4 10110222 Items[4].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#urfEback_scroll
+#urfXPback_scroll
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.back_scroll.name", "italic": false, "color": "white"}]'
 data modify block 10110220 4 10110222 Items[5].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.back_scroll.lore", "italic": false, "color": "gold"}]'
 data modify block 10110220 4 10110222 Items[5].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEback_scroll", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPback_scroll", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 4 10110222 Items[5].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#urfEcompass
+#urfXPcompass
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.compass.lore", "italic": false, "color": "gold"}]'
 data modify block 10110220 4 10110222 Items[6].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEcompass", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPcompass", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 4 10110222 Items[6].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#urfEpearl
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEpearl", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPpearl
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPpearl", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 4 10110222 Items[7].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEanti_arrow
+#urfXPanti_arrow
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.anti_arrow.name", "italic": false, "color": "white"}]'
 data modify block 10110220 4 10110222 Items[8].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.anti_arrow.lore", "italic": false, "color": "gold"}]'
 data modify block 10110220 4 10110222 Items[8].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEanti_arrow", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPanti_arrow", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 4 10110222 Items[8].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#urfEfire_charge
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEfire_charge", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPfire_charge
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPfire_charge", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 4 10110222 Items[9].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#urfEegg
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEegg", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPegg
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPegg", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 4 10110222 Items[10].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
-#urfEapple
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEapple", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPapple
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPapple", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 4 10110222 Items[11].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEwind_charge
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEwind_charge", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPwind_charge
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPwind_charge", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 4 10110222 Items[12].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEpearl_blitz
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEpearl_blitz", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
+#urfXPpearl_blitz
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPpearl_blitz", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]'
 data modify block 10110220 4 10110222 Items[13].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEiron
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEiron", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
+#urfXPiron_ingot
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPiron_ingot", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
 data modify block 10110220 4 10110222 Items[-4].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEgold
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEgold", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
+#urfXPgold_ingot
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPgold_ingot", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
 data modify block 10110220 4 10110222 Items[-3].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEdiamond
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEdiamond", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
+#urfXPdiamond
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPdiamond", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
 data modify block 10110220 4 10110222 Items[-2].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#urfEemerald
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfEemerald", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
+#urfXPemerald
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPemerald", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]'
 data modify block 10110220 4 10110222 Items[-1].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 
 # 商店道具
 # 指南针占位（白色玻璃板）
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.compass.name", "italic": false, "color": "gray", "bold": true}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.compass.name", "italic": false, "color": "white", "bold": true}]'
 data modify block 10110222 5 10110222 Items[1].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.compass.lore0", "italic": false, "color": "gray"}]'
 data modify block 10110222 5 10110222 Items[1].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
@@ -1059,8 +1059,10 @@ data modify block 10110209 3 10110222 Items[3].components.minecraft:lore[0] set 
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.spyglass.tip2", "color": "gray", "italic": false}]'
 data modify block 10110209 3 10110222 Items[3].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
 ## 禁区
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.ban_zone", "color": "gray", "italic": false}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.ban_zone", "color": "white", "italic": false}]'
 data modify block 10110222 5 10110222 Items[0].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.ban_zone_tip", "color": "gray", "italic": false}, {"keybind": "key.sneak"}, {"storage": "jk:bw", "nbt": "txt.item.ban_zone_tip_"}]'
+data modify block 10110222 5 10110222 Items[0].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 
 # 管理用
 ## 商店
@@ -1240,7 +1242,7 @@ data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "
 data modify block 10110218 5 10110222 Items[18].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110218 5 10110222 Items[21].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110220 4 10110222 Items[1].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.platform.lore0", "italic": false, "color": "gold"}, {"translate": "block.minecraft.slime_block"}, {"storage": "jk:bw", "nbt": "txt.item.shop.platform.lore1"}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.shop.platform.lore0", "italic": false, "color": "gold"}, {"translate": "block.minecraft.slime_block", "color": "white"}, {"storage": "jk:bw", "nbt": "txt.item.shop.platform.lore1"}]'
 data modify block 10110218 5 10110222 Items[18].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110218 5 10110222 Items[21].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110220 4 10110222 Items[1].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]

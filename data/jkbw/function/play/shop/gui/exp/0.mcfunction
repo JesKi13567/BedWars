@@ -1,1 +1,0 @@
-function jkbw:play/shop/gui/classic/0

@@ -3,7 +3,7 @@ function jkbw:play/start/special_mode/multi
 
 # 侧边栏
 scoreboard objectives remove jkbw.display
-scoreboard objectives add jkbw.display dummy {"text": "⭐JKの起床战争⭐", "color": "yellow", "bold": true}
+scoreboard objectives add jkbw.display dummy {"text": "⭐JKBW⭐", "color": "yellow", "bold": true}
 scoreboard objectives setdisplay sidebar jkbw.display
 execute if score #test_mode jkbw.mem matches 1 run scoreboard players set .tip0 jkbw.display 99
 execute unless score #test_mode jkbw.mem matches 1 run scoreboard players reset .tip0 jkbw.display

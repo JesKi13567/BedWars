@@ -14,7 +14,7 @@ execute if score #res_mode jkbw.mem matches 0..1 at @s[tag=!jkbw_invisible] if i
 execute if block ~ ~ ~ tripwire run function jkbw:play/special/trap
 execute if block ~ ~1 ~ tripwire run function jkbw:play/special/trap
 # 手持诸葛连弩无箭
-execute if score #res_mode jkbw.mem matches 0..1 if score #ENABLE_crossbow_max jkbw.mem matches 1 if items entity @s weapon.mainhand crossbow[custom_data={jkbw: ["max_crossbow"]}] unless data entity @s SelectedItem.components.minecraft:charged_projectiles run function jkbw:play/special/crossbow_max
+execute if score #res_mode jkbw.mem matches 0..1 if score #ACCESS_crossbow_max jkbw.mem matches 1 if items entity @s weapon.mainhand crossbow[custom_data={jkbw: ["max_crossbow"]}] unless data entity @s SelectedItem.components.minecraft:charged_projectiles run function jkbw:play/special/crossbow_max
 
 # 重置潜行检测
 scoreboard players set @s jkbw.Player.Crouching 0

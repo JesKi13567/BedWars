@@ -21,10 +21,10 @@ execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "platform"]}] run function jkbw:play/shop/item/special/custom {id: 7, name: platform, res: gold_ingot}
 
 # 资源
-execute if score #res_mode jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "iron"]}] run function jkbw:play/shop/item/special/res {item: iron, name: iron_ingot}
-execute if score #res_mode jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "gold"]}] run function jkbw:play/shop/item/special/res {item: gold, name: gold_ingot}
-execute if score #res_mode jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "diamond"]}] run function jkbw:play/shop/item/special/res {item: diamond, name: diamond}
-execute if score #res_mode jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "emerald"]}] run function jkbw:play/shop/item/special/res {item: emerald, name: emerald}
+execute if score #res_mode jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "iron"]}] run function jkbw:play/shop/item/special/res {item: iron_ingot}
+execute if score #res_mode jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "gold"]}] run function jkbw:play/shop/item/special/res {item: gold_ingot}
+execute if score #res_mode jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "diamond"]}] run function jkbw:play/shop/item/special/res {item: diamond}
+execute if score #res_mode jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "emerald"]}] run function jkbw:play/shop/item/special/res {item: emerald}
 
 # 指南针
 execute if entity @e[type=text_display, tag=jkbw_bed_red, scores={jkbw.Bed.State=3}, limit=1] unless items entity @s[team=!jkbw.red] enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "compass", "red"]}] run function jkbw:play/shop/item/compass {id: 1, team: red}
