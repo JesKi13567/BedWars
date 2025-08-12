@@ -126,7 +126,7 @@ scoreboard players set #urfXPstone_sword2 jkbw.mem 70
 scoreboard players set #urfXPiron_sword jkbw.mem 300
 scoreboard players set #urfXPdiamond_sword jkbw.mem 400
 scoreboard players set #urfXPgolden_sword jkbw.mem 600
-scoreboard players set #urfXParrow jkbw.mem 100
+scoreboard players set #urfXParrow jkbw.mem 50
 scoreboard players set #urfXPbow1 jkbw.mem 300
 scoreboard players set #urfXPbow2 jkbw.mem 700
 scoreboard players set #urfXPbow3 jkbw.mem 1100

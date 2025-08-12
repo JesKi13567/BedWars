@@ -28,7 +28,7 @@ item replace entity @s enderchest.25 with air
 item replace entity @s enderchest.26 with air
 
 # 配方
-recipe take @a *
+recipe take @s *
 execute if score #res_mode jkbw.mem matches 2 run recipe give @s jkbw:chest
 execute if score #res_mode jkbw.mem matches 2 run recipe give @s jkbw:fletching_table
 execute if score #res_mode jkbw.mem matches 2 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/orange

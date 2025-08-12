@@ -1,7 +1,7 @@
 setblock 10110221 4 10110222 white_shulker_box[facing=north]{Items: [{Slot: 0b, id: "fishing_rod", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "fishing_rod"]}, lore: ['""']}}, \
 {Slot: 1b, id: "stick", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "stick"]}, enchantments: {knockback: 1}, lore: ['""']}}, \
 {Slot: 8b, id: "shield", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "shield"]}, damage: 326, lore: ['""']}}, \
-{Slot: 9b, id: "arrow", count: 2b, components: {custom_data: {jkbw: ["shop", "urf", "arrow"]}, lore: ['""']}}, \
+{Slot: 9b, id: "arrow", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "arrow"]}, lore: ['""']}}, \
 {Slot: 10b, id: "bow", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "bow1"]}, enchantments: {infinity: 1}, lore: ['""']}}, \
 {Slot: 11b, id: "bow", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "bow2"]}, enchantments: {infinity: 1, power: 1}, lore: ['""']}}, \
 {Slot: 12b, id: "bow", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "bow3"]}, enchantments: {infinity: 1, power: 2}, lore: ['""']}}, \
