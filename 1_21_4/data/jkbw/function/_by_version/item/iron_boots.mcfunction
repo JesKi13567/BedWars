@@ -1,1 +1,1 @@
-give @s[tag=jkbw_buy_success] iron_boots[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, enchantments={protection: 1}, attribute_modifiers=[{id: "1-1-1-1", type: "knockback_resistance", operation: "add_value", amount: 10, slot: "feet"}]]
+give @s[tag=jkbw_buy_success] iron_boots[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, enchantments={protection: 1}, attribute_modifiers=[{id: "knockback_resistance", type: "knockback_resistance", operation: "add_value", amount: 10, slot: "feet"}]]

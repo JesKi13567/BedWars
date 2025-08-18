@@ -289,7 +289,7 @@ data modify storage jk:bw txt.display.how2play.global set value "起床戰爭是
 data modify storage jk:bw txt.display.how2play.1 set value "經典/經驗模式下，玩家初始裝備"
 data modify storage jk:bw txt.display.how2play.1_1 set value "套裝，攜帶"
 data modify storage jk:bw txt.display.how2play.1_2 set value "各一。商店可存儲私人物品、購買團隊增益和輪換道具等。"
-data modify storage jk:bw txt.display.how2play.2 set value "無限火力模式下，攻擊冷卻固定為1.8-，玩家初始只攜帶一個"
+data modify storage jk:bw txt.display.how2play.2 set value "無限火力模式下，玩家初始只攜帶一個"
 data modify storage jk:bw txt.display.how2play.2_1 set value "。商店可購買團隊箱子，武器和盔甲均有耐久，沒有團隊增益。遊戲隨時間進行，將逐步提升玩家的"
 data modify storage jk:bw txt.display.how2play.2_2 set value "，後期還會解鎖"
 data modify storage jk:bw txt.display.how2play.2_3 set value "。死亡後等級只會減半。"
