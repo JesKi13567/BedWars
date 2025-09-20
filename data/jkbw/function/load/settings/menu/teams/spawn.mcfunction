@@ -1,7 +1,5 @@
 $kill @e[type=text_display, tag=jkbw_spawn_$(team), distance=..6]
-$execute align xyz run summon text_display ~.5 ~.5 ~.5 {Tags: ["jkbw", "jkbw_point", "jkbw_spawn_$(team)", "jkbw_spawn_display", "jkbw_new_display"], text: '""', billboard: "center", alignment: "center", line_width: 200}
-$data modify block 10110222 1 10110222 back_text.messages[0] set value '[{"storage": "jk:bw", "nbt": "txt.display.team.$(team)", "color": "$(color)"}, {"storage": "jk:bw", "nbt": "txt.display.spawn_point1"}]'
-function jkbw:load/settings/menu/text_display
+$execute align xyz run summon text_display ~.5 ~.5 ~.5 {Tags: ["jkbw", "jkbw_point", "jkbw_spawn_$(team)", "jkbw_spawn_display"], text: '[{"storage": "jk:bw", "nbt": "txt.display.team.$(team)", "color": "$(color)"}, {"storage": "jk:bw", "nbt": "txt.display.spawn_point1"}]', billboard: "center", alignment: "center", line_width: 200}
 tp @e[type=text_display, tag=jkbw_spawn_display, limit=1, sort=nearest] ~ ~ ~ facing entity @s
 
 # 记录点位

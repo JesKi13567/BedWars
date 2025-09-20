@@ -6,7 +6,7 @@ execute as @s[tag=jkbw_button_team_distribute] run function jkbw:play/ready/butt
 execute as @s[tag=jkbw_button_bed_type] run function jkbw:play/ready/button/bed_type/update_
 execute as @s[tag=jkbw_button_exp_mode] run function jkbw:play/ready/button/exp_mode/update_
 execute as @s[tag=jkbw_button_set_time] run function jkbw:play/ready/button/set_time/update_
-execute as @s[tag=jkbw_button_chunk] run function jkbw:load/settings/menu/shop/load_chunk
+execute as @s[tag=jkbw_button_chunk] run function jkbw:load/settings/menu/shop/containers
 execute as @s[tag=jkbw_button_price] run function jkbw:load/settings/menu/shop/init
 
 playsound block.note_block.bell player @a[distance=..6]

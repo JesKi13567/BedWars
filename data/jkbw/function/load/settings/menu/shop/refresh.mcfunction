@@ -1324,14 +1324,13 @@ data modify block 10110217 5 10110222 Items[19].components.minecraft:lore[0] set
 data modify block 10110217 5 10110222 Items[20].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110217 5 10110222 Items[21].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 
-# 刷新提示
-kill @e[type=text_display, tag=jkbw_chunk_tip, limit=1]
-summon text_display 10110219 4 10110220 {Tags: ["jkbw", "jkbw_show", "jkbw_chunk_tip", "jkbw_new_display"], text: '""', billboard: "center", alignment: "center", line_width: 200}
-data modify block ~ ~ ~ back_text.messages[0] set value '["", {"storage": "jk:bw", "nbt": "txt.print.container_chunk_tip1", "color": "gold"}, {"translate": "block.minecraft.shulker_box"}, {"storage": "jk:bw", "nbt": "txt.print.container_chunk_tip2", "color": "gold"}]'
-function jkbw:load/settings/menu/text_display
+# 刷新按钮 / 提示
+execute positioned 10110222 1 10110222 run kill @e[distance=..20, tag=jkbw_cannot_kill]
 
-# 刷新方块按钮
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.button.new_blocks", "color": "red", "bold": true}]'
-data modify entity @e[type=text_display, tag=jkbw_button_chunk, limit=1] text set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.button.reset_price", "color": "aqua", "bold": true}]'
-data modify entity @e[type=text_display, tag=jkbw_button_price, limit=1] text set from block ~ ~ ~ back_text.messages[1]
+summon interaction 10110222 2 10110222 {response: true, Tags: ["jkbw", "jkbw_button", "jkbw_button_chunk", "jkbw_cannot_kill"], height: .99f, width: .99f}
+summon interaction 10110209 2 10110222 {response: true, Tags: ["jkbw", "jkbw_button", "jkbw_button_price", "jkbw_cannot_kill"], height: .99f, width: .99f}
+
+summon text_display 10110222 2.5 10110222 {Tags: ["jkbw", "jkbw_show", "jkbw_cannot_kill"], text: '[{"storage": "jk:bw", "nbt": "txt.button.new_blocks", "color": "red", "bold": true}]', billboard: "center", alignment: "center", line_width: 200}
+summon text_display 10110209 2.5 10110222 {Tags: ["jkbw", "jkbw_show", "jkbw_cannot_kill"], text: '[{"storage": "jk:bw", "nbt": "txt.button.reset_price", "color": "aqua", "bold": true}]', billboard: "center", alignment: "center", line_width: 200}
+
+summon text_display 10110219 4 10110220 {Tags: ["jkbw", "jkbw_show", "jkbw_cannot_kill"], text: '["", {"storage": "jk:bw", "nbt": "txt.print.container_chunk_tip1", "color": "gold"}, {"translate": "block.minecraft.shulker_box"}, {"storage": "jk:bw", "nbt": "txt.print.container_chunk_tip2", "color": "gold"}]', billboard: "center", alignment: "center", line_width: 200}

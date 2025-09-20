@@ -5,13 +5,6 @@ fill 10110222 1 10110216 10110214 1 10110209 barrel[facing=up] destroy
 # 牌子
 setblock 10110222 1 10110222 cherry_sign{is_waxed: 1b, front_text: {messages: ['""', '""', '""', '""']}, back_text: {messages: ['""', '""', '""', '""']}} destroy
 
-# 刷新按钮
-execute positioned 10110222 1 10110222 run kill @e[distance=..20, tag=jkbw_button]
-summon interaction 10110222 2 10110222 {response: true, Tags: ["jkbw", "jkbw_button", "jkbw_button_chunk"], height: .99f, width: .99f}
-summon text_display 10110222 2.5 10110222 {Tags: ["jkbw", "jkbw_button", "jkbw_button_chunk"], text: '""', billboard: "center", alignment: "center", line_width: 200}
-summon interaction 10110209 2 10110222 {response: true, Tags: ["jkbw", "jkbw_button", "jkbw_button_price"], height: .99f, width: .99f}
-summon text_display 10110209 2.5 10110222 {Tags: ["jkbw", "jkbw_button", "jkbw_button_price"], text: '""', billboard: "center", alignment: "center", line_width: 200}
-
 # 主菜单
 function jkbw:load/settings/menu/shop/box/0
 

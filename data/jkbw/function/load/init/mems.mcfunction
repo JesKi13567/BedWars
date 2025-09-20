@@ -60,7 +60,13 @@ scoreboard players set #shop_items_6 jkbw.mem 27
 scoreboard players set #shop_items_7 jkbw.mem 27
 scoreboard players set #shop_items_8 jkbw.mem 27
 scoreboard players set #shop_items_9 jkbw.mem 27
-
+# 轮换道具永久保存
+scoreboard players reset #ACCESS_permanent_save jkbw.mem
+# 某些道具的耐久度
+# 无 默认 1 一半 2 满
+scoreboard players reset #DURABILITY_shield jkbw.mem
+scoreboard players reset #DURABILITY_trident jkbw.mem
+scoreboard players reset #DURABILITY_mace jkbw.mem
 # 计算用数字
 scoreboard players set #-1 jkbw.mem -1
 scoreboard players set #1 jkbw.mem 1

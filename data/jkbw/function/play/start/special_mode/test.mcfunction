@@ -15,3 +15,4 @@ scoreboard players set #ACCESS_crossbow_max jkbw.mem 1
 scoreboard players set #ACCESS_ice_bridge jkbw.mem 1
 scoreboard players set #ACCESS_mace jkbw.mem 1
 scoreboard players set #ACCESS_the_mirror jkbw.mem 1
+scoreboard players reset #ACCESS_permanent_save jkbw.mem

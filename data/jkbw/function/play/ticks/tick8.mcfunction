@@ -21,4 +21,3 @@ execute as @e[type=item, tag=jkbw_res, nbt={NoGravity: 1b}] at @s unless entity 
 
 # 清理实体
 kill @e[type=chicken]
-kill @e[type=trident, nbt={inGround: true}]

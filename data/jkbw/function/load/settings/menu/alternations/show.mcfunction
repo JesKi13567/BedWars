@@ -21,11 +21,15 @@ execute if score #ACCESS_the_mirror jkbw.mem matches 1 run data modify block 101
 summon marker ~ ~ ~ {Tags: ["jkbw", "jkbw_alternations", "the_mirror"]}
 data modify entity @e[type=marker, limit=1, tag=jkbw_alternations, tag=the_mirror] CustomName set from block 10110222 1 10110222 back_text.messages[0]
 
-tellraw @a[tag=jkbw_admin] [{"storage": "jk:bw", "nbt": "txt.item.shop.alternations"}, ": ", \
+execute unless score #ACCESS_permanent_save jkbw.mem matches 1 run data modify block 10110222 1 10110222 back_text.messages[0] set value '[{"text": "[", "color": "gray", "italic": false}, {"storage": "jk:bw", "nbt": "txt.print.permanent_save"}, "]"]'
+execute if score #ACCESS_permanent_save jkbw.mem matches 1 run data modify block 10110222 1 10110222 back_text.messages[0] set value '[{"text": "[", "color": "green", "italic": false}, {"storage": "jk:bw", "nbt": "txt.print.permanent_save"}, "]"]'
+summon marker ~ ~ ~ {Tags: ["jkbw", "jkbw_alternations", "permanent_save"]}
+data modify entity @e[type=marker, limit=1, tag=jkbw_alternations, tag=permanent_save] CustomName set from block 10110222 1 10110222 back_text.messages[0]
+
+tellraw @a[tag=jkbw_admin] [{"storage": "jk:bw", "nbt": "txt.item.shop.alternations"}, ": ", {"selector": "@e[type=marker, limit=1, tag=jkbw_alternations, tag=permanent_save]", "hoverEvent": {"action": "show_text", "contents": [{"storage": "jk:bw", "nbt": "txt.print.permanent_save_tip1"}, {"storage": "jk:bw", "nbt": "txt.print.test_mode", "color": "red", "bold": true}, {"storage": "jk:bw", "nbt": "txt.print.permanent_save_tip2"}]}, "clickEvent": {"action": "run_command", "value": "/function jkbw:load/settings/menu/alternations/set/permanent_save"}}, "\n", \
 {"selector": "@e[type=marker, limit=1, tag=jkbw_alternations, tag=trident]", "hoverEvent": {"action": "show_text", "contents": ""}, "clickEvent": {"action": "run_command", "value": "/function jkbw:load/settings/menu/alternations/set/trident"}}, " ", \
 {"selector": "@e[type=marker, limit=1, tag=jkbw_alternations, tag=tipped_arrow]", "hoverEvent": {"action": "show_text", "contents": ""}, "clickEvent": {"action": "run_command", "value": "/function jkbw:load/settings/menu/alternations/set/tipped_arrow"}}, " ", \
 {"selector": "@e[type=marker, limit=1, tag=jkbw_alternations, tag=crossbow_max]", "hoverEvent": {"action": "show_text", "contents": ""}, "clickEvent": {"action": "run_command", "value": "/function jkbw:load/settings/menu/alternations/set/crossbow_max"}}, "\n", \
-{"storage": "jk:bw", "nbt": "txt.item.shop.alternations"}, ": ", \
 {"selector": "@e[type=marker, limit=1, tag=jkbw_alternations, tag=ice_bridge]", "hoverEvent": {"action": "show_text", "contents": ""}, "clickEvent": {"action": "run_command", "value": "/function jkbw:load/settings/menu/alternations/set/ice_bridge"}}, " ", \
 {"selector": "@e[type=marker, limit=1, tag=jkbw_alternations, tag=mace]", "hoverEvent": {"action": "show_text", "contents": ""}, "clickEvent": {"action": "run_command", "value": "/function jkbw:load/settings/menu/alternations/set/mace"}}, " ", \
 {"selector": "@e[type=marker, limit=1, tag=jkbw_alternations, tag=the_mirror]", "hoverEvent": {"action": "show_text", "contents": ""}, "clickEvent": {"action": "run_command", "value": "/function jkbw:load/settings/menu/alternations/set/the_mirror"}}, "\n"]

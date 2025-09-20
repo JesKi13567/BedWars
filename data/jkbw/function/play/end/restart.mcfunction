@@ -21,9 +21,9 @@ worldborder set 50000000
 execute at @e[type=text_display, tag=jkbw_worldspawn, limit=1] run function jkbw:play/ready/map/init {type: clean}
 
 # 轮换道具（分数1启用）
-execute if score #res_mode jkbw.mem matches 0..1 store result score #ACCESS_trident jkbw.mem run random value 1..3
-execute if score #res_mode jkbw.mem matches 0..1 store result score #ACCESS_tipped_arrow jkbw.mem run random value 1..2
-execute if score #res_mode jkbw.mem matches 0..1 store result score #ACCESS_crossbow_max jkbw.mem run random value 1..10
-execute if score #res_mode jkbw.mem matches 0..1 store result score #ACCESS_ice_bridge jkbw.mem run random value 1..3
-execute if score #res_mode jkbw.mem matches 0..1 store result score #ACCESS_mace jkbw.mem run random value 1..6
-execute if score #res_mode jkbw.mem matches 0..1 store result score #ACCESS_the_mirror jkbw.mem run random value 1..4
+execute if score #res_mode jkbw.mem matches 0..1 unless score #ACCESS_permanent_save jkbw.mem matches 1 store result score #ACCESS_trident jkbw.mem run random value 1..3
+execute if score #res_mode jkbw.mem matches 0..1 unless score #ACCESS_permanent_save jkbw.mem matches 1 store result score #ACCESS_tipped_arrow jkbw.mem run random value 1..2
+execute if score #res_mode jkbw.mem matches 0..1 unless score #ACCESS_permanent_save jkbw.mem matches 1 store result score #ACCESS_crossbow_max jkbw.mem run random value 1..10
+execute if score #res_mode jkbw.mem matches 0..1 unless score #ACCESS_permanent_save jkbw.mem matches 1 store result score #ACCESS_ice_bridge jkbw.mem run random value 1..3
+execute if score #res_mode jkbw.mem matches 0..1 unless score #ACCESS_permanent_save jkbw.mem matches 1 store result score #ACCESS_mace jkbw.mem run random value 1..6
+execute if score #res_mode jkbw.mem matches 0..1 unless score #ACCESS_permanent_save jkbw.mem matches 1 store result score #ACCESS_the_mirror jkbw.mem run random value 1..4
