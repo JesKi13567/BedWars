@@ -101,6 +101,7 @@ scoreboard objectives remove jkbw.Player.DamageSource.now
 scoreboard objectives remove jkbw.Player.DamageSource.last
 scoreboard objectives remove jkbw.Player.DamageSource.real
 scoreboard objectives remove jkbw.Player.State
+scoreboard objectives remove jkbw.Player.ShopRandom
 scoreboard objectives remove jkbw.Bed.State
 scoreboard objectives remove jkbw.ResCD.Iron
 scoreboard objectives remove jkbw.ResCD.Gold

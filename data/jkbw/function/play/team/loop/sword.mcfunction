@@ -13,4 +13,4 @@ execute if score #teams jkbw.mem matches 7.. as @s[team=jkbw.pink] run function 
 execute if score #teams jkbw.mem matches 8.. as @s[team=jkbw.gray] run function jkbw:play/team/loop/sword_sharpness {team: gray}
 
 # 指南针
-execute unless items entity @s hotbar.8 * unless items entity @s container.* compass run function jkbw:play/team/loop/compass
+execute unless items entity @s hotbar.8 * unless items entity @s container.* compass unless items entity @s player.cursor compass unless items entity @s player.crafting.* compass unless items entity @s weapon.offhand compass run function jkbw:play/team/loop/compass

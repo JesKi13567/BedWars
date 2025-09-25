@@ -21,17 +21,10 @@ scoreboard players set #state jkbw.mem 1
 scoreboard players set #time_state jkbw.mem 0
 scoreboard players operation #dragon1 jkbw.mem = #dragon jkbw.mem
 scoreboard players operation #XPdragon1 jkbw.mem = #XPdragon jkbw.mem
+scoreboard players reset #shop_random_countdown jkbw.mem
 scoreboard players reset #solo_mode jkbw.mem
 scoreboard players reset * jkbw.Player.ID
 scoreboard players reset * jkbw.CurrentGame
-
-# 商品个数
-scoreboard players set #shop_items_1 jkbw.mem 96
-execute if score #res_mode jkbw.mem matches 2 run scoreboard players set #shop_items_1 jkbw.mem 58
-scoreboard players set #shop_items_3 jkbw.mem 30
-execute if score #res_mode jkbw.mem matches 2 run scoreboard players set #shop_items_3 jkbw.mem 27
-scoreboard players set #shop_items_4 jkbw.mem 27
-execute if score #ACCESS_tipped_arrow jkbw.mem matches 1 run scoreboard players set #shop_items_4 jkbw.mem 29
 
 # 资源产生时间
 execute unless score #spawn_diamond jkbw.mem matches 10..100 run scoreboard players set #spawn_diamond jkbw.mem 30
@@ -56,6 +49,7 @@ execute unless score #time_update jkbw.mem matches 10..1000 run scoreboard playe
 execute unless score #time_bed jkbw.mem matches 10..1000 run scoreboard players set #time_bed jkbw.mem 600
 execute unless score #time_fight jkbw.mem matches 10..1000 run scoreboard players set #time_fight jkbw.mem 600
 execute unless score #time_end jkbw.mem matches 10..1000 run scoreboard players set #time_end jkbw.mem 600
+execute unless score #EXP_MODE_4_SHOP_INTERVAL jkbw.mem matches 5..30 run scoreboard players set #EXP_MODE_4_SHOP_INTERVAL jkbw.mem 10
 scoreboard players operation #time jkbw.mem = #time_end jkbw.mem
 scoreboard players operation #time6 jkbw.mem = #time jkbw.mem
 scoreboard players operation #time jkbw.mem += #time_fight jkbw.mem
@@ -73,7 +67,8 @@ scoreboard players operation #time0 jkbw.mem = #time jkbw.mem
 execute if score #exp_mode jkbw.mem matches 1 run scoreboard players operation #time jkbw.mem = #time4 jkbw.mem
 scoreboard players add #time jkbw.mem 1
 
-execute as @e[tag=jkbw, tag=!jkbw_res_global] run data modify entity @s view_range set value 0f
+execute as @e[tag=jkbw] run data modify entity @s view_range set value 0f
+execute unless score #exp_mode jkbw.mem matches 4 as @e[tag=jkbw, tag=jkbw_res_global] run data modify entity @s view_range set value 1f
 function jkbw:play/start/display
 data modify storage jk:bw Alive set value {red: 0, blue: 0, green: 0, yellow: 0, cyan: 0, white: 0, pink: 0, gray: 0}
 
@@ -134,3 +129,11 @@ execute as @a[scores={jkbw.Player.State=2}, sort=random, team=jkbw.pink] store r
 execute if score #teams jkbw.mem matches 8 run scoreboard players set #temp jkbw.mem 56
 execute as @a[scores={jkbw.Player.State=2}, sort=random, team=jkbw.gray] store result score @s jkbw.Player.ID run scoreboard players add #temp jkbw.mem 1
 execute as @a run scoreboard players operation @s jkbw.Temp = @s jkbw.Player.ID
+
+# 商品个数
+scoreboard players set #shop_items_1 jkbw.mem 96
+execute if score #res_mode jkbw.mem matches 2 run scoreboard players set #shop_items_1 jkbw.mem 58
+scoreboard players set #shop_items_3 jkbw.mem 30
+execute if score #res_mode jkbw.mem matches 2 run scoreboard players set #shop_items_3 jkbw.mem 27
+scoreboard players set #shop_items_4 jkbw.mem 27
+execute if score #ACCESS_tipped_arrow jkbw.mem matches 1 run scoreboard players set #shop_items_4 jkbw.mem 29

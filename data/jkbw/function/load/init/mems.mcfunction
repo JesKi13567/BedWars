@@ -60,6 +60,8 @@ scoreboard players set #shop_items_6 jkbw.mem 27
 scoreboard players set #shop_items_7 jkbw.mem 27
 scoreboard players set #shop_items_8 jkbw.mem 27
 scoreboard players set #shop_items_9 jkbw.mem 27
+# 实验模式4的时间间隔
+scoreboard players set #EXP_MODE_4_SHOP_INTERVAL jkbw.mem 10
 # 轮换道具永久保存
 scoreboard players reset #ACCESS_permanent_save jkbw.mem
 # 某些道具的耐久度

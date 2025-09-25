@@ -4,7 +4,7 @@ scoreboard players set #level_diamond jkbw.mem 3
 scoreboard players operation #time_show jkbw.mem = #time_bed jkbw.mem
 bossbar set jkbw:game_progress color red
 execute store result bossbar jkbw:game_progress max run scoreboard players get #time_bed jkbw.mem
-execute unless score #exp_mode jkbw.mem matches 1 run tellraw @a ["", {"translate": "item.minecraft.emerald", "color": "green"}, " ", {"storage": "jk:bw", "nbt": "txt.print.now_become"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.tier"}, " ", {"text": "III", "color": "yellow"}, "."]
+execute unless score #exp_mode jkbw.mem matches 4 unless score #exp_mode jkbw.mem matches 1 run tellraw @a ["", {"translate": "item.minecraft.emerald", "color": "green"}, " ", {"storage": "jk:bw", "nbt": "txt.print.now_become"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.tier"}, " ", {"text": "III", "color": "yellow"}, "."]
 execute if score #res_mode jkbw.mem matches 2 run function jkbw:_by_version/attribute/show/max_health {value: 60}
 
 execute if score #exp_mode jkbw.mem matches 1 run scoreboard players set @e[type=text_display, tag=jkbw_res_spawn] jkbw.Team.res 4

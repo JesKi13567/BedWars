@@ -13,7 +13,7 @@ scoreboard players remove @a[scores={jkbw.Player.UseTheMirrorCD=1..}] jkbw.Playe
 execute as @a[gamemode=adventure, scores={jkbw.Player.State=2}] at @s run function jkbw:play/hurt/execuse
 
 # 资源生成
-function jkbw:play/res/global
+execute unless score #exp_mode jkbw.mem matches 4 run function jkbw:play/res/global
 
 # 团队常驻
 execute if score #res_mode jkbw.mem matches 0..1 run function jkbw:play/shop/team/global

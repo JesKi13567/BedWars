@@ -110,6 +110,7 @@ scoreboard objectives add jkbw.Player.DamageSource.now dummy "玩家受伤来源
 scoreboard objectives add jkbw.Player.DamageSource.last dummy "玩家受伤来源-最终"
 scoreboard objectives add jkbw.Player.DamageSource.real dummy "玩家受伤来源-追踪"
 scoreboard objectives add jkbw.Player.State dummy "玩家状态"
+scoreboard objectives add jkbw.Player.ShopRandom dummy "玩家随机商店值"
 
 # 实体
 scoreboard objectives add jkbw.Bed.State dummy "床状态"

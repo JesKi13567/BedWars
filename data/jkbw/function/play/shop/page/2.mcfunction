@@ -16,7 +16,7 @@ execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "armor_iron"]}] run function jkbw:play/shop/item/armor {id: 2, res: gold_ingot}
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "armor_diamond"]}] run function jkbw:play/shop/item/armor {id: 3, res: emerald}
 
-# 药水（FAQ mj 4 lacking of consistency）
+# 药水
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "potion_speed"]}] run function jkbw:play/shop/item/potion {id: 1, name: speed, show: swiftness, res: emerald}
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "potion_jump"]}] run function jkbw:play/shop/item/potion {id: 2, name: jump_boost, show: leaping, res: emerald}
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "potion_invisibility"]}] run function jkbw:play/shop/item/potion {id: 3, name: invisibility, show: invisibility, res: emerald}
