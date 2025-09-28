@@ -38,11 +38,11 @@ execute unless items entity @s[scores={jkbw.Player.Levels.pickaxe=3}] container.
 execute unless items entity @s[scores={jkbw.Player.Levels.pickaxe=4}] container.* #jkbw:pickaxe/0[custom_data={jkbw: ["clean", "pickaxe", "4"]}] unless items entity @s player.cursor #jkbw:pickaxe/0 unless items entity @s player.crafting.* #jkbw:pickaxe/0 unless items entity @s weapon.offhand #jkbw:pickaxe/0 run give @s diamond_pickaxe[custom_data={jkbw: ["clean", "pickaxe", "4"]}, enchantments={efficiency: 3}, can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, unbreakable={}]
 
 # 斧头
-execute as @s[team=jkbw.red] run function jkbw:play/team/loop/tool_axe {team: red}
-execute as @s[team=jkbw.blue] run function jkbw:play/team/loop/tool_axe {team: blue}
-execute if score #teams jkbw.mem matches 3.. as @s[team=jkbw.green] run function jkbw:play/team/loop/tool_axe {team: green}
-execute if score #teams jkbw.mem matches 4.. as @s[team=jkbw.yellow] run function jkbw:play/team/loop/tool_axe {team: yellow}
-execute if score #teams jkbw.mem matches 5.. as @s[team=jkbw.cyan] run function jkbw:play/team/loop/tool_axe {team: cyan}
-execute if score #teams jkbw.mem matches 6.. as @s[team=jkbw.white] run function jkbw:play/team/loop/tool_axe {team: white}
-execute if score #teams jkbw.mem matches 7.. as @s[team=jkbw.pink] run function jkbw:play/team/loop/tool_axe {team: pink}
-execute if score #teams jkbw.mem matches 8.. as @s[team=jkbw.gray] run function jkbw:play/team/loop/tool_axe {team: gray}
+execute as @s[team=jkbw.red] run function jkbw:play/team/loop/tool_axe/team {team: red}
+execute as @s[team=jkbw.blue] run function jkbw:play/team/loop/tool_axe/team {team: blue}
+execute if score #teams jkbw.mem matches 3.. as @s[team=jkbw.green] run function jkbw:play/team/loop/tool_axe/team {team: green}
+execute if score #teams jkbw.mem matches 4.. as @s[team=jkbw.yellow] run function jkbw:play/team/loop/tool_axe/team {team: yellow}
+execute if score #teams jkbw.mem matches 5.. as @s[team=jkbw.cyan] run function jkbw:play/team/loop/tool_axe/team {team: cyan}
+execute if score #teams jkbw.mem matches 6.. as @s[team=jkbw.white] run function jkbw:play/team/loop/tool_axe/team {team: white}
+execute if score #teams jkbw.mem matches 7.. as @s[team=jkbw.pink] run function jkbw:play/team/loop/tool_axe/team {team: pink}
+execute if score #teams jkbw.mem matches 8.. as @s[team=jkbw.gray] run function jkbw:play/team/loop/tool_axe/team {team: gray}

@@ -4,10 +4,11 @@
       "id": "red_bed"
     },
     "title": {
-      "text": "JKBW"
+      "text": "JKBW          "
     },
     "description": [
-      "起床战争工具包"
+      "起床战争工具包\n",
+      "BedWars ToolPack"
     ],
     "frame": "task",
     "show_toast": false,

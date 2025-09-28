@@ -3,9 +3,8 @@ scoreboard players reset @s jkbw.Player.DeathImp
 scoreboard players add @s jkbw.Player.Death 1
 scoreboard players set @s jkbw.Player.RebornTime 6
 scoreboard players set @s jkbw.Player.State 3
-execute if score #test_mode jkbw.mem matches 1 run scoreboard players set @s jkbw.Player.RebornTime 1
+execute if score #test_mode jkbw.mem matches 1 run scoreboard players set @s jkbw.Player.RebornTime 2
 gamemode spectator @s
-#tp @s @e[type=text_display, tag=jkbw_worldspawn, limit=1]
 function jkbw:load/settings/menu/back with storage jk:bw Map.cur
 
 # 工具等级 -1

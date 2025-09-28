@@ -1073,7 +1073,7 @@ data modify block 10110209 3 10110222 Items[-17].components.minecraft:lore[0] se
 ## 全局资源点
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.egg.res_global", "color": "green", "italic": false}]'
 data modify block 10110209 3 10110222 Items[-16].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.egg.res_global_", "color": "yellow", "italic": false}]'
+data modify block ~ ~ ~ back_text.messages[1] set value '[{"text": "", "color": "white", "italic": false}, {"storage": "jk:bw", "nbt": "txt.item.egg.res_global_", "color": "yellow"}, {"translate": "block.minecraft.diamond_block"}, "/", {"translate": "block.minecraft.emerald_block"}, "."]'
 data modify block 10110209 3 10110222 Items[-16].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 ### 资源方块
 data modify block ~ ~ ~ back_text.messages[1] set value '[{"storage": "jk:bw", "nbt": "txt.item.egg.res_global__", "color": "yellow", "italic": false}]'

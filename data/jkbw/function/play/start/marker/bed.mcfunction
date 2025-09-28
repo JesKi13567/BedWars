@@ -12,14 +12,11 @@ execute store result score @s jkbw.Entity.Z run data get entity @s Pos[2] 10
 execute store result score @s jkbw.Entity.X_int run data get entity @s Pos[0] 1
 execute store result score @s jkbw.Entity.Z_int run data get entity @s Pos[2] 1
 
-execute as @s[tag=jkbw_bed_red] run function jkbw:play/start/marker/bed_lode {id: 0}
-execute as @s[tag=jkbw_bed_blue] run function jkbw:play/start/marker/bed_lode {id: 1}
-execute if score #teams jkbw.mem matches 3.. as @s[tag=jkbw_bed_green] run function jkbw:play/start/marker/bed_lode {id: 2}
-execute if score #teams jkbw.mem matches 4.. as @s[tag=jkbw_bed_yellow] run function jkbw:play/start/marker/bed_lode {id: 3}
-execute if score #teams jkbw.mem matches 5.. as @s[tag=jkbw_bed_cyan] run function jkbw:play/start/marker/bed_lode {id: 4}
-execute if score #teams jkbw.mem matches 6.. as @s[tag=jkbw_bed_white] run function jkbw:play/start/marker/bed_lode {id: 5}
-execute if score #teams jkbw.mem matches 7.. as @s[tag=jkbw_bed_pink] run function jkbw:play/start/marker/bed_lode {id: 6}
-execute if score #teams jkbw.mem matches 8.. as @s[tag=jkbw_bed_gray] run function jkbw:play/start/marker/bed_lode {id: 7}
-
-# 床种类：夹心
-execute if score #bed_type jkbw.mem matches 2 run function jkbw:play/start/marker/cover
+execute as @s[tag=jkbw_bed_red] run function jkbw:play/start/marker/bed_lode {id: 0, team: red}
+execute as @s[tag=jkbw_bed_blue] run function jkbw:play/start/marker/bed_lode {id: 1, team: blue}
+execute if score #teams jkbw.mem matches 3.. as @s[tag=jkbw_bed_green] run function jkbw:play/start/marker/bed_lode {id: 2, team: green}
+execute if score #teams jkbw.mem matches 4.. as @s[tag=jkbw_bed_yellow] run function jkbw:play/start/marker/bed_lode {id: 3, team: yellow}
+execute if score #teams jkbw.mem matches 5.. as @s[tag=jkbw_bed_cyan] run function jkbw:play/start/marker/bed_lode {id: 4, team: cyan}
+execute if score #teams jkbw.mem matches 6.. as @s[tag=jkbw_bed_white] run function jkbw:play/start/marker/bed_lode {id: 5, team: white}
+execute if score #teams jkbw.mem matches 7.. as @s[tag=jkbw_bed_pink] run function jkbw:play/start/marker/bed_lode {id: 6, team: pink}
+execute if score #teams jkbw.mem matches 8.. as @s[tag=jkbw_bed_gray] run function jkbw:play/start/marker/bed_lode {id: 7, team: gray}

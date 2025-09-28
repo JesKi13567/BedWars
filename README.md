@@ -28,7 +28,7 @@
 - 攻击冷却——1.8-/1.9+。
 - 队伍数量——2~8，队伍编号见羊毛。
 - 队伍分配——随机/自选。自选无队伍人数平衡。
-- 实验模式——无/疾速/无跳跃/小人国。
+- 实验模式——无/疾速/无跳跃/小人国/被迫零元购。
 - 设置时间——清晨/中午/黄昏/午夜。
 
 ### 注意事项
@@ -65,7 +65,7 @@
 - Attack Speed: 1.8-/1.9+.
 - Team Count: 2~8, order was written in wool.
 - Team Distribute: Random/Manual. In Manual, no players' count balance.
-- Experimental Mode: No/Blitz/No Jumps/Lilliput.
+- Experimental Mode: No/Blitz/No Jumps/Lilliput/Forced Free Loot.
 - Set Time: Morning/Noon/Night/Midnight.
 
 ### Notes

@@ -1,4 +1,6 @@
+# 箱子锁
 $function jkbw:_by_version/lock/chest_data {team: $(team)}
+# 床
 $execute unless score #bed_type jkbw.mem matches 1 at @e[type=text_display, tag=jkbw_bed_$(team), y_rotation=180] run setblock ~ ~ ~ $(team)_bed[facing=north]
 $execute unless score #bed_type jkbw.mem matches 1 at @e[type=text_display, tag=jkbw_bed_$(team), y_rotation=180] run setblock ~ ~ ~-1 $(team)_bed[facing=north, part=head]
 $execute unless score #bed_type jkbw.mem matches 1 at @e[type=text_display, tag=jkbw_bed_$(team), y_rotation=-90] run setblock ~ ~ ~ $(team)_bed[facing=east]
@@ -8,3 +10,5 @@ $execute unless score #bed_type jkbw.mem matches 1 at @e[type=text_display, tag=
 $execute unless score #bed_type jkbw.mem matches 1 at @e[type=text_display, tag=jkbw_bed_$(team), y_rotation=90] run setblock ~ ~ ~ $(team)_bed[facing=west]
 $execute unless score #bed_type jkbw.mem matches 1 at @e[type=text_display, tag=jkbw_bed_$(team), y_rotation=90] run setblock ~-1 ~ ~ $(team)_bed[facing=west, part=head]
 $execute if score #bed_type jkbw.mem matches 1 at @e[type=text_display, tag=jkbw_bed_$(team)] run setblock ~ ~ ~ $(team)_candle_cake[lit=true]
+# 出生点清理
+$execute at @e[type=text_display, tag=jkbw_spawn_$(team)] run fill ~ ~ ~ ~ ~1 ~ air

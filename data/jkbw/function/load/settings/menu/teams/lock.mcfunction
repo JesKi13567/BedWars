@@ -1,4 +1,4 @@
-# 重新放置床和箱子
+# 放置箱子锁、床、出生点清理
 function jkbw:load/settings/menu/teams/bed/replace {team: red}
 function jkbw:load/settings/menu/teams/bed/replace {team: blue}
 execute if score #teams jkbw.mem matches 3.. run function jkbw:load/settings/menu/teams/bed/replace {team: green}
