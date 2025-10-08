@@ -9,11 +9,11 @@ $tellraw @s[tag=!jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_c
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] stick[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, enchantments={knockback: 1}]
-$execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] fishing_rod[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, can_place_on={predicates: [{blocks: "#jkbw:canplaceon"}], show_in_tooltip: false}]
-$execute if score #3 jkbw.mem matches $(id) unless score #DURABILITY_shield jkbw.mem matches 1.. run give @s[tag=jkbw_buy_success] shield[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, damage=326]
-$execute if score #3 jkbw.mem matches $(id) if score #DURABILITY_shield jkbw.mem matches 1 run give @s[tag=jkbw_buy_success] shield[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, damage=168]
-$execute if score #3 jkbw.mem matches $(id) if score #DURABILITY_shield jkbw.mem matches 2 run give @s[tag=jkbw_buy_success] shield[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}]
+$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] stick[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, enchantments={knockback: 1}]
+$execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] fishing_rod[tooltip_display={hidden_components: [can_break, can_place_on]}, can_break={blocks: "#jkbw:candestroy"}, can_place_on={blocks: "#jkbw:canplaceon"}]
+$execute if score #3 jkbw.mem matches $(id) unless score #DURABILITY_shield jkbw.mem matches 1.. run give @s[tag=jkbw_buy_success] shield[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, damage=326]
+$execute if score #3 jkbw.mem matches $(id) if score #DURABILITY_shield jkbw.mem matches 1 run give @s[tag=jkbw_buy_success] shield[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, damage=168]
+$execute if score #3 jkbw.mem matches $(id) if score #DURABILITY_shield jkbw.mem matches 2 run give @s[tag=jkbw_buy_success] shield[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}]
 
 $tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"translate": "item.minecraft.$(item)", "color": "gold"}, "!"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]

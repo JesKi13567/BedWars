@@ -1,30 +1,24 @@
 {
-    "type": "crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "gray_shulker_box"
-        }
-    ],
-    "result": {
-        "id": "gray_wool",
-        "count": 1,
-        "components": {
-            "can_break": {
-                "predicates": [
-                    {
-                        "blocks": "#jkbw:candestroy"
-                    }
-                ],
-                "show_in_tooltip": false
-            },
-            "can_place_on": {
-                "predicates": [
-                    {
-                        "blocks": "#jkbw:canplaceon"
-                    }
-                ],
-                "show_in_tooltip": false
-            }
-        }
+  "type": "crafting_shapeless",
+  "ingredients": [
+    "gray_shulker_box"
+  ],
+  "result": {
+    "id": "gray_wool",
+    "count": 1,
+    "components": {
+      "tooltip_display": {
+        "hidden_components": [
+          "can_break",
+          "can_place_on"
+        ]
+      },
+      "can_break": {
+        "blocks": "#jkbw:candestroy"
+      },
+      "can_place_on": {
+        "blocks": "#jkbw:canplaceon"
+      }
     }
+  }
 }

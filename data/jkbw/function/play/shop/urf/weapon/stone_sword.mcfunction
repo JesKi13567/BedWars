@@ -9,8 +9,8 @@ $tellraw @s[tag=!jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_c
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-$execute if score #1 jkbw.mem matches $(id) run function jkbw:_by_version/item/sword/stone1
-$execute if score #2 jkbw.mem matches $(id) run function jkbw:_by_version/item/sword/stone2
+$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] stone_sword[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, attribute_modifiers=[{id: "attack_damage", type: "attack_damage", operation: "add_value", amount: 6, slot: "mainhand"}, {id: "attack_speed", type: "attack_speed", operation: "add_value", amount: -2.4, slot: "mainhand"}]]
+$execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] stone_sword[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, attribute_modifiers=[{id: "attack_damage", type: "attack_damage", operation: "add_value", amount: 7, slot: "mainhand"}, {id: "attack_speed", type: "attack_speed", operation: "add_value", amount: -2.4, slot: "mainhand"}]]
 
 $tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"translate": "item.minecraft.stone_sword", "color": "gold"}, {"text": "$(id)", "color": "gold"}, "!"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]

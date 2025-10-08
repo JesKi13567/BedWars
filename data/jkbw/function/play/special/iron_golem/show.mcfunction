@@ -14,7 +14,7 @@ data modify entity @s[team=jkbw.pink] AngryAt set from entity @p[team=!jkbw.pink
 data modify entity @s[team=jkbw.gray] AngryAt set from entity @p[team=!jkbw.gray, gamemode=adventure] UUID
 
 # 血量显示
-execute as @s[scores={jkbw.mem=15..20}] run data merge entity @s {CustomName: '"■■■"'}
-execute as @s[scores={jkbw.mem=10..14}] run data merge entity @s {CustomName: '"□■■"'}
-execute as @s[scores={jkbw.mem=5..9}] run data merge entity @s {CustomName: '"□□■"'}
-execute as @s[scores={jkbw.mem=0..4}] run data merge entity @s {CustomName: '"□□□"'}
+execute as @s[scores={jkbw.mem=15..20}] run data merge entity @s {CustomName: "■■■"}
+execute as @s[scores={jkbw.mem=10..14}] run data merge entity @s {CustomName: "□■■"}
+execute as @s[scores={jkbw.mem=5..9}] run data merge entity @s {CustomName: "□□■"}
+execute as @s[scores={jkbw.mem=0..4}] run data merge entity @s {CustomName: "□□□"}

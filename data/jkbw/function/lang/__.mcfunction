@@ -1,6 +1,8 @@
-data modify storage jk:bw txt.print.version_real set value "beta1.6.5 - MC1.21.1 & MC1.21.4"
+playsound block.note_block.bell player @s
+data modify storage jk:bw txt.print.version_real set value "beta1.7 - MC1.21.6-8"
 
 execute as @e[type=text_display, tag=jkbw_worldspawn] at @s align xyz positioned ~ ~ ~4 run function jkbw:play/ready/ness/button
 execute if score #loaded jkbw.mem matches 1 run function jkbw:load/settings/menu
 execute if score #loaded jkbw.mem matches 1 positioned 10110222 1 10110222 run function jkbw:load/settings/menu/shop/refresh
-execute unless score #loaded jkbw.mem matches 1 run function jkbw:load/settings/menu/confirm
+execute unless score #loaded jkbw.mem matches 1 run tellraw @a ["\n\n", {"storage": "jk:bw", "nbt": "txt.print.jk_datapack", "color": "yellow", "bold": true}, {"storage": "jk:bw", "nbt": "txt.print.is_ready", "color": "yellow", "bold": true}, "\n", {"storage": "jk:bw", "nbt": "txt.print.author"}, ": ", {"text": "JK137", "color": "green"}, " ", {"storage": "jk:bw", "nbt": "txt.print.version"}, {"storage": "jk:bw", "nbt": "txt.print.version_real", "color": "gold"}, {"text": "\n======", "color": "green"}, {"text": " [", "color": "light_purple"}, {"storage": "jk:bw", "nbt": "txt.print.confirm_install", "color": "light_purple", "click_event": {"action": "run_command", "command": "/function jkbw:load/settings/1"}}, {"text": "] ", "color": "light_purple"}, {"text": "======", "color": "green"}, {"text": " [", "color": "red"}, {"storage": "jk:bw", "nbt": "txt.print.cancel_install", "color": "red", "click_event": {"action": "run_command", "command": "/function jkbw:load/settings/0"}}, {"text": "] ", "color": "red"}, {"text": "======", "color": "green"}]
+execute unless score #loaded jkbw.mem matches 1 run function jkbw:load/ticks/load

@@ -1,3 +1,5 @@
+scoreboard players reset @s jkbw.admin.trigger
+
 ## 游戏正式开始前置
 # 队伍
 execute as @e[type=text_display, tag=jkbw_spawn_display] run function jkbw:play/start/marker/spawn

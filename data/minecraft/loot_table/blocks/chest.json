@@ -13,21 +13,17 @@
         {
           "function": "set_components",
           "components": {
+            "tooltip_display": {
+              "hidden_components": [
+                "can_break",
+                "can_place_on"
+              ]
+            },
             "can_break": {
-              "predicates": [
-                {
-                  "blocks": "#jkbw:candestroy"
-                }
-              ],
-              "show_in_tooltip": false
+              "blocks": "#jkbw:candestroy"
             },
             "can_place_on": {
-              "predicates": [
-                {
-                  "blocks": "#jkbw:canplaceon"
-                }
-              ],
-              "show_in_tooltip": false
+              "blocks": "#jkbw:canplaceon"
             }
           }
         }

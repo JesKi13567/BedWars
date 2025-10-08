@@ -10,7 +10,11 @@ team leave @a
 scoreboard players set @a jkbw.Player.TeamSelect 0
 xp set @a 0 levels
 xp set @s 0 points
-execute as @a run function jkbw:_by_version/attribute/end
+execute as @a run attribute @s max_health base reset
+execute as @a run attribute @s jump_strength base reset
+execute as @a run attribute @s safe_fall_distance base reset
+execute as @a run attribute @s step_height base reset
+execute as @a run attribute @s scale base reset
 scoreboard players set @a jkbw.Player.State 0
 scoreboard players reset #start_flag jkbw.mem
 execute as @a run function jkbw:load/settings/menu/back with storage jk:bw Map.cur

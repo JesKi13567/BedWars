@@ -1,31 +1,25 @@
 {
-    "type": "crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "blue_wool"
-        }
-    ],
-    "result": {
-        "id": "blue_shulker_box",
-        "count": 1,
-        "components": {
-            "can_break": {
-                "predicates": [
-                    {
-                        "blocks": "#jkbw:candestroy"
-                    }
-                ],
-                "show_in_tooltip": false
-            },
-            "can_place_on": {
-                "predicates": [
-                    {
-                        "blocks": "#jkbw:canplaceon"
-                    }
-                ],
-                "show_in_tooltip": false
-            },
-            "max_stack_size": 64
-        }
+  "type": "crafting_shapeless",
+  "ingredients": [
+    "blue_wool"
+  ],
+  "result": {
+    "id": "blue_shulker_box",
+    "count": 1,
+    "components": {
+      "tooltip_display": {
+        "hidden_components": [
+          "can_break",
+          "can_place_on"
+        ]
+      },
+      "can_break": {
+        "blocks": "#jkbw:candestroy"
+      },
+      "can_place_on": {
+        "blocks": "#jkbw:canplaceon"
+      },
+      "max_stack_size": 64
     }
+  }
 }

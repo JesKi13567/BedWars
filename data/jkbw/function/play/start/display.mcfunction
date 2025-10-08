@@ -88,8 +88,8 @@ execute if score #teams jkbw.mem matches 8.. run scoreboard players display numb
 # 公屏显示
 kill @e[type=marker, tag=jkbw_display]
 
-execute if score #attack_mode jkbw.mem matches 1 run summon marker 10110222 1 10110222 {Tags: ["jkbw", "jkbw_display", "jkbw_display_attack"], CustomName: '"1.9+"'}
-execute unless score #attack_mode jkbw.mem matches 1 run summon marker 10110222 1 10110222 {Tags: ["jkbw", "jkbw_display", "jkbw_display_attack"], CustomName: '"1.8-"'}
+execute if score #attack_mode jkbw.mem matches 1 run summon marker 10110222 1 10110222 {Tags: ["jkbw", "jkbw_display", "jkbw_display_attack"], CustomName: "1.9+"}
+execute unless score #attack_mode jkbw.mem matches 1 run summon marker 10110222 1 10110222 {Tags: ["jkbw", "jkbw_display", "jkbw_display_attack"], CustomName: "1.8-"}
 
 tellraw @a ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", {"storage": "jk:bw", "nbt": "txt.print.bedwars", "color": "yellow"}, "\n", {"storage": "jk:bw", "nbt": "txt.display.attack_speed", "color": "green"}, ": ", {"selector": "@e[type=marker, tag=jkbw_display_attack, limit=1]"}]
 

@@ -9,7 +9,7 @@ $tellraw @s[tag=!jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_c
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-$give @s[tag=jkbw_buy_success] potion[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, potion_contents="$(effect)", max_stack_size=64]
+$give @s[tag=jkbw_buy_success] potion[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, potion_contents="$(effect)", max_stack_size=64]
 $tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"translate": "effect.minecraft.$(desc)", "color": "gold"}, " ", {"translate": "item.minecraft.potion", "color": "gold"}, "!"]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 $scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.Own.xpLevelsReal -= #urfXPpotion_$(name) jkbw.mem

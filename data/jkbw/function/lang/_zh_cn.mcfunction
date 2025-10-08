@@ -1,4 +1,3 @@
-playsound block.note_block.bell player @a[distance=..6]
 data remove storage jk:bw txt
 
 data modify storage jk:bw txt.button.new_blocks set value "刷新此区块"

@@ -24,7 +24,6 @@ $tellraw @a [{"storage": "jk:bw", "nbt": "txt.print.bedwars", "color": "yellow"}
 
 # 更新展示实体版本
 scoreboard players add #display_set jkbw.mem 1
-execute if score #display_set jkbw.mem matches 100000.. run scoreboard players reset #display_set jkbw.mem
 
 # 加载区块
 function jkbw:load/settings/menu/worldspawn/current with storage jk:bw Map.cur

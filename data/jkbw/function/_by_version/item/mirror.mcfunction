@@ -1,1 +1,0 @@
-give @s[tag=jkbw_buy_success] gray_stained_glass_pane[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, enchantment_glint_override=true, food={can_always_eat: true, eat_seconds: 100000, nutrition: 0, saturation: 0}]

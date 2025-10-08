@@ -1,1 +1,0 @@
-give @s[tag=jkbw_buy_success] iron_sword[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, attribute_modifiers=[{id: "attack_damage", type: "generic.attack_damage", operation: "add_value", amount: 9.5, slot: "mainhand"}, {id: "attack_speed", type: "generic.attack_speed", operation: "add_value", amount: -2.4, slot: "mainhand"}]]

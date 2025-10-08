@@ -2,7 +2,11 @@
 # 隐身处理
 tag @s[tag=jkbw_invisible] remove jkbw_invisible
 execute if data entity @s active_effects[{id: "minecraft:invisibility"}] run tag @s add jkbw_invisible
-function jkbw:_by_version/attribute/armor
+attribute @s[tag=jkbw_invisible, scores={jkbw.Player.ArmorLevels=0}] armor base set 7
+attribute @s[tag=jkbw_invisible, scores={jkbw.Player.ArmorLevels=1}] armor base set 9
+attribute @s[tag=jkbw_invisible, scores={jkbw.Player.ArmorLevels=2}] armor base set 11
+attribute @s[tag=jkbw_invisible, scores={jkbw.Player.ArmorLevels=3}] armor base set 13
+attribute @s[tag=!jkbw_invisible] armor base set 0
 execute as @s[tag=jkbw_invisible, nbt={OnGround: true}] run particle block{block_state: stone} ~ ~ ~ 0.1 0 0.1 0.05 4
 
 # 幸运药水

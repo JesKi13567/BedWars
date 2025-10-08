@@ -1,5 +1,4 @@
 # execute at @e[type=text_display, tag=jkbw_worldspawn, limit=1]
-playsound entity.experience_orb.pickup player @s
 execute as @e[tag=jkbw] run data modify entity @s view_range set value 1f
 kill @e[type=marker, tag=jkbw_map]
 $summon marker ~ ~-1 ~ {Tags: ["jkbw", "jkbw_map", "jkbw_map_$(type)"]}

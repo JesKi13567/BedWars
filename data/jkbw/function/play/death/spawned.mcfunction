@@ -7,4 +7,14 @@ effect give @s instant_health 1 9 true
 clear @s
 item replace entity @s hotbar.4 from block 10110209 3 10110222 container.3
 
-function jkbw:_by_version/attribute/spawned
+execute if score #attack_mode jkbw.mem matches 1 run attribute @s attack_speed base reset
+execute unless score #attack_mode jkbw.mem matches 1 run attribute @s attack_speed base set 100
+
+execute unless score #exp_mode jkbw.mem matches 2 run attribute @s jump_strength base reset
+execute unless score #exp_mode jkbw.mem matches 2 run attribute @s step_height base reset
+execute unless score #exp_mode jkbw.mem matches 2 run attribute @s safe_fall_distance base reset
+execute if score #exp_mode jkbw.mem matches 2 run attribute @s jump_strength base set 0
+execute if score #exp_mode jkbw.mem matches 2 run attribute @s step_height base set 3
+execute if score #exp_mode jkbw.mem matches 2 run attribute @s safe_fall_distance base set 6
+
+execute unless score #exp_mode jkbw.mem matches 3 run attribute @s scale base reset

@@ -2,6 +2,7 @@
 scoreboard objectives remove jkbw.Temp
 scoreboard objectives remove jkbw.CurrentGame
 scoreboard objectives remove jkbw.display
+scoreboard objectives remove jkbw.admin.trigger
 
 scoreboard objectives remove jkbw.Team.Alive
 scoreboard objectives remove jkbw.Team.protect

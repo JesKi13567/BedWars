@@ -1,1 +1,0 @@
-item replace block 10110209 3 10110222 container.9 with wandering_trader_spawn_egg[custom_data={jkbw: ["eggs", "shop"]}, entity_data={id: "marker", Tags: ["jkbw", "jkbw_first", "jkbw_first_shop"]}, enchantment_glint_override=true, lore=['""']]

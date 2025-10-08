@@ -1,4 +1,4 @@
-playsound block.note_block.bell player @a[distance=..6]
+scoreboard players reset @s jkbw.admin.trigger
 execute if score #test_mode jkbw.mem matches 2.. run scoreboard players reset #test_mode jkbw.mem
 
 # 检查有无资格使用测试模式

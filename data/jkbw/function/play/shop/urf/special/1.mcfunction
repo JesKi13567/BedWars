@@ -9,13 +9,13 @@ $tellraw @s[tag=!jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_c
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-$execute if score #1 jkbw.mem matches $(id) run function jkbw:_by_version/item/platform
-$execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] string[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, can_place_on={predicates: [{blocks: "#jkbw:canplaceon"}], show_in_tooltip: false}]
-$execute if score #3 jkbw.mem matches $(id) run function jkbw:_by_version/item/wall
-$execute if score #4 jkbw.mem matches $(id) run function jkbw:_by_version/item/ice
-$execute if score #5 jkbw.mem matches $(id) as @s[tag=jkbw_buy_success] run function jkbw:_by_version/item/back
-$execute if score #6 jkbw.mem matches $(id) run function jkbw:_by_version/item/anti_arrow
-$execute if score #7 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] egg[can_break={predicates: [{blocks: "#jkbw:candestroy"}], show_in_tooltip: false}, max_stack_size=64]
+$execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] blaze_rod[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, consumable={consume_seconds: 100000}]
+$execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] string[tooltip_display={hidden_components: [can_break, can_place_on]}, can_break={blocks: "#jkbw:candestroy"}, can_place_on={blocks: "#jkbw:canplaceon"}]
+$execute if score #3 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] fox_spawn_egg[tooltip_display={hidden_components: [can_break, can_place_on]}, can_break={blocks: "#jkbw:candestroy"}, can_place_on={blocks: "#jkbw:canplaceon"}, entity_data={id: "marker", Tags: ["jkbw", "jkbw_wall", "jkbw_new_entity"]}, custom_name={"translate": "block.minecraft.bricks", "color": "white", "italic": false}, item_model=bricks]
+$execute if score #4 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] ice[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, consumable={consume_seconds: 100000}]
+$execute if score #5 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] paper[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, consumable={consume_seconds: 100000}]
+$execute if score #6 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] prismarine_shard[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, consumable={consume_seconds: 100000}]
+$execute if score #7 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] egg[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, max_stack_size=64]
 
 $execute unless score #4 jkbw.mem matches $(id) run tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.$(name).name", "color": "gold"}, "!"]
 $execute if score #4 jkbw.mem matches $(id) run tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.the_truly", "color": "gold"}, {"translate": "enchantment.minecraft.frost_walker", "color": "gold"}, "!"]
