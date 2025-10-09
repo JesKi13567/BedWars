@@ -5,3 +5,4 @@ execute unless score @s[scores={jkbw.Player.Page=3}] jkbw.Player.Page.Items = #s
 execute unless score @s[scores={jkbw.Player.Page=4}] jkbw.Player.Page.Items = #shop_items_4 jkbw.mem run function jkbw:play/shop/gui/classic/4
 execute unless score @s[scores={jkbw.Player.Page=5}] jkbw.Player.Page.Items = #shop_items_5 jkbw.mem run function jkbw:play/shop/gui/classic/5
 execute unless score @s[scores={jkbw.Player.Page=6}] jkbw.Player.Page.Items = #shop_items_6 jkbw.mem run function jkbw:play/shop/gui/classic/6
+execute unless score @s[scores={jkbw.Player.Page=7}] jkbw.Player.Page.Items = #shop_items_7 jkbw.mem run function jkbw:play/shop/gui/classic/7

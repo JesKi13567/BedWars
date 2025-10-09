@@ -6,7 +6,6 @@ attribute @s[tag=jkbw_invisible, scores={jkbw.Player.ArmorLevels=0}] armor base 
 attribute @s[tag=jkbw_invisible, scores={jkbw.Player.ArmorLevels=1}] armor base set 9
 attribute @s[tag=jkbw_invisible, scores={jkbw.Player.ArmorLevels=2}] armor base set 11
 attribute @s[tag=jkbw_invisible, scores={jkbw.Player.ArmorLevels=3}] armor base set 13
-attribute @s[tag=!jkbw_invisible] armor base set 0
 execute as @s[tag=jkbw_invisible, nbt={OnGround: true}] run particle block{block_state: stone} ~ ~ ~ 0.1 0 0.1 0.05 4
 
 # 幸运药水

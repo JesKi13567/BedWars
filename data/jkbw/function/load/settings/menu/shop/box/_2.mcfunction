@@ -1,22 +1,22 @@
-setblock 10110221 4 10110222 white_shulker_box[facing=north]{Items: [{Slot: 0b, id: "fishing_rod", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "fishing_rod"]}, lore: ['""']}}, \
-{Slot: 1b, id: "stick", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "stick"]}, enchantments: {knockback: 1}, lore: ['""']}}, \
-{Slot: 2b, id: "wooden_sword", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "wooden_sword"]}, enchantments: {knockback: 1}, attribute_modifiers: [{id: "max_health", type: "max_health", operation: "add_value", amount: 2, slot: "mainhand"}, {id: "attack_damage", type: attack_damage, operation: "add_value", amount: 2, slot: "mainhand"}], lore: ['""']}}, \
-{Slot: 3b, id: "stone_sword", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "stone_sword1"]}, attribute_modifiers: [{id: "attack_damage", type: attack_damage, operation: "add_value", amount: 6, slot: "mainhand"}], lore: ['""']}}, \
-{Slot: 4b, id: "stone_sword", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "stone_sword2"]}, attribute_modifiers: [{id: "attack_damage", type: attack_damage, operation: "add_value", amount: 7, slot: "mainhand"}], lore: ['""']}}, \
-{Slot: 5b, id: "iron_sword", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "iron_sword"]}, attribute_modifiers: [{id: "attack_damage", type: attack_damage, operation: "add_value", amount: 9.5, slot: "mainhand"}], lore: ['""']}}, \
-{Slot: 6b, id: "diamond_sword", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "diamond_sword"]}, attribute_modifiers: [{id: "attack_damage", type: attack_damage, operation: "add_value", amount: 10.5, slot: "mainhand"}], lore: ['""']}}, \
-{Slot: 7b, id: "golden_sword", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "golden_sword"]}, attribute_modifiers: [{id: "attack_damage", type: attack_damage, operation: "add_value", amount: 11.11, slot: "mainhand"}], lore: ['""']}}, \
-{Slot: 8b, id: "shield", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "shield"]}, damage: 326, lore: ['""']}}, \
-{Slot: 9b, id: "arrow", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "arrow"]}, lore: ['""']}}, \
-{Slot: 10b, id: "bow", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "bow1"]}, enchantments: {infinity: 1}, lore: ['""']}}, \
-{Slot: 11b, id: "bow", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "bow2"]}, enchantments: {infinity: 1, power: 1}, lore: ['""']}}, \
-{Slot: 12b, id: "bow", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "bow3"]}, enchantments: {infinity: 1, power: 2}, lore: ['""']}}, \
-{Slot: 13b, id: "bow", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "bow4"]}, enchantments: {infinity: 1, power: 3}, lore: ['""']}}, \
-{Slot: 14b, id: "bow", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "bow5"]}, enchantments: {infinity: 1, power: 3, punch: 1}, lore: ['""']}}, \
-{Slot: 15b, id: "bow", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "bow6"]}, enchantments: {infinity: 1, power: 1, flame: 1}, lore: ['""']}}, \
-{Slot: 18b, id: "potion", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "potion_speed"]}, potion_contents: "swiftness", lore: ['""']}}, \
-{Slot: 19b, id: "potion", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "potion_jump"]}, potion_contents: "strong_leaping", lore: ['""']}}, \
-{Slot: 20b, id: "potion", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "potion_strength"]}, potion_contents: "strength", lore: ['""']}}, \
-{Slot: 21b, id: "potion", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "potion_healing"]}, potion_contents: "healing", lore: ['""']}}, \
-{Slot: 22b, id: "potion", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "potion_healing2"]}, potion_contents: "strong_healing", lore: ['""']}}, \
-{Slot: 23b, id: "potion", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "potion_regen"]}, potion_contents: "regeneration", lore: ['""']}}]}
+setblock 10110221 4 10110222 white_shulker_box[facing=north]{Items: [{Slot: 0b, id: "fishing_rod", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "fishing_rod"]}, lore: [""]}}, \
+{Slot: 1b, id: "stick", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "stick"]}, enchantments: {knockback: 1}, lore: [""]}}, \
+{Slot: 2b, id: "wooden_sword", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "wooden_sword"]}, enchantments: {knockback: 1}, attribute_modifiers: [{id: "max_health", type: "max_health", operation: "add_value", amount: 2, slot: "mainhand"}, {id: "attack_damage", type: attack_damage, operation: "add_value", amount: 2, slot: "mainhand"}], lore: [""]}}, \
+{Slot: 3b, id: "stone_sword", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "stone_sword1"]}, attribute_modifiers: [{id: "attack_damage", type: attack_damage, operation: "add_value", amount: 6, slot: "mainhand"}], lore: [""]}}, \
+{Slot: 4b, id: "stone_sword", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "stone_sword2"]}, attribute_modifiers: [{id: "attack_damage", type: attack_damage, operation: "add_value", amount: 7, slot: "mainhand"}], lore: [""]}}, \
+{Slot: 5b, id: "iron_sword", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "iron_sword"]}, attribute_modifiers: [{id: "attack_damage", type: attack_damage, operation: "add_value", amount: 9.5, slot: "mainhand"}], lore: [""]}}, \
+{Slot: 6b, id: "diamond_sword", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "diamond_sword"]}, attribute_modifiers: [{id: "attack_damage", type: attack_damage, operation: "add_value", amount: 10.5, slot: "mainhand"}], lore: [""]}}, \
+{Slot: 7b, id: "golden_sword", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "golden_sword"]}, attribute_modifiers: [{id: "attack_damage", type: attack_damage, operation: "add_value", amount: 11.11, slot: "mainhand"}], lore: [""]}}, \
+{Slot: 8b, id: "shield", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "shield"]}, damage: 326, lore: [""]}}, \
+{Slot: 9b, id: "arrow", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "arrow"]}, lore: [""]}}, \
+{Slot: 10b, id: "bow", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "bow1"]}, enchantments: {infinity: 1}, lore: [""]}}, \
+{Slot: 11b, id: "bow", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "bow2"]}, enchantments: {infinity: 1, power: 1}, lore: [""]}}, \
+{Slot: 12b, id: "bow", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "bow3"]}, enchantments: {infinity: 1, power: 2}, lore: [""]}}, \
+{Slot: 13b, id: "bow", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "bow4"]}, enchantments: {infinity: 1, power: 3}, lore: [""]}}, \
+{Slot: 14b, id: "bow", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "bow5"]}, enchantments: {infinity: 1, power: 3, punch: 1}, lore: [""]}}, \
+{Slot: 15b, id: "bow", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "bow6"]}, enchantments: {infinity: 1, power: 1, flame: 1}, lore: [""]}}, \
+{Slot: 18b, id: "potion", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "potion_speed"]}, potion_contents: "swiftness", lore: [""]}}, \
+{Slot: 19b, id: "potion", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "potion_jump"]}, potion_contents: "strong_leaping", lore: [""]}}, \
+{Slot: 20b, id: "potion", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "potion_strength"]}, potion_contents: "strength", lore: [""]}}, \
+{Slot: 21b, id: "potion", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "potion_healing"]}, potion_contents: "healing", lore: [""]}}, \
+{Slot: 22b, id: "potion", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "potion_healing2"]}, potion_contents: "strong_healing", lore: [""]}}, \
+{Slot: 23b, id: "potion", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "potion_regen"]}, potion_contents: "regeneration", lore: [""]}}]}

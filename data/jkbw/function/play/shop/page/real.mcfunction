@@ -5,6 +5,7 @@ execute as @s[scores={jkbw.Player.Page=3}] run function jkbw:play/shop/page/3
 execute as @s[scores={jkbw.Player.Page=4}] run function jkbw:play/shop/page/4
 execute as @s[scores={jkbw.Player.Page=5}] run function jkbw:play/shop/page/5
 execute as @s[scores={jkbw.Player.Page=6}] run function jkbw:play/shop/page/6
+execute as @s[scores={jkbw.Player.Page=7}] run function jkbw:play/shop/page/7
 
 # 额外处理，否则返回时直接购买
 execute unless items entity @s[scores={jkbw.Player.Page=1..}] enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "gui", "0"]}] run scoreboard players set @s jkbw.Player.Page -2

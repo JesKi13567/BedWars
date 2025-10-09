@@ -1,27 +1,15 @@
+worldborder set 50000000
+
+scoreboard players reset #start_flag jkbw.mem
 scoreboard players set #state jkbw.mem 0
 scoreboard objectives setdisplay sidebar
 bossbar set jkbw:game_progress visible false
-clear @a
-item replace entity @a hotbar.8 from block 10110209 3 10110222 container.0
-effect clear @a
-stopsound @a
-gamemode adventure @a
-team leave @a
-scoreboard players set @a jkbw.Player.TeamSelect 0
-xp set @a 0 levels
-xp set @s 0 points
-execute as @a run attribute @s max_health base reset
-execute as @a run attribute @s jump_strength base reset
-execute as @a run attribute @s safe_fall_distance base reset
-execute as @a run attribute @s step_height base reset
-execute as @a run attribute @s scale base reset
-scoreboard players set @a jkbw.Player.State 0
-scoreboard players reset #start_flag jkbw.mem
-execute as @a run function jkbw:load/settings/menu/back with storage jk:bw Map.cur
+
 scoreboard players set @e[type=marker, tag=jkbw_temp_marker] jkbw.mem 0
 execute as @e[type=marker, tag=jkbw_temp_marker] at @s run function jkbw:play/special/platform/count
-worldborder set 50000000
 execute at @e[type=text_display, tag=jkbw_worldspawn, limit=1] run function jkbw:play/ready/map/init {type: clean}
+
+execute as @a run function jkbw:play/ready/reg/leavegame
 
 # 轮换道具（分数1启用）
 execute if score #res_mode jkbw.mem matches 0..1 unless score #ACCESS_permanent_save jkbw.mem matches 1 store result score #ACCESS_trident jkbw.mem run random value 1..3

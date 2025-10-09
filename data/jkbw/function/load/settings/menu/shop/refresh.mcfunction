@@ -1,7 +1,7 @@
 # 显示刷新的价格
 playsound block.note_block.bell player @s
 title @s actionbar {"storage": "jk:bw", "nbt": "txt.print.new_price", "color": "aqua"}
-execute unless block ~ ~ ~ cherry_sign run setblock ~ ~ ~ cherry_sign{is_waxed: 1b, front_text: {messages: ['""', '""', '""', '""']}, back_text: {messages: ['""', '""', '""', '""']}}
+execute unless block ~ ~ ~ cherry_sign run setblock ~ ~ ~ cherry_sign{is_waxed: 1b, front_text: {messages: ["", "", "", ""]}, back_text: {messages: ["", "", "", ""]}}
 # hyp
 ## item
 #wool
@@ -229,10 +229,10 @@ data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "n
 data modify block 10110219 5 10110222 Items[7].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
 #wind_charge
 data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#wind_charge", "objective": "jkbw.mem"}, "color": "gold"}, " ", {"translate": "item.minecraft.gold_ingot", "italic": false, "color": "gold"}]
-data modify block 10110219 5 10110222 Items[8].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
+data modify block 10110219 5 10110222 Items[-6].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 #XPwind_charge
 data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPwind_charge", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]
-data modify block 10110219 5 10110222 Items[9].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
+data modify block 10110219 5 10110222 Items[-5].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 ## 经典 & 经验模式 资源
 #XPiron_ingot
 data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPiron_ingot", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]
@@ -928,18 +928,23 @@ data modify block 10110222 5 10110222 Items[13].components.minecraft:custom_name
 # 团队陷阱
 data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.trap.button", "italic": false, "color": "white"}]
 data modify block 10110222 5 10110222 Items[14].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
+# 头饰
+data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.hat", "italic": false, "color": "white"}]
+data modify block 10110222 5 10110222 Items[15].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
+data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"text": "0", "color": "white"}]
+data modify block 10110222 5 10110222 Items[15].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 # 我的末影箱
 data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.my_chest", "italic": false, "color": "white"}]
-data modify block 10110222 5 10110222 Items[15].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
+data modify block 10110222 5 10110222 Items[16].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
 # 武器
 data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.weapons", "italic": false, "color": "white"}]
-data modify block 10110222 5 10110222 Items[16].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
+data modify block 10110222 5 10110222 Items[17].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
 # 盔甲
 data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.armor", "italic": false, "color": "white"}]
-data modify block 10110222 5 10110222 Items[17].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
+data modify block 10110222 5 10110222 Items[18].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
 # 药水
 data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.potions", "italic": false, "color": "white"}]
-data modify block 10110222 5 10110222 Items[18].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
+data modify block 10110222 5 10110222 Items[19].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
 
 # 陷阱展示
 data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.trap.list.name.4", "italic": false, "color": "white"}]
