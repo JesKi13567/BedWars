@@ -19,5 +19,8 @@ execute as @e[type=item, tag=!jkbw] run function jkbw:play/special/item
 # 资源出现重力
 execute as @e[type=item, tag=jkbw_res, nbt={NoGravity: 1b}] at @s unless entity @e[type=text_display, distance=...2, tag=jkbw_res_spawn] run data modify entity @s NoGravity set value 0b
 
+# 快乐恶魂
+execute as @e[type=happy_ghast] run function jkbw:play/special/happy_ghast/tick8
+
 # 清理实体
 kill @e[type=chicken]

@@ -13,8 +13,8 @@
 scoreboard players set #res_mode jkbw.mem 0
 # attack_mode 攻击模式 无 1.8- 1 1.9+
 scoreboard players reset #attack_mode jkbw.mem
-# bed_type 床模式 无 床 1 蛋糕 2 带初始方块保护的床
-scoreboard players reset #bed_type jkbw.mem
+# bed_type 床模式 0 床 1 夹心 2 蛋糕
+scoreboard players set #bed_type jkbw.mem 0
 # exp_mode 实验模式 无 无 1 疾速 2 无跳跃 3 小人国
 scoreboard players reset #exp_mode jkbw.mem
 # set_time 设置时间 0 day 1 noon 2 night 3 midnight

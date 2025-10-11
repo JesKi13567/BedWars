@@ -1,0 +1,6 @@
+scoreboard players set @s jkbw.Player.UseCreatureCD 1
+clear @s raw_gold 1
+tag @s add jkbw_ghast_owner
+summon happy_ghast ~ ~ ~ {Tags: ["jkbw"]}
+execute as @e[type=happy_ghast, limit=1, sort=nearest] run scoreboard players operation @s jkbw.Team.ID = @p[tag=jkbw_ghast_owner] jkbw.Team.ID
+tag @s remove jkbw_ghast_owner

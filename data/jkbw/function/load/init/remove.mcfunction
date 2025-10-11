@@ -86,7 +86,7 @@ scoreboard objectives remove jkbw.Player.UseEnderchest
 scoreboard objectives remove jkbw.Player.UseWall
 scoreboard objectives remove jkbw.Player.UsePlatformCD
 scoreboard objectives remove jkbw.Player.UseFireballCD
-scoreboard objectives remove jkbw.Player.UseIronGolemCD
+scoreboard objectives remove jkbw.Player.UseCreatureCD
 scoreboard objectives remove jkbw.Player.UseTheMirrorCD
 scoreboard objectives remove jkbw.Player.UseBackCD
 scoreboard objectives remove jkbw.Player.UseBackLast

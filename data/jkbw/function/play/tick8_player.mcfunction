@@ -4,7 +4,7 @@ execute if score #res_mode jkbw.mem matches 0..1 run function jkbw:play/team/loo
 
 # 玩家中途离开游戏
 execute unless score @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.CurrentGame matches 1 run function jkbw:play/ready/reg/leavegame
-execute if score @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.CurrentGame matches 1 run function jkbw:play/death/rejoin
+execute if score @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.CurrentGame matches 1 run tellraw @a ["", {"storage": "jk:bw", "nbt": "txt.print.bedwars", "color": "yellow"}, " ", {"selector": "@s"}, " ", {"storage": "jk:bw", "nbt": "txt.print.rejoin_game", "color": "green"}]
 scoreboard players set @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.Player.LeaveGame 0
 
 # 记录自己的坐标（带1的为不变坐标，他人计算用）
@@ -17,11 +17,11 @@ scoreboard players operation @s jkbw.Entity.Z1 = @s jkbw.Entity.Z
 function jkbw:play/height/global
 
 # 指南针
-execute if items entity @s weapon.mainhand compass run function jkbw:play/compass/global
+execute if items entity @s weapon.* compass run function jkbw:play/compass/global
 
 # 清理
 clear @s glass_bottle
 
 # 冷却
 scoreboard players remove @a[scores={jkbw.Player.UseFireballCD=1..}] jkbw.Player.UseFireballCD 1
-scoreboard players remove @a[scores={jkbw.Player.UseIronGolemCD=1..}] jkbw.Player.UseIronGolemCD 1
+scoreboard players remove @a[scores={jkbw.Player.UseCreatureCD=1..}] jkbw.Player.UseCreatureCD 1

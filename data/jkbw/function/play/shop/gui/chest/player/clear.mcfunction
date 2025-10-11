@@ -73,7 +73,7 @@ scoreboard players set @s jkbw.Player.Levels.pickaxe 0
 scoreboard players set @s jkbw.Player.Levels.shears 0
 scoreboard players set @s jkbw.Player.UsePlatformCD 0
 scoreboard players set @s jkbw.Player.UseFireballCD 0
-scoreboard players set @s jkbw.Player.UseIronGolemCD 0
+scoreboard players set @s jkbw.Player.UseCreatureCD 0
 scoreboard players set @s jkbw.Player.UseBackCD 0
 scoreboard players set @s jkbw.Player.UseBackLast 0
 scoreboard players set @s jkbw.Player.UseAntiarrowCD 0

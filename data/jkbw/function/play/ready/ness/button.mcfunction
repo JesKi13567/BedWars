@@ -26,7 +26,7 @@ summon item_display ~-1.5 ~1.5 ~.5 {billboard: "fixed", Tags: ["jkbw", "jkbw_sho
 summon interaction ~-1.5 ~1.25 ~.5 {response: true, Tags: ["jkbw", "jkbw_show", "jkbw_button", "jkbw_button_team_distribute"], height: .5f, width: .5f}
 function jkbw:play/ready/button/team_distribute/show
 # 床模式
-summon text_display ~.5 ~2.25 ~.5 {billboard: "center", Tags: ["jkbw", "jkbw_show"], text: [{"storage": "jk:bw", "nbt": "txt.display.bed_type", "color": "yellow"}], alignment: "center", line_width: 200}
+summon text_display ~.5 ~2.25 ~.5 {billboard: "center", Tags: ["jkbw", "jkbw_show"], text: [{"storage": "jk:bw", "nbt": "txt.display.bed_type.show", "color": "yellow"}], alignment: "center", line_width: 200}
 summon item_display ~.5 ~1.5 ~.5 {billboard: "fixed", Tags: ["jkbw", "jkbw_show", "jkbw_show_bed_type"], item: {id: "red_bed", count: 1b}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.5f, .5f, .5f], translation: [0f, 0f, 0f]}, CustomNameVisible: true}
 summon interaction ~.5 ~1.25 ~.5 {response: true, Tags: ["jkbw", "jkbw_show", "jkbw_button", "jkbw_button_bed_type"], height: .5f, width: .5f}
 function jkbw:play/ready/button/bed_type/show

@@ -94,7 +94,7 @@ scoreboard objectives add jkbw.Player.UseEnderchest minecraft.used:endermite_spa
 scoreboard objectives add jkbw.Player.UseWall minecraft.used:fox_spawn_egg "玩家使用安如磐石"
 scoreboard objectives add jkbw.Player.UsePlatformCD dummy "玩家使用急救平台冷却"
 scoreboard objectives add jkbw.Player.UseFireballCD dummy "玩家使用火球冷却"
-scoreboard objectives add jkbw.Player.UseIronGolemCD dummy "玩家使用铁哥冷却"
+scoreboard objectives add jkbw.Player.UseCreatureCD dummy "玩家生成生物冷却"
 scoreboard objectives add jkbw.Player.UseTheMirrorCD dummy "玩家使用魔镜冷却"
 scoreboard objectives add jkbw.Player.UseBackCD dummy "玩家使用回城卷轴冷却"
 scoreboard objectives add jkbw.Player.UseBackLast dummy "玩家使用回城卷轴持续"

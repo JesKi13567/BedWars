@@ -13,7 +13,7 @@ item replace entity @s enderchest.9 from block 10110220 4 10110222 container.9
 item replace entity @s enderchest.10 from block 10110220 4 10110222 container.10
 item replace entity @s enderchest.11 from block 10110220 4 10110222 container.11
 item replace entity @s enderchest.12 from block 10110220 4 10110222 container.12
-item replace entity @s enderchest.13 from block 10110222 5 10110222 container.0
+item replace entity @s enderchest.13 from block 10110220 4 10110222 container.13
 item replace entity @s enderchest.14 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.15 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.16 from block 10110222 5 10110222 container.0

@@ -1,4 +1,4 @@
-scoreboard players set @s jkbw.Player.UseIronGolemCD 1
+scoreboard players set @s jkbw.Player.UseCreatureCD 1
 clear @s raw_iron 1
 tag @s add jkbw_golem_owner
 summon iron_golem ~ ~ ~ {Tags: ["jkbw", "jkbw_iron_golem"], CustomNameVisible: true, Health: 20.0f}

@@ -9,6 +9,7 @@ execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "back"]}] run function jkbw:play/shop/urf/special/1 {name: back_scroll, id: 5}
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "anti_arrow"]}] run function jkbw:play/shop/urf/special/1 {name: anti_arrow, id: 6}
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "egg"]}] run function jkbw:play/shop/urf/special/1 {name: egg, id: 7}
+execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "happy_ghast"]}] run function jkbw:play/shop/urf/special/1 {name: happy_ghast, id: 8}
 
 # 原生道具
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "urf", "compass"]}] run function jkbw:play/shop/urf/special/2 {name: compass, item: compass}

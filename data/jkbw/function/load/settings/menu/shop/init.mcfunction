@@ -43,6 +43,7 @@ scoreboard players set #apple jkbw.mem 3
 scoreboard players set #fireball jkbw.mem 40
 scoreboard players set #silverfish jkbw.mem 30
 scoreboard players set #iron_golem jkbw.mem 120
+scoreboard players set #happy_ghast jkbw.mem 4
 scoreboard players set #tnt jkbw.mem 8
 scoreboard players set #tnt1 jkbw.mem 4
 scoreboard players set #sponge jkbw.mem 6
@@ -170,5 +171,6 @@ scoreboard players set #urfXPfire_charge jkbw.mem 200
 scoreboard players set #urfXPwind_charge jkbw.mem 200
 scoreboard players set #urfXPegg jkbw.mem 500
 scoreboard players set #urfXPapple jkbw.mem 20
+scoreboard players set #urfXPhappy_ghast jkbw.mem 1000
 
 function jkbw:load/settings/menu/shop/classic2exp

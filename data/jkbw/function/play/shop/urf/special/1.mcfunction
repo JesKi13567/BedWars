@@ -16,9 +16,11 @@ $execute if score #4 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] ic
 $execute if score #5 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] paper[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, consumable={consume_seconds: 100000}]
 $execute if score #6 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] prismarine_shard[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, consumable={consume_seconds: 100000}]
 $execute if score #7 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] egg[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, max_stack_size=64]
+$execute if score #8 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] raw_gold[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, consumable={consume_seconds: 100000}, item_model=happy_ghast_spawn_egg, custom_name={"translate": "item.minecraft.happy_ghast_spawn_egg", "color": "white", "italic": false}]
 
-$execute unless score #4 jkbw.mem matches $(id) run tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.$(name).name", "color": "gold"}, "!"]
+$execute unless score #4 jkbw.mem matches $(id) unless score #8 jkbw.mem matches $(id) run tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.$(name).name", "color": "gold"}, "!"]
 $execute if score #4 jkbw.mem matches $(id) run tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.the_truly", "color": "gold"}, {"translate": "enchantment.minecraft.frost_walker", "color": "gold"}, "!"]
+$execute if score #8 jkbw.mem matches $(id) run tellraw @s[tag=jkbw_buy_success] [{"storage": "jk:bw", "nbt": "txt.print.buy_ok", "color": "green"}, " ", {"translate": "item.minecraft.happy_ghast_spawn_egg", "color": "gold"}, "!"]
 
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 $scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.Own.xpLevelsReal -= #urfXP$(name) jkbw.mem

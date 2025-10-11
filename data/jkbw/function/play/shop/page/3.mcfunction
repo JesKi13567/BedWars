@@ -19,6 +19,7 @@ execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "water"]}] run function jkbw:play/shop/item/special/custom {id: 5, name: water, res: gold_ingot}
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "egg"]}] run function jkbw:play/shop/item/special/custom {id: 6, name: egg, res: emerald}
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "platform"]}] run function jkbw:play/shop/item/special/custom {id: 7, name: platform, res: gold_ingot}
+execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "happy_ghast"]}] run function jkbw:play/shop/item/special/happy_ghast
 
 # 资源
 execute if score #res_mode jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "iron"]}] run function jkbw:play/shop/item/special/res {item: iron_ingot}
