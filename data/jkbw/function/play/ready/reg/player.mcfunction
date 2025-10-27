@@ -1,9 +1,3 @@
-# 药效
-effect give @s[scores={jkbw.Player.Hp=..19}] resistance 1 9 true
-effect give @s[scores={jkbw.Player.Hp=..19}] regeneration 1 9 true
-effect give @s saturation 1 9 true
-effect give @s weakness 1 0 true
-
 # 禁止在传送点以下
 execute store result score @s jkbw.Entity.Y run data get entity @s Pos[1]
 execute if score @s jkbw.Entity.Y < #WY jkbw.mem run function jkbw:load/settings/menu/back with storage jk:bw Map.cur

@@ -85,7 +85,6 @@ scoreboard players set @s jkbw.Player.Page 0
 execute unless score @s jkbw.Player.Head matches 1.. run scoreboard players set @s jkbw.Player.Head 0
 execute if score #res_mode jkbw.mem matches 0..1 run scoreboard players set @s jkbw.Player.Compass 0
 execute if score #res_mode jkbw.mem matches 2 run scoreboard players set @s jkbw.Player.Compass -1
-scoreboard players set @s jkbw.CurrentGame 1
 xp set @s 0 levels
 xp set @s 0 points
 title @s title ""

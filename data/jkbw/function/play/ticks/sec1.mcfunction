@@ -9,17 +9,11 @@ scoreboard players remove @a[scores={jkbw.Player.UseAntiarrowCD=1..}] jkbw.Playe
 scoreboard players remove @a[scores={jkbw.Player.UseIceCD=1..}] jkbw.Player.UseIceCD 1
 scoreboard players remove @a[scores={jkbw.Player.UseTheMirrorCD=1..}] jkbw.Player.UseTheMirrorCD 1
 
-# 受伤原谅时长
-execute as @a[gamemode=adventure, scores={jkbw.Player.State=2}] at @s run function jkbw:play/hurt/execuse
-
 # 资源生成
 execute unless score #exp_mode jkbw.mem matches 4 run function jkbw:play/res/global
 
 # 团队常驻
 execute if score #res_mode jkbw.mem matches 0..1 run function jkbw:play/shop/team/global
-
-# 防饥饿
-effect give @a saturation 1 9 true
 
 # 实体存活时间
 scoreboard players remove @e[scores={jkbw.Entity.Time=1..}] jkbw.Entity.Time 1
@@ -31,16 +25,14 @@ scoreboard players remove @e[type=text_display, tag=jkbw_bed_display, scores={jk
 # 生命恢复
 scoreboard players remove #heal jkbw.mem 1
 execute if score #heal jkbw.mem matches ..0 run scoreboard players set #heal jkbw.mem 5
-execute if score #heal jkbw.mem matches 5 run effect give @a[gamemode=adventure, scores={jkbw.Player.State=2}] regeneration 1 2 true
+
+# 活着的玩家
+execute as @a[gamemode=adventure, scores={jkbw.Player.State=2}] run function jkbw:play/hurt/execuse
 
 # 管理员
-effect give @a[gamemode=creative] invisibility infinite 0 true
-effect clear @a[gamemode=creative] glowing
-tag @a[gamemode=creative] add jkbw_admin
-scoreboard players set @a[gamemode=creative] jkbw.Player.State 0
-team leave @a[gamemode=creative]
+execute as @a[gamemode=creative] run function jkbw:play/admin/state1_sec1
 
-# 游戏开始后，无队伍变为旁观者
+# 旁观者
 team leave @a[scores={jkbw.Player.State=0}]
 clear @a[gamemode=adventure, team=, scores={jkbw.Player.State=0}]
 tellraw @a[gamemode=adventure, team=, scores={jkbw.Player.State=0}] [{"storage": "jk:bw", "nbt": "txt.print.bedwars", "color": "yellow"}, {"storage": "jk:bw", "nbt": "txt.print.game_started", "color": "green"}]

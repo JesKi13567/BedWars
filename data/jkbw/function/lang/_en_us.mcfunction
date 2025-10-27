@@ -133,7 +133,7 @@ data modify storage jk:bw txt.item.shop.ice_bridge.lore set value "Build a ice b
 data modify storage jk:bw txt.item.shop.ice_bridge.name set value "Ice Bridge"
 data modify storage jk:bw txt.item.shop.ice_walker.lore1 set value ""
 data modify storage jk:bw txt.item.shop.ice_walker.lore2 set value " under your feet will turn into "
-data modify storage jk:bw txt.item.shop.iron_golem.lore0 set value "Summons "
+data modify storage jk:bw txt.item.shop.iron_golem.lore0 set value "At your Pos, summons "
 data modify storage jk:bw txt.item.shop.iron_golem.lore1 set value "Fight for your team for 240s!"
 data modify storage jk:bw txt.item.shop.iron_golem.name set value "Iron Bro"
 data modify storage jk:bw txt.item.shop.lvl set value "lvl"

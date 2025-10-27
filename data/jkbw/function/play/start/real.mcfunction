@@ -19,6 +19,8 @@ kill @e[type=item, tag=jkbw_res]
 kill @e[type=marker, tag=jkbw_chest_player]
 
 # 全局
+difficulty hard
+gamerule pvp true
 scoreboard players set #state jkbw.mem 1
 scoreboard players set #time_state jkbw.mem 0
 scoreboard players operation #dragon1 jkbw.mem = #dragon jkbw.mem
@@ -26,7 +28,6 @@ scoreboard players operation #XPdragon1 jkbw.mem = #XPdragon jkbw.mem
 scoreboard players reset #shop_random_countdown jkbw.mem
 scoreboard players reset #solo_mode jkbw.mem
 scoreboard players reset * jkbw.Player.ID
-scoreboard players reset * jkbw.CurrentGame
 
 # 资源产生时间
 execute unless score #spawn_diamond jkbw.mem matches 10..100 run scoreboard players set #spawn_diamond jkbw.mem 30

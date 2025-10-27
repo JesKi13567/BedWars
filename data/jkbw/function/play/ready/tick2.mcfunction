@@ -14,7 +14,7 @@ execute unless score #test_mode jkbw.mem matches 1 if score #team_mode jkbw.mem 
 execute unless score #test_mode jkbw.mem matches 1 run function jkbw:play/ready/reg/num_count
 
 ## 管理员
-execute as @a[gamemode=creative] run function jkbw:play/ready/reg/admin
+execute as @a[gamemode=creative] run function jkbw:play/admin/state0_tick2
 
 ## 地图
 # 清理

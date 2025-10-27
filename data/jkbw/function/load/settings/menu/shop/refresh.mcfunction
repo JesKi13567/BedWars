@@ -235,10 +235,10 @@ data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "n
 data modify block 10110219 5 10110222 Items[-7].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 #happy_ghast
 data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#happy_ghast", "objective": "jkbw.mem"}, "color": "green"}, " ", {"translate": "item.minecraft.emerald", "italic": false, "color": "green"}]
-data modify block 10110219 5 10110222 Items[-6].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
+data modify block 10110219 5 10110222 Items[-6].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
 #XPhappy_ghast
 data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPhappy_ghast", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]
-data modify block 10110219 5 10110222 Items[-5].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
+data modify block 10110219 5 10110222 Items[-5].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
 ## 经典 & 经验模式 资源
 #XPiron_ingot
 data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#XPiron_ingot", "objective": "jkbw.mem"}, "color": "aqua", "bold": true}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua", "bold": true}]
@@ -869,7 +869,7 @@ data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "n
 data modify block 10110220 4 10110222 Items[12].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 #urfXPhappy_ghast
 data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPhappy_ghast", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]
-data modify block 10110220 4 10110222 Items[13].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
+data modify block 10110220 4 10110222 Items[13].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
 #urfXPpearl_blitz
 data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.cost", "italic": false, "color": "gray"}, {"score": {"name": "#urfXPpearl_blitz", "objective": "jkbw.mem"}, "color": "aqua"}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl", "italic": false, "color": "aqua"}]
 data modify block 10110220 4 10110222 Items[14].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
@@ -1238,12 +1238,17 @@ data modify block 10110220 4 10110222 Items[9].components.minecraft:lore[0] set 
 data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.iron_golem.name", "italic": false, "color": "white"}]
 data modify block 10110218 5 10110222 Items[3].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110218 5 10110222 Items[12].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
-data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.iron_golem.lore0", "italic": false, "color": "gold"}, {"translate": "entity.minecraft.iron_golem", "color": "white"}, ", "]
+data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.iron_golem.lore0", "italic": false, "color": "gold"}, {"translate": "entity.minecraft.iron_golem", "color": "white"}, ","]
 data modify block 10110218 5 10110222 Items[3].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110218 5 10110222 Items[12].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.iron_golem.lore1", "italic": false, "color": "aqua"}]
 data modify block 10110218 5 10110222 Items[3].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
 data modify block 10110218 5 10110222 Items[12].components.minecraft:lore[1] set from block ~ ~ ~ back_text.messages[1]
+## 快乐恶魂
+data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.iron_golem.lore0", "italic": false, "color": "gold"}, {"translate": "entity.minecraft.happy_ghast", "color": "white"}, "."]
+data modify block 10110219 5 10110222 Items[-6].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
+data modify block 10110219 5 10110222 Items[-5].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
+data modify block 10110220 4 10110222 Items[13].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 ## tnt
 data modify block ~ ~ ~ back_text.messages[1] set value [{"storage": "jk:bw", "nbt": "txt.item.shop.tnt", "italic": false, "color": "gold"}]
 data modify block 10110218 5 10110222 Items[7].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]

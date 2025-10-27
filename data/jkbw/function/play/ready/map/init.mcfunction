@@ -7,5 +7,9 @@ bossbar set jkbw:map visible true
 execute as @e[type=marker, tag=jkbw_map, limit=1] run function jkbw:play/ready/map/refill with storage jk:bw Map.cur
 function jkbw:load/settings/menu
 
+# 触发此函数则说明为准备状态
+difficulty peaceful
+gamerule pvp false
+
 # 轮换检查点
 execute if score #map_rotation_check jkbw.mem matches 1 run scoreboard players set #map_rotation_check jkbw.mem 2

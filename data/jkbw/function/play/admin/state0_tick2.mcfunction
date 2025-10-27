@@ -1,6 +1,4 @@
-# 可显示菜单
-tag @s add jkbw_admin
-team leave @s
+function jkbw:play/admin/state1_sec1
 
 # 防止虚空伤害
 execute store result score @s jkbw.Entity.Y run data get entity @s Pos[1]

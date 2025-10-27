@@ -3,8 +3,8 @@
 execute if score #res_mode jkbw.mem matches 0..1 run function jkbw:play/team/loop/global
 
 # 玩家中途离开游戏
-execute unless score @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.CurrentGame matches 1 run function jkbw:play/ready/reg/leavegame
-execute if score @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.CurrentGame matches 1 run tellraw @a ["", {"storage": "jk:bw", "nbt": "txt.print.bedwars", "color": "yellow"}, " ", {"selector": "@s"}, " ", {"storage": "jk:bw", "nbt": "txt.print.rejoin_game", "color": "green"}]
+execute unless score @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.Player.ID matches 1.. run function jkbw:play/ready/reg/leavegame
+execute if score @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.Player.ID matches 1.. run tellraw @a ["", {"storage": "jk:bw", "nbt": "txt.print.bedwars", "color": "yellow"}, " ", {"selector": "@s"}, " ", {"storage": "jk:bw", "nbt": "txt.print.rejoin_game", "color": "green"}]
 scoreboard players set @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.Player.LeaveGame 0
 
 # 记录自己的坐标（带1的为不变坐标，他人计算用）

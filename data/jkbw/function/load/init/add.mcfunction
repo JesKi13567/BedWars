@@ -1,7 +1,6 @@
 # 全局计分板
 function jkbw:load/init/mems
 scoreboard objectives add jkbw.Temp dummy "暂时值"
-scoreboard objectives add jkbw.CurrentGame dummy "参与当前游戏"
 
 # 队伍计分板
 scoreboard objectives add jkbw.Team.Alive dummy "队伍存活人数"
@@ -200,7 +199,7 @@ team modify jkbw.npc collisionRule never
 
 team add jkbw.npc_alive
 team modify jkbw.npc_alive prefix "       "
-team modify jkbw.npc_alive suffix ["", {"text": " → ", "color": "gray"}, {"text": "⭕", "color": "green", "bold": true}]
+team modify jkbw.npc_alive suffix ["", {"text": " → ", "color": "gray"}, {"text": "■", "color": "green"}]
 
 team add jkbw.npc_red
 team modify jkbw.npc_red prefix "       "
@@ -221,7 +220,7 @@ team modify jkbw.npc_gray prefix "       "
 
 team add jkbw.npc_out
 team modify jkbw.npc_out prefix "       "
-team modify jkbw.npc_out suffix ["", {"text": " → ", "color": "gray"}, {"text": "❌", "color": "red", "bold": true}]
+team modify jkbw.npc_out suffix ["", {"text": " → ", "color": "gray"}, {"text": "□", "color": "red"}]
 
 # 游戏规则
 gamerule sendCommandFeedback false
@@ -240,7 +239,7 @@ gamerule announceAdvancements false
 gamerule doTileDrops true
 gamerule doFireTick false
 gamerule playersSleepingPercentage 101
-difficulty hard
+difficulty peaceful
 gamerule doMobLoot false
 gamerule doMobSpawning false
 gamerule mobGriefing false

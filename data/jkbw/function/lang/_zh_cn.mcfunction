@@ -133,7 +133,7 @@ data modify storage jk:bw txt.item.shop.ice_bridge.lore set value "沿水平方�
 data modify storage jk:bw txt.item.shop.ice_bridge.name set value "冰桥"
 data modify storage jk:bw txt.item.shop.ice_walker.lore1 set value "你脚下"
 data modify storage jk:bw txt.item.shop.ice_walker.lore2 set value "都会短暂变成"
-data modify storage jk:bw txt.item.shop.iron_golem.lore0 set value "生成"
+data modify storage jk:bw txt.item.shop.iron_golem.lore0 set value "原地生成"
 data modify storage jk:bw txt.item.shop.iron_golem.lore1 set value "为你的团队战斗 240 秒！"
 data modify storage jk:bw txt.item.shop.iron_golem.name set value "铁哥"
 data modify storage jk:bw txt.item.shop.lvl set value "等级"

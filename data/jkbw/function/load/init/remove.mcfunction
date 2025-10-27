@@ -1,6 +1,5 @@
 #scoreboard objectives remove jkbw.mem
 scoreboard objectives remove jkbw.Temp
-scoreboard objectives remove jkbw.CurrentGame
 scoreboard objectives remove jkbw.display
 scoreboard objectives remove jkbw.admin.trigger
 

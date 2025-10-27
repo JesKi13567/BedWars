@@ -1,7 +1,7 @@
 {
   "pack": {
-    "pack_format": 81,
-    "supported_formats": [80, 81],
+    "min_format": 88,
+    "max_format": 88,
     "description": [
       {
         "text": "BedWars ",
