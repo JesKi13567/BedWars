@@ -21,6 +21,7 @@ kill @e[type=marker, tag=jkbw_chest_player]
 # 全局
 difficulty hard
 gamerule pvp true
+gamerule naturalRegeneration false
 scoreboard players set #state jkbw.mem 1
 scoreboard players set #time_state jkbw.mem 0
 scoreboard players operation #dragon1 jkbw.mem = #dragon jkbw.mem

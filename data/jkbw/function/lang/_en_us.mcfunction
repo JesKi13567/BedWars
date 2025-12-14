@@ -36,7 +36,7 @@ data modify storage jk:bw txt.display.how2play.2 set value "In URF(Ultra Rapid F
 data modify storage jk:bw txt.display.how2play.2_1 set value " on birth. They can buy team chests but no team benefits via shops, all weapons & armor have durability. As the game progresses, players will gradually improve their "
 data modify storage jk:bw txt.display.how2play.2_2 set value ", and will unlock "
 data modify storage jk:bw txt.display.how2play.2_3 set value " in final game-stage. Players' levels only lose half after death."
-data modify storage jk:bw txt.display.how2play.global set value "BedWars is a classic Minecraft mini-game, players' primary aim is to protect their beds and survive to the end. If their beds were broken, they couldn't rebrith."
+data modify storage jk:bw txt.display.how2play.global set value "BedWars is a classic Minecraft mini-game,\nplayers' aim is to protect their beds and survive to the end.\nIf their beds were broken, they couldn't rebrith."
 data modify storage jk:bw txt.display.iron_point set value "'s Iron Point"
 data modify storage jk:bw txt.display.map.clean set value "Map Cleaning..."
 data modify storage jk:bw txt.display.map.convert set value "Map Converting..."

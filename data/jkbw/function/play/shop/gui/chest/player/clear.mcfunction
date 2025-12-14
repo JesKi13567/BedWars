@@ -62,6 +62,10 @@ scoreboard players reset @s jkbw.Player.PlacePink
 scoreboard players reset @s jkbw.Player.PlaceGray
 scoreboard players reset @s jkbw.Player.PlaceOrange
 scoreboard players reset @s jkbw.Player.Own.xpLevels
+scoreboard players reset @s jkbw.Player.Own.iron_ingotReal
+scoreboard players reset @s jkbw.Player.Own.gold_ingotReal
+scoreboard players reset @s jkbw.Player.Own.diamondReal
+scoreboard players reset @s jkbw.Player.Own.emeraldReal
 scoreboard players reset @s jkbw.Player.Own.xpLevelsReal
 scoreboard players reset @s jkbw.Player.DeathImp
 scoreboard players reset @s jkbw.Player.RebornTime

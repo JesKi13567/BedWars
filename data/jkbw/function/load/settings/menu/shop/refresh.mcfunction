@@ -1349,7 +1349,7 @@ execute positioned 10110222 1 10110222 run kill @e[distance=..20, tag=jkbw_canno
 summon interaction 10110222 2 10110222 {response: true, Tags: ["jkbw", "jkbw_button", "jkbw_button_chunk", "jkbw_cannot_kill"], height: .99f, width: .99f}
 summon interaction 10110209 2 10110222 {response: true, Tags: ["jkbw", "jkbw_button", "jkbw_button_price", "jkbw_cannot_kill"], height: .99f, width: .99f}
 
-summon text_display 10110222 2.5 10110222 {Tags: ["jkbw", "jkbw_show", "jkbw_cannot_kill"], text: [{"storage": "jk:bw", "nbt": "txt.button.new_blocks", "color": "red", "bold": true}], billboard: "center", alignment: "center", line_width: 200}
-summon text_display 10110209 2.5 10110222 {Tags: ["jkbw", "jkbw_show", "jkbw_cannot_kill"], text: [{"storage": "jk:bw", "nbt": "txt.button.reset_price", "color": "aqua", "bold": true}], billboard: "center", alignment: "center", line_width: 200}
+summon text_display 10110222 2.5 10110222 {Tags: ["jkbw", "jkbw_show", "jkbw_cannot_kill"], text: [{"storage": "jk:bw", "nbt": "txt.button.new_blocks", "color": "red", "bold": true}], billboard: "center"}
+summon text_display 10110209 2.5 10110222 {Tags: ["jkbw", "jkbw_show", "jkbw_cannot_kill"], text: [{"storage": "jk:bw", "nbt": "txt.button.reset_price", "color": "aqua", "bold": true}], billboard: "center"}
 
-summon text_display 10110219 4 10110220 {Tags: ["jkbw", "jkbw_show", "jkbw_cannot_kill"], text: ["", {"storage": "jk:bw", "nbt": "txt.print.container_chunk_tip1", "color": "gold"}, {"translate": "block.minecraft.shulker_box"}, {"storage": "jk:bw", "nbt": "txt.print.container_chunk_tip2", "color": "gold"}], billboard: "center", alignment: "center", line_width: 200}
+summon text_display 10110219 4 10110220 {Tags: ["jkbw", "jkbw_show", "jkbw_cannot_kill"], text: ["", {"storage": "jk:bw", "nbt": "txt.print.container_chunk_tip1", "color": "gold"}, {"translate": "block.minecraft.shulker_box"}, {"storage": "jk:bw", "nbt": "txt.print.container_chunk_tip2", "color": "gold"}], billboard: "center"}

@@ -1,4 +1,4 @@
-execute store result score @s jkbw.Player.ShopRandom run random value 0..45
+execute store result score @s jkbw.Player.ShopRandom run random value 0..46
 
 # 方块
 execute if score @s jkbw.Player.ShopRandom matches 0 run function jkbw:play/shop/item/block/main {item: wool, count: 16, res: iron_ingot, color: 1}
@@ -54,3 +54,5 @@ execute if score @s jkbw.Player.ShopRandom matches 42 run function jkbw:play/sho
 execute if score @s jkbw.Player.ShopRandom matches 43 run function jkbw:play/shop/item/special/custom {id: 8, name: crossbow_max, res: emerald}
 execute if score @s jkbw.Player.ShopRandom matches 44 run function jkbw:play/shop/item/special/custom {id: 9, name: ice_bridge, res: gold_ingot}
 execute if score @s jkbw.Player.ShopRandom matches 45 run function jkbw:play/shop/item/special/custom {id: 10, name: the_mirror, res: gold_ingot}
+# 快乐恶魂
+execute if score @s jkbw.Player.ShopRandom matches 46 run function jkbw:play/shop/item/special/happy_ghast

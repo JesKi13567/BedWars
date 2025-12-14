@@ -10,6 +10,7 @@ function jkbw:load/settings/menu
 # 触发此函数则说明为准备状态
 difficulty peaceful
 gamerule pvp false
+gamerule naturalRegeneration true
 
 # 轮换检查点
 execute if score #map_rotation_check jkbw.mem matches 1 run scoreboard players set #map_rotation_check jkbw.mem 2

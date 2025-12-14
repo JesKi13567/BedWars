@@ -1,4 +1,4 @@
-execute store result score @s jkbw.Player.ShopRandom run random value 0..61
+execute store result score @s jkbw.Player.ShopRandom run random value 0..62
 
 # 方块
 execute if score @s jkbw.Player.ShopRandom matches 0 run function jkbw:play/shop/urf/block/common {item: cut_sandstone, count: 16}
@@ -69,3 +69,5 @@ execute if score @s jkbw.Player.ShopRandom matches 58 run function jkbw:play/sho
 execute if score @s jkbw.Player.ShopRandom matches 59 run function jkbw:play/shop/urf/special/2 {name: pearl, item: ender_pearl}
 execute if score @s jkbw.Player.ShopRandom matches 60 run function jkbw:play/shop/urf/special/2 {name: apple, item: golden_apple}
 execute if score @s jkbw.Player.ShopRandom matches 61 run function jkbw:play/shop/urf/special/2 {name: wind_charge, item: wind_charge}
+# 快乐恶魂
+execute if score @s jkbw.Player.ShopRandom matches 62 run function jkbw:play/shop/item/special/happy_ghast

@@ -224,7 +224,6 @@ team modify jkbw.npc_out suffix ["", {"text": " → ", "color": "gray"}, {"text"
 
 # 游戏规则
 gamerule sendCommandFeedback false
-gamerule naturalRegeneration false
 gamerule doImmediateRespawn true
 gamerule showDeathMessages false
 gamerule doWeatherCycle false
@@ -239,7 +238,6 @@ gamerule announceAdvancements false
 gamerule doTileDrops true
 gamerule doFireTick false
 gamerule playersSleepingPercentage 101
-difficulty peaceful
 gamerule doMobLoot false
 gamerule doMobSpawning false
 gamerule mobGriefing false
