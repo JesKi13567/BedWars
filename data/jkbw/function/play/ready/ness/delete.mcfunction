@@ -1,5 +1,5 @@
 kill @e[tag=jkbw, tag=!jkbw_worldspawn, tag=!jkbw_cannot_kill, distance=..6]
-playsound entity.blaze.shoot block @a[distance=..8]
+playsound entity.blaze.shoot block @a
 
 # 粒子特效
 particle flame ~-6 ~-1 ~-1

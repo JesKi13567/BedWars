@@ -148,48 +148,48 @@ bossbar set jkbw:player_ready style progress
 bossbar set jkbw:player_ready visible false
 
 # 队伍
-team add jkbw.red {"text": "红队", "color": "red"}
+team add jkbw.red {text: "红队", color: "red"}
 team modify jkbw.red color red
 team modify jkbw.red collisionRule never
 team modify jkbw.red friendlyFire false
 
-team add jkbw.blue {"text": "蓝队", "color": "blue"}
+team add jkbw.blue {text: "蓝队", color: "blue"}
 team modify jkbw.blue color blue
 team modify jkbw.blue collisionRule never
 team modify jkbw.blue friendlyFire false
 
-team add jkbw.green {"text": "绿队", "color": "green"}
+team add jkbw.green {text: "绿队", color: "green"}
 team modify jkbw.green color green
 team modify jkbw.green collisionRule never
 team modify jkbw.green friendlyFire false
 
-team add jkbw.yellow {"text": "黄队", "color": "yellow"}
+team add jkbw.yellow {text: "黄队", color: "yellow"}
 team modify jkbw.yellow color yellow
 team modify jkbw.yellow collisionRule never
 team modify jkbw.yellow friendlyFire false
 
-team add jkbw.cyan {"text": "青队", "color": "aqua"}
+team add jkbw.cyan {text: "青队", color: "aqua"}
 team modify jkbw.cyan color aqua
 team modify jkbw.cyan collisionRule never
 team modify jkbw.cyan friendlyFire false
 
-team add jkbw.white {"text": "白队", "color": "white"}
+team add jkbw.white {text: "白队", color: "white"}
 team modify jkbw.white color white
 team modify jkbw.white collisionRule never
 team modify jkbw.white friendlyFire false
 
-team add jkbw.pink {"text": "粉队", "color": "light_purple"}
+team add jkbw.pink {text: "粉队", color: "light_purple"}
 team modify jkbw.pink color light_purple
 team modify jkbw.pink collisionRule never
 team modify jkbw.pink friendlyFire false
 
-team add jkbw.gray {"text": "灰队", "color": "gray"}
+team add jkbw.gray {text: "灰队", color: "gray"}
 team modify jkbw.gray color gray
 team modify jkbw.gray collisionRule never
 team modify jkbw.gray friendlyFire false
 
 team add jkbw.spec
-team modify jkbw.spec prefix {"text": "[s] ", "color": "gray"}
+team modify jkbw.spec prefix {text: "[s] ", color: "gray"}
 team modify jkbw.spec color white
 team modify jkbw.spec collisionRule never
 team modify jkbw.spec friendlyFire false
@@ -199,7 +199,7 @@ team modify jkbw.npc collisionRule never
 
 team add jkbw.npc_alive
 team modify jkbw.npc_alive prefix "       "
-team modify jkbw.npc_alive suffix ["", {"text": " → ", "color": "gray"}, {"text": "■", "color": "green"}]
+team modify jkbw.npc_alive suffix ["", {text: " → ", color: "gray"}, {text: "■", color: "green"}]
 
 team add jkbw.npc_red
 team modify jkbw.npc_red prefix "       "
@@ -220,32 +220,32 @@ team modify jkbw.npc_gray prefix "       "
 
 team add jkbw.npc_out
 team modify jkbw.npc_out prefix "       "
-team modify jkbw.npc_out suffix ["", {"text": " → ", "color": "gray"}, {"text": "□", "color": "red"}]
+team modify jkbw.npc_out suffix ["", {text: " → ", color: "gray"}, {text: "□", color: "red"}]
 
 # 游戏规则
-gamerule sendCommandFeedback false
-gamerule doImmediateRespawn true
-gamerule showDeathMessages false
-gamerule doWeatherCycle false
+gamerule send_command_feedback false
+gamerule immediate_respawn true
+gamerule show_death_messages false
+gamerule advance_weather false
 weather clear
-gamerule doDaylightCycle false
+gamerule advance_time false
 time set 0
-gamerule randomTickSpeed 0
-gamerule commandModificationBlockLimit 1000000
-gamerule keepInventory true
-gamerule doLimitedCrafting true
-gamerule announceAdvancements false
-gamerule doTileDrops true
-gamerule doFireTick false
-gamerule playersSleepingPercentage 101
-gamerule doMobLoot false
-gamerule doMobSpawning false
-gamerule mobGriefing false
-gamerule doVinesSpread false
-gamerule disableRaids true
-gamerule doInsomnia false
-gamerule doWardenSpawning false
-gamerule doTraderSpawning false
+gamerule random_tick_speed 0
+gamerule max_block_modifications 1000000
+gamerule keep_inventory true
+gamerule limited_crafting true
+gamerule show_advancement_messages false
+gamerule block_drops true
+gamerule fire_spread_radius_around_player 0
+gamerule players_sleeping_percentage 200
+gamerule mob_drops false
+gamerule spawn_mobs false
+gamerule mob_griefing false
+gamerule spread_vines false
+gamerule raids false
+gamerule spawn_phantoms false
+gamerule spawn_wardens false
+gamerule spawn_wandering_traders false
 worldborder warning distance 0
 worldborder damage buffer 0
 worldborder damage amount 100

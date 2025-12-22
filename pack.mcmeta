@@ -1,7 +1,7 @@
 {
   "pack": {
-    "min_format": 88,
-    "max_format": 88,
+    "min_format": 94,
+    "max_format": 94,
     "description": [
       {
         "text": "BedWars ",
@@ -16,16 +16,8 @@
         "color": "yellow"
       },
       {
-        "text": "工具包\n",
+        "text": "工具包",
         "color": "light_purple"
-      },
-      {
-        "text": "By ",
-        "color": "white"
-      },
-      {
-        "text": "JK137",
-        "color": "aqua"
       }
     ]
   },

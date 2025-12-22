@@ -1,4 +1,5 @@
-setblock 10110217 5 10110222 black_shulker_box[facing=north]{Items: [{Slot: 0b, id: "dragon_head", count: 1b, components: {custom_data: {jkbw: ["shop", "team", "dragon"]}, lore: ["", ""]}}, \
+setblock 10110217 5 10110222 black_shulker_box[facing=north]{Items: [\
+{Slot: 0b, id: "dragon_head", count: 1b, components: {custom_data: {jkbw: ["shop", "team", "dragon"]}, lore: ["", ""]}}, \
 {Slot: 1b, id: "beacon", count: 1b, components: {custom_data: {jkbw: ["shop", "team", "heal"]}, lore: ["", ""]}}, \
 {Slot: 2b, id: "beacon", count: 1b, components: {custom_data: {jkbw: ["shop", "team", "heal"]}, lore: ["", ""]}}, \
 {Slot: 3b, id: "diamond_sword", count: 1b, components: {custom_data: {jkbw: ["shop", "team", "sharpness"]}, attribute_modifiers: [], lore: ["", "", ""]}}, \

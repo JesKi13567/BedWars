@@ -9,6 +9,6 @@ execute as @s[tag=jkbw_button_set_time] run function jkbw:play/ready/button/set_
 execute as @s[tag=jkbw_button_chunk] run function jkbw:load/settings/menu/shop/containers
 execute as @s[tag=jkbw_button_price] run function jkbw:load/settings/menu/shop/init
 
-playsound block.note_block.bell player @a[distance=..6]
+playsound block.note_block.bell player @a
 execute on attacker run effect give @s glowing 1 0 true
 data remove entity @s attack

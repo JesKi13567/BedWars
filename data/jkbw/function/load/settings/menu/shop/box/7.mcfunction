@@ -1,4 +1,5 @@
-setblock 10110209 4 10110222 white_shulker_box[facing=north]{Items: [{Slot: 0b, id: "red_wool", count: 1b, components: {custom_data: {jkbw: ["shop", "compass", "red"]}, lore: ["", "", ""]}}, \
+setblock 10110209 4 10110222 white_shulker_box[facing=north]{Items: [\
+{Slot: 0b, id: "red_wool", count: 1b, components: {custom_data: {jkbw: ["shop", "compass", "red"]}, lore: ["", "", ""]}}, \
 {Slot: 1b, id: "blue_wool", count: 1b, components: {custom_data: {jkbw: ["shop", "compass", "blue"]}, lore: ["", "", ""]}}, \
 {Slot: 2b, id: "green_wool", count: 1b, components: {custom_data: {jkbw: ["shop", "compass", "green"]}, lore: ["", "", ""]}}, \
 {Slot: 3b, id: "yellow_wool", count: 1b, components: {custom_data: {jkbw: ["shop", "compass", "yellow"]}, lore: ["", "", ""]}}, \

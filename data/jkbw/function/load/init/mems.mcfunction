@@ -9,14 +9,16 @@
 # 陷阱标号 Team.Trap 1/2/3
 # 1 is_trap 2 defend 3 alarm 4 mining_fatigue
 
+# tutorial 教程
+scoreboard players set #tutorial jkbw.mem 0
 # res_mode 资源模式 0 经典 1 经验 2 无限火力
 scoreboard players set #res_mode jkbw.mem 0
-# attack_mode 攻击模式 无 1.8- 1 1.9+
-scoreboard players reset #attack_mode jkbw.mem
+# attack_speed 攻击速度 0 1.8- 1 1.9+
+scoreboard players set #attack_speed jkbw.mem 1
 # bed_type 床模式 0 床 1 夹心 2 蛋糕
 scoreboard players set #bed_type jkbw.mem 0
-# exp_mode 实验模式 无 无 1 疾速 2 无跳跃 3 小人国
-scoreboard players reset #exp_mode jkbw.mem
+# exp_mode 实验模式 0 无 1 疾速 2 无跳跃 3 小人国
+scoreboard players set #exp_mode jkbw.mem 0
 # set_time 设置时间 0 day 1 noon 2 night 3 midnight
 scoreboard players set #set_time jkbw.mem 0
 # time_freeze 设置时间流动 1 不流动 0 流动
@@ -31,12 +33,6 @@ scoreboard players set #res_rate jkbw.mem 10
 scoreboard players set #res_rate1 jkbw.mem 1
 scoreboard players set #res_rate2 jkbw.mem 1
 scoreboard players set #res_rate3 jkbw.mem 0
-# test_mode 测试模式 无 关闭 1 开启
-scoreboard players reset #test_mode jkbw.mem
-# tutorial 教程
-scoreboard players set #tutorial jkbw.mem 0
-# map_rotation 地图轮换 无 关闭 1 开启
-scoreboard players reset #map_rotation jkbw.mem
 # time_update  time_bed  time_fight  time_end
 # 资源升级间隔   床自毁   死斗模式间隔    结束
 scoreboard players set #time_update jkbw.mem 300
@@ -52,6 +48,12 @@ scoreboard players set #spawn_emerald jkbw.mem 55
 scoreboard players set #minus_emerald jkbw.mem 5
 scoreboard players set #spawn_emerald_urf jkbw.mem 5
 scoreboard players set #minus_emerald_urf jkbw.mem 1
+# 实验模式4的时间间隔
+scoreboard players set #EXP_MODE_4_SHOP_INTERVAL jkbw.mem 10
+# 盾模式 0 禁用 1 启用 2 附剑上
+scoreboard players set #ENABLE_shield jkbw.mem 1
+# 矛模式 0 禁用 1 启用
+scoreboard players set #ENABLE_spear jkbw.mem 0
 # 商品个数
 scoreboard players set #shop_items_0 jkbw.mem 27
 scoreboard players set #shop_items_2 jkbw.mem 34
@@ -60,15 +62,6 @@ scoreboard players set #shop_items_6 jkbw.mem 27
 scoreboard players set #shop_items_7 jkbw.mem 27
 scoreboard players set #shop_items_8 jkbw.mem 27
 scoreboard players set #shop_items_9 jkbw.mem 27
-# 实验模式4的时间间隔
-scoreboard players set #EXP_MODE_4_SHOP_INTERVAL jkbw.mem 10
-# 轮换道具永久保存
-scoreboard players reset #ACCESS_permanent_save jkbw.mem
-# 某些道具的耐久度
-# 无 默认 1 一半 2 满
-scoreboard players reset #DURABILITY_shield jkbw.mem
-scoreboard players reset #DURABILITY_trident jkbw.mem
-scoreboard players reset #DURABILITY_mace jkbw.mem
 # 计算用数字
 scoreboard players set #-1 jkbw.mem -1
 scoreboard players set #1 jkbw.mem 1

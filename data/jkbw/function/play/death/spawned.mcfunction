@@ -7,7 +7,7 @@ effect give @s instant_health 1 9 true
 clear @s
 item replace entity @s hotbar.4 from block 10110209 3 10110222 container.3
 
-execute unless score #attack_mode jkbw.mem matches 1 run attribute @s attack_speed base set 100
+execute if score #attack_speed jkbw.mem matches 0 run attribute @s attack_speed base set 100
 
 execute if score #exp_mode jkbw.mem matches 2 run attribute @s jump_strength base set 0
 execute if score #exp_mode jkbw.mem matches 2 run attribute @s step_height base set 3

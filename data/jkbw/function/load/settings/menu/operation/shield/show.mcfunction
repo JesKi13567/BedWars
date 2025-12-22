@@ -1,0 +1,5 @@
+execute if score #ENABLE_shield jkbw.mem matches 0 run data modify block 10110222 1 10110222 back_text.messages[0] set value [{text: "[", color: "red", "italic": false}, {translate: "item.minecraft.shield"}, ": ", {storage: "jk:bw", nbt: "txt.print.global.disabled"}, "]"]
+execute if score #ENABLE_shield jkbw.mem matches 1 run data modify block 10110222 1 10110222 back_text.messages[0] set value [{text: "[", color: "green", "italic": false}, {translate: "item.minecraft.shield"}, ": ", {storage: "jk:bw", nbt: "txt.print.global.enabled"}, "]"]
+execute if score #ENABLE_shield jkbw.mem matches 2 run data modify block 10110222 1 10110222 back_text.messages[0] set value [{text: "[", color: "yellow", "italic": false}, {translate: "item.minecraft.shield"}, ": ", {storage: "jk:bw", nbt: "txt.print.shield.on_sword"}, "]"]
+summon marker ~ ~ ~ {Tags: ["jkbw", "jkbw_enable_item", "jkbw_enable_shield"]}
+data modify entity @e[type=marker, limit=1, tag=jkbw_enable_shield] CustomName set from block 10110222 1 10110222 back_text.messages[0]

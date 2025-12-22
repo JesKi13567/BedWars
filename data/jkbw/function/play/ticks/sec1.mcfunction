@@ -35,7 +35,7 @@ execute as @a[gamemode=creative] run function jkbw:play/admin/state1_sec1
 # 旁观者
 team leave @a[scores={jkbw.Player.State=0}]
 clear @a[gamemode=adventure, team=, scores={jkbw.Player.State=0}]
-tellraw @a[gamemode=adventure, team=, scores={jkbw.Player.State=0}] [{"storage": "jk:bw", "nbt": "txt.print.bedwars", "color": "yellow"}, {"storage": "jk:bw", "nbt": "txt.print.game_started", "color": "green"}]
+tellraw @a[gamemode=adventure, team=, scores={jkbw.Player.State=0}] [{storage: "jk:bw", nbt: "txt.print.bedwars", color: "yellow"}, {storage: "jk:bw", nbt: "txt.print.game_started", color: "green"}]
 gamemode spectator @a[gamemode=!creative, team=]
 scoreboard players set @a[scores={jkbw.Player.State=2}, team=] jkbw.Player.State 0
 team join jkbw.spec @a[gamemode=spectator, team=]

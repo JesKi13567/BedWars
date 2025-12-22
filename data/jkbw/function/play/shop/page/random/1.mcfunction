@@ -19,12 +19,12 @@ execute if score @s jkbw.Player.ShopRandom matches 12 run function jkbw:play/sho
 execute if score @s jkbw.Player.ShopRandom matches 13 run function jkbw:play/shop/urf/weapon/common {item: stick, id: 1}
 execute if score @s jkbw.Player.ShopRandom matches 14 run function jkbw:play/shop/urf/weapon/common {item: fishing_rod, id: 2}
 execute if score @s jkbw.Player.ShopRandom matches 15 run function jkbw:play/shop/urf/weapon/common {item: shield, id: 3}
-execute if score @s jkbw.Player.ShopRandom matches 16 run function jkbw:play/shop/urf/weapon/stone_sword {id: 1}
-execute if score @s jkbw.Player.ShopRandom matches 17 run function jkbw:play/shop/urf/weapon/stone_sword {id: 2}
-execute if score @s jkbw.Player.ShopRandom matches 18 run function jkbw:play/shop/urf/weapon/sword {item: wooden, id: 1}
-execute if score @s jkbw.Player.ShopRandom matches 19 run function jkbw:play/shop/urf/weapon/sword {item: iron, id: 2}
-execute if score @s jkbw.Player.ShopRandom matches 20 run function jkbw:play/shop/urf/weapon/sword {item: diamond, id: 3}
-execute if score @s jkbw.Player.ShopRandom matches 21 run function jkbw:play/shop/urf/weapon/sword {item: golden, id: 4}
+execute if score @s jkbw.Player.ShopRandom matches 16 run function jkbw:play/shop/urf/weapon/common {item: bone, id: 4}
+execute if score @s jkbw.Player.ShopRandom matches 17 run function jkbw:play/shop/urf/weapon/sword {item: stone, id: 1}
+execute if score @s jkbw.Player.ShopRandom matches 18 run function jkbw:play/shop/urf/weapon/sword {item: copper, id: 2}
+execute if score @s jkbw.Player.ShopRandom matches 19 run function jkbw:play/shop/urf/weapon/sword {item: iron, id: 3}
+execute if score @s jkbw.Player.ShopRandom matches 20 run function jkbw:play/shop/urf/weapon/sword {item: diamond, id: 4}
+execute if score @s jkbw.Player.ShopRandom matches 21 run function jkbw:play/shop/urf/weapon/sword {item: netherite, id: 5}
 execute if score @s jkbw.Player.ShopRandom matches 22 run function jkbw:play/shop/urf/weapon/arrow
 execute if score @s jkbw.Player.ShopRandom matches 23 run function jkbw:play/shop/urf/weapon/bow {id: 1}
 execute if score @s jkbw.Player.ShopRandom matches 24 run function jkbw:play/shop/urf/weapon/bow {id: 2}

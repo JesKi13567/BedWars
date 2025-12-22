@@ -1,4 +1,5 @@
-setblock 10110220 4 10110222 black_shulker_box[facing=north]{Items: [{Slot: 0b, id: "tnt", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "tnt"]}, lore: ["", ""]}}, \
+setblock 10110220 4 10110222 black_shulker_box[facing=north]{Items: [\
+{Slot: 0b, id: "tnt", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "tnt"]}, lore: ["", ""]}}, \
 {Slot: 1b, id: "blaze_rod", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "platform"]}, lore: ["", ""]}}, \
 {Slot: 2b, id: "string", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "trap"]}, lore: ["", ""]}}, \
 {Slot: 3b, id: "bricks", count: 1b, components: {custom_data: {jkbw: ["shop", "urf", "wall"]}, lore: ["", ""]}}, \

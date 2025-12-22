@@ -11,6 +11,7 @@ execute if block 10110209 4 10110222 air run function jkbw:load/settings/menu/sh
 execute if block 10110222 4 10110222 air run function jkbw:load/settings/menu/shop/price/_1
 execute if block 10110221 4 10110222 air run function jkbw:load/settings/menu/shop/price/_2
 execute if block 10110220 4 10110222 air run function jkbw:load/settings/menu/shop/price/_3
+execute if block 10110219 4 10110222 air run function jkbw:load/settings/menu/shop/price/_4
 
 execute if block 10110209 5 10110222 air run function jkbw:load/settings/menu/shop/price/e1
 execute if block 10110209 3 10110222 air run function jkbw:load/settings/menu/shop/price/e2

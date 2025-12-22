@@ -24,6 +24,9 @@ scoreboard players set #pickaxe4 jkbw.mem 6
 scoreboard players set #sword_stone jkbw.mem 10
 scoreboard players set #sword_iron jkbw.mem 7
 scoreboard players set #sword_diamond jkbw.mem 3
+scoreboard players operation #spear_stone jkbw.mem = #sword_stone jkbw.mem
+scoreboard players operation #spear_iron jkbw.mem = #sword_iron jkbw.mem
+scoreboard players operation #spear_diamond jkbw.mem = #sword_diamond jkbw.mem
 scoreboard players set #stick jkbw.mem 5
 scoreboard players set #shield jkbw.mem 5
 scoreboard players set #armor1 jkbw.mem 30
@@ -54,11 +57,11 @@ scoreboard players set #pearl jkbw.mem 4
 scoreboard players set #pearl_blitz jkbw.mem 2
 scoreboard players set #platform jkbw.mem 8
 scoreboard players set #fruit jkbw.mem 2
-scoreboard players set #trident jkbw.mem 4
+scoreboard players set #trident jkbw.mem 10
 scoreboard players set #tipped_arrow jkbw.mem 5
 scoreboard players set #crossbow_max jkbw.mem 2
 scoreboard players set #ice_bridge jkbw.mem 5
-scoreboard players set #mace jkbw.mem 10
+scoreboard players set #mace jkbw.mem 15
 scoreboard players set #wind_charge jkbw.mem 2
 scoreboard players set #the_mirror jkbw.mem 6
 scoreboard players set #compass jkbw.mem 2
@@ -121,12 +124,17 @@ scoreboard players set #urfXPiron_boots jkbw.mem 300
 
 scoreboard players set #urfXPstick jkbw.mem 1
 scoreboard players set #urfXPfishing_rod jkbw.mem 5
-scoreboard players set #urfXPwooden_sword jkbw.mem 5
-scoreboard players set #urfXPstone_sword1 jkbw.mem 10
-scoreboard players set #urfXPstone_sword2 jkbw.mem 70
+scoreboard players set #urfXPbone jkbw.mem 10
+scoreboard players set #urfXPstone_sword jkbw.mem 30
+scoreboard players set #urfXPcopper_sword jkbw.mem 70
 scoreboard players set #urfXPiron_sword jkbw.mem 300
 scoreboard players set #urfXPdiamond_sword jkbw.mem 400
-scoreboard players set #urfXPgolden_sword jkbw.mem 600
+scoreboard players set #urfXPnetherite_sword jkbw.mem 600
+scoreboard players operation #urfXPstone_spear jkbw.mem = #urfXPstone_sword jkbw.mem
+scoreboard players operation #urfXPcopper_spear jkbw.mem = #urfXPcopper_sword jkbw.mem
+scoreboard players operation #urfXPiron_spear jkbw.mem = #urfXPiron_sword jkbw.mem
+scoreboard players operation #urfXPdiamond_spear jkbw.mem = #urfXPdiamond_sword jkbw.mem
+scoreboard players operation #urfXPnetherite_spear jkbw.mem = #urfXPnetherite_sword jkbw.mem
 scoreboard players set #urfXParrow jkbw.mem 50
 scoreboard players set #urfXPbow1 jkbw.mem 300
 scoreboard players set #urfXPbow2 jkbw.mem 700

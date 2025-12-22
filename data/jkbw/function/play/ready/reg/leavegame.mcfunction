@@ -10,6 +10,7 @@ team leave @s
 clear @s
 effect clear @s
 item replace entity @s hotbar.8 from block 10110209 3 10110222 container.0
+attribute @s attack_speed base reset
 attribute @s max_health base reset
 attribute @s jump_strength base reset
 attribute @s safe_fall_distance base reset

@@ -1,0 +1,14 @@
+tellraw @s ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", {translate: "block.minecraft.shulker_box"}, " 4th: \n", {translate: "item.minecraft.stone_spear"}, ": ", {text: "[", color: "green"}, {storage: "jk:bw", nbt: "txt.display.res_mode1", color: "green", click_event: {action: "suggest_command", command: "/scoreboard players set #spear_stone jkbw.mem 10\
+"}}, {text: "]", color: "green"}, " ", {text: "[", color: "aqua"}, {storage: "jk:bw", nbt: "txt.display.res_mode2", color: "aqua", click_event: {action: "suggest_command", command: "/scoreboard players set #XPspear_stone jkbw.mem 10\
+"}}, {text: "]", color: "aqua"}, "\n", {translate: "item.minecraft.iron_spear"}, ": ", {text: "[", color: "green"}, {storage: "jk:bw", nbt: "txt.display.res_mode1", color: "green", click_event: {action: "suggest_command", command: "/scoreboard players set #spear_iron jkbw.mem 7\
+"}}, {text: "]", color: "green"}, " ", {text: "[", color: "aqua"}, {storage: "jk:bw", nbt: "txt.display.res_mode2", color: "aqua", click_event: {action: "suggest_command", command: "/scoreboard players set #XPspear_iron jkbw.mem 70\
+"}}, {text: "]", color: "aqua"}, "\n", {translate: "item.minecraft.diamond_spear"}, ": ", {text: "[", color: "green"}, {storage: "jk:bw", nbt: "txt.display.res_mode1", color: "green", click_event: {action: "suggest_command", command: "/scoreboard players set #spear_diamond jkbw.mem 3\
+"}}, {text: "]", color: "green"}, " ", {text: "[", color: "aqua"}, {storage: "jk:bw", nbt: "txt.display.res_mode2", color: "aqua", click_event: {action: "suggest_command", command: "/scoreboard players set #XPspear_diamond jkbw.mem 240\
+"}}, {text: "]", color: "aqua"}, "\n", {text: "[", color: "aqua"}, {translate: "item.minecraft.stone_spear", color: "aqua", click_event: {action: "suggest_command", command: "/scoreboard players set #urfXPstone_spear jkbw.mem 30\
+"}}, {text: "]", color: "aqua"}, "\n", {text: "[", color: "aqua"}, {translate: "item.minecraft.copper_spear", color: "aqua", click_event: {action: "suggest_command", command: "/scoreboard players set #urfXPcopper_spear jkbw.mem 70\
+"}}, {text: "]", color: "aqua"}, "\n", {text: "[", color: "aqua"}, {translate: "item.minecraft.iron_spear", color: "aqua", click_event: {action: "suggest_command", command: "/scoreboard players set #urfXPiron_spear jkbw.mem 300\
+"}}, {text: "]", color: "aqua"}, "\n", {text: "[", color: "aqua"}, {translate: "item.minecraft.diamond_spear", color: "aqua", click_event: {action: "suggest_command", command: "/scoreboard players set #urfXPdiamond_spear jkbw.mem 400\
+"}}, {text: "]", color: "aqua"}, "\n", {text: "[", color: "aqua"}, {translate: "item.minecraft.netherite_spear", color: "aqua", click_event: {action: "suggest_command", command: "/scoreboard players set #urfXPnetherite_spear jkbw.mem 600\
+"}}, {text: "]", color: "aqua"}]
+function jkbw:load/settings/menu/shop/box/_4
+execute positioned 10110222 1 10110222 run function jkbw:load/settings/menu/shop/refresh/_4

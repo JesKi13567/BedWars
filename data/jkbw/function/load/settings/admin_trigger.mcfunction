@@ -23,17 +23,13 @@ execute if score @s jkbw.admin.trigger matches 113 run function jkbw:load/settin
 execute if score @s jkbw.admin.trigger matches 114 run function jkbw:load/settings/menu/map_rotation/set/switch
 execute if score @s jkbw.admin.trigger matches 115 run function jkbw:load/settings/menu/map_rotation/rotate
 
-execute if score @s jkbw.admin.trigger matches 200 run function jkbw:load/settings/menu/durability/set/shield
-execute if score @s jkbw.admin.trigger matches 201 run function jkbw:load/settings/menu/durability/set/trident
-execute if score @s jkbw.admin.trigger matches 202 run function jkbw:load/settings/menu/durability/set/mace
+execute if score @s jkbw.admin.trigger matches 210 run function jkbw:load/settings/menu/operation/shield/switch
+execute if score @s jkbw.admin.trigger matches 211 run function jkbw:load/settings/menu/operation/spear/switch
 
-execute if score @s jkbw.admin.trigger matches 250 run function jkbw:load/settings/menu/alternations/set/permanent_save
-execute if score @s jkbw.admin.trigger matches 251 run function jkbw:load/settings/menu/alternations/set/trident
-execute if score @s jkbw.admin.trigger matches 252 run function jkbw:load/settings/menu/alternations/set/tipped_arrow
-execute if score @s jkbw.admin.trigger matches 253 run function jkbw:load/settings/menu/alternations/set/crossbow_max
-execute if score @s jkbw.admin.trigger matches 254 run function jkbw:load/settings/menu/alternations/set/ice_bridge
-execute if score @s jkbw.admin.trigger matches 255 run function jkbw:load/settings/menu/alternations/set/mace
-execute if score @s jkbw.admin.trigger matches 256 run function jkbw:load/settings/menu/alternations/set/the_mirror
-
-#trigger jkbw.admin.trigger set xxx
-#scoreboard players reset @s jkbw.admin.trigger
+execute if score @s jkbw.admin.trigger matches 250 run function jkbw:load/settings/menu/operation/rotating_items/set {x: "permanent_save"}
+execute if score @s jkbw.admin.trigger matches 251 run function jkbw:load/settings/menu/operation/rotating_items/set {x: "trident"}
+execute if score @s jkbw.admin.trigger matches 252 run function jkbw:load/settings/menu/operation/rotating_items/set {x: "tipped_arrow"}
+execute if score @s jkbw.admin.trigger matches 253 run function jkbw:load/settings/menu/operation/rotating_items/set {x: "crossbow_max"}
+execute if score @s jkbw.admin.trigger matches 254 run function jkbw:load/settings/menu/operation/rotating_items/set {x: "ice_bridge"}
+execute if score @s jkbw.admin.trigger matches 255 run function jkbw:load/settings/menu/operation/rotating_items/set {x: "mace"}
+execute if score @s jkbw.admin.trigger matches 256 run function jkbw:load/settings/menu/operation/rotating_items/set {x: "the_mirror"}

@@ -1,4 +1,5 @@
-setblock 10110218 5 10110222 white_shulker_box[facing=north]{Items: [{Slot: 0b, id: "chest", count: 1b, components: {custom_data: {jkbw: ["shop", "item", "tower"]}, lore: ["", ""]}}, \
+setblock 10110218 5 10110222 white_shulker_box[facing=north]{Items: [\
+{Slot: 0b, id: "chest", count: 1b, components: {custom_data: {jkbw: ["shop", "item", "tower"]}, lore: ["", ""]}}, \
 {Slot: 1b, id: "snowball", count: 1b, components: {custom_data: {jkbw: ["shop", "item", "silverfish"]}, lore: ["", "", ""]}}, \
 {Slot: 2b, id: "fire_charge", count: 1b, components: {custom_data: {jkbw: ["shop", "item", "fireball"]}, lore: ["", ""]}}, \
 {Slot: 3b, id: "iron_golem_spawn_egg", count: 1b, components: {custom_data: {jkbw: ["shop", "item", "iron_golem"]}, lore: ["", "", ""]}}, \

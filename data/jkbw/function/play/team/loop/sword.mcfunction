@@ -1,6 +1,7 @@
 # 要有剑
 execute if items entity @s container.* #jkbw:sword/not_wood run clear @s wooden_sword
-execute unless items entity @s container.* #jkbw:sword/any unless items entity @s player.cursor #jkbw:sword/any unless items entity @s player.crafting.* #jkbw:sword/any unless items entity @s weapon.offhand #jkbw:sword/any run give @s wooden_sword[custom_data={jkbw: ["clean", "sword", "0"]}, unbreakable={}, tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}]
+execute unless score #ENABLE_shield jkbw.mem matches 2 unless items entity @s container.* #jkbw:sword/any unless items entity @s player.cursor #jkbw:sword/any unless items entity @s player.crafting.* #jkbw:sword/any unless items entity @s weapon.offhand #jkbw:sword/any run give @s wooden_sword[custom_data={jkbw: ["clean"]}, unbreakable={}, tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}]
+execute if score #ENABLE_shield jkbw.mem matches 2 unless items entity @s container.* #jkbw:sword/any unless items entity @s player.cursor #jkbw:sword/any unless items entity @s player.crafting.* #jkbw:sword/any unless items entity @s weapon.offhand #jkbw:sword/any run give @s wooden_sword[custom_data={jkbw: ["clean"]}, unbreakable={}, tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, blocks_attacks={block_sound: {sound_id: "entity.player.hurt"}, damage_reductions: [{base: 1, factor: 0.5}], disable_cooldown_scale: 0}]
 
 # 锋利剑
 execute as @s[team=jkbw.red] run function jkbw:play/team/loop/sword_sharpness {team: red}

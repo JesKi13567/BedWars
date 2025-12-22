@@ -4,4 +4,4 @@ execute if score #shop_random_countdown jkbw.mem matches 0 as @a[gamemode=advent
 execute if score #shop_random_countdown jkbw.mem matches ..0 run scoreboard players operation #shop_random_countdown jkbw.mem = #EXP_MODE_4_SHOP_INTERVAL jkbw.mem
 
 # 显示
-bossbar set jkbw:game_progress name ["", {"storage": "jk:bw", "nbt": "txt.print.progress_time", "color": "gold"}, {"score": {"name": "#time_show", "objective": "jkbw.mem"}}, "s  ", {"storage": "jk:bw", "nbt": "txt.print.loot_time", "color": "yellow"}, {"score": {"name": "#shop_random_countdown", "objective": "jkbw.mem"}}, "s"]
+bossbar set jkbw:game_progress name ["", {storage: "jk:bw", nbt: "txt.print.progress_time", color: "gold"}, {score: {name: "#time_show", objective: "jkbw.mem"}}, "s  ", {storage: "jk:bw", nbt: "txt.print.loot_time", color: "yellow"}, {score: {name: "#shop_random_countdown", objective: "jkbw.mem"}}, "s"]

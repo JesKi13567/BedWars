@@ -7,4 +7,4 @@ setblock ~1 ~-1 ~1 stone_brick_stairs[facing=east, half=bottom, shape=inner_righ
 setblock ~-1 ~-1 ~-1 stone_brick_stairs[facing=west, half=bottom, shape=inner_right]
 setblock ~-1 ~-1 ~1 stone_brick_stairs[facing=west, half=bottom, shape=inner_left]
 setblock ~1 ~-1 ~-1 stone_brick_stairs[facing=east, half=bottom, shape=inner_left]
-playsound block.note_block.bell player @a[distance=..6]
+playsound block.note_block.bell player @a

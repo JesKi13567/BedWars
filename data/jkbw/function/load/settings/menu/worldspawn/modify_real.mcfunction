@@ -1,5 +1,5 @@
 ## 输入：id，r，ymin，team_max
-playsound block.note_block.bell player @a[distance=..6]
+playsound block.note_block.bell player @a
 
 # 边界与加载区块
 $scoreboard players set #temp_r jkbw.mem $(r)
@@ -64,4 +64,4 @@ $execute store result storage jk:bw Map.maps.$(id).y int 1 run scoreboard player
 $execute store result storage jk:bw Map.maps.$(id).z int 1 run scoreboard players get #WZ jkbw.mem
 
 # 其他
-$tellraw @s ["", {"storage": "jk:bw", "nbt": "txt.print.global_point.modify", "color": "green"}, " ", {"translate": "item.minecraft.filled_map", "color": "yellow"}, " ", {"text": "$(id)", "color": "yellow"}, ", ", {"translate": "gui.done", "color": "green"}, "!"]
+$tellraw @s ["", {storage: "jk:bw", nbt: "txt.print.global_point.modify", color: "green"}, " ", {translate: "item.minecraft.filled_map", color: "yellow"}, " ", {text: "$(id)", color: "yellow"}, ", ", {translate: "gui.done", color: "green"}, "!"]

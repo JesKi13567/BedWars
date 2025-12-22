@@ -21,6 +21,9 @@ function jkbw:load/settings/menu/shop/box/_1
 function jkbw:load/settings/menu/shop/box/_2
 function jkbw:load/settings/menu/shop/box/_3
 
+# 矛
+function jkbw:load/settings/menu/shop/box/_4
+
 # 其他道具
 function jkbw:load/settings/menu/shop/box/7
 function jkbw:load/settings/menu/shop/box/e1

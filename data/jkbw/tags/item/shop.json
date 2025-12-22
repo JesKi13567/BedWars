@@ -24,9 +24,16 @@
 
         "#jkbw:sword/any",
         "golden_sword",
+        "copper_sword",
+        "netherite_sword",
+        "golden_spear",
+        "copper_spear",
+        "netherite_spear",
+
         "arrow",
         "bow",
         "stick",
+        "bone",
         "shield",
         "fishing_rod",
 

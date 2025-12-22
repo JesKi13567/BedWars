@@ -34,11 +34,11 @@ execute if score #res_mode jkbw.mem matches 2 run scoreboard players operation @
 
 function jkbw:play/death/how
 
-execute as @s[scores={jkbw.Player.Own.iron_ingotReal=1..}] run tellraw @s [{"text": "-", "color": "red"}, {"score": {"name": "@s", "objective": "jkbw.Player.Own.iron_ingotReal"}}, " ", {"translate": "item.minecraft.iron_ingot"}]
-execute as @s[scores={jkbw.Player.Own.gold_ingotReal=1..}] run tellraw @s [{"text": "-", "color": "red"}, {"score": {"name": "@s", "objective": "jkbw.Player.Own.gold_ingotReal"}}, " ", {"translate": "item.minecraft.gold_ingot"}]
-execute as @s[scores={jkbw.Player.Own.diamondReal=1..}] run tellraw @s [{"text": "-", "color": "red"}, {"score": {"name": "@s", "objective": "jkbw.Player.Own.diamondReal"}}, " ", {"translate": "item.minecraft.diamond"}]
-execute as @s[scores={jkbw.Player.Own.emeraldReal=1..}] run tellraw @s [{"text": "-", "color": "red"}, {"score": {"name": "@s", "objective": "jkbw.Player.Own.emeraldReal"}}, " ", {"translate": "item.minecraft.emerald"}]
-execute as @s[scores={jkbw.Player.Own.xpLevelsReal=1..}] run tellraw @s [{"text": "-", "color": "red"}, {"score": {"name": "@s", "objective": "jkbw.Player.Own.xpLevelsReal"}}, " ", {"storage": "jk:bw", "nbt": "txt.item.shop.lvl"}]
+execute as @s[scores={jkbw.Player.Own.iron_ingotReal=1..}] run tellraw @s [{text: "-", color: "red"}, {score: {name: "@s", objective: "jkbw.Player.Own.iron_ingotReal"}}, " ", {translate: "item.minecraft.iron_ingot"}]
+execute as @s[scores={jkbw.Player.Own.gold_ingotReal=1..}] run tellraw @s [{text: "-", color: "red"}, {score: {name: "@s", objective: "jkbw.Player.Own.gold_ingotReal"}}, " ", {translate: "item.minecraft.gold_ingot"}]
+execute as @s[scores={jkbw.Player.Own.diamondReal=1..}] run tellraw @s [{text: "-", color: "red"}, {score: {name: "@s", objective: "jkbw.Player.Own.diamondReal"}}, " ", {translate: "item.minecraft.diamond"}]
+execute as @s[scores={jkbw.Player.Own.emeraldReal=1..}] run tellraw @s [{text: "-", color: "red"}, {score: {name: "@s", objective: "jkbw.Player.Own.emeraldReal"}}, " ", {translate: "item.minecraft.emerald"}]
+execute as @s[scores={jkbw.Player.Own.xpLevelsReal=1..}] run tellraw @s [{text: "-", color: "red"}, {score: {name: "@s", objective: "jkbw.Player.Own.xpLevelsReal"}}, " ", {storage: "jk:bw", nbt: "txt.item.shop.lvl"}]
 scoreboard players set @s jkbw.Player.Own.xpLevelsReal 0
 xp set @s 0 levels
 xp set @s 0 points
@@ -47,11 +47,11 @@ xp set @s 0 points
 execute as @s[scores={jkbw.Player.State=4}] run function jkbw:play/res/player/final_kill
 
 # 最终击杀
-execute as @s[team=jkbw.red] if entity @e[type=text_display, tag=jkbw_bed_red, scores={jkbw.Bed.State=3}, limit=1] run tellraw @a {"storage": "jk:bw", "nbt": "txt.print.final_kill", "color": "aqua", "bold": true}
-execute as @s[team=jkbw.blue] if entity @e[type=text_display, tag=jkbw_bed_blue, scores={jkbw.Bed.State=3}, limit=1] run tellraw @a {"storage": "jk:bw", "nbt": "txt.print.final_kill", "color": "aqua", "bold": true}
-execute if score #teams jkbw.mem matches 3.. as @s[team=jkbw.green] if entity @e[type=text_display, tag=jkbw_bed_green, scores={jkbw.Bed.State=3}, limit=1] run tellraw @a {"storage": "jk:bw", "nbt": "txt.print.final_kill", "color": "aqua", "bold": true}
-execute if score #teams jkbw.mem matches 4.. as @s[team=jkbw.yellow] if entity @e[type=text_display, tag=jkbw_bed_yellow, scores={jkbw.Bed.State=3}, limit=1] run tellraw @a {"storage": "jk:bw", "nbt": "txt.print.final_kill", "color": "aqua", "bold": true}
-execute if score #teams jkbw.mem matches 5.. as @s[team=jkbw.cyan] if entity @e[type=text_display, tag=jkbw_bed_cyan, scores={jkbw.Bed.State=3}, limit=1] run tellraw @a {"storage": "jk:bw", "nbt": "txt.print.final_kill", "color": "aqua", "bold": true}
-execute if score #teams jkbw.mem matches 6.. as @s[team=jkbw.white] if entity @e[type=text_display, tag=jkbw_bed_white, scores={jkbw.Bed.State=3}, limit=1] run tellraw @a {"storage": "jk:bw", "nbt": "txt.print.final_kill", "color": "aqua", "bold": true}
-execute if score #teams jkbw.mem matches 7.. as @s[team=jkbw.pink] if entity @e[type=text_display, tag=jkbw_bed_pink, scores={jkbw.Bed.State=3}, limit=1] run tellraw @a {"storage": "jk:bw", "nbt": "txt.print.final_kill", "color": "aqua", "bold": true}
-execute if score #teams jkbw.mem matches 8.. as @s[team=jkbw.gray] if entity @e[type=text_display, tag=jkbw_bed_gray, scores={jkbw.Bed.State=3}, limit=1] run tellraw @a {"storage": "jk:bw", "nbt": "txt.print.final_kill", "color": "aqua", "bold": true}
+execute as @s[team=jkbw.red] if entity @e[type=text_display, tag=jkbw_bed_red, scores={jkbw.Bed.State=3}, limit=1] run tellraw @a {storage: "jk:bw", nbt: "txt.print.final_kill", color: "aqua", bold: true}
+execute as @s[team=jkbw.blue] if entity @e[type=text_display, tag=jkbw_bed_blue, scores={jkbw.Bed.State=3}, limit=1] run tellraw @a {storage: "jk:bw", nbt: "txt.print.final_kill", color: "aqua", bold: true}
+execute if score #teams jkbw.mem matches 3.. as @s[team=jkbw.green] if entity @e[type=text_display, tag=jkbw_bed_green, scores={jkbw.Bed.State=3}, limit=1] run tellraw @a {storage: "jk:bw", nbt: "txt.print.final_kill", color: "aqua", bold: true}
+execute if score #teams jkbw.mem matches 4.. as @s[team=jkbw.yellow] if entity @e[type=text_display, tag=jkbw_bed_yellow, scores={jkbw.Bed.State=3}, limit=1] run tellraw @a {storage: "jk:bw", nbt: "txt.print.final_kill", color: "aqua", bold: true}
+execute if score #teams jkbw.mem matches 5.. as @s[team=jkbw.cyan] if entity @e[type=text_display, tag=jkbw_bed_cyan, scores={jkbw.Bed.State=3}, limit=1] run tellraw @a {storage: "jk:bw", nbt: "txt.print.final_kill", color: "aqua", bold: true}
+execute if score #teams jkbw.mem matches 6.. as @s[team=jkbw.white] if entity @e[type=text_display, tag=jkbw_bed_white, scores={jkbw.Bed.State=3}, limit=1] run tellraw @a {storage: "jk:bw", nbt: "txt.print.final_kill", color: "aqua", bold: true}
+execute if score #teams jkbw.mem matches 7.. as @s[team=jkbw.pink] if entity @e[type=text_display, tag=jkbw_bed_pink, scores={jkbw.Bed.State=3}, limit=1] run tellraw @a {storage: "jk:bw", nbt: "txt.print.final_kill", color: "aqua", bold: true}
+execute if score #teams jkbw.mem matches 8.. as @s[team=jkbw.gray] if entity @e[type=text_display, tag=jkbw_bed_gray, scores={jkbw.Bed.State=3}, limit=1] run tellraw @a {storage: "jk:bw", nbt: "txt.print.final_kill", color: "aqua", bold: true}

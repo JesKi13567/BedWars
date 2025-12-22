@@ -14,6 +14,6 @@ execute as @s[tag=jkbw_tower_white] at @e[type=marker, tag=jkbw_tower_wool, dist
 execute as @s[tag=jkbw_tower_pink] at @e[type=marker, tag=jkbw_tower_wool, distance=..10] if block ~ ~ ~ air run setblock ~ ~ ~ pink_wool
 execute as @s[tag=jkbw_tower_gray] at @e[type=marker, tag=jkbw_tower_wool, distance=..10] if block ~ ~ ~ air run setblock ~ ~ ~ gray_wool
 
-playsound entity.chicken.egg player @a[distance=..8]
+playsound entity.chicken.egg player @a
 # 清理
 kill @e[type=marker, tag=jkbw_tower_block, distance=..10]

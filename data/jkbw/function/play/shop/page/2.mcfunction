@@ -1,12 +1,16 @@
-# 剑
-execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "sword_stone"]}] run function jkbw:play/shop/item/weapon/sword {material: stone, res: iron_ingot}
-execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "sword_iron"]}] run function jkbw:play/shop/item/weapon/sword {material: iron, res: gold_ingot}
-execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "sword_diamond"]}] run function jkbw:play/shop/item/weapon/sword {material: diamond, res: emerald}
-execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "stick"]}] run function jkbw:play/shop/item/weapon/common {id: 1, item: stick}
-execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "shield"]}] run function jkbw:play/shop/item/weapon/common {id: 2, item: shield}
+# 武器
+execute unless items entity @s enderchest.* stone_sword[custom_data={jkbw: ["shop", "item", "sword_stone"]}] run function jkbw:play/shop/item/weapon/sword {material: stone, res: iron_ingot}
+execute unless items entity @s enderchest.* iron_sword[custom_data={jkbw: ["shop", "item", "sword_iron"]}] run function jkbw:play/shop/item/weapon/sword {material: iron, res: gold_ingot}
+execute unless items entity @s enderchest.* diamond_sword[custom_data={jkbw: ["shop", "item", "sword_diamond"]}] run function jkbw:play/shop/item/weapon/sword {material: diamond, res: emerald}
 
-# 弓
+execute if score #ENABLE_spear jkbw.mem matches 1 unless items entity @s enderchest.* stone_spear[custom_data={jkbw: ["shop", "item", "spear_stone"]}] run function jkbw:play/shop/item/weapon/spear {material: stone, res: iron_ingot}
+execute if score #ENABLE_spear jkbw.mem matches 1 unless items entity @s enderchest.* iron_spear[custom_data={jkbw: ["shop", "item", "spear_iron"]}] run function jkbw:play/shop/item/weapon/spear {material: iron, res: gold_ingot}
+execute if score #ENABLE_spear jkbw.mem matches 1 unless items entity @s enderchest.* diamond_spear[custom_data={jkbw: ["shop", "item", "spear_diamond"]}] run function jkbw:play/shop/item/weapon/spear {material: diamond, res: emerald}
+
+execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "stick"]}] run function jkbw:play/shop/item/weapon/common {id: 1, item: stick}
+execute if score #ENABLE_shield jkbw.mem matches 1 unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "shield"]}] run function jkbw:play/shop/item/weapon/common {id: 2, item: shield}
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "arrow"]}] run function jkbw:play/shop/item/weapon/common {id: 3, item: arrow}
+
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "bow1"]}] run function jkbw:play/shop/item/weapon/bow {id: 1, res: gold_ingot}
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "bow2"]}] run function jkbw:play/shop/item/weapon/bow {id: 2, res: gold_ingot}
 execute unless items entity @s enderchest.* #jkbw:shop[custom_data={jkbw: ["shop", "item", "bow3"]}] run function jkbw:play/shop/item/weapon/bow {id: 3, res: emerald}

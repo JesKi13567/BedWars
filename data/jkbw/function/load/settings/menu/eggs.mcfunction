@@ -1,5 +1,5 @@
-title @s title {"storage": "jk:bw", "nbt": "txt.print.check_inventory", "color": "green"}
-title @s subtitle {"translate": "itemGroup.inventory", "color": "yellow"}
+title @s title {storage: "jk:bw", nbt: "txt.print.check_inventory", color: "green"}
+title @s subtitle {translate: "itemGroup.inventory", color: "yellow"}
 title @s times 0s 3s 1s
 clear @s
 gamemode creative @s

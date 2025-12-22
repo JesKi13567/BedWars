@@ -1,15 +1,15 @@
 # 用刷怪蛋放商店
 execute as @e[type=text_display, tag=jkbw_chest_shop] at @s unless block ~ ~ ~ ender_chest run kill @s
 setblock ~ ~1 ~ tinted_glass
-summon text_display ~.5 ~ ~.5 {Tags: ["jkbw", "jkbw_chest_shop"], text: [{"storage": "jk:bw", "nbt": "txt.item.egg.shop", "color": "aqua"}], billboard: "center"}
-execute as @s[y_rotation=135.1..180] run tp @e[type=text_display, tag=jkbw_chest_shop, limit=1, sort=nearest] ~ ~ ~ 180 0
+summon text_display ~.5 ~ ~.5 {Tags: ["jkbw", "jkbw_chest_shop"], text: [{storage: "jk:bw", nbt: "txt.item.egg.shop", color: "aqua"}], billboard: "center"}
+execute as @s[y_rotation=135.01..180] run tp @e[type=text_display, tag=jkbw_chest_shop, limit=1, sort=nearest] ~ ~ ~ 180 0
 execute as @s[y_rotation=-180..-135] run tp @e[type=text_display, tag=jkbw_chest_shop, limit=1, sort=nearest] ~ ~ ~ 180 0
-execute as @s[y_rotation=-134.9..-45] run tp @e[type=text_display, tag=jkbw_chest_shop, limit=1, sort=nearest] ~ ~ ~ -90 0
-execute as @s[y_rotation=-44.9..45] run tp @e[type=text_display, tag=jkbw_chest_shop, limit=1, sort=nearest] ~ ~ ~ 0 0
-execute as @s[y_rotation=45.1..135] run tp @e[type=text_display, tag=jkbw_chest_shop, limit=1, sort=nearest] ~ ~ ~ 90 0
-execute as @s[y_rotation=135.1..180] run setblock ~ ~ ~ ender_chest[facing=south]
+execute as @s[y_rotation=-134.99..-45] run tp @e[type=text_display, tag=jkbw_chest_shop, limit=1, sort=nearest] ~ ~ ~ -90 0
+execute as @s[y_rotation=-44.99..45] run tp @e[type=text_display, tag=jkbw_chest_shop, limit=1, sort=nearest] ~ ~ ~ 0 0
+execute as @s[y_rotation=45.01..135] run tp @e[type=text_display, tag=jkbw_chest_shop, limit=1, sort=nearest] ~ ~ ~ 90 0
+execute as @s[y_rotation=135.01..180] run setblock ~ ~ ~ ender_chest[facing=south]
 execute as @s[y_rotation=-180..-135] run setblock ~ ~ ~ ender_chest[facing=south]
-execute as @s[y_rotation=-134.9..-45] run setblock ~ ~ ~ ender_chest[facing=west]
-execute as @s[y_rotation=-44.9..45] run setblock ~ ~ ~ ender_chest[facing=north]
-execute as @s[y_rotation=45.1..135] run setblock ~ ~ ~ ender_chest[facing=east]
-playsound block.note_block.bell player @a[distance=..6]
+execute as @s[y_rotation=-134.99..-45] run setblock ~ ~ ~ ender_chest[facing=west]
+execute as @s[y_rotation=-44.99..45] run setblock ~ ~ ~ ender_chest[facing=north]
+execute as @s[y_rotation=45.01..135] run setblock ~ ~ ~ ender_chest[facing=east]
+playsound block.note_block.bell player @a

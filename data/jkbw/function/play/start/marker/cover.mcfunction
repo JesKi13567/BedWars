@@ -60,7 +60,12 @@ summon marker ^-2 ^1 ^1 {Tags: ["jkbw", "jkbw_cover_block", "jkbw_cover_glass"]}
 summon marker ^3 ^ ^1 {Tags: ["jkbw", "jkbw_cover_block", "jkbw_cover_glass"]}
 summon marker ^-3 ^ ^1 {Tags: ["jkbw", "jkbw_cover_block", "jkbw_cover_glass"]}
 # 载入
-execute at @e[type=marker, tag=jkbw_cover_plank, distance=..5] run setblock ~ ~ ~ oak_planks
-$execute at @e[type=marker, tag=jkbw_cover_wool, distance=..5] run setblock ~ ~ ~ $(team)_wool
 $execute at @e[type=marker, tag=jkbw_cover_glass, distance=..5] run setblock ~ ~ ~ $(team)_stained_glass
+
+execute if score #res_mode jkbw.mem matches 0..1 at @e[type=marker, tag=jkbw_cover_plank, distance=..5] run setblock ~ ~ ~ oak_planks
+$execute if score #res_mode jkbw.mem matches 0..1 at @e[type=marker, tag=jkbw_cover_wool, distance=..5] run setblock ~ ~ ~ $(team)_wool
+
+execute if score #res_mode jkbw.mem matches 2 at @e[type=marker, tag=jkbw_cover_plank, distance=..5] run setblock ~ ~ ~ fletching_table
+execute if score #res_mode jkbw.mem matches 2 at @e[type=marker, tag=jkbw_cover_wool, distance=..5] run setblock ~ ~ ~ cut_sandstone
+
 kill @e[type=marker, tag=jkbw_cover_block, distance=..5]

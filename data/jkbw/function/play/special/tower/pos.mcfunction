@@ -9,11 +9,11 @@ execute if entity @p[scores={jkbw.Player.UseTower=1..}, team=jkbw.pink] run tag 
 execute if entity @p[scores={jkbw.Player.UseTower=1..}, team=jkbw.gray] run tag @s add jkbw_tower_gray
 
 # 转向
-execute if entity @p[scores={jkbw.Player.UseTower=1..}, y_rotation=135.1..180] run tag @s add jkbw_north
+execute if entity @p[scores={jkbw.Player.UseTower=1..}, y_rotation=135.01..180] run tag @s add jkbw_north
 execute if entity @p[scores={jkbw.Player.UseTower=1..}, y_rotation=-180..-135] run tag @s add jkbw_north
-execute if entity @p[scores={jkbw.Player.UseTower=1..}, y_rotation=-134.9..-45] run tag @s add jkbw_east
-execute if entity @p[scores={jkbw.Player.UseTower=1..}, y_rotation=-44.9..45] run tag @s add jkbw_south
-execute if entity @p[scores={jkbw.Player.UseTower=1..}, y_rotation=45.1..135] run tag @s add jkbw_west
+execute if entity @p[scores={jkbw.Player.UseTower=1..}, y_rotation=-134.99..-45] run tag @s add jkbw_east
+execute if entity @p[scores={jkbw.Player.UseTower=1..}, y_rotation=-44.99..45] run tag @s add jkbw_south
+execute if entity @p[scores={jkbw.Player.UseTower=1..}, y_rotation=45.01..135] run tag @s add jkbw_west
 
 data merge entity @s[tag=jkbw_north] {Rotation: [180f, 0f]}
 data merge entity @s[tag=jkbw_east] {Rotation: [-90f, 0f]}

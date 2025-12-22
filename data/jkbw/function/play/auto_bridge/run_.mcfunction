@@ -1,4 +1,4 @@
-playsound entity.chicken.egg player @a[distance=..10]
+playsound entity.chicken.egg player @a
 
 # 真正放置
 execute as @s[tag=jkbw_wool_red] run setblock ~ ~ ~ red_wool
