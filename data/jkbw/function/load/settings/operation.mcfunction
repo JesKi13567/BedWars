@@ -16,6 +16,6 @@ tellraw @a[tag=jkbw_admin] [{storage: "jk:bw", nbt: "txt.print.global.others"}, 
 
 kill @e[type=marker, tag=jkbw_enable_item]
 
-tellraw @a[tag=jkbw_admin] [{text: "======= ", color: "green"}, {text: "[", color: "yellow"}, {storage: "jk:bw", nbt: "txt.print.refresh", color: "yellow", hover_event: {action: "show_text", value: [{storage: "jk:bw", nbt: "txt.print.refresh_tip"}]}, click_event: {action: "run_command", command: "/trigger jkbw.admin.trigger set 103"}}, {text: "]", color: "yellow"}, {text: " ======== ", color: "green"}, {text: "[", color: "aqua"}, {storage: "jk:bw", nbt: "txt.print.back2mainmenu", color: "aqua", click_event: {action: "run_command", command: "/trigger jkbw.admin.trigger set 100"}}, {text: "]", color: "aqua"}, {text: " ======", color: "green"}]
+tellraw @a[tag=jkbw_admin] [{text: "======== ", color: "green"}, {text: "[", color: "yellow"}, {storage: "jk:bw", nbt: "txt.print.refresh", color: "yellow", hover_event: {action: "show_text", value: [{storage: "jk:bw", nbt: "txt.print.refresh_tip"}]}, click_event: {action: "run_command", command: "/trigger jkbw.admin.trigger set 103"}}, {text: "]", color: "yellow"}, {text: " ======== ", color: "green"}, {text: "[", color: "aqua"}, {storage: "jk:bw", nbt: "txt.print.back2mainmenu", color: "aqua", click_event: {action: "run_command", command: "/trigger jkbw.admin.trigger set 100"}}, {text: "]", color: "aqua"}, {text: " ========", color: "green"}]
 
 scoreboard players reset @s jkbw.admin.trigger

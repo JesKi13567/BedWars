@@ -22,6 +22,7 @@ kill @e[type=marker, tag=jkbw_chest_player]
 difficulty hard
 gamerule pvp true
 gamerule natural_health_regeneration false
+gamerule fall_damage true
 scoreboard players set #state jkbw.mem 1
 scoreboard players set #time_state jkbw.mem 0
 scoreboard players operation #dragon1 jkbw.mem = #dragon jkbw.mem
@@ -80,6 +81,7 @@ data modify storage jk:bw Alive set value {red: 0, blue: 0, green: 0, yellow: 0,
 bossbar set jkbw:map visible false
 kill @e[type=marker, tag=jkbw_map]
 kill @e[type=marker, tag=jkbw_back]
+kill @e[type=armor_stand, tag=jkbw_silverfish]
 
 # 玩家
 execute as @a run function jkbw:play/shop/gui/chest/player/clear
@@ -136,6 +138,7 @@ execute as @a run scoreboard players operation @s jkbw.Temp = @s jkbw.Player.ID
 
 # 商品个数
 scoreboard players set #shop_items_1 jkbw.mem 96
+execute if score #exp_mode jkbw.mem matches 1 run scoreboard players set #shop_items_1 jkbw.mem 93
 execute if score #res_mode jkbw.mem matches 2 run scoreboard players set #shop_items_1 jkbw.mem 58
 scoreboard players set #shop_items_3 jkbw.mem 30
 execute if score #res_mode jkbw.mem matches 2 run scoreboard players set #shop_items_3 jkbw.mem 27

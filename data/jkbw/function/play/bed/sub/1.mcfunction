@@ -1,4 +1,4 @@
-# 计分板显示人数
+# 记分板显示人数
 $execute if entity @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Bed.State=2}, limit=1] run team join jkbw.npc_$(team) .$(team)
 $execute store result score @e[type=text_display, tag=jkbw_bed_$(team), limit=1, scores={jkbw.Bed.State=3}] jkbw.Team.Alive if entity @a[team=jkbw.$(team), scores={jkbw.Player.State=2..3}]
 $execute if entity @e[type=text_display, tag=jkbw_bed_$(team), limit=1, scores={jkbw.Bed.State=3}] store result storage jk:bw Alive.$(team) int 1 run scoreboard players get @e[type=text_display, tag=jkbw_bed_$(team), limit=1, scores={jkbw.Bed.State=3}] jkbw.Team.Alive

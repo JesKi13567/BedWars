@@ -1,21 +1,21 @@
-#spear_stone
-data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#spear_stone", objective: "jkbw.mem"}, color: "white"}, " ", {translate: "item.minecraft.iron_ingot", "italic": false, color: "white"}]
+#stone_spear
+data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#stone_spear", objective: "jkbw.mem"}, color: "white"}, " ", {translate: "item.minecraft.iron_ingot", "italic": false, color: "white"}]
 data modify block 10110219 4 10110222 Items[0].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#spear_iron
-data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#spear_iron", objective: "jkbw.mem"}, color: "gold"}, " ", {translate: "item.minecraft.gold_ingot", "italic": false, color: "gold"}]
+#iron_spear
+data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#iron_spear", objective: "jkbw.mem"}, color: "gold"}, " ", {translate: "item.minecraft.gold_ingot", "italic": false, color: "gold"}]
 data modify block 10110219 4 10110222 Items[2].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#spear_diamond
-data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#spear_diamond", objective: "jkbw.mem"}, color: "green"}, " ", {translate: "item.minecraft.emerald", "italic": false, color: "green"}]
+#diamond_spear
+data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#diamond_spear", objective: "jkbw.mem"}, color: "green"}, " ", {translate: "item.minecraft.emerald", "italic": false, color: "green"}]
 data modify block 10110219 4 10110222 Items[4].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 
-#XPspear_stone
-data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#XPspear_stone", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.item.shop.lvl", "italic": false, color: "aqua"}]
+#XPstone_spear
+data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#XPstone_spear", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.item.shop.lvl", "italic": false, color: "aqua"}]
 data modify block 10110219 4 10110222 Items[1].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#XPspear_iron
-data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#XPspear_iron", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.item.shop.lvl", "italic": false, color: "aqua"}]
+#XPiron_spear
+data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#XPiron_spear", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.item.shop.lvl", "italic": false, color: "aqua"}]
 data modify block 10110219 4 10110222 Items[3].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#XPspear_diamond
-data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#XPspear_diamond", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.item.shop.lvl", "italic": false, color: "aqua"}]
+#XPdiamond_spear
+data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#XPdiamond_spear", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.item.shop.lvl", "italic": false, color: "aqua"}]
 data modify block 10110219 4 10110222 Items[5].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 
 #urfXPstone_spear

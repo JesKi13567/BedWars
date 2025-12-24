@@ -17,7 +17,7 @@ execute if score #bed_type jkbw.mem matches 2 if score #teams jkbw.mem matches 6
 execute if score #bed_type jkbw.mem matches 2 if score #teams jkbw.mem matches 7.. as @s[scores={jkbw.Player.Break_Pink=1}] run function jkbw:play/bed/sub/_1 {team: pink}
 execute if score #bed_type jkbw.mem matches 2 if score #teams jkbw.mem matches 8.. as @s[scores={jkbw.Player.Break_Gray=1}] run function jkbw:play/bed/sub/_1 {team: gray}
 
-# 计分板处理
+# 记分板处理
 execute if score #bed_type jkbw.mem matches 0..1 run scoreboard players reset @s jkbw.Player.BreakRed
 execute if score #bed_type jkbw.mem matches 0..1 run scoreboard players reset @s jkbw.Player.BreakBlue
 execute if score #bed_type jkbw.mem matches 0..1 run scoreboard players reset @s jkbw.Player.BreakGreen

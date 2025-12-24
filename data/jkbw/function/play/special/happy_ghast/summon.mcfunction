@@ -1,7 +1,7 @@
 scoreboard players set @s jkbw.Player.UseCreatureCD 1
 clear @s raw_gold 1
 
-summon happy_ghast ~ ~ ~ {Tags: ["jkbw", "jkbw_happy_ghast"]}
+summon happy_ghast ~ ~ ~ {Tags: ["jkbw", "jkbw_happy_ghast"], Silent: true}
 execute as @e[type=happy_ghast, tag=jkbw_happy_ghast] run attribute @s flying_speed base set 0.06
 execute as @e[type=happy_ghast, tag=jkbw_happy_ghast] run attribute @s scale base set 0.8
 

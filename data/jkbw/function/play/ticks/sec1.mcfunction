@@ -13,7 +13,7 @@ scoreboard players remove @a[scores={jkbw.Player.UseTheMirrorCD=1..}] jkbw.Playe
 execute unless score #exp_mode jkbw.mem matches 4 run function jkbw:play/res/global
 
 # 团队常驻
-execute if score #res_mode jkbw.mem matches 0..1 run function jkbw:play/shop/team/global
+execute if score #res_mode jkbw.mem matches 0..1 run function jkbw:play/shop/real/team/global
 
 # 实体存活时间
 scoreboard players remove @e[scores={jkbw.Entity.Time=1..}] jkbw.Entity.Time 1

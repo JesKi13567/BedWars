@@ -11,6 +11,7 @@ function jkbw:load/settings/menu
 difficulty peaceful
 gamerule pvp false
 gamerule natural_health_regeneration true
+gamerule fall_damage false
 
 # 轮换检查点
 execute if score #map_rotation_check jkbw.mem matches 1 run scoreboard players set #map_rotation_check jkbw.mem 2

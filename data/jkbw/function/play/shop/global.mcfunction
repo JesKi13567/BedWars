@@ -16,12 +16,12 @@ execute if score #res_mode jkbw.mem matches 1..2 run function jkbw:play/res/mode
 execute as @s[scores={jkbw.Player.OpenChest=1..}] run function jkbw:play/shop/gui/chest/team/ray
 
 ## 检测按钮
-execute store success score @s jkbw.Player.ShopNow run clear @s #jkbw:shop[custom_data~{jkbw: ["shop"]}] 0
+execute store success score @s jkbw.Player.ShopNow run clear @s *[custom_data~{jkbw: ["shop"]}] 0
 execute as @s[scores={jkbw.Player.ShopNow=1}] run function jkbw:play/shop/buy
-execute unless score @s jkbw.Player.Page.Switched matches 1 if items entity @s[scores={jkbw.Player.ShopNow=1, jkbw.Player.Page=1..}] container.* #jkbw:shop[custom_data~{jkbw: ["shop"]}] run function jkbw:play/shop/buy
-execute unless score @s jkbw.Player.Page.Switched matches 1 if items entity @s[scores={jkbw.Player.ShopNow=1, jkbw.Player.Page=1..}] container.* #jkbw:shop[custom_data~{jkbw: ["shop"]}] run function jkbw:play/shop/buy
-execute unless score @s jkbw.Player.Page.Switched matches 1 if items entity @s[scores={jkbw.Player.ShopNow=1, jkbw.Player.Page=1..}] container.* #jkbw:shop[custom_data~{jkbw: ["shop"]}] run function jkbw:play/shop/buy
-clear @s #jkbw:shop[custom_data~{jkbw: ["shop"]}]
+execute unless score @s jkbw.Player.Page.Switched matches 1 if items entity @s[scores={jkbw.Player.ShopNow=1, jkbw.Player.Page=1..}] container.* *[custom_data~{jkbw: ["shop"]}] run function jkbw:play/shop/buy
+execute unless score @s jkbw.Player.Page.Switched matches 1 if items entity @s[scores={jkbw.Player.ShopNow=1, jkbw.Player.Page=1..}] container.* *[custom_data~{jkbw: ["shop"]}] run function jkbw:play/shop/buy
+execute unless score @s jkbw.Player.Page.Switched matches 1 if items entity @s[scores={jkbw.Player.ShopNow=1, jkbw.Player.Page=1..}] container.* *[custom_data~{jkbw: ["shop"]}] run function jkbw:play/shop/buy
+clear @s *[custom_data~{jkbw: ["shop"]}]
 scoreboard players reset @s jkbw.Player.Page.Switched
 
 ## 刷新商店
@@ -34,7 +34,7 @@ execute if score #res_mode jkbw.mem matches 1 run function jkbw:play/shop/gui/xp
 execute if score #res_mode jkbw.mem matches 2 run function jkbw:play/shop/gui/urf
 
 # 队伍陷阱展示
-execute if score #res_mode jkbw.mem matches 0..1 as @s[scores={jkbw.Player.Page=6}] run function jkbw:play/shop/team/trap_show
+execute if score #res_mode jkbw.mem matches 0..1 as @s[scores={jkbw.Player.Page=6}] run function jkbw:play/shop/real/team/trap_show
 
 # 真·末影箱
 execute as @s[scores={jkbw.Player.Page=-1}] run function jkbw:play/shop/gui/chest/global

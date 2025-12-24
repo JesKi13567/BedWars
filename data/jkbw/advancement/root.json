@@ -14,7 +14,7 @@
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": true,
-    "background": "textures/block/white_wool.png"
+    "background": "block/white_wool"
   },
   "criteria": {
     "command": {

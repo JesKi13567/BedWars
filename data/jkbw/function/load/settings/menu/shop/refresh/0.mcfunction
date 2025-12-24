@@ -20,10 +20,8 @@ data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt:
 data modify block 10110222 5 10110222 Items[3].components.minecraft:lore[6] set from block ~ ~ ~ back_text.messages[1]
 
 # 禁区
-data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.ban_zone", color: "white", "italic": false}]
-data modify block 10110222 5 10110222 Items[0].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
 data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.ban_zone_tip", color: "gray", "italic": false}, {"keybind": "key.sneak"}, {storage: "jk:bw", nbt: "txt.item.ban_zone_tip_"}]
-data modify block 10110222 5 10110222 Items[0].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
+data modify block 10110222 5 10110222 Items[0].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]
 # 指南针占位（白色玻璃板）
 data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.compass.name", "italic": false, color: "white", bold: true}]
 data modify block 10110222 5 10110222 Items[1].components.minecraft:custom_name set from block ~ ~ ~ back_text.messages[1]

@@ -1,5 +1,0 @@
-# 团队升级——检查升级
-$execute if entity @e[type=text_display, tag=jkbw_spawn_$(team), scores={jkbw.Team.$(item)=2}, limit=1] run tellraw @s [{storage: "jk:bw", nbt: "txt.print.buy_cannot", color: "red"}, " ", {storage: "jk:bw", nbt: "txt.team.shop.name.$(item)", color: "yellow"}, ", ", {storage: "jk:bw", nbt: "txt.print.becuz_lvl_max_self"}]
-$execute if entity @e[type=text_display, tag=jkbw_spawn_$(team), scores={jkbw.Team.$(item)=2}, limit=1] run playsound entity.villager.no player @s
-$execute if entity @e[type=text_display, tag=jkbw_spawn_$(team), scores={jkbw.Team.$(item)=1}, limit=1] run function jkbw:play/shop/team/update/common {team: $(team), aim: $(aim), item: $(item), lvl: 2}
-$execute if entity @e[type=text_display, tag=jkbw_spawn_$(team), scores={jkbw.Team.$(item)=0}, limit=1] run function jkbw:play/shop/team/update/common {team: $(team), aim: $(aim), item: $(item), lvl: 1}

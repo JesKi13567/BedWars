@@ -21,12 +21,12 @@ scoreboard players set #pickaxe2 jkbw.mem 10
 scoreboard players set #pickaxe3 jkbw.mem 3
 scoreboard players set #pickaxe4 jkbw.mem 6
 
-scoreboard players set #sword_stone jkbw.mem 10
-scoreboard players set #sword_iron jkbw.mem 7
-scoreboard players set #sword_diamond jkbw.mem 3
-scoreboard players operation #spear_stone jkbw.mem = #sword_stone jkbw.mem
-scoreboard players operation #spear_iron jkbw.mem = #sword_iron jkbw.mem
-scoreboard players operation #spear_diamond jkbw.mem = #sword_diamond jkbw.mem
+scoreboard players set #stone_sword jkbw.mem 10
+scoreboard players set #iron_sword jkbw.mem 7
+scoreboard players set #diamond_sword jkbw.mem 3
+scoreboard players operation #stone_spear jkbw.mem = #stone_sword jkbw.mem
+scoreboard players operation #iron_spear jkbw.mem = #iron_sword jkbw.mem
+scoreboard players operation #diamond_spear jkbw.mem = #diamond_sword jkbw.mem
 scoreboard players set #stick jkbw.mem 5
 scoreboard players set #shield jkbw.mem 5
 scoreboard players set #armor1 jkbw.mem 30

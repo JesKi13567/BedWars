@@ -5,7 +5,7 @@ execute as @s[scores={jkbw.Player.UseAntiarrowLast=1..}] run function jkbw:play/
 # 真·冰霜行者持续
 execute as @s[scores={jkbw.Player.UseIceLast=1..}] run function jkbw:play/special/ice/last
 # 蠹虫雪球
-execute as @s[scores={jkbw.Player.UseSnowball=1..}] run function jkbw:play/special/silverfish
+execute as @s[scores={jkbw.Player.UseSnowball=1..}] run function jkbw:play/special/silverfish/summon
 # 搭桥蛋使用
 execute as @s[scores={jkbw.Player.UseEgg=1..}] run function jkbw:play/special/egg/trigger
 # 背包有tnt

@@ -1,12 +1,12 @@
 
-#sword_stone
-data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#sword_stone", objective: "jkbw.mem"}, color: "white"}, " ", {translate: "item.minecraft.iron_ingot", "italic": false, color: "white"}]
+#stone_sword
+data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#stone_sword", objective: "jkbw.mem"}, color: "white"}, " ", {translate: "item.minecraft.iron_ingot", "italic": false, color: "white"}]
 data modify block 10110220 5 10110222 Items[0].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#sword_iron
-data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#sword_iron", objective: "jkbw.mem"}, color: "gold"}, " ", {translate: "item.minecraft.gold_ingot", "italic": false, color: "gold"}]
+#iron_sword
+data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#iron_sword", objective: "jkbw.mem"}, color: "gold"}, " ", {translate: "item.minecraft.gold_ingot", "italic": false, color: "gold"}]
 data modify block 10110220 5 10110222 Items[1].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#sword_diamond
-data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#sword_diamond", objective: "jkbw.mem"}, color: "green"}, " ", {translate: "item.minecraft.emerald", "italic": false, color: "green"}]
+#diamond_sword
+data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#diamond_sword", objective: "jkbw.mem"}, color: "green"}, " ", {translate: "item.minecraft.emerald", "italic": false, color: "green"}]
 data modify block 10110220 5 10110222 Items[2].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 #stick
 data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#stick", objective: "jkbw.mem"}, color: "gold"}, " ", {translate: "item.minecraft.gold_ingot", "italic": false, color: "gold"}]
@@ -15,14 +15,14 @@ data modify block 10110220 5 10110222 Items[3].components.minecraft:lore[0] set 
 data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#shield", objective: "jkbw.mem"}, color: "gold"}, " ", {translate: "item.minecraft.gold_ingot", "italic": false, color: "gold"}]
 data modify block 10110220 5 10110222 Items[4].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 
-#XPsword_stone
-data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#XPsword_stone", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.item.shop.lvl", "italic": false, color: "aqua"}]
+#XPstone_sword
+data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#XPstone_sword", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.item.shop.lvl", "italic": false, color: "aqua"}]
 data modify block 10110220 5 10110222 Items[9].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#XPsword_iron
-data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#XPsword_iron", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.item.shop.lvl", "italic": false, color: "aqua"}]
+#XPiron_sword
+data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#XPiron_sword", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.item.shop.lvl", "italic": false, color: "aqua"}]
 data modify block 10110220 5 10110222 Items[10].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
-#XPsword_diamond
-data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#XPsword_diamond", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.item.shop.lvl", "italic": false, color: "aqua"}]
+#XPdiamond_sword
+data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#XPdiamond_sword", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.item.shop.lvl", "italic": false, color: "aqua"}]
 data modify block 10110220 5 10110222 Items[11].components.minecraft:lore[0] set from block ~ ~ ~ back_text.messages[1]
 #XPstick
 data modify block ~ ~ ~ back_text.messages[1] set value [{storage: "jk:bw", nbt: "txt.item.shop.cost", "italic": false, color: "gray"}, {score: {name: "#XPstick", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.item.shop.lvl", "italic": false, color: "aqua"}]

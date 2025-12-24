@@ -1,6 +1,6 @@
 scoreboard players set @s jkbw.Player.UseFireballCD 1
 clear @s fire_charge 1
-summon fireball ^ ^ ^.3 {ExplosionPower: 1, Tags: ["jkbw", "jkbw_fireball", "jkbw_new_entity"], Passengers: [{id: "marker", Tags: ["jkbw", "jkbw_fireball_marker"], NoGravity: 1b}]}
+summon fireball ^ ^ ^.3 {ExplosionPower: 1, Tags: ["jkbw", "jkbw_new_entity"], Passengers: [{id: "marker", Tags: ["jkbw", "jkbw_fireball_marker"]}]}
 data modify entity @e[type=fireball, tag=jkbw_new_entity, limit=1, sort=nearest] Owner set from entity @s UUID
 
 # 确定位置

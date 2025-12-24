@@ -5,7 +5,7 @@
 # 玩家状态 player.state
 # 0 未报名 1 已报名 2 存活中 3 死亡中 4 无法复活提示 5 无法复活结束
 # 床状态 bed.state
-# 0 初始化 1 无方块提示 2 无方块结束与计分板加入队伍 3 显示人数 4 淘汰
+# 0 初始化 1 无方块提示 2 无方块结束与记分板加入队伍 3 显示人数 4 淘汰
 # 陷阱标号 Team.Trap 1/2/3
 # 1 is_trap 2 defend 3 alarm 4 mining_fatigue
 
@@ -49,7 +49,7 @@ scoreboard players set #minus_emerald jkbw.mem 5
 scoreboard players set #spawn_emerald_urf jkbw.mem 5
 scoreboard players set #minus_emerald_urf jkbw.mem 1
 # 实验模式4的时间间隔
-scoreboard players set #EXP_MODE_4_SHOP_INTERVAL jkbw.mem 10
+scoreboard players set #EXP_MODE_4_SHOP_INTERVAL jkbw.mem 5
 # 盾模式 0 禁用 1 启用 2 附剑上
 scoreboard players set #ENABLE_shield jkbw.mem 1
 # 矛模式 0 禁用 1 启用

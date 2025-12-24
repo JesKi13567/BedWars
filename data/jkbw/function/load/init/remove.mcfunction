@@ -57,7 +57,6 @@ scoreboard objectives remove jkbw.Player.BedsCount
 scoreboard objectives remove jkbw.Player.ExecuseTime
 scoreboard objectives remove jkbw.Player.Kills
 scoreboard objectives remove jkbw.Player.KillsCount
-#scoreboard objectives remove jkbw.Player.FinalKills
 scoreboard objectives remove jkbw.Player.DeathImp
 scoreboard objectives remove jkbw.Player.Death
 scoreboard objectives remove jkbw.Player.RebornTime

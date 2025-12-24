@@ -1,6 +1,6 @@
 # 边界
 $worldborder set $(d)
-$execute at @e[type=text_display, tag=jkbw_worldspawn, sort=nearest, limit=1] run fill ~-$(r) ~-1 ~-$(r) ~$(r) ~-1 ~$(r) barrier replace air
+$execute at @e[type=text_display, tag=jkbw_worldspawn, limit=1, sort=nearest] run fill ~-$(r) ~-1 ~-$(r) ~$(r) ~-1 ~$(r) barrier replace air
 
 # 强加载
 forceload remove all
