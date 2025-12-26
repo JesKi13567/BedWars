@@ -4,7 +4,7 @@ function jkbw:load/settings/menu/worldspawn/current with storage jk:bw Map.cur
 # 重新载入床和箱子
 function jkbw:load/settings/menu/teams/lock
 scoreboard players set @a jkbw.Player.State 2
-execute as @a run function jkbw:play/team/join_ {team: red, id: 1}
+execute as @a run function jkbw:play/team/distribute/in/2 {team: red, id: 1}
 tag @a add jkbw_buy_success
 
 # 解锁全轮换道具

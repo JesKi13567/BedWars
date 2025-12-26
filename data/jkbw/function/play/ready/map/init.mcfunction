@@ -1,5 +1,5 @@
 # execute at @e[type=text_display, tag=jkbw_worldspawn, limit=1]
-execute as @e[tag=jkbw] run data modify entity @s view_range set value 1f
+execute as @e[tag=jkbw] run data modify entity @s view_range set value 1
 kill @e[type=marker, tag=jkbw_map]
 $summon marker ~ ~-1 ~ {Tags: ["jkbw", "jkbw_map", "jkbw_map_$(type)"]}
 $bossbar set jkbw:map name {storage: "jk:bw", nbt: "txt.display.map.$(type)", color: "yellow", bold: true}

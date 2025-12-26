@@ -61,12 +61,3 @@ execute if score #teams jkbw.mem matches 5.. run item replace entity @s[scores={
 execute if score #teams jkbw.mem matches 6.. run item replace entity @s[scores={jkbw.Player.TeamSelect=6}] armor.chest from block 10110209 5 10110222 container.23
 execute if score #teams jkbw.mem matches 7.. run item replace entity @s[scores={jkbw.Player.TeamSelect=7}] armor.chest from block 10110209 5 10110222 container.24
 execute if score #teams jkbw.mem matches 8.. run item replace entity @s[scores={jkbw.Player.TeamSelect=8}] armor.chest from block 10110209 5 10110222 container.25
-
-item replace entity @s[scores={jkbw.Player.TeamSelect=1, jkbw.Player.State=1}] armor.head from block 10110209 4 10110222 container.18
-item replace entity @s[scores={jkbw.Player.TeamSelect=2, jkbw.Player.State=1}] armor.head from block 10110209 4 10110222 container.19
-execute if score #teams jkbw.mem matches 3.. run item replace entity @s[scores={jkbw.Player.TeamSelect=3, jkbw.Player.State=1}] armor.head from block 10110209 4 10110222 container.20
-execute if score #teams jkbw.mem matches 4.. run item replace entity @s[scores={jkbw.Player.TeamSelect=4, jkbw.Player.State=1}] armor.head from block 10110209 4 10110222 container.21
-execute if score #teams jkbw.mem matches 5.. run item replace entity @s[scores={jkbw.Player.TeamSelect=5, jkbw.Player.State=1}] armor.head from block 10110209 4 10110222 container.22
-execute if score #teams jkbw.mem matches 6.. run item replace entity @s[scores={jkbw.Player.TeamSelect=6, jkbw.Player.State=1}] armor.head from block 10110209 4 10110222 container.23
-execute if score #teams jkbw.mem matches 7.. run item replace entity @s[scores={jkbw.Player.TeamSelect=7, jkbw.Player.State=1}] armor.head from block 10110209 4 10110222 container.24
-execute if score #teams jkbw.mem matches 8.. run item replace entity @s[scores={jkbw.Player.TeamSelect=8, jkbw.Player.State=1}] armor.head from block 10110209 4 10110222 container.25

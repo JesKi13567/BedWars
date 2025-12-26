@@ -31,7 +31,7 @@ summon item_display ~.5 ~1.5 ~.5 {billboard: "fixed", Tags: ["jkbw", "jkbw_show"
 summon interaction ~.5 ~1.25 ~.5 {response: true, Tags: ["jkbw", "jkbw_show", "jkbw_button", "jkbw_button_bed_type"], height: .5f, width: .5f}
 function jkbw:play/ready/button/bed_type/show
 # 实验模式
-summon text_display ~2.5 ~3.1 ~1.5 {billboard: "center", Tags: ["jkbw", "jkbw_show"], text: [{storage: "jk:bw", nbt: "txt.display.exp_mode", color: "red"}]}
+summon text_display ~2.5 ~3.1 ~1.5 {billboard: "center", Tags: ["jkbw", "jkbw_show"], text: [{storage: "jk:bw", nbt: "txt.display.exp_mode", color: "light_purple"}]}
 summon item_display ~2.5 ~2.5 ~1.5 {billboard: "fixed", Tags: ["jkbw", "jkbw_show", "jkbw_show_exp_mode"], item: {id: "barrier", count: 1}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.5f, .5f, .5f], translation: [0f, 0f, 0f]}, CustomNameVisible: true}
 summon interaction ~2.5 ~2.25 ~1.5 {response: true, Tags: ["jkbw", "jkbw_show", "jkbw_button", "jkbw_button_exp_mode"], height: .5f, width: .5f}
 function jkbw:play/ready/button/exp_mode/show

@@ -54,7 +54,7 @@ execute unless score #time_update jkbw.mem matches 10..1000 run scoreboard playe
 execute unless score #time_bed jkbw.mem matches 10..1000 run scoreboard players set #time_bed jkbw.mem 600
 execute unless score #time_fight jkbw.mem matches 10..1000 run scoreboard players set #time_fight jkbw.mem 600
 execute unless score #time_end jkbw.mem matches 10..1000 run scoreboard players set #time_end jkbw.mem 600
-execute unless score #EXP_MODE_4_SHOP_INTERVAL jkbw.mem matches 5..30 run scoreboard players set #EXP_MODE_4_SHOP_INTERVAL jkbw.mem 10
+execute unless score #EXP_MODE_4_SHOP_INTERVAL jkbw.mem matches 1..30 run scoreboard players set #EXP_MODE_4_SHOP_INTERVAL jkbw.mem 5
 scoreboard players operation #time jkbw.mem = #time_end jkbw.mem
 scoreboard players operation #time6 jkbw.mem = #time jkbw.mem
 scoreboard players operation #time jkbw.mem += #time_fight jkbw.mem
@@ -71,9 +71,10 @@ scoreboard players operation #time jkbw.mem += #time_update jkbw.mem
 scoreboard players operation #time0 jkbw.mem = #time jkbw.mem
 execute if score #exp_mode jkbw.mem matches 1 run scoreboard players operation #time jkbw.mem = #time4 jkbw.mem
 scoreboard players add #time jkbw.mem 1
+scoreboard players set #time_s jkbw.mem 0
 
-execute as @e[tag=jkbw] run data modify entity @s view_range set value 0f
-execute unless score #exp_mode jkbw.mem matches 4 as @e[tag=jkbw, tag=jkbw_res_global] run data modify entity @s view_range set value 1f
+execute as @e[tag=jkbw] run data modify entity @s view_range set value 0
+execute unless score #exp_mode jkbw.mem matches 4 as @e[tag=jkbw, tag=jkbw_res_global] run data modify entity @s view_range set value 1
 function jkbw:play/start/display
 data modify storage jk:bw Alive set value {red: 0, blue: 0, green: 0, yellow: 0, cyan: 0, white: 0, pink: 0, gray: 0}
 
@@ -93,8 +94,8 @@ execute if score #test_mode jkbw.mem matches 1 run function jkbw:play/start/spec
 execute unless score #test_mode jkbw.mem matches 1 run function jkbw:play/start/reduce
 scoreboard players set @a[scores={jkbw.Player.State=1}] jkbw.Player.State 2
 bossbar set jkbw:player_ready visible false
-execute unless score #test_mode jkbw.mem matches 1 unless score #team_mode jkbw.mem matches 1 run function jkbw:play/team/distribute
-execute unless score #test_mode jkbw.mem matches 1 if score #team_mode jkbw.mem matches 1 run function jkbw:play/team/distribute_
+execute unless score #test_mode jkbw.mem matches 1 unless score #team_mode jkbw.mem matches 1 run function jkbw:play/team/distribute/random
+execute unless score #test_mode jkbw.mem matches 1 if score #team_mode jkbw.mem matches 1 run function jkbw:play/team/distribute/manual
 
 # 玩家编号（按队伍）
 scoreboard players reset #temp jkbw.mem

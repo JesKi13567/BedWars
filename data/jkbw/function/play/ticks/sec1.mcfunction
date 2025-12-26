@@ -41,7 +41,7 @@ scoreboard players set @a[scores={jkbw.Player.State=2}, team=] jkbw.Player.State
 team join jkbw.spec @a[gamemode=spectator, team=]
 
 # 游戏计时
-function jkbw:play/start/timing
+function jkbw:play/start/progress/global
 
 # 检测获胜（测试模式未开时）
 execute unless score #test_mode jkbw.mem matches 1 run function jkbw:play/end/check

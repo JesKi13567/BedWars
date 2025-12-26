@@ -5,76 +5,154 @@
 - [English](#en_us)
 
 ## zh_cn
-### 目前所有更新条目
+### 简介
+起床战争是一款经典的 Minecraft 游戏，玩家的首要目标是保护自己的床并活到最后。若床被破坏，则在死亡后无法复活。
 
-1. 仅支持主世界维度。
+本数据包实现了功能丰富的起床战争玩法，服务器管理员仅需提供地图并按游戏内说明完成道具布置，即可开启游戏。
+
+### 功能列表
 1. 支持中文（简体、繁体）和英文。
-1. 支持至多 64 人和 8 队进行游玩，自动分配最大人数。
-1. 游戏内自带各条目说明。
-1. 所有无耐久物品最大堆叠数均为 64。
-1. 有经典、经验和无限火力三种模式的玩法，选择时有玩法说明。
-1. 可自定义多地图，地图可「清理」、「转换」与「轮换」。
+
+1. 支持最多 8 支队伍 ＆ 64 名玩家。
+
 1. 使用刷怪蛋放置道具。
-1. 可在「操作台」页面自定义阶段时间，在「容器区块」自定义商店价格。
+
+1. 所有无耐久物品最大堆叠数均为 64。
+
 1. 存在测试模式，因此可独自游玩，免费购物。
-1. 玩家可在全局传送点附近设置：
 
-（管理员可放置方块阻挡玩家设置）
+1. 其他功能在下方单独列出。
 
-- 床种类——默认/夹心/蛋糕。
-- 资源模式——经典/经验/无限火力。
-- 资源速率——0.5~2.0。无限火力模式下无效。
-- 攻击速度——1.8-/1.9+。
-- 队伍数量——2~8，队伍编号见羊毛。
-- 队伍分配——随机/自选。自选无队伍人数平衡。
-- 实验模式——无/疾速/无跳跃/小人国/被迫零元购。
-- 设置时间——清晨/中午/黄昏/午夜。
+#### 管理员面板
+##### 地图相关
+|选项|含义|备注|
+|-|-|-|
+|清理|清理玩家摆放的方块。|会被清理的方块见数据包内「使用方法」。|
+|转换|转换会被清理的方块为其他。|建议在当前地图第一次运行前点击。|
+|轮换|当前游戏结束后将自动轮换地图。|需先设置多地图，位于「操作台」内。|
+
+##### 「操作台」
+|选项|含义|
+|-|-|
+|容器区块|此处可修改商店价格，以及设置启用轮换道具。|
+|地图轮换|此处需手动输入地图列表及打开轮换才可运行。|
+|时间间隔|游戏中各阶段间隔的秒数设置。|
+|盾 / 矛|控制是否在商店中出现对应物品。|
+
+#### 玩家设置
+在全局传送点附近，管理员可放置方块阻挡。
+
+|设置项|可选值|备注|
+|-|-|-|
+|床种类|默认 / 夹心 / 蛋糕|夹心为外围方块包裹的床，其他顾名思义。|
+|资源模式|经典 / 经验 / 无限火力|选择时有玩法说明，此处不展开。|
+|资源速率|0.5 ~ 2.0|数字指倍率，此设置在无限火力模式下无效。|
+|攻击速度|1.8- / 1.9+|数字指 MC 版本，此处形容对应的攻速机制。|
+|队伍数量|2 ~ 8|最大值不超过当前地图支持的最多队伍数。|
+|队伍分配|随机 / 自选|自选无队伍人数平衡。|
+|实验模式|无 / 疾速 / 无跳跃 / 小人国 / 被迫零元购|选择时有玩法说明，此处不展开。|
+|设置时间|清晨 / 中午 / 黄昏 / 午夜|同时还可设置时间自然流动。|
+
+#### 玩法种类
+##### 资源模式
+|种类|描述|
+|-|-|
+|经典 / 经验|玩家初始装备皮革套装，携带望远镜，木剑＆指南针各一。商店可存储私人物品、购买团队增益和轮换道具等。|
+|无限火力|玩家初始只携带一个望远镜。商店可购买团队箱子，武器和盔甲均有耐久，没有团队增益。游戏随时间进行，将逐步提升玩家的最大生命值，后期还会解锁凋灵弓。死亡后等级只会减半。|
+
+关于商店购买，经典模式使用资源物品，其他模式使用经验等级。
+
+##### 实验模式
+|种类|描述|
+|-|-|
+|已禁用| \ |
+|疾速|所有资源点满级、黑曜石/末影箱无法购买、末影珍珠价格降低、可自动搭路。|
+|无跳跃|玩家无法跳跃，但能跨步走上 3 格高方块。|
+|小人国|所有实体都变为原来的 1/2 尺寸。|
+|被迫零元购|商店禁用、资源点不产出。每经过 5 秒，玩家将随机获得免费的商品（不含团队升级）。|
 
 ### 注意事项
+- 本数据包仅支持主世界维度。
 
-使用 `/reload` 或 `/function #load` 呼出菜单，**按步骤**执行操作。
+- 使用 `/reload` 或 `/function #load` 呼出菜单。
 
-更多详情请见本数据包内【使用方法】。
-
-配置好所有设置即可游玩！
-
-一些地址：[GitHub] [MCMOD] [Modrinth] [CurseForge] [PMC]
+### 地址
+[GitHub] [MCMOD] [Modrinth] [CurseForge] [PMC]
 
 ## en_us
-### Things have been achieved
+### Info
+BedWars is a classic Minecraft game. Players aim to protect their bed and survive to the end. If their bed is destroyed, they cannot respawn.
 
-1. ONLY support the overworld dimension.
-1. Support Chinese(Simplified & Traditional) & English.
-1. Support max 64 players with 8 teams, distribute them dynamically.
-1. In-game instructions.
-1. All the no-durability items' max stack size is 64.
-1. There are 3 game types in this datapack (Classic, Xp & URF), with hints when selected.
-1. You can custom multi-maps, and maps can be \[clean\], \[convert\] & \[rotate\].
-1. Use Spawn Eggs to place BedWars things.
-1. You can set stage gaps in \[Operation Table\], custom item prices in \[Container Chunk\].
-1. There is a Test Mode, so you can play alone, buy everything freely.
-1. Players around Global Point can modify:
+This datapack delivers feature-rich BedWars gameplay. Server admins can start the game simply by providing maps and placing items as per in-game instructions.
 
-(admins can block these settings by placing blocks)
+### Feature List
+1. Supports Chinese \(Simplified & Traditional\) and English.
 
-- Bed Type: Default/Covered/Cake.
-- Res Mode: Classic/Xp/URF.
-- Res Speed: 0.5~2.0. Useless in URF.
-- Attack Speed: 1.8-/1.9+.
-- Team Count: 2~8, order was written in wool.
-- Team Distribute: Random/Manual. In Manual, no players' count balance.
-- Experimental Mode: No/Blitz/No Jumps/Lilliput/Forced Free Loot.
-- Set Time: Morning/Noon/Night/Midnight.
+1. Supports max 8 teams & 64 players.
+
+1. Place items using spawn eggs.
+
+1. All non-durable items have a maximum stack size of 64.
+
+1. There is a Test Mode, available for solo play and free shopping.
+
+1. Additional features are listed separately below.
+
+#### Admin Board
+##### Map Related
+|Option|Description|Notes|
+|-|-|-|
+|Clean|Clean up the blocks from players.|Refer to the "How2use" in the datapack for blocks that will be cleaned.|
+|Convert|Convert clean-blocks to others.|Recommended to click before running the map for the first time.|
+|Rotate|Automatically rotates maps after each game ends.|Requires multi-maps first, configured in the "Operation Table".|
+
+##### "Operation Table"
+|Option|Description|
+|-|-|
+|Container Chunk|Adjust shop prices and enable rotating items here.|
+|Map Rotation|Input map list manually and enable the switch to activate.|
+|Set Period|Settings of game phase timers.|
+|Shield / Spear|Controls whether the corresponding items appear in the shop.|
+
+#### Player Settings
+Around the Global Point, admins can block these settings by placing blocks.
+
+|Settings|Optional Values|Notes|
+|-|-|-|
+|Bed Type|Default / Covered / Cake|Covered means some blocks cover the bed.|
+|Resource Mode|Classic / Xp / URF|Will display hints when selected.|
+|Resource Speed|0.5 ~ 2.0|The num means ratio, this setting is useless in URF.|
+|Attack Speed|1.8- / 1.9+|The num is the version of Minecraft, corresponding to the attack mechanism.|
+|Team Count|2 ~ 8|The max num cannot exceed the limit of the current map.|
+|Team Distribute|Random / Manual|The Manual has no team size balance.|
+|Experimental Mode|No / Blitz / No Jumps / Lilliput / Forced Free Loot|Will display hints when selected.|
+|Set Time|Morning / Noon / Night / Midnight|You can select day or night, and day-night cycle.|
+
+#### Game Types
+##### Resource Mode
+|Type|Description|
+|-|-|
+|Classic / Xp|Players have full Leather set, carrying Spyglass, Wooden Sword & Compass on birth. They can store their private items, buying rotating items & team benefits via shops.|
+|URF \(Ultra Rapid Fire\)|Players only carry one Spyglass on birth. They can buy team chests but no team benefits via shops, all weapons & armor have durability. As the game progresses, players will gradually improve their Max Health, and will unlock WitherBow in final game-stage. Players' levels only lose half after death.|
+
+About shop buying, the classic uses items, while others use experience levels.
+
+##### Experimental Mode
+|Type|Description|
+|-|-|
+|Disabled| \ |
+|Blitz|All Resource Points are in max level, Obsidian/Ender Chest cannot be bought, Ender Pearl has lower price, has auto-bridging.|
+|No Jumps|Players cannot jump but can step to 3-block height.|
+|Lilliput|All entities will turn into 1/2 size from before.|
+|Forced Free Loot|Shops and Resource Points are banned. For every 5 seconds, players will get loots \(not including team updates\) from shop freely.|
 
 ### Notes
+- This datapack only supports the overworld dimension.
 
-Type `/reload` or `/function #load` to use menu, operate things **by steps**.
+- Type `/reload` or `/function #load` to use menu.
 
-More description, see \[How2use\].
-
-Just get all your settings ready to enjoy your game!
-
-See also: [GitHub] [MCMOD] [Modrinth] [CurseForge] [PMC]
+### Websites
+[GitHub] [MCMOD] [Modrinth] [CurseForge] [PMC]
 
 
 [GitHub]: https://github.com/JesKi13567/BedWars
