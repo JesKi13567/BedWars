@@ -2,9 +2,6 @@ fill 10110208 0 10110208 10110223 6 10110223 barrier outline
 fill 10110209 1 10110209 10110222 5 10110222 air
 fill 10110222 1 10110216 10110214 1 10110209 barrel[facing=up] destroy
 
-# 牌子
-setblock 10110222 1 10110222 cherry_sign{is_waxed: 1b, front_text: {messages: ["", "", "", ""]}, back_text: {messages: ["", "", "", ""]}} destroy
-
 # 主菜单
 function jkbw:load/settings/menu/shop/box/0
 
@@ -29,4 +26,4 @@ function jkbw:load/settings/menu/shop/box/7
 function jkbw:load/settings/menu/shop/box/e1
 function jkbw:load/settings/menu/shop/box/e2
 
-execute positioned 10110222 1 10110222 run function jkbw:load/settings/menu/shop/refresh
+function jkbw:load/settings/menu/shop/refresh

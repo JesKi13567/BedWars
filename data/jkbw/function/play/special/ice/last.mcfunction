@@ -12,4 +12,4 @@ execute as @e[type=marker, tag=jkbw_ice] run function jkbw:play/special/check_po
 
 # 时间减少
 scoreboard players remove @s jkbw.Player.UseIceLast 1
-title @s actionbar [{storage: "jk:bw", nbt: "txt.item.shop.the_truly", color: "yellow"}, {translate: "enchantment.minecraft.frost_walker"}, {storage: "jk:bw", nbt: "txt.print.ice_walker_last1"}, {score: {name: "@s", objective: "jkbw.Player.UseIceLast"}, color: "red"}, {storage: "jk:bw", nbt: "txt.print.ice_walker_last2"}]
+title @s actionbar [{storage: "jk:bw", nbt: "txt.shop.item.the_truly", color: "yellow"}, {translate: "enchantment.minecraft.frost_walker"}, {storage: "jk:bw", nbt: "txt.shop.item.ice_walker.actionbar.p0"}, {score: {name: "@s", objective: "jkbw.Player.UseIceLast"}, color: "red"}, {storage: "jk:bw", nbt: "txt.shop.item.ice_walker.actionbar.p1"}]

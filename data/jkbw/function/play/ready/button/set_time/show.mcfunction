@@ -1,9 +1,9 @@
 # 时间点
-execute if score #set_time jkbw.mem matches 0 run data modify block 10110222 1 10110222 back_text.messages[0] set value [{storage: "jk:bw", nbt: "txt.display.set_time1", color: "gold"}]
-execute if score #set_time jkbw.mem matches 1 run data modify block 10110222 1 10110222 back_text.messages[0] set value [{storage: "jk:bw", nbt: "txt.display.set_time2", color: "gold"}]
-execute if score #set_time jkbw.mem matches 2 run data modify block 10110222 1 10110222 back_text.messages[0] set value [{storage: "jk:bw", nbt: "txt.display.set_time3", color: "gold"}]
-execute if score #set_time jkbw.mem matches 3 run data modify block 10110222 1 10110222 back_text.messages[0] set value [{storage: "jk:bw", nbt: "txt.display.set_time4", color: "gold"}]
-execute as @e[type=item_display, tag=jkbw_show_set_time] run data modify entity @s CustomName set from block 10110222 1 10110222 back_text.messages[0]
+execute if score #set_time jkbw.mem matches 0 run data modify entity @e[type=text_display, tag=jkbw_txt, limit=1] text set value [{storage: "jk:bw", nbt: "txt.ready.set_time.1", color: "gold"}]
+execute if score #set_time jkbw.mem matches 1 run data modify entity @e[type=text_display, tag=jkbw_txt, limit=1] text set value [{storage: "jk:bw", nbt: "txt.ready.set_time.2", color: "gold"}]
+execute if score #set_time jkbw.mem matches 2 run data modify entity @e[type=text_display, tag=jkbw_txt, limit=1] text set value [{storage: "jk:bw", nbt: "txt.ready.set_time.3", color: "gold"}]
+execute if score #set_time jkbw.mem matches 3 run data modify entity @e[type=text_display, tag=jkbw_txt, limit=1] text set value [{storage: "jk:bw", nbt: "txt.ready.set_time.4", color: "gold"}]
+execute as @e[type=item_display, tag=jkbw_show_set_time] run data modify entity @s CustomName set from entity @e[type=text_display, tag=jkbw_txt, limit=1] text
 
 execute if score #set_time jkbw.mem matches 0 run time set 0
 execute if score #set_time jkbw.mem matches 1 run time set noon

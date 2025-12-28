@@ -1,2 +1,2 @@
 playsound entity.villager.no player @s
-tellraw @s [{storage: "jk:bw", nbt: "txt.print.worldspawn.add_fail.near", color: "red"}]
+tellraw @s [{storage: "jk:bw", nbt: "txt.point.global.add.fail.near", color: "red"}]

@@ -1,5 +1,5 @@
 title @a times 0s 2s 0s
-title @a title [{storage: "jk:bw", nbt: "txt.print.start_soon", color: "green"}, "..."]
+title @a title [{storage: "jk:bw", nbt: "txt.ready.start.soon", color: "green"}, "..."]
 title @a subtitle {score: {name: "#ready_count1", objective: "jkbw.mem"}}
 playsound block.note_block.hat player @a 0 100 0 1000000
 

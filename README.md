@@ -76,12 +76,12 @@
 
 - 使用 `/reload` 或 `/function #load` 呼出菜单。
 
-### 地址
+### 相关网站
 [GitHub] [MCMOD] [Modrinth] [CurseForge] [PMC]
 
 ## en_us
 ### Info
-BedWars is a classic Minecraft game. Players aim to protect their bed and survive to the end. If their bed is destroyed, they cannot respawn.
+BedWars is a classic Minecraft game. Players aim to protect their bed and survive to the end. If their beds are destroyed, they cannot respawn.
 
 This datapack delivers feature-rich BedWars gameplay. Server admins can start the game simply by providing maps and placing items as per in-game instructions.
 
@@ -104,9 +104,9 @@ This datapack delivers feature-rich BedWars gameplay. Server admins can start th
 |-|-|-|
 |Clean|Clean up the blocks from players.|Refer to the "How2use" in the datapack for blocks that will be cleaned.|
 |Convert|Convert clean-blocks to others.|Recommended to click before running the map for the first time.|
-|Rotate|Automatically rotates maps after each game ends.|Requires multi-maps first, configured in the "Operation Table".|
+|Rotate|Automatically rotates maps after each game ends.|Requires multi-maps first, configured in the "Control Panel".|
 
-##### "Operation Table"
+##### "Control Panel"
 |Option|Description|
 |-|-|
 |Container Chunk|Adjust shop prices and enable rotating items here.|
@@ -132,8 +132,8 @@ Around the Global Point, admins can block these settings by placing blocks.
 ##### Resource Mode
 |Type|Description|
 |-|-|
-|Classic / Xp|Players have full Leather set, carrying Spyglass, Wooden Sword & Compass on birth. They can store their private items, buying rotating items & team benefits via shops.|
-|URF \(Ultra Rapid Fire\)|Players only carry one Spyglass on birth. They can buy team chests but no team benefits via shops, all weapons & armor have durability. As the game progresses, players will gradually improve their Max Health, and will unlock WitherBow in final game-stage. Players' levels only lose half after death.|
+|Classic / Xp|Players have full Leather set, carrying Spyglass, Wooden Sword & Compass on spawn. They can store their private items, buying rotating items & team benefits via shops.|
+|URF \(Ultra Rapid Fire\)|Players only carry one Spyglass on spawn. They can buy team chests but no team benefits via shops, all weapons & armor have durability. As the game progresses, players will gradually improve their Max Health, and will unlock WitherBow in final game-stage. Players' levels only lose half after death.|
 
 About shop buying, the classic uses items, while others use experience levels.
 

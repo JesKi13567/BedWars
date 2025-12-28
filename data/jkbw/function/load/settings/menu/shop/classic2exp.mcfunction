@@ -181,4 +181,4 @@ scoreboard players operation #XPres21 jkbw.mem *= #XPdiamond jkbw.mem
 scoreboard players operation #XPres31 jkbw.mem *= #XPdiamond jkbw.mem
 scoreboard players operation #XPres41 jkbw.mem *= #XPdiamond jkbw.mem
 
-execute positioned 10110222 1 10110222 run function jkbw:load/settings/menu/shop/refresh
+function jkbw:load/settings/menu/shop/refresh

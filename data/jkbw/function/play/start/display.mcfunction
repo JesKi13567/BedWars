@@ -91,23 +91,23 @@ kill @e[type=marker, tag=jkbw_display]
 execute if score #attack_speed jkbw.mem matches 1 run summon marker 10110222 1 10110222 {Tags: ["jkbw", "jkbw_display", "jkbw_display_attack"], CustomName: "1.9+"}
 execute if score #attack_speed jkbw.mem matches 0 run summon marker 10110222 1 10110222 {Tags: ["jkbw", "jkbw_display", "jkbw_display_attack"], CustomName: "1.8-"}
 
-tellraw @a ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", {storage: "jk:bw", nbt: "txt.print.bedwars", color: "yellow"}, "\n", {translate: "attribute.name.attack_speed", color: "green"}, ": ", {selector: "@e[type=marker, tag=jkbw_display_attack, limit=1]"}]
+tellraw @a ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", {storage: "jk:bw", nbt: "txt.global.bedwars.left", color: "yellow"}, "\n", {translate: "attribute.name.attack_speed", color: "green"}, ": ", {selector: "@e[type=marker, tag=jkbw_display_attack, limit=1]"}]
 
-execute if score #res_mode jkbw.mem matches 0 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.display.res_mode", color: "green"}, ": ", {storage: "jk:bw", nbt: "txt.display.res_mode1"}]
-execute if score #res_mode jkbw.mem matches 1 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.display.res_mode", color: "green"}, ": ", {storage: "jk:bw", nbt: "txt.display.res_mode2"}]
-execute if score #res_mode jkbw.mem matches 2 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.display.res_mode", color: "green"}, ": ", {storage: "jk:bw", nbt: "txt.display.res_mode2_1"}]
+execute if score #res_mode jkbw.mem matches 0 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.res_mode.name", color: "green"}, ": ", {storage: "jk:bw", nbt: "txt.ready.res_mode.0.name"}]
+execute if score #res_mode jkbw.mem matches 1 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.res_mode.name", color: "green"}, ": ", {storage: "jk:bw", nbt: "txt.ready.res_mode.1.name"}]
+execute if score #res_mode jkbw.mem matches 2 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.res_mode.name", color: "green"}, ": ", {storage: "jk:bw", nbt: "txt.ready.res_mode.2.name"}]
 
-execute if score #res_mode jkbw.mem matches 0..1 if score #res_rate jkbw.mem matches ..9 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.display.res_speed", color: "green"}, ": 0.", {score: {name: "#res_rate3", objective: "jkbw.mem"}}]
-execute if score #res_mode jkbw.mem matches 0..1 if score #res_rate jkbw.mem matches 10.. run tellraw @a ["", {storage: "jk:bw", nbt: "txt.display.res_speed", color: "green"}, ": ", {score: {name: "#res_rate2", objective: "jkbw.mem"}}, ".", {score: {name: "#res_rate3", objective: "jkbw.mem"}}]
+execute if score #res_mode jkbw.mem matches 0..1 if score #res_rate jkbw.mem matches ..9 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.res_speed.name", color: "green"}, ": 0.", {score: {name: "#res_rate3", objective: "jkbw.mem"}}]
+execute if score #res_mode jkbw.mem matches 0..1 if score #res_rate jkbw.mem matches 10.. run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.res_speed.name", color: "green"}, ": ", {score: {name: "#res_rate2", objective: "jkbw.mem"}}, ".", {score: {name: "#res_rate3", objective: "jkbw.mem"}}]
 
-execute if score #res_mode jkbw.mem matches 0..1 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.print.team_chest", color: "green"}, ": ", {storage: "jk:bw", nbt: "txt.print.use"}, {translate: "item.minecraft.compass"}]
-execute if score #res_mode jkbw.mem matches 2 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.print.team_chest", color: "green"}, ": ", {storage: "jk:bw", nbt: "txt.print.team_chest2"}]
+execute if score #res_mode jkbw.mem matches 0..1 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.play.team.chest", color: "green"}, ": ", {storage: "jk:bw", nbt: "txt.global.use"}, {translate: "item.minecraft.compass"}]
+execute if score #res_mode jkbw.mem matches 2 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.play.team.chest", color: "green"}, ": ", {storage: "jk:bw", nbt: "txt.play.buy_in_shop"}]
 
-tellraw @a ["", {storage: "jk:bw", nbt: "txt.print.bring2break", color: "aqua"}, "\n", {storage: "jk:bw", nbt: "txt.print.team_chat", color: "aqua"}]
+tellraw @a ["", {storage: "jk:bw", nbt: "txt.play.bring2break", color: "aqua"}, "\n", {storage: "jk:bw", nbt: "txt.play.team.chat", color: "aqua"}]
 
-execute if score #exp_mode jkbw.mem matches 1 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.display.exp_mode", color: "light_purple"}, ": ", {storage: "jk:bw", nbt: "txt.display.exp_mode2", color: "green"}, {storage: "jk:bw", nbt: "txt.print.turned_on", color: "gold"}, "\n", {storage: "jk:bw", nbt: "txt.display.exp_mode2_4", color: "green"}]
-execute if score #exp_mode jkbw.mem matches 2 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.display.exp_mode", color: "light_purple"}, ": ", {storage: "jk:bw", nbt: "txt.display.exp_mode3", color: "red"}, {storage: "jk:bw", nbt: "txt.print.turned_on", color: "gold"}]
-execute if score #exp_mode jkbw.mem matches 3 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.display.exp_mode", color: "light_purple"}, ": ", {storage: "jk:bw", nbt: "txt.display.exp_mode4", color: "white"}, {storage: "jk:bw", nbt: "txt.print.turned_on", color: "gold"}]
-execute if score #exp_mode jkbw.mem matches 4 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.display.exp_mode", color: "light_purple"}, ": ", {storage: "jk:bw", nbt: "txt.display.exp_mode5", color: "yellow"}, {storage: "jk:bw", nbt: "txt.print.turned_on", color: "gold"}]
+execute if score #exp_mode jkbw.mem matches 1 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.exp_mode.name", color: "light_purple"}, ": ", {storage: "jk:bw", nbt: "txt.ready.exp_mode.1.name", color: "green"}, {storage: "jk:bw", nbt: "txt.global.turned.on", color: "gold"}, "\n", {storage: "jk:bw", nbt: "txt.ready.exp_mode.1.p3", color: "green"}]
+execute if score #exp_mode jkbw.mem matches 2 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.exp_mode.name", color: "light_purple"}, ": ", {storage: "jk:bw", nbt: "txt.ready.exp_mode.2.name", color: "red"}, {storage: "jk:bw", nbt: "txt.global.turned.on", color: "gold"}]
+execute if score #exp_mode jkbw.mem matches 3 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.exp_mode.name", color: "light_purple"}, ": ", {storage: "jk:bw", nbt: "txt.ready.exp_mode.3.name", color: "white"}, {storage: "jk:bw", nbt: "txt.global.turned.on", color: "gold"}]
+execute if score #exp_mode jkbw.mem matches 4 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.exp_mode.name", color: "light_purple"}, ": ", {storage: "jk:bw", nbt: "txt.ready.exp_mode.4.name", color: "yellow"}, {storage: "jk:bw", nbt: "txt.global.turned.on", color: "gold"}]
 
-execute if score #test_mode jkbw.mem matches 1 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.print.test_mode", color: "red", bold: true}, {storage: "jk:bw", nbt: "txt.print.turned_on", color: "red", bold: true}, "\n", {storage: "jk:bw", nbt: "txt.print.test_mode_tip4", color: "yellow"}]
+execute if score #test_mode jkbw.mem matches 1 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.test_mode.name", color: "red", bold: true}, {storage: "jk:bw", nbt: "txt.global.turned.on", color: "red", bold: true}, "\n", {storage: "jk:bw", nbt: "txt.ready.test_mode.tellraw", color: "yellow"}]

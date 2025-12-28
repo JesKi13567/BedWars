@@ -2,7 +2,7 @@ scoreboard players set #state jkbw.mem 2
 stopsound @a
 playsound ui.toast.challenge_complete player @a 10110223 100 10110223 1000000000
 
-title @a title {storage: "jk:bw", nbt: "txt.print.congrats", color: "yellow", bold: true}
+title @a title {storage: "jk:bw", nbt: "txt.play.congrats", color: "yellow", bold: true}
 title @a times 1s 6s 1s
 
 execute if entity @p[team=jkbw.red, scores={jkbw.Player.State=2..3}] run function jkbw:play/end/win_ {team: red, color: red}
@@ -14,12 +14,12 @@ execute if score #teams jkbw.mem matches 6.. if entity @p[team=jkbw.white, score
 execute if score #teams jkbw.mem matches 7.. if entity @p[team=jkbw.pink, scores={jkbw.Player.State=2..3}] run function jkbw:play/end/win_ {team: pink, color: light_purple}
 execute if score #teams jkbw.mem matches 8.. if entity @p[team=jkbw.gray, scores={jkbw.Player.State=2..3}] run function jkbw:play/end/win_ {team: gray, color: gray}
 
-tellraw @a ["\n\n\n\n", {storage: "jk:bw", nbt: "txt.print.bedwars1", color: "yellow", bold: true}, "\n"]
+tellraw @a ["\n\n\n\n", {storage: "jk:bw", nbt: "txt.global.bedwars.center", color: "yellow", bold: true}, "\n"]
 
 tag @a remove jkbw_win
 tag @p[scores={jkbw.Player.State=2..3}] add jkbw_win
 execute as @a[scores={jkbw.Player.State=2..}] if score @s jkbw.Team.ID = @p[tag=jkbw_win] jkbw.Team.ID run tag @s add jkbw_win
-tellraw @a [{storage: "jk:bw", nbt: "txt.print.win_players"}, ": ", {selector: "@a[tag=jkbw_win]"}]
+tellraw @a [{storage: "jk:bw", nbt: "txt.play.win.players"}, ": ", {selector: "@a[tag=jkbw_win]"}]
 scoreboard players add @a[tag=jkbw_win] jkbw.Player.Wins 1
 
 function jkbw:play/end/rank

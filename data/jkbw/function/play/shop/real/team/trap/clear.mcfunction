@@ -1,4 +1,4 @@
-$tellraw @a[team=jkbw.$(team)] ["", {selector: "@s"}, " ", {storage: "jk:bw", nbt: "txt.print.buy_ed2", color: "green"}, " ", {storage: "jk:bw", nbt: "txt.item.shop.trap.list.name.$(item)", color: "gold"}]
+$tellraw @a[team=jkbw.$(team)] ["", {selector: "@s"}, " ", {storage: "jk:bw", nbt: "txt.play.shop.buy.ed.team", color: "green"}, " ", {storage: "jk:bw", nbt: "txt.shop.trap.list.$(item).name", color: "gold"}]
 
 $scoreboard players set @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Traps=2}, limit=1] jkbw.Team.Trap3 $(item)
 $scoreboard players set @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Traps=1}, limit=1] jkbw.Team.Trap2 $(item)

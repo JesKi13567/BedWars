@@ -22,4 +22,4 @@ tellraw @s ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", {translate: "block.minec
 "}}, {text: "2]", color: "aqua"}, "\n", {text: "[", color: "aqua"}, {translate: "item.minecraft.potion.effect.regeneration", color: "aqua", click_event: {action: "suggest_command", command: "/scoreboard players set #urfXPpotion_regen jkbw.mem 300\
 "}}, {text: "]", color: "aqua"}]
 function jkbw:load/settings/menu/shop/box/_2
-execute positioned 10110222 1 10110222 run function jkbw:load/settings/menu/shop/refresh/_2
+function jkbw:load/settings/menu/shop/refresh/_2

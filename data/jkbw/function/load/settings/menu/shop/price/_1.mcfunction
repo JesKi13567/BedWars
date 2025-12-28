@@ -26,4 +26,4 @@ tellraw @s ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", {translate: "block.minec
 "}}, {text: "]", color: "aqua"}, "\n", {text: "[", color: "aqua"}, {translate: "item.minecraft.golden_pickaxe", color: "aqua", click_event: {action: "suggest_command", command: "/scoreboard players set #urfXPgolden_pickaxe jkbw.mem 100\
 "}}, {text: "]", color: "aqua"}]
 function jkbw:load/settings/menu/shop/box/_1
-execute positioned 10110222 1 10110222 run function jkbw:load/settings/menu/shop/refresh/_1
+function jkbw:load/settings/menu/shop/refresh/_1

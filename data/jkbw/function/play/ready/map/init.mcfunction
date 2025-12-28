@@ -2,7 +2,7 @@
 execute as @e[tag=jkbw] run data modify entity @s view_range set value 1
 kill @e[type=marker, tag=jkbw_map]
 $summon marker ~ ~-1 ~ {Tags: ["jkbw", "jkbw_map", "jkbw_map_$(type)"]}
-$bossbar set jkbw:map name {storage: "jk:bw", nbt: "txt.display.map.$(type)", color: "yellow", bold: true}
+$bossbar set jkbw:map name {storage: "jk:bw", nbt: "txt.map.$(type).bossbar", color: "yellow", bold: true}
 bossbar set jkbw:map visible true
 execute as @e[type=marker, tag=jkbw_map, limit=1] run function jkbw:play/ready/map/refill with storage jk:bw Map.cur
 function jkbw:load/settings/menu
