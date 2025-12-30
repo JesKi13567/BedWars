@@ -1,9 +1,9 @@
 scoreboard players set @s jkbw.Bed.State 0
-scoreboard players set @s jkbw.Team.TrapCD 0
-scoreboard players set @s jkbw.Team.Traps 0
-scoreboard players set @s jkbw.Team.Trap1 0
-scoreboard players set @s jkbw.Team.Trap2 0
-scoreboard players set @s jkbw.Team.Trap3 0
+scoreboard players set @s jkbw.Team.Trap.CD 0
+scoreboard players set @s jkbw.Team.Trap.Count 0
+scoreboard players set @s jkbw.Team.Trap.1 0
+scoreboard players set @s jkbw.Team.Trap.2 0
+scoreboard players set @s jkbw.Team.Trap.3 0
 scoreboard players reset @s jkbw.Team.Alive
 
 # 记录位置并存储

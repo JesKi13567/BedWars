@@ -19,7 +19,7 @@ tellraw @a ["\n\n\n\n", {storage: "jk:bw", nbt: "txt.global.bedwars.center", col
 tag @a remove jkbw_win
 tag @p[scores={jkbw.Player.State=2..3}] add jkbw_win
 execute as @a[scores={jkbw.Player.State=2..}] if score @s jkbw.Team.ID = @p[tag=jkbw_win] jkbw.Team.ID run tag @s add jkbw_win
-tellraw @a [{storage: "jk:bw", nbt: "txt.play.win.players"}, ": ", {selector: "@a[tag=jkbw_win]"}]
+tellraw @a [{storage: "jk:bw", nbt: "txt.play.win.players"}, {storage: "jk:bw", nbt: "txt.global.char.colon"}, {selector: "@a[tag=jkbw_win]"}]
 scoreboard players add @a[tag=jkbw_win] jkbw.Player.Wins 1
 
 function jkbw:play/end/rank

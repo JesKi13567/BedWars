@@ -1,5 +1,5 @@
 tellraw @a ["", {text: "\n\n\n\n\n\n\n\n\n\n============= ", color: "green"}, {storage: "jk:bw", nbt: "txt.global.bedwars.datapack", color: "yellow"}, {text: " =============\n", color: "green"}, {storage: "jk:bw", nbt: "txt.ready.page_seen", color: "gray"}, "\n\n", \
-{storage: "jk:bw", nbt: "txt.global.author"}, ": ", {text: "JK137", color: "aqua"}, "\n\n", \
+{storage: "jk:bw", nbt: "txt.global.author"}, {storage: "jk:bw", nbt: "txt.global.char.colon"}, {text: "JK137", color: "aqua"}, "\n\n", \
 {text: "bilibili", color: "light_purple", underlined: true, hover_event: {action: "show_text", value: {text: "凤凰院i凶真", color: "light_purple"}}, click_event: {action: "open_url", url: "https://space.bilibili.com/285801820"}}, "  ", \
 {text: "mcmod", color: "yellow", underlined: true, hover_event: {action: "show_text", value: [{text: "JK137", color: "yellow"}]}, click_event: {action: "open_url", url: "https://center.mcmod.cn/295679/"}}, "  ", \
 {text: "GitHub", color: "blue", underlined: true, hover_event: {action: "show_text", value: {text: "JesKi13567", color: "blue"}}, click_event: {action: "open_url", url: "https://github.com/JesKi13567"}}, "  ", \
@@ -8,5 +8,5 @@ tellraw @a ["", {text: "\n\n\n\n\n\n\n\n\n\n============= ", color: "green"}, {s
 {text: "CurseForge", color: "gold", underlined: true, hover_event: {action: "show_text", value: {text: "JK137", color: "gold"}}, click_event: {action: "open_url", url: "https://www.curseforge.com/members/jk137/projects"}}, "  ", \
 {text: "PMC", color: "dark_green", underlined: true, hover_event: {action: "show_text", value: {text: "JK137", color: "dark_green"}}, click_event: {action: "open_url", url: "https://www.planetminecraft.com/member/jk137/"}}, "\n\n", \
 "繁體中文貢獻者（部分）：", {text: "[芒果凍布丁]", color: "blue", hover_event: {action: "show_text", value: {text: "GitHub", color: "blue"}}, click_event: {action: "open_url", url: "https://github.com/EvanHsieh0415"}}, "\n\n", \
-{text: "============== ", color: "green"}, {text: "[", color: "gold"}, {storage: "jk:bw", nbt: "txt.ready.how2use.name", color: "gold", click_event: {action: "run_command", command: "/trigger jkbw.admin.trigger set 102"}}, {text: "]", color: "gold"}, {text: " ==============", color: "green"}]
-scoreboard players reset @s jkbw.admin.trigger
+{text: "============== ", color: "green"}, {text: "[", color: "gold"}, {storage: "jk:bw", nbt: "txt.ready.how2use.name", color: "gold", click_event: {action: "run_command", command: "/trigger jkbw.Admin.Trigger set 102"}}, {text: "]", color: "gold"}, {text: " ==============", color: "green"}]
+scoreboard players reset @s jkbw.Admin.Trigger

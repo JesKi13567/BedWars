@@ -28,7 +28,7 @@ data modify block 10110220 4 10110222 Items[3].components.minecraft:lore[1] set 
 #urfXPice_walker
 data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.the_truly", italic: false, color: "white"}, {translate: "enchantment.minecraft.frost_walker"}]
 data modify block 10110220 4 10110222 Items[4].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.ice_walker.p0", italic: false, color: "gold"}, {translate: "block.minecraft.air", color: "white"}, {storage: "jk:bw", nbt: "txt.shop.item.ice_walker.p1"}, {translate: "block.minecraft.packed_ice", color: "white"}, "."]
+data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.ice_walker.p0", italic: false, color: "gold"}, {translate: "block.minecraft.air", color: "white"}, {storage: "jk:bw", nbt: "txt.shop.item.ice_walker.p1"}, {translate: "block.minecraft.packed_ice", color: "white"}, {storage: "jk:bw", nbt: "txt.global.char.dot"}]
 data modify block 10110220 4 10110222 Items[4].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#urfXPice_walker", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.global.lvl", italic: false, color: "aqua"}]
 data modify block 10110220 4 10110222 Items[4].components.minecraft:lore[1] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
@@ -77,7 +77,7 @@ data modify block 10110220 4 10110222 Items[12].components.minecraft:lore[0] set
 #urfXPhappy_ghast
 data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#urfXPhappy_ghast", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.global.lvl", italic: false, color: "aqua"}]
 data modify block 10110220 4 10110222 Items[13].components.minecraft:lore[1] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.global.summon_here", italic: false, color: "gold"}, {translate: "entity.minecraft.happy_ghast", color: "white"}, "."]
+data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.global.summon_here", italic: false, color: "gold"}, {translate: "entity.minecraft.happy_ghast", color: "white"}, {storage: "jk:bw", nbt: "txt.global.char.dot"}]
 data modify block 10110220 4 10110222 Items[13].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 #urfXPpearl_blitz
 data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#urfXPpearl_blitz", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.global.lvl", italic: false, color: "aqua"}]

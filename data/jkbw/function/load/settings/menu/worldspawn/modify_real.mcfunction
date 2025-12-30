@@ -64,4 +64,4 @@ $execute store result storage jk:bw Map.maps.$(id).y int 1 run scoreboard player
 $execute store result storage jk:bw Map.maps.$(id).z int 1 run scoreboard players get #WZ jkbw.mem
 
 # 其他
-$tellraw @s ["", {storage: "jk:bw", nbt: "txt.point.global.modify.name", color: "green"}, " ", {translate: "item.minecraft.filled_map", color: "yellow"}, " ", {text: "$(id)", color: "yellow"}, ", ", {translate: "gui.done", color: "green"}, "!"]
+$tellraw @s ["", {storage: "jk:bw", nbt: "txt.point.global.modify.name", color: "green"}, " ", {translate: "item.minecraft.filled_map", color: "yellow"}, " ", {text: "$(id)", color: "yellow"}, {storage: "jk:bw", nbt: "txt.global.char.comma"}, {translate: "gui.done", color: "green"}, {storage: "jk:bw", nbt: "txt.global.char.exclamation"}]

@@ -1,12 +1,12 @@
-scoreboard players remove @s jkbw.Player.UseBackLast 1
-title @s actionbar [{storage: "jk:bw", nbt: "txt.shop.item.back_scroll.tp.p0", color: "yellow"}, {score: {name: "@s", objective: "jkbw.Player.UseBackLast"}, color: "red"}, {storage: "jk:bw", nbt: "txt.shop.item.back_scroll.tp.p1"}]
+scoreboard players remove @s jkbw.Player.Use.Last.BackScroll 1
+title @s actionbar [{storage: "jk:bw", nbt: "txt.shop.item.back_scroll.tp.p0", color: "yellow"}, {score: {name: "@s", objective: "jkbw.Player.Use.Last.BackScroll"}, color: "red"}, {storage: "jk:bw", nbt: "txt.shop.item.back_scroll.tp.p1"}]
 
 # 检测移动
-execute as @s[scores={jkbw.Player.UseBackLast=1..}] unless entity @e[type=marker, tag=jkbw_back, distance=...1] run function jkbw:play/special/back/fail
+execute as @s[scores={jkbw.Player.Use.Last.BackScroll=1..}] unless entity @e[type=marker, tag=jkbw_back, distance=...1] run function jkbw:play/special/back/fail
 
 # 传送
-title @s[scores={jkbw.Player.UseBackLast=0}] actionbar {storage: "jk:bw", nbt: "txt.shop.item.back_scroll.tp.success", color: "yellow"}
-execute as @s[scores={jkbw.Player.UseBackLast=0}] run kill @e[type=marker, tag=jkbw_back, distance=...1]
+title @s[scores={jkbw.Player.Use.Last.BackScroll=0}] actionbar {storage: "jk:bw", nbt: "txt.shop.item.back_scroll.tp.success", color: "yellow"}
+execute as @s[scores={jkbw.Player.Use.Last.BackScroll=0}] run kill @e[type=marker, tag=jkbw_back, distance=...1]
 
 # 特效
 particle cloud ~ ~2 ~ 1 1 1 0.0001 2

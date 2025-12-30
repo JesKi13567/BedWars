@@ -45,20 +45,20 @@
 |设置项|可选值|备注|
 |-|-|-|
 |床种类|默认 / 夹心 / 蛋糕|夹心为外围方块包裹的床，其他顾名思义。|
-|资源模式|经典 / 经验 / 无限火力|选择时有玩法说明，此处不展开。|
 |资源速率|0.5 ~ 2.0|数字指倍率，此设置在无限火力模式下无效。|
 |攻击速度|1.8- / 1.9+|数字指 MC 版本，此处形容对应的攻速机制。|
 |队伍数量|2 ~ 8|最大值不超过当前地图支持的最多队伍数。|
 |队伍分配|随机 / 自选|自选无队伍人数平衡。|
-|实验模式|无 / 疾速 / 无跳跃 / 小人国 / 被迫零元购|选择时有玩法说明，此处不展开。|
 |设置时间|清晨 / 中午 / 黄昏 / 午夜|同时还可设置时间自然流动。|
+|资源模式|（见下文）| \ |
+|实验模式|（见下文）| \ |
 
 #### 玩法种类
 ##### 资源模式
 |种类|描述|
 |-|-|
 |经典 / 经验|玩家初始装备皮革套装，携带望远镜，木剑＆指南针各一。商店可存储私人物品、购买团队增益和轮换道具等。|
-|无限火力|玩家初始只携带一个望远镜。商店可购买团队箱子，武器和盔甲均有耐久，没有团队增益。游戏随时间进行，将逐步提升玩家的最大生命值，后期还会解锁凋灵弓。死亡后等级只会减半。|
+|无限火力|玩家初始为空背包，死亡后等级只会减半。商店可购买团队箱子，武器和盔甲均有耐久，没有团队增益。游戏随时间进行，将逐步提升玩家的最大生命值，后期还会解锁凋灵弓。|
 
 关于商店购买，经典模式使用资源物品，其他模式使用经验等级。
 
@@ -68,8 +68,9 @@
 |已禁用| \ |
 |疾速|所有资源点满级、黑曜石/末影箱无法购买、末影珍珠价格降低、可自动搭路。|
 |无跳跃|玩家无法跳跃，但能跨步走上 3 格高方块。|
-|小人国|所有实体都变为原来的 1/2 尺寸。|
-|被迫零元购|商店禁用、资源点不产出。每经过 5 秒，玩家将随机获得免费的商品（不含团队升级）。|
+|小人国|玩家的尺寸变为原来的 1/2。|
+|被迫零元购|商店和资源点禁用。每经过 5 秒，玩家将免费获得随机的商品（不含团队升级）。|
+|摸摸|玩家的实体/方块交互距离均变为 32。|
 
 ### 注意事项
 - 本数据包仅支持主世界维度。
@@ -81,7 +82,7 @@
 
 ## en_us
 ### Info
-BedWars is a classic Minecraft game. Players aim to protect their bed and survive to the end. If their beds are destroyed, they cannot respawn.
+BedWars is a classic Minecraft game. Players aim to protect their beds and survive to the end. If their beds are destroyed, they cannot respawn.
 
 This datapack delivers feature-rich BedWars gameplay. Server admins can start the game simply by providing maps and placing items as per in-game instructions.
 
@@ -120,20 +121,20 @@ Around the Global Point, admins can block these settings by placing blocks.
 |Settings|Optional Values|Notes|
 |-|-|-|
 |Bed Type|Default / Covered / Cake|Covered means some blocks cover the bed.|
-|Resource Mode|Classic / Xp / URF|Will display hints when selected.|
 |Resource Speed|0.5 ~ 2.0|The num means ratio, this setting is useless in URF.|
 |Attack Speed|1.8- / 1.9+|The num is the version of Minecraft, corresponding to the attack mechanism.|
 |Team Count|2 ~ 8|The max num cannot exceed the limit of the current map.|
 |Team Distribute|Random / Manual|The Manual has no team size balance.|
-|Experimental Mode|No / Blitz / No Jumps / Lilliput / Forced Free Loot|Will display hints when selected.|
 |Set Time|Morning / Noon / Night / Midnight|You can select day or night, and day-night cycle.|
+|Resource Mode|\(See below\)| \ |
+|Experimental Mode|\(See below\)| \ |
 
 #### Game Types
 ##### Resource Mode
 |Type|Description|
 |-|-|
 |Classic / Xp|Players have full Leather set, carrying Spyglass, Wooden Sword & Compass on spawn. They can store their private items, buying rotating items & team benefits via shops.|
-|URF \(Ultra Rapid Fire\)|Players only carry one Spyglass on spawn. They can buy team chests but no team benefits via shops, all weapons & armor have durability. As the game progresses, players will gradually improve their Max Health, and will unlock WitherBow in final game-stage. Players' levels only lose half after death.|
+|URF \(Ultra Rapid Fire\)|Players carry nothing on spawn, only lose half levels after death. They can buy team chests but no team benefits via shops, all weapons & armor have durability. As the game progresses, players will gradually improve their Max Health, and will unlock Wither Bow in the final game stage.|
 
 About shop buying, the classic uses items, while others use experience levels.
 
@@ -142,9 +143,10 @@ About shop buying, the classic uses items, while others use experience levels.
 |-|-|
 |Disabled| \ |
 |Blitz|All Resource Points are in max level, Obsidian/Ender Chest cannot be bought, Ender Pearl has lower price, has auto-bridging.|
-|No Jumps|Players cannot jump but can step to 3-block height.|
-|Lilliput|All entities will turn into 1/2 size from before.|
-|Forced Free Loot|Shops and Resource Points are banned. For every 5 seconds, players will get loots \(not including team updates\) from shop freely.|
+|No Jumps|Players cannot jump, but can step on 3-block height.|
+|Lilliput|Set players' Scale to 1/2.|
+|Forced Free Loot|Shops and Resource Points are banned. For every 5 seconds, players will get random shop loots freely \(team updates not included\).|
+|Patpat|Set players' both Entity/Block Interaction Range to 32.|
 
 ### Notes
 - This datapack only supports the overworld dimension.

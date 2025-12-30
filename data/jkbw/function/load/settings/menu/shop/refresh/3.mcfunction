@@ -57,6 +57,6 @@ data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set va
 data modify block 10110219 5 10110222 Items[3].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 data modify block 10110219 5 10110222 Items[7].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 # 快乐恶魂
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.global.summon_here", italic: false, color: "yellow"}, {translate: "entity.minecraft.happy_ghast", color: "white"}, "."]
+data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.global.summon_here", italic: false, color: "yellow"}, {translate: "entity.minecraft.happy_ghast", color: "white"}, {storage: "jk:bw", nbt: "txt.global.char.dot"}]
 data modify block 10110219 5 10110222 Items[-6].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 data modify block 10110219 5 10110222 Items[-5].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text

@@ -11,4 +11,3 @@ execute unless score #exp_mode jkbw.mem matches 1 unless items entity @s enderch
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "shears"]}] run function jkbw:play/shop/real/item/tool/main {tool: shears}
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "axe"]}] run function jkbw:play/shop/real/item/tool/main {tool: axe}
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "pickaxe"]}] run function jkbw:play/shop/real/item/tool/main {tool: pickaxe}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "spyglass"]}] run function jkbw:play/shop/real/item/tool/spyglass

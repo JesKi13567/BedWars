@@ -1,11 +1,5 @@
-# as @a[gamemode=adventure] at @s
 # 玩家剑，工具和盔甲刷新
 execute if score #res_mode jkbw.mem matches 0..1 run function jkbw:play/team/loop/global
-
-# 玩家中途离开游戏
-execute unless score @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.Player.ID matches 1.. run function jkbw:play/ready/reg/leavegame
-execute if score @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.Player.ID matches 1.. run function jkbw:play/death/rejoin
-scoreboard players set @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.Player.LeaveGame 0
 
 # 记录自己的坐标（带1的为不变坐标，他人计算用）
 execute store result score @s jkbw.Entity.X run data get entity @s Pos[0] 10
@@ -19,9 +13,12 @@ function jkbw:play/height/global
 # 指南针
 execute if items entity @s weapon.* compass run function jkbw:play/compass/global
 
+# 望远镜
+function jkbw:play/special/spyglass
+
 # 清理
 clear @s glass_bottle
 
 # 冷却
-scoreboard players remove @a[scores={jkbw.Player.UseFireballCD=1..}] jkbw.Player.UseFireballCD 1
-scoreboard players remove @a[scores={jkbw.Player.UseCreatureCD=1..}] jkbw.Player.UseCreatureCD 1
+scoreboard players remove @s[scores={jkbw.Player.Use.CD.Fireball=1..}] jkbw.Player.Use.CD.Fireball 1
+scoreboard players remove @s[scores={jkbw.Player.Use.CD.Creature=1..}] jkbw.Player.Use.CD.Creature 1

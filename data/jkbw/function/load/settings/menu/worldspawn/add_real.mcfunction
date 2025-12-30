@@ -72,7 +72,7 @@ $execute store result storage jk:bw Map.maps.$(id).z int 1 run scoreboard player
 
 # 其他
 scoreboard players set #tutorial jkbw.mem 2
-execute align xyz positioned ~ ~ ~4 run function jkbw:play/ready/ness/button
+execute align xyz run function jkbw:play/ready/ness/button
 function jkbw:load/settings/menu
 function jkbw:load/settings/menu/worldspawn/current with storage jk:bw Map.cur
 gamemode creative @s

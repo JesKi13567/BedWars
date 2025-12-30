@@ -1,1 +1,1 @@
-$title @a subtitle ["", {storage: "jk:bw", nbt: "txt.team.$(team)", color: "$(color)"}, " ", {storage: "jk:bw", nbt: "txt.play.win.team", color: "gold"}]
+$title @a subtitle ["", {storage: "jk:bw", nbt: "txt.color.$(team)", color: "$(color)"}, {storage: "jk:bw", nbt: "txt.global.team", color: "$(color)"}, " ", {storage: "jk:bw", nbt: "txt.play.win.team", color: "gold"}]

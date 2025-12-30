@@ -4,4 +4,4 @@ execute store result bossbar jkbw:game_progress max run scoreboard players get #
 scoreboard players set @e[type=text_display, tag=jkbw_bed_display, scores={jkbw.Bed.State=0}] jkbw.Bed.State 1
 execute at @e[type=text_display, tag=jkbw_bed_display] run setblock ~ ~ ~ air
 tellraw @a {storage: "jk:bw", nbt: "txt.play.event.bed_destruct.tellraw", color: "red"}
-playsound entity.ender_dragon.growl player @a 0 100 0 1000000
+playsound entity.ender_dragon.growl player @a 10110223 100 10110223 1000000000

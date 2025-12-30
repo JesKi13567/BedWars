@@ -1,16 +1,16 @@
 $tellraw @a[team=jkbw.$(team)] ["", {selector: "@s"}, " ", {storage: "jk:bw", nbt: "txt.play.shop.buy.ed.team", color: "green"}, " ", {storage: "jk:bw", nbt: "txt.shop.trap.list.$(item).name", color: "gold"}]
 
-$scoreboard players set @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Traps=2}, limit=1] jkbw.Team.Trap3 $(item)
-$scoreboard players set @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Traps=1}, limit=1] jkbw.Team.Trap2 $(item)
-$scoreboard players set @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Traps=0}, limit=1] jkbw.Team.Trap1 $(item)
+$scoreboard players set @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Trap.Count=2}, limit=1] jkbw.Team.Trap.3 $(item)
+$scoreboard players set @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Trap.Count=1}, limit=1] jkbw.Team.Trap.2 $(item)
+$scoreboard players set @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Trap.Count=0}, limit=1] jkbw.Team.Trap.1 $(item)
 
 # 购买成功，清理资源
-$execute if score #res_mode jkbw.mem matches 0 if entity @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Traps=2}, limit=1] run scoreboard players operation @s jkbw.Player.Own.diamond -= #trap3 jkbw.mem
-$execute if score #res_mode jkbw.mem matches 0 if entity @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Traps=1}, limit=1] run scoreboard players operation @s jkbw.Player.Own.diamond -= #trap2 jkbw.mem
-$execute if score #res_mode jkbw.mem matches 0 if entity @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Traps=0}, limit=1] run scoreboard players operation @s jkbw.Player.Own.diamond -= #trap1 jkbw.mem
+$execute if score #res_mode jkbw.mem matches 0 if entity @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Trap.Count=2}, limit=1] run scoreboard players operation @s jkbw.Player.Own.diamond -= #trap3 jkbw.mem
+$execute if score #res_mode jkbw.mem matches 0 if entity @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Trap.Count=1}, limit=1] run scoreboard players operation @s jkbw.Player.Own.diamond -= #trap2 jkbw.mem
+$execute if score #res_mode jkbw.mem matches 0 if entity @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Trap.Count=0}, limit=1] run scoreboard players operation @s jkbw.Player.Own.diamond -= #trap1 jkbw.mem
 
-$execute if score #res_mode jkbw.mem matches 1 if entity @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Traps=2}, limit=1] run scoreboard players operation @s jkbw.Player.Own.xpLevelsReal -= #XPtrap3 jkbw.mem
-$execute if score #res_mode jkbw.mem matches 1 if entity @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Traps=1}, limit=1] run scoreboard players operation @s jkbw.Player.Own.xpLevelsReal -= #XPtrap2 jkbw.mem
-$execute if score #res_mode jkbw.mem matches 1 if entity @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Traps=0}, limit=1] run scoreboard players operation @s jkbw.Player.Own.xpLevelsReal -= #XPtrap1 jkbw.mem
+$execute if score #res_mode jkbw.mem matches 1 if entity @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Trap.Count=2}, limit=1] run scoreboard players operation @s jkbw.Player.Own.xpLevelsReal -= #XPtrap3 jkbw.mem
+$execute if score #res_mode jkbw.mem matches 1 if entity @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Trap.Count=1}, limit=1] run scoreboard players operation @s jkbw.Player.Own.xpLevelsReal -= #XPtrap2 jkbw.mem
+$execute if score #res_mode jkbw.mem matches 1 if entity @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Trap.Count=0}, limit=1] run scoreboard players operation @s jkbw.Player.Own.xpLevelsReal -= #XPtrap1 jkbw.mem
 
-$scoreboard players add @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Traps=..2}, limit=1] jkbw.Team.Traps 1
+$scoreboard players add @e[type=text_display, tag=jkbw_bed_$(team), scores={jkbw.Team.Trap.Count=..2}, limit=1] jkbw.Team.Trap.Count 1

@@ -9,6 +9,3 @@ execute if score @s jkbw.Entity.Y > #WYmax_ jkbw.mem run function jkbw:load/sett
 execute if score @s jkbw.Entity.Y < #WYmin_ jkbw.mem run function jkbw:load/settings/menu/back with storage jk:bw Map.cur
 execute if score @s jkbw.Entity.Z > #WZmax jkbw.mem run function jkbw:load/settings/menu/back with storage jk:bw Map.cur
 execute if score @s jkbw.Entity.Z < #WZmin jkbw.mem run function jkbw:load/settings/menu/back with storage jk:bw Map.cur
-
-# 不是本局的玩家
-execute unless score @s[scores={jkbw.Player.LeaveGame=1..}] jkbw.Player.ID matches 1.. run function jkbw:play/ready/reg/leavegame

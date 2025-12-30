@@ -26,5 +26,5 @@ execute as @e[type=marker, tag=jkbw_slime] run function jkbw:play/special/check_
 effect give @s slow_falling 1 0 true
 # 清理
 clear @s blaze_rod 1
-scoreboard players set @s jkbw.Player.UsePlatformCD 8
-execute if score #test_mode jkbw.mem matches 1 run scoreboard players set @s jkbw.Player.UsePlatformCD 1
+scoreboard players set @s jkbw.Player.Use.CD.Platform 8
+execute if score #test_mode jkbw.mem matches 1 run scoreboard players set @s jkbw.Player.Use.CD.Platform 1

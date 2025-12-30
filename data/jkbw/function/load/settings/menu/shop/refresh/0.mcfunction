@@ -20,7 +20,7 @@ data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set va
 data modify block 10110222 5 10110222 Items[3].components.minecraft:lore[6] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 
 # 禁区
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.occupy.p0", color: "gray", italic: false}, {"keybind": "key.sneak"}, {storage: "jk:bw", nbt: "txt.shop.item.occupy.p1"}]
+data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.occupy.p0", color: "gray", italic: false}, {keybind: "key.sneak"}, {storage: "jk:bw", nbt: "txt.shop.item.occupy.p1"}]
 data modify block 10110222 5 10110222 Items[0].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 # 指南针占位（白色玻璃板）
 data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.global.lock.ed", italic: false, color: "white", bold: true}]

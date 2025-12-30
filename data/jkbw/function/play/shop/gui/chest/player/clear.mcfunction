@@ -52,15 +52,15 @@ execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem mat
 execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/gray
 
 # 分数
-scoreboard players reset @s jkbw.Player.PlaceRed
-scoreboard players reset @s jkbw.Player.PlaceBlue
-scoreboard players reset @s jkbw.Player.PlaceGreen
-scoreboard players reset @s jkbw.Player.PlaceYellow
-scoreboard players reset @s jkbw.Player.PlaceCyan
-scoreboard players reset @s jkbw.Player.PlaceWhite
-scoreboard players reset @s jkbw.Player.PlacePink
-scoreboard players reset @s jkbw.Player.PlaceGray
-scoreboard players reset @s jkbw.Player.PlaceOrange
+scoreboard players reset @s jkbw.Player.Place.Red
+scoreboard players reset @s jkbw.Player.Place.Blue
+scoreboard players reset @s jkbw.Player.Place.Green
+scoreboard players reset @s jkbw.Player.Place.Yellow
+scoreboard players reset @s jkbw.Player.Place.Cyan
+scoreboard players reset @s jkbw.Player.Place.White
+scoreboard players reset @s jkbw.Player.Place.Pink
+scoreboard players reset @s jkbw.Player.Place.Gray
+scoreboard players reset @s jkbw.Player.Place.Orange
 scoreboard players reset @s jkbw.Player.Own.xpLevels
 scoreboard players reset @s jkbw.Player.Own.iron_ingotReal
 scoreboard players reset @s jkbw.Player.Own.gold_ingotReal
@@ -75,16 +75,16 @@ scoreboard players set @s jkbw.Player.ArmorLevels 0
 scoreboard players set @s jkbw.Player.Levels.axe 0
 scoreboard players set @s jkbw.Player.Levels.pickaxe 0
 scoreboard players set @s jkbw.Player.Levels.shears 0
-scoreboard players set @s jkbw.Player.UsePlatformCD 0
-scoreboard players set @s jkbw.Player.UseFireballCD 0
-scoreboard players set @s jkbw.Player.UseCreatureCD 0
-scoreboard players set @s jkbw.Player.UseBackCD 0
-scoreboard players set @s jkbw.Player.UseBackLast 0
-scoreboard players set @s jkbw.Player.UseAntiarrowCD 0
-scoreboard players set @s jkbw.Player.UseAntiarrowLast 0
-scoreboard players set @s jkbw.Player.UseIceCD 0
-scoreboard players set @s jkbw.Player.UseIceLast 0
-scoreboard players set @s jkbw.Player.UseTheMirrorCD 0
+scoreboard players set @s jkbw.Player.Use.CD.Platform 0
+scoreboard players set @s jkbw.Player.Use.CD.Fireball 0
+scoreboard players set @s jkbw.Player.Use.CD.Creature 0
+scoreboard players set @s jkbw.Player.Use.CD.BackScroll 0
+scoreboard players set @s jkbw.Player.Use.Last.BackScroll 0
+scoreboard players set @s jkbw.Player.Use.CD.AntiArrow 0
+scoreboard players set @s jkbw.Player.Use.Last.AntiArrow 0
+scoreboard players set @s jkbw.Player.Use.CD.Ice 0
+scoreboard players set @s jkbw.Player.Use.Last.Ice 0
+scoreboard players set @s jkbw.Player.Use.CD.TheMirror 0
 scoreboard players set @s jkbw.Player.Page 0
 execute unless score @s jkbw.Player.Head matches 1.. run scoreboard players set @s jkbw.Player.Head 0
 execute if score #res_mode jkbw.mem matches 0..1 run scoreboard players set @s jkbw.Player.Compass 0

@@ -23,14 +23,14 @@ data modify block 10110222 4 10110222 Items[6].components.minecraft:custom_name 
 data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#urfXPglass", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.global.lvl", italic: false, color: "aqua"}]
 data modify block 10110222 4 10110222 Items[6].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 #urfXPchest
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.play.can_craft_into", italic: false, color: "gray"}, {translate: "block.minecraft.fletching_table", color: "white"}, "."]
+data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.play.can_craft_into", italic: false, color: "gray"}, {translate: "block.minecraft.fletching_table", color: "white"}, {storage: "jk:bw", nbt: "txt.global.char.dot"}]
 data modify block 10110222 4 10110222 Items[7].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#urfXPchest", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.global.lvl", italic: false, color: "aqua"}]
 data modify block 10110222 4 10110222 Items[7].components.minecraft:lore[1] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 #urfXPender_chest
 data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.enderchest.p0", italic: false, color: "gray"}]
 data modify block 10110222 4 10110222 Items[8].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.enderchest.p1", italic: false, color: "gray"}, {translate: "block.minecraft.ancient_debris", color: "white"}, "."]
+data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.enderchest.p1", italic: false, color: "gray"}, {translate: "block.minecraft.ancient_debris", color: "white"}, {storage: "jk:bw", nbt: "txt.global.char.dot"}]
 data modify block 10110222 4 10110222 Items[8].components.minecraft:lore[1] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#urfXPender_chest", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.global.lvl", italic: false, color: "aqua"}]
 data modify block 10110222 4 10110222 Items[8].components.minecraft:lore[2] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text

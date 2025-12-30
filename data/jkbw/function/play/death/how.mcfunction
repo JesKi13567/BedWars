@@ -1,9 +1,9 @@
 # 获取完成击杀的玩家
-scoreboard players operation @a jkbw.Temp = @s jkbw.Player.DamageSource.real
+scoreboard players operation @a jkbw.Temp = @s jkbw.Player.Damage.Source.real
 execute as @a run scoreboard players operation @s jkbw.Temp -= @s jkbw.Player.ID
 tag @p[scores={jkbw.Temp=0}, team=!jkbw.spec] add jkbw_murder
 tag @s add jkbw_victim
-scoreboard players operation @s jkbw.Player.DamageType.last = @s jkbw.Player.DamageType.now
+scoreboard players operation @s jkbw.Player.Damage.Type.last = @s jkbw.Player.Damage.Type.now
 
 # 判断击杀类型：0 自杀/同队误杀 1 敌方击杀
 scoreboard players set #death_type jkbw.mem 1

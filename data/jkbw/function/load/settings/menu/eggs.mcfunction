@@ -3,7 +3,7 @@ title @s subtitle {translate: "itemGroup.inventory", color: "yellow"}
 title @s times 0s 3s 1s
 clear @s
 gamemode creative @s
-scoreboard players reset @s jkbw.admin.trigger
+scoreboard players reset @s jkbw.Admin.Trigger
 
 item replace entity @s hotbar.0 from block 10110209 3 10110222 container.9
 item replace entity @s hotbar.1 from block 10110209 3 10110222 container.10

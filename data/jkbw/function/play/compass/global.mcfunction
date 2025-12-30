@@ -23,8 +23,8 @@ scoreboard players operation @s jkbw.Entity.X /= #10 jkbw.mem
 scoreboard players operation @s jkbw.Entity.Z %= #10 jkbw.mem
 
 # 显示
-title @s[scores={jkbw.Player.Compass=-1}] actionbar [{storage: "jk:bw", nbt: "txt.shop.item.compass.track", color: "gold"}, {storage: "jk:bw", nbt: "txt.shop.item.compass.enemy"}, ": ", {score: {name: "@s", objective: "jkbw.Entity.X"}, color: "green"}, {text: ".", color: "green"}, {score: {name: "@s", objective: "jkbw.Entity.Z"}, color: "green"}, "m"]
-title @s[scores={jkbw.Player.Compass=0}] actionbar [{storage: "jk:bw", nbt: "txt.shop.item.compass.track", color: "gold"}, {storage: "jk:bw", nbt: "txt.global.bed"}, ": ", {score: {name: "@s", objective: "jkbw.Entity.X"}, color: "green"}, {text: ".", color: "green"}, {score: {name: "@s", objective: "jkbw.Entity.Z"}, color: "green"}, "m"]
+title @s[scores={jkbw.Player.Compass=-1}] actionbar [{storage: "jk:bw", nbt: "txt.shop.item.compass.track", color: "gold"}, {storage: "jk:bw", nbt: "txt.shop.item.compass.enemy"}, {storage: "jk:bw", nbt: "txt.global.char.colon"}, {score: {name: "@s", objective: "jkbw.Entity.X"}, color: "green"}, {text: ".", color: "green"}, {score: {name: "@s", objective: "jkbw.Entity.Z"}, color: "green"}, "m"]
+title @s[scores={jkbw.Player.Compass=0}] actionbar [{storage: "jk:bw", nbt: "txt.shop.item.compass.track", color: "gold"}, {storage: "jk:bw", nbt: "txt.global.item.bed"}, {storage: "jk:bw", nbt: "txt.global.char.colon"}, {score: {name: "@s", objective: "jkbw.Entity.X"}, color: "green"}, {text: ".", color: "green"}, {score: {name: "@s", objective: "jkbw.Entity.Z"}, color: "green"}, "m"]
 execute as @s[scores={jkbw.Player.Compass=1}] run function jkbw:play/compass/mode/show {team: red, color: red}
 execute as @s[scores={jkbw.Player.Compass=2}] run function jkbw:play/compass/mode/show {team: blue, color: blue}
 execute if score #teams jkbw.mem matches 3.. as @s[scores={jkbw.Player.Compass=3}] run function jkbw:play/compass/mode/show {team: green, color: green}

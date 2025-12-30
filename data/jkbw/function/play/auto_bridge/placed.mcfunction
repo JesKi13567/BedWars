@@ -2,12 +2,12 @@
 scoreboard players set @s jkbw.Temp 10
 execute anchored eyes positioned ^ ^ ^ run function jkbw:play/auto_bridge/loop
 
-scoreboard players reset @s jkbw.Player.PlaceRed
-scoreboard players reset @s jkbw.Player.PlaceBlue
-scoreboard players reset @s jkbw.Player.PlaceGreen
-scoreboard players reset @s jkbw.Player.PlaceYellow
-scoreboard players reset @s jkbw.Player.PlaceCyan
-scoreboard players reset @s jkbw.Player.PlaceWhite
-scoreboard players reset @s jkbw.Player.PlacePink
-scoreboard players reset @s jkbw.Player.PlaceGray
-scoreboard players reset @s jkbw.Player.PlaceOrange
+scoreboard players reset @s jkbw.Player.Place.Red
+scoreboard players reset @s jkbw.Player.Place.Blue
+scoreboard players reset @s jkbw.Player.Place.Green
+scoreboard players reset @s jkbw.Player.Place.Yellow
+scoreboard players reset @s jkbw.Player.Place.Cyan
+scoreboard players reset @s jkbw.Player.Place.White
+scoreboard players reset @s jkbw.Player.Place.Pink
+scoreboard players reset @s jkbw.Player.Place.Gray
+scoreboard players reset @s jkbw.Player.Place.Orange

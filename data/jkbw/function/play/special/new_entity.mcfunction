@@ -31,7 +31,7 @@ scoreboard players set @s[type=wind_charge] jkbw.Entity.Time 20
 
 # 重置
 tag @s remove jkbw_new_entity
-scoreboard players reset @a[scores={jkbw.Player.UseTNT=1..}] jkbw.Player.UseTNT
-scoreboard players reset @a[scores={jkbw.Player.UseTower=1..}] jkbw.Player.UseTower
-scoreboard players reset @a[scores={jkbw.Player.UseEnderchest=1..}] jkbw.Player.UseEnderchest
-scoreboard players reset @a[scores={jkbw.Player.UseWall=1..}] jkbw.Player.UseWall
+scoreboard players reset @a[scores={jkbw.Player.Use.TNT=1..}] jkbw.Player.Use.TNT
+scoreboard players reset @a[scores={jkbw.Player.Use.Tower=1..}] jkbw.Player.Use.Tower
+scoreboard players reset @a[scores={jkbw.Player.Use.Enderchest=1..}] jkbw.Player.Use.Enderchest
+scoreboard players reset @a[scores={jkbw.Player.Use.Wall=1..}] jkbw.Player.Use.Wall

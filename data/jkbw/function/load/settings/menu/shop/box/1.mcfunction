@@ -18,5 +18,4 @@ setblock 10110221 5 10110222 black_shulker_box[facing=north]{Items: [\
 {Slot: 20b, id: "shears", count: 1, components: {custom_data: {jkbw: ["shop", "item", "shears"]}, enchantment_glint_override: true, lore: ["", "", "", "", "", ""]}}, \
 {Slot: 21b, id: "netherite_axe", count: 1, components: {custom_data: {jkbw: ["shop", "item", "axe"]}, enchantment_glint_override: true, attribute_modifiers: [], lore: ["", "", "", "", "", ""]}}, \
 {Slot: 22b, id: "netherite_pickaxe", count: 1, components: {custom_data: {jkbw: ["shop", "item", "pickaxe"]}, enchantment_glint_override: true, attribute_modifiers: [], lore: ["", "", "", "", "", ""]}}, \
-{Slot: 23b, id: "shears", count: 1, components: {custom_data: {jkbw: ["shop", "item", "shears"]}, enchantment_glint_override: true, lore: ["", "", "", "", "", ""]}}, \
-{Slot: 26b, id: "spyglass", count: 1, components: {custom_data: {jkbw: ["shop", "spyglass"]}, lore: [""]}}]}
+{Slot: 23b, id: "shears", count: 1, components: {custom_data: {jkbw: ["shop", "item", "shears"]}, enchantment_glint_override: true, lore: ["", "", "", "", "", ""]}}]}

@@ -1,4 +1,4 @@
-scoreboard players reset @s jkbw.admin.trigger
+scoreboard players reset @s jkbw.Admin.Trigger
 
 ## 游戏正式开始前置
 # 队伍
@@ -8,8 +8,8 @@ execute as @e[type=text_display, tag=jkbw_bed_display] at @s run function jkbw:p
 # 资源
 fill 10110222 1 10110216 10110214 1 10110209 barrel[facing=up]{Items: []}
 tag @e[type=text_display, tag=jkbw_gold_time] remove jkbw_emerald_time
-scoreboard players set @e[type=text_display, tag=jkbw_gold_time] jkbw.ResCD.Gold -1
-scoreboard players set @e[type=text_display, tag=jkbw_iron_time] jkbw.ResCD.Iron -1
+scoreboard players set @e[type=text_display, tag=jkbw_gold_time] jkbw.Res.CD.Gold -1
+scoreboard players set @e[type=text_display, tag=jkbw_iron_time] jkbw.Res.CD.Iron -1
 scoreboard players set @e[type=text_display, tag=jkbw_res_spawn] jkbw.Team.res 0
 scoreboard players set #level_diamond jkbw.mem 1
 scoreboard players set #level_emerald jkbw.mem 1
@@ -29,7 +29,6 @@ scoreboard players operation #dragon1 jkbw.mem = #dragon jkbw.mem
 scoreboard players operation #XPdragon1 jkbw.mem = #XPdragon jkbw.mem
 scoreboard players reset #shop_random_countdown jkbw.mem
 scoreboard players reset #solo_mode jkbw.mem
-scoreboard players reset * jkbw.Player.ID
 
 # 资源产生时间
 execute unless score #spawn_diamond jkbw.mem matches 10..100 run scoreboard players set #spawn_diamond jkbw.mem 30
@@ -75,7 +74,8 @@ scoreboard players set #time_s jkbw.mem 0
 
 execute as @e[tag=jkbw] run data modify entity @s view_range set value 0
 execute unless score #exp_mode jkbw.mem matches 4 as @e[tag=jkbw, tag=jkbw_res_global] run data modify entity @s view_range set value 1
-function jkbw:play/start/display
+function jkbw:play/start/special_mode/multi
+function jkbw:play/start/sidebar with storage jk:bw txt.sidebar
 data modify storage jk:bw Alive set value {red: 0, blue: 0, green: 0, yellow: 0, cyan: 0, white: 0, pink: 0, gray: 0}
 
 # 地图

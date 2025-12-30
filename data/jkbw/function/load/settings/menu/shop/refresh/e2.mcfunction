@@ -30,7 +30,7 @@ data modify block 10110209 3 10110222 Items[-17].components.minecraft:lore[0] se
 ## 全局资源点
 data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.egg.point.res.name", color: "green", italic: false}]
 data modify block 10110209 3 10110222 Items[-16].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{text: "", color: "white", italic: false}, {storage: "jk:bw", nbt: "txt.egg.point.res.p0", color: "yellow"}, {translate: "block.minecraft.diamond_block"}, "/", {translate: "block.minecraft.emerald_block"}, "."]
+data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{text: "", color: "white", italic: false}, {storage: "jk:bw", nbt: "txt.egg.point.res.p0", color: "yellow"}, {translate: "block.minecraft.diamond_block"}, "/", {translate: "block.minecraft.emerald_block"}, {storage: "jk:bw", nbt: "txt.global.char.dot"}]
 data modify block 10110209 3 10110222 Items[-16].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 ### 资源方块
 data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.egg.point.res.p1", color: "yellow", italic: false}]

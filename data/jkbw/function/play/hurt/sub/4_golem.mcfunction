@@ -1,6 +1,6 @@
 advancement revoke @s only jkbw:hurt/4_golem
 
-scoreboard players set @s jkbw.Player.DamageType.now 4
+scoreboard players set @s jkbw.Player.Damage.Type.now 4
 tag @s add jkbw_vic
 
 execute as @s[team=jkbw.red] run function jkbw:play/hurt/by_mob {team: red, type: iron_golem}

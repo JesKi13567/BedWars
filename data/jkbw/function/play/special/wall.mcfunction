@@ -1,9 +1,9 @@
 # 转向
-execute if entity @p[scores={jkbw.Player.UseWall=1..}, y_rotation=135.01..180] run tag @s add jkbw_x
-execute if entity @p[scores={jkbw.Player.UseWall=1..}, y_rotation=-180..-135] run tag @s add jkbw_x
-execute if entity @p[scores={jkbw.Player.UseWall=1..}, y_rotation=-134.99..-45] run tag @s add jkbw_z
-execute if entity @p[scores={jkbw.Player.UseWall=1..}, y_rotation=-44.99..45] run tag @s add jkbw_x
-execute if entity @p[scores={jkbw.Player.UseWall=1..}, y_rotation=45.01..135] run tag @s add jkbw_z
+execute if entity @p[scores={jkbw.Player.Use.Wall=1..}, y_rotation=135.01..180] run tag @s add jkbw_x
+execute if entity @p[scores={jkbw.Player.Use.Wall=1..}, y_rotation=-180..-135] run tag @s add jkbw_x
+execute if entity @p[scores={jkbw.Player.Use.Wall=1..}, y_rotation=-134.99..-45] run tag @s add jkbw_z
+execute if entity @p[scores={jkbw.Player.Use.Wall=1..}, y_rotation=-44.99..45] run tag @s add jkbw_x
+execute if entity @p[scores={jkbw.Player.Use.Wall=1..}, y_rotation=45.01..135] run tag @s add jkbw_z
 
 # 放置
 execute as @s[tag=jkbw_x] run fill ~-2 ~ ~ ~2 ~2 ~ cut_sandstone replace air

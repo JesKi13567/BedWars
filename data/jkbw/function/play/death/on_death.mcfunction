@@ -14,9 +14,9 @@ scoreboard players remove @s[scores={jkbw.Player.Levels.shears=2..}] jkbw.Player
 execute if score #res_mode jkbw.mem matches 0..1 run scoreboard players set @s jkbw.Player.Compass 0
 
 # 道具
-scoreboard players reset @s jkbw.Player.UseBackLast
-scoreboard players reset @s jkbw.Player.UseAntiarrowLast
-scoreboard players reset @s jkbw.Player.UseIceLast
+scoreboard players reset @s jkbw.Player.Use.Last.BackScroll
+scoreboard players reset @s jkbw.Player.Use.Last.AntiArrow
+scoreboard players reset @s jkbw.Player.Use.Last.Ice
 
 # 标记无床死亡
 execute as @s[team=jkbw.red] run function jkbw:play/death/sub/1 {team: red}

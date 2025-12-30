@@ -90,7 +90,7 @@ data modify block 10110218 5 10110222 Items[9].components.minecraft:lore[0] set 
 data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.silverfish.name", italic: false, color: "white"}]
 data modify block 10110218 5 10110222 Items[1].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 data modify block 10110218 5 10110222 Items[10].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.silverfish.p0", italic: false, color: "gold"}, {translate: "entity.minecraft.snowball", color: "white"}, {storage: "jk:bw", nbt: "txt.shop.item.silverfish.p1"}, {translate: "entity.minecraft.silverfish", color: "white"}, ", "]
+data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.silverfish.p0", italic: false, color: "gold"}, {translate: "entity.minecraft.snowball", color: "white"}, {storage: "jk:bw", nbt: "txt.shop.item.silverfish.p1"}, {translate: "entity.minecraft.silverfish", color: "white"}, {storage: "jk:bw", nbt: "txt.global.char.comma"}]
 data modify block 10110218 5 10110222 Items[1].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 data modify block 10110218 5 10110222 Items[10].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.global.fight.p0", italic: false, color: "yellow"}, "15", {storage: "jk:bw", nbt: "txt.shop.item.global.fight.p1"}]
@@ -107,7 +107,7 @@ data modify block 10110218 5 10110222 Items[11].components.minecraft:lore[0] set
 data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.iron_golem.name", italic: false, color: "white"}]
 data modify block 10110218 5 10110222 Items[3].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 data modify block 10110218 5 10110222 Items[12].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.global.summon_here", italic: false, color: "gold"}, {translate: "entity.minecraft.iron_golem", color: "white"}, ","]
+data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.global.summon_here", italic: false, color: "gold"}, {translate: "entity.minecraft.iron_golem", color: "white"}, {storage: "jk:bw", nbt: "txt.global.char.comma"}]
 data modify block 10110218 5 10110222 Items[3].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 data modify block 10110218 5 10110222 Items[12].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.global.fight.p0", italic: false, color: "yellow"}, "240", {storage: "jk:bw", nbt: "txt.shop.item.global.fight.p1"}]

@@ -122,13 +122,13 @@ data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set va
 data modify block 10110221 5 10110222 Items[19].components.minecraft:lore[4] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 
 # 购买/升级
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.axe", italic: false, color: "white"}, " ", {storage: "jk:bw", nbt: "txt.play.shop.buy.this"}, "/", {storage: "jk:bw", nbt: "txt.global.update"}]
+data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.tool.axe", italic: false, color: "white"}, " ", {storage: "jk:bw", nbt: "txt.play.shop.buy.this"}, "/", {storage: "jk:bw", nbt: "txt.global.update"}]
 data modify block 10110221 5 10110222 Items[14].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 data modify block 10110221 5 10110222 Items[17].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.pickaxe", italic: false, color: "white"}, " ", {storage: "jk:bw", nbt: "txt.play.shop.buy.this"}, "/", {storage: "jk:bw", nbt: "txt.global.update"}]
+data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.tool.pickaxe", italic: false, color: "white"}, " ", {storage: "jk:bw", nbt: "txt.play.shop.buy.this"}, "/", {storage: "jk:bw", nbt: "txt.global.update"}]
 data modify block 10110221 5 10110222 Items[15].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 data modify block 10110221 5 10110222 Items[18].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.shears", italic: false, color: "white"}, " ", {storage: "jk:bw", nbt: "txt.play.shop.buy.this"}, "/", {storage: "jk:bw", nbt: "txt.global.update"}]
+data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.shop.item.tool.shears", italic: false, color: "white"}, " ", {storage: "jk:bw", nbt: "txt.play.shop.buy.this"}, "/", {storage: "jk:bw", nbt: "txt.global.update"}]
 data modify block 10110221 5 10110222 Items[16].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 data modify block 10110221 5 10110222 Items[19].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
 # 死亡后会降级，但不会失去！

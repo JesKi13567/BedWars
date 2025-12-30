@@ -1,11 +1,5 @@
-# 对活着的玩家操作
-execute as @a[gamemode=adventure, scores={jkbw.Player.State=2}] at @s run function jkbw:play/tick8_player
-
-# 旁观者
-execute as @a[gamemode=spectator] run function jkbw:play/spectator
-
-# 小人国
-execute if score #exp_mode jkbw.mem matches 3 as @e[type=!#jkbw:safe] run attribute @s scale base set 0.5
+# 活着的玩家
+execute as @a[gamemode=adventure, scores={jkbw.Player.State=2}] at @s run function jkbw:play/ticks/player/tick8
 
 # 商店末影箱永存
 execute as @e[type=text_display, tag=jkbw_chest_shop] at @s unless block ~ ~ ~ ender_chest run function jkbw:play/shop/still

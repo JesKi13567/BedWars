@@ -1,5 +1,8 @@
 worldborder set 50000000
 
+scoreboard players reset * jkbw.Player.State
+scoreboard players reset * jkbw.Player.ID
+scoreboard players reset * jkbw.Team.ID
 scoreboard players reset #start_flag jkbw.mem
 scoreboard players set #state jkbw.mem 0
 scoreboard objectives setdisplay sidebar

@@ -1,6 +1,6 @@
 advancement revoke @s only jkbw:hurt/3_bug
 
-scoreboard players set @s jkbw.Player.DamageType.now 3
+scoreboard players set @s jkbw.Player.Damage.Type.now 3
 tag @s add jkbw_vic
 
 execute as @s[team=jkbw.red] run function jkbw:play/hurt/by_mob {team: red, type: silverfish}
