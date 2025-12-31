@@ -30,4 +30,4 @@ effect give @a[gamemode=adventure] resistance 10 4 true
 scoreboard players operation #time_m jkbw.mem = #time_s jkbw.mem
 scoreboard players operation #time_m jkbw.mem /= #60 jkbw.mem
 scoreboard players operation #time_s jkbw.mem %= #60 jkbw.mem
-tellraw @a ["\n", {storage: "jk:bw", nbt: "txt.play.time.cost", color: "yellow"}, " ", {score: {name: "#time_m", objective: "jkbw.mem"}, color: "gold"}, {text: " : ", color: "gold"}, {score: {name: "#time_s", objective: "jkbw.mem"}, color: "gold"}, "\n", {storage: "jk:bw", nbt: "txt.play.game.end.round", color: "red", bold: true}, "\n", {storage: "jk:bw", nbt: "txt.play.clean_map_later", color: "green"}]
+tellraw @a ["\n", {storage: "jk:bw", nbt: "txt.play.time.cost", color: "yellow"}, " ", {score: {name: "#time_m", objective: "jkbw.mem"}, color: "gold"}, {text: " : ", color: "gold"}, {score: {name: "#time_s", objective: "jkbw.mem"}, color: "gold"}, "\n", {storage: "jk:bw", nbt: "txt.play.game.end.round", color: "red", bold: true}]

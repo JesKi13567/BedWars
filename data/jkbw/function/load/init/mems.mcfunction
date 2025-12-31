@@ -17,7 +17,7 @@ scoreboard players set #res_mode jkbw.mem 0
 scoreboard players set #attack_speed jkbw.mem 1
 # bed_type 床模式 0 床 1 夹心 2 蛋糕
 scoreboard players set #bed_type jkbw.mem 0
-# exp_mode 实验模式 0 无 1 疾速 2 无跳跃 3 小人国
+# exp_mode 实验模式 0 无 1 疾速 2 无跳跃 3 小人国 4 被迫零元购 5 摸摸
 scoreboard players set #exp_mode jkbw.mem 0
 # set_time 设置时间 0 day 1 noon 2 night 3 midnight
 scoreboard players set #set_time jkbw.mem 0
@@ -27,12 +27,12 @@ scoreboard players set #time_freeze jkbw.mem 1
 scoreboard players set #teams jkbw.mem 2
 # state 游戏状态 0 等待报名 1 进行 2 获胜 3 超时
 scoreboard players set #state jkbw.mem 0
-#  res_rate     1    2    3
-# 资源产生速率  标号 整数 小数
-scoreboard players set #res_rate jkbw.mem 10
-scoreboard players set #res_rate1 jkbw.mem 1
-scoreboard players set #res_rate2 jkbw.mem 1
-scoreboard players set #res_rate3 jkbw.mem 0
+#  res_rate   order  int  dec
+# 资源产生速率  标号  整数  小数
+scoreboard players set #res_rate.num jkbw.mem 10
+scoreboard players set #res_rate.order jkbw.mem 1
+scoreboard players set #res_rate.int jkbw.mem 1
+scoreboard players set #res_rate.dec jkbw.mem 0
 # time_update  time_bed  time_fight  time_end
 # 资源升级间隔   床自毁   死斗模式间隔    结束
 scoreboard players set #time_update jkbw.mem 300

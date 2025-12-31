@@ -19,14 +19,14 @@ execute unless score #exp_mode jkbw.mem matches 4 if score #time jkbw.mem > #tim
 execute if score #res_mode jkbw.mem matches 2 if score #time_state jkbw.mem matches 3 as @a run attribute @s max_health base set 50
 
 execute if score #time jkbw.mem = #time4 jkbw.mem run function jkbw:play/start/progress/4
-execute unless score #exp_mode jkbw.mem matches 4 if score #time jkbw.mem > #time5 jkbw.mem if score #time jkbw.mem <= #time4 jkbw.mem run bossbar set jkbw:game_progress name ["", {storage: "jk:bw", nbt: "txt.play.event.next", color: "gold"}, {storage: "jk:bw", nbt: "txt.play.event.bed_destruct.name", color: "red"}, {storage: "jk:bw", nbt: "txt.play.time.left", color: "yellow"}, {score: {name: "#time_show", objective: "jkbw.mem"}}, "s"]
+execute unless score #exp_mode jkbw.mem matches 4 if score #time jkbw.mem > #time5 jkbw.mem if score #time jkbw.mem <= #time4 jkbw.mem run bossbar set jkbw:game_progress name ["", {storage: "jk:bw", nbt: "txt.play.event.next", color: "gold"}, {storage: "jk:bw", nbt: "txt.play.event.bed_destruct.name", color: "red"}, " ", {storage: "jk:bw", nbt: "txt.play.time.left", color: "yellow"}, {score: {name: "#time_show", objective: "jkbw.mem"}}, "s"]
 execute if score #res_mode jkbw.mem matches 2 if score #time_state jkbw.mem matches 4 as @a run attribute @s max_health base set 60
 
 execute if score #time jkbw.mem = #time5 jkbw.mem run function jkbw:play/start/progress/5
-execute unless score #exp_mode jkbw.mem matches 4 if score #time jkbw.mem > #time6 jkbw.mem if score #time jkbw.mem <= #time5 jkbw.mem run bossbar set jkbw:game_progress name ["", {storage: "jk:bw", nbt: "txt.play.event.next", color: "gold"}, {storage: "jk:bw", nbt: "txt.play.event.death_fight.name", color: "red", bold: true}, {storage: "jk:bw", nbt: "txt.play.time.left", color: "yellow"}, {score: {name: "#time_show", objective: "jkbw.mem"}}, "s"]
+execute unless score #exp_mode jkbw.mem matches 4 if score #time jkbw.mem > #time6 jkbw.mem if score #time jkbw.mem <= #time5 jkbw.mem run bossbar set jkbw:game_progress name ["", {storage: "jk:bw", nbt: "txt.play.event.next", color: "gold"}, {storage: "jk:bw", nbt: "txt.play.event.death_fight.name", color: "red", bold: true}, " ", {storage: "jk:bw", nbt: "txt.play.time.left", color: "yellow"}, {score: {name: "#time_show", objective: "jkbw.mem"}}, "s"]
 
 execute if score #time jkbw.mem = #time6 jkbw.mem run function jkbw:play/start/progress/final
-execute unless score #exp_mode jkbw.mem matches 4 if score #time jkbw.mem <= #time6 jkbw.mem run bossbar set jkbw:game_progress name ["", {storage: "jk:bw", nbt: "txt.play.event.next", color: "gold"}, {storage: "jk:bw", nbt: "txt.play.event.end.name", color: "red"}, {storage: "jk:bw", nbt: "txt.play.time.left", color: "yellow"}, {score: {name: "#time_show", objective: "jkbw.mem"}}, "s"]
+execute unless score #exp_mode jkbw.mem matches 4 if score #time jkbw.mem <= #time6 jkbw.mem run bossbar set jkbw:game_progress name ["", {storage: "jk:bw", nbt: "txt.play.event.next", color: "gold"}, {storage: "jk:bw", nbt: "txt.play.event.end.name", color: "red"}, " ", {storage: "jk:bw", nbt: "txt.play.time.left", color: "yellow"}, {score: {name: "#time_show", objective: "jkbw.mem"}}, "s"]
 execute if score #res_mode jkbw.mem matches 0..1 if score #time_state jkbw.mem matches 6 run effect give @a[gamemode=adventure] strength infinite 0 true
 
 # 实验模式4

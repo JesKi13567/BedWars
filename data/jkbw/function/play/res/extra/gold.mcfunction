@@ -17,7 +17,7 @@ scoreboard players set @s[tag=jkbw_gold_summon, scores={jkbw.Team.res=4}] jkbw.R
 execute if score #res_mode jkbw.mem matches 2 run scoreboard players set @s[tag=jkbw_gold_summon] jkbw.Res.CD.Gold 5
 
 execute if score #res_mode jkbw.mem matches 0..1 run scoreboard players operation @s[tag=jkbw_gold_summon] jkbw.Res.CD.Gold *= #10 jkbw.mem
-execute if score #res_mode jkbw.mem matches 0..1 run scoreboard players operation @s[tag=jkbw_gold_summon] jkbw.Res.CD.Gold /= #res_rate jkbw.mem
+execute if score #res_mode jkbw.mem matches 0..1 run scoreboard players operation @s[tag=jkbw_gold_summon] jkbw.Res.CD.Gold /= #res_rate.num jkbw.mem
 
 # 骑乘，防止被炸飞
 tag @s add jkbw_temp_ride

@@ -1,7 +1,7 @@
 scoreboard players reset @s jkbw.Temp
 
 # 校准
-execute align xyz positioned ~.5 ~ ~.5 run function jkbw:play/auto_bridge/summon
+execute align xyz positioned ~.5 ~ ~.5 run function jkbw:play/special/auto_bridge/summon
 # 方向
 execute if block ~ ~ ~ #shulker_boxes[facing=north] run tag @e[type=marker, tag=jkbw_wool_new, limit=1, sort=nearest] add jkbw_wool_z-
 execute if block ~ ~ ~ #shulker_boxes[facing=south] run tag @e[type=marker, tag=jkbw_wool_new, limit=1, sort=nearest] add jkbw_wool_z+

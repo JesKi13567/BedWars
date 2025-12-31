@@ -14,7 +14,7 @@ $execute if score #res_mode jkbw.mem matches 1 run tellraw @s[tag=!jkbw_bought, 
 playsound entity.villager.no player @s[tag=!jkbw_bought, tag=!jkbw_buy_success]
 
 # 失败购买
-$tellraw @s[tag=jkbw_bought] [{storage: "jk:bw", nbt: "txt.play.shop.buy.ed.p0", color: "red"}, {storage: "jk:bw", nbt: "txt.color.$(team)", color: "yellow"}, " ", {storage: "jk:bw", nbt: "txt.shop.item.compass.track", color: "yellow"}, {storage: "jk:bw", nbt: "txt.global.char.exclamation"}]
+$tellraw @s[tag=jkbw_bought] [{storage: "jk:bw", nbt: "txt.play.shop.buy.ed.p0", color: "red"}, {storage: "jk:bw", nbt: "txt.color.$(team)", color: "yellow"}, {storage: "jk:bw", nbt: "txt.global.team", color: "yellow"}, " ", {storage: "jk:bw", nbt: "txt.shop.item.compass.track", color: "yellow"}, {storage: "jk:bw", nbt: "txt.global.char.exclamation"}]
 playsound entity.villager.no player @s[tag=jkbw_bought]
 
 # 成功购买

@@ -63,8 +63,7 @@ execute if score #res_mode jkbw.mem matches 0 run tellraw @a ["", {storage: "jk:
 execute if score #res_mode jkbw.mem matches 1 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.res_mode.name", color: "green"}, {storage: "jk:bw", nbt: "txt.global.char.colon"}, {storage: "jk:bw", nbt: "txt.ready.res_mode.1.name"}]
 execute if score #res_mode jkbw.mem matches 2 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.res_mode.name", color: "green"}, {storage: "jk:bw", nbt: "txt.global.char.colon"}, {storage: "jk:bw", nbt: "txt.ready.res_mode.2.name"}]
 
-execute if score #res_mode jkbw.mem matches 0..1 if score #res_rate jkbw.mem matches ..9 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.res_speed.name", color: "green"}, {storage: "jk:bw", nbt: "txt.global.char.colon"}, "0.", {score: {name: "#res_rate3", objective: "jkbw.mem"}}]
-execute if score #res_mode jkbw.mem matches 0..1 if score #res_rate jkbw.mem matches 10.. run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.res_speed.name", color: "green"}, {storage: "jk:bw", nbt: "txt.global.char.colon"}, {score: {name: "#res_rate2", objective: "jkbw.mem"}}, ".", {score: {name: "#res_rate3", objective: "jkbw.mem"}}]
+execute if score #res_mode jkbw.mem matches 0..1 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.res_speed.name", color: "green"}, {storage: "jk:bw", nbt: "txt.global.char.colon"}, {score: {name: "#res_rate.int", objective: "jkbw.mem"}}, ".", {score: {name: "#res_rate.dec", objective: "jkbw.mem"}}]
 
 tellraw @a {storage: "jk:bw", nbt: "txt.play.team.chat", color: "aqua"}
 

@@ -9,7 +9,7 @@ $execute if score #res_mode jkbw.mem matches 0..1 if score #summon_$(res) jkbw.m
 $execute if score #res_mode jkbw.mem matches 0..1 if score #summon_$(res) jkbw.mem matches 1 if score #level_$(res) jkbw.mem matches 3 run scoreboard players operation #time_$(res) jkbw.mem -= #minus_$(res) jkbw.mem
 
 $execute if score #res_mode jkbw.mem matches 0..1 if score #summon_$(res) jkbw.mem matches 1 run scoreboard players operation #time_$(res) jkbw.mem *= #10 jkbw.mem
-$execute if score #res_mode jkbw.mem matches 0..1 if score #summon_$(res) jkbw.mem matches 1 run scoreboard players operation #time_$(res) jkbw.mem /= #res_rate jkbw.mem
+$execute if score #res_mode jkbw.mem matches 0..1 if score #summon_$(res) jkbw.mem matches 1 run scoreboard players operation #time_$(res) jkbw.mem /= #res_rate.num jkbw.mem
 
 $execute if score #res_mode jkbw.mem matches 2 if score #summon_$(res) jkbw.mem matches 1 run scoreboard players operation #time_$(res) jkbw.mem = #spawn_$(res)_urf jkbw.mem
 $execute if score #res_mode jkbw.mem matches 2 if score #summon_$(res) jkbw.mem matches 1 if score #level_$(res) jkbw.mem matches 2..3 run scoreboard players operation #time_$(res) jkbw.mem -= #minus_$(res)_urf jkbw.mem

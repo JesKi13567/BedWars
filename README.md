@@ -57,7 +57,7 @@
 ##### 资源模式
 |种类|描述|
 |-|-|
-|经典 / 经验|玩家初始装备皮革套装，携带望远镜，木剑＆指南针各一。商店可存储私人物品、购买团队增益和轮换道具等。|
+|经典 / 经验|玩家初始装备皮革套装，携带木剑＆指南针各一。商店可存储私人物品、购买团队增益和轮换道具等。|
 |无限火力|玩家初始为空背包，死亡后等级只会减半。商店可购买团队箱子，武器和盔甲均有耐久，没有团队增益。游戏随时间进行，将逐步提升玩家的最大生命值，后期还会解锁凋灵弓。|
 
 关于商店购买，经典模式使用资源物品，其他模式使用经验等级。
@@ -133,7 +133,7 @@ Around the Global Point, admins can block these settings by placing blocks.
 ##### Resource Mode
 |Type|Description|
 |-|-|
-|Classic / Xp|Players have full Leather set, carrying Spyglass, Wooden Sword & Compass on spawn. They can store their private items, buying rotating items & team benefits via shops.|
+|Classic / Xp|Players have full Leather set, carrying Wooden Sword & Compass on spawn. They can store their private items, buying rotating items & team benefits via shops.|
 |URF \(Ultra Rapid Fire\)|Players carry nothing on spawn, only lose half levels after death. They can buy team chests but no team benefits via shops, all weapons & armor have durability. As the game progresses, players will gradually improve their Max Health, and will unlock Wither Bow in the final game stage.|
 
 About shop buying, the classic uses items, while others use experience levels.

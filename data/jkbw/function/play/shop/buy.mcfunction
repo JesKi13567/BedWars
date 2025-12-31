@@ -1,3 +1,5 @@
+clear @s spyglass
+
 # 清理购买标签
 execute unless score #test_mode jkbw.mem matches 1 run tag @s remove jkbw_buy_success
 tag @s remove jkbw_bought
