@@ -1,25 +1,19 @@
 {
-    "criteria": {
-        "jkbw": {
-            "trigger": "entity_hurt_player",
-            "conditions": {
-                "damage": {
-                    "type": {
-                        "direct_entity": {
-                            "type": "creeper"
-                        },
-                        "tags": [
-                            {
-                                "expected": true,
-                                "id": "is_explosion"
-                            }
-                        ]
-                    }
-                }
+  "criteria": {
+    "jkbw": {
+      "trigger": "entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "source_entity": {
+              "type": "creeper"
             }
+          }
         }
-    },
-    "rewards": {
-        "function": "jkbw:play/hurt/sub/5_creeper"
+      }
     }
+  },
+  "rewards": {
+    "function": "jkbw:play/hurt/sub/5_creeper"
+  }
 }

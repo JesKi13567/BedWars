@@ -1,8 +1,8 @@
 # 死亡提示
-execute as @s[scores={jkbw.Player.Damage.Type.last=0}] run tellraw @a ["", {selector: "@s"}, " ", {storage: "jk:bw", nbt: "txt.death.suicide.0", color: "gray"}]
-execute as @s[scores={jkbw.Player.Damage.Type.last=1}] run tellraw @a ["", {selector: "@s"}, " ", {storage: "jk:bw", nbt: "txt.death.suicide.1", color: "gray"}]
-execute as @s[scores={jkbw.Player.Damage.Type.last=5}] run tellraw @a ["", {selector: "@s"}, " ", {storage: "jk:bw", nbt: "txt.death.suicide.5", color: "gray"}]
-execute as @s[scores={jkbw.Player.Damage.Type.last=7}] run tellraw @a ["", {selector: "@s"}, " ", {storage: "jk:bw", nbt: "txt.death.suicide.7", color: "gray"}]
+execute as @s[scores={jkbw.Player.Damage.Type.now=0}] run tellraw @a ["", {translate: "death.attack.fall", with: [{selector: "@s"}]}]
+execute as @s[scores={jkbw.Player.Damage.Type.now=1}] run tellraw @a ["", {translate: "death.attack.outOfWorld", with: [{selector: "@s"}]}]
+execute as @s[scores={jkbw.Player.Damage.Type.now=5}] run tellraw @a ["", {translate: "death.attack.explosion", with: [{selector: "@s"}]}]
+execute as @s[scores={jkbw.Player.Damage.Type.now=7}] run tellraw @a ["", {translate: "death.attack.wither", with: [{selector: "@s"}]}]
 
 # 死亡点
 data modify storage jk:bw Temp.pos.x set from entity @s LastDeathLocation.pos[0]

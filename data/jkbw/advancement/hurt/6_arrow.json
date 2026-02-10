@@ -5,8 +5,14 @@
       "conditions": {
         "damage": {
           "type": {
-            "direct_entity": {
-              "type": "arrow"
+            "tags": [
+              {
+                "expected": true,
+                "id": "jkbw:6_arrow"
+              }
+            ],
+            "source_entity": {
+              "type": "player"
             }
           }
         }

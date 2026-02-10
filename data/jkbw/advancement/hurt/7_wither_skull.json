@@ -7,6 +7,9 @@
           "type": {
             "direct_entity": {
               "type": "wither_skull"
+            },
+            "source_entity": {
+              "type": "player"
             }
           }
         }
@@ -14,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "jkbw:play/hurt/sub/7_wither"
+    "function": "jkbw:play/hurt/sub/7_wither_skull"
   }
 }

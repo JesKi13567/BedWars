@@ -18,7 +18,3 @@ function jkbw:play/special/spyglass
 
 # 清理
 clear @s glass_bottle
-
-# 冷却
-scoreboard players remove @s[scores={jkbw.Player.Use.CD.Fireball=1..}] jkbw.Player.Use.CD.Fireball 1
-scoreboard players remove @s[scores={jkbw.Player.Use.CD.Creature=1..}] jkbw.Player.Use.CD.Creature 1

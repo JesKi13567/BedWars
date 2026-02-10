@@ -3,9 +3,14 @@
     "jkbw": {
       "trigger": "entity_hurt_player",
       "conditions": {
-        "player": {
-          "effects": {
-            "wither": {}
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "jkbw:7_wither"
+              }
+            ]
           }
         }
       }

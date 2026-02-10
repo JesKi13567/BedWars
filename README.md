@@ -1,5 +1,5 @@
 # JK's BedWars ToolPack -- 起床战争工具包
-## v1.0 for MC1.21.11
+## v1.0.1 for MC1.21.11
 
 - [简体中文](#zh_cn)
 - [English](#en_us)
@@ -11,7 +11,7 @@
 本数据包实现了功能丰富的起床战争玩法，服务器管理员仅需提供地图并按游戏内说明完成道具布置，即可开启游戏。
 
 ### 功能列表
-1. 支持中文（简体、繁体）和英文。
+1. 支持简体中文和英文。
 
 1. 支持最多 8 支队伍 ＆ 64 名玩家。
 
@@ -87,7 +87,7 @@ BedWars is a classic Minecraft game. Players aim to protect their beds and survi
 This datapack delivers feature-rich BedWars gameplay. Server admins can start the game simply by providing maps and placing items as per in-game instructions.
 
 ### Feature List
-1. Supports Chinese \(Simplified & Traditional\) and English.
+1. Supports Simplified Chinese and English.
 
 1. Supports max 8 teams & 64 players.
 

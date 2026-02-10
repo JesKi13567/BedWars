@@ -1,5 +1,5 @@
 # 全局记分板
-function jkbw:load/init/mems
+function jkbw:load/settings/init/mems
 scoreboard objectives add jkbw.Temp dummy "暂时值"
 
 # 队伍记分板

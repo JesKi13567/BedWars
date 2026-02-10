@@ -5,15 +5,18 @@
       "conditions": {
         "damage": {
           "type": {
-            "direct_entity": {
-              "type": "trident"
-            }
+            "tags": [
+              {
+                "expected": true,
+                "id": "is_fall"
+              }
+            ]
           }
         }
       }
     }
   },
   "rewards": {
-    "function": "jkbw:play/hurt/sub/6_arrow"
+    "function": "jkbw:play/hurt/sub/0_fall"
   }
 }

@@ -9,3 +9,7 @@ function jkbw:play/special/player
 
 # 检测玩家破坏床
 function jkbw:play/bed/break
+
+# 冷却
+scoreboard players remove @s[scores={jkbw.Player.Use.CD.Fireball=1..}] jkbw.Player.Use.CD.Fireball 1
+scoreboard players remove @s[scores={jkbw.Player.Use.CD.Creature=1..}] jkbw.Player.Use.CD.Creature 1

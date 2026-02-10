@@ -1,4 +1,4 @@
-scoreboard players set @s jkbw.Player.Use.CD.Creature 1
+scoreboard players set @s jkbw.Player.Use.CD.Creature 6
 clear @s raw_gold 1
 
 summon happy_ghast ~ ~ ~ {Tags: ["jkbw", "jkbw_happy_ghast"], Silent: true}

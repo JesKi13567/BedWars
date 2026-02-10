@@ -5,7 +5,7 @@
       "conditions": {
         "damage": {
           "type": {
-            "direct_entity": {
+            "source_entity": {
               "type": "iron_golem"
             }
           }
