@@ -25,10 +25,14 @@ gamerule natural_health_regeneration false
 gamerule fall_damage true
 scoreboard players set #state jkbw.mem 1
 scoreboard players set #time_state jkbw.mem 0
-scoreboard players operation #dragon1 jkbw.mem = #dragon jkbw.mem
-scoreboard players operation #XPdragon1 jkbw.mem = #XPdragon jkbw.mem
 scoreboard players reset #shop_random_countdown jkbw.mem
 scoreboard players reset #solo_mode jkbw.mem
+
+# 无单挑价格的团队升级
+scoreboard players operation #dragon1 jkbw.mem = #dragon jkbw.mem
+scoreboard players operation #XPdragon1 jkbw.mem = #XPdragon jkbw.mem
+scoreboard players operation #knockback1 jkbw.mem = #knockback jkbw.mem
+scoreboard players operation #XPknockback1 jkbw.mem = #XPknockback jkbw.mem
 
 # 资源产生时间
 execute unless score #spawn_diamond jkbw.mem matches 10..100 run scoreboard players set #spawn_diamond jkbw.mem 30
@@ -54,6 +58,7 @@ execute unless score #time_bed jkbw.mem matches 10..1000 run scoreboard players 
 execute unless score #time_fight jkbw.mem matches 10..1000 run scoreboard players set #time_fight jkbw.mem 600
 execute unless score #time_end jkbw.mem matches 10..1000 run scoreboard players set #time_end jkbw.mem 600
 execute unless score #EXP_MODE_4_SHOP_INTERVAL jkbw.mem matches 1..30 run scoreboard players set #EXP_MODE_4_SHOP_INTERVAL jkbw.mem 5
+
 scoreboard players operation #time jkbw.mem = #time_end jkbw.mem
 scoreboard players operation #time6 jkbw.mem = #time jkbw.mem
 scoreboard players operation #time jkbw.mem += #time_fight jkbw.mem

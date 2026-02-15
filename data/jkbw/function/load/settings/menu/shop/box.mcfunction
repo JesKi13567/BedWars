@@ -12,6 +12,8 @@ function jkbw:load/settings/menu/shop/box/3
 function jkbw:load/settings/menu/shop/box/4
 function jkbw:load/settings/menu/shop/box/5
 function jkbw:load/settings/menu/shop/box/6
+function jkbw:load/settings/menu/shop/box/7
+function jkbw:load/settings/menu/shop/box/8
 
 # 无限火力模式
 function jkbw:load/settings/menu/shop/box/_1
@@ -22,8 +24,8 @@ function jkbw:load/settings/menu/shop/box/_3
 function jkbw:load/settings/menu/shop/box/_4
 
 # 其他道具
-function jkbw:load/settings/menu/shop/box/7
 function jkbw:load/settings/menu/shop/box/e1
 function jkbw:load/settings/menu/shop/box/e2
 
+# 文本
 function jkbw:load/settings/menu/shop/refresh

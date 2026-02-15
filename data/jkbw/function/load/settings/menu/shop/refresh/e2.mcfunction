@@ -1,77 +1,85 @@
 
 # 玩家用
 ## 未准备
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.item.ready.0.name", italic: false, color: "gray"}]
-data modify block 10110209 3 10110222 Items[0].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.item.ready.0.p0", italic: false, color: "green"}]
-data modify block 10110209 3 10110222 Items[0].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
+item modify block 10110209 4 10110222 container.0 {function: "set_name", entity: "this", name: \
+[{storage: "jk:bw", nbt: "txt.item.ready.0.name", italic: false, color: "gray"}]}
+item modify block 10110209 4 10110222 container.0 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+[{storage: "jk:bw", nbt: "txt.item.ready.0.p0", italic: false, color: "green"}]]}
+
 ## 已准备
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.item.ready.1.name", italic: false, color: "green"}]
-data modify block 10110209 3 10110222 Items[1].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.item.ready.1.p0", italic: false, color: "gray"}]
-data modify block 10110209 3 10110222 Items[1].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
+item modify block 10110209 4 10110222 container.1 {function: "set_name", entity: "this", name: \
+[{storage: "jk:bw", nbt: "txt.item.ready.1.name", italic: false, color: "green"}]}
+item modify block 10110209 4 10110222 container.1 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+[{storage: "jk:bw", nbt: "txt.item.ready.1.p0", italic: false, color: "gray"}]]}
+
 ## 测试模式提示
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.ready.test_mode.name", color: "red", italic: false}, {storage: "jk:bw", nbt: "txt.global.turned.on"}]
-data modify block 10110209 3 10110222 Items[2].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.item.ready.2", italic: false}]
-data modify block 10110209 3 10110222 Items[2].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
+item modify block 10110209 4 10110222 container.2 {function: "set_name", entity: "this", name: \
+[{storage: "jk:bw", nbt: "txt.ready.test_mode.name", color: "red", italic: false}, {storage: "jk:bw", nbt: "txt.global.turned.on"}]}
+item modify block 10110209 4 10110222 container.2 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+[{storage: "jk:bw", nbt: "txt.item.ready.2", italic: false}]]}
+
 ## 望远镜
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.item.spyglass.p0", color: "gray", italic: false}]
-data modify block 10110209 3 10110222 Items[3].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.item.spyglass.p1", color: "gray", italic: false}]
-data modify block 10110209 3 10110222 Items[3].components.minecraft:lore[1] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
+item modify block 10110209 4 10110222 container.3 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+[{storage: "jk:bw", nbt: "txt.item.spyglass.p0", color: "gray", italic: false}], \
+[{storage: "jk:bw", nbt: "txt.item.spyglass.p1", color: "gray", italic: false}]]}
 
 # 管理用
 ## 商店
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.egg.shop", color: "aqua", italic: false}]
-data modify block 10110209 3 10110222 Items[-17].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.egg.face2u", color: "gold", italic: false}]
-data modify block 10110209 3 10110222 Items[-17].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
+item modify block 10110209 4 10110222 container.9 {function: "set_name", entity: "this", name: \
+[{storage: "jk:bw", nbt: "txt.egg.shop", color: "aqua", italic: false}]}
+item modify block 10110209 4 10110222 container.9 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+[{storage: "jk:bw", nbt: "txt.egg.face2u", color: "gold", italic: false}]]}
+
 ## 全局资源点
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.egg.point.res.name", color: "green", italic: false}]
-data modify block 10110209 3 10110222 Items[-16].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{text: "", color: "white", italic: false}, {storage: "jk:bw", nbt: "txt.egg.point.res.p0", color: "yellow"}, {translate: "block.minecraft.diamond_block"}, "/", {translate: "block.minecraft.emerald_block"}, {storage: "jk:bw", nbt: "txt.global.char.dot"}]
-data modify block 10110209 3 10110222 Items[-16].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
+item modify block 10110209 4 10110222 container.10 {function: "set_name", entity: "this", name: \
+[{storage: "jk:bw", nbt: "txt.egg.point.res.name", color: "green", italic: false}]}
+item modify block 10110209 4 10110222 container.10 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+[{text: "", color: "white", italic: false}, {storage: "jk:bw", nbt: "txt.egg.point.res.p0", color: "yellow"}, {translate: "block.minecraft.diamond_block"}, "/", {translate: "block.minecraft.emerald_block"}, {storage: "jk:bw", nbt: "txt.global.char.dot"}]]}
+
 ### 资源方块
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.egg.point.res.p1", color: "yellow", italic: false}]
-data modify block 10110209 3 10110222 Items[-15].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify block 10110209 3 10110222 Items[-14].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
+item modify block 10110209 4 10110222 container.11 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+[{storage: "jk:bw", nbt: "txt.egg.point.res.p1", color: "yellow", italic: false}]]}
+item modify block 10110209 4 10110222 container.12 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+[{storage: "jk:bw", nbt: "txt.egg.point.res.p1", color: "yellow", italic: false}]]}
+
 ## 床位点
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.egg.point.bed", color: "yellow", italic: false}]
-data modify block 10110209 3 10110222 Items[-13].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.egg.wool.p0", color: "yellow", italic: false}]
-data modify block 10110209 3 10110222 Items[-13].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.egg.followu", color: "gold", italic: false}]
-data modify block 10110209 3 10110222 Items[-13].components.minecraft:lore[1] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
+item modify block 10110209 4 10110222 container.13 {function: "set_name", entity: "this", name: \
+[{storage: "jk:bw", nbt: "txt.egg.point.bed", color: "yellow", italic: false}]}
+item modify block 10110209 4 10110222 container.13 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+[{storage: "jk:bw", nbt: "txt.egg.wool.p0", color: "yellow", italic: false}], \
+[{storage: "jk:bw", nbt: "txt.egg.followu", color: "gold", italic: false}]]}
+
 ## 出生点
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.egg.point.spawn.player", color: "light_purple", italic: false}]
-data modify block 10110209 3 10110222 Items[-12].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.egg.wool.p0", color: "yellow", italic: false}]
-data modify block 10110209 3 10110222 Items[-12].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.egg.face2u", color: "gold", italic: false}]
-data modify block 10110209 3 10110222 Items[-12].components.minecraft:lore[1] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
+item modify block 10110209 4 10110222 container.14 {function: "set_name", entity: "this", name: \
+[{storage: "jk:bw", nbt: "txt.egg.point.spawn.player", color: "light_purple", italic: false}]}
+item modify block 10110209 4 10110222 container.14 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+[{storage: "jk:bw", nbt: "txt.egg.wool.p0", color: "yellow", italic: false}], \
+[{storage: "jk:bw", nbt: "txt.egg.face2u", color: "gold", italic: false}]]}
+
 ## 箱子点
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.egg.point.chest", color: "blue", italic: false}]
-data modify block 10110209 3 10110222 Items[-11].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.egg.wool.p0", color: "yellow", italic: false}]
-data modify block 10110209 3 10110222 Items[-11].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
+item modify block 10110209 4 10110222 container.15 {function: "set_name", entity: "this", name: \
+[{storage: "jk:bw", nbt: "txt.egg.point.chest", color: "blue", italic: false}]}
+item modify block 10110209 4 10110222 container.15 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+[{storage: "jk:bw", nbt: "txt.egg.wool.p0", color: "yellow", italic: false}]]}
+
 ## 出生资源点
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.egg.point.spawn.res", color: "gold", italic: false}]
-data modify block 10110209 3 10110222 Items[-10].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.egg.wool.p0", color: "yellow", italic: false}]
-data modify block 10110209 3 10110222 Items[-10].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
+item modify block 10110209 4 10110222 container.16 {function: "set_name", entity: "this", name: \
+[{storage: "jk:bw", nbt: "txt.egg.point.spawn.res", color: "gold", italic: false}]}
+item modify block 10110209 4 10110222 container.16 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+[{storage: "jk:bw", nbt: "txt.egg.wool.p0", color: "yellow", italic: false}]]}
+
 ## 删除
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.global.delete", color: "red", italic: false}]
-data modify block 10110209 3 10110222 Items[-9].components.minecraft:custom_name set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.egg.delete", color: "red", italic: false}]
-data modify block 10110209 3 10110222 Items[-9].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
+item modify block 10110209 4 10110222 container.17 {function: "set_name", entity: "this", name: \
+[{storage: "jk:bw", nbt: "txt.global.delete", color: "red", italic: false}]}
+item modify block 10110209 4 10110222 container.17 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+[{storage: "jk:bw", nbt: "txt.egg.delete", color: "red", italic: false}]]}
+
 ## 羊毛
-data modify entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text set value [{storage: "jk:bw", nbt: "txt.egg.wool.p1", color: "yellow", italic: false}]
-data modify block 10110209 3 10110222 Items[-1].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify block 10110209 3 10110222 Items[-2].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify block 10110209 3 10110222 Items[-3].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify block 10110209 3 10110222 Items[-4].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify block 10110209 3 10110222 Items[-5].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify block 10110209 3 10110222 Items[-6].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify block 10110209 3 10110222 Items[-7].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
-data modify block 10110209 3 10110222 Items[-8].components.minecraft:lore[0] set from entity @e[type=text_display, tag=jkbw_txt_shop, limit=1] text
+item modify block 10110209 4 10110222 container.18 {function: "set_lore", entity: "this", mode: "replace_all", lore: [[{text: "#1", italic: false, color: "gold"}], [{storage: "jk:bw", nbt: "txt.egg.wool.p1", color: "yellow", italic: false}]]}
+item modify block 10110209 4 10110222 container.19 {function: "set_lore", entity: "this", mode: "replace_all", lore: [[{text: "#2", italic: false, color: "gold"}], [{storage: "jk:bw", nbt: "txt.egg.wool.p1", color: "yellow", italic: false}]]}
+item modify block 10110209 4 10110222 container.20 {function: "set_lore", entity: "this", mode: "replace_all", lore: [[{text: "#3", italic: false, color: "gold"}], [{storage: "jk:bw", nbt: "txt.egg.wool.p1", color: "yellow", italic: false}]]}
+item modify block 10110209 4 10110222 container.21 {function: "set_lore", entity: "this", mode: "replace_all", lore: [[{text: "#4", italic: false, color: "gold"}], [{storage: "jk:bw", nbt: "txt.egg.wool.p1", color: "yellow", italic: false}]]}
+item modify block 10110209 4 10110222 container.22 {function: "set_lore", entity: "this", mode: "replace_all", lore: [[{text: "#5", italic: false, color: "gold"}], [{storage: "jk:bw", nbt: "txt.egg.wool.p1", color: "yellow", italic: false}]]}
+item modify block 10110209 4 10110222 container.23 {function: "set_lore", entity: "this", mode: "replace_all", lore: [[{text: "#6", italic: false, color: "gold"}], [{storage: "jk:bw", nbt: "txt.egg.wool.p1", color: "yellow", italic: false}]]}
+item modify block 10110209 4 10110222 container.24 {function: "set_lore", entity: "this", mode: "replace_all", lore: [[{text: "#7", italic: false, color: "gold"}], [{storage: "jk:bw", nbt: "txt.egg.wool.p1", color: "yellow", italic: false}]]}
+item modify block 10110209 4 10110222 container.25 {function: "set_lore", entity: "this", mode: "replace_all", lore: [[{text: "#8", italic: false, color: "gold"}], [{storage: "jk:bw", nbt: "txt.egg.wool.p1", color: "yellow", italic: false}]]}

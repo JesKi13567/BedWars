@@ -26,8 +26,8 @@ playsound entity.villager.no player @s[tag=!jkbw_bought, tag=!jkbw_buy_success]
 
 # 成功购买
 $execute as @s[tag=!jkbw_bought, tag=jkbw_buy_success] run scoreboard players set @e[type=text_display, tag=jkbw_spawn_$(team), limit=1] jkbw.Team.$(item) 1
-$execute as @s[tag=!jkbw_bought, tag=jkbw_buy_success] run tellraw @a[team=jkbw.$(team)] [{selector: "@s"}, " ", {storage: "jk:bw", nbt: "txt.play.shop.buy.ed.team", color: "green"}, " ", {storage: "jk:bw", nbt: "txt.shop.team.$(item).name", color: "gold"}]
-$execute if score #3 jkbw.mem matches $(id) as @s[tag=!jkbw_bought, tag=jkbw_buy_success] run tellraw @a[team=jkbw.$(team)] {storage: "jk:bw", nbt: "txt.shop.team.sharpness.p1", color: "green"}
+$execute as @s[tag=!jkbw_bought, tag=jkbw_buy_success] run tellraw @a[team=jkbw.$(team)] ["", {selector: "@s"}, " ", {storage: "jk:bw", nbt: "txt.play.shop.buy.ed.team", color: "green"}, " ", {storage: "jk:bw", nbt: "txt.shop.team.$(item).name", color: "gold"}]
+$execute if score #3 jkbw.mem matches $(id) as @s[tag=!jkbw_bought, tag=jkbw_buy_success] run tellraw @a[team=jkbw.$(team)] {storage: "jk:bw", nbt: "txt.shop.team.enchant.sword", color: "green"}
 
 playsound entity.experience_orb.pickup player @s[tag=!jkbw_bought, tag=jkbw_buy_success]
 $execute unless score #solo_mode jkbw.mem matches 1 if score #res_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.Own.diamond -= #$(item) jkbw.mem

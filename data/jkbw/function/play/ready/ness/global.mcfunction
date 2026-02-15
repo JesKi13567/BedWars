@@ -8,4 +8,4 @@ execute as @s[tag=jkbw_first_delete] run function jkbw:play/ready/ness/delete
 kill @s
 
 # 防止玩家在摆放道具时准备
-item replace entity @a[gamemode=adventure] hotbar.8 from block 10110209 3 10110222 container.0
+item replace entity @a[gamemode=adventure] hotbar.8 from block 10110209 4 10110222 container.0

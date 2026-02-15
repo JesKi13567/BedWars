@@ -1,5 +1,5 @@
 playsound block.note_block.bell player @s
-data modify storage jk:bw txt.ready.version.num set value "v1.0.1 - MC1.21.11"
+data modify storage jk:bw txt.ready.version.num set value "v1.1 - MC1.21.11"
 
 execute as @e[type=text_display, tag=jkbw_worldspawn] at @s align xyz run function jkbw:play/ready/ness/button
 execute if score #loaded jkbw.mem matches 1 run function jkbw:load/settings/menu

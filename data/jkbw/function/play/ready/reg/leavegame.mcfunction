@@ -9,7 +9,7 @@ xp set @s 0 points
 team leave @s
 clear @s
 effect clear @s
-item replace entity @s hotbar.8 from block 10110209 3 10110222 container.0
+item replace entity @s hotbar.8 from block 10110209 4 10110222 container.0
 attribute @s max_health base reset
 attribute @s armor base reset
 attribute @s attack_speed base reset

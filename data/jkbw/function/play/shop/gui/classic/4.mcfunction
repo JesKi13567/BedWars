@@ -25,7 +25,7 @@ item replace entity @s enderchest.22 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.23 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.24 from block 10110222 5 10110222 container.0
 item replace entity @s enderchest.25 from block 10110222 5 10110222 container.0
-item replace entity @s enderchest.26 from block 10110222 5 10110222 container.8
+item replace entity @s enderchest.26 from block 10110222 5 10110222 container.1
 
 execute if score #ACCESS_trident jkbw.mem matches 1 run item replace entity @s enderchest.1 from block 10110216 5 10110222 container.2
 execute if score #ACCESS_tipped_arrow jkbw.mem matches 1 run item replace entity @s enderchest.2 from block 10110216 5 10110222 container.4

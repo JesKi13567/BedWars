@@ -89,6 +89,7 @@ scoreboard players operation #XPres11 jkbw.mem = #res11 jkbw.mem
 scoreboard players operation #XPres21 jkbw.mem = #res21 jkbw.mem
 scoreboard players operation #XPres31 jkbw.mem = #res31 jkbw.mem
 scoreboard players operation #XPres41 jkbw.mem = #res41 jkbw.mem
+scoreboard players operation #XPknockback jkbw.mem = #knockback jkbw.mem
 
 scoreboard players operation #XPwool jkbw.mem *= #XPiron_ingot jkbw.mem
 scoreboard players operation #XPterracotta jkbw.mem *= #XPiron_ingot jkbw.mem
@@ -180,5 +181,6 @@ scoreboard players operation #XPres11 jkbw.mem *= #XPdiamond jkbw.mem
 scoreboard players operation #XPres21 jkbw.mem *= #XPdiamond jkbw.mem
 scoreboard players operation #XPres31 jkbw.mem *= #XPdiamond jkbw.mem
 scoreboard players operation #XPres41 jkbw.mem *= #XPdiamond jkbw.mem
+scoreboard players operation #XPknockback jkbw.mem *= #XPdiamond jkbw.mem
 
 function jkbw:load/settings/menu/shop/refresh

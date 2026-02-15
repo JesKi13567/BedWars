@@ -95,6 +95,7 @@ scoreboard players set #res11 jkbw.mem 2
 scoreboard players set #res21 jkbw.mem 4
 scoreboard players set #res31 jkbw.mem 6
 scoreboard players set #res41 jkbw.mem 8
+scoreboard players set #knockback jkbw.mem 5
 
 scoreboard players set #XPiron_ingot jkbw.mem 1
 scoreboard players set #XPgold_ingot jkbw.mem 10

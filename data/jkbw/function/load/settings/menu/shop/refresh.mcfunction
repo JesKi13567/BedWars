@@ -14,7 +14,6 @@ summon text_display 10110209 2.25 10110222.9 {Tags: ["jkbw", "jkbw_show", "jkbw_
 summon text_display 10110216 2 10110222.9 {Tags: ["jkbw", "jkbw_show", "jkbw_cannot_kill"], text: ["", {storage: "jk:bw", nbt: "txt.control_panel.container_chunk.p1", color: "gold"}, {translate: "block.minecraft.shulker_box"}, {storage: "jk:bw", nbt: "txt.control_panel.container_chunk.p2", color: "gold"}, "\n", {storage: "jk:bw", nbt: "txt.control_panel.container_chunk.p1", color: "gold"}, {translate: "block.minecraft.pink_shulker_box", color: "light_purple"}, {storage: "jk:bw", nbt: "txt.control_panel.container_chunk.p3", color: "gold"}], brightness: {block: 15, sky: 15}, line_width: 1000, Rotation: [180f, 0f]}
 
 summon text_display 10110222 1 10110222 {Tags: ["jkbw", "jkbw_txt", "jkbw_cannot_kill"], view_range: 0}
-summon text_display 10110222 1 10110222 {Tags: ["jkbw", "jkbw_txt_shop", "jkbw_cannot_kill"], view_range: 0}
 
 # 盒子
 function jkbw:load/settings/menu/shop/refresh/0
@@ -25,6 +24,7 @@ function jkbw:load/settings/menu/shop/refresh/4
 function jkbw:load/settings/menu/shop/refresh/5
 function jkbw:load/settings/menu/shop/refresh/6
 function jkbw:load/settings/menu/shop/refresh/7
+function jkbw:load/settings/menu/shop/refresh/8
 
 function jkbw:load/settings/menu/shop/refresh/_1
 function jkbw:load/settings/menu/shop/refresh/_2

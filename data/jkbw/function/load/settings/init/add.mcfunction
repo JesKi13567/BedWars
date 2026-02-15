@@ -17,6 +17,7 @@ scoreboard objectives add jkbw.Team.healing dummy "队伍治愈池解锁"
 scoreboard objectives add jkbw.Team.protect dummy "队伍保护附魔等级"
 scoreboard objectives add jkbw.Team.res dummy "队伍资源点等级"
 scoreboard objectives add jkbw.Team.sharpness dummy "队伍锋利附魔解锁"
+scoreboard objectives add jkbw.Team.knockback dummy "队伍击退附魔解锁"
 
 # 玩家记分板
 scoreboard objectives add jkbw.Player.Hp health "♥"

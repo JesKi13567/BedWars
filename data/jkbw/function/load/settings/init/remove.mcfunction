@@ -17,6 +17,7 @@ scoreboard objectives remove jkbw.Team.healing
 scoreboard objectives remove jkbw.Team.protect
 scoreboard objectives remove jkbw.Team.res
 scoreboard objectives remove jkbw.Team.sharpness
+scoreboard objectives remove jkbw.Team.knockback
 scoreboard objectives remove jkbw.Player.Hp
 scoreboard objectives remove jkbw.Player.ArmorLevels
 scoreboard objectives remove jkbw.Player.Beds
