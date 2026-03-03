@@ -14,6 +14,6 @@
     }
   },
   "rewards": {
-    "function": "jkbw:play/hurt/sub/5_creeper"
+    "function": "jkbw:state/1/hurt/type/5_creeper"
   }
 }

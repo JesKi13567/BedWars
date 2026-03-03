@@ -1,8 +1,0 @@
-$function jkbw:load/settings/menu/worldspawn/forceload with storage jk:bw Map.points.$(id).team.red.$(type)
-$function jkbw:load/settings/menu/worldspawn/forceload with storage jk:bw Map.points.$(id).team.blue.$(type)
-$execute if score #teams jkbw.mem matches 3.. run function jkbw:load/settings/menu/worldspawn/forceload with storage jk:bw Map.points.$(id).team.green.$(type)
-$execute if score #teams jkbw.mem matches 4.. run function jkbw:load/settings/menu/worldspawn/forceload with storage jk:bw Map.points.$(id).team.yellow.$(type)
-$execute if score #teams jkbw.mem matches 5.. run function jkbw:load/settings/menu/worldspawn/forceload with storage jk:bw Map.points.$(id).team.aqua.$(type)
-$execute if score #teams jkbw.mem matches 6.. run function jkbw:load/settings/menu/worldspawn/forceload with storage jk:bw Map.points.$(id).team.white.$(type)
-$execute if score #teams jkbw.mem matches 7.. run function jkbw:load/settings/menu/worldspawn/forceload with storage jk:bw Map.points.$(id).team.pink.$(type)
-$execute if score #teams jkbw.mem matches 8.. run function jkbw:load/settings/menu/worldspawn/forceload with storage jk:bw Map.points.$(id).team.gray.$(type)

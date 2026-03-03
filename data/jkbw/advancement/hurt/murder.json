@@ -15,6 +15,6 @@
         }
     },
     "rewards": {
-        "function": "jkbw:play/hurt/sub/murder"
+        "function": "jkbw:state/1/hurt/type/murder"
     }
 }

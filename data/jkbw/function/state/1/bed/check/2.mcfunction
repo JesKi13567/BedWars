@@ -1,0 +1,8 @@
+$execute if score $red jkbw.Bed.State matches 3 run team modify jkbw.npc_red suffix ["", {text: " → ", color: "gray"}, "$(red)"]
+$execute if score $blue jkbw.Bed.State matches 3 run team modify jkbw.npc_blue suffix ["", {text: " → ", color: "gray"}, "$(blue)"]
+$execute if score #teams jkbw.mem matches 3.. if score $green jkbw.Bed.State matches 3 run team modify jkbw.npc_green suffix ["", {text: " → ", color: "gray"}, "$(green)"]
+$execute if score #teams jkbw.mem matches 4.. if score $yellow jkbw.Bed.State matches 3 run team modify jkbw.npc_yellow suffix ["", {text: " → ", color: "gray"}, "$(yellow)"]
+$execute if score #teams jkbw.mem matches 5.. if score $cyan jkbw.Bed.State matches 3 run team modify jkbw.npc_cyan suffix ["", {text: " → ", color: "gray"}, "$(cyan)"]
+$execute if score #teams jkbw.mem matches 6.. if score $white jkbw.Bed.State matches 3 run team modify jkbw.npc_white suffix ["", {text: " → ", color: "gray"}, "$(white)"]
+$execute if score #teams jkbw.mem matches 7.. if score $pink jkbw.Bed.State matches 3 run team modify jkbw.npc_pink suffix ["", {text: " → ", color: "gray"}, "$(pink)"]
+$execute if score #teams jkbw.mem matches 8.. if score $gray jkbw.Bed.State matches 3 run team modify jkbw.npc_gray suffix ["", {text: " → ", color: "gray"}, "$(gray)"]

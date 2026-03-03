@@ -1,1 +1,0 @@
-$data modify storage jk:bw Map.points.$(id).res_g.$(res).count set value $(count)

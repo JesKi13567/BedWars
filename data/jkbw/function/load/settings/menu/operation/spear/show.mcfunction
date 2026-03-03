@@ -1,4 +1,0 @@
-execute if score #ENABLE_spear jkbw.mem matches 0 run data modify entity @e[type=text_display, tag=jkbw_txt, limit=1] text set value [{text: "[", color: "red", italic: false}, {storage: "jk:bw", nbt: "txt.global.item.spear"}, {storage: "jk:bw", nbt: "txt.global.char.colon"}, {storage: "jk:bw", nbt: "txt.global.bool.disabled"}, "]"]
-execute if score #ENABLE_spear jkbw.mem matches 1 run data modify entity @e[type=text_display, tag=jkbw_txt, limit=1] text set value [{text: "[", color: "green", italic: false}, {storage: "jk:bw", nbt: "txt.global.item.spear"}, {storage: "jk:bw", nbt: "txt.global.char.colon"}, {storage: "jk:bw", nbt: "txt.global.bool.enabled"}, "]"]
-summon marker 10110222 1 10110222 {Tags: ["jkbw", "jkbw_enable_item", "jkbw_enable_spear"]}
-data modify entity @e[type=marker, limit=1, tag=jkbw_enable_spear] CustomName set from entity @e[type=text_display, tag=jkbw_txt, limit=1] text

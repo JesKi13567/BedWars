@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "jkbw:play/hurt/sub/do"
+    "function": "jkbw:state/1/hurt/type/do"
   }
 }

@@ -1,0 +1,4 @@
+scoreboard players add #bed_type jkbw.mem 1
+execute if score #bed_type jkbw.mem matches 3.. run scoreboard players set #bed_type jkbw.mem 0
+
+function jkbw:state/0/button/bed_type/show

@@ -20,6 +20,6 @@
     }
   },
   "rewards": {
-    "function": "jkbw:play/hurt/sub/6_arrow"
+    "function": "jkbw:state/1/hurt/type/6_arrow"
   }
 }

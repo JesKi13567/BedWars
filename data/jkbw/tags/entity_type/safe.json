@@ -4,7 +4,6 @@
         "item_display",
         "text_display",
         "block_display",
-        "interaction",
-        "firework_rocket"
+        "interaction"
     ]
 }

@@ -1,9 +1,0 @@
-# 8队 8人
-execute if score #team_red jkbw.mem matches 9.. as @r[gamemode=adventure] if items entity @s armor.chest leather_chestplate[custom_data={jkbw: ["team_color", "red"]}] run function jkbw:play/ready/button/team_distribute/cannot
-execute if score #team_blue jkbw.mem matches 9.. as @r[gamemode=adventure] if items entity @s armor.chest leather_chestplate[custom_data={jkbw: ["team_color", "blue"]}] run function jkbw:play/ready/button/team_distribute/cannot
-execute if score #team_green jkbw.mem matches 9.. as @r[gamemode=adventure] if items entity @s armor.chest leather_chestplate[custom_data={jkbw: ["team_color", "green"]}] run function jkbw:play/ready/button/team_distribute/cannot
-execute if score #team_yellow jkbw.mem matches 9.. as @r[gamemode=adventure] if items entity @s armor.chest leather_chestplate[custom_data={jkbw: ["team_color", "yellow"]}] run function jkbw:play/ready/button/team_distribute/cannot
-execute if score #team_cyan jkbw.mem matches 9.. as @r[gamemode=adventure] if items entity @s armor.chest leather_chestplate[custom_data={jkbw: ["team_color", "cyan"]}] run function jkbw:play/ready/button/team_distribute/cannot
-execute if score #team_white jkbw.mem matches 9.. as @r[gamemode=adventure] if items entity @s armor.chest leather_chestplate[custom_data={jkbw: ["team_color", "white"]}] run function jkbw:play/ready/button/team_distribute/cannot
-execute if score #team_pink jkbw.mem matches 9.. as @r[gamemode=adventure] if items entity @s armor.chest leather_chestplate[custom_data={jkbw: ["team_color", "pink"]}] run function jkbw:play/ready/button/team_distribute/cannot
-execute if score #team_gray jkbw.mem matches 9.. as @r[gamemode=adventure] if items entity @s armor.chest leather_chestplate[custom_data={jkbw: ["team_color", "gray"]}] run function jkbw:play/ready/button/team_distribute/cannot
