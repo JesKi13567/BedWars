@@ -1,3 +1,4 @@
+function jkbw:state/1/shop/gui/blank
 # 团队陷阱
 item replace entity @s enderchest.0 from block 10110214 5 10110222 container.19
 item replace entity @s enderchest.1 from block 10110214 5 10110222 container.0
@@ -25,4 +26,11 @@ item replace entity @s enderchest.22 from block 10110214 5 10110222 container.21
 item replace entity @s enderchest.23 from block 10110214 5 10110222 container.22
 item replace entity @s enderchest.24 from block 10110214 5 10110222 container.19
 item replace entity @s enderchest.25 from block 10110214 5 10110222 container.19
-item replace entity @s enderchest.26 from block 10110222 5 10110222 container.1
+execute as @s[team=jkbw.red] run function jkbw:state/1/shop/real/team/trap/show {team: 'red'}
+execute as @s[team=jkbw.blue] run function jkbw:state/1/shop/real/team/trap/show {team: 'blue'}
+execute if score #teams jkbw.mem matches 3.. as @s[team=jkbw.green] run function jkbw:state/1/shop/real/team/trap/show {team: 'green'}
+execute if score #teams jkbw.mem matches 4.. as @s[team=jkbw.yellow] run function jkbw:state/1/shop/real/team/trap/show {team: 'yellow'}
+execute if score #teams jkbw.mem matches 5.. as @s[team=jkbw.cyan] run function jkbw:state/1/shop/real/team/trap/show {team: 'cyan'}
+execute if score #teams jkbw.mem matches 6.. as @s[team=jkbw.white] run function jkbw:state/1/shop/real/team/trap/show {team: 'white'}
+execute if score #teams jkbw.mem matches 7.. as @s[team=jkbw.pink] run function jkbw:state/1/shop/real/team/trap/show {team: 'pink'}
+execute if score #teams jkbw.mem matches 8.. as @s[team=jkbw.gray] run function jkbw:state/1/shop/real/team/trap/show {team: 'gray'}

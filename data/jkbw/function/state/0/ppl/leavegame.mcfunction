@@ -19,5 +19,7 @@ attribute @s safe_fall_distance base reset
 attribute @s scale base reset
 attribute @s block_interaction_range base reset
 attribute @s entity_interaction_range base reset
+attribute @s attack_damage base reset
+attribute @s attack_knockback base reset
 execute if score #tutorial jkbw.mem matches 1.. run gamemode adventure @s
 function jkbw:state/0/panel/contents/tp/back with storage jk:bw Map.cur

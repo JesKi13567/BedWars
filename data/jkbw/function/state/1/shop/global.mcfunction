@@ -33,8 +33,5 @@ execute if score #res_mode jkbw.mem matches 0 run function jkbw:state/1/shop/gui
 execute if score #res_mode jkbw.mem matches 1 run function jkbw:state/1/shop/gui/xp
 execute if score #res_mode jkbw.mem matches 2 run function jkbw:state/1/shop/gui/urf
 
-# 队伍陷阱展示
-execute if score #res_mode jkbw.mem matches 0..1 as @s[scores={jkbw.Player.Page=6}] run function jkbw:state/1/shop/real/team/trap_show
-
 # 真·末影箱
 execute as @s[scores={jkbw.Player.Page=-1}] run function jkbw:state/1/shop/gui/chest/global

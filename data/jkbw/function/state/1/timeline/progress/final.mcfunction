@@ -1,6 +1,6 @@
 scoreboard players set #time_state jkbw.mem 6
-scoreboard players operation #time_show jkbw.mem = #time_end jkbw.mem
-execute store result bossbar jkbw:game_progress max run scoreboard players get #time_end jkbw.mem
+scoreboard players operation #time_show jkbw.mem = #TIME.END jkbw.mem
+execute store result bossbar jkbw:game_progress max run scoreboard players get #TIME.END jkbw.mem
 playsound entity.ender_dragon.growl player @a 10110223 100 10110223 1000000000
 title @a title {storage: "jk:bw", nbt: "txt.play.event.death_fight.name", color: "red", bold: true}
 title @a times 1s 3s 1s

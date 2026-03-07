@@ -1,3 +1,4 @@
+function jkbw:state/1/shop/gui/blank
 # 团队升级
 item replace entity @s enderchest.0 from block 10110217 5 10110222 container.26
 item replace entity @s enderchest.1 from block 10110217 5 10110222 container.26
@@ -14,7 +15,8 @@ execute unless score #solo_mode jkbw.mem matches 1 run item replace entity @s en
 execute if score #solo_mode jkbw.mem matches 1 run item replace entity @s enderchest.11 from block 10110217 5 10110222 container.2
 execute unless score #solo_mode jkbw.mem matches 1 run item replace entity @s enderchest.12 from block 10110217 5 10110222 container.3
 execute if score #solo_mode jkbw.mem matches 1 run item replace entity @s enderchest.12 from block 10110217 5 10110222 container.4
-item replace entity @s enderchest.13 from block 10110217 5 10110222 container.22
+execute unless score #solo_mode jkbw.mem matches 1 run item replace entity @s enderchest.13 from block 10110217 5 10110222 container.22
+execute if score #solo_mode jkbw.mem matches 1 run item replace entity @s enderchest.13 from block 10110217 5 10110222 container.23
 execute unless score #solo_mode jkbw.mem matches 1 run item replace entity @s enderchest.14 from block 10110217 5 10110222 container.5
 execute if score #solo_mode jkbw.mem matches 1 run item replace entity @s enderchest.14 from block 10110217 5 10110222 container.6
 execute unless score #solo_mode jkbw.mem matches 1 run item replace entity @s enderchest.15 from block 10110217 5 10110222 container.7
@@ -30,4 +32,3 @@ item replace entity @s enderchest.22 from block 10110217 5 10110222 container.26
 item replace entity @s enderchest.23 from block 10110217 5 10110222 container.26
 item replace entity @s enderchest.24 from block 10110217 5 10110222 container.26
 item replace entity @s enderchest.25 from block 10110217 5 10110222 container.26
-item replace entity @s enderchest.26 from block 10110222 5 10110222 container.1

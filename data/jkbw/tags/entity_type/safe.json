@@ -4,6 +4,7 @@
         "item_display",
         "text_display",
         "block_display",
-        "interaction"
+        "interaction",
+        "player"
     ]
 }

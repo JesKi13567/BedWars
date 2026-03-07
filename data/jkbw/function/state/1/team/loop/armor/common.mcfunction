@@ -4,6 +4,7 @@ $execute if score $$(team) jkbw.Team.protect matches 1 run function jkbw:state/1
 $execute if score $$(team) jkbw.Team.protect matches 2 run function jkbw:state/1/team/loop/armor/1 {team: '$(team)', lvl: 2, color: $(color)}
 $execute if score $$(team) jkbw.Team.protect matches 3 run function jkbw:state/1/team/loop/armor/1 {team: '$(team)', lvl: 3, color: $(color)}
 $execute if score $$(team) jkbw.Team.protect matches 4 run function jkbw:state/1/team/loop/armor/1 {team: '$(team)', lvl: 4, color: $(color)}
+$execute if score $$(team) jkbw.Team.protect matches 5 run function jkbw:state/1/team/loop/armor/1 {team: '$(team)', lvl: 5, color: $(color)}
 
 ## 头饰
 # 护甲值

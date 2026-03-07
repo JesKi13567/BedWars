@@ -2,12 +2,12 @@
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "stone_sword"]}] run function jkbw:state/1/shop/real/item/weapon/sword {type_id: 1, type: sword, material: stone, res: iron_ingot}
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "iron_sword"]}] run function jkbw:state/1/shop/real/item/weapon/sword {type_id: 1, type: sword, material: iron, res: gold_ingot}
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "diamond_sword"]}] run function jkbw:state/1/shop/real/item/weapon/sword {type_id: 1, type: sword, material: diamond, res: emerald}
-execute if score #ENABLE_spear jkbw.mem matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "stone_spear"]}] run function jkbw:state/1/shop/real/item/weapon/sword {type_id: 2, type: spear, material: stone, res: iron_ingot}
-execute if score #ENABLE_spear jkbw.mem matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "iron_spear"]}] run function jkbw:state/1/shop/real/item/weapon/sword {type_id: 2, type: spear, material: iron, res: gold_ingot}
-execute if score #ENABLE_spear jkbw.mem matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "diamond_spear"]}] run function jkbw:state/1/shop/real/item/weapon/sword {type_id: 2, type: spear, material: diamond, res: emerald}
+execute if score #ENABLE.spear jkbw.mem matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "stone_spear"]}] run function jkbw:state/1/shop/real/item/weapon/sword {type_id: 2, type: spear, material: stone, res: iron_ingot}
+execute if score #ENABLE.spear jkbw.mem matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "iron_spear"]}] run function jkbw:state/1/shop/real/item/weapon/sword {type_id: 2, type: spear, material: iron, res: gold_ingot}
+execute if score #ENABLE.spear jkbw.mem matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "diamond_spear"]}] run function jkbw:state/1/shop/real/item/weapon/sword {type_id: 2, type: spear, material: diamond, res: emerald}
 
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "stick"]}] run function jkbw:state/1/shop/real/item/weapon/common {id: 1, item: stick}
-execute if score #ENABLE_shield jkbw.mem matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "shield"]}] run function jkbw:state/1/shop/real/item/weapon/common {id: 2, item: shield}
+execute if score #ENABLE.shield jkbw.mem matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "shield"]}] run function jkbw:state/1/shop/real/item/weapon/common {id: 2, item: shield}
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "arrow"]}] run function jkbw:state/1/shop/real/item/weapon/common {id: 3, item: arrow}
 
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "bow1"]}] run function jkbw:state/1/shop/real/item/weapon/bow {id: 1, res: gold_ingot}

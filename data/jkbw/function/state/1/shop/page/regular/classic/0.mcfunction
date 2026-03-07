@@ -8,4 +8,5 @@ execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "gui",
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "gui", "5"]}] run scoreboard players set @s jkbw.Player.Page 5
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "gui", "6"]}] run scoreboard players set @s jkbw.Player.Page 6
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "gui", "-9"]}] run scoreboard players set @s jkbw.Player.Page 7
+execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "gui", "-8"]}] run scoreboard players set @s jkbw.Player.Page 8
 tag @s[scores={jkbw.Player.Page=-1}] add jkbw_own_chest

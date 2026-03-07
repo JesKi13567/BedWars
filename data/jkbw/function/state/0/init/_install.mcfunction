@@ -38,27 +38,35 @@ scoreboard players set #res_rate.num jkbw.mem 10
 scoreboard players set #res_rate.order jkbw.mem 1
 scoreboard players set #res_rate.int jkbw.mem 1
 scoreboard players set #res_rate.dec jkbw.mem 0
-# time_update  time_bed  time_fight  time_end
+#   UPDATE       BED       FIGHT       END
 # 资源升级间隔   床自毁   死斗模式间隔    结束
-scoreboard players set #time_update jkbw.mem 300
-scoreboard players set #time_bed jkbw.mem 600
-scoreboard players set #time_fight jkbw.mem 600
-scoreboard players set #time_end jkbw.mem 600
+scoreboard players set #TIME.UPDATE jkbw.mem 300
+scoreboard players set #TIME.BED jkbw.mem 600
+scoreboard players set #TIME.FIGHT jkbw.mem 600
+scoreboard players set #TIME.END jkbw.mem 600
 # 全局资源点1级生成时间与升级减少时间，区分是否无限火力
-scoreboard players set #spawn_diamond jkbw.mem 30
-scoreboard players set #minus_diamond jkbw.mem 5
-scoreboard players set #spawn_diamond_urf jkbw.mem 15
-scoreboard players set #minus_diamond_urf jkbw.mem 1
-scoreboard players set #spawn_emerald jkbw.mem 55
-scoreboard players set #minus_emerald jkbw.mem 5
-scoreboard players set #spawn_emerald_urf jkbw.mem 5
-scoreboard players set #minus_emerald_urf jkbw.mem 1
-# 实验模式4的时间间隔
-scoreboard players set #EXP_MODE_4_SHOP_INTERVAL jkbw.mem 5
+scoreboard players set #SPAWN.diamond jkbw.mem 30
+scoreboard players set #MINUS.diamond jkbw.mem 5
+scoreboard players set #SPAWN.diamond.URF jkbw.mem 15
+scoreboard players set #MINUS.diamond.URF jkbw.mem 1
+scoreboard players set #SPAWN.emerald jkbw.mem 55
+scoreboard players set #MINUS.emerald jkbw.mem 5
+scoreboard players set #SPAWN.emerald.URF jkbw.mem 5
+scoreboard players set #MINUS.emerald.URF jkbw.mem 1
+# 被迫零元购的时间间隔
+scoreboard players set #FFL_INTERVAL jkbw.mem 5
 # 盾模式 0 禁用 1 启用 2 附剑上
-scoreboard players set #ENABLE_shield jkbw.mem 1
+scoreboard players set #ENABLE.shield jkbw.mem 1
 # 矛模式 0 禁用 1 启用
-scoreboard players set #ENABLE_spear jkbw.mem 0
+scoreboard players set #ENABLE.spear jkbw.mem 0
+# 团队升级最大次数
+scoreboard players set #TEAM_UPDATE.knockback jkbw.mem 0
+scoreboard players set #TEAM_UPDATE.sharpness jkbw.mem 1
+scoreboard players set #TEAM_UPDATE.dragon jkbw.mem 1
+scoreboard players set #TEAM_UPDATE.haste jkbw.mem 2
+scoreboard players set #TEAM_UPDATE.healing jkbw.mem 1
+scoreboard players set #TEAM_UPDATE.protect jkbw.mem 4
+scoreboard players set #TEAM_UPDATE.res jkbw.mem 4
 # 商品个数
 scoreboard players set #shop_items_0 jkbw.mem 27
 scoreboard players set #shop_items_2 jkbw.mem 34

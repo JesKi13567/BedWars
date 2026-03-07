@@ -1,0 +1,5 @@
+# 按类型
+$execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "team", "is_trap"]}] run function jkbw:state/1/shop/real/team/trap/1 {team: '$(team)', item: 1}
+$execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "team", "defend"]}] run function jkbw:state/1/shop/real/team/trap/1 {team: '$(team)', item: 2}
+$execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "team", "alarm"]}] run function jkbw:state/1/shop/real/team/trap/1 {team: '$(team)', item: 3}
+$execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "team", "mining_fatigue"]}] run function jkbw:state/1/shop/real/team/trap/1 {team: '$(team)', item: 4}

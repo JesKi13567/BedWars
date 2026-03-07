@@ -1,7 +1,6 @@
 # 仅 确认是否安装、选择语言、经典->经验资源分数按比例转换 会弹出提示框
 scoreboard players enable @s jkbw.Admin.Trigger
 
-# 面板
 execute if score @s jkbw.Admin.Trigger matches 98 run function jkbw:state/1/timeline/end/stop
 execute if score @s jkbw.Admin.Trigger matches 99 run function jkbw:state/1/timeline/start/real
 
@@ -33,3 +32,5 @@ execute if score @s jkbw.Admin.Trigger matches 253 run function jkbw:state/0/sho
 execute if score @s jkbw.Admin.Trigger matches 254 run function jkbw:state/0/shop/set/6/set {x: 'ice_bridge'}
 execute if score @s jkbw.Admin.Trigger matches 255 run function jkbw:state/0/shop/set/6/set {x: 'mace'}
 execute if score @s jkbw.Admin.Trigger matches 256 run function jkbw:state/0/shop/set/6/set {x: 'the_mirror'}
+
+execute if score @s jkbw.Admin.Trigger matches 310.. run function jkbw:state/0/shop/set/5/tier

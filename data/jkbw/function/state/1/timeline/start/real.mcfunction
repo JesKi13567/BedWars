@@ -22,49 +22,55 @@ scoreboard players reset #shop_random_countdown jkbw.mem
 scoreboard players reset #solo_mode jkbw.mem
 
 # 无单挑价格的团队升级
-scoreboard players operation #dragon1 jkbw.mem = #dragon jkbw.mem
-scoreboard players operation #XPdragon1 jkbw.mem = #XPdragon jkbw.mem
-scoreboard players operation #knockback1 jkbw.mem = #knockback jkbw.mem
-scoreboard players operation #XPknockback1 jkbw.mem = #XPknockback jkbw.mem
+scoreboard players operation #dragon.1.solo jkbw.mem = #dragon.1 jkbw.mem
+scoreboard players operation #dragon.2.solo jkbw.mem = #dragon.2 jkbw.mem
+scoreboard players operation #dragon.3.solo jkbw.mem = #dragon.3 jkbw.mem
+scoreboard players operation #dragon.4.solo jkbw.mem = #dragon.4 jkbw.mem
+scoreboard players operation #dragon.5.solo jkbw.mem = #dragon.5 jkbw.mem
+scoreboard players operation #XPdragon.1.solo jkbw.mem = #XPdragon.1 jkbw.mem
+scoreboard players operation #XPdragon.2.solo jkbw.mem = #XPdragon.2 jkbw.mem
+scoreboard players operation #XPdragon.3.solo jkbw.mem = #XPdragon.3 jkbw.mem
+scoreboard players operation #XPdragon.4.solo jkbw.mem = #XPdragon.4 jkbw.mem
+scoreboard players operation #XPdragon.5.solo jkbw.mem = #XPdragon.5 jkbw.mem
 
 # 资源产生时间
-execute unless score #spawn_diamond jkbw.mem matches 10..100 run scoreboard players set #spawn_diamond jkbw.mem 30
-scoreboard players operation #spawn_diamond jkbw.Temp = #spawn_diamond jkbw.mem
-scoreboard players operation #spawn_diamond jkbw.Temp /= #2 jkbw.mem
-execute unless score #minus_diamond jkbw.mem < #spawn_diamond jkbw.Temp run scoreboard players set #minus_diamond jkbw.mem 5
-execute unless score #spawn_diamond_urf jkbw.mem matches 10..100 run scoreboard players set #spawn_diamond_urf jkbw.mem 15
-scoreboard players operation #spawn_diamond_urf jkbw.Temp = #spawn_diamond_urf jkbw.mem
-scoreboard players operation #spawn_diamond_urf jkbw.Temp /= #2 jkbw.mem
-execute unless score #minus_diamond_urf jkbw.mem < #spawn_diamond_urf jkbw.Temp run scoreboard players set #minus_diamond_urf jkbw.mem 1
-execute unless score #spawn_emerald jkbw.mem matches 10..100 run scoreboard players set #spawn_emerald jkbw.mem 55
-scoreboard players operation #spawn_emerald jkbw.Temp = #spawn_emerald jkbw.mem
-scoreboard players operation #spawn_emerald jkbw.Temp /= #2 jkbw.mem
-execute unless score #minus_emerald jkbw.mem < #spawn_emerald jkbw.Temp run scoreboard players set #minus_emerald jkbw.mem 5
-execute unless score #spawn_emerald_urf jkbw.mem matches 10..100 run scoreboard players set #spawn_emerald_urf jkbw.mem 5
-scoreboard players operation #spawn_emerald_urf jkbw.Temp = #spawn_emerald_urf jkbw.mem
-scoreboard players operation #spawn_emerald_urf jkbw.Temp /= #2 jkbw.mem
-execute unless score #minus_emerald_urf jkbw.mem < #spawn_emerald_urf jkbw.Temp run scoreboard players set #minus_emerald_urf jkbw.mem 1
+execute unless score #SPAWN.diamond jkbw.mem matches 10..100 run scoreboard players set #SPAWN.diamond jkbw.mem 30
+scoreboard players operation #SPAWN.diamond jkbw.Temp = #SPAWN.diamond jkbw.mem
+scoreboard players operation #SPAWN.diamond jkbw.Temp /= #2 jkbw.mem
+execute unless score #MINUS.diamond jkbw.mem < #SPAWN.diamond jkbw.Temp run scoreboard players set #MINUS.diamond jkbw.mem 5
+execute unless score #SPAWN.diamond.URF jkbw.mem matches 10..100 run scoreboard players set #SPAWN.diamond.URF jkbw.mem 15
+scoreboard players operation #SPAWN.diamond.URF jkbw.Temp = #SPAWN.diamond.URF jkbw.mem
+scoreboard players operation #SPAWN.diamond.URF jkbw.Temp /= #2 jkbw.mem
+execute unless score #MINUS.diamond.URF jkbw.mem < #SPAWN.diamond.URF jkbw.Temp run scoreboard players set #MINUS.diamond.URF jkbw.mem 1
+execute unless score #SPAWN.emerald jkbw.mem matches 10..100 run scoreboard players set #SPAWN.emerald jkbw.mem 55
+scoreboard players operation #SPAWN.emerald jkbw.Temp = #SPAWN.emerald jkbw.mem
+scoreboard players operation #SPAWN.emerald jkbw.Temp /= #2 jkbw.mem
+execute unless score #MINUS.emerald jkbw.mem < #SPAWN.emerald jkbw.Temp run scoreboard players set #MINUS.emerald jkbw.mem 5
+execute unless score #SPAWN.emerald.URF jkbw.mem matches 10..100 run scoreboard players set #SPAWN.emerald.URF jkbw.mem 5
+scoreboard players operation #SPAWN.emerald.URF jkbw.Temp = #SPAWN.emerald.URF jkbw.mem
+scoreboard players operation #SPAWN.emerald.URF jkbw.Temp /= #2 jkbw.mem
+execute unless score #MINUS.emerald.URF jkbw.mem < #SPAWN.emerald.URF jkbw.Temp run scoreboard players set #MINUS.emerald.URF jkbw.mem 1
 
 # 全局时间计时
-execute unless score #time_update jkbw.mem matches 10..1000 run scoreboard players set #time_update jkbw.mem 300
-execute unless score #time_bed jkbw.mem matches 10..1000 run scoreboard players set #time_bed jkbw.mem 600
-execute unless score #time_fight jkbw.mem matches 10..1000 run scoreboard players set #time_fight jkbw.mem 600
-execute unless score #time_end jkbw.mem matches 10..1000 run scoreboard players set #time_end jkbw.mem 600
-execute unless score #EXP_MODE_4_SHOP_INTERVAL jkbw.mem matches 1..30 run scoreboard players set #EXP_MODE_4_SHOP_INTERVAL jkbw.mem 5
+execute unless score #TIME.UPDATE jkbw.mem matches 10..1000 run scoreboard players set #TIME.UPDATE jkbw.mem 300
+execute unless score #TIME.BED jkbw.mem matches 10..1000 run scoreboard players set #TIME.BED jkbw.mem 600
+execute unless score #TIME.FIGHT jkbw.mem matches 10..1000 run scoreboard players set #TIME.FIGHT jkbw.mem 600
+execute unless score #TIME.END jkbw.mem matches 10..1000 run scoreboard players set #TIME.END jkbw.mem 600
+execute unless score #FFL_INTERVAL jkbw.mem matches 1..30 run scoreboard players set #FFL_INTERVAL jkbw.mem 5
 
-scoreboard players operation #time jkbw.mem = #time_end jkbw.mem
+scoreboard players operation #time jkbw.mem = #TIME.END jkbw.mem
 scoreboard players operation #time6 jkbw.mem = #time jkbw.mem
-scoreboard players operation #time jkbw.mem += #time_fight jkbw.mem
+scoreboard players operation #time jkbw.mem += #TIME.FIGHT jkbw.mem
 scoreboard players operation #time5 jkbw.mem = #time jkbw.mem
-scoreboard players operation #time jkbw.mem += #time_bed jkbw.mem
+scoreboard players operation #time jkbw.mem += #TIME.BED jkbw.mem
 scoreboard players operation #time4 jkbw.mem = #time jkbw.mem
-scoreboard players operation #time jkbw.mem += #time_update jkbw.mem
+scoreboard players operation #time jkbw.mem += #TIME.UPDATE jkbw.mem
 scoreboard players operation #time3 jkbw.mem = #time jkbw.mem
-scoreboard players operation #time jkbw.mem += #time_update jkbw.mem
+scoreboard players operation #time jkbw.mem += #TIME.UPDATE jkbw.mem
 scoreboard players operation #time2 jkbw.mem = #time jkbw.mem
-scoreboard players operation #time jkbw.mem += #time_update jkbw.mem
+scoreboard players operation #time jkbw.mem += #TIME.UPDATE jkbw.mem
 scoreboard players operation #time1 jkbw.mem = #time jkbw.mem
-scoreboard players operation #time jkbw.mem += #time_update jkbw.mem
+scoreboard players operation #time jkbw.mem += #TIME.UPDATE jkbw.mem
 scoreboard players operation #time0 jkbw.mem = #time jkbw.mem
 execute if score #exp_mode jkbw.mem matches 1 run scoreboard players operation #time jkbw.mem = #time4 jkbw.mem
 scoreboard players add #time jkbw.mem 1

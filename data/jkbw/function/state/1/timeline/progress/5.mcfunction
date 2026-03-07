@@ -1,6 +1,6 @@
 scoreboard players set #time_state jkbw.mem 5
-scoreboard players operation #time_show jkbw.mem = #time_fight jkbw.mem
-execute store result bossbar jkbw:game_progress max run scoreboard players get #time_fight jkbw.mem
+scoreboard players operation #time_show jkbw.mem = #TIME.FIGHT jkbw.mem
+execute store result bossbar jkbw:game_progress max run scoreboard players get #TIME.FIGHT jkbw.mem
 
 scoreboard players set $red jkbw.Bed.State 1
 scoreboard players set $blue jkbw.Bed.State 1

@@ -9,9 +9,9 @@ $tellraw @s[tag=!jkbw_buy_success] [{storage: "jk:bw", nbt: "txt.play.shop.buy.c
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-$execute unless score #ENABLE_shield jkbw.mem matches 2 run give @s[tag=jkbw_buy_success] $(material)_$(type)[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, enchantments={sharpness: $(sharpness)}]
-$execute if score #ENABLE_shield jkbw.mem matches 2 if score #2 jkbw.mem matches $(type_id) run give @s[tag=jkbw_buy_success] $(material)_$(type)[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, enchantments={sharpness: $(sharpness)}]
-$execute if score #ENABLE_shield jkbw.mem matches 2 if score #1 jkbw.mem matches $(type_id) run give @s[tag=jkbw_buy_success] $(material)_$(type)[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, enchantments={sharpness: $(sharpness)}, blocks_attacks={block_sound: {sound_id: "entity.player.hurt"}, damage_reductions: [{base: 1, factor: 0.5}], disable_cooldown_scale: 0}]
+$execute unless score #ENABLE.shield jkbw.mem matches 2 run give @s[tag=jkbw_buy_success] $(material)_$(type)[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, enchantments={sharpness: $(sharpness)}]
+$execute if score #ENABLE.shield jkbw.mem matches 2 if score #2 jkbw.mem matches $(type_id) run give @s[tag=jkbw_buy_success] $(material)_$(type)[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, enchantments={sharpness: $(sharpness)}]
+$execute if score #ENABLE.shield jkbw.mem matches 2 if score #1 jkbw.mem matches $(type_id) run give @s[tag=jkbw_buy_success] $(material)_$(type)[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, enchantments={sharpness: $(sharpness)}, blocks_attacks={block_sound: {sound_id: "entity.player.hurt"}, damage_reductions: [{base: 1, factor: 0.5}], disable_cooldown_scale: 0}]
 
 $tellraw @s[tag=jkbw_buy_success] [{storage: "jk:bw", nbt: "txt.play.shop.buy.success", color: "green"}, " ", {translate: "item.minecraft.$(material)_$(type)", color: "gold"}, {storage: "jk:bw", nbt: "txt.global.char.exclamation"}]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
