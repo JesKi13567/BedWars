@@ -105,7 +105,7 @@ item modify block 10110218 5 10110222 container.17 {function: "set_lore", entity
 
 #platform
 item modify block 10110218 5 10110222 container.18 {function: "set_name", entity: "this", name: \
-[{storage: "jk:bw", nbt: "txt.shop.item.platform.name", italic: false, color: "white"}]}
+[{storage: "jk:bw", nbt: "txt.shop.item.platform.name", italic: false, color: "gold"}]}
 item modify block 10110218 5 10110222 container.18 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", nbt: "txt.shop.item.platform.p0", italic: false, color: "yellow"}, {translate: "block.minecraft.slime_block", color: "white"}, {storage: "jk:bw", nbt: "txt.shop.item.platform.p1"}], \
 [{storage: "jk:bw", nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#platform", objective: "jkbw.mem"}, color: "gold"}, " ", {translate: "item.minecraft.gold_ingot", italic: false, color: "gold"}]]}
@@ -123,7 +123,7 @@ item modify block 10110218 5 10110222 container.20 {function: "set_lore", entity
 
 #XPplatform
 item modify block 10110218 5 10110222 container.21 {function: "set_name", entity: "this", name: \
-[{storage: "jk:bw", nbt: "txt.shop.item.platform.name", italic: false, color: "white"}]}
+[{storage: "jk:bw", nbt: "txt.shop.item.platform.name", italic: false, color: "gold"}]}
 item modify block 10110218 5 10110222 container.21 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", nbt: "txt.shop.item.platform.p0", italic: false, color: "yellow"}, {translate: "block.minecraft.slime_block", color: "white"}, {storage: "jk:bw", nbt: "txt.shop.item.platform.p1"}], \
 [{storage: "jk:bw", nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPplatform", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}

@@ -8,7 +8,7 @@ setblock 10110220 4 10110222 black_shulker_box[facing=north]{Items: [\
 {Slot: 6b, id: "compass", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "compass"]}}}, \
 {Slot: 7b, id: "ender_pearl", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "pearl"]}}}, \
 {Slot: 8b, id: "prismarine_shard", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "anti_arrow"]}}}, \
-{Slot: 9b, id: "fire_charge", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "fire_charge"]}}}, \
+{Slot: 9b, id: "fire_charge", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "fireball"]}}}, \
 {Slot: 10b, id: "egg", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "egg"]}}}, \
 {Slot: 11b, id: "golden_apple", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "apple"]}}}, \
 {Slot: 12b, id: "wind_charge", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "wind_charge"]}}}, \

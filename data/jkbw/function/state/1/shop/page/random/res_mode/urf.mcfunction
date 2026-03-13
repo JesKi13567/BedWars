@@ -52,16 +52,16 @@ execute as @s[scores={jkbw.Player.ShopRandom=50}] run function jkbw:state/1/shop
 execute as @s[scores={jkbw.Player.ShopRandom=51}] run function jkbw:state/1/shop/real/urf/potion {name: jump, desc: jump_boost, effect: strong_leaping}
 execute as @s[scores={jkbw.Player.ShopRandom=52}] run function jkbw:state/1/shop/real/urf/potion {name: strength, desc: strength, effect: strength}
 execute as @s[scores={jkbw.Player.ShopRandom=53}] run function jkbw:state/1/shop/real/urf/potion {name: regen, desc: regeneration, effect: regeneration}
-execute as @s[scores={jkbw.Player.ShopRandom=54}] run function jkbw:state/1/shop/real/urf/special/0 {name: tnt, id: 1}
-execute as @s[scores={jkbw.Player.ShopRandom=55}] run function jkbw:state/1/shop/real/urf/special/0 {name: fire_charge, id: 2}
+execute as @s[scores={jkbw.Player.ShopRandom=54}] run function jkbw:state/1/shop/real/urf/special/1 {name: tnt, id: 3}
+execute as @s[scores={jkbw.Player.ShopRandom=55}] run function jkbw:state/1/shop/real/urf/special/1 {name: fireball, id: 1}
 execute as @s[scores={jkbw.Player.ShopRandom=56}] run function jkbw:state/1/shop/real/urf/special/1 {name: platform, id: 1}
-execute as @s[scores={jkbw.Player.ShopRandom=57}] run function jkbw:state/1/shop/real/urf/special/1 {name: trap, id: 2}
-execute as @s[scores={jkbw.Player.ShopRandom=58}] run function jkbw:state/1/shop/real/urf/special/1 {name: wall, id: 3}
-execute as @s[scores={jkbw.Player.ShopRandom=59}] run function jkbw:state/1/shop/real/urf/special/1 {name: ice_walker, id: 4}
-execute as @s[scores={jkbw.Player.ShopRandom=60}] run function jkbw:state/1/shop/real/urf/special/1 {name: back_scroll, id: 5}
-execute as @s[scores={jkbw.Player.ShopRandom=61}] run function jkbw:state/1/shop/real/urf/special/1 {name: anti_arrow, id: 6}
-execute as @s[scores={jkbw.Player.ShopRandom=62}] run function jkbw:state/1/shop/real/urf/special/1 {name: egg, id: 7}
-execute as @s[scores={jkbw.Player.ShopRandom=63}] run function jkbw:state/1/shop/real/urf/special/1 {name: happy_ghast, id: 8}
+execute as @s[scores={jkbw.Player.ShopRandom=57}] run function jkbw:state/1/shop/real/urf/special/1 {name: trap, id: 1}
+execute as @s[scores={jkbw.Player.ShopRandom=58}] run function jkbw:state/1/shop/real/urf/special/1 {name: wall, id: 1}
+execute as @s[scores={jkbw.Player.ShopRandom=59}] run function jkbw:state/1/shop/real/urf/special/1 {name: ice_walker, id: 2}
+execute as @s[scores={jkbw.Player.ShopRandom=60}] run function jkbw:state/1/shop/real/urf/special/1 {name: back_scroll, id: 1}
+execute as @s[scores={jkbw.Player.ShopRandom=61}] run function jkbw:state/1/shop/real/urf/special/1 {name: anti_arrow, id: 1}
+execute as @s[scores={jkbw.Player.ShopRandom=62}] run function jkbw:state/1/shop/real/urf/special/1 {name: egg, id: 1}
+execute as @s[scores={jkbw.Player.ShopRandom=63}] run function jkbw:state/1/shop/real/urf/special/1 {name: happy_ghast, id: 1}
 execute as @s[scores={jkbw.Player.ShopRandom=64}] run function jkbw:state/1/shop/real/urf/special/2 {name: compass, item: compass}
 execute as @s[scores={jkbw.Player.ShopRandom=65}] run function jkbw:state/1/shop/real/urf/special/2 {name: pearl, item: ender_pearl}
 execute as @s[scores={jkbw.Player.ShopRandom=66}] run function jkbw:state/1/shop/real/urf/special/2 {name: pearl_blitz, item: ender_pearl}

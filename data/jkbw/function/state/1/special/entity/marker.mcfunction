@@ -18,4 +18,4 @@ execute as @s[tag=jkbw_ice_platform] run function jkbw:state/1/special/entity/ic
 execute as @s[tag=jkbw_aid_platform] run function jkbw:state/1/special/entity/platform/global
 
 # 火球
-execute as @s[tag=jkbw_fireball_marker] unless entity @n[type=fireball, distance=..2] run function jkbw:state/1/special/entity/explode/fireball/explode
+execute as @s[tag=jkbw_fireball_marker] unless entity @n[type=fireball, distance=..2] positioned ~ ~-1 ~ run function jkbw:state/1/special/entity/fireball/explode

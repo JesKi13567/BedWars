@@ -1,0 +1,42 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "raw_iron",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {
+                                "storage": "jk:bw",
+                                "nbt": "txt.shop.item.iron_golem.name",
+                                "color": "white",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "tooltip_display": {
+                                    "hidden_components": [
+                                        "can_break"
+                                    ]
+                                },
+                                "can_break": {
+                                    "blocks": "#jkbw:candestroy"
+                                },
+                                "consumable": {
+                                    "consume_seconds": 100000
+                                },
+                                "item_model": "iron_golem_spawn_egg"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

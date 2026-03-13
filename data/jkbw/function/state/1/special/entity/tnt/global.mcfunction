@@ -1,7 +1,7 @@
-execute unless score @s jkbw.mem matches -10.. run function jkbw:state/1/special/entity/explode/tnt/new
+execute unless score @s jkbw.mem matches -10.. run function jkbw:state/1/special/entity/tnt/new
 
 scoreboard players remove @s jkbw.mem 1
-execute as @s[scores={jkbw.mem=..0}] run function jkbw:state/1/special/entity/explode/tnt/explode
+execute as @s[scores={jkbw.mem=..0}] run function jkbw:state/1/special/entity/tnt/explode
 
 # 显示
 data modify entity @s[scores={jkbw.mem=60}] CustomName set value {text: "3s", color: "green"}

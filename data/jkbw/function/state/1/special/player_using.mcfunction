@@ -1,5 +1,5 @@
 # 火球
-$execute if items entity @s[scores={jkbw.Player.Use.CD.Fireball=0}] weapon.$(hand)hand fire_charge anchored eyes run function jkbw:state/1/special/entity/explode/fireball/trigger
+$execute if items entity @s[scores={jkbw.Player.Use.CD.Fireball=0}] weapon.$(hand)hand fire_charge anchored eyes run function jkbw:state/1/special/entity/fireball/trigger
 # 急救平台
 $execute if items entity @s[scores={jkbw.Player.Use.CD.Platform=1..}] weapon.$(hand)hand blaze_rod run title @s actionbar ["", {storage: "jk:bw", nbt: "txt.shop.item.platform.name", color: "red", bold: true}, {storage: "jk:bw", nbt: "txt.global._s", color: "yellow"}, {storage: "jk:bw", nbt: "txt.play.cd_remain", color: "yellow"}, {score: {name: "@s", objective: "jkbw.Player.Use.CD.Platform"}, color: "red"}, {text: "s!", color: "yellow"}]
 $execute if items entity @s[scores={jkbw.Player.Use.CD.Platform=0}, nbt={OnGround: true}] weapon.$(hand)hand blaze_rod run title @s actionbar {storage: "jk:bw", nbt: "txt.shop.item.platform.cannot_use", color: "yellow"}
@@ -17,7 +17,7 @@ $execute if items entity @s[scores={jkbw.Player.Use.CD.Ice=0}] weapon.$(hand)han
 # 铁傀儡
 $execute if items entity @s[scores={jkbw.Player.Use.CD.Creature=0}] weapon.$(hand)hand raw_iron run function jkbw:state/1/special/entity/iron_golem/summon
 # 快乐恶魂
-$execute if items entity @s[scores={jkbw.Player.Use.CD.Creature=0}] weapon.$(hand)hand raw_gold run function jkbw:state/1/special/happy_ghast/summon
+$execute if items entity @s[scores={jkbw.Player.Use.CD.Creature=0}] weapon.$(hand)hand raw_gold run function jkbw:state/1/special/entity/happy_ghast/summon
 # 魔镜
 $execute if items entity @s[scores={jkbw.Player.Use.CD.TheMirror=1..}] weapon.$(hand)hand gray_stained_glass_pane run title @s actionbar ["", {storage: "jk:bw", nbt: "txt.shop.item.the_mirror.name", color: "red", bold: true}, {storage: "jk:bw", nbt: "txt.global._s", color: "yellow"}, {storage: "jk:bw", nbt: "txt.play.cd_remain", color: "yellow"}, {score: {name: "@s", objective: "jkbw.Player.Use.CD.TheMirror"}, color: "red"}, {text: "s!", color: "yellow"}]
 $execute if items entity @s[scores={jkbw.Player.Use.CD.TheMirror=0}] weapon.$(hand)hand gray_stained_glass_pane run function jkbw:state/1/special/item/the_mirror

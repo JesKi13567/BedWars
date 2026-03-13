@@ -1,5 +1,5 @@
-# 减少威力，tnt开始155，火球开始33
-execute unless block ~ ~ ~ #jkbw:canexplode run kill @s
+# 减少威力
+execute unless block ~ ~ ~ #jkbw:canexplode run scoreboard players set @s jkbw.Temp -1
 execute if block ~ ~ ~ #jkbw:wool run scoreboard players remove @s jkbw.Temp 8
 execute if block ~ ~ ~ #jkbw:terracotta run scoreboard players remove @s jkbw.Temp 42
 execute if block ~ ~ ~ ladder run scoreboard players remove @s jkbw.Temp 4
@@ -13,17 +13,10 @@ execute if block ~ ~ ~ glowstone run scoreboard players remove @s jkbw.Temp 3
 execute if block ~ ~ ~ cobweb run scoreboard players remove @s jkbw.Temp 40
 execute if block ~ ~ ~ chest run scoreboard players remove @s jkbw.Temp 25
 execute if block ~ ~ ~ fletching_table run scoreboard players remove @s jkbw.Temp 25
+execute as @s[scores={jkbw.Temp=..-1}] run return run scoreboard players set @s jkbw.Temp -1
 
-# 清理
-kill @s[scores={jkbw.Temp=..0}]
+# 方块掉落
+execute as @s[scores={jkbw.Temp=0..}] run function jkbw:state/1/special/entity/explode/item
 
-# 繁殖
-execute as @s[scores={jkbw.Temp=1..}] if block ~ ~ ~ #jkbw:canexplode run function jkbw:state/1/special/entity/explode/remain
-
-# 继承分数
-execute as @e[type=marker, tag=jkbw_explode, tag=!jkbw_explode_center] at @s run scoreboard players operation @s jkbw.Temp > @e[type=marker, tag=jkbw_explode_center, distance=..1.1] jkbw.Temp
-
-# 已处理
-tag @s remove jkbw_explode_center
-tag @e[type=marker, tag=jkbw_explode_new] add jkbw_explode_center
-tag @e[type=marker, tag=jkbw_explode_new] remove jkbw_explode_new
+# 威力损失
+scoreboard players remove @s jkbw.Temp 6

@@ -17,7 +17,7 @@ execute if score #res_mode jkbw.mem matches 1 run tellraw @s[tag=!jkbw_buy_succe
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-give @s[tag=jkbw_buy_success] mooshroom_spawn_egg[custom_data={jkbw: ["tnt"]}, tooltip_display={hidden_components: [can_break, can_place_on]}, can_break={blocks: "#jkbw:candestroy"}, can_place_on={blocks: "#jkbw:canplaceon"}, entity_data={id: "tnt", fuse: 10000s, CustomNameVisible: true}, custom_name={translate: "block.minecraft.tnt", color: "white", italic: false}, item_model=tnt]
+loot give @s[tag=jkbw_buy_success] loot jkbw:tnt
 tellraw @s[tag=jkbw_buy_success] [{storage: "jk:bw", nbt: "txt.play.shop.buy.success", color: "green"}, " ", {translate: "block.minecraft.tnt", color: "gold"}, {storage: "jk:bw", nbt: "txt.global.char.exclamation"}]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 execute unless score #solo_mode jkbw.mem matches 1 if score #res_mode jkbw.mem matches 0 run scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.Own.gold_ingot -= #tnt jkbw.mem

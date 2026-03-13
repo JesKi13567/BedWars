@@ -1,0 +1,52 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "mooshroom_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {
+                                "translate": "block.minecraft.tnt",
+                                "color": "white",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": {
+                                    "jkbw": [
+                                        "tnt"
+                                    ]
+                                },
+                                "tooltip_display": {
+                                    "hidden_components": [
+                                        "can_break",
+                                        "can_place_on"
+                                    ]
+                                },
+                                "can_break": {
+                                    "blocks": "#jkbw:candestroy"
+                                },
+                                "can_place_on": {
+                                    "blocks": "#jkbw:canplaceon"
+                                },
+                                "entity_data": {
+                                    "id": "tnt",
+                                    "fuse": 10000,
+                                    "CustomNameVisible": true
+                                },
+                                "item_model": "tnt"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

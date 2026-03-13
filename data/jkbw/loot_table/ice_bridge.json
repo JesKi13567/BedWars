@@ -1,0 +1,41 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "ice",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {
+                                "storage": "jk:bw",
+                                "nbt": "txt.shop.item.ice_bridge.name",
+                                "color": "white",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "tooltip_display": {
+                                    "hidden_components": [
+                                        "can_break"
+                                    ]
+                                },
+                                "can_break": {
+                                    "blocks": "#jkbw:candestroy"
+                                },
+                                "consumable": {
+                                    "consume_seconds": 100000
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

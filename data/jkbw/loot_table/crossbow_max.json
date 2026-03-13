@@ -1,0 +1,47 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "crossbow",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {
+                                "storage": "jk:bw",
+                                "nbt": "txt.shop.item.crossbow_max.name",
+                                "color": "white",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": {
+                                    "jkbw": [
+                                        "max_crossbow"
+                                    ]
+                                },
+                                "tooltip_display": {
+                                    "hidden_components": [
+                                        "can_break"
+                                    ]
+                                },
+                                "can_break": {
+                                    "blocks": "#jkbw:candestroy"
+                                },
+                                "enchantments": {
+                                    "quick_charge": 5
+                                },
+                                "unbreakable": {}
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

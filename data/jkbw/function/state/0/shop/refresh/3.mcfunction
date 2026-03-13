@@ -42,11 +42,15 @@ item modify block 10110219 5 10110222 container.19 {function: "set_lore", entity
 [{storage: "jk:bw", nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPwind_charge", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
 #happy_ghast
+item modify block 10110219 5 10110222 container.20 {function: "set_name", entity: "this", name: \
+[{storage: "jk:bw", nbt: "txt.shop.item.happy_ghast.name", italic: false, color: "white"}]}
 item modify block 10110219 5 10110222 container.20 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", nbt: "txt.shop.item.global.summon_here", italic: false, color: "gold"}, {translate: "entity.minecraft.happy_ghast", color: "white"}, {storage: "jk:bw", nbt: "txt.global.char.dot"}], \
 [{storage: "jk:bw", nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#happy_ghast", objective: "jkbw.mem"}, color: "green"}, " ", {translate: "item.minecraft.emerald", italic: false, color: "green"}]]}
 
 #XPhappy_ghast
+item modify block 10110219 5 10110222 container.21 {function: "set_name", entity: "this", name: \
+[{storage: "jk:bw", nbt: "txt.shop.item.happy_ghast.name", italic: false, color: "white"}]}
 item modify block 10110219 5 10110222 container.21 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", nbt: "txt.shop.item.global.summon_here", italic: false, color: "gold"}, {translate: "entity.minecraft.happy_ghast", color: "white"}, {storage: "jk:bw", nbt: "txt.global.char.dot"}], \
 [{storage: "jk:bw", nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPhappy_ghast", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}

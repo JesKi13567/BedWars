@@ -23,9 +23,9 @@ item modify block 10110214 5 10110222 container.18 {function: "set_lore", entity
 [{storage: "jk:bw", nbt: "txt.shop.trap.classic.p0", italic: false, color: "gray"}], \
 [{storage: "jk:bw", nbt: "txt.shop.trap.classic.p1", italic: false, color: "gray"}], "", \
 [{storage: "jk:bw", nbt: "txt.shop.item.cost", italic: false, color: "gray"}], \
-[{storage: "jk:bw", nbt: "txt.shop.trap.name", italic: false, color: "white"}, " 1: ", {score: {name: "#trap1", objective: "jkbw.mem"}, color: "aqua"}, " ", {translate: "item.minecraft.diamond", italic: false, color: "aqua"}], \
-[{storage: "jk:bw", nbt: "txt.shop.trap.name", italic: false, color: "white"}, " 2: ", {score: {name: "#trap2", objective: "jkbw.mem"}, color: "aqua"}, " ", {translate: "item.minecraft.diamond", italic: false, color: "aqua"}], \
-[{storage: "jk:bw", nbt: "txt.shop.trap.name", italic: false, color: "white"}, " 3: ", {score: {name: "#trap3", objective: "jkbw.mem"}, color: "aqua"}, " ", {translate: "item.minecraft.diamond", italic: false, color: "aqua"}]]}
+[{storage: "jk:bw", nbt: "txt.shop.item.trap.name", italic: false, color: "white"}, " 1: ", {score: {name: "#trap1", objective: "jkbw.mem"}, color: "aqua"}, " ", {translate: "item.minecraft.diamond", italic: false, color: "aqua"}], \
+[{storage: "jk:bw", nbt: "txt.shop.item.trap.name", italic: false, color: "white"}, " 2: ", {score: {name: "#trap2", objective: "jkbw.mem"}, color: "aqua"}, " ", {translate: "item.minecraft.diamond", italic: false, color: "aqua"}], \
+[{storage: "jk:bw", nbt: "txt.shop.item.trap.name", italic: false, color: "white"}, " 3: ", {score: {name: "#trap3", objective: "jkbw.mem"}, color: "aqua"}, " ", {translate: "item.minecraft.diamond", italic: false, color: "aqua"}]]}
 
 #XPtrap1|XPtrap2|XPtrap3
 item modify block 10110214 5 10110222 container.19 {function: "set_name", entity: "this", name: \
@@ -34,9 +34,9 @@ item modify block 10110214 5 10110222 container.19 {function: "set_lore", entity
 [{storage: "jk:bw", nbt: "txt.shop.trap.classic.p0", italic: false, color: "gray"}], \
 [{storage: "jk:bw", nbt: "txt.shop.trap.classic.p1", italic: false, color: "gray"}], "", \
 [{storage: "jk:bw", nbt: "txt.shop.item.cost", italic: false, color: "gray"}], \
-[{storage: "jk:bw", nbt: "txt.shop.trap.name", italic: false, color: "white"}, " 1: ", {score: {name: "#XPtrap1", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.global.lvl", italic: false, color: "aqua"}], \
-[{storage: "jk:bw", nbt: "txt.shop.trap.name", italic: false, color: "white"}, " 2: ", {score: {name: "#XPtrap2", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.global.lvl", italic: false, color: "aqua"}], \
-[{storage: "jk:bw", nbt: "txt.shop.trap.name", italic: false, color: "white"}, " 3: ", {score: {name: "#XPtrap3", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
+[{storage: "jk:bw", nbt: "txt.shop.item.trap.name", italic: false, color: "white"}, " 1: ", {score: {name: "#XPtrap1", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.global.lvl", italic: false, color: "aqua"}], \
+[{storage: "jk:bw", nbt: "txt.shop.item.trap.name", italic: false, color: "white"}, " 2: ", {score: {name: "#XPtrap2", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.global.lvl", italic: false, color: "aqua"}], \
+[{storage: "jk:bw", nbt: "txt.shop.item.trap.name", italic: false, color: "white"}, " 3: ", {score: {name: "#XPtrap3", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
 # 陷阱占位
 item modify block 10110214 5 10110222 container.20 {function: "set_name", entity: "this", name: [{storage: "jk:bw", nbt: "txt.shop.trap.bought", italic: false, color: "gray"}, " 1"]}

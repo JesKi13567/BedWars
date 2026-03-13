@@ -34,18 +34,18 @@ execute as @s[scores={jkbw.Player.ShopRandom=32}] run function jkbw:state/1/shop
 execute as @s[scores={jkbw.Player.ShopRandom=33}] run function jkbw:state/1/shop/real/item/special/normal {name: wind_charge, show: wind_charge, res: gold_ingot}
 execute as @s[scores={jkbw.Player.ShopRandom=34}] run function jkbw:state/1/shop/real/item/special/normal {name: pearl, show: ender_pearl, res: emerald}
 execute as @s[scores={jkbw.Player.ShopRandom=35}] run function jkbw:state/1/shop/real/item/special/normal {name: pearl_blitz, show: ender_pearl, res: emerald}
-execute as @s[scores={jkbw.Player.ShopRandom=36}] run function jkbw:state/1/shop/real/item/special/custom {id: 1, name: tower, res: iron_ingot}
-execute as @s[scores={jkbw.Player.ShopRandom=37}] run function jkbw:state/1/shop/real/item/special/custom {id: 2, name: silverfish, res: iron_ingot}
-execute as @s[scores={jkbw.Player.ShopRandom=38}] run function jkbw:state/1/shop/real/item/special/custom {id: 3, name: fireball, res: iron_ingot}
-execute as @s[scores={jkbw.Player.ShopRandom=39}] run function jkbw:state/1/shop/real/item/special/custom {id: 4, name: iron_golem, res: iron_ingot}
-execute as @s[scores={jkbw.Player.ShopRandom=40}] run function jkbw:state/1/shop/real/item/special/custom {id: 5, name: water, res: gold_ingot}
-execute as @s[scores={jkbw.Player.ShopRandom=41}] run function jkbw:state/1/shop/real/item/special/custom {id: 6, name: egg, res: emerald}
-execute as @s[scores={jkbw.Player.ShopRandom=42}] run function jkbw:state/1/shop/real/item/special/custom {id: 7, name: platform, res: gold_ingot}
-execute as @s[scores={jkbw.Player.ShopRandom=43}] run function jkbw:state/1/shop/real/item/special/happy_ghast
+execute as @s[scores={jkbw.Player.ShopRandom=36}] run function jkbw:state/1/shop/real/item/special/custom {name: tower, res: iron_ingot}
+execute as @s[scores={jkbw.Player.ShopRandom=37}] run function jkbw:state/1/shop/real/item/special/custom {name: silverfish, res: iron_ingot}
+execute as @s[scores={jkbw.Player.ShopRandom=38}] run function jkbw:state/1/shop/real/item/special/custom {name: fireball, res: iron_ingot}
+execute as @s[scores={jkbw.Player.ShopRandom=39}] run function jkbw:state/1/shop/real/item/special/custom {name: iron_golem, res: iron_ingot}
+execute as @s[scores={jkbw.Player.ShopRandom=40}] run function jkbw:state/1/shop/real/item/special/custom {name: water, res: gold_ingot}
+execute as @s[scores={jkbw.Player.ShopRandom=41}] run function jkbw:state/1/shop/real/item/special/custom {name: egg, res: emerald}
+execute as @s[scores={jkbw.Player.ShopRandom=42}] run function jkbw:state/1/shop/real/item/special/custom {name: platform, res: gold_ingot}
+execute as @s[scores={jkbw.Player.ShopRandom=43}] run function jkbw:state/1/shop/real/item/special/custom {name: happy_ghast, res: emerald}
 execute as @s[scores={jkbw.Player.ShopRandom=44}] run function jkbw:state/1/shop/real/item/special/normal {name: fruit, show: chorus_fruit, res: gold_ingot}
 execute as @s[scores={jkbw.Player.ShopRandom=45}] run function jkbw:state/1/shop/real/item/weapon/common {id: 4, item: trident}
 execute as @s[scores={jkbw.Player.ShopRandom=46}] run function jkbw:state/1/shop/real/item/weapon/common {id: 5, item: tipped_arrow}
 execute as @s[scores={jkbw.Player.ShopRandom=47}] run function jkbw:state/1/shop/real/item/weapon/common {id: 6, item: mace}
-execute as @s[scores={jkbw.Player.ShopRandom=48}] run function jkbw:state/1/shop/real/item/special/custom {id: 8, name: crossbow_max, res: emerald}
-execute as @s[scores={jkbw.Player.ShopRandom=49}] run function jkbw:state/1/shop/real/item/special/custom {id: 9, name: ice_bridge, res: gold_ingot}
-execute as @s[scores={jkbw.Player.ShopRandom=50}] run function jkbw:state/1/shop/real/item/special/custom {id: 10, name: the_mirror, res: gold_ingot}
+execute as @s[scores={jkbw.Player.ShopRandom=48}] run function jkbw:state/1/shop/real/item/special/custom {name: crossbow_max, res: emerald}
+execute as @s[scores={jkbw.Player.ShopRandom=49}] run function jkbw:state/1/shop/real/item/special/custom {name: ice_bridge, res: gold_ingot}
+execute as @s[scores={jkbw.Player.ShopRandom=50}] run function jkbw:state/1/shop/real/item/special/custom {name: the_mirror, res: gold_ingot}

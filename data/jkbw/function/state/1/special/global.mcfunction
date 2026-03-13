@@ -9,4 +9,4 @@ execute if score #res_mode jkbw.mem matches 0..1 as @e[type=armor_stand, tag=jkb
 # 凋灵弓
 execute if score #res_mode jkbw.mem matches 2 if score #time jkbw.mem <= #time6 jkbw.mem as @e[type=arrow] at @s run function jkbw:state/1/special/entity/arrow2skull
 # tnt
-execute as @e[type=tnt] at @s run function jkbw:state/1/special/entity/explode/tnt/global
+execute as @e[type=tnt] at @s run function jkbw:state/1/special/entity/tnt/global

@@ -216,7 +216,7 @@ scoreboard players set #urfXPcompass jkbw.mem 50
 scoreboard players set #urfXPpearl jkbw.mem 500
 scoreboard players set #urfXPpearl_blitz jkbw.mem 300
 scoreboard players set #urfXPanti_arrow jkbw.mem 150
-scoreboard players set #urfXPfire_charge jkbw.mem 200
+scoreboard players set #urfXPfireball jkbw.mem 200
 scoreboard players set #urfXPwind_charge jkbw.mem 200
 scoreboard players set #urfXPegg jkbw.mem 500
 scoreboard players set #urfXPapple jkbw.mem 20
