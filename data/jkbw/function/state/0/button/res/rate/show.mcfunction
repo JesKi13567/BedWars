@@ -11,5 +11,4 @@ scoreboard players operation #res_rate.int jkbw.mem /= #10 jkbw.mem
 scoreboard players operation #res_rate.dec jkbw.mem %= #10 jkbw.mem
 
 data modify entity @n[type=text_display, tag=jkbw_txt] text set value [{color: "gold", score: {name: "#res_rate.int", objective: "jkbw.mem"}}, ".", {score: {name: "#res_rate.dec", objective: "jkbw.mem"}}]
-
 data modify entity @n[type=item_display, tag=jkbw_show_res_rate] CustomName set from entity @n[type=text_display, tag=jkbw_txt] text

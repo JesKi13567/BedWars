@@ -1,4 +1,4 @@
-setblock 10110209 4 10110222 white_shulker_box[facing=north]{Items: [\
+setblock 10110209 4 10110222 white_shulker_box[facing=north]{lock: {components: {custom_name: {text: "JK"}}}, Items: [\
 {Slot: 0b, id: "gray_dye", count: 1, components: {custom_data: {jkbw: ["ready", "0"]}}}, \
 {Slot: 1b, id: "lime_dye", count: 1, components: {custom_data: {jkbw: ["ready", "1"]}}}, \
 {Slot: 2b, id: "red_dye", count: 1, components: {custom_data: {jkbw: ["ready", "0"]}}}, \

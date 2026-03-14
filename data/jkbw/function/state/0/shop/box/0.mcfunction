@@ -1,4 +1,4 @@
-setblock 10110222 5 10110222 white_shulker_box[facing=north]{Items: [\
+setblock 10110222 5 10110222 white_shulker_box[facing=north]{lock: {components: {custom_name: {text: "JK"}}}, Items: [\
 {Slot: 0b, id: "light_gray_stained_glass_pane", count: 1, components: {custom_data: {jkbw: ["shop"]}}}, \
 {Slot: 1b, id: "player_head", count: 1, components: {custom_data: {jkbw: ["shop", "gui", "0"]}, profile: {properties: [{name: "textures", value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWYxMzNlOTE5MTlkYjBhY2VmZGMyNzJkNjdmZDg3YjRiZTg4ZGM0NGE5NTg5NTg4MjQ0NzRlMjFlMDZkNTNlNiJ9fX0="}]}}}, \
 {Slot: 9b, id: "white_wool", count: 1, components: {custom_data: {jkbw: ["shop", "gui", "1"]}}}, \

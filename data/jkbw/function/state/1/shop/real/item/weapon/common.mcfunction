@@ -16,7 +16,7 @@ playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 $execute if score #1 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] stick[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, enchantments={knockback: 1}]
 $execute if score #2 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] shield[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}]
 $execute if score #3 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] arrow 8
-$execute if score #4 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] trident[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, enchantments={loyalty: 3}]
+$execute if score #4 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] trident[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, enchantments={loyalty: 3}, unbreakable={}]
 $execute if score #5 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] tipped_arrow[potion_contents="slowness"] 3
 $execute if score #6 jkbw.mem matches $(id) run give @s[tag=jkbw_buy_success] mace[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, unbreakable={}]
 

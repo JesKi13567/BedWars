@@ -3,8 +3,8 @@ scoreboard players reset @s jkbw.Admin.Trigger
 execute unless score #tutorial jkbw.mem matches 1.. run scoreboard players set #tutorial jkbw.mem 1
 tellraw @a[tag=jkbw_admin] ["", {text: "\n\n\n\n\n\n\n\n\n\n============= ", color: "green"}, {storage: "jk:bw", nbt: "txt.global.bedwars.datapack", color: "yellow"}, {text: " =============\n", color: "green"}, "\n", \
 {storage: "jk:bw", nbt: "txt.ready.how2use.p1", color: "yellow"}, "\n", \
-{storage: "jk:bw", nbt: "txt.ready.how2use.p2", color: "gray"}, {storage: "jk:bw", nbt: "txt.control_panel.container_chunk.name", color: "gold"}, {storage: "jk:bw", nbt: "txt.ready.how2use.p3", color: "gray"}, {storage: "jk:bw", nbt: "txt.control_panel.name", color: "dark_red"}, {storage: "jk:bw", nbt: "txt.ready.how2use.p4", color: "gray"}, \
-"\n\n", {storage: "jk:bw", nbt: "txt.ready.how2use.p5", color: "green"}, "\n\n", \
+{storage: "jk:bw", nbt: "txt.ready.how2use.p2", color: "gray"}, {storage: "jk:bw", nbt: "txt.ready.control_panel.container_chunk.name", color: "gold"}, {storage: "jk:bw", nbt: "txt.ready.how2use.p3", color: "gray"}, {storage: "jk:bw", nbt: "txt.ready.control_panel.name", color: "dark_red"}, {storage: "jk:bw", nbt: "txt.ready.how2use.p4", color: "gray"}, "\n\n", \
+{storage: "jk:bw", nbt: "txt.ready.how2use.p5", color: "green"}, "\n\n", \
 {storage: "jk:bw", nbt: "txt.ready.how2use.p6", color: "white"}, "\n", \
 {storage: "jk:bw", nbt: "txt.ready.how2use.p7", color: "gray"}, "\n\n", \
 {storage: "jk:bw", nbt: "txt.ready.how2use.clean_blocks.list", color: "yellow"}, "\n", \

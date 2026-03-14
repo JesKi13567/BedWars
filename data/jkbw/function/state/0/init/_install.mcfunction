@@ -14,13 +14,13 @@
 
 # 表示加载过了
 scoreboard players set #loaded jkbw.mem 1
-# tutorial 教程
-scoreboard players set #tutorial jkbw.mem 0
+# tutorial 教程/步骤
+execute unless score #tutorial jkbw.mem matches 0.. run scoreboard players set #tutorial jkbw.mem 0
 # res_mode 资源模式 0 经典 1 经验 2 无限火力
 scoreboard players set #res_mode jkbw.mem 0
 # attack_speed 攻击速度 0 1.8- 1 1.9+
 scoreboard players set #attack_speed jkbw.mem 1
-# bed_type 床模式 0 床 1 夹心 2 蛋糕
+# bed_type 床种类 0 床 1 夹心 2 蛋糕
 scoreboard players set #bed_type jkbw.mem 0
 # exp_mode 实验模式 0 无 1 疾速 2 无跳跃 3 小人国 4 被迫零元购 5 摸摸
 scoreboard players set #exp_mode jkbw.mem 0

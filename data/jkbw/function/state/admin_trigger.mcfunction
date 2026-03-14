@@ -22,6 +22,16 @@ execute if score @s jkbw.Admin.Trigger matches 113 run function jkbw:state/0/pan
 execute if score @s jkbw.Admin.Trigger matches 114 run function jkbw:state/0/panel/contents/map/rotation/set/switch
 execute if score @s jkbw.Admin.Trigger matches 115 run function jkbw:state/0/panel/contents/map/rotation/rotate
 
+execute if score @s jkbw.Admin.Trigger matches 142 run function jkbw:state/0/button/set_time/update__
+execute if score @s jkbw.Admin.Trigger matches 143 run function jkbw:state/0/button/exp_mode/update__
+execute if score @s jkbw.Admin.Trigger matches 144 run function jkbw:state/0/button/res/rate/update__
+execute if score @s jkbw.Admin.Trigger matches 145 run function jkbw:state/0/button/res/mode/update
+execute if score @s jkbw.Admin.Trigger matches 146 run function jkbw:state/0/button/team/count/update__
+execute if score @s jkbw.Admin.Trigger matches 147 run function jkbw:state/0/button/team/distribute/update
+execute if score @s jkbw.Admin.Trigger matches 148 run function jkbw:state/0/button/bed_type/update
+execute if score @s jkbw.Admin.Trigger matches 149 run function jkbw:state/0/button/attack_speed/update
+execute if score @s jkbw.Admin.Trigger matches 142..150 run function jkbw:state/0/panel/pages/player_settings
+
 execute if score @s jkbw.Admin.Trigger matches 210 run function jkbw:state/0/panel/contents/switch/others {type: 'shield', num: 3}
 execute if score @s jkbw.Admin.Trigger matches 211 run function jkbw:state/0/panel/contents/switch/others {type: 'spear', num: 2}
 

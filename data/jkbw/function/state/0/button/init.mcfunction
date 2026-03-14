@@ -29,7 +29,7 @@ summon text_display ~-1.5 ~2.1 ~4.5 {Tags: ["jkbw", "jkbw_show"], text: [{storag
 summon item_display ~-1.5 ~1.5 ~4.5 {Tags: ["jkbw", "jkbw_show", "jkbw_show_team_distribute"], transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.5f, .5f, .5f], translation: [0f, 0f, 0f]}, CustomNameVisible: true, brightness: {block: 15, sky: 15}}
 summon interaction ~-1.5 ~1.25 ~4.5 {Tags: ["jkbw", "jkbw_show", "jkbw_button", "team_distribute"], response: true, height: .5f, width: .5f}
 function jkbw:state/0/button/team/distribute/show
-# 床模式
+# 床种类
 summon text_display ~.5 ~2.1 ~4.5 {Tags: ["jkbw", "jkbw_show"], text: [{storage: "jk:bw", nbt: "txt.ready.bed_type.name", color: "yellow"}], billboard: "center", brightness: {block: 15, sky: 15}}
 summon item_display ~.5 ~1.5 ~4.5 {Tags: ["jkbw", "jkbw_show", "jkbw_show_bed_type"], transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.5f, .5f, .5f], translation: [0f, 0f, 0f]}, CustomNameVisible: true, brightness: {block: 15, sky: 15}}
 summon interaction ~.5 ~1.25 ~4.5 {Tags: ["jkbw", "jkbw_show", "jkbw_button", "bed_type"], response: true, height: .5f, width: .5f}
@@ -40,7 +40,7 @@ summon item_display ~2.5 ~2.5 ~5.5 {Tags: ["jkbw", "jkbw_show", "jkbw_show_exp_m
 summon interaction ~2.5 ~2.25 ~5.5 {Tags: ["jkbw", "jkbw_show", "jkbw_button", "exp_mode"], response: true, height: .5f, width: .5f}
 function jkbw:state/0/button/exp_mode/show
 # 设置时间
-summon text_display ~-1.5 ~3.1 ~5.5 {Tags: ["jkbw", "jkbw_show"], text: [{storage: "jk:bw", nbt: "txt.ready.set_time.name", color: "yellow"}], billboard: "center", brightness: {block: 15, sky: 15}}
+summon text_display ~-1.5 ~3.1 ~5.5 {Tags: ["jkbw", "jkbw_show"], text: [{storage: "jk:bw", nbt: "txt.ready.set_time.name", color: "white"}], billboard: "center", brightness: {block: 15, sky: 15}}
 summon item_display ~-1.5 ~2.5 ~5.5 {Tags: ["jkbw", "jkbw_show", "jkbw_show_set_time"], item: {id: "clock", count: 1}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.5f, .5f, .5f], translation: [0f, 0f, 0f]}, CustomNameVisible: true, brightness: {block: 15, sky: 15}}
 summon interaction ~-1.5 ~2.25 ~5.5 {Tags: ["jkbw", "jkbw_show", "jkbw_button", "set_time"], response: true, height: .5f, width: .5f}
 function jkbw:state/0/button/set_time/show
