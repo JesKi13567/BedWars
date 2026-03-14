@@ -10,6 +10,16 @@
 
 本数据包实现了功能丰富的起床战争玩法，服务器管理员仅需提供地图并按游戏内说明完成道具布置，即可开启游戏。
 
+### 如何使用
+1. 打开存档的 `datapacks` 文件夹，将此 `.zip` 丢进去。
+
+1. 若为单人存档，此时才进入（若已进入则重进）。
+若为服务器，此时才开启（若已开启则重启）。
+
+1. 使用 `/reload` 或 `/function #load` 呼出菜单。
+
+1. 注：仅支持主世界维度。
+
 ### 功能列表
 1. 支持简体中文和英文。
 
@@ -34,7 +44,7 @@
 ##### 「操作台」
 |选项|含义|
 |-|-|
-|容器区块|此处可修改商店价格，以及设置启用轮换道具。|
+|容器区块|此处可修改商店价格，以及设置启用轮换道具、调整队伍升级最高等级等。|
 |地图轮换|此处需手动输入地图列表及打开轮换才可运行。|
 |时间间隔|游戏中各阶段间隔的秒数设置。|
 |盾 / 矛|控制是否在商店中出现对应物品。|
@@ -72,11 +82,6 @@
 |被迫零元购|商店和资源点禁用。每经过 5 秒，玩家将免费获得随机的商品（不含团队升级）。|
 |摸摸|玩家的实体/方块交互距离均变为 32。|
 
-### 注意事项
-- 本数据包仅支持主世界维度。
-
-- 使用 `/reload` 或 `/function #load` 呼出菜单。
-
 ### 相关网站
 [GitHub] [MCMOD] [Modrinth] [CurseForge] [PMC]
 
@@ -86,10 +91,20 @@ BedWars is a classic Minecraft game. Players aim to protect their beds and survi
 
 This datapack delivers feature-rich BedWars gameplay. Server admins can start the game simply by providing maps and placing items as per in-game instructions.
 
-### Feature List
-1. Supports Simplified Chinese and English.
+### How to Install
+1. Open the world's `datapacks` folder, place this `.zip` inside.
 
-1. Supports max 8 teams & 64 players.
+1. For singleplayer: Enter the world now \(re‑enter if already loaded\).
+For servers: Start the server now \(restart if already running\).
+
+1. Type `/reload` or `/function #load` to open the menu.
+
+1. Note: This datapack only support the overworld dimension.
+
+### Feature List
+1. Support Simplified Chinese and English.
+
+1. Support max 8 teams & 64 players.
 
 1. Place items using spawn eggs.
 
@@ -110,7 +125,7 @@ This datapack delivers feature-rich BedWars gameplay. Server admins can start th
 ##### "Control Panel"
 |Option|Description|
 |-|-|
-|Container Chunk|Adjust shop prices and enable rotating items here.|
+|Container Chunk|You can adjust shop prices, enable Rotating Items & change max tier of Team Updates here.|
 |Map Rotation|Input map list manually and enable the switch to activate.|
 |Set Period|Settings of game phase timers.|
 |Shield / Spear|Controls whether the corresponding items appear in the shop.|
@@ -147,11 +162,6 @@ About shop buying, the classic uses items, while others use experience levels.
 |Lilliput|Set players' Scale to 1/2.|
 |Forced Free Loot|Shops and Resource Points are banned. For every 5 seconds, players will get random shop loots freely \(team updates not included\).|
 |Patpat|Set players' both Entity/Block Interaction Range to 32.|
-
-### Notes
-- This datapack only supports the overworld dimension.
-
-- Type `/reload` or `/function #load` to use menu.
 
 ### Websites
 [GitHub] [MCMOD] [Modrinth] [CurseForge] [PMC]

@@ -47,7 +47,8 @@ scoreboard objectives remove jkbw.Player.Damage.Type.now
 scoreboard objectives remove jkbw.Player.Damage.Type.real
 scoreboard objectives remove jkbw.Player.DeathImp
 scoreboard objectives remove jkbw.Player.ExecuseTime
-scoreboard objectives remove jkbw.Player.HasRes
+scoreboard objectives remove jkbw.Player.Has.Item
+scoreboard objectives remove jkbw.Player.Has.Res
 scoreboard objectives remove jkbw.Player.Head
 scoreboard objectives remove jkbw.Player.ID
 scoreboard objectives remove jkbw.Player.Kills
@@ -78,6 +79,7 @@ scoreboard objectives remove jkbw.Player.Place.Pink
 scoreboard objectives remove jkbw.Player.Place.Red
 scoreboard objectives remove jkbw.Player.Place.White
 scoreboard objectives remove jkbw.Player.Place.Yellow
+scoreboard objectives remove jkbw.Player.PHDI
 scoreboard objectives remove jkbw.Player.RebornTime
 scoreboard objectives remove jkbw.Player.ShopNow
 scoreboard objectives remove jkbw.Player.ShopRandom

@@ -5,6 +5,7 @@ effect give @s resistance 5 4 true
 effect give @s instant_health 1 9 true
 
 clear @s
+item replace entity @s saddle from block 10110209 4 10110222 container.8
 
 execute if score #attack_speed jkbw.mem matches 0 run attribute @s attack_speed base set 100
 

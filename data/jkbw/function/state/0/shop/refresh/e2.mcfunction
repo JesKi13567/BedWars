@@ -23,6 +23,10 @@ item modify block 10110209 4 10110222 container.3 {function: "set_lore", entity:
 [{storage: "jk:bw", nbt: "txt.item.spyglass.p0", color: "gray", italic: false}], \
 [{storage: "jk:bw", nbt: "txt.item.spyglass.p1", color: "gray", italic: false}]]}
 
+## 伤害免疫冷却
+item modify block 10110209 4 10110222 container.8 {function: "set_name", entity: "this", name: \
+[{storage: "jk:bw", nbt: "txt.item.saddle", italic: false, color: "white"}]}
+
 # 管理用
 ## 商店
 item modify block 10110209 4 10110222 container.9 {function: "set_name", entity: "this", name: \

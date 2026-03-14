@@ -1,10 +1,10 @@
-# 保护0~4
-$execute if score $$(team) jkbw.Team.protect matches 0 run function jkbw:state/1/team/loop/armor/0 {team: '$(team)', lvl: 0, color: $(color)}
-$execute if score $$(team) jkbw.Team.protect matches 1 run function jkbw:state/1/team/loop/armor/1 {team: '$(team)', lvl: 1, color: $(color)}
-$execute if score $$(team) jkbw.Team.protect matches 2 run function jkbw:state/1/team/loop/armor/1 {team: '$(team)', lvl: 2, color: $(color)}
-$execute if score $$(team) jkbw.Team.protect matches 3 run function jkbw:state/1/team/loop/armor/1 {team: '$(team)', lvl: 3, color: $(color)}
-$execute if score $$(team) jkbw.Team.protect matches 4 run function jkbw:state/1/team/loop/armor/1 {team: '$(team)', lvl: 4, color: $(color)}
-$execute if score $$(team) jkbw.Team.protect matches 5 run function jkbw:state/1/team/loop/armor/1 {team: '$(team)', lvl: 5, color: $(color)}
+# 保护附魔
+$execute if score $$(team) jkbw.Team.protect matches 0 run function jkbw:state/1/team/loop/armor/protect {team: '$(team)', lvl: 0, suf: '', color: '$(color)'}
+$execute if score $$(team) jkbw.Team.protect matches 1 run function jkbw:state/1/team/loop/armor/protect {team: '$(team)', lvl: 1, suf: ', protection: 1', color: '$(color)'}
+$execute if score $$(team) jkbw.Team.protect matches 2 run function jkbw:state/1/team/loop/armor/protect {team: '$(team)', lvl: 2, suf: ', protection: 2', color: '$(color)'}
+$execute if score $$(team) jkbw.Team.protect matches 3 run function jkbw:state/1/team/loop/armor/protect {team: '$(team)', lvl: 3, suf: ', protection: 3', color: '$(color)'}
+$execute if score $$(team) jkbw.Team.protect matches 4 run function jkbw:state/1/team/loop/armor/protect {team: '$(team)', lvl: 4, suf: ', protection: 4', color: '$(color)'}
+$execute if score $$(team) jkbw.Team.protect matches 5 run function jkbw:state/1/team/loop/armor/protect {team: '$(team)', lvl: 5, suf: ', protection: 5', color: '$(color)'}
 
 ## 头饰
 # 护甲值

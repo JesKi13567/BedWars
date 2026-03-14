@@ -3,6 +3,7 @@ setblock 10110209 4 10110222 white_shulker_box[facing=north]{Items: [\
 {Slot: 1b, id: "lime_dye", count: 1, components: {custom_data: {jkbw: ["ready", "1"]}}}, \
 {Slot: 2b, id: "red_dye", count: 1, components: {custom_data: {jkbw: ["ready", "0"]}}}, \
 {Slot: 3b, id: "spyglass", count: 1, components: {custom_data: {jkbw: ["clean"]}, custom_name: {text: "🔍", italic: false}, tooltip_display: {hidden_components: [can_break]}, can_break: {blocks: "#jkbw:candestroy"}, item_model: air}}, \
+{Slot: 8b, id: "saddle", count: 1, components: {custom_data: {jkbw: ["clean"]}, enchantments: {"jkbw:phdi": 1}}}, \
 {Slot: 9b, id: "wandering_trader_spawn_egg", count: 1, components: {custom_data: {jkbw: ["eggs", "shop"]}, entity_data: {id: "marker", Tags: ["jkbw", "jkbw_eggs", "shop"]}, enchantment_glint_override: true, item_model: ender_chest}}, \
 {Slot: 10b, id: "slime_spawn_egg", count: 1, components: {custom_data: {jkbw: ["eggs", "res_global"]}, entity_data: {id: "marker", Tags: ["jkbw", "jkbw_eggs", "res_global"]}, enchantment_glint_override: true}}, \
 {Slot: 11b, id: "diamond_block", count: 1}, \

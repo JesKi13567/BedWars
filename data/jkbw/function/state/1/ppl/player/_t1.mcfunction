@@ -45,3 +45,6 @@ execute if score #res_mode jkbw.mem matches 2 if block ~ ~1 ~ tripwire run funct
 
 # 自动搭路
 execute if score #exp_mode jkbw.mem matches 1 run function jkbw:state/1/special/item/auto_bridge/global
+
+# 伤害免疫冷却
+scoreboard players remove @s[scores={jkbw.Player.PHDI=1..}] jkbw.Player.PHDI 1

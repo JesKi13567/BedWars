@@ -14,8 +14,8 @@ scoreboard players operation @s jkbw.Player.Own.xpLevels += @s jkbw.Player.Own.g
 scoreboard players operation @s jkbw.Player.Own.xpLevels += @s jkbw.Player.Own.diamond
 scoreboard players operation @s jkbw.Player.Own.xpLevels += @s jkbw.Player.Own.emerald
 
-execute store success score @s jkbw.Player.HasRes run clear @s #jkbw:res[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}]
-playsound entity.experience_orb.pickup player @s[scores={jkbw.Player.HasRes=1}]
+execute store success score @s jkbw.Player.Has.Res run clear @s #jkbw:res[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}]
+playsound entity.experience_orb.pickup player @s[scores={jkbw.Player.Has.Res=1}]
 
 # 修改等级
 execute as @s[scores={jkbw.Player.Own.xpLevels=1..}] run function jkbw:state/1/shop/cost/xp/update
