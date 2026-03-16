@@ -74,9 +74,16 @@ item modify block 10110209 4 10110222 container.16 {function: "set_lore", entity
 
 ## 删除
 item modify block 10110209 4 10110222 container.17 {function: "set_name", entity: "this", name: \
-[{storage: "jk:bw", nbt: "txt.global.delete", color: "red", italic: false}]}
+[{storage: "jk:bw", nbt: "txt.global.delete", color: "red", italic: false, bold: true}]}
 item modify block 10110209 4 10110222 container.17 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
-[{storage: "jk:bw", nbt: "txt.egg.delete", color: "red", italic: false}]]}
+[{storage: "jk:bw", nbt: "txt.egg.delete.p0", color: "red", italic: false}]]}
+
+## 删除-全局传送点
+item modify block 10110209 4 10110222 container.26 {function: "set_name", entity: "this", name: \
+[{storage: "jk:bw", nbt: "txt.global.delete", color: "red", italic: false, bold: true}, "-", {storage: "jk:bw", nbt: "txt.point.global.name", color: "gold"}]}
+item modify block 10110209 4 10110222 container.26 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+[{storage: "jk:bw", nbt: "txt.egg.delete.p1", color: "red", italic: false}], \
+[{storage: "jk:bw", nbt: "txt.egg.delete.p2", color: "red", italic: false}]]}
 
 ## 羊毛
 item modify block 10110209 4 10110222 container.18 {function: "set_lore", entity: "this", mode: "replace_all", lore: [[{text: "#1", italic: false, color: "gold"}], [{storage: "jk:bw", nbt: "txt.egg.wool.p1", color: "yellow", italic: false}]]}

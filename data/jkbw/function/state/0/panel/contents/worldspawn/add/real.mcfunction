@@ -2,7 +2,7 @@
 playsound block.note_block.bell player @a
 kill @e[type=text_display, tag=jkbw_point_deleted, distance=..10]
 $kill @e[type=text_display, tag=jkbw_worldspawn$(id)]
-$execute align xyz run summon text_display ~.5 ~ ~.5 {Tags: ["jkbw", "jkbw_worldspawn", "jkbw_worldspawn$(id)"], text: [{storage: "jk:bw", nbt: "txt.point.global.name", color: "gold"}, " - $(id)"], billboard: "center", brightness: {block: 15, sky: 15}}
+$execute align xyz run summon text_display ~.5 ~ ~.5 {Tags: ["jkbw", "jkbw_cannot_kill", "jkbw_worldspawn", "jkbw_worldspawn$(id)"], text: [{storage: "jk:bw", nbt: "txt.point.global.name", color: "gold"}, " - $(id)"], billboard: "center", brightness: {block: 15, sky: 15}}
 setblock ~ ~-1 ~ tinted_glass
 fill ~6 ~-1 ~6 ~-6 ~-1 ~-6 glass replace air
 

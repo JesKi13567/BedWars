@@ -21,5 +21,5 @@ $tellraw @a [{storage: "jk:bw", nbt: "txt.global.bedwars.left", color: "yellow"}
 
 function jkbw:state/0/panel/contents/worldspawn/current with storage jk:bw Map.cur
 
-# 更新展示实体版本
-scoreboard players add #display_set jkbw.mem 1
+# 更新玩家设置显示
+scoreboard players add #player_settings_version jkbw.mem 1

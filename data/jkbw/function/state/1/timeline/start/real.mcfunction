@@ -3,6 +3,7 @@ scoreboard players reset @s jkbw.Admin.Trigger
 ## 游戏正式开始前置
 # 队伍
 execute as @e[type=text_display, tag=jkbw_bed_display] at @s run function jkbw:state/1/timeline/start/marker/bed
+function jkbw:state/1/team/color
 
 # 资源
 fill 10110222 1 10110216 10110214 1 10110209 barrel[facing=up]{Items: []}

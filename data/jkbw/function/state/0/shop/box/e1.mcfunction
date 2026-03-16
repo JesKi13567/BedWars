@@ -1,4 +1,4 @@
-setblock 10110209 5 10110222 black_shulker_box[facing=north]{lock: {components: {custom_name: {text: "JK"}}}, Items: [\
+setblock 10110209 5 10110222 shulker_box[facing=north]{lock: {components: {custom_name: {text: "JK"}}}, Items: [\
 {Slot: 0b, id: "compass", count: 1, components: {custom_data: {jkbw: ["clean", "red"]}, enchantment_glint_override: false, lodestone_tracker: {tracked: false, target: {dimension: "overworld", pos: [I; 0, 0, 0]}}, tooltip_display: {hidden_components: [can_break]}, can_break: {blocks: "#jkbw:candestroy"}}}, \
 {Slot: 1b, id: "compass", count: 1, components: {custom_data: {jkbw: ["clean", "blue"]}, enchantment_glint_override: false, lodestone_tracker: {tracked: false, target: {dimension: "overworld", pos: [I; 0, 0, 0]}}, tooltip_display: {hidden_components: [can_break]}, can_break: {blocks: "#jkbw:candestroy"}}}, \
 {Slot: 2b, id: "compass", count: 1, components: {custom_data: {jkbw: ["clean", "green"]}, enchantment_glint_override: false, lodestone_tracker: {tracked: false, target: {dimension: "overworld", pos: [I; 0, 0, 0]}}, tooltip_display: {hidden_components: [can_break]}, can_break: {blocks: "#jkbw:candestroy"}}}, \

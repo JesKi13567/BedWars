@@ -1,5 +1,5 @@
 # 更新显示
-scoreboard players operation @s jkbw.mem = #display_set jkbw.mem
+scoreboard players operation @s jkbw.mem = #player_settings_version jkbw.mem
 execute as @s[tag=attack_speed] run function jkbw:state/0/button/attack_speed/show
 execute as @s[tag=res_mode] run function jkbw:state/0/button/res/mode/show
 execute as @s[tag=res_rate] run function jkbw:state/0/button/res/rate/show

@@ -1,4 +1,4 @@
-setblock 10110209 4 10110222 white_shulker_box[facing=north]{lock: {components: {custom_name: {text: "JK"}}}, Items: [\
+setblock 10110209 4 10110222 shulker_box[facing=north]{lock: {components: {custom_name: {text: "JK"}}}, Items: [\
 {Slot: 0b, id: "gray_dye", count: 1, components: {custom_data: {jkbw: ["ready", "0"]}}}, \
 {Slot: 1b, id: "lime_dye", count: 1, components: {custom_data: {jkbw: ["ready", "1"]}}}, \
 {Slot: 2b, id: "red_dye", count: 1, components: {custom_data: {jkbw: ["ready", "0"]}}}, \
@@ -20,4 +20,6 @@ setblock 10110209 4 10110222 white_shulker_box[facing=north]{lock: {components: 
 {Slot: 22b, id: "cyan_wool", count: 1}, \
 {Slot: 23b, id: "white_wool", count: 1}, \
 {Slot: 24b, id: "pink_wool", count: 1}, \
-{Slot: 25b, id: "gray_wool", count: 1}]}
+{Slot: 25b, id: "gray_wool", count: 1}, \
+{Slot: 26b, id: "ender_dragon_spawn_egg", count: 1, components: {custom_data: {jkbw: ["eggs", "delete-gp"]}, entity_data: {id: "marker", Tags: ["jkbw", "jkbw_eggs", "delete_gp"]}, enchantment_glint_override: true}}, \
+]}

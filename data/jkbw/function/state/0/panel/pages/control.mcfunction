@@ -33,7 +33,20 @@ execute if score #ENABLE.spear jkbw.mem matches 1 run data modify entity @n[type
 summon marker 10110222 1 10110222 {Tags: ["jkbw", "jkbw_enable_item", "jkbw_enable_spear"]}
 data modify entity @n[type=marker, tag=jkbw_enable_spear] CustomName set from entity @n[type=text_display, tag=jkbw_txt] text
 
-tellraw @a[tag=jkbw_admin] [{storage: "jk:bw", nbt: "txt.global.others"}, {storage: "jk:bw", nbt: "txt.global.char.colon"}, {selector: "@n[type=marker, tag=jkbw_enable_shield]", hover_event: {action: "show_text", value: {storage: "jk:bw", nbt: "txt.ready.control_panel.shield.p0"}}, click_event: {action: "run_command", command: "/trigger jkbw.Admin.Trigger set 210"}}, " ", {selector: "@n[type=marker, tag=jkbw_enable_spear]", hover_event: {action: "show_text", value: ""}, click_event: {action: "run_command", command: "/trigger jkbw.Admin.Trigger set 211"}}, "\n"]
+#### 药水
+execute if score #ENABLE.potion jkbw.mem matches 0 run function jkbw:state/0/shop/set/potion {item: 'potion', color: 'green', type: 'default'}
+execute if score #ENABLE.potion jkbw.mem matches 1 run function jkbw:state/0/shop/set/potion {item: 'splash_potion', color: 'yellow', type: 'splash'}
+summon marker 10110222 1 10110222 {Tags: ["jkbw", "jkbw_enable_item", "jkbw_enable_potion"]}
+data modify entity @n[type=marker, tag=jkbw_enable_potion] CustomName set from entity @n[type=text_display, tag=jkbw_txt] text
+
+#### 滑翔模式
+execute if score #ENABLE.glider jkbw.mem matches 0 run data modify entity @n[type=text_display, tag=jkbw_txt] text set value [{text: "[", color: "red", italic: false}, {storage: "jk:bw", nbt: "txt.global.bool.disabled"}, "]"]
+execute if score #ENABLE.glider jkbw.mem matches 1 run data modify entity @n[type=text_display, tag=jkbw_txt] text set value [{text: "[", color: "green", italic: false}, {storage: "jk:bw", nbt: "txt.global.bool.enabled"}, "]"]
+summon marker 10110222 1 10110222 {Tags: ["jkbw", "jkbw_enable_item", "jkbw_enable_glider"]}
+data modify entity @n[type=marker, tag=jkbw_enable_glider] CustomName set from entity @n[type=text_display, tag=jkbw_txt] text
+
+tellraw @a[tag=jkbw_admin] [{storage: "jk:bw", nbt: "txt.global.others"}, {storage: "jk:bw", nbt: "txt.global.char.colon"}, {selector: "@n[type=marker, tag=jkbw_enable_shield]", hover_event: {action: "show_text", value: {storage: "jk:bw", nbt: "txt.ready.control_panel.shield.p0"}}, click_event: {action: "run_command", command: "/trigger jkbw.Admin.Trigger set 210"}}, " ", {selector: "@n[type=marker, tag=jkbw_enable_spear]", hover_event: {action: "show_text", value: ""}, click_event: {action: "run_command", command: "/trigger jkbw.Admin.Trigger set 211"}}, " ", {selector: "@n[type=marker, tag=jkbw_enable_potion]", hover_event: {action: "show_text", value: ""}, click_event: {action: "run_command", command: "/trigger jkbw.Admin.Trigger set 212"}}, "\n\n", \
+{storage: "jk:bw", nbt: "txt.ready.control_panel.glider_mode.name"}, {storage: "jk:bw", nbt: "txt.global.char.colon"}, {selector: "@n[type=marker, tag=jkbw_enable_glider]", hover_event: {action: "show_text", value: {storage: "jk:bw", nbt: "txt.ready.control_panel.glider_mode.p0"}}, click_event: {action: "run_command", command: "/trigger jkbw.Admin.Trigger set 213"}}, "\n"]
 kill @e[type=marker, tag=jkbw_enable_item]
 
 ## 刷新页面

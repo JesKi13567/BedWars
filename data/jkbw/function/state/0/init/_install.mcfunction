@@ -22,7 +22,7 @@ scoreboard players set #res_mode jkbw.mem 0
 scoreboard players set #attack_speed jkbw.mem 1
 # bed_type 床种类 0 床 1 夹心 2 蛋糕
 scoreboard players set #bed_type jkbw.mem 0
-# exp_mode 实验模式 0 无 1 疾速 2 无跳跃 3 小人国 4 被迫零元购 5 摸摸
+# exp_mode 实验模式 0 无 1 疾速 2 无跳跃 3 小人国 4 被迫零元购 5 摸摸 6 色盲
 scoreboard players set #exp_mode jkbw.mem 0
 # set_time 设置时间 0 day 1 noon 2 night 3 midnight
 scoreboard players set #set_time jkbw.mem 0
@@ -59,6 +59,10 @@ scoreboard players set #FFL_INTERVAL jkbw.mem 5
 scoreboard players set #ENABLE.shield jkbw.mem 1
 # 矛模式 0 禁用 1 启用
 scoreboard players set #ENABLE.spear jkbw.mem 0
+# 药水种类 0 默认 1 喷溅型
+scoreboard players set #ENABLE.potion jkbw.mem 0
+# 滑翔模式 0 禁用 1 启用
+scoreboard players set #ENABLE.glider jkbw.mem 0
 # 团队升级最大次数
 scoreboard players set #TEAM_UPDATE.knockback jkbw.mem 0
 scoreboard players set #TEAM_UPDATE.sharpness jkbw.mem 1
@@ -234,7 +238,6 @@ bossbar set jkbw:map style progress
 bossbar set jkbw:map visible false
 
 bossbar add jkbw:game_progress "游戏进度条"
-bossbar set jkbw:game_progress color blue
 bossbar set jkbw:game_progress style progress
 bossbar set jkbw:game_progress max 300
 bossbar set jkbw:game_progress value 300
@@ -247,27 +250,22 @@ bossbar set jkbw:player_ready visible false
 
 # 队伍
 team add jkbw.red {text: "红队", color: "red"}
-team modify jkbw.red color red
 team modify jkbw.red collisionRule never
 team modify jkbw.red friendlyFire false
 
 team add jkbw.blue {text: "蓝队", color: "blue"}
-team modify jkbw.blue color blue
 team modify jkbw.blue collisionRule never
 team modify jkbw.blue friendlyFire false
 
 team add jkbw.green {text: "绿队", color: "green"}
-team modify jkbw.green color green
 team modify jkbw.green collisionRule never
 team modify jkbw.green friendlyFire false
 
 team add jkbw.yellow {text: "黄队", color: "yellow"}
-team modify jkbw.yellow color yellow
 team modify jkbw.yellow collisionRule never
 team modify jkbw.yellow friendlyFire false
 
 team add jkbw.cyan {text: "青队", color: "aqua"}
-team modify jkbw.cyan color aqua
 team modify jkbw.cyan collisionRule never
 team modify jkbw.cyan friendlyFire false
 
@@ -277,12 +275,10 @@ team modify jkbw.white collisionRule never
 team modify jkbw.white friendlyFire false
 
 team add jkbw.pink {text: "粉队", color: "light_purple"}
-team modify jkbw.pink color light_purple
 team modify jkbw.pink collisionRule never
 team modify jkbw.pink friendlyFire false
 
 team add jkbw.gray {text: "灰队", color: "gray"}
-team modify jkbw.gray color gray
 team modify jkbw.gray collisionRule never
 team modify jkbw.gray friendlyFire false
 
@@ -297,7 +293,9 @@ team modify jkbw.npc collisionRule never
 
 team add jkbw.npc_alive
 team modify jkbw.npc_alive prefix "    "
-team modify jkbw.npc_alive suffix ["", {text: " → ", color: "gray"}, {text: "■", color: "green"}]
+
+team add jkbw.npc_out
+team modify jkbw.npc_out prefix "    "
 
 team add jkbw.npc_red
 team modify jkbw.npc_red prefix "    "
@@ -316,9 +314,7 @@ team modify jkbw.npc_pink prefix "    "
 team add jkbw.npc_gray
 team modify jkbw.npc_gray prefix "    "
 
-team add jkbw.npc_out
-team modify jkbw.npc_out prefix "    "
-team modify jkbw.npc_out suffix ["", {text: " → ", color: "gray"}, {text: "□", color: "red"}]
+function jkbw:state/1/team/color
 
 # 游戏规则
 gamerule advance_weather false
@@ -352,4 +348,4 @@ worldborder damage amount 100
 # 其他处理
 function jkbw:state/0/panel/pages/menu
 function jkbw:state/0/shop/box/global
-setblock ~ ~-1 ~ tinted_glass
+execute if block ~ ~-1 ~ air run setblock ~ ~-1 ~ tinted_glass

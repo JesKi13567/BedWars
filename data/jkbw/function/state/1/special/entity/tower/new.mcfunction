@@ -2,6 +2,7 @@
 tp @s ~ ~-1 ~
 scoreboard players set @s jkbw.mem 8
 scoreboard players operation @s jkbw.Team.ID = @p[scores={jkbw.Player.Use.Tower=1..}] jkbw.Team.ID
+execute if score #exp_mode jkbw.mem matches 6 run scoreboard players set @s jkbw.Team.ID 6
 
 # 转向
 execute if entity @p[scores={jkbw.Player.Use.Tower=1..}, y_rotation=135.01..180] run tag @s add jkbw_north

@@ -47,7 +47,7 @@
 |容器区块|此处可修改商店价格，以及设置启用轮换道具、调整队伍升级最高等级等。|
 |地图轮换|此处需手动输入地图列表及打开轮换才可运行。|
 |时间间隔|游戏中各阶段间隔的秒数设置。|
-|盾 / 矛|控制是否在商店中出现对应物品。|
+|其他|控制商店物品是否出现或改变形态。|
 
 #### 玩家设置
 在全局传送点附近，管理员可放置方块阻挡。
@@ -81,6 +81,7 @@
 |小人国|玩家的尺寸变为原来的 1/2。|
 |被迫零元购|商店和资源点禁用。每经过 5 秒，玩家将免费获得随机的商品（不含团队升级）。|
 |摸摸|玩家的实体/方块交互距离均变为 32。|
+|色盲|所有玩家的名字标签、装备、方块统一为白色。|
 
 ### 相关网站
 [GitHub] [MCMOD] [Modrinth] [CurseForge] [PMC]
@@ -128,7 +129,7 @@ For servers: Start the server now \(restart if already running\).
 |Container Chunk|You can adjust shop prices, enable Rotating Items & change max tier of Team Updates here.|
 |Map Rotation|Input map list manually and enable the switch to activate.|
 |Set Period|Settings of game phase timers.|
-|Shield / Spear|Controls whether the corresponding items appear in the shop.|
+|Others|Controls whether corresponding items appear or display differently in the shop.|
 
 #### Player Settings
 Around the Global Point, admins can block these settings by placing blocks.
@@ -162,6 +163,7 @@ About shop buying, the classic uses items, while others use experience levels.
 |Lilliput|Set players' Scale to 1/2.|
 |Forced Free Loot|Shops and Resource Points are banned. For every 5 seconds, players will get random shop loots freely \(team updates not included\).|
 |Patpat|Set players' both Entity/Block Interaction Range to 32.|
+|Color Blind|All players have the same white name tags, armor, and blocks.|
 
 ### Websites
 [GitHub] [MCMOD] [Modrinth] [CurseForge] [PMC]

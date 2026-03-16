@@ -2,7 +2,7 @@ scoreboard players set #time_state jkbw.mem 4
 scoreboard players set #level_emerald jkbw.mem 3
 scoreboard players set #level_diamond jkbw.mem 3
 scoreboard players operation #time_show jkbw.mem = #TIME.BED jkbw.mem
-bossbar set jkbw:game_progress color red
+execute unless score #exp_mode jkbw.mem matches 6 run bossbar set jkbw:game_progress color red
 execute store result bossbar jkbw:game_progress max run scoreboard players get #TIME.BED jkbw.mem
 execute unless score #exp_mode jkbw.mem matches 4 unless score #exp_mode jkbw.mem matches 1 run tellraw @a ["", {translate: "item.minecraft.emerald", color: "green"}, " ", {storage: "jk:bw", nbt: "txt.play.now_become"}, " ", {storage: "jk:bw", nbt: "txt.global.tier"}, " ", {text: "III", color: "yellow"}, {storage: "jk:bw", nbt: "txt.global.char.dot"}]
 execute if score #res_mode jkbw.mem matches 2 run tellraw @a ["", {translate: "attribute.name.max_health", color: "aqua"}, " ", {storage: "jk:bw", nbt: "txt.play.now_become"}, " ", {text: "60", color: "red"}, {storage: "jk:bw", nbt: "txt.global.char.dot"}]

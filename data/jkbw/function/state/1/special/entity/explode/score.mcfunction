@@ -19,4 +19,4 @@ execute as @s[scores={jkbw.Temp=..-1}] run return run scoreboard players set @s 
 execute as @s[scores={jkbw.Temp=0..}] run function jkbw:state/1/special/entity/explode/item
 
 # 威力损失
-scoreboard players remove @s jkbw.Temp 6
+scoreboard players remove @s jkbw.Temp 2

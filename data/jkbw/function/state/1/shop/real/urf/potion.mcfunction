@@ -9,7 +9,9 @@ $tellraw @s[tag=!jkbw_buy_success] [{storage: "jk:bw", nbt: "txt.play.shop.buy.c
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-$give @s[tag=jkbw_buy_success] potion[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, potion_contents="$(effect)", max_stack_size=64]
+$execute if score #ENABLE.potion jkbw.mem matches 0 run give @s[tag=jkbw_buy_success] potion[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, potion_contents="$(effect)", max_stack_size=64]
+$execute if score #ENABLE.potion jkbw.mem matches 1 run give @s[tag=jkbw_buy_success] splash_potion[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, potion_contents="$(effect)", max_stack_size=64]
+
 $tellraw @s[tag=jkbw_buy_success] [{storage: "jk:bw", nbt: "txt.play.shop.buy.success", color: "green"}, " ", {translate: "effect.minecraft.$(desc)", color: "gold"}, " ", {translate: "item.minecraft.potion", color: "gold"}, {storage: "jk:bw", nbt: "txt.global.char.exclamation"}]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 $scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.Own.xpLevelsReal -= #urfXPpotion_$(name) jkbw.mem
