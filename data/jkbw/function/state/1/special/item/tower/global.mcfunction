@@ -1,13 +1,13 @@
 # 新
-execute as @s[tag=!jkbw] run function jkbw:state/1/special/entity/tower/new
+execute as @s[tag=!jkbw] run function jkbw:state/1/special/item/tower/new
 
 # 按层
-execute as @s[scores={jkbw.mem=7}] run function jkbw:state/1/special/entity/tower/floor/0
-execute as @s[scores={jkbw.mem=5..6}] run function jkbw:state/1/special/entity/tower/floor/1
-execute as @s[scores={jkbw.mem=3..4}] run function jkbw:state/1/special/entity/tower/floor/3
-execute as @s[scores={jkbw.mem=2}] run function jkbw:state/1/special/entity/tower/floor/5
-execute as @s[scores={jkbw.mem=1}] run function jkbw:state/1/special/entity/tower/floor/6
-execute as @s[scores={jkbw.mem=0}] run function jkbw:state/1/special/entity/tower/floor/7
+execute as @s[scores={jkbw.mem=7}] run function jkbw:state/1/special/item/tower/floor/0
+execute as @s[scores={jkbw.mem=5..6}] run function jkbw:state/1/special/item/tower/floor/1
+execute as @s[scores={jkbw.mem=3..4}] run function jkbw:state/1/special/item/tower/floor/3
+execute as @s[scores={jkbw.mem=2}] run function jkbw:state/1/special/item/tower/floor/5
+execute as @s[scores={jkbw.mem=1}] run function jkbw:state/1/special/item/tower/floor/6
+execute as @s[scores={jkbw.mem=0}] run function jkbw:state/1/special/item/tower/floor/7
 tp @s[scores={jkbw.mem=..7}] ~ ~1 ~
 scoreboard players remove @s jkbw.mem 1
 

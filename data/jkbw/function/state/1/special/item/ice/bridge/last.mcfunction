@@ -2,7 +2,7 @@
 playsound block.glass.break player @a ~ ~ ~ 0.8 0.9
 
 # 生成标记
-function jkbw:state/1/special/entity/ice/platform
+function jkbw:state/1/special/item/ice/platform
 
 # 时间减少
 rotate @s[scores={jkbw.mem=70}] ~ 0

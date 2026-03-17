@@ -7,5 +7,5 @@ execute positioned ~ ~-1 ~ if block ~ ~ ~ #shulker_boxes run function jkbw:state
 execute positioned ~ ~ ~1 if block ~ ~ ~ #shulker_boxes run function jkbw:state/1/special/item/auto_bridge/get_state
 execute positioned ~ ~ ~-1 if block ~ ~ ~ #shulker_boxes run function jkbw:state/1/special/item/auto_bridge/get_state
 
-scoreboard players remove @s jkbw.Temp 1
-execute if score @s jkbw.Temp matches 1.. positioned ^ ^ ^.5 run function jkbw:state/1/special/item/auto_bridge/loop
+scoreboard players remove @s jkbw.Player.Ray 1
+execute if score @s jkbw.Player.Ray matches 1.. positioned ^ ^ ^.5 run function jkbw:state/1/special/item/auto_bridge/loop

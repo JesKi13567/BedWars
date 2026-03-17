@@ -1,5 +1,5 @@
 # 放下了盒子
-scoreboard players set @s jkbw.Temp 10
+scoreboard players set @s jkbw.Player.Ray 10
 execute anchored eyes positioned ^ ^ ^ run function jkbw:state/1/special/item/auto_bridge/loop
 
 scoreboard players reset @s jkbw.Player.Place.Red

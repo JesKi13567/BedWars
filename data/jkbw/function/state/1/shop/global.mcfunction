@@ -13,7 +13,7 @@ execute store result score @s jkbw.Player.Own.emerald run clear @s emerald[toolt
 execute if score #res_mode jkbw.mem matches 1..2 run function jkbw:state/1/shop/cost/xp/refresh
 
 # 切换末影箱
-execute as @s[scores={jkbw.Player.OpenChest=1..}] run function jkbw:state/1/shop/gui/chest/team/ray
+execute as @s[scores={jkbw.Player.OpenChest=1..}] run function jkbw:state/1/shop/gui/page/ray/global
 
 ## 检测按钮
 execute store success score @s jkbw.Player.ShopNow run clear @s *[custom_data~{jkbw: ["shop"]}] 0

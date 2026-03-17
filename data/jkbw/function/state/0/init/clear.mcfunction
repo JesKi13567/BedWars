@@ -80,6 +80,7 @@ scoreboard objectives remove jkbw.Player.Place.Red
 scoreboard objectives remove jkbw.Player.Place.White
 scoreboard objectives remove jkbw.Player.Place.Yellow
 scoreboard objectives remove jkbw.Player.PHDI
+scoreboard objectives remove jkbw.Player.Ray
 scoreboard objectives remove jkbw.Player.RebornTime
 scoreboard objectives remove jkbw.Player.ShopNow
 scoreboard objectives remove jkbw.Player.ShopRandom

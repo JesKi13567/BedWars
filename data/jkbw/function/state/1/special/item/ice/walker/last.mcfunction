@@ -1,6 +1,6 @@
 ## 执行实体为玩家
 # 生成标记
-execute unless predicate jkbw:is_sneaking run function jkbw:state/1/special/entity/ice/platform
+execute unless predicate jkbw:is_sneaking run function jkbw:state/1/special/item/ice/platform
 
 # 时间减少
 scoreboard players remove @s jkbw.Player.Use.Last.Ice 1

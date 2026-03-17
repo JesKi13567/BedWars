@@ -34,7 +34,7 @@ execute if score #res_mode jkbw.mem matches 0..1 if items entity @s[tag=!jkbw_ef
 execute if score #res_mode jkbw.mem matches 0..1 if score #ACCESS_crossbow_max jkbw.mem matches 1 if items entity @s weapon.mainhand crossbow[custom_data={jkbw: ["max_crossbow"]}] unless data entity @s SelectedItem.components.minecraft:charged_projectiles run function jkbw:state/1/special/item/crossbow_max
 
 # 真·冰霜行者持续
-execute if score #res_mode jkbw.mem matches 2 as @s[scores={jkbw.Player.Use.Last.Ice=1..}] run function jkbw:state/1/special/entity/ice/walker/last
+execute if score #res_mode jkbw.mem matches 2 as @s[scores={jkbw.Player.Use.Last.Ice=1..}] run function jkbw:state/1/special/item/ice/walker/last
 # 回城卷轴持续
 execute if score #res_mode jkbw.mem matches 2 as @s[scores={jkbw.Player.Use.Last.BackScroll=1..}] run function jkbw:state/1/special/item/back_scroll/last
 # 剑气力场持续

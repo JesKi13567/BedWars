@@ -142,7 +142,6 @@ execute if score #teams jkbw.mem matches 8 run scoreboard players set #temp jkbw
 execute as @a[scores={jkbw.Player.State=2}, sort=random, team=jkbw.pink] store result score @s jkbw.Player.ID run scoreboard players add #temp jkbw.mem 1
 execute if score #teams jkbw.mem matches 8 run scoreboard players set #temp jkbw.mem 56
 execute as @a[scores={jkbw.Player.State=2}, sort=random, team=jkbw.gray] store result score @s jkbw.Player.ID run scoreboard players add #temp jkbw.mem 1
-execute as @a run scoreboard players operation @s jkbw.Temp = @s jkbw.Player.ID
 
 # 商品个数
 scoreboard players set #shop_items_1 jkbw.mem 96
