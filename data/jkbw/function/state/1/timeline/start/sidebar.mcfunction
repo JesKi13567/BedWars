@@ -38,8 +38,6 @@ $scoreboard players display name .line2 jkbw.Sidebar {text: "$(line)", color: "w
 $scoreboard players display name .line1 jkbw.Sidebar {text: "$(line)", color: "white"}
 scoreboard players display name .author jkbw.Sidebar {text: "By JK137", color: "aqua"}
 
-execute if score #exp_mode jkbw.mem matches 6 run scoreboard objectives modify jkbw.Sidebar displayname {text: "⭐JKBW⭐", color: "white", bold: true}
-$execute if score #exp_mode jkbw.mem matches 6 if score #test_mode jkbw.mem matches 1 run scoreboard players display name .test_mode jkbw.Sidebar {text: "$(test_mode)", color: "white", bold: true}
 $execute if score #exp_mode jkbw.mem matches 6 run scoreboard players display name .red jkbw.Sidebar {text: "$(red)", color: "white"}
 $execute if score #exp_mode jkbw.mem matches 6 run scoreboard players display name .blue jkbw.Sidebar {text: "$(blue)", color: "white"}
 $execute if score #exp_mode jkbw.mem matches 6 if score #teams jkbw.mem matches 3.. run scoreboard players display name .green jkbw.Sidebar {text: "$(green)", color: "white"}
@@ -47,7 +45,6 @@ $execute if score #exp_mode jkbw.mem matches 6 if score #teams jkbw.mem matches 
 $execute if score #exp_mode jkbw.mem matches 6 if score #teams jkbw.mem matches 5.. run scoreboard players display name .cyan jkbw.Sidebar {text: "$(cyan)", color: "white"}
 $execute if score #exp_mode jkbw.mem matches 6 if score #teams jkbw.mem matches 7.. run scoreboard players display name .pink jkbw.Sidebar {text: "$(pink)", color: "white"}
 $execute if score #exp_mode jkbw.mem matches 6 if score #teams jkbw.mem matches 8.. run scoreboard players display name .gray jkbw.Sidebar {text: "$(gray)", color: "white"}
-execute if score #exp_mode jkbw.mem matches 6 run scoreboard players display name .author jkbw.Sidebar {text: "By JK137", color: "white"}
 
 execute if score #test_mode jkbw.mem matches 1 run scoreboard players display numberformat .test_mode jkbw.Sidebar blank
 scoreboard players display numberformat .author jkbw.Sidebar blank
@@ -85,6 +82,6 @@ execute if score #exp_mode jkbw.mem matches 4 run tellraw @a ["", {storage: "jk:
 execute if score #exp_mode jkbw.mem matches 5 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.exp_mode.name", color: "yellow"}, {storage: "jk:bw", nbt: "txt.global.char.colon"}, {storage: "jk:bw", nbt: "txt.ready.exp_mode.5.name", color: "white"}]
 execute if score #exp_mode jkbw.mem matches 6 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.exp_mode.name", color: "yellow"}, {storage: "jk:bw", nbt: "txt.global.char.colon"}, {storage: "jk:bw", nbt: "txt.ready.exp_mode.6.name", color: "white"}]
 
-execute if score #ENABLE.glider jkbw.mem matches 1 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.control_panel.glider_mode.name", color: "gold"}, {storage: "jk:bw", nbt: "txt.global.turned.on", color: "gold"}, "\n", {storage: "jk:bw", nbt: "txt.ready.control_panel.glider_mode.p0", color: "gold"}]
+execute if score #ENABLE.glider jkbw.mem matches 1 run tellraw @a [{storage: "jk:bw", nbt: "txt.ready.control_panel.glider_mode.name", color: "gold"}, {storage: "jk:bw", nbt: "txt.global.turned.on"}, "\n", {storage: "jk:bw", nbt: "txt.ready.control_panel.glider_mode.p1"}]
 
-execute if score #test_mode jkbw.mem matches 1 run tellraw @a ["", {storage: "jk:bw", nbt: "txt.ready.test_mode.name", color: "red", bold: true}, {storage: "jk:bw", nbt: "txt.global.turned.on", color: "red", bold: true}, "\n", {storage: "jk:bw", nbt: "txt.ready.test_mode.tellraw", color: "red"}]
+execute if score #test_mode jkbw.mem matches 1 run tellraw @a [{storage: "jk:bw", nbt: "txt.ready.test_mode.name", color: "red", bold: true}, {storage: "jk:bw", nbt: "txt.global.turned.on"}, "\n", {storage: "jk:bw", nbt: "txt.ready.test_mode.tellraw", bold: false}]

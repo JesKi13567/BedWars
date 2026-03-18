@@ -16,6 +16,8 @@ execute if score #res_mode jkbw.mem matches 2 as @s[tag=jkbw_wall] run function 
 execute as @s[tag=jkbw_ice_platform] run function jkbw:state/1/special/item/ice/global
 # 急救平台
 execute as @s[tag=jkbw_aid_platform] run function jkbw:state/1/special/item/platform/global
+# 搭桥蛋
+execute as @s[tag=jkbw_egg_platform] run function jkbw:state/1/special/entity/egg/marker/global
 
 # 火球
 execute as @s[tag=jkbw_fireball_marker] unless entity @n[type=fireball, distance=..2] positioned ~ ~-1 ~ run function jkbw:state/1/special/entity/fireball/explode

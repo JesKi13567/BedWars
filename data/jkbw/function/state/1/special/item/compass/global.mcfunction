@@ -16,7 +16,7 @@ scoreboard players operation @s jkbw.Entity.X += @s jkbw.Entity.Z
 
 # 开根号
 scoreboard players operation #sqrt_input jkbw.mem = @s jkbw.Entity.X
-function jkbw:math/sqrt/main
+function jkbw:state/1/special/item/compass/sqrt/main
 scoreboard players operation @s jkbw.Entity.X = #sqrt_result jkbw.mem
 scoreboard players operation @s jkbw.Entity.Z = @s jkbw.Entity.X
 scoreboard players operation @s jkbw.Entity.X /= #10 jkbw.mem
