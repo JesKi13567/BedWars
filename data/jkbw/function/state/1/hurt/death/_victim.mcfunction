@@ -7,6 +7,9 @@ execute as @s[scores={jkbw.Player.Damage.Type.last=4}] run tellraw @a ["", {sele
 execute as @s[scores={jkbw.Player.Damage.Type.last=5}] run tellraw @a ["", {translate: "death.attack.explosion.player", with: [{selector: "@s"}, {selector: "@p[tag=jkbw_murder]"}]}]
 execute as @s[scores={jkbw.Player.Damage.Type.last=6}] run tellraw @a ["", {translate: "death.attack.arrow", with: [{selector: "@s"}, {selector: "@p[tag=jkbw_murder]"}]}]
 execute as @s[scores={jkbw.Player.Damage.Type.last=7}] run tellraw @a ["", {translate: "death.attack.wither.player", with: [{selector: "@s"}, {selector: "@p[tag=jkbw_murder]"}]}]
+execute as @s[scores={jkbw.Player.Damage.Type.last=8}] run tellraw @a ["", {translate: "death.attack.inWall.player", with: [{selector: "@s"}, {selector: "@p[tag=jkbw_murder]"}]}]
+execute as @s[scores={jkbw.Player.Damage.Type.last=9}] run tellraw @a ["", {translate: "death.attack.onFire.player", with: [{selector: "@s"}, {selector: "@p[tag=jkbw_murder]"}]}]
+execute as @s[scores={jkbw.Player.Damage.Type.last=10}] run tellraw @a ["", {translate: "death.attack.flyIntoWall.player", with: [{selector: "@s"}, {selector: "@p[tag=jkbw_murder]"}]}]
 
 # 提示对手末影箱物资掉落
 execute if score #res_mode jkbw.mem matches 0..1 as @s[team=jkbw.red] if score $red jkbw.Bed.State matches 3 run tellraw @p[tag=jkbw_murder] {storage: "jk:bw", nbt: "txt.play.final_kill.p0", color: "green"}

@@ -76,3 +76,4 @@ execute align xyz run function jkbw:state/0/button/init
 function jkbw:state/0/panel/pages/menu
 function jkbw:state/0/panel/contents/worldspawn/current with storage jk:bw Map.cur
 gamemode creative @s
+tp @a @s

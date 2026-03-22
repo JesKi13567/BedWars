@@ -14,6 +14,7 @@ item replace entity @s hotbar.5 from block 10110209 4 10110222 container.14
 item replace entity @s hotbar.6 from block 10110209 4 10110222 container.15
 item replace entity @s hotbar.7 from block 10110209 4 10110222 container.16
 item replace entity @s hotbar.8 from block 10110209 4 10110222 container.17
+item replace entity @s container.17 with stone_brick_stairs
 item replace entity @s container.27 from block 10110209 4 10110222 container.18
 item replace entity @s container.28 from block 10110209 4 10110222 container.19
 item replace entity @s container.29 from block 10110209 4 10110222 container.20

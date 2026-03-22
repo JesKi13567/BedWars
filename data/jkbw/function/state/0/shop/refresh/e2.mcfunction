@@ -38,7 +38,9 @@ item modify block 10110209 4 10110222 container.9 {function: "set_lore", entity:
 item modify block 10110209 4 10110222 container.10 {function: "set_name", entity: "this", name: \
 [{storage: "jk:bw", nbt: "txt.egg.point.global.res", color: "green", italic: false}]}
 item modify block 10110209 4 10110222 container.10 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
-[{text: "", color: "white", italic: false}, {storage: "jk:bw", nbt: "txt.global.hand.off", color: "yellow"}, {storage: "jk:bw", nbt: "txt.global.char.colon", color: "yellow"}, {translate: "block.minecraft.diamond_block"}, "/", {translate: "block.minecraft.emerald_block"}]]}
+[{text: "", color: "white", italic: false}, {storage: "jk:bw", nbt: "txt.global.hand.off", color: "yellow"}, {storage: "jk:bw", nbt: "txt.global.char.colon", color: "yellow"}, {translate: "block.minecraft.diamond_block"}, "/", {translate: "block.minecraft.emerald_block"}], \
+[{storage: "jk:bw", nbt: "txt.egg.stairs.p0", color: "gold", italic: false}], \
+[{storage: "jk:bw", nbt: "txt.egg.stairs.p1", color: "gold", italic: false}]]}
 
 ### 资源方块
 item modify block 10110209 4 10110222 container.11 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\

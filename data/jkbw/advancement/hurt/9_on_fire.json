@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "jkbw": {
+      "trigger": "entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "jkbw:9_on_fire"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "jkbw:state/1/hurt/type/9_on_fire"
+  }
+}

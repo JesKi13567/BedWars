@@ -1,0 +1,8 @@
+$setblock ~-1 ~-1 ~ $(stairs)[facing=west, half=bottom, shape=straight]
+$setblock ~1 ~-1 ~ $(stairs)[facing=east, half=bottom, shape=straight]
+$setblock ~ ~-1 ~1 $(stairs)[facing=south, half=bottom, shape=straight]
+$setblock ~ ~-1 ~-1 $(stairs)[facing=north, half=bottom, shape=straight]
+$setblock ~1 ~-1 ~1 $(stairs)[facing=east, half=bottom, shape=inner_right]
+$setblock ~-1 ~-1 ~-1 $(stairs)[facing=west, half=bottom, shape=inner_right]
+$setblock ~-1 ~-1 ~1 $(stairs)[facing=west, half=bottom, shape=inner_left]
+$setblock ~1 ~-1 ~-1 $(stairs)[facing=east, half=bottom, shape=inner_left]

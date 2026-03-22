@@ -6,8 +6,10 @@ $execute if score $$(team) jkbw.Team.res matches ..4 as @s[scores={jkbw.Res.Coun
 $execute if score $$(team) jkbw.Team.res matches 5.. as @s[scores={jkbw.Res.Count.Gold=8..}] run kill @e[type=item, tag=jkbw_res_gold, distance=...1]
 
 # 普通生成
-$execute if score $$(team) jkbw.Team.res matches ..4 unless entity @e[type=item, tag=jkbw_extra_gold, distance=...1] run summon item ~ ~ ~ {Age: -32768, PickupDelay: 18, Invulnerable: True, Item: {id: "gold_ingot", count: 1}, Tags: ["jkbw_res", "jkbw_res_gold"]}
-$execute if score $$(team) jkbw.Team.res matches 5.. unless entity @e[type=item, tag=jkbw_extra_gold, distance=...1] run summon item ~ ~ ~ {Age: -32768, PickupDelay: 18, Invulnerable: True, Item: {id: "gold_ingot", count: 2}, Tags: ["jkbw_res", "jkbw_res_gold"]}
+$execute unless entity @a[gamemode=adventure, limit=1, distance=..2] if score $$(team) jkbw.Team.res matches ..4 unless entity @e[type=item, tag=jkbw_extra_gold, distance=...1] run summon item ~ ~ ~ {Age: -32768, PickupDelay: 18, Invulnerable: True, Item: {id: "gold_ingot", count: 1}, Tags: ["jkbw_res", "jkbw_res_gold"]}
+$execute unless entity @a[gamemode=adventure, limit=1, distance=..2] if score $$(team) jkbw.Team.res matches 5.. unless entity @e[type=item, tag=jkbw_extra_gold, distance=...1] run summon item ~ ~ ~ {Age: -32768, PickupDelay: 18, Invulnerable: True, Item: {id: "gold_ingot", count: 2}, Tags: ["jkbw_res", "jkbw_res_gold"]}
+$execute if entity @a[gamemode=adventure, limit=1, distance=..2] if score $$(team) jkbw.Team.res matches ..4 run give @a[gamemode=adventure, distance=..2] gold_ingot[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}] 1
+$execute if entity @a[gamemode=adventure, limit=1, distance=..2] if score $$(team) jkbw.Team.res matches 5.. run give @a[gamemode=adventure, distance=..2] gold_ingot[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}] 2
 
 # 绿宝石生成
 $execute if score $$(team) jkbw.Team.res matches ..2 run tag @s[tag=jkbw_emerald_time] remove jkbw_emerald_time

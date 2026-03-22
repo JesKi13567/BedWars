@@ -9,7 +9,7 @@ tellraw @s[tag=!jkbw_buy_success] [{storage: "jk:bw", nbt: "txt.play.shop.buy.ca
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-give @s[tag=jkbw_buy_success] arrow
+give @s[tag=jkbw_buy_success] arrow[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}]
 tellraw @s[tag=jkbw_buy_success] [{storage: "jk:bw", nbt: "txt.play.shop.buy.success", color: "green"}, " ", {translate: "item.minecraft.arrow", color: "gold"}, {storage: "jk:bw", nbt: "txt.global.char.exclamation"}]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 scoreboard players operation @s[tag=jkbw_buy_success] jkbw.Player.Own.xpLevelsReal -= #urfXParrow jkbw.mem

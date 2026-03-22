@@ -2,7 +2,7 @@
 function jkbw:state/1/special/check_pos
 execute if block ~ ~ ~ #shulker_boxes run setblock ~ ~ ~ air
 execute unless block ~ ~ ~ air run scoreboard players set @s jkbw.mem 0
-execute if entity @a[gamemode=adventure, distance=...8] run scoreboard players set @s jkbw.mem 0
+execute if entity @a[gamemode=adventure, limit=1, distance=...8] run scoreboard players set @s jkbw.mem 0
 execute as @s[scores={jkbw.mem=1..}] run function jkbw:state/1/special/item/auto_bridge/setblock
 
 scoreboard players remove @s jkbw.mem 1
