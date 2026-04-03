@@ -12,5 +12,5 @@ execute if score #teams jkbw.mem matches 7.. run scoreboard players set $pink jk
 execute if score #teams jkbw.mem matches 8.. run scoreboard players set $gray jkbw.Bed.State 1
 
 execute at @e[type=text_display, tag=jkbw_bed_display] run setblock ~ ~ ~ air
-tellraw @a {storage: "jk:bw", nbt: "txt.play.event.bed_destruct.tellraw", color: "red"}
+tellraw @a {storage: "jk:bw", interpret: true, nbt: "txt.play.event.bed_destruct.tellraw", color: "red"}
 playsound entity.ender_dragon.growl player @a 10110223 100 10110223 1000000000

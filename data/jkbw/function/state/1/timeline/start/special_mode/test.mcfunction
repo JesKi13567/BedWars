@@ -1,5 +1,4 @@
-# 加载区块
-function jkbw:state/0/panel/contents/worldspawn/current with storage jk:bw Map.cur
+function jkbw:state/0/panel/contents/worldspawn/cur/set with storage jk:bw Map.cur
 
 # 重新载入床和箱子
 function jkbw:state/0/eggs/point/team/lock

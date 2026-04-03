@@ -1,4 +1,4 @@
-title @a[scores={jkbw.Team.Select=1..}] actionbar {storage: "jk:bw", nbt: "txt.ready.team.reset.count", color: "red"}
+title @a[scores={jkbw.Team.Select=1..}] actionbar {storage: "jk:bw", interpret: true, nbt: "txt.ready.team.reset.count", color: "red"}
 team leave @a
 scoreboard players set @a jkbw.Team.Select 0
 clear @a[gamemode=adventure]

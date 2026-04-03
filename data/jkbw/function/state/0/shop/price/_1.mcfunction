@@ -1,4 +1,4 @@
-tellraw @s ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", {translate: "block.minecraft.shulker_box"}, " _1st", {storage: "jk:bw", nbt: "txt.global.char.colon"}, "\n", \
+tellraw @s ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", {translate: "block.minecraft.shulker_box"}, " _1st", {storage: "jk:bw", interpret: true, nbt: "txt.global.char.colon"}, "\n", \
 {text: "[", color: "aqua"}, {translate: "block.minecraft.cut_sandstone", color: "aqua", click_event: {action: "suggest_command", command: "/scoreboard players set #urfXPcut_sandstone jkbw.mem 8"}}, {text: "]", color: "aqua"}, "\n", \
 {text: "[", color: "aqua"}, {translate: "block.minecraft.end_stone", color: "aqua", click_event: {action: "suggest_command", command: "/scoreboard players set #urfXPend_stone jkbw.mem 28"}}, {text: "]", color: "aqua"}, "\n", \
 {text: "[", color: "aqua"}, {translate: "block.minecraft.packed_ice", color: "aqua", click_event: {action: "suggest_command", command: "/scoreboard players set #urfXPpacked_ice jkbw.mem 32"}}, {text: "]", color: "aqua"}, "\n", \

@@ -124,7 +124,6 @@ scoreboard objectives add jkbw.Team.sharpness dummy "队伍锋利附魔解锁"
 
 # 玩家
 scoreboard objectives add jkbw.Player.Hp health "♥"
-scoreboard objectives setdisplay below_name jkbw.Player.Hp
 scoreboard objectives setdisplay list jkbw.Player.Hp
 
 scoreboard objectives add jkbw.Player.ArmorLevels dummy "玩家装备等级"

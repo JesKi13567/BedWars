@@ -1,4 +1,4 @@
-tellraw @s ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", {translate: "block.minecraft.shulker_box"}, " 5th", {storage: "jk:bw", nbt: "txt.global.char.colon"}, ]
+tellraw @s ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", {translate: "block.minecraft.shulker_box"}, " 5th", {storage: "jk:bw", interpret: true, nbt: "txt.global.char.colon"}, ]
 function jkbw:state/0/shop/set/5/price {item: 'dragon', id: 1, A1: 5, B1: 250, A2: 10, B2: 500, A3: 15, B3: 750, A4: 20, B4: 1000, A5: 25, B5: 1250, C1: 0, D1: 0, C2: 0, D2: 0, C3: 0, D3: 0, C4: 0, D4: 0, C5: 0, D5: 0}
 function jkbw:state/0/shop/set/5/price {item: 'healing', id: 2, A1: 3, B1: 150, A2: 6, B2: 300, A3: 9, B3: 450, A4: 12, B4: 600, A5: 15, B5: 750, C1: 1, D1: 50, C2: 2, D2: 100, C3: 3, D3: 150, C4: 4, D4: 200, C5: 5, D5: 250}
 function jkbw:state/0/shop/set/5/price {item: 'sharpness', id: 3, A1: 8, B1: 400, A2: 16, B2: 800, A3: 24, B3: 1200, A4: 32, B4: 1600, A5: 40, B5: 2000, C1: 4, D1: 200, C2: 8, D2: 400, C3: 12, D3: 600, C4: 16, D4: 800, C5: 20, D5: 1000}

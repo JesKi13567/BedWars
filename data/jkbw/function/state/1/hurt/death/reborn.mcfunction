@@ -11,6 +11,6 @@ execute if score #teams jkbw.mem matches 8.. as @s[team=jkbw.gray] run function 
 # 其他处理
 function jkbw:state/1/hurt/death/spawned
 title @s subtitle ""
-title @s title [{storage: "jk:bw", nbt: "txt.play.respawn.ed", color: "green"}, {storage: "jk:bw", nbt: "txt.global.char.exclamation"}]
+title @s title [{storage: "jk:bw", interpret: true, nbt: "txt.play.respawn.ed", color: "green"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.char.exclamation"}]
 title @s times 0t 1s 10t
 scoreboard players set @s jkbw.Player.State 2

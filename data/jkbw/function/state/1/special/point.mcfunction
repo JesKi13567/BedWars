@@ -56,4 +56,4 @@ execute positioned ~1 ~2 ~-1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near
 execute positioned ~1 ~2 ~ unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
 execute positioned ~1 ~2 ~1 unless block ~ ~ ~ air if block ~ ~ ~ #jkbw:no_near_point store success score @s jkbw.Temp run setblock ~ ~ ~ air destroy
 
-execute as @s[scores={jkbw.Temp=1}] run title @a[distance=..6, gamemode=adventure] actionbar {storage: "jk:bw", nbt: "txt.play.cannot_build_here", color: "red"}
+execute as @s[scores={jkbw.Temp=1}] run title @a[distance=..6, gamemode=adventure] actionbar {storage: "jk:bw", interpret: true, nbt: "txt.play.cannot_build_here", color: "red"}

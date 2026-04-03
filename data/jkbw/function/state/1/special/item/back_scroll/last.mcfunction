@@ -1,11 +1,11 @@
 scoreboard players remove @s jkbw.Player.Use.Last.BackScroll 1
-title @s actionbar [{storage: "jk:bw", nbt: "txt.shop.item.back_scroll.tp.p0", color: "yellow"}, {score: {name: "@s", objective: "jkbw.Player.Use.Last.BackScroll"}, color: "red"}, {storage: "jk:bw", nbt: "txt.shop.item.back_scroll.tp.p1"}]
+title @s actionbar [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.back_scroll.tp.p0", color: "yellow"}, {score: {name: "@s", objective: "jkbw.Player.Use.Last.BackScroll"}, color: "red"}, {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.back_scroll.tp.p1"}]
 
 # 检测移动
 execute as @s[scores={jkbw.Player.Use.Last.BackScroll=1..}] unless entity @e[type=marker, tag=jkbw_back_scroll_marker, distance=...1] run function jkbw:state/1/special/item/back_scroll/fail
 
 # 传送
-title @s[scores={jkbw.Player.Use.Last.BackScroll=0}] actionbar {storage: "jk:bw", nbt: "txt.shop.item.back_scroll.tp.success", color: "yellow"}
+title @s[scores={jkbw.Player.Use.Last.BackScroll=0}] actionbar {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.back_scroll.tp.success", color: "yellow"}
 execute as @s[scores={jkbw.Player.Use.Last.BackScroll=0}] run kill @e[type=marker, tag=jkbw_back_scroll_marker, distance=...1]
 
 # 特效

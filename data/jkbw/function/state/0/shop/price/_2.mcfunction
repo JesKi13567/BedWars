@@ -1,4 +1,4 @@
-tellraw @s ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", {translate: "block.minecraft.shulker_box"}, " _2nd", {storage: "jk:bw", nbt: "txt.global.char.colon"}, "\n", \
+tellraw @s ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", {translate: "block.minecraft.shulker_box"}, " _2nd", {storage: "jk:bw", interpret: true, nbt: "txt.global.char.colon"}, "\n", \
 {text: "[", color: "aqua"}, {translate: "item.minecraft.fishing_rod", color: "aqua", click_event: {action: "suggest_command", command: "/scoreboard players set #urfXPfishing_rod jkbw.mem 5"}}, {text: "]", color: "aqua"}, "\n", \
 {text: "[", color: "aqua"}, {translate: "item.minecraft.stick", color: "aqua", click_event: {action: "suggest_command", command: "/scoreboard players set #urfXPstick jkbw.mem 1"}}, {text: "]", color: "aqua"}, "\n", \
 {text: "[", color: "aqua"}, {translate: "item.minecraft.bone", color: "aqua", click_event: {action: "suggest_command", command: "/scoreboard players set #urfXPbone jkbw.mem 10"}}, {text: "]", color: "aqua"}, "\n", \
