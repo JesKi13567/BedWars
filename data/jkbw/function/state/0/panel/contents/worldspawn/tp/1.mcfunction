@@ -15,6 +15,10 @@ $scoreboard players operation #WYmin.5 jkbw.mem = #WY$(id)min.5 jkbw.mem
 $scoreboard players operation #WYmin._5 jkbw.mem = #WY$(id)min._5 jkbw.mem
 $scoreboard players operation #WYmin._10 jkbw.mem = #WY$(id)min._10 jkbw.mem
 
+# 取消准备 & 关闭测试模式
+item replace entity @a[gamemode=adventure] hotbar.8 from block 10110209 4 10110222 container.0
+scoreboard players reset #test_mode jkbw.mem
+
 # 提示
 function jkbw:state/0/panel/pages/menu
 $tellraw @a [{storage: "jk:bw", interpret: true, nbt: "txt.global.bedwars.left", color: "yellow"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.current", color: "green"}, {translate: "item.minecraft.filled_map", color: "green"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.char.colon"}, {text: "$(id)", color: "gold"}]

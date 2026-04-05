@@ -6,6 +6,9 @@ $execute if score $$(team) jkbw.Team.protect matches 3 run function jkbw:state/1
 $execute if score $$(team) jkbw.Team.protect matches 4 run function jkbw:state/1/team/loop/armor/protect {team: '$(team)', lvl: 4, suf: ', protection: 4', color: '$(color)'}
 $execute if score $$(team) jkbw.Team.protect matches 5 run function jkbw:state/1/team/loop/armor/protect {team: '$(team)', lvl: 5, suf: ', protection: 5', color: '$(color)'}
 
+# 滑翔模式
+execute if score #ENABLE.glider jkbw.mem matches 1 if score #time_state jkbw.mem matches 1.. run item modify entity @s armor.chest {function: "set_components", components: {glider: {}}}
+
 ## 头饰
 # 护甲值
 attribute @s[scores={jkbw.Player.Head=0}] armor base reset

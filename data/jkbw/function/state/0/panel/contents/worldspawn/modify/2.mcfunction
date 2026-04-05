@@ -2,7 +2,7 @@
 playsound block.note_block.bell player @a
 
 # 相同步骤
-$data merge storage jk:bw {Map: {cur: {id: $(id), ymin: $(ymin), r: $(r), team_max: $(team_max)}, type: 2}}
+$data merge storage jk:bw {Map: {cur: {id: $(id), ymin: $(ymin), r: $(r), team_max: $(team_max), type: 2}}}
 function jkbw:state/0/panel/contents/worldspawn/cur/global with storage jk:bw Map.cur
 
 # 其他

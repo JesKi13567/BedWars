@@ -8,8 +8,12 @@ setworldspawn
 execute align xyz run worldborder center ~.5 ~.5
 
 # 相同步骤
-$data merge storage jk:bw {Map: {cur: {id: $(id), ymin: $(ymin), r: $(r), team_max: $(team_max)}, type: 1}}
+$data merge storage jk:bw {Map: {cur: {id: $(id), ymin: $(ymin), r: $(r), team_max: $(team_max), type: 1}}}
 function jkbw:state/0/panel/contents/worldspawn/cur/global with storage jk:bw Map.cur
+
+# 取消准备 & 关闭测试模式
+item replace entity @a[gamemode=adventure] hotbar.8 from block 10110209 4 10110222 container.0
+scoreboard players reset #test_mode jkbw.mem
 
 # 其他
 scoreboard players set #tutorial jkbw.mem 2

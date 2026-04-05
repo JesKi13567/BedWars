@@ -12,7 +12,7 @@ effect give @s saturation 1 9 true
 execute if score #heal jkbw.mem matches 5 run effect give @s regeneration 1 2 true
 
 # 滑翔模式
-execute if score #ENABLE.glider jkbw.mem matches 1 if score #time_state jkbw.mem matches 1.. run item modify entity @s armor.chest {function: "set_components", components: {glider: {}}}
+execute if score #ENABLE.glider jkbw.mem matches 1 if score #res_mode jkbw.mem matches 2 if score #time_state jkbw.mem matches 1.. run item modify entity @s armor.chest {function: "set_components", components: {glider: {}}}
 
 ## 此处才使用 data get 为节省性能
 # 高度

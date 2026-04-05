@@ -7,3 +7,6 @@ execute as @s[tag=bed_type] run function jkbw:state/0/button/bed_type/update
 
 execute as @s[tag=chunk] run function jkbw:state/0/shop/box/global
 execute as @s[tag=price] run function jkbw:state/0/shop/price/init
+
+# 倒计时重置
+scoreboard players set #countdown jkbw.mem 10

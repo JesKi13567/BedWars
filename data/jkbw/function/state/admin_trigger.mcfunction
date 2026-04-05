@@ -9,7 +9,7 @@ execute if score @s jkbw.Admin.Trigger matches 100 run function jkbw:state/0/pan
 execute if score @s jkbw.Admin.Trigger matches 101 run function jkbw:state/0/panel/pages/author
 execute if score @s jkbw.Admin.Trigger matches 102 run function jkbw:state/0/panel/pages/how2use
 execute if score @s jkbw.Admin.Trigger matches 103 run function jkbw:state/0/panel/pages/control
-execute if score @s jkbw.Admin.Trigger matches 104 run function jkbw:state/0/panel/contents/worldspawn/query
+execute if score @s jkbw.Admin.Trigger matches 104 run function jkbw:state/0/panel/contents/worldspawn/query with storage jk:bw Map.cur
 execute if score @s jkbw.Admin.Trigger matches 105 at @n[type=text_display, tag=jkbw_worldspawn] run function jkbw:state/0/panel/contents/map/point/init {type: 'clean'}
 execute if score @s jkbw.Admin.Trigger matches 106 at @n[type=text_display, tag=jkbw_worldspawn] run function jkbw:state/0/panel/contents/map/point/init {type: 'convert'}
 execute if score @s jkbw.Admin.Trigger matches 107 run function jkbw:state/0/panel/contents/switch/border with storage jk:bw Map.cur
