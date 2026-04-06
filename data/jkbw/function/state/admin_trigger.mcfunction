@@ -36,6 +36,7 @@ execute if score @s jkbw.Admin.Trigger matches 210 run function jkbw:state/0/pan
 execute if score @s jkbw.Admin.Trigger matches 211 run function jkbw:state/0/panel/contents/switch/others {type: 'spear', num: 2}
 execute if score @s jkbw.Admin.Trigger matches 212 run function jkbw:state/0/panel/contents/switch/others {type: 'potion', num: 2}
 execute if score @s jkbw.Admin.Trigger matches 213 run function jkbw:state/0/panel/contents/switch/others {type: 'glider', num: 2}
+execute if score @s jkbw.Admin.Trigger matches 214 run function jkbw:state/0/panel/contents/switch/others {type: 'invisible_item', num: 3}
 
 execute if score @s jkbw.Admin.Trigger matches 250 run function jkbw:state/0/shop/set/6/set {x: 'permanent_save'}
 execute if score @s jkbw.Admin.Trigger matches 251 run function jkbw:state/0/shop/set/6/set {x: 'trident'}

@@ -20,8 +20,8 @@ item modify block 10110209 4 10110222 container.2 {function: "set_lore", entity:
 
 ## 望远镜
 item modify block 10110209 4 10110222 container.3 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
-[{storage: "jk:bw", interpret: true, nbt: "txt.item.spyglass.p0", color: "gray", italic: false}], \
-[{storage: "jk:bw", interpret: true, nbt: "txt.item.spyglass.p1", color: "gray", italic: false}]]}
+[{storage: "jk:bw", interpret: true, nbt: "txt.item.invisible.p0", color: "gray", italic: false}], \
+[{storage: "jk:bw", interpret: true, nbt: "txt.item.invisible.p1", color: "gray", italic: false}]]}
 
 ## 伤害免疫冷却
 item modify block 10110209 4 10110222 container.8 {function: "set_name", entity: "this", name: \

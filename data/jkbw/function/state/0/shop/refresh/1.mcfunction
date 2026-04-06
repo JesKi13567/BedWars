@@ -61,7 +61,7 @@ item modify block 10110221 5 10110222 container.15 {function: "set_lore", entity
 
 #axe1|axe2|axe3|axe4
 item modify block 10110221 5 10110222 container.18 {function: "set_name", entity: "this", name: \
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.tool.axe", italic: false, color: "white"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lock.cur"}, "/", {storage: "jk:bw", interpret: true, nbt: "txt.global.update"}]}
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.tool.axe", italic: false, color: "white"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lock.cur"}, "/", {storage: "jk:bw", interpret: true, nbt: "txt.global.upgrade"}]}
 item modify block 10110221 5 10110222 container.18 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}], \
 [{storage: "jk:bw", interpret: true, nbt: "txt.global.tier", italic: false, color: "white"}, " 1: ", {translate: "item.minecraft.wooden_axe", italic: false, color: "yellow"}, " ", {text: "(", italic: false, color: "yellow"}, {translate: "enchantment.minecraft.efficiency", italic: false, color: "yellow"}, " ", {translate: "enchantment.level.1", italic: false, color: "yellow"}, {text: ")", italic: false, color: "yellow"}, " ", {score: {name: "#axe1", objective: "jkbw.mem"}, color: "white"}, " ", {translate: "item.minecraft.iron_ingot", italic: false, color: "white"}], \
@@ -72,7 +72,7 @@ item modify block 10110221 5 10110222 container.18 {function: "set_lore", entity
 
 #pickaxe1|pickaxe2|pickaxe3|pickaxe4
 item modify block 10110221 5 10110222 container.19 {function: "set_name", entity: "this", name: \
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.tool.pickaxe", italic: false, color: "white"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lock.cur"}, "/", {storage: "jk:bw", interpret: true, nbt: "txt.global.update"}]}
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.tool.pickaxe", italic: false, color: "white"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lock.cur"}, "/", {storage: "jk:bw", interpret: true, nbt: "txt.global.upgrade"}]}
 item modify block 10110221 5 10110222 container.19 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}], \
 [{storage: "jk:bw", interpret: true, nbt: "txt.global.tier", italic: false, color: "white"}, " 1: ", {translate: "item.minecraft.wooden_pickaxe", italic: false, color: "yellow"}, " ", {text: "(", italic: false, color: "yellow"}, {translate: "enchantment.minecraft.efficiency", italic: false, color: "yellow"}, " ", {translate: "enchantment.level.1", italic: false, color: "yellow"}, {text: ")", italic: false, color: "yellow"}, " ", {score: {name: "#pickaxe1", objective: "jkbw.mem"}, color: "white"}, " ", {translate: "item.minecraft.iron_ingot", italic: false, color: "white"}], \
@@ -83,7 +83,7 @@ item modify block 10110221 5 10110222 container.19 {function: "set_lore", entity
 
 #shears1|shears2|shears3|shears4
 item modify block 10110221 5 10110222 container.20 {function: "set_name", entity: "this", name: \
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.tool.shears", italic: false, color: "white"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lock.cur"}, "/", {storage: "jk:bw", interpret: true, nbt: "txt.global.update"}]}
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.tool.shears", italic: false, color: "white"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lock.cur"}, "/", {storage: "jk:bw", interpret: true, nbt: "txt.global.upgrade"}]}
 item modify block 10110221 5 10110222 container.20 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}], \
 [{storage: "jk:bw", interpret: true, nbt: "txt.global.tier", italic: false, color: "white"}, " 1: ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lock.cur", italic: false, color: "yellow"}, " ", {score: {name: "#shears1", objective: "jkbw.mem"}, color: "white"}, " ", {translate: "item.minecraft.iron_ingot", italic: false, color: "white"}], \
@@ -94,7 +94,7 @@ item modify block 10110221 5 10110222 container.20 {function: "set_lore", entity
 
 #XPaxe1|XPaxe2|XPaxe3|XPaxe4
 item modify block 10110221 5 10110222 container.21 {function: "set_name", entity: "this", name: \
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.tool.axe", italic: false, color: "white"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lock.cur"}, "/", {storage: "jk:bw", interpret: true, nbt: "txt.global.update"}]}
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.tool.axe", italic: false, color: "white"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lock.cur"}, "/", {storage: "jk:bw", interpret: true, nbt: "txt.global.upgrade"}]}
 item modify block 10110221 5 10110222 container.21 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}], \
 [{storage: "jk:bw", interpret: true, nbt: "txt.global.tier", italic: false, color: "white"}, " 1: ", {translate: "item.minecraft.wooden_axe", italic: false, color: "yellow"}, " ", {text: "(", italic: false, color: "yellow"}, {translate: "enchantment.minecraft.efficiency", italic: false, color: "yellow"}, " ", {translate: "enchantment.level.1", italic: false, color: "yellow"}, {text: ")", italic: false, color: "yellow"}, " ", {score: {name: "#XPaxe1", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}], \
@@ -105,7 +105,7 @@ item modify block 10110221 5 10110222 container.21 {function: "set_lore", entity
 
 #XPpickaxe1|XPpickaxe2|XPpickaxe3|XPpickaxe4
 item modify block 10110221 5 10110222 container.22 {function: "set_name", entity: "this", name: \
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.tool.pickaxe", italic: false, color: "white"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lock.cur"}, "/", {storage: "jk:bw", interpret: true, nbt: "txt.global.update"}]}
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.tool.pickaxe", italic: false, color: "white"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lock.cur"}, "/", {storage: "jk:bw", interpret: true, nbt: "txt.global.upgrade"}]}
 item modify block 10110221 5 10110222 container.22 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}], \
 [{storage: "jk:bw", interpret: true, nbt: "txt.global.tier", italic: false, color: "white"}, " 1: ", {translate: "item.minecraft.wooden_pickaxe", italic: false, color: "yellow"}, " ", {text: "(", italic: false, color: "yellow"}, {translate: "enchantment.minecraft.efficiency", italic: false, color: "yellow"}, " ", {translate: "enchantment.level.1", italic: false, color: "yellow"}, {text: ")", italic: false, color: "yellow"}, " ", {score: {name: "#XPpickaxe1", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}], \
@@ -116,7 +116,7 @@ item modify block 10110221 5 10110222 container.22 {function: "set_lore", entity
 
 #XPshears1|XPshears2|XPshears3|XPshears4
 item modify block 10110221 5 10110222 container.23 {function: "set_name", entity: "this", name: \
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.tool.shears", italic: false, color: "white"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lock.cur"}, "/", {storage: "jk:bw", interpret: true, nbt: "txt.global.update"}]}
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.tool.shears", italic: false, color: "white"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lock.cur"}, "/", {storage: "jk:bw", interpret: true, nbt: "txt.global.upgrade"}]}
 item modify block 10110221 5 10110222 container.23 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}], \
 [{storage: "jk:bw", interpret: true, nbt: "txt.global.tier", italic: false, color: "white"}, " 1: ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lock.cur", italic: false, color: "yellow"}, " ", {score: {name: "#XPshears1", objective: "jkbw.mem"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}], \

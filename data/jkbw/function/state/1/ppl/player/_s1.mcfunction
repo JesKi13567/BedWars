@@ -14,6 +14,10 @@ execute if score #heal jkbw.mem matches 5 run effect give @s regeneration 1 2 tr
 # 滑翔模式
 execute if score #ENABLE.glider jkbw.mem matches 1 if score #res_mode jkbw.mem matches 2 if score #time_state jkbw.mem matches 1.. run item modify entity @s armor.chest {function: "set_components", components: {glider: {}}}
 
+# 空手时替换为隐形物品
+execute unless score #ENABLE.invisible_item jkbw.mem matches 0 unless items entity @s weapon.mainhand #jkbw:invisible run clear @s #jkbw:invisible
+execute unless score #ENABLE.invisible_item jkbw.mem matches 0 unless items entity @s weapon.mainhand * run item replace entity @s weapon.mainhand from block 10110209 4 10110222 container.3
+
 ## 此处才使用 data get 为节省性能
 # 高度
 execute store result score @s jkbw.Entity.Y run data get entity @s Pos[1]

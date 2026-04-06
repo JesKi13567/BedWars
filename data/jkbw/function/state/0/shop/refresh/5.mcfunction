@@ -9,6 +9,6 @@ function jkbw:state/0/shop/set/5/refresh {A: 22, B: 24, C: 23, D: 25, item: 'kno
 
 # 团队升级界面
 item modify block 10110217 5 10110222 container.26 {function: "set_name", entity: "this", name: \
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.team.update.name", italic: false, color: "aqua"}]}
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.team.upgrade.name", italic: false, color: "aqua"}]}
 item modify block 10110217 5 10110222 container.26 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.team.update.p0", italic: false, color: "gray"}]]}
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.team.upgrade.p0", italic: false, color: "gray"}]]}

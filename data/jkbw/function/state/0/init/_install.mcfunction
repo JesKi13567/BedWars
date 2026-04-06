@@ -63,6 +63,8 @@ scoreboard players set #ENABLE.spear jkbw.mem 0
 scoreboard players set #ENABLE.potion jkbw.mem 0
 # 滑翔模式 0 禁用 1 启用
 scoreboard players set #ENABLE.glider jkbw.mem 0
+# 隐形物品种类 0 无 1 板砖 2 望远镜
+scoreboard players set #ENABLE.invisible_item jkbw.mem 1
 # 团队升级最大次数
 scoreboard players set #TEAM_UPDATE.knockback jkbw.mem 0
 scoreboard players set #TEAM_UPDATE.sharpness jkbw.mem 1

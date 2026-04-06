@@ -25,7 +25,7 @@ item modify block 10110222 5 10110222 container.12 {function: "set_name", entity
 
 # 团队升级
 item modify block 10110222 5 10110222 container.13 {function: "set_name", entity: "this", name: \
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.menu.update", italic: false, color: "white"}]}
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.menu.upgrade", italic: false, color: "white"}]}
 
 # 团队陷阱
 item modify block 10110222 5 10110222 container.14 {function: "set_name", entity: "this", name: \

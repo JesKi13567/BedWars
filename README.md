@@ -20,6 +20,11 @@
 
 1. 注：仅支持主世界维度。
 
+### 关于兼容
+- 定义：首先在更新日志标了“可兼容”，且当前存档已安装并运行过旧版数据包，现准备安装新版数据包。
+
+- 实现：进入游戏，再次选择语言，然后输入`/function jkbw:compatibility`。
+
 ### 功能列表
 1. 支持简体中文和英文。
 
@@ -102,6 +107,11 @@ For servers: Start the server now \(restart if already running\).
 
 1. Note: This datapack only support the overworld dimension.
 
+### About Compatibility
+- Definition: The update log is marked "compatible", the current world save has installed and run an older version of the datapack, and a new version of the datapack is to be installed.
+
+- Operation: Enter the game, reselect the language, then run: `/function jkbw:compatibility`.
+
 ### Feature List
 1. Support Simplified Chinese and English.
 
@@ -126,7 +136,7 @@ For servers: Start the server now \(restart if already running\).
 ##### "Control Panel"
 |Option|Description|
 |-|-|
-|Container Chunk|You can adjust shop prices, enable Rotating Items & change max tier of Team Updates here.|
+|Container Chunk|You can adjust shop prices, enable Rotating Items & change max tier of Team Upgrades here.|
 |Map Rotation|Input map list manually and enable the switch to activate.|
 |Set Period|Settings of game phase timers.|
 |Others|Controls whether corresponding items appear or display differently in the shop.|
