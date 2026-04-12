@@ -13,6 +13,7 @@
                             "name": [
                                 {
                                     "storage": "jk:bw",
+                                    "interpret": true,
                                     "nbt": "txt.shop.item.the_truly",
                                     "color": "white",
                                     "italic": false

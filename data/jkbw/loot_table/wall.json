@@ -12,6 +12,7 @@
                             "entity": "this",
                             "name": {
                                 "storage": "jk:bw",
+                                "interpret": true,
                                 "nbt": "txt.shop.item.wall.name",
                                 "color": "white",
                                 "italic": false

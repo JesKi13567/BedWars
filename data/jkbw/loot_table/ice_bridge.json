@@ -12,6 +12,7 @@
                             "entity": "this",
                             "name": {
                                 "storage": "jk:bw",
+                                "interpret": true,
                                 "nbt": "txt.shop.item.ice_bridge.name",
                                 "color": "white",
                                 "italic": false

@@ -41,6 +41,7 @@ $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) birch_planks replace fletching_table
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) netherite_block replace ancient_debris
 
 # 容器上锁
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) trapped_chest{lock: {components: {custom_name: {text: "JK"}}}} replace chest
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) trapped_chest{lock: {components: {custom_name: {text: "JK"}}}} replace trapped_chest
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) barrel{lock: {components: {custom_name: {text: "JK"}}}} replace barrel
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) dispenser{lock: {components: {custom_name: {text: "JK"}}}} replace dispenser

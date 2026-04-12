@@ -7,6 +7,13 @@
     "id": "red_shulker_box",
     "count": 1,
     "components": {
+      "lock": {
+        "components": {
+          "custom_name": {
+            "text": "JK"
+          }
+        }
+      },
       "tooltip_display": {
         "hidden_components": [
           "can_break",
