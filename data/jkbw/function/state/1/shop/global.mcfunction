@@ -10,7 +10,7 @@ execute store result score @s jkbw.Player.Own.diamond run clear @s diamond[toolt
 execute store result score @s jkbw.Player.Own.emerald run clear @s emerald[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}] 0
 
 # 经验模式
-execute if score #res_mode jkbw.mem matches 1..2 run function jkbw:state/1/shop/cost/xp/refresh
+execute if score #res_mode jkbw.int matches 1..2 run function jkbw:state/1/shop/cost/xp/refresh
 
 # 切换末影箱
 execute as @s[scores={jkbw.Player.OpenChest=1..}] run function jkbw:state/1/shop/gui/page/ray/global
@@ -29,9 +29,9 @@ scoreboard players reset @s jkbw.Player.Page.Switched
 execute store result score @s jkbw.Player.Page.Items if items entity @s enderchest.* *[custom_data~{jkbw: ["shop"]}]
 
 # 商店模式
-execute if score #res_mode jkbw.mem matches 0 run function jkbw:state/1/shop/gui/classic
-execute if score #res_mode jkbw.mem matches 1 run function jkbw:state/1/shop/gui/xp
-execute if score #res_mode jkbw.mem matches 2 run function jkbw:state/1/shop/gui/urf
+execute if score #res_mode jkbw.int matches 0 run function jkbw:state/1/shop/gui/classic/global
+execute if score #res_mode jkbw.int matches 1 run function jkbw:state/1/shop/gui/xp/global
+execute if score #res_mode jkbw.int matches 2 run function jkbw:state/1/shop/gui/urf/global
 
 # 真·末影箱
 execute as @s[scores={jkbw.Player.Page=-1}] run function jkbw:state/1/shop/gui/chest/global

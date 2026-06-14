@@ -1,9 +1,9 @@
-#scoreboard objectives add jkbw.mem dummy "记分板"
+#scoreboard objectives add jkbw.int dummy "记分板"
 
 ################ 默认分数
 
 # 对于禁止放方块点，temp记录周遭方块数量
-# 对于铁傀儡，mem和temp防止其被铁锭修复
+# 对于铁傀儡，int和temp防止其被铁锭修复
 
 # 玩家状态 player.state
 # 0 未报名 1 已报名 2 存活中 3 死亡中 4 无法复活提示 5 无法复活结束
@@ -13,92 +13,92 @@
 # 1 is_trap 2 defend 3 alarm 4 mining_fatigue
 
 # 表示加载过了
-scoreboard players set #loaded jkbw.mem 1
+scoreboard players set #loaded jkbw.int 1
 # tutorial 教程/步骤
-execute unless score #tutorial jkbw.mem matches 0.. run scoreboard players set #tutorial jkbw.mem 0
+execute unless score #tutorial jkbw.int matches 0.. run scoreboard players set #tutorial jkbw.int 0
 # res_mode 资源模式 0 经典 1 经验 2 无限火力
-scoreboard players set #res_mode jkbw.mem 0
+scoreboard players set #res_mode jkbw.int 0
 # attack_speed 攻击速度 0 1.8- 1 1.9+
-scoreboard players set #attack_speed jkbw.mem 1
+scoreboard players set #attack_speed jkbw.int 1
 # bed_type 床种类 0 床 1 夹心 2 蛋糕
-scoreboard players set #bed_type jkbw.mem 0
+scoreboard players set #bed_type jkbw.int 0
 # exp_mode 实验模式 0 无 1 疾速 2 无跳跃 3 小人国 4 被迫零元购 5 摸摸 6 色盲
-scoreboard players set #exp_mode jkbw.mem 0
+scoreboard players set #exp_mode jkbw.int 0
 # set_time 设置时间 0 day 1 noon 2 night 3 midnight
-scoreboard players set #set_time jkbw.mem 0
+scoreboard players set #set_time jkbw.int 0
 # time_freeze 设置时间流动 1 不流动 0 流动
-scoreboard players set #time_freeze jkbw.mem 1
+scoreboard players set #time_freeze jkbw.int 1
 # teams 队伍数量 2~8
-scoreboard players set #teams jkbw.mem 2
+scoreboard players set #teams jkbw.int 2
 # state 游戏状态 0 等待报名 1 进行 2 获胜 3 超时
-scoreboard players set #state jkbw.mem 0
+scoreboard players set #state jkbw.int 0
 #  res_rate   order  int  dec
 # 资源产生速率  标号  整数  小数
-scoreboard players set #res_rate.num jkbw.mem 10
-scoreboard players set #res_rate.order jkbw.mem 1
-scoreboard players set #res_rate.int jkbw.mem 1
-scoreboard players set #res_rate.dec jkbw.mem 0
+scoreboard players set #res_rate.num jkbw.int 10
+scoreboard players set #res_rate.order jkbw.int 1
+scoreboard players set #res_rate.int jkbw.int 1
+scoreboard players set #res_rate.dec jkbw.int 0
 #   UPDATE       BED       FIGHT       END
 # 资源升级间隔   床自毁   死斗模式间隔    结束
-scoreboard players set #TIME.UPDATE jkbw.mem 300
-scoreboard players set #TIME.BED jkbw.mem 600
-scoreboard players set #TIME.FIGHT jkbw.mem 600
-scoreboard players set #TIME.END jkbw.mem 600
+scoreboard players set #TIME.UPDATE jkbw.int 300
+scoreboard players set #TIME.BED jkbw.int 600
+scoreboard players set #TIME.FIGHT jkbw.int 600
+scoreboard players set #TIME.END jkbw.int 600
 # 全局资源点1级生成时间与升级减少时间，区分是否无限火力
-scoreboard players set #SPAWN.diamond jkbw.mem 30
-scoreboard players set #MINUS.diamond jkbw.mem 5
-scoreboard players set #SPAWN.diamond.URF jkbw.mem 15
-scoreboard players set #MINUS.diamond.URF jkbw.mem 1
-scoreboard players set #SPAWN.emerald jkbw.mem 55
-scoreboard players set #MINUS.emerald jkbw.mem 5
-scoreboard players set #SPAWN.emerald.URF jkbw.mem 5
-scoreboard players set #MINUS.emerald.URF jkbw.mem 1
+scoreboard players set #SPAWN.diamond jkbw.int 30
+scoreboard players set #MINUS.diamond jkbw.int 5
+scoreboard players set #SPAWN.diamond.URF jkbw.int 15
+scoreboard players set #MINUS.diamond.URF jkbw.int 1
+scoreboard players set #SPAWN.emerald jkbw.int 55
+scoreboard players set #MINUS.emerald jkbw.int 5
+scoreboard players set #SPAWN.emerald.URF jkbw.int 5
+scoreboard players set #MINUS.emerald.URF jkbw.int 1
 # 被迫零元购的时间间隔
-scoreboard players set #FFL_INTERVAL jkbw.mem 5
+scoreboard players set #FFL_INTERVAL jkbw.int 5
 # 盾模式 0 禁用 1 启用 2 附剑上
-scoreboard players set #ENABLE.shield jkbw.mem 1
+scoreboard players set #ENABLE.shield jkbw.int 1
 # 矛模式 0 禁用 1 启用
-scoreboard players set #ENABLE.spear jkbw.mem 0
+scoreboard players set #ENABLE.spear jkbw.int 0
 # 药水种类 0 默认 1 喷溅型
-scoreboard players set #ENABLE.potion jkbw.mem 0
+scoreboard players set #ENABLE.potion jkbw.int 0
 # 滑翔模式 0 禁用 1 启用
-scoreboard players set #ENABLE.glider jkbw.mem 0
+scoreboard players set #ENABLE.glider jkbw.int 0
 # 隐形物品种类 0 无 1 板砖 2 望远镜
-scoreboard players set #ENABLE.invisible_item jkbw.mem 1
+scoreboard players set #ENABLE.invisible_item jkbw.int 1
 # 团队升级最大次数
-scoreboard players set #TEAM_UPDATE.knockback jkbw.mem 0
-scoreboard players set #TEAM_UPDATE.sharpness jkbw.mem 1
-scoreboard players set #TEAM_UPDATE.dragon jkbw.mem 1
-scoreboard players set #TEAM_UPDATE.haste jkbw.mem 2
-scoreboard players set #TEAM_UPDATE.healing jkbw.mem 1
-scoreboard players set #TEAM_UPDATE.protect jkbw.mem 4
-scoreboard players set #TEAM_UPDATE.res jkbw.mem 4
+scoreboard players set #TEAM_UPDATE.knockback jkbw.int 0
+scoreboard players set #TEAM_UPDATE.sharpness jkbw.int 1
+scoreboard players set #TEAM_UPDATE.dragon jkbw.int 1
+scoreboard players set #TEAM_UPDATE.haste jkbw.int 2
+scoreboard players set #TEAM_UPDATE.healing jkbw.int 1
+scoreboard players set #TEAM_UPDATE.protect jkbw.int 4
+scoreboard players set #TEAM_UPDATE.res jkbw.int 4
 # 商品个数
-scoreboard players set #shop_items_0 jkbw.mem 27
-scoreboard players set #shop_items_2 jkbw.mem 34
-scoreboard players set #shop_items_5 jkbw.mem 27
-scoreboard players set #shop_items_6 jkbw.mem 27
-scoreboard players set #shop_items_7 jkbw.mem 27
-scoreboard players set #shop_items_8 jkbw.mem 27
-scoreboard players set #shop_items_9 jkbw.mem 27
+scoreboard players set #shop_items_0 jkbw.int 27
+scoreboard players set #shop_items_2 jkbw.int 34
+scoreboard players set #shop_items_5 jkbw.int 27
+scoreboard players set #shop_items_6 jkbw.int 27
+scoreboard players set #shop_items_7 jkbw.int 27
+scoreboard players set #shop_items_8 jkbw.int 27
+scoreboard players set #shop_items_9 jkbw.int 27
 # 计算用数字
-scoreboard players set #-1 jkbw.mem -1
-scoreboard players set #1 jkbw.mem 1
-scoreboard players set #2 jkbw.mem 2
-scoreboard players set #3 jkbw.mem 3
-scoreboard players set #4 jkbw.mem 4
-scoreboard players set #5 jkbw.mem 5
-scoreboard players set #6 jkbw.mem 6
-scoreboard players set #7 jkbw.mem 7
-scoreboard players set #8 jkbw.mem 8
-scoreboard players set #9 jkbw.mem 9
-scoreboard players set #10 jkbw.mem 10
-scoreboard players set #60 jkbw.mem 60
-scoreboard players set #100 jkbw.mem 100
-scoreboard players set #119 jkbw.mem 119
-scoreboard players set #1000 jkbw.mem 1000
-scoreboard players set #4214 jkbw.mem 4214
-scoreboard players set #50436 jkbw.mem 50436
+scoreboard players set #-1 jkbw.int -1
+scoreboard players set #1 jkbw.int 1
+scoreboard players set #2 jkbw.int 2
+scoreboard players set #3 jkbw.int 3
+scoreboard players set #4 jkbw.int 4
+scoreboard players set #5 jkbw.int 5
+scoreboard players set #6 jkbw.int 6
+scoreboard players set #7 jkbw.int 7
+scoreboard players set #8 jkbw.int 8
+scoreboard players set #9 jkbw.int 9
+scoreboard players set #10 jkbw.int 10
+scoreboard players set #60 jkbw.int 60
+scoreboard players set #100 jkbw.int 100
+scoreboard players set #119 jkbw.int 119
+scoreboard players set #1000 jkbw.int 1000
+scoreboard players set #4214 jkbw.int 4214
+scoreboard players set #50436 jkbw.int 50436
 
 # 商店默认价格
 function jkbw:state/0/shop/price/init

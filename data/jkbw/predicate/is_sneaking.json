@@ -1,12 +1,12 @@
 {
-    "condition": "entity_properties",
-    "entity": "this",
-    "predicate": {
-        "type_specific": {
-            "type": "player",
-            "input": {
-                "sneak": true
-            }
-        }
+  "condition": "entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type_specific": {
+      "type": "player",
+      "input": {
+        "sneak": true
+      }
     }
+  }
 }

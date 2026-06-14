@@ -1,4 +1,4 @@
-scoreboard players add #teams jkbw.mem 1
-execute if score #teams jkbw.mem > #teams_max jkbw.mem run scoreboard players set #teams jkbw.mem 2
+scoreboard players add #teams jkbw.int 1
+execute if score #teams jkbw.int > #teams_max jkbw.int run scoreboard players set #teams jkbw.int 2
 
 function jkbw:state/0/button/team/count/update

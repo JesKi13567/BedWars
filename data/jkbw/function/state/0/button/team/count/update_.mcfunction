@@ -1,4 +1,4 @@
-scoreboard players remove #teams jkbw.mem 1
-execute if score #teams jkbw.mem matches ..1 run scoreboard players operation #teams jkbw.mem = #teams_max jkbw.mem
+scoreboard players remove #teams jkbw.int 1
+execute if score #teams jkbw.int matches ..1 run scoreboard players operation #teams jkbw.int = #teams_max jkbw.int
 
 function jkbw:state/0/button/team/count/update

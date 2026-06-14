@@ -1,7 +1,7 @@
 # 从操作台进入
 $data modify entity @n[type=text_display, tag=jkbw_txt] text set value [{text: "[", color: "$(color)", italic: false}, {translate: "item.minecraft.potion"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.char.colon"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.$(type)"}, "]"]
 
-$item modify block 10110222 5 10110222 container.20 {function: "set_item", item: "$(item)"}
+$item modify block 10110209 6 10110222 container.20 {function: "set_item", item: "$(item)"}
 
 $item modify block 10110219 5 10110222 container.0 {function: "set_item", item: "$(item)"}
 $item modify block 10110219 5 10110222 container.1 {function: "set_item", item: "$(item)"}

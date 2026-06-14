@@ -1,13 +1,13 @@
 # 刷新经验
-execute if score #res_mode jkbw.mem matches 1 run scoreboard players operation @s jkbw.Player.Own.iron_ingot *= #XPiron_ingot jkbw.mem
-execute if score #res_mode jkbw.mem matches 1 run scoreboard players operation @s jkbw.Player.Own.gold_ingot *= #XPgold_ingot jkbw.mem
-execute if score #res_mode jkbw.mem matches 1 run scoreboard players operation @s jkbw.Player.Own.diamond *= #XPdiamond jkbw.mem
-execute if score #res_mode jkbw.mem matches 1 run scoreboard players operation @s jkbw.Player.Own.emerald *= #XPemerald jkbw.mem
+execute if score #res_mode jkbw.int matches 1 run scoreboard players operation @s jkbw.Player.Own.iron_ingot *= #XPiron_ingot jkbw.int
+execute if score #res_mode jkbw.int matches 1 run scoreboard players operation @s jkbw.Player.Own.gold_ingot *= #XPgold_ingot jkbw.int
+execute if score #res_mode jkbw.int matches 1 run scoreboard players operation @s jkbw.Player.Own.diamond *= #XPdiamond jkbw.int
+execute if score #res_mode jkbw.int matches 1 run scoreboard players operation @s jkbw.Player.Own.emerald *= #XPemerald jkbw.int
 
-execute if score #res_mode jkbw.mem matches 2 run scoreboard players operation @s jkbw.Player.Own.iron_ingot *= #urfXPiron_ingot jkbw.mem
-execute if score #res_mode jkbw.mem matches 2 run scoreboard players operation @s jkbw.Player.Own.gold_ingot *= #urfXPgold_ingot jkbw.mem
-execute if score #res_mode jkbw.mem matches 2 run scoreboard players operation @s jkbw.Player.Own.diamond *= #urfXPdiamond jkbw.mem
-execute if score #res_mode jkbw.mem matches 2 run scoreboard players operation @s jkbw.Player.Own.emerald *= #urfXPemerald jkbw.mem
+execute if score #res_mode jkbw.int matches 2 run scoreboard players operation @s jkbw.Player.Own.iron_ingot *= #urfXPiron_ingot jkbw.int
+execute if score #res_mode jkbw.int matches 2 run scoreboard players operation @s jkbw.Player.Own.gold_ingot *= #urfXPgold_ingot jkbw.int
+execute if score #res_mode jkbw.int matches 2 run scoreboard players operation @s jkbw.Player.Own.diamond *= #urfXPdiamond jkbw.int
+execute if score #res_mode jkbw.int matches 2 run scoreboard players operation @s jkbw.Player.Own.emerald *= #urfXPemerald jkbw.int
 
 scoreboard players operation @s jkbw.Player.Own.xpLevels += @s jkbw.Player.Own.iron_ingot
 scoreboard players operation @s jkbw.Player.Own.xpLevels += @s jkbw.Player.Own.gold_ingot

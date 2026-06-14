@@ -11,4 +11,4 @@ execute as @s[tag=delete_gp] run function jkbw:state/0/eggs/point/delete/global_
 kill @s
 
 # 防止玩家在摆放道具时准备
-item replace entity @a[gamemode=adventure] hotbar.8 from block 10110209 4 10110222 container.0
+item replace entity @a[gamemode=adventure] hotbar.8 from block 10110209 5 10110222 container.0

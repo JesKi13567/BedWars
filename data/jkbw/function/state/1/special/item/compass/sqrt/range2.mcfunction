@@ -1,3 +1,3 @@
-scoreboard players remove #sqrt_result jkbw.mem 16777216
-scoreboard players operation #sqrt_result jkbw.mem /= #50436 jkbw.mem
-scoreboard players add #sqrt_result jkbw.mem 4096
+scoreboard players remove #sqrt_result jkbw.int 16777216
+scoreboard players operation #sqrt_result jkbw.int /= #50436 jkbw.int
+scoreboard players add #sqrt_result jkbw.int 4096

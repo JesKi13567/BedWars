@@ -8,8 +8,8 @@ execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item"
 # 无附加物品
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "golden_apple"]}] run function jkbw:state/1/shop/real/item/special/normal {name: apple, show: golden_apple, res: gold_ingot}
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "wind_charge"]}] run function jkbw:state/1/shop/real/item/special/normal {name: wind_charge, show: wind_charge, res: gold_ingot}
-execute unless score #exp_mode jkbw.mem matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "pearl"]}] run function jkbw:state/1/shop/real/item/special/normal {name: pearl, show: ender_pearl, res: emerald}
-execute if score #exp_mode jkbw.mem matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "pearl"]}] run function jkbw:state/1/shop/real/item/special/normal {name: pearl_blitz, show: ender_pearl, res: emerald}
+execute unless score #exp_mode jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "pearl"]}] run function jkbw:state/1/shop/real/item/special/normal {name: pearl, show: ender_pearl, res: emerald}
+execute if score #exp_mode jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "pearl"]}] run function jkbw:state/1/shop/real/item/special/normal {name: pearl_blitz, show: ender_pearl, res: emerald}
 
 # 自定义
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "tower"]}] run function jkbw:state/1/shop/real/item/special/custom {name: tower, res: iron_ingot}
@@ -22,7 +22,7 @@ execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item"
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "happy_ghast"]}] run function jkbw:state/1/shop/real/item/special/custom {name: happy_ghast, res: emerald}
 
 # 资源
-execute if score #res_mode jkbw.mem matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "iron"]}] run function jkbw:state/1/shop/real/item/special/res {item: iron_ingot}
-execute if score #res_mode jkbw.mem matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "gold"]}] run function jkbw:state/1/shop/real/item/special/res {item: gold_ingot}
-execute if score #res_mode jkbw.mem matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "diamond"]}] run function jkbw:state/1/shop/real/item/special/res {item: diamond}
-execute if score #res_mode jkbw.mem matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "emerald"]}] run function jkbw:state/1/shop/real/item/special/res {item: emerald}
+execute if score #res_mode jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "iron"]}] run function jkbw:state/1/shop/real/item/special/res {item: iron_ingot}
+execute if score #res_mode jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "gold"]}] run function jkbw:state/1/shop/real/item/special/res {item: gold_ingot}
+execute if score #res_mode jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "diamond"]}] run function jkbw:state/1/shop/real/item/special/res {item: diamond}
+execute if score #res_mode jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "emerald"]}] run function jkbw:state/1/shop/real/item/special/res {item: emerald}

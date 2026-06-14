@@ -1,4 +1,4 @@
-scoreboard players set #state jkbw.mem 2
+scoreboard players set #state jkbw.int 2
 stopsound @a
 playsound ui.toast.challenge_complete player @a 10110223 100 10110223 1000000000
 
@@ -7,12 +7,12 @@ title @a times 1s 6s 1s
 
 execute if entity @p[team=jkbw.red, scores={jkbw.Player.State=2..3}] run function jkbw:state/1/timeline/end/win_ {team: 'red', color: 'red'}
 execute if entity @p[team=jkbw.blue, scores={jkbw.Player.State=2..3}] run function jkbw:state/1/timeline/end/win_ {team: 'blue', color: 'blue'}
-execute if score #teams jkbw.mem matches 3.. if entity @p[team=jkbw.green, scores={jkbw.Player.State=2..3}] run function jkbw:state/1/timeline/end/win_ {team: 'green', color: 'green'}
-execute if score #teams jkbw.mem matches 4.. if entity @p[team=jkbw.yellow, scores={jkbw.Player.State=2..3}] run function jkbw:state/1/timeline/end/win_ {team: 'yellow', color: 'yellow'}
-execute if score #teams jkbw.mem matches 5.. if entity @p[team=jkbw.cyan, scores={jkbw.Player.State=2..3}] run function jkbw:state/1/timeline/end/win_ {team: 'cyan', color: 'aqua'}
-execute if score #teams jkbw.mem matches 6.. if entity @p[team=jkbw.white, scores={jkbw.Player.State=2..3}] run function jkbw:state/1/timeline/end/win_ {team: 'white', color: 'white'}
-execute if score #teams jkbw.mem matches 7.. if entity @p[team=jkbw.pink, scores={jkbw.Player.State=2..3}] run function jkbw:state/1/timeline/end/win_ {team: 'pink', color: 'light_purple'}
-execute if score #teams jkbw.mem matches 8.. if entity @p[team=jkbw.gray, scores={jkbw.Player.State=2..3}] run function jkbw:state/1/timeline/end/win_ {team: 'gray', color: 'gray'}
+execute if score #teams jkbw.int matches 3.. if entity @p[team=jkbw.green, scores={jkbw.Player.State=2..3}] run function jkbw:state/1/timeline/end/win_ {team: 'green', color: 'green'}
+execute if score #teams jkbw.int matches 4.. if entity @p[team=jkbw.yellow, scores={jkbw.Player.State=2..3}] run function jkbw:state/1/timeline/end/win_ {team: 'yellow', color: 'yellow'}
+execute if score #teams jkbw.int matches 5.. if entity @p[team=jkbw.cyan, scores={jkbw.Player.State=2..3}] run function jkbw:state/1/timeline/end/win_ {team: 'cyan', color: 'aqua'}
+execute if score #teams jkbw.int matches 6.. if entity @p[team=jkbw.white, scores={jkbw.Player.State=2..3}] run function jkbw:state/1/timeline/end/win_ {team: 'white', color: 'white'}
+execute if score #teams jkbw.int matches 7.. if entity @p[team=jkbw.pink, scores={jkbw.Player.State=2..3}] run function jkbw:state/1/timeline/end/win_ {team: 'pink', color: 'light_purple'}
+execute if score #teams jkbw.int matches 8.. if entity @p[team=jkbw.gray, scores={jkbw.Player.State=2..3}] run function jkbw:state/1/timeline/end/win_ {team: 'gray', color: 'gray'}
 
 tellraw @a ["\n\n\n\n", {storage: "jk:bw", interpret: true, nbt: "txt.global.bedwars.center", color: "yellow", bold: true}, "\n"]
 
@@ -26,4 +26,4 @@ function jkbw:state/1/timeline/end/rank
 schedule function jkbw:state/1/timeline/end/restart 10s
 
 # 轮换检查点
-execute if score #map_rotation jkbw.mem matches 1 run scoreboard players set #map_rotation_check jkbw.mem 1
+execute if score #map_rotation jkbw.int matches 1 run scoreboard players set #map_rotation_check jkbw.int 1

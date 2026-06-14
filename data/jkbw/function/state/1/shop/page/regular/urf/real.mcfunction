@@ -1,9 +1,8 @@
 # 商店商品缺失就算购买
 execute as @s[scores={jkbw.Player.Page=1}] run function jkbw:state/1/shop/page/regular/urf/1
-execute as @s[scores={jkbw.Player.Page=7}] run function jkbw:state/1/shop/page/regular/urf/2
-execute as @s[scores={jkbw.Player.Page=8}] run function jkbw:state/1/shop/page/regular/urf/3
-execute as @s[scores={jkbw.Player.Page=9}] run function jkbw:state/1/shop/page/regular/urf/4
-execute as @s[scores={jkbw.Player.Page=3}] run function jkbw:state/1/shop/page/regular/urf/5
+execute as @s[scores={jkbw.Player.Page=3}] run function jkbw:state/1/shop/page/regular/urf/3
+execute as @s[scores={jkbw.Player.Page=7}] run function jkbw:state/1/shop/page/regular/urf/7
+execute as @s[scores={jkbw.Player.Page=8}] run function jkbw:state/1/shop/page/regular/urf/8
 
 # 额外处理，否则返回时直接购买
 execute unless items entity @s[scores={jkbw.Player.Page=1..}] enderchest.* *[custom_data={jkbw: ["shop", "gui", "0"]}] run scoreboard players set @s jkbw.Player.Page -2

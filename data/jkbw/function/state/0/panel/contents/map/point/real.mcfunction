@@ -1,8 +1,8 @@
-scoreboard players remove @s jkbw.mem 1
-execute store result bossbar jkbw:map value run scoreboard players get @s jkbw.mem
+scoreboard players remove @s jkbw.int 1
+execute store result bossbar jkbw:map value run scoreboard players get @s jkbw.int
 tp @s ~ ~-1 ~
-execute as @s[scores={jkbw.mem=..0}] run bossbar set jkbw:map visible false
-kill @s[scores={jkbw.mem=..0}]
+execute as @s[scores={jkbw.int=..0}] run bossbar set jkbw:map visible false
+kill @s[scores={jkbw.int=..0}]
 
 # 清理/转换
 execute as @s[tag=clean] run function jkbw:state/0/panel/contents/map/point/_clean with storage jk:bw Map.cur

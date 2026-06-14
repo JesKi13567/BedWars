@@ -12,7 +12,7 @@ execute if block ~ ~ ~ #shulker_boxes[facing=down] run tag @n[type=marker, tag=j
 execute if block ~ ~ ~ #shulker_boxes[facing=up] run tag @n[type=marker, tag=jkbw_bridge_wool, tag=!jkbw] add y+
 
 # 步数
-scoreboard players set @e[type=marker, tag=jkbw_bridge_wool, tag=!jkbw] jkbw.mem 6
+scoreboard players set @e[type=marker, tag=jkbw_bridge_wool, tag=!jkbw] jkbw.int 6
 
 # 清理
 tag @e[type=marker, tag=jkbw_bridge_wool, tag=!jkbw] add jkbw

@@ -1,15 +1,24 @@
-# 盔甲
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "leather_helmet"]}] run function jkbw:state/1/shop/real/urf/armor/color {item: helmet}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "leather_chestplate"]}] run function jkbw:state/1/shop/real/urf/armor/color {item: chestplate}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "leather_leggings"]}] run function jkbw:state/1/shop/real/urf/armor/color {item: leggings}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "leather_boots"]}] run function jkbw:state/1/shop/real/urf/armor/color {item: boots}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "iron_boots"]}] run function jkbw:state/1/shop/real/urf/armor/common {item: iron_boots, id: 1}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "chainmail_chestplate"]}] run function jkbw:state/1/shop/real/urf/armor/common {item: chainmail_chestplate, id: 2}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "golden_helmet"]}] run function jkbw:state/1/shop/real/urf/armor/common {item: golden_helmet, id: 3}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "golden_chestplate"]}] run function jkbw:state/1/shop/real/urf/armor/common {item: golden_chestplate, id: 4}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "golden_leggings"]}] run function jkbw:state/1/shop/real/urf/armor/common {item: golden_leggings, id: 5}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "golden_boots"]}] run function jkbw:state/1/shop/real/urf/armor/common {item: golden_boots, id: 6}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "diamond_helmet"]}] run function jkbw:state/1/shop/real/urf/armor/common {item: diamond_helmet, id: 7}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "diamond_chestplate"]}] run function jkbw:state/1/shop/real/urf/armor/common {item: diamond_chestplate, id: 8}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "diamond_leggings"]}] run function jkbw:state/1/shop/real/urf/armor/common {item: diamond_leggings, id: 9}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "diamond_boots"]}] run function jkbw:state/1/shop/real/urf/armor/common {item: diamond_boots, id: 10}
+# 特殊道具
+execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "tnt"]}] run function jkbw:state/1/shop/real/urf/special/1 {name: tnt, id: 3}
+execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "fireball"]}] run function jkbw:state/1/shop/real/urf/special/1 {name: fireball, id: 1}
+execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "platform"]}] run function jkbw:state/1/shop/real/urf/special/1 {name: platform, id: 1}
+execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "trap"]}] run function jkbw:state/1/shop/real/urf/special/1 {name: trap, id: 1}
+execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "wall"]}] run function jkbw:state/1/shop/real/urf/special/1 {name: wall, id: 1}
+execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "ice"]}] run function jkbw:state/1/shop/real/urf/special/1 {name: ice_walker, id: 2}
+execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "back"]}] run function jkbw:state/1/shop/real/urf/special/1 {name: back_scroll, id: 1}
+execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "anti_arrow"]}] run function jkbw:state/1/shop/real/urf/special/1 {name: anti_arrow, id: 1}
+execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "egg"]}] run function jkbw:state/1/shop/real/urf/special/1 {name: egg, id: 1}
+execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "happy_ghast"]}] run function jkbw:state/1/shop/real/urf/special/1 {name: happy_ghast, id: 1}
+
+# 原生道具
+execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "compass"]}] run function jkbw:state/1/shop/real/urf/special/2 {name: compass, item: compass}
+execute unless score #exp_mode jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "pearl"]}] run function jkbw:state/1/shop/real/urf/special/2 {name: pearl, item: ender_pearl}
+execute if score #exp_mode jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "pearl"]}] run function jkbw:state/1/shop/real/urf/special/2 {name: pearl_blitz, item: ender_pearl}
+execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "apple"]}] run function jkbw:state/1/shop/real/urf/special/2 {name: apple, item: golden_apple}
+execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "wind_charge"]}] run function jkbw:state/1/shop/real/urf/special/2 {name: wind_charge, item: wind_charge}
+
+# 资源
+execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "iron"]}] run function jkbw:state/1/shop/real/urf/special/res {item: iron_ingot}
+execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "gold"]}] run function jkbw:state/1/shop/real/urf/special/res {item: gold_ingot}
+execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "diamond"]}] run function jkbw:state/1/shop/real/urf/special/res {item: diamond}
+execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "emerald"]}] run function jkbw:state/1/shop/real/urf/special/res {item: emerald}

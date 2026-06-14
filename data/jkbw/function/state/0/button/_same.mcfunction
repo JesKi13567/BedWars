@@ -9,4 +9,4 @@ execute as @s[tag=chunk] run function jkbw:state/0/shop/box/global
 execute as @s[tag=price] run function jkbw:state/0/shop/price/init
 
 # 倒计时重置
-scoreboard players set #countdown jkbw.mem 10
+scoreboard players set #countdown jkbw.int 10

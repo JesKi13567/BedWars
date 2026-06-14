@@ -6,4 +6,4 @@ $tellraw @s [{storage: "jk:bw", interpret: true, nbt: "txt.global.delete", color
 
 # 同时删除轮换
 data remove storage jk:bw Map.rotation
-scoreboard players reset #map_rotation jkbw.mem
+scoreboard players reset #map_rotation jkbw.int

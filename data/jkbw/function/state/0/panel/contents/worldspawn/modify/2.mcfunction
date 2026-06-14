@@ -6,4 +6,4 @@ $data merge storage jk:bw {Map: {cur: {id: $(id), ymin: $(ymin), r: $(r), team_m
 function jkbw:state/0/panel/contents/worldspawn/cur/global with storage jk:bw Map.cur
 
 # 其他
-$tellraw @s ["", {storage: "jk:bw", interpret: true, nbt: "txt.point.global.modify.name", color: "green"}, " ", {translate: "item.minecraft.filled_map", color: "yellow"}, " ", {text: "$(id)", color: "yellow"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.char.comma"}, {translate: "gui.done", color: "green"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.char.exclamation"}]
+$tellraw @s [{storage: "jk:bw", interpret: true, nbt: "txt.point.global.modify.name", color: "green"}, " ", {translate: "item.minecraft.filled_map", color: "yellow"}, " ", {text: "$(id)", color: "yellow"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.char.comma"}, {translate: "gui.done"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.char.exclamation"}]

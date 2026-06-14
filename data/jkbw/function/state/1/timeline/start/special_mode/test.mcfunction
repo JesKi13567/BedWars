@@ -7,11 +7,11 @@ execute as @a run function jkbw:state/1/team/distribute/in/2 {team: 'red', id: 1
 tag @a add jkbw_buy_success
 
 # 解锁全轮换道具
-scoreboard players set #ACCESS_fruit jkbw.mem 1
-scoreboard players set #ACCESS_trident jkbw.mem 1
-scoreboard players set #ACCESS_tipped_arrow jkbw.mem 1
-scoreboard players set #ACCESS_crossbow_max jkbw.mem 1
-scoreboard players set #ACCESS_ice_bridge jkbw.mem 1
-scoreboard players set #ACCESS_mace jkbw.mem 1
-scoreboard players set #ACCESS_the_mirror jkbw.mem 1
-scoreboard players reset #ACCESS_permanent_save jkbw.mem
+scoreboard players set #ACCESS.fruit jkbw.int 1
+scoreboard players set #ACCESS.trident jkbw.int 1
+scoreboard players set #ACCESS.tipped_arrow jkbw.int 1
+scoreboard players set #ACCESS.crossbow_max jkbw.int 1
+scoreboard players set #ACCESS.ice_bridge jkbw.int 1
+scoreboard players set #ACCESS.mace jkbw.int 1
+scoreboard players set #ACCESS.the_mirror jkbw.int 1
+scoreboard players reset #ACCESS.permanent_save jkbw.int

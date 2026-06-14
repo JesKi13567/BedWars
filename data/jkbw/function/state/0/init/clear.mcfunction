@@ -1,4 +1,4 @@
-#scoreboard objectives remove jkbw.mem
+#scoreboard objectives remove jkbw.int
 scoreboard objectives remove jkbw.Temp
 scoreboard objectives remove jkbw.Sidebar
 scoreboard objectives remove jkbw.Admin.Trigger
@@ -148,7 +148,7 @@ bossbar remove jkbw:map
 bossbar remove jkbw:player_ready
 bossbar remove jkbw:game_progress
 
-fill 10110220 1 10110223 10110223 10 10110223 air replace
+fill 10110208 0 10110208 10110223 7 10110223 air replace
 
 data remove storage jk:bw Temp
 data remove storage jk:bw Alive

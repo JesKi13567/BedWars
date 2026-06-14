@@ -1,9 +1,9 @@
 {
-    "values": [
-        "player_attack",
-        "trident",
-        "mace_smash",
-        "spear",
-        "arrow"
-    ]
+  "values": [
+    "player_attack",
+    "trident",
+    "mace_smash",
+    "spear",
+    "arrow"
+  ]
 }

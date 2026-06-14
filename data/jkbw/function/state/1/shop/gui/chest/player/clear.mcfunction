@@ -29,27 +29,27 @@ item replace entity @s enderchest.26 with air
 
 # 配方
 recipe take @s *
-execute if score #res_mode jkbw.mem matches 2 run recipe give @s jkbw:chest
-execute if score #res_mode jkbw.mem matches 2 run recipe give @s jkbw:fletching_table
-execute if score #res_mode jkbw.mem matches 2 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/orange
-execute if score #res_mode jkbw.mem matches 2 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/orange
+execute if score #res_mode jkbw.int matches 2 run recipe give @s jkbw:chest
+execute if score #res_mode jkbw.int matches 2 run recipe give @s jkbw:fletching_table
+execute if score #res_mode jkbw.int matches 2 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:wool/orange
+execute if score #res_mode jkbw.int matches 2 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:box/orange
 
-execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/red
-execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/blue
-execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/green
-execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/yellow
-execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/cyan
-execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/white
-execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/pink
-execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:wool/gray
-execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/red
-execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/blue
-execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/green
-execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/yellow
-execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/cyan
-execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/white
-execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/pink
-execute if score #res_mode jkbw.mem matches 0..1 if score #exp_mode jkbw.mem matches 1 run recipe give @s jkbw:box/gray
+execute if score #res_mode jkbw.int matches 0..1 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:wool/red
+execute if score #res_mode jkbw.int matches 0..1 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:wool/blue
+execute if score #res_mode jkbw.int matches 0..1 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:wool/green
+execute if score #res_mode jkbw.int matches 0..1 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:wool/yellow
+execute if score #res_mode jkbw.int matches 0..1 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:wool/cyan
+execute if score #res_mode jkbw.int matches 0..1 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:wool/white
+execute if score #res_mode jkbw.int matches 0..1 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:wool/pink
+execute if score #res_mode jkbw.int matches 0..1 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:wool/gray
+execute if score #res_mode jkbw.int matches 0..1 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:box/red
+execute if score #res_mode jkbw.int matches 0..1 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:box/blue
+execute if score #res_mode jkbw.int matches 0..1 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:box/green
+execute if score #res_mode jkbw.int matches 0..1 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:box/yellow
+execute if score #res_mode jkbw.int matches 0..1 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:box/cyan
+execute if score #res_mode jkbw.int matches 0..1 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:box/white
+execute if score #res_mode jkbw.int matches 0..1 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:box/pink
+execute if score #res_mode jkbw.int matches 0..1 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:box/gray
 
 # 分数
 scoreboard players reset @s jkbw.Player.Place.Red
@@ -87,8 +87,8 @@ scoreboard players set @s jkbw.Player.Use.Last.Ice 0
 scoreboard players set @s jkbw.Player.Use.CD.TheMirror 0
 scoreboard players set @s jkbw.Player.Page 0
 execute unless score @s jkbw.Player.Head matches 1.. run scoreboard players set @s jkbw.Player.Head 0
-execute if score #res_mode jkbw.mem matches 0..1 run scoreboard players set @s jkbw.Player.Compass 0
-execute if score #res_mode jkbw.mem matches 2 run scoreboard players set @s jkbw.Player.Compass -1
+execute if score #res_mode jkbw.int matches 0..1 run scoreboard players set @s jkbw.Player.Compass 0
+execute if score #res_mode jkbw.int matches 2 run scoreboard players set @s jkbw.Player.Compass -1
 xp set @s 0 levels
 xp set @s 0 points
 title @s title ""

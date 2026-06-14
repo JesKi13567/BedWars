@@ -9,7 +9,7 @@ xp set @s 0 points
 team leave @s
 clear @s
 effect clear @s
-item replace entity @s hotbar.8 from block 10110209 4 10110222 container.0
+item replace entity @s hotbar.8 from block 10110209 5 10110222 container.0
 attribute @s max_health base reset
 attribute @s armor base reset
 attribute @s attack_speed base reset
@@ -21,5 +21,5 @@ attribute @s block_interaction_range base reset
 attribute @s entity_interaction_range base reset
 attribute @s attack_damage base reset
 attribute @s attack_knockback base reset
-execute if score #tutorial jkbw.mem matches 1.. run gamemode adventure @s
+execute if score #tutorial jkbw.int matches 1.. run gamemode adventure @s
 function jkbw:state/0/panel/contents/tp/back with storage jk:bw Map.cur

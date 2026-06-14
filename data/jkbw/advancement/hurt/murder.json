@@ -1,20 +1,20 @@
 {
-    "criteria": {
-        "hurt": {
-            "trigger": "player_hurt_entity",
-            "conditions": {
-                "entity": {
-                    "type_specific": {
-                        "type": "player",
-                        "gamemode": [
-                            "adventure"
-                        ]
-                    }
-                }
-            }
+  "criteria": {
+    "hurt": {
+      "trigger": "player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type_specific": {
+            "type": "player",
+            "gamemode": [
+              "adventure"
+            ]
+          }
         }
-    },
-    "rewards": {
-        "function": "jkbw:state/1/hurt/type/murder"
+      }
     }
+  },
+  "rewards": {
+    "function": "jkbw:state/1/hurt/type/murder"
+  }
 }

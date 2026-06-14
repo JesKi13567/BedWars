@@ -1,10 +1,10 @@
 {
-    "values": [
-        "marker",
-        "item_display",
-        "text_display",
-        "block_display",
-        "interaction",
-        "player"
-    ]
+  "values": [
+    "marker",
+    "item_display",
+    "text_display",
+    "block_display",
+    "interaction",
+    "player"
+  ]
 }

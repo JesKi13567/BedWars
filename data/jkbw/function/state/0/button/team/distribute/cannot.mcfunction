@@ -2,5 +2,5 @@
 playsound entity.villager.no player @s
 clear @s
 scoreboard players set @s jkbw.Team.Select 0
-item replace entity @s hotbar.8 from block 10110209 4 10110222 container.0
+item replace entity @s hotbar.8 from block 10110209 5 10110222 container.0
 title @s actionbar {storage: "jk:bw", interpret: true, nbt: "txt.ready.team.choose.full", color: "red"}

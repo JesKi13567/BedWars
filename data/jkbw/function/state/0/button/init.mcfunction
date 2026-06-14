@@ -19,7 +19,7 @@ summon item_display ~2.5 ~1.5 ~4.5 {Tags: ["jkbw", "jkbw_show", "jkbw_show_res_r
 summon interaction ~2.5 ~1.25 ~4.5 {Tags: ["jkbw", "jkbw_show", "jkbw_button", "res_rate"], response: true, height: .5f, width: .5f}
 function jkbw:state/0/button/res/rate/show
 # 队伍数量
-summon text_display ~-.5 ~2.4 ~5.5 {Tags: ["jkbw", "jkbw_show", "jkbw_display_team_count"], text: [{storage: "jk:bw", interpret: true, nbt: "txt.ready.max", color: "yellow"}, {score: {name: "#teams_max", objective: "jkbw.mem"}}], billboard: "center", brightness: {block: 15, sky: 15}}
+summon text_display ~-.5 ~2.4 ~5.5 {Tags: ["jkbw", "jkbw_show", "jkbw_display_team_count"], text: [{storage: "jk:bw", interpret: true, nbt: "txt.ready.max", color: "yellow"}, {score: {name: "#teams_max", objective: "jkbw.int"}}], billboard: "center", brightness: {block: 15, sky: 15}}
 summon text_display ~-.5 ~2.1 ~5.5 {Tags: ["jkbw", "jkbw_show"], text: [{storage: "jk:bw", interpret: true, nbt: "txt.ready.team.count", color: "light_purple"}], billboard: "center", brightness: {block: 15, sky: 15}}
 summon item_display ~-.5 ~1.5 ~5.5 {Tags: ["jkbw", "jkbw_show", "jkbw_show_team_count"], item: {id: "bell", count: 1}, transformation: {left_rotation: [0f, 0f, 0f, 1f], right_rotation: [0f, 0f, 0f, 1f], scale: [.5f, .5f, .5f], translation: [0f, 0f, 0f]}, CustomNameVisible: true, brightness: {block: 15, sky: 15}}
 summon interaction ~-.5 ~1.25 ~5.5 {Tags: ["jkbw", "jkbw_show", "jkbw_button", "team_count"], response: true, height: .5f, width: .5f}

@@ -1,2 +1,2 @@
-scoreboard players set #start_flag jkbw.mem 1
-scoreboard players set #countdown jkbw.mem 10
+scoreboard players set #start_flag jkbw.int 1
+scoreboard players set #countdown jkbw.int 10

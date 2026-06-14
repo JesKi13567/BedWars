@@ -4,4 +4,4 @@ function jkbw:state/0/panel/contents/worldspawn/tp/0 with storage jk:bw Temp
 
 data modify storage jk:bw Map.rotation append from storage jk:bw Map.rotation[0]
 data remove storage jk:bw Map.rotation[0]
-scoreboard players reset #map_rotation_check jkbw.mem
+scoreboard players reset #map_rotation_check jkbw.int

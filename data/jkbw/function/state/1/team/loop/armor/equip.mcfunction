@@ -1,0 +1,11 @@
+$item replace entity @s armor.head with leather_helmet[custom_data={jkbw: ["clean"]}, enchantments={aqua_affinity: 1, binding_curse: 1}, attribute_modifiers=[], unbreakable={}, dyed_color=$(color)]
+$item replace entity @s armor.chest with leather_chestplate[custom_data={jkbw: ["clean"]}, enchantments={binding_curse: 1}, attribute_modifiers=[], unbreakable={}, dyed_color=$(color)]
+
+$item replace entity @s[scores={jkbw.Player.ArmorLevels=0}] armor.legs with leather_leggings[custom_data={jkbw: ["clean"]}, enchantments={binding_curse: 1}, attribute_modifiers=[], unbreakable={}, dyed_color=$(color)]
+$item replace entity @s[scores={jkbw.Player.ArmorLevels=0}] armor.feet with leather_boots[custom_data={jkbw: ["clean"]}, enchantments={binding_curse: 1}, attribute_modifiers=[], unbreakable={}, dyed_color=$(color)]
+item replace entity @s[scores={jkbw.Player.ArmorLevels=1}] armor.legs with chainmail_leggings[custom_data={jkbw: ["clean"]}, enchantments={binding_curse: 1}, attribute_modifiers=[], unbreakable={}]
+item replace entity @s[scores={jkbw.Player.ArmorLevels=1}] armor.feet with chainmail_boots[custom_data={jkbw: ["clean"]}, enchantments={binding_curse: 1}, attribute_modifiers=[], unbreakable={}]
+item replace entity @s[scores={jkbw.Player.ArmorLevels=2}] armor.legs with iron_leggings[custom_data={jkbw: ["clean"]}, enchantments={binding_curse: 1}, attribute_modifiers=[], unbreakable={}]
+item replace entity @s[scores={jkbw.Player.ArmorLevels=2}] armor.feet with iron_boots[custom_data={jkbw: ["clean"]}, enchantments={binding_curse: 1}, attribute_modifiers=[], unbreakable={}]
+item replace entity @s[scores={jkbw.Player.ArmorLevels=3}] armor.legs with diamond_leggings[custom_data={jkbw: ["clean"]}, enchantments={binding_curse: 1}, attribute_modifiers=[], unbreakable={}]
+item replace entity @s[scores={jkbw.Player.ArmorLevels=3}] armor.feet with diamond_boots[custom_data={jkbw: ["clean"]}, enchantments={binding_curse: 1}, attribute_modifiers=[], unbreakable={}]

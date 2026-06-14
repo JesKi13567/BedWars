@@ -1,31 +1,36 @@
-fill 10110208 0 10110208 10110223 6 10110223 barrier outline
-fill 10110209 1 10110209 10110222 5 10110222 air
-fill 10110222 1 10110216 10110214 1 10110209 barrel[facing=up] destroy
+# 个人/队伍 箱
+fill 10110213 0 10110208 10110223 2 10110217 barrier outline
+fill 10110214 1 10110209 10110222 1 10110216 barrel[facing=up] destroy
 
-# 主菜单
-function jkbw:state/0/shop/box/0
+# 商店
+fill 10110208 0 10110217 10110223 7 10110223 barrier outline
+fill 10110209 1 10110218 10110222 6 10110222 air
 
-# 经典&经验模式
-function jkbw:state/0/shop/box/1
-function jkbw:state/0/shop/box/2
-function jkbw:state/0/shop/box/3
-function jkbw:state/0/shop/box/4
-function jkbw:state/0/shop/box/5
-function jkbw:state/0/shop/box/6
-function jkbw:state/0/shop/box/7
-function jkbw:state/0/shop/box/8
+# 经典
+function jkbw:state/0/shop/box/classic/1
+function jkbw:state/0/shop/box/classic/2
+function jkbw:state/0/shop/box/classic/3
+function jkbw:state/0/shop/box/classic/4
+function jkbw:state/0/shop/box/classic/5
 
-# 无限火力模式
-function jkbw:state/0/shop/box/_1
-function jkbw:state/0/shop/box/_2
-function jkbw:state/0/shop/box/_3
+# 经验
+function jkbw:state/0/shop/box/xp/1
+function jkbw:state/0/shop/box/xp/2
+function jkbw:state/0/shop/box/xp/3
+function jkbw:state/0/shop/box/xp/4
+function jkbw:state/0/shop/box/xp/5
 
-# 矛
-function jkbw:state/0/shop/box/_4
+# 无限火力
+function jkbw:state/0/shop/box/urf/1
+function jkbw:state/0/shop/box/urf/2
+function jkbw:state/0/shop/box/urf/3
+function jkbw:state/0/shop/box/urf/4
 
-# 其他道具
-function jkbw:state/0/shop/box/e1
-function jkbw:state/0/shop/box/e2
+# 其他
+function jkbw:state/0/shop/box/e/0
+function jkbw:state/0/shop/box/e/1
+function jkbw:state/0/shop/box/e/2
+function jkbw:state/0/shop/box/e/3
 
 # 文本
-function jkbw:state/0/shop/refresh/global
+function jkbw:state/0/shop/refresh

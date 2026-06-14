@@ -4,7 +4,6 @@ execute as @s[scores={jkbw.Player.Page=2}] run function jkbw:state/1/shop/page/r
 execute as @s[scores={jkbw.Player.Page=3}] run function jkbw:state/1/shop/page/regular/classic/3
 execute as @s[scores={jkbw.Player.Page=4}] run function jkbw:state/1/shop/page/regular/classic/4
 execute as @s[scores={jkbw.Player.Page=5}] run function jkbw:state/1/shop/page/regular/classic/5
-execute as @s[scores={jkbw.Player.Page=6}] run function jkbw:state/1/shop/page/regular/classic/6
 execute as @s[scores={jkbw.Player.Page=7}] run function jkbw:state/1/shop/page/regular/classic/7
 execute as @s[scores={jkbw.Player.Page=8}] run function jkbw:state/1/shop/page/regular/classic/8
 

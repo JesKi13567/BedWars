@@ -2,14 +2,14 @@
 execute as @s[tag=!jkbw] run function jkbw:state/1/special/item/tower/new
 
 # 按层
-execute as @s[scores={jkbw.mem=7}] run function jkbw:state/1/special/item/tower/floor/0
-execute as @s[scores={jkbw.mem=5..6}] run function jkbw:state/1/special/item/tower/floor/1
-execute as @s[scores={jkbw.mem=3..4}] run function jkbw:state/1/special/item/tower/floor/3
-execute as @s[scores={jkbw.mem=2}] run function jkbw:state/1/special/item/tower/floor/5
-execute as @s[scores={jkbw.mem=1}] run function jkbw:state/1/special/item/tower/floor/6
-execute as @s[scores={jkbw.mem=0}] run function jkbw:state/1/special/item/tower/floor/7
-tp @s[scores={jkbw.mem=..7}] ~ ~1 ~
-scoreboard players remove @s jkbw.mem 1
+execute as @s[scores={jkbw.int=7}] run function jkbw:state/1/special/item/tower/floor/0
+execute as @s[scores={jkbw.int=5..6}] run function jkbw:state/1/special/item/tower/floor/1
+execute as @s[scores={jkbw.int=3..4}] run function jkbw:state/1/special/item/tower/floor/3
+execute as @s[scores={jkbw.int=2}] run function jkbw:state/1/special/item/tower/floor/5
+execute as @s[scores={jkbw.int=1}] run function jkbw:state/1/special/item/tower/floor/6
+execute as @s[scores={jkbw.int=0}] run function jkbw:state/1/special/item/tower/floor/7
+tp @s[scores={jkbw.int=..7}] ~ ~1 ~
+scoreboard players remove @s jkbw.int 1
 
 playsound entity.chicken.egg player @a
 execute as @e[type=marker, tag=jkbw_tower_block] run function jkbw:state/1/special/check_pos
@@ -32,4 +32,4 @@ execute as @s[scores={jkbw.Team.ID=8}] at @e[type=marker, tag=jkbw_tower_wool, d
 
 # 清理
 kill @e[type=marker, tag=jkbw_tower_block, distance=..8]
-kill @s[scores={jkbw.mem=..0}]
+kill @s[scores={jkbw.int=..0}]

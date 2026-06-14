@@ -14,5 +14,5 @@ execute as @s[tag=!jkbw_check_pos_fail, scores={jkbw.Team.ID=7}] run function jk
 execute as @s[tag=!jkbw_check_pos_fail, scores={jkbw.Team.ID=8}] run function jkbw:state/1/special/entity/egg/marker/summon {team: 'gray'}
 
 # 计时
-scoreboard players remove @s[scores={jkbw.mem=1..}] jkbw.mem 1
-kill @s[scores={jkbw.mem=..0}]
+scoreboard players remove @s[scores={jkbw.int=1..}] jkbw.int 1
+kill @s[scores={jkbw.int=..0}]

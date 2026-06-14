@@ -7,7 +7,7 @@ execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf",
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "cobweb"]}] run function jkbw:state/1/shop/real/urf/block/common {item: cobweb, count: 1}
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "glass"]}] run function jkbw:state/1/shop/real/urf/block/glass
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "chest"]}] run function jkbw:state/1/shop/real/urf/block/common {item: chest, count: 2}
-execute unless score #exp_mode jkbw.mem matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "ender_chest"]}] run function jkbw:state/1/shop/real/urf/block/ender_chest
+execute unless score #exp_mode jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "ender_chest"]}] run function jkbw:state/1/shop/real/urf/block/ender_chest
 
 # 工具
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "stone_pickaxe"]}] run function jkbw:state/1/shop/real/urf/pickaxe {item: stone}

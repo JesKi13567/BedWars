@@ -1,2 +1,2 @@
 tag @s add jkbw
-scoreboard players set @s jkbw.mem 8
+scoreboard players set @s jkbw.int 8

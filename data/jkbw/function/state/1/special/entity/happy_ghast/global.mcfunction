@@ -1,11 +1,11 @@
 # 禁止超高
 execute store result score @s jkbw.Entity.Y run data get entity @s Pos[1]
 scoreboard players add @s jkbw.Entity.Y 6
-execute if score @s jkbw.Entity.Y >= #WY jkbw.mem run tp @s ~ ~-1 ~
+execute if score @s jkbw.Entity.Y >= #WY jkbw.int run tp @s ~ ~-1 ~
 
 # 载具
 execute unless score @s jkbw.Team.ID matches 1.. run scoreboard players set @s jkbw.Team.ID 6
-execute if score #exp_mode jkbw.mem matches 6 run scoreboard players set @s jkbw.Team.ID 6
+execute if score #exp_mode jkbw.int matches 6 run scoreboard players set @s jkbw.Team.ID 6
 
 execute unless items entity @s[scores={jkbw.Team.ID=1}] armor.body red_harness run item replace entity @s armor.body with red_harness[custom_data={jkbw: ["clean"]}]
 execute unless items entity @s[scores={jkbw.Team.ID=2}] armor.body blue_harness run item replace entity @s armor.body with blue_harness[custom_data={jkbw: ["clean"]}]

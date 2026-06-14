@@ -1,24 +1,24 @@
 {
-    "criteria": {
-        "jkbw": {
-            "trigger": "using_item",
-            "conditions": {
-                "item": {
-                    "items": [
-                        "fire_charge",
-                        "blaze_rod",
-                        "paper",
-                        "prismarine_shard",
-                        "ice",
-                        "raw_iron",
-                        "raw_gold",
-                        "gray_stained_glass_pane"
-                    ]
-                }
-            }
+  "criteria": {
+    "jkbw": {
+      "trigger": "using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "fire_charge",
+            "blaze_rod",
+            "paper",
+            "prismarine_shard",
+            "ice",
+            "raw_iron",
+            "raw_gold",
+            "gray_stained_glass_pane"
+          ]
         }
-    },
-    "rewards": {
-        "function": "jkbw:state/1/ppl/player/using"
+      }
     }
+  },
+  "rewards": {
+    "function": "jkbw:state/1/ppl/player/using"
+  }
 }

@@ -1,16 +1,16 @@
 # 塔
-execute if score #res_mode jkbw.mem matches 0..1 as @s[tag=jkbw_tower] run function jkbw:state/1/special/item/tower/global
+execute if score #res_mode jkbw.int matches 0..1 as @s[tag=jkbw_tower] run function jkbw:state/1/special/item/tower/global
 # 水
-execute if score #res_mode jkbw.mem matches 0..1 as @s[tag=jkbw_water] run function jkbw:state/1/special/item/water
+execute if score #res_mode jkbw.int matches 0..1 as @s[tag=jkbw_water] run function jkbw:state/1/special/item/water
 # 冰桥
-execute if score #res_mode jkbw.mem matches 0..1 as @s[tag=jkbw_ice_bridge] run function jkbw:state/1/special/item/ice/bridge/last
+execute if score #res_mode jkbw.int matches 0..1 as @s[tag=jkbw_ice_bridge] run function jkbw:state/1/special/item/ice/bridge/last
 # 报警陷阱
-execute if score #res_mode jkbw.mem matches 0..1 as @s[tag=jkbw_alarm_marker] run function jkbw:state/1/team/trap/sub/ring
+execute if score #res_mode jkbw.int matches 0..1 as @s[tag=jkbw_alarm_marker] run function jkbw:state/1/team/trap/sub/ring
 
 # 末影箱
-execute if score #res_mode jkbw.mem matches 2 as @s[tag=jkbw_chest_player] run function jkbw:state/1/special/entity/ender_chest/global
+execute if score #res_mode jkbw.int matches 2 as @s[tag=jkbw_chest_player] run function jkbw:state/1/special/entity/ender_chest/global
 # 安如磐石
-execute if score #res_mode jkbw.mem matches 2 as @s[tag=jkbw_wall] run function jkbw:state/1/special/item/wall
+execute if score #res_mode jkbw.int matches 2 as @s[tag=jkbw_wall] run function jkbw:state/1/special/item/wall
 
 # 冰
 execute as @s[tag=jkbw_ice_platform] run function jkbw:state/1/special/item/ice/global

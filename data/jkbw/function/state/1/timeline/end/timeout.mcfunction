@@ -1,4 +1,4 @@
-scoreboard players set #state jkbw.mem 3
+scoreboard players set #state jkbw.int 3
 stopsound @a
 bossbar set jkbw:game_progress visible false
 playsound ui.toast.challenge_complete player @a 10110223 100 10110223 1000000000

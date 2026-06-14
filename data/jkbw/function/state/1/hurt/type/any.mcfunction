@@ -6,5 +6,5 @@ effect clear @s[scores={jkbw.Player.Damage.Type.now=2..}] invisibility
 execute if data entity @s active_effects[{id: "minecraft:resistance", amplifier: 9b}] run tellraw @s [{storage: "jk:bw", interpret: true, nbt: "txt.play.becuz.attack.be", color: "yellow"}, {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.the_mirror.name", color: "white"}, {storage: "jk:bw", interpret: true, nbt: "txt.play.no_effect_now"}]
 effect clear @s resistance
 # 伤害免疫冷却
-execute if score #attack_speed jkbw.mem matches 0 run scoreboard players set @s jkbw.Player.PHDI 6
-execute if score #attack_speed jkbw.mem matches 1 run scoreboard players set @s jkbw.Player.PHDI 11
+execute if score #attack_speed jkbw.int matches 0 run scoreboard players set @s jkbw.Player.PHDI 6
+execute if score #attack_speed jkbw.int matches 1 run scoreboard players set @s jkbw.Player.PHDI 11
