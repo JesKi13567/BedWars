@@ -1,4 +1,4 @@
-clear @s ice 1
+clear @s echo_shard[item_model=ice] 1
 scoreboard players set @s jkbw.Player.Use.CD.Ice 10
 execute if score #test_mode jkbw.int matches 1 run scoreboard players set @s jkbw.Player.Use.CD.Ice 1
 # 冰桥

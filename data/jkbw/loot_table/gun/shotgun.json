@@ -1,0 +1,155 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "echo_shard",
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": {
+                "storage": "jk:bw",
+                "interpret": true,
+                "nbt": "txt.shop.item.gun.name.shotgun",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "function": "set_lore",
+              "entity": "this",
+              "mode": "replace_all",
+              "lore": [
+                [
+                  {
+                    "storage": "jk:bw",
+                    "interpret": true,
+                    "nbt": "txt.shop.item.gun.param.clip_ammo",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "storage": "jk:bw",
+                    "interpret": true,
+                    "nbt": "txt.global.char.colon"
+                  },
+                  {
+                    "text": "4",
+                    "color": "gold"
+                  },
+                  {
+                    "text": "/",
+                    "color": "green"
+                  },
+                  {
+                    "text": "4",
+                    "color": "green"
+                  }
+                ],
+                [
+                  {
+                    "storage": "jk:bw",
+                    "interpret": true,
+                    "nbt": "txt.shop.item.gun.param.damage",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "storage": "jk:bw",
+                    "interpret": true,
+                    "nbt": "txt.global.char.colon"
+                  },
+                  {
+                    "text": "2.0 HP",
+                    "color": "red"
+                  }
+                ],
+                [
+                  {
+                    "storage": "jk:bw",
+                    "interpret": true,
+                    "nbt": "txt.shop.item.gun.param.fire_rate",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "storage": "jk:bw",
+                    "interpret": true,
+                    "nbt": "txt.global.char.colon"
+                  },
+                  {
+                    "text": "1.0s",
+                    "color": "green"
+                  }
+                ],
+                [
+                  {
+                    "storage": "jk:bw",
+                    "interpret": true,
+                    "nbt": "txt.shop.item.gun.param.reload",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "storage": "jk:bw",
+                    "interpret": true,
+                    "nbt": "txt.global.char.colon"
+                  },
+                  {
+                    "text": "4.0s",
+                    "color": "green"
+                  }
+                ],
+                [
+                  {
+                    "storage": "jk:bw",
+                    "interpret": true,
+                    "nbt": "txt.shop.item.gun.param.range",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "storage": "jk:bw",
+                    "interpret": true,
+                    "nbt": "txt.global.char.colon"
+                  },
+                  {
+                    "text": "10m",
+                    "color": "green"
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "max_stack_size": 1,
+                "enchantment_glint_override": false,
+                "piercing_weapon": {},
+                "attack_range": {
+                  "max_reach": 0,
+                  "max_creative_reach": 0
+                },
+                "enchantments": {
+                  "jkbw:left_click": 1
+                },
+                "consumable": {
+                  "consume_seconds": 100000
+                },
+                "tooltip_display": {
+                  "hidden_components": [
+                    "enchantments"
+                  ]
+                },
+                "item_model": "iron_hoe"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

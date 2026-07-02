@@ -1,4 +1,3 @@
-scoreboard players reset @s jkbw.Admin.Trigger
 
 ## 开头
 tellraw @a[tag=jkbw_admin] ["", {text: "\n\n\n\n\n\n\n\n\n\n======== ", color: "green"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.bedwars.datapack", color: "yellow"}, {text: " ====== ", color: "green"}, {text: "[", color: "red"}, {storage: "jk:bw", interpret: true, nbt: "txt.ready.install.un", color: "red", click_event: {action: "run_command", command: "/function jkbw:state/0/init/_uninstall"}}, {text: "]", color: "red"}, {text: " ======\n", color: "green"}]

@@ -8,11 +8,16 @@ execute if score #ENABLE.spear jkbw.int matches 1 unless items entity @s enderch
 
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "stick"]}] run function jkbw:state/1/shop/real/item/weapon/common {id: 1, item: stick}
 execute if score #ENABLE.shield jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "shield"]}] run function jkbw:state/1/shop/real/item/weapon/common {id: 2, item: shield}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "arrow"]}] run function jkbw:state/1/shop/real/item/weapon/common {id: 3, item: arrow}
 
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "bow1"]}] run function jkbw:state/1/shop/real/item/weapon/bow {id: 1, res: gold_ingot}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "bow2"]}] run function jkbw:state/1/shop/real/item/weapon/bow {id: 2, res: gold_ingot}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "bow3"]}] run function jkbw:state/1/shop/real/item/weapon/bow {id: 3, res: emerald}
+execute unless score #exp_mode jkbw.int matches 7 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "arrow"]}] run function jkbw:state/1/shop/real/item/weapon/common {id: 3, item: arrow}
+execute unless score #exp_mode jkbw.int matches 7 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "bow1"]}] run function jkbw:state/1/shop/real/item/weapon/bow {id: 1, res: gold_ingot}
+execute unless score #exp_mode jkbw.int matches 7 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "bow2"]}] run function jkbw:state/1/shop/real/item/weapon/bow {id: 2, res: gold_ingot}
+execute unless score #exp_mode jkbw.int matches 7 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "bow3"]}] run function jkbw:state/1/shop/real/item/weapon/bow {id: 3, res: emerald}
+execute if score #exp_mode jkbw.int matches 7 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "gun_magnum"]}] run function jkbw:state/1/shop/real/item/weapon/gun {name: magnum, res: gold_ingot}
+execute if score #exp_mode jkbw.int matches 7 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "gun_rifle"]}] run function jkbw:state/1/shop/real/item/weapon/gun {name: rifle, res: gold_ingot}
+execute if score #exp_mode jkbw.int matches 7 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "gun_submachinegun"]}] run function jkbw:state/1/shop/real/item/weapon/gun {name: submachinegun, res: iron_ingot}
+execute if score #exp_mode jkbw.int matches 7 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "gun_shotgun"]}] run function jkbw:state/1/shop/real/item/weapon/gun {name: shotgun, res: emerald}
+execute if score #exp_mode jkbw.int matches 7 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "gun_flamethower"]}] run function jkbw:state/1/shop/real/item/weapon/gun {name: flamethower, res: gold_ingot}
 
 # 盔甲
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "item", "armor_chain"]}] run function jkbw:state/1/shop/real/item/armor {id: 1, res: iron_ingot}

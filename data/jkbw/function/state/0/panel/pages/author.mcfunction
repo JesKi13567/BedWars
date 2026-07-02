@@ -1,4 +1,3 @@
-scoreboard players reset @s jkbw.Admin.Trigger
 
 tellraw @a ["", {text: "\n\n\n\n\n\n\n\n\n\n============= ", color: "green"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.bedwars.datapack", color: "yellow"}, {text: " =============\n", color: "green"}, {storage: "jk:bw", interpret: true, nbt: "txt.ready.page_seen", color: "gray"}, "\n\n", \
 {storage: "jk:bw", interpret: true, nbt: "txt.global.author"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.char.colon"}, {text: "JK137", color: "aqua"}, "\n\n", \

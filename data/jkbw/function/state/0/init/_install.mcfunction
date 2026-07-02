@@ -22,7 +22,7 @@ scoreboard players set #res_mode jkbw.int 0
 scoreboard players set #attack_speed jkbw.int 1
 # bed_type 床种类 0 床 1 夹心 2 蛋糕
 scoreboard players set #bed_type jkbw.int 0
-# exp_mode 实验模式 0 无 1 疾速 2 无跳跃 3 小人国 4 被迫零元购 5 摸摸 6 色盲
+# exp_mode 实验模式 0 无 1 疾速 2 无跳跃 3 小人国 4 被迫零元购 5 摸摸 6 色盲 7 枪械
 scoreboard players set #exp_mode jkbw.int 0
 # set_time 设置时间 0 day 1 noon 2 night 3 midnight
 scoreboard players set #set_time jkbw.int 0
@@ -75,7 +75,6 @@ scoreboard players set #TEAM_UPDATE.protect jkbw.int 4
 scoreboard players set #TEAM_UPDATE.res jkbw.int 4
 # 商品个数
 scoreboard players set #shop_items_0 jkbw.int 27
-scoreboard players set #shop_items_2 jkbw.int 34
 scoreboard players set #shop_items_5 jkbw.int 27
 scoreboard players set #shop_items_6 jkbw.int 27
 scoreboard players set #shop_items_7 jkbw.int 27
@@ -83,6 +82,7 @@ scoreboard players set #shop_items_8 jkbw.int 27
 scoreboard players set #shop_items_9 jkbw.int 27
 # 计算用数字
 scoreboard players set #-1 jkbw.int -1
+scoreboard players set #0 jkbw.int 0
 scoreboard players set #1 jkbw.int 1
 scoreboard players set #2 jkbw.int 2
 scoreboard players set #3 jkbw.int 3
@@ -198,6 +198,7 @@ scoreboard objectives add jkbw.Player.Use.CD.AntiArrow dummy "玩家使用剑气
 scoreboard objectives add jkbw.Player.Use.CD.BackScroll dummy "玩家使用回城卷轴冷却"
 scoreboard objectives add jkbw.Player.Use.CD.Creature dummy "玩家生成生物冷却"
 scoreboard objectives add jkbw.Player.Use.CD.Fireball dummy "玩家使用火球冷却"
+scoreboard objectives add jkbw.Player.Use.CD.Gun dummy "玩家使用枪械冷却"
 scoreboard objectives add jkbw.Player.Use.CD.Ice dummy "玩家使用冰系道具冷却"
 scoreboard objectives add jkbw.Player.Use.CD.Platform dummy "玩家使用急救平台冷却"
 scoreboard objectives add jkbw.Player.Use.CD.TheMirror dummy "玩家使用魔镜冷却"

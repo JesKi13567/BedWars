@@ -1,4 +1,4 @@
-clear @s paper 1
+clear @s echo_shard[item_model=paper] 1
 scoreboard players set @s jkbw.Player.Use.CD.BackScroll 15
 scoreboard players set @s jkbw.Player.Use.Last.BackScroll 160
 execute if score #test_mode jkbw.int matches 1 run scoreboard players set @s jkbw.Player.Use.CD.BackScroll 1

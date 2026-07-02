@@ -1,5 +1,5 @@
 scoreboard players set @s jkbw.Player.Use.CD.Creature 6
-clear @s raw_iron 1
+clear @s echo_shard[item_model=iron_golem_spawn_egg] 1
 
 summon iron_golem ~ ~ ~ {Tags: ["jkbw", "jkbw_iron_golem"], CustomNameVisible: true, Health: 20.0f}
 

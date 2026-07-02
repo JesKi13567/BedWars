@@ -73,19 +73,44 @@ item modify block 10110221 6 10110222 container.18 {function: "set_name", entity
 [{storage: "jk:bw", interpret: true, nbt: "txt.global.permanent", italic: false, color: "white"}, {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.armor.1"}]}
 item modify block 10110221 6 10110222 container.18 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.armor.p0", italic: false, color: "gray"}], \
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#armor1", objective: "jkbw.int"}, color: "white"}, " ", {translate: "item.minecraft.iron_ingot", italic: false, color: "white"}], \
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.death_keep", italic: false, color: "dark_purple"}]]}
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.death_keep", italic: false, color: "dark_purple"}], \
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#armor1", objective: "jkbw.int"}, color: "white"}, " ", {translate: "item.minecraft.iron_ingot", italic: false, color: "white"}]]}
 
 item modify block 10110221 6 10110222 container.19 {function: "set_name", entity: "this", name: \
 [{storage: "jk:bw", interpret: true, nbt: "txt.global.permanent", italic: false, color: "white"}, {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.armor.2"}]}
 item modify block 10110221 6 10110222 container.19 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.armor.p0", italic: false, color: "gray"}], \
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#armor2", objective: "jkbw.int"}, color: "gold"}, " ", {translate: "item.minecraft.gold_ingot", italic: false, color: "gold"}], \
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.death_keep", italic: false, color: "dark_purple"}]]}
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.death_keep", italic: false, color: "dark_purple"}], \
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#armor2", objective: "jkbw.int"}, color: "gold"}, " ", {translate: "item.minecraft.gold_ingot", italic: false, color: "gold"}]]}
 
 item modify block 10110221 6 10110222 container.20 {function: "set_name", entity: "this", name: \
 [{storage: "jk:bw", interpret: true, nbt: "txt.global.permanent", italic: false, color: "white"}, {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.armor.3"}]}
 item modify block 10110221 6 10110222 container.20 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.armor.p0", italic: false, color: "gray"}], \
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#armor3", objective: "jkbw.int"}, color: "green"}, " ", {translate: "item.minecraft.emerald", italic: false, color: "green"}], \
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.death_keep", italic: false, color: "dark_purple"}]]}
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.death_keep", italic: false, color: "dark_purple"}], \
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#armor3", objective: "jkbw.int"}, color: "green"}, " ", {translate: "item.minecraft.emerald", italic: false, color: "green"}]]}
+
+loot replace block 10110221 6 10110222 container.21 loot jkbw:gun/magnum
+item modify block 10110221 6 10110222 container.21 {function: "set_lore", entity: "this", mode: "append", lore: [\
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#gun_magnum", objective: "jkbw.int"}, color: "gold"}, " ", {translate: "item.minecraft.gold_ingot", italic: false, color: "gold"}]]}
+item modify block 10110221 6 10110222 container.21 {function: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_magnum"]}}}
+
+loot replace block 10110221 6 10110222 container.22 loot jkbw:gun/rifle
+item modify block 10110221 6 10110222 container.22 {function: "set_lore", entity: "this", mode: "append", lore: [\
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#gun_rifle", objective: "jkbw.int"}, color: "gold"}, " ", {translate: "item.minecraft.gold_ingot", italic: false, color: "gold"}]]}
+item modify block 10110221 6 10110222 container.22 {function: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_rifle"]}}}
+
+loot replace block 10110221 6 10110222 container.23 loot jkbw:gun/submachinegun
+item modify block 10110221 6 10110222 container.23 {function: "set_lore", entity: "this", mode: "append", lore: [\
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#gun_submachinegun", objective: "jkbw.int"}, color: "white"}, " ", {translate: "item.minecraft.iron_ingot", italic: false, color: "white"}]]}
+item modify block 10110221 6 10110222 container.23 {function: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_submachinegun"]}}}
+
+loot replace block 10110221 6 10110222 container.24 loot jkbw:gun/shotgun
+item modify block 10110221 6 10110222 container.24 {function: "set_lore", entity: "this", mode: "append", lore: [\
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#gun_shotgun", objective: "jkbw.int"}, color: "green"}, " ", {translate: "item.minecraft.emerald", italic: false, color: "green"}]]}
+item modify block 10110221 6 10110222 container.24 {function: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_shotgun"]}}}
+
+loot replace block 10110221 6 10110222 container.25 loot jkbw:gun/flamethower
+item modify block 10110221 6 10110222 container.25 {function: "set_lore", entity: "this", mode: "append", lore: [\
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#gun_flamethower", objective: "jkbw.int"}, color: "gold"}, " ", {translate: "item.minecraft.gold_ingot", italic: false, color: "gold"}]]}
+item modify block 10110221 6 10110222 container.25 {function: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_flamethower"]}}}

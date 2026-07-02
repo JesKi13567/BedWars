@@ -8,3 +8,5 @@ schedule function jkbw:ticks/s1 4t replace
 tag @s add jkbw_admin
 scoreboard objectives remove jkbw.Admin.Trigger
 scoreboard objectives add jkbw.Admin.Trigger trigger "管理员用触发器"
+scoreboard objectives remove jkbw.Admin.Map
+scoreboard objectives add jkbw.Admin.Map trigger "传送地图"

@@ -89,6 +89,7 @@ scoreboard objectives remove jkbw.Player.Use.CD.AntiArrow
 scoreboard objectives remove jkbw.Player.Use.CD.BackScroll
 scoreboard objectives remove jkbw.Player.Use.CD.Creature
 scoreboard objectives remove jkbw.Player.Use.CD.Fireball
+scoreboard objectives remove jkbw.Player.Use.CD.Gun
 scoreboard objectives remove jkbw.Player.Use.CD.Ice
 scoreboard objectives remove jkbw.Player.Use.CD.Platform
 scoreboard objectives remove jkbw.Player.Use.CD.TheMirror

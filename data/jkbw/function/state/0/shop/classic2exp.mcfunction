@@ -1,4 +1,5 @@
-# 转换价格，即经典 → 经验
+## 转换价格，即经典 → 经验
+# 原值
 scoreboard players operation #XPwool jkbw.int = #wool jkbw.int
 scoreboard players operation #XPterracotta jkbw.int = #terracotta jkbw.int
 scoreboard players operation #XPstained_glass jkbw.int = #stained_glass jkbw.int
@@ -67,6 +68,12 @@ scoreboard players operation #XPmace jkbw.int = #mace jkbw.int
 scoreboard players operation #XPwind_charge jkbw.int = #wind_charge jkbw.int
 scoreboard players operation #XPthe_mirror jkbw.int = #the_mirror jkbw.int
 scoreboard players operation #XPcompass jkbw.int = #compass jkbw.int
+
+scoreboard players operation #XPgun_magnum jkbw.int = #gun_magnum jkbw.int
+scoreboard players operation #XPgun_rifle jkbw.int = #gun_rifle jkbw.int
+scoreboard players operation #XPgun_submachinegun jkbw.int = #gun_submachinegun jkbw.int
+scoreboard players operation #XPgun_shotgun jkbw.int = #gun_shotgun jkbw.int
+scoreboard players operation #XPgun_flamethower jkbw.int = #gun_flamethower jkbw.int
 
 scoreboard players operation #XPtrap1 jkbw.int = #trap1 jkbw.int
 scoreboard players operation #XPtrap2 jkbw.int = #trap2 jkbw.int
@@ -144,6 +151,7 @@ scoreboard players operation #XPres.3.solo jkbw.int = #res.3.solo jkbw.int
 scoreboard players operation #XPres.4.solo jkbw.int = #res.4.solo jkbw.int
 scoreboard players operation #XPres.5.solo jkbw.int = #res.5.solo jkbw.int
 
+# 按资源
 scoreboard players operation #XPwool jkbw.int *= #XPiron_ingot jkbw.int
 scoreboard players operation #XPterracotta jkbw.int *= #XPiron_ingot jkbw.int
 scoreboard players operation #XPstained_glass jkbw.int *= #XPiron_ingot jkbw.int
@@ -212,6 +220,12 @@ scoreboard players operation #XPmace jkbw.int *= #XPgold_ingot jkbw.int
 scoreboard players operation #XPwind_charge jkbw.int *= #XPgold_ingot jkbw.int
 scoreboard players operation #XPthe_mirror jkbw.int *= #XPgold_ingot jkbw.int
 scoreboard players operation #XPcompass jkbw.int *= #XPemerald jkbw.int
+
+scoreboard players operation #XPgun_magnum jkbw.int *= #XPgold_ingot jkbw.int
+scoreboard players operation #XPgun_rifle jkbw.int *= #XPgold_ingot jkbw.int
+scoreboard players operation #XPgun_submachinegun jkbw.int *= #XPiron_ingot jkbw.int
+scoreboard players operation #XPgun_shotgun jkbw.int *= #XPemerald jkbw.int
+scoreboard players operation #XPgun_flamethower jkbw.int *= #XPgold_ingot jkbw.int
 
 scoreboard players operation #XPtrap1 jkbw.int *= #XPdiamond jkbw.int
 scoreboard players operation #XPtrap2 jkbw.int *= #XPdiamond jkbw.int

@@ -1,4 +1,3 @@
-scoreboard players reset @s jkbw.Admin.Trigger
 title @s title {storage: "jk:bw", interpret: true, nbt: "txt.ready.check.inventory", color: "green"}
 title @s subtitle {translate: "itemGroup.inventory", color: "yellow"}
 title @s times 0s 3s 1s

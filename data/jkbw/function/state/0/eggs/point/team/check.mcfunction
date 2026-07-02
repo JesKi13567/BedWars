@@ -1,4 +1,3 @@
-scoreboard players reset @s jkbw.Admin.Trigger
 playsound block.note_block.bell player @a
 tellraw @a[tag=jkbw_admin] "\n\n\n\n\n\n\n\n\n\n"
 

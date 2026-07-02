@@ -85,6 +85,7 @@ scoreboard players set @s jkbw.Player.Use.Last.AntiArrow 0
 scoreboard players set @s jkbw.Player.Use.CD.Ice 0
 scoreboard players set @s jkbw.Player.Use.Last.Ice 0
 scoreboard players set @s jkbw.Player.Use.CD.TheMirror 0
+scoreboard players set @s jkbw.Player.Use.CD.Gun 0
 scoreboard players set @s jkbw.Player.Page 0
 execute unless score @s jkbw.Player.Head matches 1.. run scoreboard players set @s jkbw.Player.Head 0
 execute if score #res_mode jkbw.int matches 0..1 run scoreboard players set @s jkbw.Player.Compass 0

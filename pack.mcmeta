@@ -8,16 +8,13 @@
         "color": "yellow"
       },
       {
-        "text": "ToolPack\n",
+        "text": "ToolPack",
         "color": "light_purple"
       },
+      "\nBy ",
       {
-        "text": "起床战争 ",
-        "color": "yellow"
-      },
-      {
-        "text": "工具包",
-        "color": "light_purple"
+        "text": "JK137",
+        "color": "aqua"
       }
     ]
   },

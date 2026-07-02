@@ -1,11 +1,15 @@
+$data modify storage jk:bw Map.maps.$(id).name set value '$(name)'
 $data modify storage jk:bw Map.maps.$(id).ymin set value $(ymin)
 $data modify storage jk:bw Map.maps.$(id).r set value $(r)
 
+# 名字
+$data modify entity @n[type=text_display, tag=jkbw_worldspawn, tag=$(id)] text set value [{storage: "jk:bw", interpret: true, nbt: "txt.point.global.name", color: "gold"}, " - $(name)"]
+
 # 队伍数量
-$scoreboard players set #teams_max jkbw.int $(team_max)
+$scoreboard players set #teams_max jkbw.int $(tm)
 execute if score #teams_max jkbw.int matches ..1 run scoreboard players set #teams_max jkbw.int 2
 execute if score #teams_max jkbw.int matches 9.. run scoreboard players set #teams_max jkbw.int 8
-$execute store result storage jk:bw Map.maps.$(id).team_max int 1 run scoreboard players get #teams_max jkbw.int
+$execute store result storage jk:bw Map.maps.$(id).tm int 1 run scoreboard players get #teams_max jkbw.int
 scoreboard players operation #teams jkbw.int = #teams_max jkbw.int
 function jkbw:state/0/button/team/count/update
 
@@ -56,3 +60,5 @@ $scoreboard players operation #WY$(id)min._10 jkbw.int = #WYmin._10 jkbw.int
 $execute store result storage jk:bw Map.maps.$(id).x int 1 run scoreboard players get #WX jkbw.int
 $execute store result storage jk:bw Map.maps.$(id).y int 1 run scoreboard players add #WY jkbw.int 1
 $execute store result storage jk:bw Map.maps.$(id).z int 1 run scoreboard players get #WZ jkbw.int
+
+function jkbw:state/0/panel/contents/worldspawn/cur/show with storage jk:bw Map.cur

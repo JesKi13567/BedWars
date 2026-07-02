@@ -1,6 +1,5 @@
 # 显示刷新的价格
 playsound block.note_block.bell player @s
-title @s actionbar {storage: "jk:bw", interpret: true, nbt: "txt.ready.price.new", color: "aqua"}
 
 # 按钮 & 提示 & 解析用展示文本
 execute positioned 10110222 1 10110222 run kill @e[distance=..20, tag=jkbw_cannot_kill]

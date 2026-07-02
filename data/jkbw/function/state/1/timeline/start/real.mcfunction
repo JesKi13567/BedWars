@@ -1,4 +1,3 @@
-scoreboard players reset @s jkbw.Admin.Trigger
 
 ## 游戏正式开始前置
 # 队伍
@@ -135,6 +134,8 @@ execute as @a[scores={jkbw.Player.State=2}, sort=random, team=jkbw.gray] store r
 scoreboard players set #shop_items_1 jkbw.int 96
 execute if score #exp_mode jkbw.int matches 1 run scoreboard players set #shop_items_1 jkbw.int 93
 execute if score #res_mode jkbw.int matches 2 run scoreboard players set #shop_items_1 jkbw.int 58
+scoreboard players set #shop_items_2 jkbw.int 34
+execute if score #exp_mode jkbw.int matches 7 run scoreboard players set #shop_items_2 jkbw.int 27
 scoreboard players set #shop_items_3 jkbw.int 30
 execute if score #res_mode jkbw.int matches 2 run scoreboard players set #shop_items_3 jkbw.int 27
 scoreboard players set #shop_items_4 jkbw.int 27

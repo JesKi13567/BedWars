@@ -1,4 +1,3 @@
-scoreboard players reset @s jkbw.Admin.Trigger
 
 execute if score #test_mode jkbw.int matches 2.. run scoreboard players reset #test_mode jkbw.int
 

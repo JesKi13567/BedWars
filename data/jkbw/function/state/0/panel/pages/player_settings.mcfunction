@@ -1,4 +1,3 @@
-scoreboard players reset @s jkbw.Admin.Trigger
 
 # 攻击速度
 summon marker 10110222 1 10110222 {Tags: ["jkbw", "jkbw_player_settings", "attack_speed"], CustomName: {text: "1.8-", color: "gold"}}

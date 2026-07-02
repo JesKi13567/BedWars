@@ -84,3 +84,28 @@ item modify block 10110220 4 10110222 container.23 {function: "set_lore", entity
 
 item modify block 10110220 4 10110222 container.24 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#urfXPbow6", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
+
+loot replace block 10110220 4 10110222 container.14 loot jkbw:gun/magnum
+item modify block 10110220 4 10110222 container.14 {function: "set_lore", entity: "this", mode: "append", lore: [\
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#urfXPgun_magnum", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
+item modify block 10110220 4 10110222 container.14 {function: "set_components", components: {custom_data: {jkbw: ["shop", "urf", "gun_magnum"]}}}
+
+loot replace block 10110220 4 10110222 container.15 loot jkbw:gun/rifle
+item modify block 10110220 4 10110222 container.15 {function: "set_lore", entity: "this", mode: "append", lore: [\
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#urfXPgun_rifle", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
+item modify block 10110220 4 10110222 container.15 {function: "set_components", components: {custom_data: {jkbw: ["shop", "urf", "gun_rifle"]}}}
+
+loot replace block 10110220 4 10110222 container.16 loot jkbw:gun/submachinegun
+item modify block 10110220 4 10110222 container.16 {function: "set_lore", entity: "this", mode: "append", lore: [\
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#urfXPgun_submachinegun", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
+item modify block 10110220 4 10110222 container.16 {function: "set_components", components: {custom_data: {jkbw: ["shop", "urf", "gun_submachinegun"]}}}
+
+loot replace block 10110220 4 10110222 container.17 loot jkbw:gun/shotgun
+item modify block 10110220 4 10110222 container.17 {function: "set_lore", entity: "this", mode: "append", lore: [\
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#urfXPgun_shotgun", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
+item modify block 10110220 4 10110222 container.17 {function: "set_components", components: {custom_data: {jkbw: ["shop", "urf", "gun_shotgun"]}}}
+
+loot replace block 10110220 4 10110222 container.25 loot jkbw:gun/flamethower
+item modify block 10110220 4 10110222 container.25 {function: "set_lore", entity: "this", mode: "append", lore: [\
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#urfXPgun_flamethower", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
+item modify block 10110220 4 10110222 container.25 {function: "set_components", components: {custom_data: {jkbw: ["shop", "urf", "gun_flamethower"]}}}

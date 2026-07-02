@@ -1,4 +1,3 @@
-scoreboard players reset @s jkbw.Admin.Trigger
 
 execute unless score #tutorial jkbw.int matches 1.. run scoreboard players set #tutorial jkbw.int 1
 tellraw @a[tag=jkbw_admin] ["", {text: "\n\n\n\n\n\n\n\n\n\n============= ", color: "green"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.bedwars.datapack", color: "yellow"}, {text: " =============\n", color: "green"}, "\n", \

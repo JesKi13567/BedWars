@@ -1,5 +1,5 @@
 scoreboard players set @s jkbw.Player.Use.CD.Fireball 8
-clear @s fire_charge 1
+clear @s echo_shard[item_model=fire_charge] 1
 summon fireball ^ ^ ^.3 {ExplosionPower: 1, Passengers: [{id: "marker", Tags: ["jkbw", "jkbw_fireball_marker"]}]}
 
 data modify entity @n[type=fireball, tag=!jkbw] Owner set from entity @s UUID

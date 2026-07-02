@@ -1,4 +1,4 @@
-clear @s prismarine_shard 1
+clear @s echo_shard[item_model=prismarine_shard] 1
 scoreboard players set @s jkbw.Player.Use.CD.AntiArrow 15
 scoreboard players set @s jkbw.Player.Use.Last.AntiArrow 200
 execute if score #test_mode jkbw.int matches 1 run scoreboard players set @s jkbw.Player.Use.CD.AntiArrow 1

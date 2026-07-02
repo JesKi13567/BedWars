@@ -1,0 +1,2 @@
+$data modify storage jk:bw Temp.map_list.dialog.actions append value {width: 180, label: ["", {text: "$(name)", color: "gold"}, " ($(id))"], action: {type: "run_command", command: "/trigger jkbw.Admin.Map set $(id)"}}
+$data modify storage jk:bw Temp.map_list.dialog.actions append value {width: 60, label: {text: "$(txt_delete)", color: "red"}, action: {type: "run_command", command: "/function jkbw:state/0/panel/contents/worldspawn/delete/0 {id: $(id), c: $(c)}"}}

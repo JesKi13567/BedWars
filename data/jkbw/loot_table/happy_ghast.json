@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "raw_gold",
+          "name": "echo_shard",
           "functions": [
             {
               "function": "set_name",

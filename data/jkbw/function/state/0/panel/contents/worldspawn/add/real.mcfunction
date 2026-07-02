@@ -1,15 +1,17 @@
-## 输入：id，r，ymin，team_max
 playsound block.note_block.bell player @a
 $kill @e[type=text_display, tag=jkbw_worldspawn, tag=$(id)]
-$execute align xyz run summon text_display ~.5 ~ ~.5 {Tags: ["jkbw", "jkbw_cannot_kill", "jkbw_worldspawn", "$(id)"], text: [{storage: "jk:bw", interpret: true, nbt: "txt.point.global.name", color: "gold"}, " - $(id)"], billboard: "center", brightness: {block: 15, sky: 15}}
+$execute align xyz run summon text_display ~.5 ~ ~.5 {Tags: ["jkbw", "jkbw_cannot_kill", "jkbw_worldspawn", "$(id)"], billboard: "center", brightness: {block: 15, sky: 15}}
 setblock ~ ~-1 ~ tinted_glass
 fill ~6 ~-1 ~6 ~-6 ~-1 ~-6 glass replace air
 setworldspawn
 execute align xyz run worldborder center ~.5 ~.5
 
 # 相同步骤
-$data merge storage jk:bw {Map: {cur: {id: $(id), ymin: $(ymin), r: $(r), team_max: $(team_max), type: 1}}}
+$data merge storage jk:bw {Map: {cur: {id: $(id), name: '$(name)', r: $(r), ymin: $(ymin), tm: $(tm), type: 1}}}
 function jkbw:state/0/panel/contents/worldspawn/cur/global with storage jk:bw Map.cur
+
+# 地图列表
+$data modify storage jk:bw Map.list append value $(id)
 
 # 取消准备 & 关闭测试模式
 item replace entity @a[gamemode=adventure] hotbar.8 from block 10110209 5 10110222 container.0

@@ -17,4 +17,3 @@ execute if score #team_update.type jkbw.int matches 6 run scoreboard players ope
 execute if score #team_update.type jkbw.int matches 7 run scoreboard players operation #TEAM_UPDATE.knockback jkbw.int = #team_update.tier jkbw.int
 function jkbw:state/0/shop/price/classic/5
 
-scoreboard players reset @s jkbw.Admin.Trigger

@@ -1,5 +1,5 @@
 scoreboard players set @s jkbw.Player.Use.CD.Creature 6
-clear @s raw_gold 1
+clear @s echo_shard[item_model=happy_ghast_spawn_egg] 1
 
 summon happy_ghast ~ ~ ~ {Tags: ["jkbw", "jkbw_happy_ghast"], Silent: true}
 execute as @e[type=happy_ghast, tag=jkbw_happy_ghast] run attribute @s flying_speed base set 0.06

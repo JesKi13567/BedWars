@@ -1,4 +1,3 @@
-## 输入：id
 # 修改 Map.cur
 $function jkbw:state/0/panel/contents/worldspawn/tp/2 with storage jk:bw Map.maps.$(id)
 $data modify storage jk:bw Map.cur.id set value $(id)

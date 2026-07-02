@@ -69,6 +69,12 @@ scoreboard players set #wind_charge jkbw.int 2
 scoreboard players set #the_mirror jkbw.int 6
 scoreboard players set #compass jkbw.int 2
 
+scoreboard players set #gun_magnum jkbw.int 6
+scoreboard players set #gun_rifle jkbw.int 8
+scoreboard players set #gun_submachinegun jkbw.int 50
+scoreboard players set #gun_shotgun jkbw.int 1
+scoreboard players set #gun_flamethower jkbw.int 12
+
 scoreboard players set #trap1 jkbw.int 1
 scoreboard players set #trap2 jkbw.int 2
 scoreboard players set #trap3 jkbw.int 4

@@ -1,4 +1,4 @@
-data modify storage jk:bw Temp.map_id set from storage jk:bw Temp.list[0]
+data modify storage jk:bw Temp.id set from storage jk:bw Temp.list[0]
 function jkbw:state/0/panel/contents/map/rotation/set/check_id with storage jk:bw Temp
 data remove storage jk:bw Temp.list[0]
 execute store result score #temp_score jkbw.int run data get storage jk:bw Temp.list

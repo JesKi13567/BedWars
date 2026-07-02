@@ -1,5 +1,6 @@
 # 检测能否买
-$execute unless score $$(team) jkbw.Bed.State matches 3 run return run playsound entity.villager.no player @s
+scoreboard players set @s jkbw.Player.Page.Switched 1
+$execute unless score $$(team) jkbw.Bed.State matches 3 run return run function jkbw:state/1/shop/bought {desc: '[{storage: "jk:bw", interpret: true, nbt: "txt.color.$(team)", color: "yellow"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.team"}, {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.compass.can_respawn", color: "red"}]'}
 $tag @s[scores={jkbw.Player.Compass=$(id)}] add jkbw_bought
 $execute as @s[tag=jkbw_bought] run return run function jkbw:state/1/shop/bought {desc: '[{storage: "jk:bw", interpret: true, nbt: "txt.play.shop.buy.ed.p0", color: "red"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.color.$(team)", color: "yellow"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.team", color: "yellow"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.compass.track", color: "yellow"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.char.exclamation"}]'}
 

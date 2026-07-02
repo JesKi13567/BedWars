@@ -14,10 +14,15 @@ execute if score #ENABLE.spear jkbw.int matches 1 run item replace entity @s end
 execute if score #ENABLE.spear jkbw.int matches 1 run item replace entity @s enderchest.11 from block 10110220 4 10110222 container.11
 execute if score #ENABLE.spear jkbw.int matches 1 run item replace entity @s enderchest.12 from block 10110220 4 10110222 container.12
 execute if score #ENABLE.spear jkbw.int matches 1 run item replace entity @s enderchest.13 from block 10110220 4 10110222 container.13
-item replace entity @s enderchest.18 from block 10110220 4 10110222 container.18
-item replace entity @s enderchest.19 from block 10110220 4 10110222 container.19
-item replace entity @s enderchest.20 from block 10110220 4 10110222 container.20
-item replace entity @s enderchest.21 from block 10110220 4 10110222 container.21
-item replace entity @s enderchest.22 from block 10110220 4 10110222 container.22
-item replace entity @s enderchest.23 from block 10110220 4 10110222 container.23
-item replace entity @s enderchest.24 from block 10110220 4 10110222 container.24
+execute unless score #exp_mode jkbw.int matches 7 run item replace entity @s enderchest.18 from block 10110220 4 10110222 container.18
+execute unless score #exp_mode jkbw.int matches 7 run item replace entity @s enderchest.19 from block 10110220 4 10110222 container.19
+execute unless score #exp_mode jkbw.int matches 7 run item replace entity @s enderchest.20 from block 10110220 4 10110222 container.20
+execute unless score #exp_mode jkbw.int matches 7 run item replace entity @s enderchest.21 from block 10110220 4 10110222 container.21
+execute unless score #exp_mode jkbw.int matches 7 run item replace entity @s enderchest.22 from block 10110220 4 10110222 container.22
+execute unless score #exp_mode jkbw.int matches 7 run item replace entity @s enderchest.23 from block 10110220 4 10110222 container.23
+execute unless score #exp_mode jkbw.int matches 7 run item replace entity @s enderchest.24 from block 10110220 4 10110222 container.24
+execute if score #exp_mode jkbw.int matches 7 run item replace entity @s enderchest.18 from block 10110220 4 10110222 container.14
+execute if score #exp_mode jkbw.int matches 7 run item replace entity @s enderchest.19 from block 10110220 4 10110222 container.15
+execute if score #exp_mode jkbw.int matches 7 run item replace entity @s enderchest.20 from block 10110220 4 10110222 container.16
+execute if score #exp_mode jkbw.int matches 7 run item replace entity @s enderchest.21 from block 10110220 4 10110222 container.17
+execute if score #exp_mode jkbw.int matches 7 run item replace entity @s enderchest.22 from block 10110220 4 10110222 container.25
