@@ -1,0 +1,1 @@
+{"criteria":{"jkbw":{"trigger":"entity_hurt_player","conditions":{"damage":{"type":{"source_entity":{"type":"creeper"}}}}}},"rewards":{"function":"jkbw:state/1/hurt/entity/creeper"}}

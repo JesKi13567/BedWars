@@ -1,1 +1,2 @@
-$function jkbw:state/0/panel/contents/tp/back_real with storage jk:bw Map.maps.$(id)
+$tp @s $(x) $(y) $(z)
+$spawnpoint @s $(x) $(y) $(z)

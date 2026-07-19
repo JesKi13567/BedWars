@@ -16,7 +16,7 @@ execute as @s[scores={jkbw.Admin.Trigger=107}] run function jkbw:state/0/panel/c
 execute as @s[scores={jkbw.Admin.Trigger=108}] run function jkbw:state/0/eggs/give
 execute as @s[scores={jkbw.Admin.Trigger=109}] run function jkbw:state/0/panel/contents/test_mode/check
 execute as @s[scores={jkbw.Admin.Trigger=110}] run function jkbw:state/0/eggs/point/team/check
-execute as @s[scores={jkbw.Admin.Trigger=111}] run function jkbw:state/0/eggs/point/team/clear
+#execute as @s[scores={jkbw.Admin.Trigger=111}] run 
 execute as @s[scores={jkbw.Admin.Trigger=112}] run function jkbw:state/0/panel/contents/tp/chunk
 execute as @s[scores={jkbw.Admin.Trigger=113}] run function jkbw:state/0/panel/contents/tp/back with storage jk:bw Map.cur
 execute as @s[scores={jkbw.Admin.Trigger=114}] run function jkbw:state/0/panel/contents/map/rotation/set/switch

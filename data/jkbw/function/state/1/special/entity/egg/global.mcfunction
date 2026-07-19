@@ -2,7 +2,7 @@
 execute as @s[tag=!jkbw] run function jkbw:state/1/special/entity/egg/new
 
 # 桥
-function jkbw:state/1/special/check_pos
+function jkbw:state/1/special/check_pos with storage jk:bw Map.cur
 
 execute as @s[tag=!jkbw_check_pos_fail, scores={jkbw.Team.ID=1}] run function jkbw:state/1/special/entity/egg/marker/summon {team: 'red'}
 execute as @s[tag=!jkbw_check_pos_fail, scores={jkbw.Team.ID=2}] run function jkbw:state/1/special/entity/egg/marker/summon {team: 'blue'}

@@ -18,8 +18,12 @@ execute if score #heal jkbw.int matches ..0 run scoreboard players set #heal jkb
 # 游戏计时
 function jkbw:state/1/timeline/progress/global
 
+# 生物高度
+function jkbw:state/1/special/entity/height with storage jk:bw Map.cur
+
 # 铁傀儡
 execute if score #res_mode jkbw.int matches 0..1 as @e[type=iron_golem] at @s run function jkbw:state/1/special/entity/iron_golem/global
+
 # 快乐恶魂
 execute as @e[type=happy_ghast] at @s run function jkbw:state/1/special/entity/happy_ghast/global
 

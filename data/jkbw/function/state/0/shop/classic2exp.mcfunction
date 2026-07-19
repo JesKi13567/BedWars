@@ -114,6 +114,11 @@ scoreboard players operation #XPres.2 jkbw.int = #res.2 jkbw.int
 scoreboard players operation #XPres.3 jkbw.int = #res.3 jkbw.int
 scoreboard players operation #XPres.4 jkbw.int = #res.4 jkbw.int
 scoreboard players operation #XPres.5 jkbw.int = #res.5 jkbw.int
+scoreboard players operation #XPdeadshot.1 jkbw.int = #deadshot.1 jkbw.int
+scoreboard players operation #XPdeadshot.2 jkbw.int = #deadshot.2 jkbw.int
+scoreboard players operation #XPdeadshot.3 jkbw.int = #deadshot.3 jkbw.int
+scoreboard players operation #XPdeadshot.4 jkbw.int = #deadshot.4 jkbw.int
+scoreboard players operation #XPdeadshot.5 jkbw.int = #deadshot.5 jkbw.int
 
 scoreboard players operation #XPknockback.1.solo jkbw.int = #knockback.1.solo jkbw.int
 scoreboard players operation #XPknockback.2.solo jkbw.int = #knockback.2.solo jkbw.int
@@ -150,6 +155,11 @@ scoreboard players operation #XPres.2.solo jkbw.int = #res.2.solo jkbw.int
 scoreboard players operation #XPres.3.solo jkbw.int = #res.3.solo jkbw.int
 scoreboard players operation #XPres.4.solo jkbw.int = #res.4.solo jkbw.int
 scoreboard players operation #XPres.5.solo jkbw.int = #res.5.solo jkbw.int
+scoreboard players operation #XPdeadshot.1.solo jkbw.int = #deadshot.1.solo jkbw.int
+scoreboard players operation #XPdeadshot.2.solo jkbw.int = #deadshot.2.solo jkbw.int
+scoreboard players operation #XPdeadshot.3.solo jkbw.int = #deadshot.3.solo jkbw.int
+scoreboard players operation #XPdeadshot.4.solo jkbw.int = #deadshot.4.solo jkbw.int
+scoreboard players operation #XPdeadshot.5.solo jkbw.int = #deadshot.5.solo jkbw.int
 
 # 按资源
 scoreboard players operation #XPwool jkbw.int *= #XPiron_ingot jkbw.int
@@ -266,6 +276,11 @@ scoreboard players operation #XPres.2 jkbw.int *= #XPdiamond jkbw.int
 scoreboard players operation #XPres.3 jkbw.int *= #XPdiamond jkbw.int
 scoreboard players operation #XPres.4 jkbw.int *= #XPdiamond jkbw.int
 scoreboard players operation #XPres.5 jkbw.int *= #XPdiamond jkbw.int
+scoreboard players operation #XPdeadshot.1 jkbw.int *= #XPdiamond jkbw.int
+scoreboard players operation #XPdeadshot.2 jkbw.int *= #XPdiamond jkbw.int
+scoreboard players operation #XPdeadshot.3 jkbw.int *= #XPdiamond jkbw.int
+scoreboard players operation #XPdeadshot.4 jkbw.int *= #XPdiamond jkbw.int
+scoreboard players operation #XPdeadshot.5 jkbw.int *= #XPdiamond jkbw.int
 
 scoreboard players operation #XPknockback.1.solo jkbw.int *= #XPdiamond jkbw.int
 scoreboard players operation #XPknockback.2.solo jkbw.int *= #XPdiamond jkbw.int
@@ -302,5 +317,10 @@ scoreboard players operation #XPres.2.solo jkbw.int *= #XPdiamond jkbw.int
 scoreboard players operation #XPres.3.solo jkbw.int *= #XPdiamond jkbw.int
 scoreboard players operation #XPres.4.solo jkbw.int *= #XPdiamond jkbw.int
 scoreboard players operation #XPres.5.solo jkbw.int *= #XPdiamond jkbw.int
+scoreboard players operation #XPdeadshot.1.solo jkbw.int *= #XPdiamond jkbw.int
+scoreboard players operation #XPdeadshot.2.solo jkbw.int *= #XPdiamond jkbw.int
+scoreboard players operation #XPdeadshot.3.solo jkbw.int *= #XPdiamond jkbw.int
+scoreboard players operation #XPdeadshot.4.solo jkbw.int *= #XPdiamond jkbw.int
+scoreboard players operation #XPdeadshot.5.solo jkbw.int *= #XPdiamond jkbw.int
 
 function jkbw:state/0/shop/box/global

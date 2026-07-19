@@ -1,5 +1,5 @@
 # JK's BedWars ToolPack -- 起床战争工具包
-## v1.2 for MC1.21.11~26.2.x
+## v1.2 for MC1.21.11~26.1.x
 
 - [简体中文](#zh_cn)
 - [English](#en_us)
@@ -87,6 +87,7 @@
 |被迫零元购|商店和资源点禁用。每经过 5 秒，玩家将免费获得随机的商品（不含团队升级）。|
 |摸摸|玩家的实体/方块交互距离均变为 32。|
 |色盲|所有玩家的名字标签、装备、方块统一为白色。|
+|枪械|所有弓被替换为枪械。|
 
 ### 相关网站
 [GitHub] [MCMOD] [Modrinth] [CurseForge] [PMC]
@@ -174,6 +175,7 @@ About shop buying, the classic uses items, while others use experience levels.
 |Forced Free Loot|Shops and Resource Points are banned. For every 5 seconds, players will get random shop loots freely \(team updates not included\).|
 |Patpat|Set players' both Entity/Block Interaction Range to 32.|
 |Color Blind|All players have the same white name tags, armor, and blocks.|
+|Armed|All bows are replaced with guns.|
 
 ### Websites
 [GitHub] [MCMOD] [Modrinth] [CurseForge] [PMC]

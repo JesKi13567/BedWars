@@ -16,6 +16,7 @@ $execute if score #res_mode jkbw.int matches 1 run tellraw @s[tag=!jkbw_buy_succ
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
+item modify entity @s[tag=jkbw_buy_success] armor.head {function: "set_components", components: {item_model: "air"}}
 $scoreboard players set @s[tag=jkbw_buy_success] jkbw.Player.ArmorLevels $(id)
 $tellraw @s[tag=jkbw_buy_success] [{storage: "jk:bw", interpret: true, nbt: "txt.play.shop.buy.success", color: "green"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.armor.$(id)", color: "gold"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.char.exclamation"}]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]

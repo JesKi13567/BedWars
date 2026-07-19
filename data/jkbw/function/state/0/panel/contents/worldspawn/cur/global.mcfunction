@@ -14,51 +14,42 @@ scoreboard players operation #teams jkbw.int = #teams_max jkbw.int
 function jkbw:state/0/button/team/count/update
 
 # 边界半径
-$function jkbw:state/0/panel/contents/worldspawn/cur/radius {r: $(r)}
-function jkbw:state/0/panel/contents/worldspawn/cur/set with storage jk:bw Map.cur
+$scoreboard players set #WR jkbw.int $(r)
+scoreboard players operation #WD jkbw.int = #WR jkbw.int
+scoreboard players operation #WD jkbw.int *= #2 jkbw.int
+scoreboard players add #WD jkbw.int 1
+scoreboard players add #WR jkbw.int 3
+$execute store result storage jk:bw Map.maps.$(id).d int 1 run scoreboard players get #WD jkbw.int
+$execute store result storage jk:bw Map.maps.$(id).r1 int 1 run scoreboard players get #WR jkbw.int
 
 # 高度Y
 $execute if score #1 jkbw.int matches $(type) store result score #WY jkbw.int run data get entity @s Pos[1]
 $execute unless score #1 jkbw.int matches $(type) store result score #WY jkbw.int run data get entity @n[type=text_display, tag=jkbw_worldspawn, tag=$(id)] Pos[1]
-scoreboard players remove #WY jkbw.int 1
-scoreboard players operation #WYmax_ jkbw.int = #WY jkbw.int
-scoreboard players add #WYmax_ jkbw.int 100
-$scoreboard players set #WYmin jkbw.int $(ymin)
-scoreboard players operation #WYmin.5 jkbw.int = #WYmin jkbw.int
-scoreboard players operation #WYmin._5 jkbw.int = #WYmin jkbw.int
-scoreboard players operation #WYmin._10 jkbw.int = #WYmin jkbw.int
-scoreboard players add #WYmin.5 jkbw.int 5
-scoreboard players remove #WYmin._5 jkbw.int 5
-scoreboard players remove #WYmin._10 jkbw.int 10
+$execute store result storage jk:bw Map.maps.$(id).y int 1 run scoreboard players get #WY jkbw.int
 
 # 边界XZ
 $execute if score #1 jkbw.int matches $(type) store result score #WX jkbw.int run data get entity @s Pos[0]
 $execute if score #1 jkbw.int matches $(type) store result score #WZ jkbw.int run data get entity @s Pos[2]
 $execute unless score #1 jkbw.int matches $(type) store result score #WX jkbw.int run data get entity @n[type=text_display, tag=jkbw_worldspawn, tag=$(id)] Pos[0]
 $execute unless score #1 jkbw.int matches $(type) store result score #WZ jkbw.int run data get entity @n[type=text_display, tag=jkbw_worldspawn, tag=$(id)] Pos[2]
-scoreboard players operation #WXmax jkbw.int = #WX jkbw.int
-scoreboard players operation #WXmin jkbw.int = #WX jkbw.int
-scoreboard players operation #WZmax jkbw.int = #WZ jkbw.int
-scoreboard players operation #WZmin jkbw.int = #WZ jkbw.int
-$scoreboard players add #WXmax jkbw.int $(r)
-$scoreboard players remove #WXmin jkbw.int $(r)
-$scoreboard players add #WZmax jkbw.int $(r)
-$scoreboard players remove #WZmin jkbw.int $(r)
-
-# 记录
-$scoreboard players operation #WX$(id)max jkbw.int = #WXmax jkbw.int
-$scoreboard players operation #WX$(id)min jkbw.int = #WXmin jkbw.int
-$scoreboard players operation #WZ$(id)max jkbw.int = #WZmax jkbw.int
-$scoreboard players operation #WZ$(id)min jkbw.int = #WZmin jkbw.int
-$scoreboard players operation #WY$(id) jkbw.int = #WY jkbw.int
-$scoreboard players operation #WY$(id)max_ jkbw.int = #WYmax_ jkbw.int
-$scoreboard players operation #WY$(id)min jkbw.int = #WYmin jkbw.int
-$scoreboard players operation #WY$(id)min.5 jkbw.int = #WYmin.5 jkbw.int
-$scoreboard players operation #WY$(id)min._5 jkbw.int = #WYmin._5 jkbw.int
-$scoreboard players operation #WY$(id)min._10 jkbw.int = #WYmin._10 jkbw.int
-
 $execute store result storage jk:bw Map.maps.$(id).x int 1 run scoreboard players get #WX jkbw.int
-$execute store result storage jk:bw Map.maps.$(id).y int 1 run scoreboard players add #WY jkbw.int 1
 $execute store result storage jk:bw Map.maps.$(id).z int 1 run scoreboard players get #WZ jkbw.int
 
+scoreboard players operation #WX.max jkbw.int = #WX jkbw.int
+scoreboard players operation #WX.min jkbw.int = #WX jkbw.int
+scoreboard players operation #WZ.max jkbw.int = #WZ jkbw.int
+scoreboard players operation #WZ.min jkbw.int = #WZ jkbw.int
+$scoreboard players add #WX.max jkbw.int $(r)
+$scoreboard players remove #WX.min jkbw.int $(r)
+$scoreboard players add #WZ.max jkbw.int $(r)
+$scoreboard players remove #WZ.min jkbw.int $(r)
+$execute store result storage jk:bw Map.maps.$(id).xmax int 1 run scoreboard players get #WX.max jkbw.int
+$execute store result storage jk:bw Map.maps.$(id).xmin int 1 run scoreboard players get #WX.min jkbw.int
+$execute store result storage jk:bw Map.maps.$(id).zmax int 1 run scoreboard players get #WZ.max jkbw.int
+$execute store result storage jk:bw Map.maps.$(id).zmin int 1 run scoreboard players get #WZ.min jkbw.int
+
+# 其他处理
+$data modify storage jk:bw Map.cur set from storage jk:bw Map.maps.$(id)
+$data modify storage jk:bw Map.cur.id set value $(id)
+function jkbw:state/0/panel/contents/worldspawn/cur/set with storage jk:bw Map.cur
 function jkbw:state/0/panel/contents/worldspawn/cur/show with storage jk:bw Map.cur

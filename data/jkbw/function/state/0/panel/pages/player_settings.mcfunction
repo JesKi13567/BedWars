@@ -36,6 +36,7 @@ execute if score #exp_mode jkbw.int matches 3 run data modify entity @n[type=tex
 execute if score #exp_mode jkbw.int matches 4 run data modify entity @n[type=text_display, tag=jkbw_txt] text set value [{storage: "jk:bw", interpret: true, nbt: "txt.ready.exp_mode.4.name", color: "gold"}]
 execute if score #exp_mode jkbw.int matches 5 run data modify entity @n[type=text_display, tag=jkbw_txt] text set value [{storage: "jk:bw", interpret: true, nbt: "txt.ready.exp_mode.5.name", color: "gold"}]
 execute if score #exp_mode jkbw.int matches 6 run data modify entity @n[type=text_display, tag=jkbw_txt] text set value [{storage: "jk:bw", interpret: true, nbt: "txt.ready.exp_mode.6.name", color: "gold"}]
+execute if score #exp_mode jkbw.int matches 7 run data modify entity @n[type=text_display, tag=jkbw_txt] text set value [{storage: "jk:bw", interpret: true, nbt: "txt.ready.exp_mode.7.name", color: "gold"}]
 data modify entity @n[type=marker, tag=jkbw_player_settings, tag=exp_mode] CustomName set from entity @n[type=text_display, tag=jkbw_txt] text
 # 设置时间
 summon marker 10110222 1 10110222 {Tags: ["jkbw", "jkbw_player_settings", "set_time"]}

@@ -11,6 +11,7 @@ scoreboard objectives remove jkbw.Team.Trap.2
 scoreboard objectives remove jkbw.Team.Trap.3
 scoreboard objectives remove jkbw.Team.Trap.CD
 scoreboard objectives remove jkbw.Team.Trap.Count
+scoreboard objectives remove jkbw.Team.deadshot
 scoreboard objectives remove jkbw.Team.dragon
 scoreboard objectives remove jkbw.Team.haste
 scoreboard objectives remove jkbw.Team.healing
@@ -98,6 +99,7 @@ scoreboard objectives remove jkbw.Player.Use.Enderchest
 scoreboard objectives remove jkbw.Player.Use.Last.AntiArrow
 scoreboard objectives remove jkbw.Player.Use.Last.BackScroll
 scoreboard objectives remove jkbw.Player.Use.Last.Ice
+scoreboard objectives remove jkbw.Player.Use.Last.TheMirror
 scoreboard objectives remove jkbw.Player.Use.Snowball
 scoreboard objectives remove jkbw.Player.Use.TNT
 scoreboard objectives remove jkbw.Player.Use.Tower
@@ -106,12 +108,8 @@ scoreboard objectives remove jkbw.Player.Wins
 scoreboard objectives remove jkbw.Bed.State
 scoreboard objectives remove jkbw.Entity.Time
 scoreboard objectives remove jkbw.Entity.X
-scoreboard objectives remove jkbw.Entity.X1
-scoreboard objectives remove jkbw.Entity.X_int
 scoreboard objectives remove jkbw.Entity.Y
 scoreboard objectives remove jkbw.Entity.Z
-scoreboard objectives remove jkbw.Entity.Z1
-scoreboard objectives remove jkbw.Entity.Z_int
 scoreboard objectives remove jkbw.Res.CD.Gold
 scoreboard objectives remove jkbw.Res.CD.Iron
 scoreboard objectives remove jkbw.Res.Count.Gold

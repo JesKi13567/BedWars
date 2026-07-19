@@ -1,0 +1,1 @@
+{"criteria":{"jkbw":{"trigger":"entity_hurt_player","conditions":{"damage":{"type":{"tags":[{"expected":true,"id":"jkbw:env/outside_border"}]}}}}},"rewards":{"function":"jkbw:state/1/hurt/env/outside_border"}}

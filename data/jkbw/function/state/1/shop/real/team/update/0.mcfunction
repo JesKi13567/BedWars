@@ -6,6 +6,7 @@ $execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "team
 $execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "team", "healing"]}] run function jkbw:state/1/shop/real/team/update/1 {team: '$(team)', item: 'healing', id: 9}
 $execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "team", "protect"]}] run function jkbw:state/1/shop/real/team/update/1 {team: '$(team)', item: 'protect', id: 9}
 $execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "team", "res"]}] run function jkbw:state/1/shop/real/team/update/1 {team: '$(team)', item: 'res', id: 9}
+$execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "team", "deadshot"]}] run function jkbw:state/1/shop/real/team/update/1 {team: '$(team)', item: 'deadshot', id: 9}
 
 # 陷阱
 $execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "team", "is_trap"]}] run function jkbw:state/1/shop/real/team/trap/1 {team: '$(team)', item: 1}

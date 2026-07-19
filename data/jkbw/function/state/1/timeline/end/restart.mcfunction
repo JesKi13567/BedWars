@@ -1,5 +1,3 @@
-worldborder set 50000000
-
 scoreboard players reset * jkbw.Player.State
 scoreboard players reset * jkbw.Player.ID
 scoreboard players reset * jkbw.Team.ID

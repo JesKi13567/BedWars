@@ -85,17 +85,18 @@ scoreboard players set @s jkbw.Player.Use.Last.AntiArrow 0
 scoreboard players set @s jkbw.Player.Use.CD.Ice 0
 scoreboard players set @s jkbw.Player.Use.Last.Ice 0
 scoreboard players set @s jkbw.Player.Use.CD.TheMirror 0
+scoreboard players set @s jkbw.Player.Use.Last.TheMirror 0
 scoreboard players set @s jkbw.Player.Use.CD.Gun 0
 scoreboard players set @s jkbw.Player.Page 0
 execute unless score @s jkbw.Player.Head matches 1.. run scoreboard players set @s jkbw.Player.Head 0
-execute if score #res_mode jkbw.int matches 0..1 run scoreboard players set @s jkbw.Player.Compass 0
+scoreboard players set @s jkbw.Player.Compass 0
 execute if score #res_mode jkbw.int matches 2 run scoreboard players set @s jkbw.Player.Compass -1
 xp set @s 0 levels
 xp set @s 0 points
 title @s title ""
 title @s subtitle ""
-function jkbw:state/1/hurt/death/spawned
-function jkbw:state/1/hurt/forgive
+function jkbw:state/1/hurt/sub/death/spawned
+function jkbw:state/1/hurt/sub/forgive
 tag @s remove jkbw_own_chest
 tag @s remove jkbw_effect_invisible
 tag @s remove jkbw_effect_lucky

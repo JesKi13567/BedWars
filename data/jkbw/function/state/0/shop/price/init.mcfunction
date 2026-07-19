@@ -114,6 +114,11 @@ scoreboard players set #res.2 jkbw.int 8
 scoreboard players set #res.3 jkbw.int 12
 scoreboard players set #res.4 jkbw.int 16
 scoreboard players set #res.5 jkbw.int 20
+scoreboard players set #deadshot.1 jkbw.int 3
+scoreboard players set #deadshot.2 jkbw.int 5
+scoreboard players set #deadshot.3 jkbw.int 7
+scoreboard players set #deadshot.4 jkbw.int 10
+scoreboard players set #deadshot.5 jkbw.int 13
 
 scoreboard players set #knockback.1.solo jkbw.int 5
 scoreboard players set #knockback.2.solo jkbw.int 10
@@ -150,6 +155,11 @@ scoreboard players set #res.2.solo jkbw.int 4
 scoreboard players set #res.3.solo jkbw.int 6
 scoreboard players set #res.4.solo jkbw.int 8
 scoreboard players set #res.5.solo jkbw.int 10
+scoreboard players operation #deadshot.1.solo jkbw.int = #deadshot.1 jkbw.int
+scoreboard players operation #deadshot.2.solo jkbw.int = #deadshot.2 jkbw.int
+scoreboard players operation #deadshot.3.solo jkbw.int = #deadshot.3 jkbw.int
+scoreboard players operation #deadshot.4.solo jkbw.int = #deadshot.4 jkbw.int
+scoreboard players operation #deadshot.5.solo jkbw.int = #deadshot.5 jkbw.int
 
 scoreboard players set #XPiron_ingot jkbw.int 1
 scoreboard players set #XPgold_ingot jkbw.int 10

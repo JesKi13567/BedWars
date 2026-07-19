@@ -1,5 +1,5 @@
 # 开始放置
-function jkbw:state/1/special/check_pos
+function jkbw:state/1/special/check_pos with storage jk:bw Map.cur
 execute if block ~ ~ ~ #shulker_boxes run setblock ~ ~ ~ air
 execute unless block ~ ~ ~ air run scoreboard players set @s jkbw.int 0
 execute if entity @a[gamemode=adventure, limit=1, distance=...8] run scoreboard players set @s jkbw.int 0

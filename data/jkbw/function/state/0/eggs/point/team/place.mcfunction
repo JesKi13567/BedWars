@@ -1,3 +1,5 @@
+execute unless items entity @s weapon.offhand #jkbw:wool run return run tellraw @s {storage: "jk:bw", interpret: true, nbt: "txt.egg.point.team.no", color: "yellow"}
+
 $execute if items entity @s weapon.offhand red_wool run function jkbw:state/0/eggs/point/team/url/$(url) {team: 'red', color: 'red'}
 $execute if items entity @s weapon.offhand blue_wool run function jkbw:state/0/eggs/point/team/url/$(url) {team: 'blue', color: 'blue'}
 $execute if items entity @s weapon.offhand green_wool run function jkbw:state/0/eggs/point/team/url/$(url) {team: 'green', color: 'green'}

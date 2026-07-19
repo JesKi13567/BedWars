@@ -19,17 +19,33 @@
     "damage_immunity": [
       {
         "effect": {},
-        "requirements": {
-          "condition": "value_check",
-          "value": {
-            "target": "this",
-            "type": "score",
-            "score": "jkbw.Player.PHDI"
+        "requirements": [
+          {
+            "condition": "value_check",
+            "value": {
+              "target": "this",
+              "type": "score",
+              "score": "jkbw.Player.PHDI"
+            },
+            "range": {
+              "min": 1
+            }
           },
-          "range": {
-            "min": 1
+          {
+            "condition": "inverted",
+            "term": {
+              "condition": "damage_source_properties",
+              "predicate": {
+                "tags": [
+                  {
+                    "expected": true,
+                    "id": "jkbw:player/gun"
+                  }
+                ]
+              }
+            }
           }
-        }
+        ]
       }
     ]
   }

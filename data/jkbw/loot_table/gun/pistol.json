@@ -120,6 +120,40 @@
                     "text": "30m",
                     "color": "green"
                   }
+                ],
+                [
+                  {
+                    "text": "[",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "keybind": "key.attack"
+                  },
+                  "]",
+                  {
+                    "storage": "jk:bw",
+                    "interpret": true,
+                    "nbt": "txt.shop.item.gun.key.reload",
+                    "color": "gray"
+                  }
+                ],
+                [
+                  {
+                    "text": "[",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "keybind": "key.use"
+                  },
+                  "]",
+                  {
+                    "storage": "jk:bw",
+                    "interpret": true,
+                    "nbt": "txt.shop.item.gun.key.shoot",
+                    "color": "gray"
+                  }
                 ]
               ]
             },

@@ -1,8 +1,6 @@
 # 记录位置并存储
-execute store result score @s jkbw.Entity.X run data get entity @s Pos[0] 10
-execute store result score @s jkbw.Entity.Z run data get entity @s Pos[2] 10
-execute store result score @s jkbw.Entity.X_int run data get entity @s Pos[0] 1
-execute store result score @s jkbw.Entity.Z_int run data get entity @s Pos[2] 1
+execute store result score @s jkbw.Entity.X run data get entity @s Pos[0]
+execute store result score @s jkbw.Entity.Z run data get entity @s Pos[2]
 
 execute as @s[tag=jkbw_bed_red] run function jkbw:state/1/timeline/start/marker/bed_lode {id: 0, team: 'red'}
 execute as @s[tag=jkbw_bed_blue] run function jkbw:state/1/timeline/start/marker/bed_lode {id: 1, team: 'blue'}

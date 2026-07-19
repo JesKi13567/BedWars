@@ -1,8 +1,6 @@
-playsound block.note_block.bell player @a
-
 # 楼梯
 data modify storage jk:bw Temp.stairs set from entity @s Inventory[{Slot:17b}].id
-function jkbw:state/0/eggs/point/res/stairs with storage jk:bw Temp
+execute if items entity @s container.17 #stairs run function jkbw:state/0/eggs/point/res/stairs with storage jk:bw Temp
 
 # 全局资源点
 execute align xyz positioned ~-.8 ~ ~-.8 run kill @e[tag=jkbw, tag=jkbw_res_global, dx=1.6, dz=1.6, dy=5]

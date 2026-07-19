@@ -1,13 +1,5 @@
 # 超过限定范围清除
-execute store result score @s jkbw.Entity.X run data get entity @s Pos[0]
-execute store result score @s jkbw.Entity.Y run data get entity @s Pos[1]
-execute store result score @s jkbw.Entity.Z run data get entity @s Pos[2]
-
-execute if score @s jkbw.Entity.X >= #WXmax jkbw.int run tag @s add jkbw_check_pos_fail
-execute if score @s jkbw.Entity.X <= #WXmin jkbw.int run tag @s add jkbw_check_pos_fail
-execute if score @s jkbw.Entity.Y >= #WY jkbw.int run tag @s add jkbw_check_pos_fail
-execute if score @s jkbw.Entity.Y <= #WYmin jkbw.int run tag @s add jkbw_check_pos_fail
-execute if score @s jkbw.Entity.Z >= #WZmax jkbw.int run tag @s add jkbw_check_pos_fail
-execute if score @s jkbw.Entity.Z <= #WZmin jkbw.int run tag @s add jkbw_check_pos_fail
+$execute positioned $(xmin) $(ymin) $(zmin) unless entity @s[dx=10000, dz=10000, dy=10000] run tag @s add jkbw_check_pos_fail
+$execute positioned $(xmax) $(y) $(zmax) unless entity @s[dx=-10000, dz=-10000, dy=-10000] run tag @s add jkbw_check_pos_fail
 
 kill @s[tag=jkbw_check_pos_fail]

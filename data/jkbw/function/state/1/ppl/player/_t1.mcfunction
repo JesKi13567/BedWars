@@ -1,5 +1,5 @@
 # 死亡接口
-execute as @s[scores={jkbw.Player.DeathImp=1..}] run function jkbw:state/1/hurt/death/on
+execute as @s[scores={jkbw.Player.DeathImp=1..}] run function jkbw:state/1/hurt/sub/death/on
 
 # 玩家、资源与商店
 execute unless score #exp_mode jkbw.int matches 4 run function jkbw:state/1/shop/global
@@ -27,7 +27,7 @@ execute if score #bed_type jkbw.int matches 2 if score #teams jkbw.int matches 8
 # 道具冷却
 scoreboard players remove @s[scores={jkbw.Player.Use.CD.Fireball=1..}] jkbw.Player.Use.CD.Fireball 1
 scoreboard players remove @s[scores={jkbw.Player.Use.CD.Creature=1..}] jkbw.Player.Use.CD.Creature 1
-execute if score #exp_mode jkbw.int matches 7 run scoreboard players remove @s[scores={jkbw.Player.Use.CD.Gun=1..}] jkbw.Player.Use.CD.Gun 1
+scoreboard players remove @s[scores={jkbw.Player.Use.CD.Gun=1..}] jkbw.Player.Use.CD.Gun 1
 
 # 背包有tnt
 execute if score #res_mode jkbw.int matches 0..1 if items entity @s[tag=!jkbw_effect_invisible] container.* *[custom_data={jkbw: ["tnt"]}] run particle dust{color: [0.851, 0.075, 0.075], scale: 0.6} ~ ~2.8 ~ 0 0 0 0 1 normal

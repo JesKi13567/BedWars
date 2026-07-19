@@ -12,7 +12,7 @@ tp @s[scores={jkbw.int=..7}] ~ ~1 ~
 scoreboard players remove @s jkbw.int 1
 
 playsound entity.chicken.egg player @a
-execute as @e[type=marker, tag=jkbw_tower_block] run function jkbw:state/1/special/check_pos
+execute as @e[type=marker, tag=jkbw_tower_block] run function jkbw:state/1/special/check_pos with storage jk:bw Map.cur
 
 # 梯子
 execute as @s[tag=jkbw_north] at @e[type=marker, tag=jkbw_tower_ladder, distance=..8] if block ~ ~ ~ air run setblock ~ ~ ~ ladder[facing=south]

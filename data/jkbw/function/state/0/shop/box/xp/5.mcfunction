@@ -13,6 +13,8 @@ setblock 10110218 5 10110222 white_shulker_box[facing=north]{Items: [\
 {Slot: 14b, id: "diamond_chestplate", count: 1, components: {custom_data: {jkbw: ["shop", "team", "protect"]}, attribute_modifiers: []}}, \
 {Slot: 6b, id: "piston", count: 1, components: {custom_data: {jkbw: ["shop", "team", "knockback"]}}}, \
 {Slot: 15b, id: "piston", count: 1, components: {custom_data: {jkbw: ["shop", "team", "knockback"]}}}, \
+{Slot: 7b, id: "diamond_hoe", count: 1, components: {custom_data: {jkbw: ["shop", "team", "deadshot"]}, attribute_modifiers: []}}, \
+{Slot: 16b, id: "diamond_hoe", count: 1, components: {custom_data: {jkbw: ["shop", "team", "deadshot"]}, attribute_modifiers: []}}, \
 {Slot: 18b, id: "red_wool", count: 1, components: {custom_data: {jkbw: ["shop", "compass", "red"]}}}, \
 {Slot: 19b, id: "blue_wool", count: 1, components: {custom_data: {jkbw: ["shop", "compass", "blue"]}}}, \
 {Slot: 20b, id: "green_wool", count: 1, components: {custom_data: {jkbw: ["shop", "compass", "green"]}}}, \
@@ -31,6 +33,7 @@ execute positioned 10110218 5 10110222 run function jkbw:state/0/shop/set/5/refr
 execute positioned 10110218 5 10110222 run function jkbw:state/0/shop/set/5/refresh_res {pre: 'XP', res: 'storage: "jk:bw", interpret: true, nbt: "txt.global.lvl"'}
 execute positioned 10110218 5 10110222 run function jkbw:state/0/shop/set/5/refresh {pre: 'XP', res: 'storage: "jk:bw", interpret: true, nbt: "txt.global.lvl"', A1: 5, A2: 14, item: 'protect', desc: 'enchantment.minecraft.protection'}
 execute positioned 10110218 5 10110222 run function jkbw:state/0/shop/set/5/refresh {pre: 'XP', res: 'storage: "jk:bw", interpret: true, nbt: "txt.global.lvl"', A1: 6, A2: 15, item: 'knockback', desc: 'enchantment.minecraft.knockback'}
+execute positioned 10110218 5 10110222 run function jkbw:state/0/shop/set/5/refresh_deadshot {pre: 'XP', res: 'storage: "jk:bw", interpret: true, nbt: "txt.global.lvl"'}
 
 item modify block 10110218 5 10110222 container.18 {function: "set_name", entity: "this", name: [{storage: "jk:bw", interpret: true, nbt: "txt.color.red", italic: false, color: "red", bold: true}, {storage: "jk:bw", interpret: true, nbt: "txt.global.team"}]}
 item modify block 10110218 5 10110222 container.19 {function: "set_name", entity: "this", name: [{storage: "jk:bw", interpret: true, nbt: "txt.color.blue", italic: false, color: "blue", bold: true}, {storage: "jk:bw", interpret: true, nbt: "txt.global.team"}]}
