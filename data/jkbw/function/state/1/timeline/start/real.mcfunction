@@ -76,6 +76,7 @@ kill @e[type=item, tag=jkbw_res]
 kill @e[type=marker, tag=jkbw_map_point]
 kill @e[type=marker, tag=jkbw_back_scroll_marker]
 kill @e[type=marker, tag=jkbw_chest_player]
+kill @e[type=marker, tag=jkbw_alarm_marker]
 kill @e[type=armor_stand, tag=jkbw_silverfish]
 
 # 玩家

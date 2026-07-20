@@ -190,6 +190,7 @@ scoreboard players set #urfXPiron_boots jkbw.int 300
 scoreboard players set #urfXPstick jkbw.int 1
 scoreboard players set #urfXPfishing_rod jkbw.int 5
 scoreboard players set #urfXPbone jkbw.int 10
+scoreboard players set #urfXPshield jkbw.int 50
 scoreboard players set #urfXPstone_sword jkbw.int 30
 scoreboard players set #urfXPcopper_sword jkbw.int 70
 scoreboard players set #urfXPiron_sword jkbw.int 300
@@ -207,7 +208,11 @@ scoreboard players set #urfXPbow3 jkbw.int 1100
 scoreboard players set #urfXPbow4 jkbw.int 1300
 scoreboard players set #urfXPbow5 jkbw.int 1500
 scoreboard players set #urfXPbow6 jkbw.int 1600
-scoreboard players set #urfXPshield jkbw.int 50
+scoreboard players set #urfXPgun_magnum jkbw.int 500
+scoreboard players set #urfXPgun_rifle jkbw.int 700
+scoreboard players set #urfXPgun_submachinegun jkbw.int 500
+scoreboard players set #urfXPgun_shotgun jkbw.int 800
+scoreboard players set #urfXPgun_flamethower jkbw.int 1200
 
 scoreboard players set #urfXPcut_sandstone jkbw.int 8
 scoreboard players set #urfXPend_stone jkbw.int 28

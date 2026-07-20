@@ -75,18 +75,6 @@ scoreboard players set @s jkbw.Player.ArmorLevels 0
 scoreboard players set @s jkbw.Player.Levels.axe 0
 scoreboard players set @s jkbw.Player.Levels.pickaxe 0
 scoreboard players set @s jkbw.Player.Levels.shears 0
-scoreboard players set @s jkbw.Player.Use.CD.Platform 0
-scoreboard players set @s jkbw.Player.Use.CD.Fireball 0
-scoreboard players set @s jkbw.Player.Use.CD.Creature 0
-scoreboard players set @s jkbw.Player.Use.CD.BackScroll 0
-scoreboard players set @s jkbw.Player.Use.Last.BackScroll 0
-scoreboard players set @s jkbw.Player.Use.CD.AntiArrow 0
-scoreboard players set @s jkbw.Player.Use.Last.AntiArrow 0
-scoreboard players set @s jkbw.Player.Use.CD.Ice 0
-scoreboard players set @s jkbw.Player.Use.Last.Ice 0
-scoreboard players set @s jkbw.Player.Use.CD.TheMirror 0
-scoreboard players set @s jkbw.Player.Use.Last.TheMirror 0
-scoreboard players set @s jkbw.Player.Use.CD.Gun 0
 scoreboard players set @s jkbw.Player.Page 0
 execute unless score @s jkbw.Player.Head matches 1.. run scoreboard players set @s jkbw.Player.Head 0
 scoreboard players set @s jkbw.Player.Compass 0

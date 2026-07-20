@@ -27,5 +27,8 @@ execute if score #res_mode jkbw.int matches 0..1 as @e[type=iron_golem] at @s ru
 # 快乐恶魂
 execute as @e[type=happy_ghast] at @s run function jkbw:state/1/special/entity/happy_ghast/global
 
+# 生物着火
+execute as @e[type=!#jkbw:damage_immune, scores={jkbw.Entity.Fire=1..}] at @s run function jkbw:state/1/special/entity/on_fire
+
 # 检测获胜（测试模式未开时）
 execute unless score #test_mode jkbw.int matches 1 run function jkbw:state/1/timeline/end/check

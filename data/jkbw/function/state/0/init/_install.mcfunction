@@ -216,6 +216,7 @@ scoreboard objectives add jkbw.Player.Wins dummy "玩家获胜次数"
 # 实体
 scoreboard objectives add jkbw.Bed.State dummy "床状态"
 
+scoreboard objectives add jkbw.Entity.Fire dummy "实体着火时间"
 scoreboard objectives add jkbw.Entity.Time dummy "实体存活时间"
 scoreboard objectives add jkbw.Entity.X dummy "实体所在X"
 scoreboard objectives add jkbw.Entity.Y dummy "实体所在Y"

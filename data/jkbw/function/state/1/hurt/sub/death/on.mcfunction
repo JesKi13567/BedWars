@@ -13,12 +13,6 @@ scoreboard players remove @s[scores={jkbw.Player.Levels.pickaxe=2..}] jkbw.Playe
 scoreboard players remove @s[scores={jkbw.Player.Levels.shears=2..}] jkbw.Player.Levels.shears 1
 execute if score #res_mode jkbw.int matches 0..1 run scoreboard players set @s jkbw.Player.Compass 0
 
-# 道具
-scoreboard players set @s jkbw.Player.Use.Last.BackScroll 0
-scoreboard players set @s jkbw.Player.Use.Last.AntiArrow 0
-scoreboard players set @s jkbw.Player.Use.Last.Ice 0
-scoreboard players set @s jkbw.Player.Use.Last.TheMirror 0
-
 # 标记无床死亡
 execute as @s[team=jkbw.red] run function jkbw:state/1/hurt/sub/death/sub/1 {team: 'red'}
 execute as @s[team=jkbw.blue] run function jkbw:state/1/hurt/sub/death/sub/1 {team: 'blue'}

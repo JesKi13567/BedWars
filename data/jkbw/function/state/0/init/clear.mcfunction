@@ -106,6 +106,7 @@ scoreboard objectives remove jkbw.Player.Use.Tower
 scoreboard objectives remove jkbw.Player.Use.Wall
 scoreboard objectives remove jkbw.Player.Wins
 scoreboard objectives remove jkbw.Bed.State
+scoreboard objectives remove jkbw.Entity.Fire
 scoreboard objectives remove jkbw.Entity.Time
 scoreboard objectives remove jkbw.Entity.X
 scoreboard objectives remove jkbw.Entity.Y

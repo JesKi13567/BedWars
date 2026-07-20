@@ -20,3 +20,23 @@ execute if score #exp_mode jkbw.int matches 3 run attribute @s scale base set 0.
 
 execute if score #exp_mode jkbw.int matches 5 run attribute @s block_interaction_range base set 32
 execute if score #exp_mode jkbw.int matches 5 run attribute @s entity_interaction_range base set 32
+
+scoreboard players set @s jkbw.Player.Use.CD.AntiArrow 0
+scoreboard players set @s jkbw.Player.Use.CD.BackScroll 0
+scoreboard players set @s jkbw.Player.Use.CD.Creature 0
+scoreboard players set @s jkbw.Player.Use.CD.Fireball 0
+scoreboard players set @s jkbw.Player.Use.CD.Gun 0
+scoreboard players set @s jkbw.Player.Use.CD.Ice 0
+scoreboard players set @s jkbw.Player.Use.CD.Platform 0
+scoreboard players set @s jkbw.Player.Use.CD.TheMirror 0
+scoreboard players set @s jkbw.Player.Use.Egg 0
+scoreboard players set @s jkbw.Player.Use.Enderchest 0
+scoreboard players set @s jkbw.Player.Use.Last.AntiArrow 0
+scoreboard players set @s jkbw.Player.Use.Last.BackScroll 0
+scoreboard players set @s jkbw.Player.Use.Last.Ice 0
+scoreboard players set @s jkbw.Player.Use.Last.TheMirror 0
+scoreboard players set @s jkbw.Player.Use.Snowball 0
+scoreboard players set @s jkbw.Player.Use.TNT 0
+scoreboard players set @s jkbw.Player.Use.Tower 0
+scoreboard players set @s jkbw.Player.Use.Wall 0
+scoreboard players reset @s jkbw.Entity.Fire
