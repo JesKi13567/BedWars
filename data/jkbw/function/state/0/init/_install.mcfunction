@@ -96,10 +96,7 @@ scoreboard players set #9 jkbw.int 9
 scoreboard players set #10 jkbw.int 10
 scoreboard players set #60 jkbw.int 60
 scoreboard players set #100 jkbw.int 100
-scoreboard players set #119 jkbw.int 119
 scoreboard players set #1000 jkbw.int 1000
-scoreboard players set #4214 jkbw.int 4214
-scoreboard players set #50436 jkbw.int 50436
 
 # 商店默认价格
 function jkbw:state/0/shop/price/init

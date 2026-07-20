@@ -63,8 +63,13 @@
                     "nbt": "txt.global.char.colon"
                   },
                   {
-                    "text": "2.0 HP",
+                    "text": "18.0 HP",
                     "color": "red"
+                  },
+                  {
+                    "storage": "jk:bw",
+                    "interpret": true,
+                    "nbt": "txt.shop.item.gun.param.damage_muzzle"
                   }
                 ],
                 [
@@ -178,7 +183,13 @@
                     "enchantments"
                   ]
                 },
-                "item_model": "iron_hoe"
+                "item_model": "iron_hoe",
+                "custom_data": {
+                  "jkbw": [
+                    "gun",
+                    "shotgun"
+                  ]
+                }
               }
             }
           ]

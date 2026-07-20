@@ -178,7 +178,13 @@
                     "enchantments"
                   ]
                 },
-                "item_model": "wooden_hoe"
+                "item_model": "wooden_hoe",
+                "custom_data": {
+                  "jkbw": [
+                    "gun",
+                    "pistol"
+                  ]
+                }
               }
             }
           ]

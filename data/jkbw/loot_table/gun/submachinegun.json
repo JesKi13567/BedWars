@@ -178,7 +178,13 @@
                     "enchantments"
                   ]
                 },
-                "item_model": "diamond_hoe"
+                "item_model": "diamond_hoe",
+                "custom_data": {
+                  "jkbw": [
+                    "gun",
+                    "submachinegun"
+                  ]
+                }
               }
             }
           ]

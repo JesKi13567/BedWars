@@ -17,4 +17,4 @@ execute as @e[type=interaction, tag=jkbw_button] at @s run function jkbw:state/0
 execute unless score #test_mode jkbw.int matches 1 if score #team_mode jkbw.int matches 1 run function jkbw:state/0/button/team/distribute/global
 
 # 清理实体
-kill @e[type=!#jkbw:safe]
+kill @e[type=!#jkbw:lobby_safe]

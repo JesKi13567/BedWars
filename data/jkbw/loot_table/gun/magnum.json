@@ -178,7 +178,13 @@
                     "enchantments"
                   ]
                 },
-                "item_model": "golden_hoe"
+                "item_model": "golden_hoe",
+                "custom_data": {
+                  "jkbw": [
+                    "gun",
+                    "magnum"
+                  ]
+                }
               }
             }
           ]

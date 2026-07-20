@@ -32,7 +32,7 @@ scoreboard players remove @s[scores={jkbw.Player.Use.CD.Gun=1..}] jkbw.Player.Us
 # 背包有tnt
 execute if score #res_mode jkbw.int matches 0..1 if items entity @s[tag=!jkbw_effect_invisible] container.* *[custom_data={jkbw: ["tnt"]}] run particle dust{color: [0.851, 0.075, 0.075], scale: 0.6} ~ ~2.8 ~ 0 0 0 0 1 normal
 # 手持诸葛连弩无箭
-execute if score #res_mode jkbw.int matches 0..1 if score #ACCESS.crossbow_max jkbw.int matches 1 if items entity @s weapon.mainhand crossbow[custom_data={jkbw: ["max_crossbow"]}] unless data entity @s SelectedItem.components.minecraft:charged_projectiles run function jkbw:state/1/special/item/crossbow_max
+execute if score #res_mode jkbw.int matches 0..1 if items entity @s weapon.mainhand crossbow[custom_data={jkbw: ["max_crossbow"]}] unless data entity @s SelectedItem.components."minecraft:charged_projectiles" run function jkbw:state/1/special/item/crossbow_max
 
 # 真·冰霜行者持续
 execute if score #res_mode jkbw.int matches 2 as @s[scores={jkbw.Player.Use.Last.Ice=1..}] run function jkbw:state/1/special/item/ice/walker/last
@@ -46,6 +46,9 @@ execute if score #res_mode jkbw.int matches 2 if block ~ ~1 ~ tripwire run funct
 
 # 自动搭路
 execute if score #exp_mode jkbw.int matches 1 run function jkbw:state/1/special/item/auto_bridge/global
+
+# 枪械装填
+execute if items entity @s weapon.mainhand echo_shard[custom_data~{jkbw: ["gun"]}, item_model=barrier] run function jkbw:state/1/special/item/gun/reload/1
 
 # 伤害免疫冷却
 scoreboard players remove @s[scores={jkbw.Player.PHDI=1..}] jkbw.Player.PHDI 1

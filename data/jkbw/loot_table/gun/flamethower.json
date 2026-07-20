@@ -178,7 +178,13 @@
                     "enchantments"
                   ]
                 },
-                "item_model": "flint_and_steel"
+                "item_model": "flint_and_steel",
+                "custom_data": {
+                  "jkbw": [
+                    "gun",
+                    "flamethower"
+                  ]
+                }
               }
             }
           ]

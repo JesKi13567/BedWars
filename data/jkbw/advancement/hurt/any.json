@@ -1,14 +1,7 @@
 {
   "criteria": {
     "jkbw": {
-      "trigger": "entity_hurt_player",
-      "conditions": {
-        "damage": {
-          "taken": {
-            "min": 0.001
-          }
-        }
-      }
+      "trigger": "entity_hurt_player"
     }
   },
   "rewards": {
