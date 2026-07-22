@@ -29,9 +29,9 @@ scoreboard players reset @s jkbw.Player.Page.Switched
 execute store result score @s jkbw.Player.Page.Items if items entity @s enderchest.* *[custom_data~{jkbw: ["shop"]}]
 
 # 商店模式
-execute if score #res_mode jkbw.int matches 0 run function jkbw:state/1/shop/gui/classic/global
-execute if score #res_mode jkbw.int matches 1 run function jkbw:state/1/shop/gui/xp/global
-execute if score #res_mode jkbw.int matches 2 run function jkbw:state/1/shop/gui/urf/global
+execute if score #res_mode jkbw.int matches 0 run function jkbw:state/1/shop/gui/res_mode/classic/global
+execute if score #res_mode jkbw.int matches 1 run function jkbw:state/1/shop/gui/res_mode/xp/global
+execute if score #res_mode jkbw.int matches 2 run function jkbw:state/1/shop/gui/res_mode/urf/global
 
 # 真·末影箱
 execute as @s[scores={jkbw.Player.Page=-1}] run function jkbw:state/1/shop/gui/chest/global

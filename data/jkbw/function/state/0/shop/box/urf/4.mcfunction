@@ -4,13 +4,13 @@ setblock 10110219 4 10110222 white_shulker_box[facing=north]{Items: [\
 {Slot: 2b, id: "string", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "trap"]}}}, \
 {Slot: 3b, id: "bricks", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "wall"]}}}, \
 {Slot: 4b, id: "ice", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "ice"]}}}, \
-{Slot: 5b, id: "paper", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "back"]}}}, \
+{Slot: 5b, id: "paper", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "back_scroll"]}}}, \
 {Slot: 6b, id: "compass", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "compass"]}}}, \
 {Slot: 7b, id: "ender_pearl", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "pearl"]}}}, \
 {Slot: 8b, id: "ender_pearl", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "pearl"]}}}, \
 {Slot: 9b, id: "fire_charge", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "fireball"]}}}, \
 {Slot: 10b, id: "egg", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "egg"]}}}, \
-{Slot: 11b, id: "golden_apple", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "apple"]}}}, \
+{Slot: 11b, id: "golden_apple", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "golden_apple"]}}}, \
 {Slot: 12b, id: "wind_charge", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "wind_charge"]}}}, \
 {Slot: 13b, id: "happy_ghast_spawn_egg", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "happy_ghast"]}}}, \
 {Slot: 14b, id: "prismarine_shard", count: 1, components: {custom_data: {jkbw: ["shop", "urf", "anti_arrow"]}}}, \
@@ -77,7 +77,7 @@ item modify block 10110219 4 10110222 container.10 {function: "set_lore", entity
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#urfXPegg", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
 item modify block 10110219 4 10110222 container.11 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#urfXPapple", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#urfXPgolden_apple", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
 item modify block 10110219 4 10110222 container.12 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#urfXPwind_charge", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}

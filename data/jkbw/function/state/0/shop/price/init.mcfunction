@@ -43,7 +43,7 @@ scoreboard players set #potion_jump_boost jkbw.int 1
 scoreboard players set #potion_invisibility jkbw.int 2
 scoreboard players set #potion_luck jkbw.int 4
 
-scoreboard players set #apple jkbw.int 3
+scoreboard players set #golden_apple jkbw.int 3
 scoreboard players set #fireball jkbw.int 40
 scoreboard players set #silverfish jkbw.int 30
 scoreboard players set #iron_golem jkbw.int 120
@@ -74,6 +74,7 @@ scoreboard players set #gun_rifle jkbw.int 8
 scoreboard players set #gun_submachinegun jkbw.int 50
 scoreboard players set #gun_shotgun jkbw.int 1
 scoreboard players set #gun_flamethower jkbw.int 12
+scoreboard players set #gun_sniperrifle jkbw.int 5
 
 scoreboard players set #trap1 jkbw.int 1
 scoreboard players set #trap2 jkbw.int 2
@@ -213,6 +214,7 @@ scoreboard players set #urfXPgun_rifle jkbw.int 700
 scoreboard players set #urfXPgun_submachinegun jkbw.int 500
 scoreboard players set #urfXPgun_shotgun jkbw.int 800
 scoreboard players set #urfXPgun_flamethower jkbw.int 1200
+scoreboard players set #urfXPgun_sniperrifle jkbw.int 2000
 
 scoreboard players set #urfXPcut_sandstone jkbw.int 8
 scoreboard players set #urfXPend_stone jkbw.int 28
@@ -248,7 +250,7 @@ scoreboard players set #urfXPanti_arrow jkbw.int 150
 scoreboard players set #urfXPfireball jkbw.int 200
 scoreboard players set #urfXPwind_charge jkbw.int 200
 scoreboard players set #urfXPegg jkbw.int 500
-scoreboard players set #urfXPapple jkbw.int 20
+scoreboard players set #urfXPgolden_apple jkbw.int 20
 scoreboard players set #urfXPhappy_ghast jkbw.int 1000
 
 function jkbw:state/0/shop/classic2exp

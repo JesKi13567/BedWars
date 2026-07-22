@@ -1,15 +1,15 @@
 # 方块
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "cut_sandstone"]}] run function jkbw:state/1/shop/real/urf/block/common {item: 'cut_sandstone', count: 16}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "end_stone"]}] run function jkbw:state/1/shop/real/urf/block/common {item: 'end_stone', count: 4}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "packed_ice"]}] run function jkbw:state/1/shop/real/urf/block/common {item: 'packed_ice', count: 4}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "glowstone"]}] run function jkbw:state/1/shop/real/urf/block/common {item: 'glowstone', count: 4}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "ladder"]}] run function jkbw:state/1/shop/real/urf/block/common {item: 'ladder', count: 4}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "cobweb"]}] run function jkbw:state/1/shop/real/urf/block/common {item: 'cobweb', count: 1}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "glass"]}] run function jkbw:state/1/shop/real/urf/block/glass
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "chest"]}] run function jkbw:state/1/shop/real/urf/block/common {item: 'chest', count: 2}
-execute unless score #exp_mode jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "ender_chest"]}] run function jkbw:state/1/shop/real/urf/block/ender_chest
+execute unless score #BAN.urf.cut_sandstone jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "cut_sandstone"]}] run function jkbw:state/1/shop/real/urf/block/common {item: 'cut_sandstone', count: 16}
+execute unless score #BAN.urf.end_stone jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "end_stone"]}] run function jkbw:state/1/shop/real/urf/block/common {item: 'end_stone', count: 4}
+execute unless score #BAN.urf.packed_ice jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "packed_ice"]}] run function jkbw:state/1/shop/real/urf/block/common {item: 'packed_ice', count: 4}
+execute unless score #BAN.urf.glowstone jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "glowstone"]}] run function jkbw:state/1/shop/real/urf/block/common {item: 'glowstone', count: 4}
+execute unless score #BAN.urf.ladder jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "ladder"]}] run function jkbw:state/1/shop/real/urf/block/common {item: 'ladder', count: 4}
+execute unless score #BAN.urf.cobweb jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "cobweb"]}] run function jkbw:state/1/shop/real/urf/block/common {item: 'cobweb', count: 1}
+execute unless score #BAN.urf.glass jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "glass"]}] run function jkbw:state/1/shop/real/urf/block/glass
+execute unless score #BAN.urf.chest jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "chest"]}] run function jkbw:state/1/shop/real/urf/block/common {item: 'chest', count: 2}
+execute unless score #BAN.urf.ender_chest jkbw.int matches 1 unless score #exp_mode jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "ender_chest"]}] run function jkbw:state/1/shop/real/urf/block/ender_chest
 
 # 工具
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "stone_pickaxe"]}] run function jkbw:state/1/shop/real/urf/pickaxe {item: 'stone'}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "iron_pickaxe"]}] run function jkbw:state/1/shop/real/urf/pickaxe {item: 'iron'}
-execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "golden_pickaxe"]}] run function jkbw:state/1/shop/real/urf/pickaxe {item: 'golden'}
+execute unless score #BAN.urf.stone_pickaxe jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "stone_pickaxe"]}] run function jkbw:state/1/shop/real/urf/pickaxe {item: 'stone'}
+execute unless score #BAN.urf.iron_pickaxe jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "iron_pickaxe"]}] run function jkbw:state/1/shop/real/urf/pickaxe {item: 'iron'}
+execute unless score #BAN.urf.golden_pickaxe jkbw.int matches 1 unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "urf", "golden_pickaxe"]}] run function jkbw:state/1/shop/real/urf/pickaxe {item: 'golden'}

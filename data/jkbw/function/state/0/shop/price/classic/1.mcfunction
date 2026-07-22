@@ -17,7 +17,33 @@ tellraw @s ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", {storage: "jk:bw", inter
 {type: "object", atlas: "items", sprite: "item/shears", click_event: {action: "suggest_command", command: "/scoreboard players set #shears1 jkbw.int 20"}, hover_event: {action: "show_text", value: [{translate: "item.minecraft.shears"}, " - ", {storage: "jk:bw", interpret: true, nbt: "txt.global.tier"}, " 1"]}}, " ", \
 {type: "object", atlas: "items", sprite: "item/shears", click_event: {action: "suggest_command", command: "/scoreboard players set #shears2 jkbw.int 10"}, hover_event: {action: "show_text", value: [{translate: "item.minecraft.shears"}, " - ", {storage: "jk:bw", interpret: true, nbt: "txt.global.tier"}, " 2"]}}, " ", \
 {type: "object", atlas: "items", sprite: "item/shears", click_event: {action: "suggest_command", command: "/scoreboard players set #shears3 jkbw.int 4"}, hover_event: {action: "show_text", value: [{translate: "item.minecraft.shears"}, " - ", {storage: "jk:bw", interpret: true, nbt: "txt.global.tier"}, " 3"]}}, " ", \
-{type: "object", atlas: "items", sprite: "item/shears", click_event: {action: "suggest_command", command: "/scoreboard players set #shears4 jkbw.int 8"}, hover_event: {action: "show_text", value: [{translate: "item.minecraft.shears"}, " - ", {storage: "jk:bw", interpret: true, nbt: "txt.global.tier"}, " 4"]}}, " ", \
+{type: "object", atlas: "items", sprite: "item/shears", click_event: {action: "suggest_command", command: "/scoreboard players set #shears4 jkbw.int 8"}, hover_event: {action: "show_text", value: [{translate: "item.minecraft.shears"}, " - ", {storage: "jk:bw", interpret: true, nbt: "txt.global.tier"}, " 4"]}}, "\n", \
 ]
+
+function jkbw:state/0/shop/set/ban/list {p: 'classic', i: 'wool', t: 'type: "object", atlas: "blocks", sprite: "block/white_wool"'}
+function jkbw:state/0/shop/set/ban/list {p: 'classic', i: 'terracotta', t: 'type: "object", atlas: "blocks", sprite: "block/terracotta"'}
+function jkbw:state/0/shop/set/ban/list {p: 'classic', i: 'glass', t: 'type: "object", atlas: "blocks", sprite: "block/glass"'}
+function jkbw:state/0/shop/set/ban/list {p: 'classic', i: 'end_stone', t: 'type: "object", atlas: "blocks", sprite: "block/end_stone"'}
+function jkbw:state/0/shop/set/ban/list {p: 'classic', i: 'ladder', t: 'type: "object", atlas: "blocks", sprite: "block/ladder"'}
+function jkbw:state/0/shop/set/ban/list {p: 'classic', i: 'oak_planks', t: 'type: "object", atlas: "blocks", sprite: "block/oak_planks"'}
+function jkbw:state/0/shop/set/ban/list {p: 'classic', i: 'obsidian', t: 'type: "object", atlas: "blocks", sprite: "block/obsidian"'}
+function jkbw:state/0/shop/set/ban/list {p: 'classic', i: 'axe', t: 'type: "object", atlas: "items", sprite: "item/netherite_axe"'}
+function jkbw:state/0/shop/set/ban/list {p: 'classic', i: 'pickaxe', t: 'type: "object", atlas: "items", sprite: "item/netherite_pickaxe"'}
+function jkbw:state/0/shop/set/ban/list {p: 'classic', i: 'shears', t: 'type: "object", atlas: "items", sprite: "item/shears"'}
+
+tellraw @s [\
+{storage: "jk:bw", interpret: true, nbt: "txt.ready.control_panel.container_chunk.ban"}, "\n", \
+{selector: "@n[type=marker, tag=jkbw_ban_items, tag=wool]", click_event: {action: "run_command", command: "/trigger jkbw.Admin.Trigger set 1101"}, hover_event: {action: "show_text", value: {storage: "jk:bw", interpret: true, nbt: "txt.global.item.wool"}}}, " ", \
+{selector: "@n[type=marker, tag=jkbw_ban_items, tag=terracotta]", click_event: {action: "run_command", command: "/trigger jkbw.Admin.Trigger set 1102"}, hover_event: {action: "show_text", value: {translate: "block.minecraft.terracotta"}}}, " ", \
+{selector: "@n[type=marker, tag=jkbw_ban_items, tag=glass]", click_event: {action: "run_command", command: "/trigger jkbw.Admin.Trigger set 1103"}, hover_event: {action: "show_text", value: {translate: "block.minecraft.glass"}}}, " ", \
+{selector: "@n[type=marker, tag=jkbw_ban_items, tag=end_stone]", click_event: {action: "run_command", command: "/trigger jkbw.Admin.Trigger set 1104"}, hover_event: {action: "show_text", value: {translate: "block.minecraft.end_stone"}}}, " ", \
+{selector: "@n[type=marker, tag=jkbw_ban_items, tag=ladder]", click_event: {action: "run_command", command: "/trigger jkbw.Admin.Trigger set 1105"}, hover_event: {action: "show_text", value: {translate: "block.minecraft.ladder"}}}, " ", \
+{selector: "@n[type=marker, tag=jkbw_ban_items, tag=oak_planks]", click_event: {action: "run_command", command: "/trigger jkbw.Admin.Trigger set 1106"}, hover_event: {action: "show_text", value: {translate: "block.minecraft.oak_planks"}}}, " ", \
+{selector: "@n[type=marker, tag=jkbw_ban_items, tag=obsidian]", click_event: {action: "run_command", command: "/trigger jkbw.Admin.Trigger set 1107"}, hover_event: {action: "show_text", value: {translate: "block.minecraft.obsidian"}}}, "\n", \
+{selector: "@n[type=marker, tag=jkbw_ban_items, tag=axe]", click_event: {action: "run_command", command: "/trigger jkbw.Admin.Trigger set 1108"}, hover_event: {action: "show_text", value: [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.tool.axe"}]}}, " ", \
+{selector: "@n[type=marker, tag=jkbw_ban_items, tag=pickaxe]", click_event: {action: "run_command", command: "/trigger jkbw.Admin.Trigger set 1109"}, hover_event: {action: "show_text", value: [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.tool.pickaxe"}]}}, " ", \
+{selector: "@n[type=marker, tag=jkbw_ban_items, tag=shears]", click_event: {action: "run_command", command: "/trigger jkbw.Admin.Trigger set 1110"}, hover_event: {action: "show_text", value: [{translate: "item.minecraft.shears"}]}}, " ", \
+]
+kill @e[type=marker, tag=jkbw_ban_items]
 
 function jkbw:state/0/shop/box/classic/1

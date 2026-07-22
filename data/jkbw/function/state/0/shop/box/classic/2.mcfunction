@@ -114,3 +114,8 @@ loot replace block 10110221 6 10110222 container.25 loot jkbw:gun/flamethower
 item modify block 10110221 6 10110222 container.25 {function: "set_lore", entity: "this", mode: "append", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#gun_flamethower", objective: "jkbw.int"}, color: "gold"}, " ", {translate: "item.minecraft.gold_ingot", italic: false, color: "gold"}]]}
 item modify block 10110221 6 10110222 container.25 {function: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_flamethower"]}}}
+
+loot replace block 10110221 6 10110222 container.26 loot jkbw:gun/sniperrifle
+item modify block 10110221 6 10110222 container.26 {function: "set_lore", entity: "this", mode: "append", lore: [\
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#gun_sniperrifle", objective: "jkbw.int"}, color: "green"}, " ", {translate: "item.minecraft.emerald", italic: false, color: "green"}]]}
+item modify block 10110221 6 10110222 container.26 {function: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_sniperrifle"]}}}

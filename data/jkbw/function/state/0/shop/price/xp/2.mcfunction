@@ -23,6 +23,7 @@ tellraw @s ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", {storage: "jk:bw", inter
 {type: "object", atlas: "items", sprite: "item/diamond_hoe", click_event: {action: "suggest_command", command: "/scoreboard players set #XPgun_submachinegun jkbw.int 50"}, hover_event: {action: "show_text", value: {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.gun.name.submachinegun"}}}, " ", \
 {type: "object", atlas: "items", sprite: "item/iron_hoe", click_event: {action: "suggest_command", command: "/scoreboard players set #XPgun_shotgun jkbw.int 80"}, hover_event: {action: "show_text", value: {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.gun.name.shotgun"}}}, " ", \
 {type: "object", atlas: "items", sprite: "item/flint_and_steel", click_event: {action: "suggest_command", command: "/scoreboard players set #XPgun_flamethower jkbw.int 120"}, hover_event: {action: "show_text", value: {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.gun.name.flamethower"}}}, " ", \
+{type: "object", atlas: "items", sprite: "item/copper_hoe", click_event: {action: "suggest_command", command: "/scoreboard players set #XPgun_sniperrifle jkbw.int 400"}, hover_event: {action: "show_text", value: {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.gun.name.sniperrifle"}}}, " ", \
 ]
 
 function jkbw:state/0/shop/box/xp/2

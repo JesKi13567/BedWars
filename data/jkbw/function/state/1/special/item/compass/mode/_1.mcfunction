@@ -1,5 +1,3 @@
-title @s actionbar [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.compass.track", color: "gold"}, {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.compass.enemy"}]
-
 execute as @s[team=jkbw.red] run function jkbw:state/1/special/item/compass/mode/_1_ {team: 'red'}
 execute as @s[team=jkbw.blue] run function jkbw:state/1/special/item/compass/mode/_1_ {team: 'blue'}
 execute if score #teams jkbw.int matches 3.. as @s[team=jkbw.green] run function jkbw:state/1/special/item/compass/mode/_1_ {team: 'green'}

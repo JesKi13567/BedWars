@@ -12,4 +12,5 @@ execute if items entity @s weapon.mainhand echo_shard[custom_data~{jkbw: ["magnu
 execute if items entity @s weapon.mainhand echo_shard[custom_data~{jkbw: ["pistol"]}] run item modify entity @s weapon.mainhand {function: "set_components", components: {damage: 30}}
 execute if items entity @s weapon.mainhand echo_shard[custom_data~{jkbw: ["rifle"]}] run item modify entity @s weapon.mainhand {function: "set_components", components: {damage: 60}}
 execute if items entity @s weapon.mainhand echo_shard[custom_data~{jkbw: ["shotgun"]}] run item modify entity @s weapon.mainhand {function: "set_components", components: {damage: 80}}
+execute if items entity @s weapon.mainhand echo_shard[custom_data~{jkbw: ["sniperrifle"]}] run item modify entity @s weapon.mainhand {function: "set_components", components: {damage: 160}}
 execute if items entity @s weapon.mainhand echo_shard[custom_data~{jkbw: ["submachinegun"]}] run item modify entity @s weapon.mainhand {function: "set_components", components: {damage: 40}}

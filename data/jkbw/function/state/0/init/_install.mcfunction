@@ -66,14 +66,17 @@ scoreboard players set #ENABLE.glider jkbw.int 0
 # 隐形物品种类 0 无 1 板砖 2 望远镜
 scoreboard players set #ENABLE.invisible_item jkbw.int 1
 # 团队升级最大次数
-scoreboard players set #TEAM_UPDATE.knockback jkbw.int 0
-scoreboard players set #TEAM_UPDATE.sharpness jkbw.int 1
 scoreboard players set #TEAM_UPDATE.dragon jkbw.int 1
-scoreboard players set #TEAM_UPDATE.haste jkbw.int 2
 scoreboard players set #TEAM_UPDATE.healing jkbw.int 1
-scoreboard players set #TEAM_UPDATE.protect jkbw.int 4
+scoreboard players set #TEAM_UPDATE.sharpness jkbw.int 1
+scoreboard players set #TEAM_UPDATE.haste jkbw.int 2
 scoreboard players set #TEAM_UPDATE.res jkbw.int 4
+scoreboard players set #TEAM_UPDATE.protect jkbw.int 4
+scoreboard players set #TEAM_UPDATE.knockback jkbw.int 0
 scoreboard players set #TEAM_UPDATE.deadshot jkbw.int 4
+# 默认禁用商品
+scoreboard players set #BAN.classic.gun_sniperrifle jkbw.int 1
+scoreboard players set #BAN.urf.gun_sniperrifle jkbw.int 1
 # 商品个数
 scoreboard players set #shop_items_0 jkbw.int 27
 scoreboard players set #shop_items_5 jkbw.int 27

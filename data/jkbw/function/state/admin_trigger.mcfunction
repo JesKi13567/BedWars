@@ -46,7 +46,9 @@ execute as @s[scores={jkbw.Admin.Trigger=254}] run function jkbw:state/0/shop/se
 execute as @s[scores={jkbw.Admin.Trigger=255}] run function jkbw:state/0/shop/set/4/set {x: 'mace'}
 execute as @s[scores={jkbw.Admin.Trigger=256}] run function jkbw:state/0/shop/set/4/set {x: 'the_mirror'}
 
-execute as @s[scores={jkbw.Admin.Trigger=310..}] run function jkbw:state/0/shop/set/5/tier
+execute as @s[scores={jkbw.Admin.Trigger=300..400}] run function jkbw:state/0/shop/set/5/tier
+
+execute as @s[scores={jkbw.Admin.Trigger=1000..}] run function jkbw:state/0/shop/set/ban/0
 
 scoreboard players reset @s[scores={jkbw.Admin.Trigger=1..}] jkbw.Admin.Trigger
 

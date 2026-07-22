@@ -109,3 +109,8 @@ loot replace block 10110220 4 10110222 container.25 loot jkbw:gun/flamethower
 item modify block 10110220 4 10110222 container.25 {function: "set_lore", entity: "this", mode: "append", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#urfXPgun_flamethower", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 item modify block 10110220 4 10110222 container.25 {function: "set_components", components: {custom_data: {jkbw: ["shop", "urf", "gun_flamethower"]}}}
+
+loot replace block 10110220 4 10110222 container.26 loot jkbw:gun/sniperrifle
+item modify block 10110220 4 10110222 container.26 {function: "set_lore", entity: "this", mode: "append", lore: [\
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#urfXPgun_sniperrifle", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
+item modify block 10110220 4 10110222 container.26 {function: "set_components", components: {custom_data: {jkbw: ["shop", "urf", "gun_sniperrifle"]}}}
