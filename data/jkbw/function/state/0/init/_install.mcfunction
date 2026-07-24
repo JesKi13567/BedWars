@@ -44,20 +44,20 @@ scoreboard players set #TIME.UPDATE jkbw.int 300
 scoreboard players set #TIME.BED jkbw.int 600
 scoreboard players set #TIME.FIGHT jkbw.int 600
 scoreboard players set #TIME.END jkbw.int 600
-# 全局资源点1级生成时间与升级减少时间，区分是否无限火力
-scoreboard players set #SPAWN.diamond jkbw.int 30
-scoreboard players set #MINUS.diamond jkbw.int 5
-scoreboard players set #SPAWN.diamond.URF jkbw.int 15
-scoreboard players set #MINUS.diamond.URF jkbw.int 1
-scoreboard players set #SPAWN.emerald jkbw.int 55
-scoreboard players set #MINUS.emerald jkbw.int 5
-scoreboard players set #SPAWN.emerald.URF jkbw.int 5
-scoreboard players set #MINUS.emerald.URF jkbw.int 1
+# 全局资源点的1极生成时间与升级减少时间
+scoreboard players set #RES.SPAWN.classic.diamond jkbw.int 30
+scoreboard players set #RES.MINUS.classic.diamond jkbw.int 5
+scoreboard players set #RES.SPAWN.classic.emerald jkbw.int 55
+scoreboard players set #RES.MINUS.classic.emerald jkbw.int 5
+scoreboard players set #RES.SPAWN.urf.diamond jkbw.int 15
+scoreboard players set #RES.MINUS.urf.diamond jkbw.int 1
+scoreboard players set #RES.SPAWN.urf.emerald jkbw.int 5
+scoreboard players set #RES.MINUS.urf.emerald jkbw.int 1
 # 被迫零元购的时间间隔
 scoreboard players set #FFL_INTERVAL jkbw.int 5
 # 盾模式 0 禁用 1 启用 2 附剑上
 scoreboard players set #ENABLE.shield jkbw.int 1
-# 矛模式 0 禁用 1 启用
+# 矛模式 0 禁用 1 启用 2 替换
 scoreboard players set #ENABLE.spear jkbw.int 0
 # 药水种类 0 默认 1 喷溅型
 scoreboard players set #ENABLE.potion jkbw.int 0
@@ -77,13 +77,6 @@ scoreboard players set #TEAM_UPDATE.deadshot jkbw.int 4
 # 默认禁用商品
 scoreboard players set #BAN.classic.gun_sniperrifle jkbw.int 1
 scoreboard players set #BAN.urf.gun_sniperrifle jkbw.int 1
-# 商品个数
-scoreboard players set #shop_items_0 jkbw.int 27
-scoreboard players set #shop_items_5 jkbw.int 27
-scoreboard players set #shop_items_6 jkbw.int 27
-scoreboard players set #shop_items_7 jkbw.int 27
-scoreboard players set #shop_items_8 jkbw.int 27
-scoreboard players set #shop_items_9 jkbw.int 27
 # 计算用数字
 scoreboard players set #-1 jkbw.int -1
 scoreboard players set #0 jkbw.int 0

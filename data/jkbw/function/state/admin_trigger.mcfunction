@@ -33,18 +33,10 @@ execute as @s[scores={jkbw.Admin.Trigger=149}] run function jkbw:state/0/button/
 execute as @s[scores={jkbw.Admin.Trigger=142..150}] run function jkbw:state/0/panel/pages/player_settings
 
 execute as @s[scores={jkbw.Admin.Trigger=210}] run function jkbw:state/0/panel/contents/switch/others {type: 'shield', num: 3}
-execute as @s[scores={jkbw.Admin.Trigger=211}] run function jkbw:state/0/panel/contents/switch/others {type: 'spear', num: 2}
+execute as @s[scores={jkbw.Admin.Trigger=211}] run function jkbw:state/0/panel/contents/switch/others {type: 'spear', num: 3}
 execute as @s[scores={jkbw.Admin.Trigger=212}] run function jkbw:state/0/panel/contents/switch/others {type: 'potion', num: 2}
 execute as @s[scores={jkbw.Admin.Trigger=213}] run function jkbw:state/0/panel/contents/switch/others {type: 'glider', num: 2}
 execute as @s[scores={jkbw.Admin.Trigger=214}] run function jkbw:state/0/panel/contents/switch/others {type: 'invisible_item', num: 3}
-
-execute as @s[scores={jkbw.Admin.Trigger=250}] run function jkbw:state/0/shop/set/4/set {x: 'permanent_save'}
-execute as @s[scores={jkbw.Admin.Trigger=251}] run function jkbw:state/0/shop/set/4/set {x: 'trident'}
-execute as @s[scores={jkbw.Admin.Trigger=252}] run function jkbw:state/0/shop/set/4/set {x: 'tipped_arrow'}
-execute as @s[scores={jkbw.Admin.Trigger=253}] run function jkbw:state/0/shop/set/4/set {x: 'crossbow_max'}
-execute as @s[scores={jkbw.Admin.Trigger=254}] run function jkbw:state/0/shop/set/4/set {x: 'ice_bridge'}
-execute as @s[scores={jkbw.Admin.Trigger=255}] run function jkbw:state/0/shop/set/4/set {x: 'mace'}
-execute as @s[scores={jkbw.Admin.Trigger=256}] run function jkbw:state/0/shop/set/4/set {x: 'the_mirror'}
 
 execute as @s[scores={jkbw.Admin.Trigger=300..400}] run function jkbw:state/0/shop/set/5/tier
 

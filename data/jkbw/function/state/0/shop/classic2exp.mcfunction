@@ -59,7 +59,7 @@ scoreboard players operation #XPtnt1 jkbw.int = #tnt1 jkbw.int
 scoreboard players operation #XPpearl jkbw.int = #pearl jkbw.int
 scoreboard players operation #XPpearl_blitz jkbw.int = #pearl_blitz jkbw.int
 
-scoreboard players operation #XPfruit jkbw.int = #fruit jkbw.int
+scoreboard players operation #XPchorus_fruit jkbw.int = #chorus_fruit jkbw.int
 scoreboard players operation #XPtrident jkbw.int = #trident jkbw.int
 scoreboard players operation #XPtipped_arrow jkbw.int = #tipped_arrow jkbw.int
 scoreboard players operation #XPcrossbow_max jkbw.int = #crossbow_max jkbw.int
@@ -222,7 +222,7 @@ scoreboard players operation #XPtnt1 jkbw.int *= #XPgold_ingot jkbw.int
 scoreboard players operation #XPpearl jkbw.int *= #XPemerald jkbw.int
 scoreboard players operation #XPpearl_blitz jkbw.int *= #XPemerald jkbw.int
 
-scoreboard players operation #XPfruit jkbw.int *= #XPgold_ingot jkbw.int
+scoreboard players operation #XPchorus_fruit jkbw.int *= #XPgold_ingot jkbw.int
 scoreboard players operation #XPtrident jkbw.int *= #XPgold_ingot jkbw.int
 scoreboard players operation #XPtipped_arrow jkbw.int *= #XPgold_ingot jkbw.int
 scoreboard players operation #XPcrossbow_max jkbw.int *= #XPemerald jkbw.int

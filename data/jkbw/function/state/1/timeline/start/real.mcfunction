@@ -22,22 +22,25 @@ scoreboard players reset #shop_random_countdown jkbw.int
 scoreboard players reset #solo_mode jkbw.int
 
 # 资源产生时间
-execute unless score #SPAWN.diamond jkbw.int matches 10..100 run scoreboard players set #SPAWN.diamond jkbw.int 30
-scoreboard players operation #SPAWN.diamond jkbw.Temp = #SPAWN.diamond jkbw.int
-scoreboard players operation #SPAWN.diamond jkbw.Temp /= #2 jkbw.int
-execute unless score #MINUS.diamond jkbw.int < #SPAWN.diamond jkbw.Temp run scoreboard players set #MINUS.diamond jkbw.int 5
-execute unless score #SPAWN.diamond.URF jkbw.int matches 10..100 run scoreboard players set #SPAWN.diamond.URF jkbw.int 15
-scoreboard players operation #SPAWN.diamond.URF jkbw.Temp = #SPAWN.diamond.URF jkbw.int
-scoreboard players operation #SPAWN.diamond.URF jkbw.Temp /= #2 jkbw.int
-execute unless score #MINUS.diamond.URF jkbw.int < #SPAWN.diamond.URF jkbw.Temp run scoreboard players set #MINUS.diamond.URF jkbw.int 1
-execute unless score #SPAWN.emerald jkbw.int matches 10..100 run scoreboard players set #SPAWN.emerald jkbw.int 55
-scoreboard players operation #SPAWN.emerald jkbw.Temp = #SPAWN.emerald jkbw.int
-scoreboard players operation #SPAWN.emerald jkbw.Temp /= #2 jkbw.int
-execute unless score #MINUS.emerald jkbw.int < #SPAWN.emerald jkbw.Temp run scoreboard players set #MINUS.emerald jkbw.int 5
-execute unless score #SPAWN.emerald.URF jkbw.int matches 10..100 run scoreboard players set #SPAWN.emerald.URF jkbw.int 5
-scoreboard players operation #SPAWN.emerald.URF jkbw.Temp = #SPAWN.emerald.URF jkbw.int
-scoreboard players operation #SPAWN.emerald.URF jkbw.Temp /= #2 jkbw.int
-execute unless score #MINUS.emerald.URF jkbw.int < #SPAWN.emerald.URF jkbw.Temp run scoreboard players set #MINUS.emerald.URF jkbw.int 1
+execute unless score #RES.SPAWN.classic.diamond jkbw.int matches 10..100 run scoreboard players set #RES.SPAWN.classic.diamond jkbw.int 30
+scoreboard players operation #RES.SPAWN.classic.diamond jkbw.Temp = #RES.SPAWN.classic.diamond jkbw.int
+scoreboard players operation #RES.SPAWN.classic.diamond jkbw.Temp /= #2 jkbw.int
+execute unless score #RES.MINUS.classic.diamond jkbw.int < #RES.SPAWN.classic.diamond jkbw.Temp run scoreboard players set #RES.MINUS.classic.diamond jkbw.int 5
+
+execute unless score #RES.SPAWN.classic.emerald jkbw.int matches 10..100 run scoreboard players set #RES.SPAWN.classic.emerald jkbw.int 55
+scoreboard players operation #RES.SPAWN.classic.emerald jkbw.Temp = #RES.SPAWN.classic.emerald jkbw.int
+scoreboard players operation #RES.SPAWN.classic.emerald jkbw.Temp /= #2 jkbw.int
+execute unless score #RES.MINUS.classic.emerald jkbw.int < #RES.SPAWN.classic.emerald jkbw.Temp run scoreboard players set #RES.MINUS.classic.emerald jkbw.int 5
+
+execute unless score #RES.SPAWN.urf.diamond jkbw.int matches 10..100 run scoreboard players set #RES.SPAWN.urf.diamond jkbw.int 15
+scoreboard players operation #RES.SPAWN.urf.diamond jkbw.Temp = #RES.SPAWN.urf.diamond jkbw.int
+scoreboard players operation #RES.SPAWN.urf.diamond jkbw.Temp /= #2 jkbw.int
+execute unless score #RES.MINUS.urf.diamond jkbw.int < #RES.SPAWN.urf.diamond jkbw.Temp run scoreboard players set #RES.MINUS.urf.diamond jkbw.int 1
+
+execute unless score #RES.SPAWN.urf.emerald jkbw.int matches 10..100 run scoreboard players set #RES.SPAWN.urf.emerald jkbw.int 5
+scoreboard players operation #RES.SPAWN.urf.emerald jkbw.Temp = #RES.SPAWN.urf.emerald jkbw.int
+scoreboard players operation #RES.SPAWN.urf.emerald jkbw.Temp /= #2 jkbw.int
+execute unless score #RES.MINUS.urf.emerald jkbw.int < #RES.SPAWN.urf.emerald jkbw.Temp run scoreboard players set #RES.MINUS.urf.emerald jkbw.int 1
 
 # 全局时间计时
 execute unless score #TIME.UPDATE jkbw.int matches 10..1000 run scoreboard players set #TIME.UPDATE jkbw.int 300
@@ -132,12 +135,31 @@ execute if score #teams jkbw.int matches 8 run scoreboard players set #temp jkbw
 execute as @a[scores={jkbw.Player.State=2}, sort=random, team=jkbw.gray] store result score @s jkbw.Player.ID run scoreboard players add #temp jkbw.int 1
 
 # 商品个数
-scoreboard players set #shop_items_1 jkbw.int 96
-execute if score #exp_mode jkbw.int matches 1 run scoreboard players set #shop_items_1 jkbw.int 93
-execute if score #res_mode jkbw.int matches 2 run scoreboard players set #shop_items_1 jkbw.int 58
-scoreboard players set #shop_items_2 jkbw.int 34
-execute if score #exp_mode jkbw.int matches 7 run scoreboard players set #shop_items_2 jkbw.int 27
-scoreboard players set #shop_items_3 jkbw.int 30
-execute if score #res_mode jkbw.int matches 2 run scoreboard players set #shop_items_3 jkbw.int 27
-scoreboard players set #shop_items_4 jkbw.int 27
-execute if score #ACCESS.tipped_arrow jkbw.int matches 1 run scoreboard players set #shop_items_4 jkbw.int 29
+scoreboard players set #SHOP_ITEMS.classic.blocks jkbw.int 96
+execute unless score #exp_mode jkbw.int matches 1 if score #BAN.classic.obsidian jkbw.int matches 1 run scoreboard players remove #SHOP_ITEMS.classic.blocks jkbw.int 3
+execute if score #exp_mode jkbw.int matches 1 run scoreboard players remove #SHOP_ITEMS.classic.blocks jkbw.int 3
+execute if score #BAN.classic.wool jkbw.int matches 1 run scoreboard players remove #SHOP_ITEMS.classic.blocks jkbw.int 15
+execute if score #BAN.classic.terracotta jkbw.int matches 1 run scoreboard players remove #SHOP_ITEMS.classic.blocks jkbw.int 15
+execute if score #BAN.classic.glass jkbw.int matches 1 run scoreboard players remove #SHOP_ITEMS.classic.blocks jkbw.int 3
+execute if score #BAN.classic.end_stone jkbw.int matches 1 run scoreboard players remove #SHOP_ITEMS.classic.blocks jkbw.int 11
+execute if score #BAN.classic.ladder jkbw.int matches 1 run scoreboard players remove #SHOP_ITEMS.classic.blocks jkbw.int 7
+execute if score #BAN.classic.oak_planks jkbw.int matches 1 run scoreboard players remove #SHOP_ITEMS.classic.blocks jkbw.int 15
+
+scoreboard players set #SHOP_ITEMS.classic.weapon jkbw.int 34
+execute unless score #exp_mode jkbw.int matches 7 if score #BAN.classic.arrow jkbw.int matches 1 run scoreboard players remove #SHOP_ITEMS.classic.weapon jkbw.int 7
+execute if score #exp_mode jkbw.int matches 7 run scoreboard players remove #SHOP_ITEMS.classic.weapon jkbw.int 7
+
+scoreboard players set #SHOP_ITEMS.classic.specials jkbw.int 30
+execute if score #BAN.classic.sponge jkbw.int matches 1 run scoreboard players remove #SHOP_ITEMS.classic.specials jkbw.int 3
+
+scoreboard players set #SHOP_ITEMS.classic.rotating_items jkbw.int 27
+execute if score #ACCESS.tipped_arrow jkbw.int matches 1 run scoreboard players add #SHOP_ITEMS.classic.rotating_items jkbw.int 2
+
+scoreboard players set #SHOP_ITEMS.urf.blocks jkbw.int 58
+execute if score #BAN.urf.cut_sandstone jkbw.int matches 1 run scoreboard players remove #SHOP_ITEMS.urf.blocks jkbw.int 15
+execute if score #BAN.urf.end_stone jkbw.int matches 1 run scoreboard players remove #SHOP_ITEMS.urf.blocks jkbw.int 3
+execute if score #BAN.urf.packed_ice jkbw.int matches 1 run scoreboard players remove #SHOP_ITEMS.urf.blocks jkbw.int 3
+execute if score #BAN.urf.glowstone jkbw.int matches 1 run scoreboard players remove #SHOP_ITEMS.urf.blocks jkbw.int 3
+execute if score #BAN.urf.ladder jkbw.int matches 1 run scoreboard players remove #SHOP_ITEMS.urf.blocks jkbw.int 3
+execute if score #BAN.urf.glass jkbw.int matches 1 run scoreboard players remove #SHOP_ITEMS.urf.blocks jkbw.int 3
+execute if score #BAN.urf.chest jkbw.int matches 1 run scoreboard players remove #SHOP_ITEMS.urf.blocks jkbw.int 1

@@ -1,21 +1,21 @@
 function jkbw:state/1/shop/gui/blank
 # 团队升级
-execute unless score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.dragon jkbw.int matches 1.. run item replace entity @s enderchest.0 from block 10110218 5 10110222 container.0
+execute unless score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.dragon jkbw.int matches 1.. if score #time_state jkbw.int matches ..5 run item replace entity @s enderchest.0 from block 10110218 5 10110222 container.0
 execute unless score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.healing jkbw.int matches 1.. run item replace entity @s enderchest.1 from block 10110218 5 10110222 container.1
 execute unless score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.sharpness jkbw.int matches 1.. run item replace entity @s enderchest.2 from block 10110218 5 10110222 container.2
 execute unless score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.haste jkbw.int matches 1.. run item replace entity @s enderchest.3 from block 10110218 5 10110222 container.3
 execute unless score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.res jkbw.int matches 1.. run item replace entity @s enderchest.4 from block 10110218 5 10110222 container.4
 execute unless score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.protect jkbw.int matches 1.. run item replace entity @s enderchest.5 from block 10110218 5 10110222 container.5
 execute unless score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.knockback jkbw.int matches 1.. run item replace entity @s enderchest.6 from block 10110218 5 10110222 container.6
-execute if score #exp_mode jkbw.int matches 7 unless score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.deadshot jkbw.int matches 1.. run item replace entity @s enderchest.7 from block 10110218 5 10110222 container.7
-execute if score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.dragon jkbw.int matches 1.. run item replace entity @s enderchest.0 from block 10110218 5 10110222 container.9
+execute unless score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.deadshot jkbw.int matches 1.. if score #exp_mode jkbw.int matches 7 run item replace entity @s enderchest.7 from block 10110218 5 10110222 container.7
+execute if score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.dragon jkbw.int matches 1.. if score #time_state jkbw.int matches ..5 run item replace entity @s enderchest.0 from block 10110218 5 10110222 container.9
 execute if score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.healing jkbw.int matches 1.. run item replace entity @s enderchest.1 from block 10110218 5 10110222 container.10
 execute if score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.sharpness jkbw.int matches 1.. run item replace entity @s enderchest.2 from block 10110218 5 10110222 container.11
 execute if score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.haste jkbw.int matches 1.. run item replace entity @s enderchest.3 from block 10110218 5 10110222 container.12
 execute if score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.res jkbw.int matches 1.. run item replace entity @s enderchest.4 from block 10110218 5 10110222 container.13
 execute if score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.protect jkbw.int matches 1.. run item replace entity @s enderchest.5 from block 10110218 5 10110222 container.14
 execute if score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.knockback jkbw.int matches 1.. run item replace entity @s enderchest.6 from block 10110218 5 10110222 container.15
-execute if score #exp_mode jkbw.int matches 7 if score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.deadshot jkbw.int matches 1.. run item replace entity @s enderchest.7 from block 10110218 5 10110222 container.16
+execute if score #solo_mode jkbw.int matches 1 if score #TEAM_UPDATE.deadshot jkbw.int matches 1.. if score #exp_mode jkbw.int matches 7 run item replace entity @s enderchest.7 from block 10110218 5 10110222 container.16
 # 团队陷阱
 item replace entity @s enderchest.9 from block 10110210 5 10110222 container.0
 item replace entity @s enderchest.10 from block 10110210 5 10110222 container.1

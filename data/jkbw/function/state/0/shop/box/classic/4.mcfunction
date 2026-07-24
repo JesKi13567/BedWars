@@ -1,5 +1,5 @@
-setblock 10110219 6 10110222 pink_shulker_box[facing=north]{Items: [\
-{Slot: 0b, id: "chorus_fruit", count: 1, components: {custom_data: {jkbw: ["shop", "item", "fruit"]}}}, \
+setblock 10110219 6 10110222 white_shulker_box[facing=north]{Items: [\
+{Slot: 0b, id: "chorus_fruit", count: 1, components: {custom_data: {jkbw: ["shop", "item", "chorus_fruit"]}}}, \
 {Slot: 1b, id: "trident", count: 1, components: {custom_data: {jkbw: ["shop", "item", "trident"]}, enchantments: {loyalty: 3}, attribute_modifiers: []}}, \
 {Slot: 2b, id: "tipped_arrow", count: 3, components: {custom_data: {jkbw: ["shop", "item", "tipped_arrow"]}, potion_contents: "slowness"}}, \
 {Slot: 3b, id: "crossbow", count: 1, components: {custom_data: {jkbw: ["shop", "item", "crossbow_max"]}, enchantments: {quick_charge: 5}}}, \
@@ -9,7 +9,7 @@ setblock 10110219 6 10110222 pink_shulker_box[facing=north]{Items: [\
 ]}
 
 item modify block 10110219 6 10110222 container.0 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#fruit", objective: "jkbw.int"}, color: "gold"}, " ", {translate: "item.minecraft.gold_ingot", italic: false, color: "gold"}]]}
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#chorus_fruit", objective: "jkbw.int"}, color: "gold"}, " ", {translate: "item.minecraft.gold_ingot", italic: false, color: "gold"}]]}
 
 item modify block 10110219 6 10110222 container.1 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#trident", objective: "jkbw.int"}, color: "gold"}, " ", {translate: "item.minecraft.gold_ingot", italic: false, color: "gold"}]]}

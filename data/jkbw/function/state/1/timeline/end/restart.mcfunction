@@ -14,9 +14,10 @@ execute at @n[type=text_display, tag=jkbw_worldspawn] run function jkbw:state/0/
 execute as @a run function jkbw:state/0/ppl/leavegame
 
 # 轮换道具（分数1启用）
-execute if score #res_mode jkbw.int matches 0..1 unless score #ACCESS.permanent_save jkbw.int matches 1 store result score #ACCESS.trident jkbw.int run random value 1..3
-execute if score #res_mode jkbw.int matches 0..1 unless score #ACCESS.permanent_save jkbw.int matches 1 store result score #ACCESS.tipped_arrow jkbw.int run random value 1..2
-execute if score #res_mode jkbw.int matches 0..1 unless score #ACCESS.permanent_save jkbw.int matches 1 store result score #ACCESS.crossbow_max jkbw.int run random value 1..10
-execute if score #res_mode jkbw.int matches 0..1 unless score #ACCESS.permanent_save jkbw.int matches 1 store result score #ACCESS.ice_bridge jkbw.int run random value 1..3
-execute if score #res_mode jkbw.int matches 0..1 unless score #ACCESS.permanent_save jkbw.int matches 1 store result score #ACCESS.mace jkbw.int run random value 1..6
+execute if score #res_mode jkbw.int matches 0..1 unless score #ACCESS.permanent_save jkbw.int matches 1 store result score #ACCESS.chorus_fruit jkbw.int run random value 1..4
+execute if score #res_mode jkbw.int matches 0..1 unless score #ACCESS.permanent_save jkbw.int matches 1 store result score #ACCESS.trident jkbw.int run random value 1..4
+execute if score #res_mode jkbw.int matches 0..1 unless score #ACCESS.permanent_save jkbw.int matches 1 store result score #ACCESS.tipped_arrow jkbw.int run random value 1..4
+execute if score #res_mode jkbw.int matches 0..1 unless score #ACCESS.permanent_save jkbw.int matches 1 store result score #ACCESS.crossbow_max jkbw.int run random value 1..4
+execute if score #res_mode jkbw.int matches 0..1 unless score #ACCESS.permanent_save jkbw.int matches 1 store result score #ACCESS.ice_bridge jkbw.int run random value 1..4
+execute if score #res_mode jkbw.int matches 0..1 unless score #ACCESS.permanent_save jkbw.int matches 1 store result score #ACCESS.mace jkbw.int run random value 1..4
 execute if score #res_mode jkbw.int matches 0..1 unless score #ACCESS.permanent_save jkbw.int matches 1 store result score #ACCESS.the_mirror jkbw.int run random value 1..4

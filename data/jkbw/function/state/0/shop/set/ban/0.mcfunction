@@ -52,6 +52,16 @@ execute as @s[scores={jkbw.Admin.Trigger=1312}] run function jkbw:state/0/shop/s
 execute as @s[scores={jkbw.Admin.Trigger=1313}] run function jkbw:state/0/shop/set/ban/set {p: 'classic', i: 'happy_ghast'}
 execute as @s[scores={jkbw.Admin.Trigger=..1399}] run return run function jkbw:state/0/shop/price/classic/3
 
+execute as @s[scores={jkbw.Admin.Trigger=1400}] run function jkbw:state/0/shop/set/4/set {x: 'permanent_save'}
+execute as @s[scores={jkbw.Admin.Trigger=1401}] run function jkbw:state/0/shop/set/4/set {x: 'chorus_fruit'}
+execute as @s[scores={jkbw.Admin.Trigger=1402}] run function jkbw:state/0/shop/set/4/set {x: 'trident'}
+execute as @s[scores={jkbw.Admin.Trigger=1403}] run function jkbw:state/0/shop/set/4/set {x: 'tipped_arrow'}
+execute as @s[scores={jkbw.Admin.Trigger=1404}] run function jkbw:state/0/shop/set/4/set {x: 'crossbow_max'}
+execute as @s[scores={jkbw.Admin.Trigger=1405}] run function jkbw:state/0/shop/set/4/set {x: 'ice_bridge'}
+execute as @s[scores={jkbw.Admin.Trigger=1406}] run function jkbw:state/0/shop/set/4/set {x: 'mace'}
+execute as @s[scores={jkbw.Admin.Trigger=1407}] run function jkbw:state/0/shop/set/4/set {x: 'the_mirror'}
+execute as @s[scores={jkbw.Admin.Trigger=..1499}] run return run function jkbw:state/0/shop/price/classic/4
+
 
 execute as @s[scores={jkbw.Admin.Trigger=2101}] run function jkbw:state/0/shop/set/ban/set {p: 'urf', i: 'cut_sandstone'}
 execute as @s[scores={jkbw.Admin.Trigger=2102}] run function jkbw:state/0/shop/set/ban/set {p: 'urf', i: 'end_stone'}

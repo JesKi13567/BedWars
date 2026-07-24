@@ -50,9 +50,11 @@ item modify block 10110220 5 10110222 container.4 {function: "set_lore", entity:
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPgolden_apple", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
 item modify block 10110220 5 10110222 container.5 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+[{storage: "jk:bw", interpret: true, nbt: "txt.global.non_recyclable", italic: false, color: "gray"}], \
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPsponge", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
 item modify block 10110220 5 10110222 container.6 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+[{storage: "jk:bw", interpret: true, nbt: "txt.global.non_recyclable", italic: false, color: "gray"}], \
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPwater", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
 item modify block 10110220 5 10110222 container.7 {function: "set_name", entity: "this", name: \

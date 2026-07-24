@@ -13,7 +13,7 @@ $execute if score #res_mode jkbw.int matches 0 run tellraw @s[tag=!jkbw_buy_succ
 $execute if score #res_mode jkbw.int matches 1 run tellraw @s[tag=!jkbw_buy_success] [{storage: "jk:bw", interpret: true, nbt: "txt.play.shop.buy.cannot", color: "red"}, " ", {translate: "item.minecraft.$(material)_$(type)", color: "yellow"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.char.comma"}, {storage: "jk:bw", interpret: true, nbt: "txt.play.shop.you_need"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl"}, "*", {score: {name: "#shop_temp", objective: "jkbw.int"}, color: "yellow"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.char.exclamation"}]
 
 # 成功购买
-clear @s[tag=jkbw_buy_success] wooden_sword
+$clear @s[tag=jkbw_buy_success] wooden_$(type)
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]
 $execute unless score #ENABLE.shield jkbw.int matches 2 run give @s[tag=jkbw_buy_success] $(material)_$(type)[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, unbreakable={}]
 $execute if score #ENABLE.shield jkbw.int matches 2 if score #2 jkbw.int matches $(type_id) run give @s[tag=jkbw_buy_success] $(material)_$(type)[tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, unbreakable={}]

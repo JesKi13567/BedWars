@@ -2,9 +2,6 @@
   "values": [
     "stone_sword",
     "iron_sword",
-    "diamond_sword",
-    "stone_spear",
-    "iron_spear",
-    "diamond_spear"
+    "diamond_sword"
   ]
 }

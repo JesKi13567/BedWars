@@ -1,4 +1,4 @@
-setblock 10110218 6 10110222 lime_shulker_box[facing=north]{Items: [\
+setblock 10110218 6 10110222 light_blue_shulker_box[facing=north]{Items: [\
 {Slot: 0b, id: "dragon_breath", count: 1, components: {custom_data: {jkbw: ["shop", "team", "dragon"]}}}, \
 {Slot: 9b, id: "dragon_breath", count: 1, components: {custom_data: {jkbw: ["shop", "team", "dragon"]}}}, \
 {Slot: 1b, id: "beacon", count: 1, components: {custom_data: {jkbw: ["shop", "team", "healing"]}}}, \

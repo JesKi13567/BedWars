@@ -47,7 +47,7 @@ execute as @s[scores={jkbw.Player.ShopRandom=45}] run function jkbw:state/1/shop
 execute as @s[scores={jkbw.Player.ShopRandom=46}] run function jkbw:state/1/shop/real/item/special/normal {name: 'pearl', show: 'ender_pearl', res: 'emerald'}
 execute as @s[scores={jkbw.Player.ShopRandom=47}] run function jkbw:state/1/shop/real/item/special/normal {name: 'wind_charge', show: 'wind_charge', res: 'gold_ingot'}
 execute as @s[scores={jkbw.Player.ShopRandom=48}] run function jkbw:state/1/shop/real/item/special/custom {name: 'happy_ghast', res: 'emerald'}
-execute as @s[scores={jkbw.Player.ShopRandom=49}] run function jkbw:state/1/shop/real/item/special/normal {name: 'fruit', show: 'chorus_fruit', res: 'gold_ingot'}
+execute as @s[scores={jkbw.Player.ShopRandom=49}] run function jkbw:state/1/shop/real/item/special/normal {name: 'chorus_fruit', show: 'chorus_fruit', res: 'gold_ingot'}
 execute as @s[scores={jkbw.Player.ShopRandom=50}] run function jkbw:state/1/shop/real/item/weapon/common {id: 4, item: 'trident'}
 execute as @s[scores={jkbw.Player.ShopRandom=51}] run function jkbw:state/1/shop/real/item/weapon/common {id: 5, item: 'tipped_arrow'}
 execute as @s[scores={jkbw.Player.ShopRandom=52}] run function jkbw:state/1/shop/real/item/weapon/common {id: 6, item: 'mace'}

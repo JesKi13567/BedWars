@@ -1,6 +1,5 @@
 # 检测能否买
-$tag @s[scores={jkbw.Player.ArmorLevels=$(id)..}] add jkbw_bought
-$execute as @s[tag=jkbw_bought] run return run function jkbw:state/1/shop/bought {desc: '[{storage: "jk:bw", interpret: true, nbt: "txt.play.shop.buy.ed.p0", color: "red"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.armor.$(id)", color: "yellow"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.char.comma"}, {storage: "jk:bw", interpret: true, nbt: "txt.play.shop.buy.ed.p1"}]'}
+$execute as @s[scores={jkbw.Player.ArmorLevels=$(id)..}] run return run function jkbw:state/1/shop/bought {desc: '[{storage: "jk:bw", interpret: true, nbt: "txt.play.shop.buy.ed.p0", color: "red"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.armor.$(id)", color: "yellow"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.char.comma"}, {storage: "jk:bw", interpret: true, nbt: "txt.play.shop.buy.ed.p1"}]'}
 
 $execute if score @s jkbw.Player.Own.$(res) >= #armor$(id) jkbw.int run tag @s add jkbw_buy_success
 $execute if score @s jkbw.Player.Own.xpLevelsReal >= #XParmor$(id) jkbw.int run tag @s add jkbw_buy_success

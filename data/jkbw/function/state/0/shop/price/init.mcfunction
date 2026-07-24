@@ -59,7 +59,7 @@ scoreboard players set #tnt1 jkbw.int 4
 scoreboard players set #pearl jkbw.int 4
 scoreboard players set #pearl_blitz jkbw.int 2
 
-scoreboard players set #fruit jkbw.int 2
+scoreboard players set #chorus_fruit jkbw.int 2
 scoreboard players set #trident jkbw.int 10
 scoreboard players set #tipped_arrow jkbw.int 5
 scoreboard players set #crossbow_max jkbw.int 2

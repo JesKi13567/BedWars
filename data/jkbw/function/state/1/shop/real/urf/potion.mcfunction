@@ -9,8 +9,8 @@ $tellraw @s[tag=!jkbw_buy_success] [{storage: "jk:bw", interpret: true, nbt: "tx
 playsound entity.villager.no player @s[tag=!jkbw_buy_success]
 
 # 成功购买
-$execute if score #ENABLE.potion jkbw.int matches 0 run give @s[tag=jkbw_buy_success] potion[!use_remainder, tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, potion_contents="$(effect)", !use_remainder, max_stack_size=64]
-$execute if score #ENABLE.potion jkbw.int matches 1 run give @s[tag=jkbw_buy_success] splash_potion[!use_remainder, tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, potion_contents="$(effect)", !use_remainder, max_stack_size=64]
+$execute if score #ENABLE.potion jkbw.int matches 0 run give @s[tag=jkbw_buy_success] potion[!use_remainder, tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, potion_contents="$(effect)", max_stack_size=64]
+$execute if score #ENABLE.potion jkbw.int matches 1 run give @s[tag=jkbw_buy_success] splash_potion[!use_remainder, tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, potion_contents="$(effect)", max_stack_size=64]
 
 $tellraw @s[tag=jkbw_buy_success] [{storage: "jk:bw", interpret: true, nbt: "txt.play.shop.buy.success", color: "green"}, " ", {translate: "effect.minecraft.$(desc)", color: "gold"}, " ", {translate: "item.minecraft.potion", color: "gold"}, {storage: "jk:bw", interpret: true, nbt: "txt.global.char.exclamation"}]
 playsound entity.experience_orb.pickup player @s[tag=jkbw_buy_success]

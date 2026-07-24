@@ -4,11 +4,15 @@ execute unless items entity @s hotbar.8 * as @s[scores={jkbw.Player.Has.Item=0}]
 
 ## 武器
 # 剑/矛
-execute store success score @s jkbw.Player.Has.Item run clear @s #jkbw:sword/not_wood[!custom_data~{jkbw: ["shop"]}] 0
-clear @s[scores={jkbw.Player.Has.Item=1}] wooden_sword
-execute store success score @s[scores={jkbw.Player.Has.Item=0}] jkbw.Player.Has.Item run clear @s wooden_sword 0
-execute unless score #ENABLE.shield jkbw.int matches 2 run give @s[scores={jkbw.Player.Has.Item=0}] wooden_sword[custom_data={jkbw: ["clean"]}, unbreakable={}, tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}]
-execute if score #ENABLE.shield jkbw.int matches 2 run give @s[scores={jkbw.Player.Has.Item=0}] wooden_sword[custom_data={jkbw: ["clean"]}, unbreakable={}, tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, blocks_attacks={block_sound: {sound_id: "entity.player.hurt"}, damage_reductions: [{base: 1, factor: 0.5}], disable_cooldown_scale: 0}]
+execute unless score #ENABLE.spear jkbw.int matches 2 store success score @s jkbw.Player.Has.Item run clear @s #jkbw:sword/not_wood[!custom_data~{jkbw: ["shop"]}] 0
+execute unless score #ENABLE.spear jkbw.int matches 2 run clear @s[scores={jkbw.Player.Has.Item=1}] wooden_sword
+execute unless score #ENABLE.spear jkbw.int matches 2 store success score @s[scores={jkbw.Player.Has.Item=0}] jkbw.Player.Has.Item run clear @s wooden_sword 0
+execute unless score #ENABLE.spear jkbw.int matches 2 unless score #ENABLE.shield jkbw.int matches 2 run give @s[scores={jkbw.Player.Has.Item=0}] wooden_sword[custom_data={jkbw: ["clean"]}, unbreakable={}, tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}]
+execute unless score #ENABLE.spear jkbw.int matches 2 if score #ENABLE.shield jkbw.int matches 2 run give @s[scores={jkbw.Player.Has.Item=0}] wooden_sword[custom_data={jkbw: ["clean"]}, unbreakable={}, tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}, blocks_attacks={block_sound: {sound_id: "entity.player.hurt"}, damage_reductions: [{base: 1, factor: 0.5}], disable_cooldown_scale: 0}]
+execute if score #ENABLE.spear jkbw.int matches 2 store success score @s jkbw.Player.Has.Item run clear @s #jkbw:spear/not_wood[!custom_data~{jkbw: ["shop"]}] 0
+execute if score #ENABLE.spear jkbw.int matches 2 run clear @s[scores={jkbw.Player.Has.Item=1}] wooden_spear
+execute if score #ENABLE.spear jkbw.int matches 2 store success score @s[scores={jkbw.Player.Has.Item=0}] jkbw.Player.Has.Item run clear @s wooden_spear 0
+execute if score #ENABLE.spear jkbw.int matches 2 run give @s[scores={jkbw.Player.Has.Item=0}] wooden_spear[custom_data={jkbw: ["clean"]}, unbreakable={}, tooltip_display={hidden_components: [can_break]}, can_break={blocks: "#jkbw:candestroy"}]
 
 ## 工具
 # 跨等级
@@ -66,7 +70,7 @@ item modify entity @s[tag=jkbw_effect_invisible] armor.legs {function: "set_comp
 item modify entity @s[tag=jkbw_effect_invisible] armor.feet {function: "set_components", components: {item_model: "air", equippable: {slot: "feet"}}}
 
 # 滑翔模式
-execute if score #ENABLE.glider jkbw.int matches 1 if score #time_state jkbw.int matches 1.. run item modify entity @s armor.chest {function: "set_components", components: {glider: {}}}
+execute if score #ENABLE.glider jkbw.int matches 1 if score #time_state jkbw.int matches 1.. unless items entity @s armor.chest *[glider] run item modify entity @s armor.chest {function: "set_components", components: {glider: {}, lore: [{type: "object", atlas: "items", sprite: "item/elytra", color: "white", italic: false}]}}
 
 ## 按队伍
 execute as @s[team=jkbw.red] run function jkbw:state/1/team/loop/with {team: 'red', color: 11546150}

@@ -7,7 +7,7 @@ execute as @a run function jkbw:state/1/team/distribute/in/2 {team: 'red', id: 1
 tag @a add jkbw_buy_success
 
 # 解锁全轮换道具
-scoreboard players set #ACCESS.fruit jkbw.int 1
+scoreboard players set #ACCESS.chorus_fruit jkbw.int 1
 scoreboard players set #ACCESS.trident jkbw.int 1
 scoreboard players set #ACCESS.tipped_arrow jkbw.int 1
 scoreboard players set #ACCESS.crossbow_max jkbw.int 1

@@ -1,5 +1,5 @@
 setblock 10110219 5 10110222 black_shulker_box[facing=north]{Items: [\
-{Slot: 0b, id: "chorus_fruit", count: 1, components: {custom_data: {jkbw: ["shop", "item", "fruit"]}}}, \
+{Slot: 0b, id: "chorus_fruit", count: 1, components: {custom_data: {jkbw: ["shop", "item", "chorus_fruit"]}}}, \
 {Slot: 1b, id: "trident", count: 1, components: {custom_data: {jkbw: ["shop", "item", "trident"]}, enchantments: {loyalty: 3}, attribute_modifiers: []}}, \
 {Slot: 2b, id: "tipped_arrow", count: 3, components: {custom_data: {jkbw: ["shop", "item", "tipped_arrow"]}, potion_contents: "slowness"}}, \
 {Slot: 3b, id: "crossbow", count: 1, components: {custom_data: {jkbw: ["shop", "item", "crossbow_max"]}, enchantments: {quick_charge: 5}}}, \
@@ -9,7 +9,7 @@ setblock 10110219 5 10110222 black_shulker_box[facing=north]{Items: [\
 ]}
 
 item modify block 10110219 5 10110222 container.0 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPfruit", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPchorus_fruit", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
 item modify block 10110219 5 10110222 container.1 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPtrident", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
