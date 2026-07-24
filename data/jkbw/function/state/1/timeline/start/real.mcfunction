@@ -85,6 +85,32 @@ kill @e[type=armor_stand, tag=jkbw_silverfish]
 # 玩家
 execute as @a run function jkbw:state/1/shop/gui/chest/player/clear
 
+scoreboard players reset * jkbw.Player.Break.Bed.blue
+scoreboard players reset * jkbw.Player.Break.Bed.cyan
+scoreboard players reset * jkbw.Player.Break.Bed.gray
+scoreboard players reset * jkbw.Player.Break.Bed.green
+scoreboard players reset * jkbw.Player.Break.Bed.pink
+scoreboard players reset * jkbw.Player.Break.Bed.red
+scoreboard players reset * jkbw.Player.Break.Bed.white
+scoreboard players reset * jkbw.Player.Break.Bed.yellow
+scoreboard players reset * jkbw.Player.Break.Cake.blue
+scoreboard players reset * jkbw.Player.Break.Cake.cyan
+scoreboard players reset * jkbw.Player.Break.Cake.gray
+scoreboard players reset * jkbw.Player.Break.Cake.green
+scoreboard players reset * jkbw.Player.Break.Cake.pink
+scoreboard players reset * jkbw.Player.Break.Cake.red
+scoreboard players reset * jkbw.Player.Break.Cake.white
+scoreboard players reset * jkbw.Player.Break.Cake.yellow
+scoreboard players reset * jkbw.Player.Place.blue
+scoreboard players reset * jkbw.Player.Place.cyan
+scoreboard players reset * jkbw.Player.Place.gray
+scoreboard players reset * jkbw.Player.Place.green
+scoreboard players reset * jkbw.Player.Place.orange
+scoreboard players reset * jkbw.Player.Place.pink
+scoreboard players reset * jkbw.Player.Place.red
+scoreboard players reset * jkbw.Player.Place.white
+scoreboard players reset * jkbw.Player.Place.yellow
+
 # 测试用
 execute if score #test_mode jkbw.int matches 1 run function jkbw:state/1/timeline/start/special_mode/test
 

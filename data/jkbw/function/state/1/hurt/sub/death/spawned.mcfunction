@@ -22,6 +22,11 @@ execute if score #exp_mode jkbw.int matches 3 run attribute @s scale base set 0.
 execute if score #exp_mode jkbw.int matches 5 run attribute @s block_interaction_range base set 32
 execute if score #exp_mode jkbw.int matches 5 run attribute @s entity_interaction_range base set 32
 
+xp set @s 0 levels
+xp set @s 0 points
+scoreboard players reset @s jkbw.Player.Own.xpLevels
+scoreboard players reset @s jkbw.Player.Own.xpLevelsReal
+
 scoreboard players set @s jkbw.Player.Use.CD.AntiArrow 0
 scoreboard players set @s jkbw.Player.Use.CD.BackScroll 0
 scoreboard players set @s jkbw.Player.Use.CD.Creature 0

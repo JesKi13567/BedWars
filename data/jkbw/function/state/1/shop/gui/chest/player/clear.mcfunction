@@ -52,21 +52,6 @@ execute if score #res_mode jkbw.int matches 0..1 if score #exp_mode jkbw.int mat
 execute if score #res_mode jkbw.int matches 0..1 if score #exp_mode jkbw.int matches 1 run recipe give @s jkbw:box/gray
 
 # 分数
-scoreboard players reset @s jkbw.Player.Place.Red
-scoreboard players reset @s jkbw.Player.Place.Blue
-scoreboard players reset @s jkbw.Player.Place.Green
-scoreboard players reset @s jkbw.Player.Place.Yellow
-scoreboard players reset @s jkbw.Player.Place.Cyan
-scoreboard players reset @s jkbw.Player.Place.White
-scoreboard players reset @s jkbw.Player.Place.Pink
-scoreboard players reset @s jkbw.Player.Place.Gray
-scoreboard players reset @s jkbw.Player.Place.Orange
-scoreboard players reset @s jkbw.Player.Own.xpLevels
-scoreboard players reset @s jkbw.Player.Own.iron_ingotReal
-scoreboard players reset @s jkbw.Player.Own.gold_ingotReal
-scoreboard players reset @s jkbw.Player.Own.diamondReal
-scoreboard players reset @s jkbw.Player.Own.emeraldReal
-scoreboard players reset @s jkbw.Player.Own.xpLevelsReal
 scoreboard players reset @s jkbw.Player.DeathImp
 scoreboard players reset @s jkbw.Player.RebornTime
 scoreboard players set @s jkbw.Player.Beds 0
@@ -79,8 +64,6 @@ scoreboard players set @s jkbw.Player.Page 0
 execute unless score @s jkbw.Player.Head matches 1.. run scoreboard players set @s jkbw.Player.Head 0
 scoreboard players set @s jkbw.Player.Compass 0
 execute if score #res_mode jkbw.int matches 2 run scoreboard players set @s jkbw.Player.Compass -1
-xp set @s 0 levels
-xp set @s 0 points
 title @s title ""
 title @s subtitle ""
 function jkbw:state/1/hurt/sub/death/spawned

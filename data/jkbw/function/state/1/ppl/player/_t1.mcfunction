@@ -45,7 +45,7 @@ execute if score #res_mode jkbw.int matches 2 if block ~ ~ ~ tripwire run functi
 execute if score #res_mode jkbw.int matches 2 if block ~ ~1 ~ tripwire run function jkbw:state/1/special/item/trap
 
 # 自动搭路
-execute if score #exp_mode jkbw.int matches 1 run function jkbw:state/1/special/item/auto_bridge/global
+execute if score #exp_mode jkbw.int matches 1 run function jkbw:state/1/special/item/auto_bridge/0
 
 # 枪械装填
 execute if items entity @s weapon.mainhand echo_shard[custom_data~{jkbw: ["gun"]}, item_model=barrier] run function jkbw:state/1/special/item/gun/reload/1

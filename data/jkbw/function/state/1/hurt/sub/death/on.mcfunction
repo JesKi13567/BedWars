@@ -54,9 +54,6 @@ execute as @s[scores={jkbw.Player.Own.gold_ingotReal=1..}] run tellraw @s [{text
 execute as @s[scores={jkbw.Player.Own.diamondReal=1..}] run tellraw @s [{text: "-", color: "red"}, {score: {name: "@s", objective: "jkbw.Player.Own.diamondReal"}}, " ", {translate: "item.minecraft.diamond"}]
 execute as @s[scores={jkbw.Player.Own.emeraldReal=1..}] run tellraw @s [{text: "-", color: "red"}, {score: {name: "@s", objective: "jkbw.Player.Own.emeraldReal"}}, " ", {translate: "item.minecraft.emerald"}]
 execute as @s[scores={jkbw.Player.Own.xpLevelsReal=1..}] run tellraw @s [{text: "-", color: "red"}, {score: {name: "@s", objective: "jkbw.Player.Own.xpLevelsReal"}}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl"}]
-scoreboard players set @s jkbw.Player.Own.xpLevelsReal 0
-xp set @s 0 levels
-xp set @s 0 points
 
 # 无床爆装备
 execute as @s[scores={jkbw.Player.State=4}] run function jkbw:state/1/hurt/sub/death/res/final_kill
