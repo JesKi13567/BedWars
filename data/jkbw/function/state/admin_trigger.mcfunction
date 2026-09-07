@@ -22,14 +22,14 @@ execute as @s[scores={jkbw.Admin.Trigger=113}] run function jkbw:state/0/panel/c
 execute as @s[scores={jkbw.Admin.Trigger=114}] run function jkbw:state/0/panel/contents/map/rotation/set/switch
 execute as @s[scores={jkbw.Admin.Trigger=115}] run function jkbw:state/0/panel/contents/map/rotation/rotate
 
-execute as @s[scores={jkbw.Admin.Trigger=142}] run function jkbw:state/0/button/set_time/update__
-execute as @s[scores={jkbw.Admin.Trigger=143}] run function jkbw:state/0/button/exp_mode/update__
-execute as @s[scores={jkbw.Admin.Trigger=144}] run function jkbw:state/0/button/res/rate/update__
-execute as @s[scores={jkbw.Admin.Trigger=145}] run function jkbw:state/0/button/res/mode/update
+execute as @s[scores={jkbw.Admin.Trigger=142}] run function jkbw:state/0/button/cycle {id: 'set_time', op: 'add', range: '4..', reset: '0', f: 'jkbw:state/0/button/set_time/show'}
+execute as @s[scores={jkbw.Admin.Trigger=143}] run function jkbw:state/0/button/cycle {id: 'exp_mode', op: 'add', range: '8..', reset: '0', f: 'jkbw:state/0/button/show/exp_mode'}
+execute as @s[scores={jkbw.Admin.Trigger=144}] run function jkbw:state/0/button/cycle {id: 'res_rate.order', op: 'add', range: '7..', reset: '1', f: 'jkbw:state/0/button/show/res_rate'}
+execute as @s[scores={jkbw.Admin.Trigger=145}] run function jkbw:state/0/button/cycle {id: 'res_mode', op: 'add', range: '3..', reset: '0', f: 'jkbw:state/0/button/show/res_mode'}
 execute as @s[scores={jkbw.Admin.Trigger=146}] run function jkbw:state/0/button/team/count/update__
 execute as @s[scores={jkbw.Admin.Trigger=147}] run function jkbw:state/0/button/team/distribute/update
-execute as @s[scores={jkbw.Admin.Trigger=148}] run function jkbw:state/0/button/bed_type/update
-execute as @s[scores={jkbw.Admin.Trigger=149}] run function jkbw:state/0/button/attack_speed/update
+execute as @s[scores={jkbw.Admin.Trigger=148}] run function jkbw:state/0/button/cycle {id: 'bed_type', op: 'add', range: '3..', reset: '0', f: 'jkbw:state/0/button/show/bed_type'}
+execute as @s[scores={jkbw.Admin.Trigger=149}] run function jkbw:state/0/button/cycle {id: 'attack_speed', op: 'add', range: '2..', reset: '0', f: 'jkbw:state/0/button/show/attack_speed'}
 execute as @s[scores={jkbw.Admin.Trigger=142..150}] run function jkbw:state/0/panel/pages/player_settings
 
 execute as @s[scores={jkbw.Admin.Trigger=210}] run function jkbw:state/0/panel/contents/switch/others {type: 'shield', num: 3}

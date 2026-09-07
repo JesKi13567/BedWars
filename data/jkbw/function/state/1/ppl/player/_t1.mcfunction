@@ -5,23 +5,23 @@ execute as @s[scores={jkbw.Player.DeathImp=1..}] run function jkbw:state/1/hurt/
 execute unless score #exp_mode jkbw.int matches 4 run function jkbw:state/1/shop/global
 
 # 穷举所有床种类，检查破坏
-execute if score #bed_type jkbw.int matches 0..1 as @s[scores={jkbw.Player.Break.Bed.red=1}] run function jkbw:state/1/bed/break/1 {team: 'red', color: 'red'}
-execute if score #bed_type jkbw.int matches 0..1 as @s[scores={jkbw.Player.Break.Bed.blue=1}] run function jkbw:state/1/bed/break/1 {team: 'blue', color: 'blue'}
-execute if score #bed_type jkbw.int matches 0..1 if score #teams jkbw.int matches 3.. as @s[scores={jkbw.Player.Break.Bed.green=1}] run function jkbw:state/1/bed/break/1 {team: 'green', color: 'green'}
-execute if score #bed_type jkbw.int matches 0..1 if score #teams jkbw.int matches 4.. as @s[scores={jkbw.Player.Break.Bed.yellow=1}] run function jkbw:state/1/bed/break/1 {team: 'yellow', color: 'yellow'}
-execute if score #bed_type jkbw.int matches 0..1 if score #teams jkbw.int matches 5.. as @s[scores={jkbw.Player.Break.Bed.cyan=1}] run function jkbw:state/1/bed/break/1 {team: 'cyan', color: 'aqua'}
-execute if score #bed_type jkbw.int matches 0..1 if score #teams jkbw.int matches 6.. as @s[scores={jkbw.Player.Break.Bed.white=1}] run function jkbw:state/1/bed/break/1 {team: 'white', color: 'white'}
-execute if score #bed_type jkbw.int matches 0..1 if score #teams jkbw.int matches 7.. as @s[scores={jkbw.Player.Break.Bed.pink=1}] run function jkbw:state/1/bed/break/1 {team: 'pink', color: 'light_purple'}
-execute if score #bed_type jkbw.int matches 0..1 if score #teams jkbw.int matches 8.. as @s[scores={jkbw.Player.Break.Bed.gray=1}] run function jkbw:state/1/bed/break/1 {team: 'gray', color: 'gray'}
+execute if score #bed_type jkbw.int matches 0..1 as @s[scores={jkbw.Player.Break.Bed.red=1..}] run function jkbw:state/1/bed/break/1 {team: 'red', color: 'red'}
+execute if score #bed_type jkbw.int matches 0..1 as @s[scores={jkbw.Player.Break.Bed.blue=1..}] run function jkbw:state/1/bed/break/1 {team: 'blue', color: 'blue'}
+execute if score #bed_type jkbw.int matches 0..1 if score #teams jkbw.int matches 3.. as @s[scores={jkbw.Player.Break.Bed.green=1..}] run function jkbw:state/1/bed/break/1 {team: 'green', color: 'green'}
+execute if score #bed_type jkbw.int matches 0..1 if score #teams jkbw.int matches 4.. as @s[scores={jkbw.Player.Break.Bed.yellow=1..}] run function jkbw:state/1/bed/break/1 {team: 'yellow', color: 'yellow'}
+execute if score #bed_type jkbw.int matches 0..1 if score #teams jkbw.int matches 5.. as @s[scores={jkbw.Player.Break.Bed.cyan=1..}] run function jkbw:state/1/bed/break/1 {team: 'cyan', color: 'aqua'}
+execute if score #bed_type jkbw.int matches 0..1 if score #teams jkbw.int matches 6.. as @s[scores={jkbw.Player.Break.Bed.white=1..}] run function jkbw:state/1/bed/break/1 {team: 'white', color: 'white'}
+execute if score #bed_type jkbw.int matches 0..1 if score #teams jkbw.int matches 7.. as @s[scores={jkbw.Player.Break.Bed.pink=1..}] run function jkbw:state/1/bed/break/1 {team: 'pink', color: 'light_purple'}
+execute if score #bed_type jkbw.int matches 0..1 if score #teams jkbw.int matches 8.. as @s[scores={jkbw.Player.Break.Bed.gray=1..}] run function jkbw:state/1/bed/break/1 {team: 'gray', color: 'gray'}
 
-execute if score #bed_type jkbw.int matches 2 as @s[scores={jkbw.Player.Break.Cake.red=1}] run function jkbw:state/1/bed/break/1 {team: 'red', color: 'red'}
-execute if score #bed_type jkbw.int matches 2 as @s[scores={jkbw.Player.Break.Cake.blue=1}] run function jkbw:state/1/bed/break/1 {team: 'blue', color: 'blue'}
-execute if score #bed_type jkbw.int matches 2 if score #teams jkbw.int matches 3.. as @s[scores={jkbw.Player.Break.Cake.green=1}] run function jkbw:state/1/bed/break/1 {team: 'green', color: 'green'}
-execute if score #bed_type jkbw.int matches 2 if score #teams jkbw.int matches 4.. as @s[scores={jkbw.Player.Break.Cake.yellow=1}] run function jkbw:state/1/bed/break/1 {team: 'yellow', color: 'yellow'}
-execute if score #bed_type jkbw.int matches 2 if score #teams jkbw.int matches 5.. as @s[scores={jkbw.Player.Break.Cake.cyan=1}] run function jkbw:state/1/bed/break/1 {team: 'cyan', color: 'aqua'}
-execute if score #bed_type jkbw.int matches 2 if score #teams jkbw.int matches 6.. as @s[scores={jkbw.Player.Break.Cake.white=1}] run function jkbw:state/1/bed/break/1 {team: 'white', color: 'white'}
-execute if score #bed_type jkbw.int matches 2 if score #teams jkbw.int matches 7.. as @s[scores={jkbw.Player.Break.Cake.pink=1}] run function jkbw:state/1/bed/break/1 {team: 'pink', color: 'light_purple'}
-execute if score #bed_type jkbw.int matches 2 if score #teams jkbw.int matches 8.. as @s[scores={jkbw.Player.Break.Cake.gray=1}] run function jkbw:state/1/bed/break/1 {team: 'gray', color: 'gray'}
+execute if score #bed_type jkbw.int matches 2 as @s[scores={jkbw.Player.Break.Cake.red=1..}] run function jkbw:state/1/bed/break/1 {team: 'red', color: 'red'}
+execute if score #bed_type jkbw.int matches 2 as @s[scores={jkbw.Player.Break.Cake.blue=1..}] run function jkbw:state/1/bed/break/1 {team: 'blue', color: 'blue'}
+execute if score #bed_type jkbw.int matches 2 if score #teams jkbw.int matches 3.. as @s[scores={jkbw.Player.Break.Cake.green=1..}] run function jkbw:state/1/bed/break/1 {team: 'green', color: 'green'}
+execute if score #bed_type jkbw.int matches 2 if score #teams jkbw.int matches 4.. as @s[scores={jkbw.Player.Break.Cake.yellow=1..}] run function jkbw:state/1/bed/break/1 {team: 'yellow', color: 'yellow'}
+execute if score #bed_type jkbw.int matches 2 if score #teams jkbw.int matches 5.. as @s[scores={jkbw.Player.Break.Cake.cyan=1..}] run function jkbw:state/1/bed/break/1 {team: 'cyan', color: 'aqua'}
+execute if score #bed_type jkbw.int matches 2 if score #teams jkbw.int matches 6.. as @s[scores={jkbw.Player.Break.Cake.white=1..}] run function jkbw:state/1/bed/break/1 {team: 'white', color: 'white'}
+execute if score #bed_type jkbw.int matches 2 if score #teams jkbw.int matches 7.. as @s[scores={jkbw.Player.Break.Cake.pink=1..}] run function jkbw:state/1/bed/break/1 {team: 'pink', color: 'light_purple'}
+execute if score #bed_type jkbw.int matches 2 if score #teams jkbw.int matches 8.. as @s[scores={jkbw.Player.Break.Cake.gray=1..}] run function jkbw:state/1/bed/break/1 {team: 'gray', color: 'gray'}
 
 ## 玩家使用特殊物品
 # 道具冷却

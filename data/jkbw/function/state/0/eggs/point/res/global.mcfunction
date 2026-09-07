@@ -1,5 +1,5 @@
 # 楼梯
-data modify storage jk:bw Temp.stairs set from entity @s Inventory[{Slot:17b}].id
+execute if items entity @s container.17 #stairs run data modify storage jk:bw Temp.stairs set from entity @s Inventory[{Slot:17b}].id
 execute if items entity @s container.17 #stairs run function jkbw:state/0/eggs/point/res/stairs with storage jk:bw Temp
 
 # 全局资源点
