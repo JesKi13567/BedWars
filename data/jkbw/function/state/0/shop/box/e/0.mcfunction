@@ -1,6 +1,7 @@
 setblock 10110209 6 10110222 shulker_box[facing=north]{Items: [\
 {Slot: 0b, id: "light_gray_stained_glass_pane", count: 1, components: {custom_data: {jkbw: ["shop"]}}}, \
 {Slot: 1b, id: "player_head", count: 1, components: {custom_data: {jkbw: ["shop", "gui", "0"]}, profile: {properties: [{name: "textures", value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWYxMzNlOTE5MTlkYjBhY2VmZGMyNzJkNjdmZDg3YjRiZTg4ZGM0NGE5NTg5NTg4MjQ0NzRlMjFlMDZkNTNlNiJ9fX0="}]}}}, \
+{Slot: 8b, id: "spyglass", count: 1, components: {custom_data: {jkbw: ["shop", "spyglass"]}}}, \
 {Slot: 9b, id: "white_wool", count: 1, components: {custom_data: {jkbw: ["shop", "gui", "1"]}}}, \
 {Slot: 10b, id: "iron_sword", count: 1, components: {custom_data: {jkbw: ["shop", "gui", "2"]}, attribute_modifiers: []}}, \
 {Slot: 11b, id: "compass", count: 1, components: {custom_data: {jkbw: ["shop", "gui", "-8"]}}}, \
@@ -18,6 +19,9 @@ item modify block 10110209 6 10110222 container.0 {function: "set_name", entity:
 
 item modify block 10110209 6 10110222 container.1 {function: "set_name", entity: "this", name: [\
 {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.menu.back", italic: false, color: "white"}]}
+
+item modify block 10110209 6 10110222 container.8 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, "0"]]}
 
 item modify block 10110209 6 10110222 container.9 {function: "set_name", entity: "this", name: [\
 {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.menu.blocks_tools", italic: false, color: "white"}]}
@@ -37,7 +41,7 @@ item modify block 10110209 6 10110222 container.14 {function: "set_name", entity
 item modify block 10110209 6 10110222 container.16 {function: "set_name", entity: "this", name: [\
 {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.menu.hat", italic: false, color: "white"}]}
 item modify block 10110209 6 10110222 container.16 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
-[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {text: "0", color: "white"}]]}
+[{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, "0"]]}
 
 item modify block 10110209 6 10110222 container.17 {function: "set_name", entity: "this", name: [\
 {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.menu.my_chest", italic: false, color: "white"}]}

@@ -25,7 +25,7 @@ execute unless score #exp_mode jkbw.int matches 4 if score #time jkbw.int > #tim
 execute unless score #exp_mode jkbw.int matches 4 if score #time jkbw.int > #time6 jkbw.int if score #time jkbw.int <= #time5 jkbw.int run bossbar set jkbw:game_progress name ["", {storage: "jk:bw", interpret: true, nbt: "txt.play.event.next", color: "gold"}, {storage: "jk:bw", interpret: true, nbt: "txt.play.event.death_fight.name", color: "red", bold: true}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.play.time.left", color: "yellow"}, {score: {name: "#time_show", objective: "jkbw.int"}}, "s"]
 execute unless score #exp_mode jkbw.int matches 4 if score #time jkbw.int <= #time6 jkbw.int run bossbar set jkbw:game_progress name ["", {storage: "jk:bw", interpret: true, nbt: "txt.play.event.next", color: "gold"}, {storage: "jk:bw", interpret: true, nbt: "txt.play.event.end.name", color: "red"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.play.time.left", color: "yellow"}, {score: {name: "#time_show", objective: "jkbw.int"}}, "s"]
 
-# 被迫零元购
+# 幸运之床
 execute if score #exp_mode jkbw.int matches 4 run function jkbw:state/1/shop/page/random/global
 
 # 超时

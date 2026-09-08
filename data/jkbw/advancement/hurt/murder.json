@@ -4,8 +4,7 @@
       "trigger": "player_hurt_entity",
       "conditions": {
         "entity": {
-          "type_specific": {
-            "type": "player",
+          "type_specific/player": {
             "gamemode": [
               "adventure"
             ]

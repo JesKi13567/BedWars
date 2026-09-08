@@ -1,4 +1,5 @@
-execute store result score @s jkbw.Player.ShopRandom run random value 1..73
+execute store result score @s jkbw.Player.ShopRandom run random value 0..73
+execute as @s[scores={jkbw.Player.ShopRandom=0}] run function jkbw:state/1/shop/real/item/spyglass
 execute as @s[scores={jkbw.Player.ShopRandom=1}] run function jkbw:state/1/shop/real/urf/block/common {item: 'cut_sandstone', count: 16}
 execute as @s[scores={jkbw.Player.ShopRandom=2}] run function jkbw:state/1/shop/real/urf/block/common {item: 'end_stone', count: 4}
 execute as @s[scores={jkbw.Player.ShopRandom=3}] run function jkbw:state/1/shop/real/urf/block/common {item: 'packed_ice', count: 4}

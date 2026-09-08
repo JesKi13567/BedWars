@@ -1,4 +1,5 @@
-execute store result score @s jkbw.Player.ShopRandom run random value 1..55
+execute store result score @s jkbw.Player.ShopRandom run random value 0..55
+execute as @s[scores={jkbw.Player.ShopRandom=0}] run function jkbw:state/1/shop/real/item/spyglass
 execute as @s[scores={jkbw.Player.ShopRandom=1}] run function jkbw:state/1/shop/real/item/block/main {item: 'wool', count: 16, res: 'iron_ingot', color: 1}
 execute as @s[scores={jkbw.Player.ShopRandom=2}] run function jkbw:state/1/shop/real/item/block/main {item: 'terracotta', count: 16, res: 'iron_ingot', color: 1}
 execute as @s[scores={jkbw.Player.ShopRandom=3}] run function jkbw:state/1/shop/real/item/block/main {item: 'stained_glass', count: 4, res: 'iron_ingot', color: 1}

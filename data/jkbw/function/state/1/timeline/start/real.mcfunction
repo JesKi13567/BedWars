@@ -47,7 +47,7 @@ execute unless score #TIME.UPDATE jkbw.int matches 10..1000 run scoreboard playe
 execute unless score #TIME.BED jkbw.int matches 10..1000 run scoreboard players set #TIME.BED jkbw.int 600
 execute unless score #TIME.FIGHT jkbw.int matches 10..1000 run scoreboard players set #TIME.FIGHT jkbw.int 600
 execute unless score #TIME.END jkbw.int matches 10..1000 run scoreboard players set #TIME.END jkbw.int 600
-execute unless score #FFL_INTERVAL jkbw.int matches 1..30 run scoreboard players set #FFL_INTERVAL jkbw.int 5
+execute unless score #BOF_INTERVAL jkbw.int matches 1..30 run scoreboard players set #BOF_INTERVAL jkbw.int 5
 
 scoreboard players operation #time jkbw.int = #TIME.END jkbw.int
 scoreboard players operation #time6 jkbw.int = #time jkbw.int

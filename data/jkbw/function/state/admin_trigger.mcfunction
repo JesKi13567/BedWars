@@ -23,7 +23,7 @@ execute as @s[scores={jkbw.Admin.Trigger=114}] run function jkbw:state/0/panel/c
 execute as @s[scores={jkbw.Admin.Trigger=115}] run function jkbw:state/0/panel/contents/map/rotation/rotate
 
 execute as @s[scores={jkbw.Admin.Trigger=142}] run function jkbw:state/0/button/cycle {id: 'set_time', op: 'add', range: '4..', reset: '0', f: 'jkbw:state/0/button/set_time/show'}
-execute as @s[scores={jkbw.Admin.Trigger=143}] run function jkbw:state/0/button/cycle {id: 'exp_mode', op: 'add', range: '8..', reset: '0', f: 'jkbw:state/0/button/show/exp_mode'}
+execute as @s[scores={jkbw.Admin.Trigger=143}] run function jkbw:state/0/button/cycle {id: 'exp_mode', op: 'add', range: '9..', reset: '0', f: 'jkbw:state/0/button/show/exp_mode'}
 execute as @s[scores={jkbw.Admin.Trigger=144}] run function jkbw:state/0/button/cycle {id: 'res_rate.order', op: 'add', range: '7..', reset: '1', f: 'jkbw:state/0/button/show/res_rate'}
 execute as @s[scores={jkbw.Admin.Trigger=145}] run function jkbw:state/0/button/cycle {id: 'res_mode', op: 'add', range: '3..', reset: '0', f: 'jkbw:state/0/button/show/res_mode'}
 execute as @s[scores={jkbw.Admin.Trigger=146}] run function jkbw:state/0/button/team/count/update__
@@ -36,7 +36,7 @@ execute as @s[scores={jkbw.Admin.Trigger=210}] run function jkbw:state/0/panel/c
 execute as @s[scores={jkbw.Admin.Trigger=211}] run function jkbw:state/0/panel/contents/switch/others {type: 'spear', num: 3}
 execute as @s[scores={jkbw.Admin.Trigger=212}] run function jkbw:state/0/panel/contents/switch/others {type: 'potion', num: 2}
 execute as @s[scores={jkbw.Admin.Trigger=213}] run function jkbw:state/0/panel/contents/switch/others {type: 'glider', num: 2}
-execute as @s[scores={jkbw.Admin.Trigger=214}] run function jkbw:state/0/panel/contents/switch/others {type: 'invisible_item', num: 3}
+execute as @s[scores={jkbw.Admin.Trigger=214}] run function jkbw:state/0/panel/contents/switch/others {type: 'invisible_item', num: 2}
 
 execute as @s[scores={jkbw.Admin.Trigger=300..400}] run function jkbw:state/0/shop/set/5/tier
 

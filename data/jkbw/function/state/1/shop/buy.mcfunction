@@ -1,4 +1,4 @@
-clear @s #jkbw:invisible
+clear @s brick
 
 # 清理购买标签
 execute unless score #test_mode jkbw.int matches 1 run tag @s remove jkbw_buy_success

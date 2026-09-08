@@ -22,7 +22,7 @@ scoreboard players set #res_mode jkbw.int 0
 scoreboard players set #attack_speed jkbw.int 1
 # bed_type 床种类 0 床 1 夹心 2 蛋糕
 scoreboard players set #bed_type jkbw.int 0
-# exp_mode 实验模式 0 无 1 疾速 2 无跳跃 3 小人国 4 被迫零元购 5 摸摸 6 色盲 7 枪械
+# exp_mode 实验模式 0 无 1 疾速 2 无跳跃 3 小人国 4 幸运之床 5 摸摸 6 色盲 7 枪械 8 零摩擦
 scoreboard players set #exp_mode jkbw.int 0
 # set_time 设置时间 0 day 1 noon 2 night 3 midnight
 scoreboard players set #set_time jkbw.int 0
@@ -53,8 +53,8 @@ scoreboard players set #RES.SPAWN.urf.diamond jkbw.int 15
 scoreboard players set #RES.MINUS.urf.diamond jkbw.int 1
 scoreboard players set #RES.SPAWN.urf.emerald jkbw.int 5
 scoreboard players set #RES.MINUS.urf.emerald jkbw.int 1
-# 被迫零元购的时间间隔
-scoreboard players set #FFL_INTERVAL jkbw.int 5
+# 幸运之床的时间间隔
+scoreboard players set #BOF_INTERVAL jkbw.int 5
 # 盾模式 0 禁用 1 启用 2 附剑上
 scoreboard players set #ENABLE.shield jkbw.int 1
 # 矛模式 0 禁用 1 启用 2 替换
@@ -63,7 +63,7 @@ scoreboard players set #ENABLE.spear jkbw.int 0
 scoreboard players set #ENABLE.potion jkbw.int 0
 # 滑翔模式 0 禁用 1 启用
 scoreboard players set #ENABLE.glider jkbw.int 0
-# 隐形物品种类 0 无 1 板砖 2 望远镜
+# 隐形物品 0 禁用 1 启用
 scoreboard players set #ENABLE.invisible_item jkbw.int 1
 # 团队升级最大次数
 scoreboard players set #TEAM_UPDATE.dragon jkbw.int 1

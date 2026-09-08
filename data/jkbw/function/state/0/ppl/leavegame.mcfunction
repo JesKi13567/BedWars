@@ -21,5 +21,8 @@ attribute @s block_interaction_range base reset
 attribute @s entity_interaction_range base reset
 attribute @s attack_damage base reset
 attribute @s attack_knockback base reset
+attribute @s knockback_resistance base reset
+attribute @s air_drag_modifier base reset
+attribute @s friction_modifier base reset
 execute if score #tutorial jkbw.int matches 1.. run gamemode adventure @s
 function jkbw:state/0/panel/contents/tp/back with storage jk:bw Map.cur

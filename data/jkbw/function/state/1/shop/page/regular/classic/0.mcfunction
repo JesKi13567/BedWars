@@ -1,3 +1,4 @@
+execute unless items entity @s enderchest.* spyglass[custom_data={jkbw: ["shop", "spyglass"]}] run function jkbw:state/1/shop/real/item/spyglass
 # 选择页面
 scoreboard players set @s jkbw.Player.Page.Switched 1
 execute unless items entity @s enderchest.* *[custom_data={jkbw: ["shop", "gui", "-1"]}] run scoreboard players set @s jkbw.Player.Page -1
