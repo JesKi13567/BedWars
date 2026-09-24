@@ -1,10 +1,1 @@
-{
-  "values": [
-    "player_attack",
-    "trident",
-    "mace_smash",
-    "spear",
-    "arrow",
-    "jkbw:gun"
-  ]
-}
+{"values":["arrow","jkbw:gun","mace_smash","player_attack","spear","trident"]}

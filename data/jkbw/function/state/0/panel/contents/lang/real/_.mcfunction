@@ -1,5 +1,5 @@
 playsound block.note_block.bell player @s
-data modify storage jk:bw txt.ready.version.num set value "v1.2.2 - MC26.2"
+data modify storage jk:bw txt.ready.version.num set value "v1.2.3 - MC26.3"
 data modify storage jk:bw txt.shop.team.knockback.p0 set from storage jk:bw txt.shop.team.enchant.p0
 data modify storage jk:bw txt.shop.team.sharpness.p0 set from storage jk:bw txt.shop.team.enchant.p0
 data modify storage jk:bw txt.sidebar.blue set from storage jk:bw txt.color.blue

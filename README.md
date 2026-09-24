@@ -1,5 +1,5 @@
 # JK's BedWars ToolPack -- 起床战争工具包
-## v1.2.2 for MC26.2
+## v1.2.3 for MC26.3
 - [简体中文](#zh_cn)
 - [English](#en_us)
 

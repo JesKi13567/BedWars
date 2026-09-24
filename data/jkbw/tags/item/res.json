@@ -1,8 +1,1 @@
-{
-  "values": [
-    "iron_ingot",
-    "gold_ingot",
-    "diamond",
-    "emerald"
-  ]
-}
+{"values":["diamond","emerald","gold_ingot","iron_ingot"]}

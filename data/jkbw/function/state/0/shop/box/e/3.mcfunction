@@ -20,21 +20,21 @@ setblock 10110210 5 10110222 shulker_box[facing=north]{Items: [\
 {Slot: 25b, id: "cod", count: 1, components: {custom_data: {jkbw: ["shop", "head", "7"]}}}, \
 ]}
 
-item modify block 10110210 5 10110222 container.0 {function: "set_name", entity: "this", name: [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.list.1.name", italic: false, color: "white"}]}
-item modify block 10110210 5 10110222 container.1 {function: "set_name", entity: "this", name: [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.list.2.name", italic: false, color: "white"}]}
-item modify block 10110210 5 10110222 container.2 {function: "set_name", entity: "this", name: [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.list.3.name", italic: false, color: "white"}]}
-item modify block 10110210 5 10110222 container.3 {function: "set_name", entity: "this", name: [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.list.4.name", italic: false, color: "white"}]}
+item modify block 10110210 5 10110222 container.0 {type: "set_name", entity: "this", name: [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.list.1.name", italic: false, color: "white"}]}
+item modify block 10110210 5 10110222 container.1 {type: "set_name", entity: "this", name: [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.list.2.name", italic: false, color: "white"}]}
+item modify block 10110210 5 10110222 container.2 {type: "set_name", entity: "this", name: [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.list.3.name", italic: false, color: "white"}]}
+item modify block 10110210 5 10110222 container.3 {type: "set_name", entity: "this", name: [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.list.4.name", italic: false, color: "white"}]}
 
-item modify block 10110210 5 10110222 container.0 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110210 5 10110222 container.0 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.list.1.p0", italic: false, color: "white"}]]}
-item modify block 10110210 5 10110222 container.1 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110210 5 10110222 container.1 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.list.2.p0", italic: false, color: "white"}], \
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.list.2.p1", italic: false, color: "white"}]]}
-item modify block 10110210 5 10110222 container.2 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110210 5 10110222 container.2 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.list.3.p0", italic: false, color: "white"}]]}
-item modify block 10110210 5 10110222 container.3 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110210 5 10110222 container.3 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.list.4.p0", italic: false, color: "white"}]]}
 
-item modify block 10110210 5 10110222 container.6 {function: "set_name", entity: "this", name: [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.bought", italic: false, color: "gray"}, " 1"]}
-item modify block 10110210 5 10110222 container.7 {function: "set_name", entity: "this", name: [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.bought", italic: false, color: "gray"}, " 2"]}
-item modify block 10110210 5 10110222 container.8 {function: "set_name", entity: "this", name: [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.bought", italic: false, color: "gray"}, " 3"]}
+item modify block 10110210 5 10110222 container.6 {type: "set_name", entity: "this", name: [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.bought", italic: false, color: "gray"}, " 1"]}
+item modify block 10110210 5 10110222 container.7 {type: "set_name", entity: "this", name: [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.bought", italic: false, color: "gray"}, " 2"]}
+item modify block 10110210 5 10110222 container.8 {type: "set_name", entity: "this", name: [{storage: "jk:bw", interpret: true, nbt: "txt.shop.trap.bought", italic: false, color: "gray"}, " 3"]}

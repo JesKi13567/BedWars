@@ -1,12 +1,12 @@
 # 转换会被清除的方块为其他替代
-$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) red_concrete replace red_wool
-$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) blue_concrete replace blue_wool
-$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) green_concrete replace green_wool
-$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) yellow_concrete replace yellow_wool
-$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) cyan_concrete replace cyan_wool
-$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) white_concrete replace white_wool
-$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) pink_concrete replace pink_wool
-$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) gray_concrete replace gray_wool
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) red_wool_slab[type=double] replace red_wool
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) blue_wool_slab[type=double] replace blue_wool
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) green_wool_slab[type=double] replace green_wool
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) yellow_wool_slab[type=double] replace yellow_wool
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) cyan_wool_slab[type=double] replace cyan_wool
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) white_wool_slab[type=double] replace white_wool
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) pink_wool_slab[type=double] replace pink_wool
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) gray_wool_slab[type=double] replace gray_wool
 
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) red_concrete replace red_terracotta
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) blue_concrete replace blue_terracotta

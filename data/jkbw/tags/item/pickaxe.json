@@ -1,8 +1,1 @@
-{
-  "values": [
-    "wooden_pickaxe",
-    "iron_pickaxe",
-    "golden_pickaxe",
-    "diamond_pickaxe"
-  ]
-}
+{"values":["diamond_pickaxe","golden_pickaxe","iron_pickaxe","wooden_pickaxe"]}

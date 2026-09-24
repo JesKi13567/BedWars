@@ -37,6 +37,7 @@ execute as @s[scores={jkbw.Player.Damage.Type.last=109}] run tellraw @a [{transl
 execute as @s[scores={jkbw.Player.Damage.Type.last=110}] run tellraw @a [{translate: "death.attack.explosion.player", with: [{selector: "@s"}, {selector: "@a[limit=1, tag=jkbw_murder]"}]}]
 execute as @s[scores={jkbw.Player.Damage.Type.last=111}] run tellraw @a [{translate: "death.attack.witherSkull", with: [{selector: "@s"}, {selector: "@a[limit=1, tag=jkbw_murder]"}]}]
 execute as @s[scores={jkbw.Player.Damage.Type.last=112}] run tellraw @a [{translate: "death.attack.arrow", with: [{selector: "@s"}, {selector: "@a[limit=1, tag=jkbw_murder]"}]}]
+execute as @s[scores={jkbw.Player.Damage.Type.last=113}] run tellraw @a [{translate: "death.attack.player.item", with: [{selector: "@s"}, {selector: "@a[limit=1, tag=jkbw_murder]"}, {translate: "entity.minecraft.wind_charge"}]}]
 
 execute as @s[scores={jkbw.Player.Damage.Type.last=201}] run tellraw @a [{translate: "death.attack.explosion.player", with: [{selector: "@s"}, {selector: "@a[limit=1, tag=jkbw_murder]"}]}]
 execute as @s[scores={jkbw.Player.Damage.Type.last=202}] run tellraw @a ["", {selector: "@s"}, {storage: "jk:bw", interpret: true, nbt: "txt.death.entity.p0"}, {selector: "@p[tag=jkbw_murder]"}, {storage: "jk:bw", interpret: true, nbt: "txt.death.entity.p1"}, {translate: "entity.minecraft.iron_golem", color: "gold"}, {storage: "jk:bw", interpret: true, nbt: "txt.death.entity.p2"}]

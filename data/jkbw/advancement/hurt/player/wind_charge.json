@@ -1,0 +1,1 @@
+{"criteria":{"jkpof":{"trigger":"entity_hurt_player","conditions":{"damage":{"type":{"tags":[{"expected":true,"id":"wind_charge"}],"source_entity":{"entity_type":"player"}}}}}},"rewards":{"function":"jkbw:state/1/hurt/player/wind_charge"}}

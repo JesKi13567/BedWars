@@ -14,40 +14,40 @@ setblock 10110209 6 10110222 shulker_box[facing=north]{Items: [\
 {Slot: 19b, id: "golden_chestplate", count: 1, components: {custom_data: {jkbw: ["shop", "gui", "8"]}, attribute_modifiers: []}}, \
 ]}
 
-item modify block 10110209 6 10110222 container.0 {function: "set_name", entity: "this", name: [\
+item modify block 10110209 6 10110222 container.0 {type: "set_name", entity: "this", name: [\
 {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.occupy.p0", color: "gray", italic: false}, {keybind: "key.sneak", color: "white"}, {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.occupy.p1"}]}
 
-item modify block 10110209 6 10110222 container.1 {function: "set_name", entity: "this", name: [\
+item modify block 10110209 6 10110222 container.1 {type: "set_name", entity: "this", name: [\
 {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.menu.back", italic: false, color: "white"}]}
 
-item modify block 10110209 6 10110222 container.8 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110209 6 10110222 container.8 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, "0"]]}
 
-item modify block 10110209 6 10110222 container.9 {function: "set_name", entity: "this", name: [\
+item modify block 10110209 6 10110222 container.9 {type: "set_name", entity: "this", name: [\
 {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.menu.blocks_tools", italic: false, color: "white"}]}
 
-item modify block 10110209 6 10110222 container.10 {function: "set_name", entity: "this", name: [\
+item modify block 10110209 6 10110222 container.10 {type: "set_name", entity: "this", name: [\
 {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.menu.weapons_armor_potions", italic: false, color: "white"}]}
 
-item modify block 10110209 6 10110222 container.12 {function: "set_name", entity: "this", name: [\
+item modify block 10110209 6 10110222 container.12 {type: "set_name", entity: "this", name: [\
 {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.menu.specials", italic: false, color: "white"}]}
 
-item modify block 10110209 6 10110222 container.13 {function: "set_name", entity: "this", name: [\
+item modify block 10110209 6 10110222 container.13 {type: "set_name", entity: "this", name: [\
 {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.menu.rotating_items", italic: false, color: "white"}]}
 
-item modify block 10110209 6 10110222 container.14 {function: "set_name", entity: "this", name: [\
+item modify block 10110209 6 10110222 container.14 {type: "set_name", entity: "this", name: [\
 {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.menu.upgrade", italic: false, color: "white"}]}
 
-item modify block 10110209 6 10110222 container.16 {function: "set_name", entity: "this", name: [\
+item modify block 10110209 6 10110222 container.16 {type: "set_name", entity: "this", name: [\
 {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.menu.hat", italic: false, color: "white"}]}
-item modify block 10110209 6 10110222 container.16 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110209 6 10110222 container.16 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, "0"]]}
 
-item modify block 10110209 6 10110222 container.17 {function: "set_name", entity: "this", name: [\
+item modify block 10110209 6 10110222 container.17 {type: "set_name", entity: "this", name: [\
 {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.menu.my_chest", italic: false, color: "white"}]}
 
-item modify block 10110209 6 10110222 container.18 {function: "set_name", entity: "this", name: [\
+item modify block 10110209 6 10110222 container.18 {type: "set_name", entity: "this", name: [\
 {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.menu.weapons", italic: false, color: "white"}]}
 
-item modify block 10110209 6 10110222 container.19 {function: "set_name", entity: "this", name: [\
+item modify block 10110209 6 10110222 container.19 {type: "set_name", entity: "this", name: [\
 {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.menu.armor", italic: false, color: "white"}]}

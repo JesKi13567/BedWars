@@ -64,13 +64,13 @@ attribute @s[scores={jkbw.Player.ArmorLevels=2}] armor base set 11
 attribute @s[scores={jkbw.Player.ArmorLevels=3}] armor base set 13
 
 execute as @s[tag=jkbw_effect_invisible, nbt={OnGround: true}] run particle block{block_state: stone} ~ ~ ~ 0.1 0 0.1 0.05 4
-item modify entity @s[tag=jkbw_effect_invisible] armor.head {function: "set_components", components: {item_model: "air", equippable: {slot: "head"}}}
-item modify entity @s[tag=jkbw_effect_invisible] armor.chest {function: "set_components", components: {item_model: "air", equippable: {slot: "chest"}}}
-item modify entity @s[tag=jkbw_effect_invisible] armor.legs {function: "set_components", components: {item_model: "air", equippable: {slot: "legs"}}}
-item modify entity @s[tag=jkbw_effect_invisible] armor.feet {function: "set_components", components: {item_model: "air", equippable: {slot: "feet"}}}
+item modify entity @s[tag=jkbw_effect_invisible] armor.head {type: "set_components", components: {item_model: "air", equippable: {slot: "head"}}}
+item modify entity @s[tag=jkbw_effect_invisible] armor.chest {type: "set_components", components: {item_model: "air", equippable: {slot: "chest"}}}
+item modify entity @s[tag=jkbw_effect_invisible] armor.legs {type: "set_components", components: {item_model: "air", equippable: {slot: "legs"}}}
+item modify entity @s[tag=jkbw_effect_invisible] armor.feet {type: "set_components", components: {item_model: "air", equippable: {slot: "feet"}}}
 
 # 滑翔模式
-execute if score #ENABLE.glider jkbw.int matches 1 if score #time_state jkbw.int matches 1.. unless items entity @s armor.chest *[glider] run item modify entity @s armor.chest {function: "set_components", components: {glider: {}, lore: [{type: "object", atlas: "items", sprite: "item/elytra", color: "white", italic: false}]}}
+execute if score #ENABLE.glider jkbw.int matches 1 if score #time_state jkbw.int matches 1.. unless items entity @s armor.chest *[glider] run item modify entity @s armor.chest {type: "set_components", components: {glider: {}, lore: [{type: "object", atlas: "items", sprite: "item/elytra", color: "white", italic: false}]}}
 
 ## 按队伍
 execute as @s[team=jkbw.red] run function jkbw:state/1/team/loop/with {team: 'red', color: 11546150}

@@ -1,10 +1,1 @@
-{
-  "values": [
-    "marker",
-    "item_display",
-    "text_display",
-    "block_display",
-    "interaction",
-    "item"
-  ]
-}
+{"values":["block_display","interaction","item","item_display","marker","text_display"]}

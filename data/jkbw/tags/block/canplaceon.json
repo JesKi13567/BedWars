@@ -1,15 +1,1 @@
-{
-  "values": [
-    "#jkbw:candestroy",
-    "#wool",
-    "#wool_carpets",
-    "#impermeable",
-    "#mineable/axe",
-    "#mineable/pickaxe",
-    "#mineable/shovel",
-    "#mineable/hoe",
-    "bedrock",
-    "sea_lantern",
-    "slime_block"
-  ]
-}
+{"values":["#impermeable","#jkbw:candestroy","#mineable/axe","#mineable/hoe","#mineable/pickaxe","#mineable/shovel","#wool","#wool_carpets","#wool_slabs","#wool_stairs","beacon","bedrock","sea_lantern","slime_block"]}

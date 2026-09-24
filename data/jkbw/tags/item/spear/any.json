@@ -1,6 +1,1 @@
-{
-  "values": [
-    "wooden_spear",
-    "#jkbw:spear/not_wood"
-  ]
-}
+{"values":["#jkbw:spear/not_wood","wooden_spear"]}

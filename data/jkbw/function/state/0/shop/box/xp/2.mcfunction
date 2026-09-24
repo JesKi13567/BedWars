@@ -20,102 +20,102 @@ setblock 10110221 5 10110222 black_shulker_box[facing=north]{Items: [\
 {Slot: 20b, id: "diamond_boots", count: 1, components: {custom_data: {jkbw: ["shop", "item", "armor_diamond"]}, attribute_modifiers: []}}, \
 ]}
 
-item modify block 10110221 5 10110222 container.0 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.0 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPstone_sword", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
-item modify block 10110221 5 10110222 container.1 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.1 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPiron_sword", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
-item modify block 10110221 5 10110222 container.2 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.2 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPdiamond_sword", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
-item modify block 10110221 5 10110222 container.3 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.3 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPstick", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
-item modify block 10110221 5 10110222 container.4 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.4 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPshield", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
-item modify block 10110221 5 10110222 container.5 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.5 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPbow1", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
-item modify block 10110221 5 10110222 container.6 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.6 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPbow2", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
-item modify block 10110221 5 10110222 container.7 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.7 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPbow3", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
-item modify block 10110221 5 10110222 container.8 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.8 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XParrow", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
-item modify block 10110221 5 10110222 container.9 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.9 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPstone_spear", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
-item modify block 10110221 5 10110222 container.10 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.10 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPiron_spear", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
-item modify block 10110221 5 10110222 container.11 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.11 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPdiamond_spear", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
-item modify block 10110221 5 10110222 container.14 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.14 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPpotion_speed", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
-item modify block 10110221 5 10110222 container.15 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.15 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPpotion_jump_boost", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
-item modify block 10110221 5 10110222 container.16 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.16 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPpotion_invisibility", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
-item modify block 10110221 5 10110222 container.17 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.17 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPpotion_luck", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}], \
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.potion_luck", italic: false, color: "yellow"}]]}
 
-item modify block 10110221 5 10110222 container.18 {function: "set_name", entity: "this", name: \
+item modify block 10110221 5 10110222 container.18 {type: "set_name", entity: "this", name: \
 [{storage: "jk:bw", interpret: true, nbt: "txt.global.permanent", italic: false, color: "white"}, {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.armor.1"}]}
-item modify block 10110221 5 10110222 container.18 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.18 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.armor.p0", italic: false, color: "gray"}], \
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.death_keep", italic: false, color: "dark_purple"}], \
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XParmor1", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
-item modify block 10110221 5 10110222 container.19 {function: "set_name", entity: "this", name: \
+item modify block 10110221 5 10110222 container.19 {type: "set_name", entity: "this", name: \
 [{storage: "jk:bw", interpret: true, nbt: "txt.global.permanent", italic: false, color: "white"}, {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.armor.2"}]}
-item modify block 10110221 5 10110222 container.19 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.19 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.armor.p0", italic: false, color: "gray"}], \
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.death_keep", italic: false, color: "dark_purple"}], \
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XParmor2", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
-item modify block 10110221 5 10110222 container.20 {function: "set_name", entity: "this", name: \
+item modify block 10110221 5 10110222 container.20 {type: "set_name", entity: "this", name: \
 [{storage: "jk:bw", interpret: true, nbt: "txt.global.permanent", italic: false, color: "white"}, {storage: "jk:bw", interpret: true, nbt: "txt.shop.item.armor.3"}]}
-item modify block 10110221 5 10110222 container.20 {function: "set_lore", entity: "this", mode: "replace_all", lore: [\
+item modify block 10110221 5 10110222 container.20 {type: "set_lore", entity: "this", mode: "replace_all", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.armor.p0", italic: false, color: "gray"}], \
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.death_keep", italic: false, color: "dark_purple"}], \
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XParmor3", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
 
 loot replace block 10110221 5 10110222 container.21 loot jkbw:gun/magnum
-item modify block 10110221 5 10110222 container.21 {function: "set_lore", entity: "this", mode: "append", lore: [\
+item modify block 10110221 5 10110222 container.21 {type: "set_lore", entity: "this", mode: "append", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPgun_magnum", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
-item modify block 10110221 5 10110222 container.21 {function: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_magnum"]}}}
+item modify block 10110221 5 10110222 container.21 {type: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_magnum"]}}}
 
 loot replace block 10110221 5 10110222 container.22 loot jkbw:gun/rifle
-item modify block 10110221 5 10110222 container.22 {function: "set_lore", entity: "this", mode: "append", lore: [\
+item modify block 10110221 5 10110222 container.22 {type: "set_lore", entity: "this", mode: "append", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPgun_rifle", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
-item modify block 10110221 5 10110222 container.22 {function: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_rifle"]}}}
+item modify block 10110221 5 10110222 container.22 {type: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_rifle"]}}}
 
 loot replace block 10110221 5 10110222 container.23 loot jkbw:gun/submachinegun
-item modify block 10110221 5 10110222 container.23 {function: "set_lore", entity: "this", mode: "append", lore: [\
+item modify block 10110221 5 10110222 container.23 {type: "set_lore", entity: "this", mode: "append", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPgun_submachinegun", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
-item modify block 10110221 5 10110222 container.23 {function: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_submachinegun"]}}}
+item modify block 10110221 5 10110222 container.23 {type: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_submachinegun"]}}}
 
 loot replace block 10110221 5 10110222 container.24 loot jkbw:gun/shotgun
-item modify block 10110221 5 10110222 container.24 {function: "set_lore", entity: "this", mode: "append", lore: [\
+item modify block 10110221 5 10110222 container.24 {type: "set_lore", entity: "this", mode: "append", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPgun_shotgun", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
-item modify block 10110221 5 10110222 container.24 {function: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_shotgun"]}}}
+item modify block 10110221 5 10110222 container.24 {type: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_shotgun"]}}}
 
 loot replace block 10110221 5 10110222 container.25 loot jkbw:gun/flamethower
-item modify block 10110221 5 10110222 container.25 {function: "set_lore", entity: "this", mode: "append", lore: [\
+item modify block 10110221 5 10110222 container.25 {type: "set_lore", entity: "this", mode: "append", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPgun_flamethower", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
-item modify block 10110221 5 10110222 container.25 {function: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_flamethower"]}}}
+item modify block 10110221 5 10110222 container.25 {type: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_flamethower"]}}}
 
 loot replace block 10110221 5 10110222 container.26 loot jkbw:gun/sniperrifle
-item modify block 10110221 5 10110222 container.26 {function: "set_lore", entity: "this", mode: "append", lore: [\
+item modify block 10110221 5 10110222 container.26 {type: "set_lore", entity: "this", mode: "append", lore: [\
 [{storage: "jk:bw", interpret: true, nbt: "txt.shop.item.cost", italic: false, color: "gray"}, {score: {name: "#XPgun_sniperrifle", objective: "jkbw.int"}, color: "aqua"}, " ", {storage: "jk:bw", interpret: true, nbt: "txt.global.lvl", italic: false, color: "aqua"}]]}
-item modify block 10110221 5 10110222 container.26 {function: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_sniperrifle"]}}}
+item modify block 10110221 5 10110222 container.26 {type: "set_components", components: {custom_data: {jkbw: ["shop", "item", "gun_sniperrifle"]}}}
