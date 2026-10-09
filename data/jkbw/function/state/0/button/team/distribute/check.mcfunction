@@ -1,11 +1,12 @@
-# 人数过多，禁止玩家准备
-execute if score #teams jkbw.int matches 2 run function jkbw:state/0/button/team/distribute/sub/2
-execute if score #teams jkbw.int matches 3 run function jkbw:state/0/button/team/distribute/sub/3
-execute if score #teams jkbw.int matches 4 run function jkbw:state/0/button/team/distribute/sub/4
-execute if score #teams jkbw.int matches 5 run function jkbw:state/0/button/team/distribute/sub/5
-execute if score #teams jkbw.int matches 6 run function jkbw:state/0/button/team/distribute/sub/6
-execute if score #teams jkbw.int matches 7 run function jkbw:state/0/button/team/distribute/sub/7
-execute if score #teams jkbw.int matches 8 run function jkbw:state/0/button/team/distribute/sub/8
+# 队伍人数达上限，禁止玩家准备
+execute if score #team_red jkbw.int >= #team_cap jkbw.int if items entity @s armor.chest leather_chestplate[custom_data={jkbw: ["team_color", "red"]}] unless score @s jkbw.Team.Select matches 1 run function jkbw:state/0/button/team/distribute/cannot
+execute if score #team_blue jkbw.int >= #team_cap jkbw.int if items entity @s armor.chest leather_chestplate[custom_data={jkbw: ["team_color", "blue"]}] unless score @s jkbw.Team.Select matches 2 run function jkbw:state/0/button/team/distribute/cannot
+execute if score #teams jkbw.int matches 3.. if score #team_green jkbw.int >= #team_cap jkbw.int if items entity @s armor.chest leather_chestplate[custom_data={jkbw: ["team_color", "green"]}] unless score @s jkbw.Team.Select matches 3 run function jkbw:state/0/button/team/distribute/cannot
+execute if score #teams jkbw.int matches 4.. if score #team_yellow jkbw.int >= #team_cap jkbw.int if items entity @s armor.chest leather_chestplate[custom_data={jkbw: ["team_color", "yellow"]}] unless score @s jkbw.Team.Select matches 4 run function jkbw:state/0/button/team/distribute/cannot
+execute if score #teams jkbw.int matches 5.. if score #team_cyan jkbw.int >= #team_cap jkbw.int if items entity @s armor.chest leather_chestplate[custom_data={jkbw: ["team_color", "cyan"]}] unless score @s jkbw.Team.Select matches 5 run function jkbw:state/0/button/team/distribute/cannot
+execute if score #teams jkbw.int matches 6.. if score #team_white jkbw.int >= #team_cap jkbw.int if items entity @s armor.chest leather_chestplate[custom_data={jkbw: ["team_color", "white"]}] unless score @s jkbw.Team.Select matches 6 run function jkbw:state/0/button/team/distribute/cannot
+execute if score #teams jkbw.int matches 7.. if score #team_pink jkbw.int >= #team_cap jkbw.int if items entity @s armor.chest leather_chestplate[custom_data={jkbw: ["team_color", "pink"]}] unless score @s jkbw.Team.Select matches 7 run function jkbw:state/0/button/team/distribute/cannot
+execute if score #teams jkbw.int matches 8.. if score #team_gray jkbw.int >= #team_cap jkbw.int if items entity @s armor.chest leather_chestplate[custom_data={jkbw: ["team_color", "gray"]}] unless score @s jkbw.Team.Select matches 8 run function jkbw:state/0/button/team/distribute/cannot
 
 # 确认队伍
 execute if items entity @s armor.chest leather_chestplate[custom_data={jkbw: ["team_color", "red"]}] run scoreboard players set @s jkbw.Team.Select 1

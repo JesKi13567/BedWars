@@ -8,7 +8,7 @@ execute if score #res_mode jkbw.int matches 0..1 run function jkbw:state/1/team/
 execute as @e[type=text_display, tag=jkbw_chest_shop] at @s unless block ~ ~ ~ ender_chest run function jkbw:state/1/shop/still
 
 # 资源点与出生点附近禁止建造
-execute as @e[type=text_display, tag=jkbw_point] at @s run function jkbw:state/1/special/point
+execute as @e[type=text_display, tag=jkbw_point] at @s if entity @a[limit=1, distance=..20, gamemode=adventure] run function jkbw:state/1/special/point
 
 # 掉落物
 execute as @e[type=item, tag=!jkbw] run function jkbw:state/1/special/item/dropped
