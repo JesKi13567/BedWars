@@ -1,0 +1,18 @@
+# 行尾规范化
+* text=auto eol=crlf
+
+*.mcfunction text eol=crlf
+*.json       text eol=crlf
+*.mcmeta     text eol=crlf
+*.md         text eol=crlf
+
+*.nbt binary
+*.png binary
+
+# 打包剔除
+/.github/       export-ignore
+/.gitattributes export-ignore
+/.gitignore     export-ignore
+/spyglass.json  export-ignore
+/update_log.md  export-ignore
+/data/jkbw/function/test/player.mcfunction export-ignore

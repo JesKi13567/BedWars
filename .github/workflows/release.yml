@@ -1,0 +1,92 @@
+name: Release
+
+# 提交信息必须是：<游戏版本标签>-v<包版本>-release，例如
+#   MC26.3-v1.2.3-release
+#   MC26.3-26.4-v1.2.3-release
+#   MC1.21.11+-v1.2.3-release
+#   MC1.21.11~26.1.x-v1.2.3-release
+# 不符合该格式的提交（缺少游戏版本标签、缺少 -release、带空格等）不会打包。
+# 规则：
+#   · tag 只取 v<版本> 部分（MC1.21.11-v1.2.3-release → 打 tag v1.2.3）
+#   · 游戏版本标签原样保留，用于资产名 jkbw.<tag>.For.<游戏版本标签>.zip
+#   · tag 已存在时，把新的 zip 追加到同一个 Release（同名资产覆盖）
+#   · 首次为该 tag 建 Release 时，备注取 update_log.md 里对应版本的一节；
+#     找不到则取文件最上面的一节
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Parse commit message
+        id: parse
+        env:
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+        run: |
+          subject="$(printf '%s\n' "$COMMIT_MESSAGE" | head -n 1)"
+          if [[ ! "$subject" =~ ^([A-Za-z0-9._+~-]+)-(v[0-9]+(\.[0-9]+)*)-release$ ]]; then
+            echo "提交信息不是 <游戏版本标签>-v<包版本>-release，跳过。"
+            exit 0
+          fi
+          mc="${BASH_REMATCH[1]}"
+          ver="${BASH_REMATCH[2]}"
+          echo "tag=$ver" >> "$GITHUB_OUTPUT"
+          echo "mc=$mc" >> "$GITHUB_OUTPUT"
+          echo "游戏版本=$mc，tag=$ver"
+
+      - name: Build package
+        id: build
+        if: steps.parse.outputs.tag != ''
+        env:
+          TAG: ${{ steps.parse.outputs.tag }}
+          MC: ${{ steps.parse.outputs.mc }}
+        run: |
+          file="jkbw.${TAG}.For.${MC}.zip"
+          git archive --format=zip -o "$file" HEAD
+          echo "file=$file" >> "$GITHUB_OUTPUT"
+          ls -l "$file"
+
+      - name: Extract release notes
+        if: steps.parse.outputs.tag != ''
+        env:
+          TAG: ${{ steps.parse.outputs.tag }}
+        run: |
+          awk -v ver="$TAG" '
+            !grab && (index($0, "## " ver " ") == 1 || $0 == "## " ver) { grab = 1; print; next }
+            grab && index($0, "## ") == 1 { exit }
+            grab { print }
+          ' update_log.md > notes.md
+          if [ ! -s notes.md ]; then
+            echo "update_log.md 里没有 $TAG 的一节，改用最新一节。"
+            awk '
+              index($0, "## ") == 1 { n++ }
+              n >= 2 { exit }
+              n == 1 { print }
+            ' update_log.md > notes.md
+          fi
+          echo "—— release notes ——"
+          head -n 20 notes.md
+
+      - name: Publish
+        if: steps.parse.outputs.tag != ''
+        env:
+          TAG: ${{ steps.parse.outputs.tag }}
+          FILE: ${{ steps.build.outputs.file }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "Release $TAG 已存在，上传资产 $FILE"
+            gh release upload "$TAG" "$FILE" --clobber
+          else
+            echo "新建 Release $TAG"
+            gh release create "$TAG" "$FILE" --title "$TAG" --notes-file notes.md
+          fi

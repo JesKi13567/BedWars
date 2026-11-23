@@ -1,0 +1,62 @@
+name: Bug report
+description: 报告数据包问题 / Report a datapack issue
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 确认 / Checklist
+      options:
+        - label: 已使用最新版数据包，且游戏为最新版或 LTS 版 / I use the latest datapack on the latest or LTS game version
+          required: true
+        - label: 没有相同或类似的 issue / No identical or similar issue
+          required: true
+  - type: input
+    id: mc-version
+    attributes:
+      label: 游戏版本 / Game version
+      description: 仅受理最新版与 LTS 版。 / Latest or LTS only.
+      placeholder: MC26.3
+    validations:
+      required: true
+  - type: input
+    id: datapack-version
+    attributes:
+      label: 数据包版本 / Datapack version
+      description: 仅受理最新版。 / Latest only.
+      placeholder: v1.2.3
+    validations:
+      required: true
+  - type: dropdown
+    id: loader
+    attributes:
+      label: 运行环境 / Environment
+      description: 单人游戏的客户端也按服务端处理；不考虑 Spigot、Paper 等插件端。 / The singleplayer client counts as a server; plugin servers (Spigot, Paper, …) are out of scope.
+      options:
+        - 原版 Vanilla
+        - Fabric
+        - NeoForge
+        - 其他（在模组列表中注明）/ Other (note in mods list)
+    validations:
+      required: true
+  - type: textarea
+    id: mods
+    attributes:
+      label: 其他数据包与模组 / Other datapacks and mods
+      description: 请贴 `/datapack list` 输出；装了模组请列出。 / Paste `/datapack list`; list installed mods.
+      render: text
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤 / Steps to reproduce
+      placeholder: |
+        1. /function #load
+        2. 观察到 ... / Observed ...
+        3. 日志为 ... / The log shows ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果 / Expected behavior

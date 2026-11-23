@@ -1,0 +1,4 @@
+# 传仓库剔除
+*.zip
+spyglass.json
+data/jkbw/function/test/player.mcfunction

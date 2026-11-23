@@ -9,6 +9,11 @@
 
 本数据包实现了功能丰富的起床战争玩法，服务器管理员仅需提供地图并按游戏内说明完成道具布置，即可开启游戏。
 
+### 支持范围
+- 仅适配最新版与 LTS（长期支持）版游戏，其他版本请先升级。
+- 仅支持原版、Fabric 等直接加载数据包的环境；**不考虑 Spigot、Paper、Purpur 等插件服务端**（含其数据包兼容层）。
+- 反馈问题请使用最新版数据包。
+
 ### 如何使用
 1. 打开存档的 `datapacks` 文件夹，将此 `.zip` 丢进去。
 2. 若为单人存档，此时才进入（若已进入则重进）。
@@ -88,6 +93,11 @@
 BedWars is a classic Minecraft game. Players aim to protect their beds and survive to the end. If their beds are destroyed, they cannot respawn.
 
 This datapack delivers feature-rich BedWars gameplay. Server admins can start the game simply by providing maps and placing items as per in-game instructions.
+
+### Supported Versions
+- Only the latest and LTS (long-term support) game versions are supported; please update first.
+- Only environments that load datapacks directly (Vanilla, Fabric, etc.) are supported. **Plugin servers such as Spigot, Paper and Purpur are not supported**, including their datapack compatibility layers.
+- Please report issues using the latest datapack release.
 
 ### How to Install
 1. Open the world's `datapacks` folder, place this `.zip` inside.

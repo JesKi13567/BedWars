@@ -317,6 +317,7 @@ gamerule advance_weather false
 weather clear
 gamerule advance_time false
 time set 0
+gamerule spectators_generate_chunks true
 gamerule send_command_feedback false
 gamerule immediate_respawn true
 gamerule show_death_messages false
