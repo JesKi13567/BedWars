@@ -8,31 +8,22 @@ body:
     attributes:
       label: 确认 / Checklist
       options:
-        - label: 已使用最新版数据包，且游戏为最新版或 LTS 版 / I use the latest datapack on the latest or LTS game version
+        - label: 我已使用最新版数据包，且游戏为最新版或 LTS 版 / I am using the latest datapack and the latest or LTS game version
           required: true
-        - label: 没有相同或类似的 issue / No identical or similar issue
+        - label: 我确认没有打开的相同或类似 issue / I confirm there are no identical or similar open issues
           required: true
   - type: input
-    id: mc-version
+    id: version
     attributes:
-      label: 游戏版本 / Game version
-      description: 仅受理最新版与 LTS 版。 / Latest or LTS only.
-      placeholder: MC26.3
-    validations:
-      required: true
-  - type: input
-    id: datapack-version
-    attributes:
-      label: 数据包版本 / Datapack version
-      description: 仅受理最新版。 / Latest only.
-      placeholder: v1.2.3
+      label: 版本 / Version
+      description: e.g. v1.2.3 For MC26.3
     validations:
       required: true
   - type: dropdown
-    id: loader
+    id: environment
     attributes:
-      label: 运行环境 / Environment
-      description: 单人游戏的客户端也按服务端处理；不考虑 Spigot、Paper 等插件端。 / The singleplayer client counts as a server; plugin servers (Spigot, Paper, …) are out of scope.
+      label: 运行环境（服务端） / Environment (Server)
+      description: 单人游戏（自己作为房主）也选此项；不考虑 Spigot、Paper 等插件服务端。 / Singleplayer where you host the world also counts as a server; plugin servers such as Spigot or Paper are out of scope.
       options:
         - 原版 Vanilla
         - Fabric
@@ -43,9 +34,8 @@ body:
   - type: textarea
     id: mods
     attributes:
-      label: 其他数据包与模组 / Other datapacks and mods
-      description: 请贴 `/datapack list` 输出；装了模组请列出。 / Paste `/datapack list`; list installed mods.
-      render: text
+      label: 模组列表 / Mods list
+      description: 也包括数据包列表。 / Also include the datapack list.
   - type: textarea
     id: steps
     attributes:
