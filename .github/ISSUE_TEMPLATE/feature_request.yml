@@ -3,6 +3,12 @@ description: 建议新功能 / Suggest a feature
 title: "[Feature] "
 labels: ["enhancement"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢提供思路！标题写一句话总结，细节写下面。
+        Thanks for the idea! Use the title for a one-line summary and put the details below.
+
   - type: textarea
     id: details
     attributes:

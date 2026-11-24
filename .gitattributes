@@ -13,6 +13,7 @@
 /.github/       export-ignore
 /.gitattributes export-ignore
 /.gitignore     export-ignore
-/spyglass.json  export-ignore
 /update_log.md  export-ignore
-/data/jkbw/function/test/player.mcfunction export-ignore
+
+/spyglass.json             export-ignore
+/data/jkbw/function/local/ export-ignore

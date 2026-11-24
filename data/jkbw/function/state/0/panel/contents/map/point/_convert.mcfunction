@@ -25,6 +25,7 @@ $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) cyan_concrete replace cyan_shulker_box
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) white_concrete replace white_shulker_box
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) pink_concrete replace pink_shulker_box
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) gray_concrete replace gray_shulker_box
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) orange_concrete replace orange_shulker_box
 
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) glass replace #jkbw:stained_glass
 
@@ -40,9 +41,20 @@ $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) sea_lantern replace glowstone
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) birch_planks replace fletching_table
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) netherite_block replace ancient_debris
 
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) bricks replace decorated_pot
+
 # 容器上锁
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) trapped_chest{lock: {components: {custom_name: {text: "JK"}}}} replace chest
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) trapped_chest{lock: {components: {custom_name: {text: "JK"}}}} replace trapped_chest
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) copper_chest{lock: {components: {custom_name: {text: "JK"}}}} replace copper_chest
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) exposed_copper_chest{lock: {components: {custom_name: {text: "JK"}}}} replace exposed_copper_chest
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) weathered_copper_chest{lock: {components: {custom_name: {text: "JK"}}}} replace weathered_copper_chest
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) oxidized_copper_chest{lock: {components: {custom_name: {text: "JK"}}}} replace oxidized_copper_chest
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) waxed_copper_chest{lock: {components: {custom_name: {text: "JK"}}}} replace waxed_copper_chest
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) waxed_exposed_copper_chest{lock: {components: {custom_name: {text: "JK"}}}} replace waxed_exposed_copper_chest
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) waxed_weathered_copper_chest{lock: {components: {custom_name: {text: "JK"}}}} replace waxed_weathered_copper_chest
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) waxed_oxidized_copper_chest{lock: {components: {custom_name: {text: "JK"}}}} replace waxed_oxidized_copper_chest
+
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) barrel{lock: {components: {custom_name: {text: "JK"}}}} replace barrel
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) dispenser{lock: {components: {custom_name: {text: "JK"}}}} replace dispenser
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) dropper{lock: {components: {custom_name: {text: "JK"}}}} replace dropper
@@ -52,3 +64,13 @@ $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) smoker{lock: {components: {custom_name: {tex
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) blast_furnace{lock: {components: {custom_name: {text: "JK"}}}} replace blast_furnace
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) brewing_stand{lock: {components: {custom_name: {text: "JK"}}}} replace brewing_stand
 $fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) beacon{lock: {components: {custom_name: {text: "JK"}}}} replace beacon
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) crafter{lock: {components: {custom_name: {text: "JK"}}}} replace crafter
+
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) shulker_box{lock: {components: {custom_name: {text: "JK"}}}} replace shulker_box
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) black_shulker_box{lock: {components: {custom_name: {text: "JK"}}}} replace black_shulker_box
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) brown_shulker_box{lock: {components: {custom_name: {text: "JK"}}}} replace brown_shulker_box
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) light_blue_shulker_box{lock: {components: {custom_name: {text: "JK"}}}} replace light_blue_shulker_box
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) light_gray_shulker_box{lock: {components: {custom_name: {text: "JK"}}}} replace light_gray_shulker_box
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) lime_shulker_box{lock: {components: {custom_name: {text: "JK"}}}} replace lime_shulker_box
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) magenta_shulker_box{lock: {components: {custom_name: {text: "JK"}}}} replace magenta_shulker_box
+$fill ~-$(r) ~ ~-$(r) ~$(r) ~ ~$(r) purple_shulker_box{lock: {components: {custom_name: {text: "JK"}}}} replace purple_shulker_box

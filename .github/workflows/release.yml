@@ -1,13 +1,13 @@
 name: Release
 
-# 提交信息必须是：<游戏版本标签>-v<包版本>-release，例如
-#   MC26.3-v1.2.3-release
-#   MC26.3-26.4-v1.2.3-release
-#   MC1.21.11+-v1.2.3-release
-#   MC1.21.11~26.1.x-v1.2.3-release
-# 不符合该格式的提交（缺少游戏版本标签、缺少 -release、带空格等）不会打包。
+# 提交信息必须是：release-v<包版本>-<游戏版本标签>，例如
+#   release-v1.2.3-MC26.3
+#   release-v1.2.3-MC26.3-26.4
+#   release-v1.2.3-MC1.21.11+
+#   release-v1.2.3-MC1.21.11~26.1.x
+# 不符合该格式的提交（缺少 release- 前缀、缺少游戏版本标签、带空格等）不会打包。
 # 规则：
-#   · tag 只取 v<版本> 部分（MC1.21.11-v1.2.3-release → 打 tag v1.2.3）
+#   · tag 只取 v<版本> 部分（release-v1.2.3-MC26.3 → 打 tag v1.2.3）
 #   · 游戏版本标签原样保留，用于资产名 jkbw.<tag>.For.<游戏版本标签>.zip
 #   · tag 已存在时，把新的 zip 追加到同一个 Release（同名资产覆盖）
 #   · 首次为该 tag 建 Release 时，备注取 update_log.md 里对应版本的一节；
@@ -15,7 +15,7 @@ name: Release
 
 on:
   push:
-    branches: [main]
+    branches: ["**"]
 
 permissions:
   contents: write
@@ -33,12 +33,12 @@ jobs:
           COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
         run: |
           subject="$(printf '%s\n' "$COMMIT_MESSAGE" | head -n 1)"
-          if [[ ! "$subject" =~ ^([A-Za-z0-9._+~-]+)-(v[0-9]+(\.[0-9]+)*)-release$ ]]; then
-            echo "提交信息不是 <游戏版本标签>-v<包版本>-release，跳过。"
+          if [[ ! "$subject" =~ ^release-(v[0-9]+(\.[0-9]+)*)-([A-Za-z0-9._+~-]+)$ ]]; then
+            echo "提交信息不是 release-v<包版本>-<游戏版本标签>，跳过。"
             exit 0
           fi
-          mc="${BASH_REMATCH[1]}"
-          ver="${BASH_REMATCH[2]}"
+          ver="${BASH_REMATCH[1]}"
+          mc="${BASH_REMATCH[3]}"
           echo "tag=$ver" >> "$GITHUB_OUTPUT"
           echo "mc=$mc" >> "$GITHUB_OUTPUT"
           echo "游戏版本=$mc，tag=$ver"
@@ -86,7 +86,10 @@ jobs:
           if gh release view "$TAG" >/dev/null 2>&1; then
             echo "Release $TAG 已存在，上传资产 $FILE"
             gh release upload "$TAG" "$FILE" --clobber
-          else
+          elif [[ "$GITHUB_REF" == "refs/heads/main" ]]; then
             echo "新建 Release $TAG"
             gh release create "$TAG" "$FILE" --title "$TAG" --notes-file notes.md
+          else
+            echo "::error::Release $TAG 尚未由 main 创建；分支推送只上传到已有 Release。"
+            exit 1
           fi

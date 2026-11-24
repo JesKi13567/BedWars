@@ -1,1 +1,11 @@
 blank_issues_enabled: false
+contact_links:
+  - name: 文档 / Documentation
+    url: https://github.com/JesKi13567/BedWars/blob/main/README.md
+    about: 安装、支持范围与玩法说明 / Installation, supported versions, and usage
+  - name: 下载 / Download
+    url: https://github.com/JesKi13567/BedWars/releases/latest
+    about: 获取最新发布 / Get the latest release
+  - name: QQ 群：610049362
+    url: https://qm.qq.com/q/KrUQJZKK08
+    about: 加入交流群 / Join the community group

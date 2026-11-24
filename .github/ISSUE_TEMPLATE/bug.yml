@@ -3,39 +3,54 @@ description: 报告数据包问题 / Report a datapack issue
 title: "[Bug] "
 labels: ["bug"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢报告问题！请尽量填写完整信息，以便快速定位。
+        Thanks for reporting! Please fill in as much detail as possible.
+
   - type: checkboxes
     id: checks
     attributes:
       label: 确认 / Checklist
       options:
-        - label: 我已使用最新版数据包，且游戏为最新版或 LTS 版 / I am using the latest datapack and the latest or LTS game version
+        - label: 我已使用最新版数据包 / I am using the latest datapack
           required: true
-        - label: 我确认没有打开的相同或类似 issue / I confirm there are no identical or similar open issues
+        - label: 我已确认游戏版本在数据包支持范围内 / I confirm the game version is supported by the datapack
           required: true
+        - label: 我已确认没有打开的相同或类似 issue / I confirm there are no identical or similar open issues
+          required: true
+
   - type: input
     id: version
     attributes:
       label: 版本 / Version
-      description: e.g. v1.2.3 For MC26.3
+      description: Datapack + Minecraft
+      placeholder: e.g. v1.2.3 For MC26.3
     validations:
       required: true
+
   - type: dropdown
     id: environment
     attributes:
       label: 运行环境（服务端） / Environment (Server)
-      description: 单人游戏（自己作为房主）也选此项；不考虑 Spigot、Paper 等插件服务端。 / Singleplayer where you host the world also counts as a server; plugin servers such as Spigot or Paper are out of scope.
+      description: 单人游戏（自己作为房主）请选择对应的加载器。Spigot、Paper 等插件服务端不在支持范围内。 / Singleplayer (hosting your own world) should select the corresponding loader. Plugin servers such as Spigot or Paper are out of scope.
       options:
         - 原版 Vanilla
         - Fabric
         - NeoForge
-        - 其他（在模组列表中注明）/ Other (note in mods list)
+        - 其他（在模组列表中注明）/ Other (note in mod list)
     validations:
       required: true
+
   - type: textarea
     id: mods
     attributes:
-      label: 模组列表 / Mods list
-      description: 也包括数据包列表。 / Also include the datapack list.
+      label: 模组列表 / Mod list
+      description: 请列出所有模组和数据包；若未使用，则填写“无”。 / List all mods and datapacks; if none, write "None".
+    validations:
+      required: true
+
   - type: textarea
     id: steps
     attributes:
@@ -46,7 +61,10 @@ body:
         3. 日志为 ... / The log shows ...
     validations:
       required: true
+
   - type: textarea
     id: expected
     attributes:
       label: 期望结果 / Expected behavior
+    validations:
+      required: true
